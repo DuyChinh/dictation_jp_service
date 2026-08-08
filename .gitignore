@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+
+# Keep example templates
+!.env.example
+
+# Build / tooling
+dist
+build
+coverage
+*.log
+.DS_Store
+.pnpm-store
