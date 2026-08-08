@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "npx tsc -p packages/evaluation/tsconfig.json && npx tsc -p packages/content-schema/tsconfig.json && npx tsc -p tsconfig.json",
+    "build": "npx tsc -p packages/evaluation/tsconfig.json && npx tsc -p packages/content-schema/tsconfig.json && npx tsc -p tsconfig.json && mkdir -p node_modules/@jd/evaluation node_modules/@jd/content-schema && cp -r packages/evaluation/dist node_modules/@jd/evaluation/ && cp -r packages/content-schema/dist node_modules/@jd/content-schema/",
     "start": "node dist/server.js",
     "typecheck": "npx tsc -p tsconfig.json --noEmit",
     "test": "vitest run"

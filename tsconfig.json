@@ -16,7 +16,12 @@
     "types": ["node"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@jd/content-schema": ["./packages/content-schema/dist/index.d.ts"],
+      "@jd/evaluation": ["./packages/evaluation/dist/index.d.ts"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test.ts", "dist", "node_modules"]
