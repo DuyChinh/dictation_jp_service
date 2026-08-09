@@ -1,8 +1,10 @@
 import { diffCharacters, type DiffOp } from "./diff.js";
 import { levenshtein } from "./levenshtein.js";
+import { kanjiToHiragana } from "./kanjiToHiragana.js";
 import {
   normalizeForPunctInsensitive,
   normalizePrimary,
+  stripPunctuation,
 } from "./normalize.js";
 import {
   ALGORITHM_VERSION,
@@ -103,12 +105,48 @@ export function scoreDictation(input: DictationScoreInput): DictationScoreResult
     }
   }
 
-  const distance = levenshtein(normalized_answer, normalized_expected);
-  const lenA = [...normalized_answer].length;
-  const lenE = [...normalized_expected].length;
-  const maxLen = Math.max(lenA, lenE, 1);
-  const score = Math.round(100 * (1 - distance / maxLen));
-  const clamped = Math.max(0, Math.min(100, score));
+  // Tier C: Kana / Hiragana Reading Equality (Accept Hiragana for Kanji)
+  const h_answer = stripPunctuation(kanjiToHiragana(normalized_answer));
+  const h_expected = stripPunctuation(kanjiToHiragana(normalized_expected));
+
+  if (h_answer === h_expected && h_answer.length > 0) {
+    return {
+      score: 100,
+      correct: true,
+      algorithm_version: ALGORITHM_VERSION,
+      normalization_version: NORMALIZATION_VERSION,
+      normalized_answer,
+      normalized_expected,
+      matched_accepted: false,
+      ops: diffCharacters(normalized_expected, normalized_answer),
+    };
+  }
+
+  for (const alt of input.acceptedAnswers ?? []) {
+    if (stripPunctuation(kanjiToHiragana(normalizePrimary(alt))) === h_answer) {
+      return {
+        score: 100,
+        correct: true,
+        algorithm_version: ALGORITHM_VERSION,
+        normalization_version: NORMALIZATION_VERSION,
+        normalized_answer,
+        normalized_expected,
+        matched_accepted: true,
+        ops: diffCharacters(normalized_expected, normalized_answer),
+      };
+    }
+  }
+
+  const orig_distance = levenshtein(normalizeForPunctInsensitive(input.rawAnswer), normalizeForPunctInsensitive(input.expected));
+  const orig_maxLen = Math.max([...normalizeForPunctInsensitive(input.rawAnswer)].length, [...normalizeForPunctInsensitive(input.expected)].length, 1);
+  const orig_score = Math.round(100 * (1 - orig_distance / orig_maxLen));
+
+  const kana_distance = levenshtein(h_answer, h_expected);
+  const kana_maxLen = Math.max([...h_answer].length, [...h_expected].length, 1);
+  const kana_score = Math.round(100 * (1 - kana_distance / kana_maxLen));
+
+  const bestScore = Math.max(orig_score, kana_score);
+  const clamped = Math.max(0, Math.min(100, bestScore));
 
   return {
     score: clamped,
