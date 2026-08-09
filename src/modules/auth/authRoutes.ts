@@ -1,13 +1,19 @@
 import { Router } from "express";
 import passport from "passport";
-import { googleCallback, getCurrentUser } from "./authController.js";
-import { requireAuth } from "../../shared/middleware/auth.js";
+import { register, login, forgotPassword, resetPassword, getCurrentUser, googleCallback } from "./authController.js";
 import { config } from "../../config.js";
+import { requireAuth } from "../../shared/middleware/auth.js";
 
 export function createAuthRouter(): Router {
   const router = Router();
 
-  // Redirect to Google for authentication
+  // Local Auth routes
+  router.post("/register", register);
+  router.post("/login", login);
+  router.post("/forgot-password", forgotPassword);
+  router.post("/reset-password", resetPassword);
+
+  // Google Auth routes
   router.get(
     "/google",
     passport.authenticate("google", {
@@ -16,17 +22,15 @@ export function createAuthRouter(): Router {
     })
   );
 
-  // Google callback route
   router.get(
     "/google/callback",
     passport.authenticate("google", {
       session: false,
-      failureRedirect: "/api/auth/google/failure", // We'll intercept failures in controller if we could, but passport handles it here
+      failureRedirect: "/api/auth/google/failure",
     }),
     googleCallback
   );
 
-  // Endpoint to handle failure from passport directly (if needed)
   router.get("/google/failure", (_req, res) => {
     res.redirect(`${config.clientUrl}/login?error=google_auth_failed`);
   });
