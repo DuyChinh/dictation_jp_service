@@ -31,8 +31,5 @@ export {
   type CatalogValidateResult,
 } from "./validate.js";
 
-export {
-  getLocalizedText,
-  type ContentLang,
-  type LocalizedTextLike,
-} from "./getLocalizedText.js";
+export { getLocalizedText, type ContentLang, type LocalizedTextLike } from "./getLocalizedText.js";
+export { adaptV4ToPackage, type AdaptV4Options, type ImageUrlMap } from "./adaptV4.js";
