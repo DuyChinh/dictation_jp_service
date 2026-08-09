@@ -142,10 +142,10 @@
                 "en": "Correct: the staff member tells her to choose an apron in the right size, put it on, and wait before going to the workshop."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m1-q1-t5-s1",
-                "jlpt-n2-2025-12-m1-q1-t5-s2",
-                "jlpt-n2-2025-12-m1-q1-t5-s3",
-                "jlpt-n2-2025-12-m1-q1-t5-s4"
+                "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s1",
+                "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s2",
+                "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s3",
+                "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s4"
               ]
             },
             {
@@ -176,13 +176,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m1-q1",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại một lớp trải nghiệm làm đồ thủy tinh, một người phụ nữ đang nói chuyện với nhân viên nam ở quầy tiếp tân. Sau đây người phụ nữ sẽ làm gì trước tiên?\nNữ: Xin chào. Tôi là Nakayama, đã đặt trải nghiệm làm bình hoa thủy tinh lúc 2 giờ.\nNam: Chị Nakayama phải không ạ. Chúng tôi đã chờ chị. Chị đã ký vào giấy đồng ý tham gia trải nghiệm được gửi qua email và mang theo chưa?\nNữ: Vâng, đây ạ.\nNam: Cảm ơn chị. Vậy trên kệ bên kia có tạp dề, chị hãy chọn cỡ phù hợp, mặc vào rồi chờ nhé. Người trước sắp xong rồi nên chúng tôi sẽ đưa chị sang xưởng đối diện. Ở xưởng, chị sẽ trao đổi với giáo viên để chọn màu thủy tinh.\nNữ: Tôi hiểu rồi. À, tôi muốn nhờ gửi bình hoa sau khi hoàn thành bằng dịch vụ giao hàng.\nNam: Vậy sau khi trải nghiệm xong, chúng tôi sẽ thu phí vận chuyển. Địa chỉ gửi là địa chỉ đã ghi khi đăng ký đúng không ạ?\nNữ: Vâng, nhờ anh như vậy.\nNgười dẫn: Sau đây người phụ nữ sẽ làm gì trước tiên?",
             "en": "Narrator: At a hands-on glassmaking class, a woman is speaking with a male receptionist. What will the woman do first after this?\nWoman: Hello. I’m Nakayama. I booked the glass-vase-making experience for two o’clock.\nMan: Ms. Nakayama, right? We’ve been expecting you. Did you sign the participation consent form we sent by email and bring it with you?\nWoman: Yes, here you are.\nMan: Thank you. There are aprons on that shelf, so please choose one that fits you, put it on, and wait. The person before you is almost finished, so we’ll take you to the workshop across the way. At the workshop, you’ll discuss the glass color with the instructor and choose one.\nWoman: I understand. Um, I’d like to have the finished vase shipped to me.\nMan: In that case, we’ll collect the shipping fee after the experience. Is it all right to send it to the address you used when you applied?\nWoman: Yes, please.\nNarrator: What will the woman do first after this?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t1-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 77732,
@@ -194,7 +196,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t1-s2",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 85967,
@@ -206,7 +208,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t2-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t2-s1",
               "order": 3,
               "speaker_id": "female_1",
               "start_ms": 91609,
@@ -218,7 +220,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t2-s2",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t2-s2",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 92940,
@@ -230,7 +232,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t3-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t3-s1",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 98375,
@@ -242,7 +244,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t3-s2",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t3-s2",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 100043,
@@ -254,7 +256,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t3-s3",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t3-s3",
               "order": 7,
               "speaker_id": "male_1",
               "start_ms": 101871,
@@ -266,7 +268,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t4-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t4-s1",
               "order": 8,
               "speaker_id": "female_1",
               "start_ms": 107231,
@@ -278,7 +280,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t5-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s1",
               "order": 9,
               "speaker_id": "male_1",
               "start_ms": 110067,
@@ -290,7 +292,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t5-s2",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s2",
               "order": 10,
               "speaker_id": "male_1",
               "start_ms": 111934,
@@ -302,7 +304,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t5-s3",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s3",
               "order": 11,
               "speaker_id": "male_1",
               "start_ms": 122129,
@@ -314,7 +316,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t5-s4",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t5-s4",
               "order": 12,
               "speaker_id": "male_1",
               "start_ms": 126248,
@@ -326,7 +328,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t6-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t6-s1",
               "order": 13,
               "speaker_id": "female_1",
               "start_ms": 131778,
@@ -338,7 +340,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t6-s2",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t6-s2",
               "order": 14,
               "speaker_id": "female_1",
               "start_ms": 132704,
@@ -350,7 +352,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t7-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t7-s1",
               "order": 15,
               "speaker_id": "male_1",
               "start_ms": 138060,
@@ -362,7 +364,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t7-s2",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t7-s2",
               "order": 16,
               "speaker_id": "male_1",
               "start_ms": 141793,
@@ -374,7 +376,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t8-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t8-s1",
               "order": 17,
               "speaker_id": "female_1",
               "start_ms": 148278,
@@ -386,7 +388,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q1-t9-s1",
+              "id": "jlpt-n2-2025-12-m1-q1__jlpt-n2-2025-12-m1-q1-t9-s1",
               "order": 18,
               "speaker_id": "narrator",
               "start_ms": 152116,
@@ -466,10 +468,10 @@
                 }
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m1-q2-t5-s1",
-                "jlpt-n2-2025-12-m1-q2-t5-s2",
-                "jlpt-n2-2025-12-m1-q2-t5-s3",
-                "jlpt-n2-2025-12-m1-q2-t5-s4"
+                "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s1",
+                "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s2",
+                "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s3",
+                "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s4"
               ]
             },
             {
@@ -516,13 +518,15 @@
             }
           ],
           "choice_display_mode": "image",
+          "listening_unit_id": "jlpt-n2-2025-12-m1-q2",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại một quán cà phê, nhân viên nam và quản lý nữ đang nói chuyện. Từ bây giờ nhân viên nam trước tiên phải làm gì?\nNam: Quản lý, khách giờ trưa vẫn đang xếp hàng đông quá nhỉ.\nNữ: Có lẽ nhờ hôm qua trên mạng có bài giới thiệu quán.\nNam: Đúng vậy. Để có thể hướng dẫn khách trơn tru, tôi sẽ cố gắng dọn đĩa ở các bàn trống càng sớm càng tốt.\nNữ: Ừ. Nhưng giờ bếp đang không theo kịp, cậu ưu tiên giúp bếp được không? Tôi muốn cậu chia salad cho suất ăn trưa vào các đĩa nhỏ. Việc dọn đĩa ở bàn trống thì tôi sẽ làm trong lúc hướng dẫn khách.\nNam: Tôi hiểu rồi.\nNữ: Khi bếp ổn định, cậu đưa thực đơn cho khách đang chờ bên ngoài nhé?\nNam: Vâng.\nNgười dẫn: Từ bây giờ nhân viên nam trước tiên phải làm gì?",
             "en": "Narrator: At a café, a male staff member and the female manager are talking. What must the male staff member do first now?\nMan: Manager, there are still a lot of lunch customers waiting in line.\nWoman: Maybe it’s because an article introducing the café appeared online yesterday.\nMan: That could be. To keep things moving smoothly, I’ll clear the dishes from empty tables as quickly as possible.\nWoman: Right. But the kitchen can’t keep up right now, so could you prioritize helping there? I want you to plate the salad for the lunch sets on small dishes. I’ll clear the dishes from empty tables while I’m showing customers to their seats.\nMan: Understood.\nWoman: Once the kitchen settles down, could you give menus to the customers waiting outside?\nMan: Yes.\nNarrator: What must the male staff member do first now?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t1-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 173058,
@@ -534,7 +538,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t1-s2",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 178607,
@@ -546,7 +550,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t2-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 187350,
@@ -558,7 +562,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t3-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t3-s1",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 192170,
@@ -570,7 +574,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t4-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t4-s1",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 196450,
@@ -582,7 +586,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t4-s2",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t4-s2",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 197930,
@@ -594,7 +598,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t5-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s1",
               "order": 7,
               "speaker_id": "female_1",
               "start_ms": 203790,
@@ -606,7 +610,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t5-s2",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s2",
               "order": 8,
               "speaker_id": "female_1",
               "start_ms": 204960,
@@ -618,7 +622,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t5-s3",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s3",
               "order": 9,
               "speaker_id": "female_1",
               "start_ms": 212290,
@@ -630,7 +634,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t5-s4",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t5-s4",
               "order": 10,
               "speaker_id": "female_1",
               "start_ms": 217150,
@@ -642,7 +646,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t6-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t6-s1",
               "order": 11,
               "speaker_id": "male_1",
               "start_ms": 223270,
@@ -654,7 +658,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t7-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t7-s1",
               "order": 12,
               "speaker_id": "female_1",
               "start_ms": 224820,
@@ -666,7 +670,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t8-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t8-s1",
               "order": 13,
               "speaker_id": "male_1",
               "start_ms": 231020,
@@ -678,7 +682,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q2-t9-s1",
+              "id": "jlpt-n2-2025-12-m1-q2__jlpt-n2-2025-12-m1-q2-t9-s1",
               "order": 14,
               "speaker_id": "narrator",
               "start_ms": 239279,
@@ -755,9 +759,9 @@
                 "en": "Correct: the club leader asks Yoshida to contact former members and request their written messages."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m1-q3-t6-s1",
-                "jlpt-n2-2025-12-m1-q3-t6-s2",
-                "jlpt-n2-2025-12-m1-q3-t6-s3"
+                "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t6-s1",
+                "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t6-s2",
+                "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t6-s3"
               ]
             },
             {
@@ -775,13 +779,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m1-q3",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại câu lạc bộ dàn nhạc của một trường đại học, trưởng nhóm và một nữ sinh đang nói chuyện. Nữ sinh sẽ làm gì để chuẩn bị chương trình?\nNam: Buổi hòa nhạc định kỳ năm nay cũng sắp tới rồi. Yoshida, với tư cách phó nhóm, nhờ cậu nhiều việc nhé.\nNữ: Ừ.\nNam: Trước tiên là làm chương trình, phải chuẩn bị ảnh lúc luyện tập và phần giới thiệu các bản nhạc.\nNữ: Đúng nhỉ.\nNam: Sau đó phải nhờ giáo viên và các anh chị đã tốt nghiệp viết lời nhắn, rồi chọn thiết kế bìa. Muốn nhận bản thảo lời nhắn trong vòng ba tuần; Yoshida, cậu nhờ các anh chị khóa trước được không? Phần giáo viên để tớ làm.\nNữ: Được.\nNam: Ảnh thì tớ định nhờ sinh viên năm nhất chuẩn bị. Phần giới thiệu bản nhạc sẽ chia cho một số trưởng nhóm nhạc cụ.\nNữ: Ừ. Còn thiết kế bìa?\nNam: À, công ty in có sẵn vài mẫu nên sẽ chọn từ đó.\nNgười dẫn: Nữ sinh sẽ làm gì để chuẩn bị chương trình?",
             "en": "Narrator: At a university orchestra club, the club leader and a female student are talking. What will the female student do to prepare the concert program?\nMan: This year’s regular concert is coming up again. Yoshida, as vice-president, I’m counting on you for a lot of things.\nWoman: Sure.\nMan: First, for the program, we need to prepare photos of rehearsals and introductions to the pieces.\nWoman: Right.\nMan: We also need to ask the instructor and former members to write messages, and we have to choose the cover design. I want to receive the message manuscripts within three weeks. Yoshida, could you ask the former members? I’ll take care of the instructor.\nWoman: Okay.\nMan: I’m planning to have the first-year students prepare the photos. I’ll divide the introductions to the pieces among several section leaders.\nWoman: Okay. What about the cover design?\nMan: Oh, the printing company has several designs, so we’ll choose from those.\nNarrator: What will the female student do to prepare the concert program?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t1-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 260100,
@@ -793,7 +799,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t1-s2",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 269097,
@@ -805,7 +811,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t2-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 276622,
@@ -817,7 +823,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t2-s2",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t2-s2",
               "order": 4,
               "speaker_id": "male_1",
               "start_ms": 280037,
@@ -829,7 +835,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t3-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t3-s1",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 284187,
@@ -841,7 +847,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t4-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t4-s1",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 285394,
@@ -853,7 +859,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t5-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t5-s1",
               "order": 7,
               "speaker_id": "female_1",
               "start_ms": 293408,
@@ -865,7 +871,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t6-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t6-s1",
               "order": 8,
               "speaker_id": "male_1",
               "start_ms": 294615,
@@ -877,7 +883,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t6-s2",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t6-s2",
               "order": 9,
               "speaker_id": "male_1",
               "start_ms": 302629,
@@ -889,7 +895,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t6-s3",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t6-s3",
               "order": 10,
               "speaker_id": "male_1",
               "start_ms": 310459,
@@ -901,7 +907,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t7-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t7-s1",
               "order": 11,
               "speaker_id": "female_1",
               "start_ms": 312770,
@@ -913,7 +919,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t8-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t8-s1",
               "order": 12,
               "speaker_id": "male_1",
               "start_ms": 313977,
@@ -925,7 +931,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t8-s2",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t8-s2",
               "order": 13,
               "speaker_id": "male_1",
               "start_ms": 318127,
@@ -937,7 +943,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t9-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t9-s1",
               "order": 14,
               "speaker_id": "female_1",
               "start_ms": 323933,
@@ -949,7 +955,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t9-s2",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t9-s2",
               "order": 15,
               "speaker_id": "female_1",
               "start_ms": 325140,
@@ -961,7 +967,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t10-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t10-s1",
               "order": 16,
               "speaker_id": "male_1",
               "start_ms": 327083,
@@ -973,7 +979,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q3-t11-s1",
+              "id": "jlpt-n2-2025-12-m1-q3__jlpt-n2-2025-12-m1-q3-t11-s1",
               "order": 17,
               "speaker_id": "narrator",
               "start_ms": 333447,
@@ -1024,11 +1030,11 @@
                 "en": "Correct: they are told to start by moving the equipment used for yakisoba and yakitori."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m1-q4-t2-s1",
-                "jlpt-n2-2025-12-m1-q4-t2-s2",
-                "jlpt-n2-2025-12-m1-q4-t2-s3",
-                "jlpt-n2-2025-12-m1-q4-t2-s4",
-                "jlpt-n2-2025-12-m1-q4-t2-s5"
+                "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s1",
+                "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s2",
+                "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s3",
+                "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s4",
+                "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s5"
               ]
             },
             {
@@ -1072,13 +1078,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m1-q4",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại trung tâm cộng đồng, một nhân viên đang nói với các tình nguyện viên. Họ sẽ làm gì trước tiên?\nNữ: Cảm ơn mọi người đã giúp chuẩn bị lễ hội mùa hè Aobashi hôm nay. Mọi người sẽ chuyển dụng cụ nấu ăn, dụng cụ trò chơi, thùng rác... từ kho hiện tại ra quảng trường. Trước tiên xin hãy chuyển các dụng cụ để làm yakisoba và yakitori. Một nhóm khác đã đặt bàn rồi, hãy đặt các dụng cụ lên những chiếc bàn đó. Sau đó hãy chuyển bóng bay, dụng cụ câu đồ chơi dùng cho trò chơi và đặt thùng rác ở vị trí quy định.\nNgười dẫn: Các tình nguyện viên sẽ làm gì trước tiên?",
             "en": "Narrator: At a community center, a staff member is speaking to volunteer staff. What will the volunteers do first?\nWoman: Thank you for helping prepare for the Aobashi Summer Festival today. You’ll move cooking equipment, game supplies, trash cans, and other items from this storage room to the plaza. Please start by moving the equipment used to make yakisoba and yakitori. Another group is already setting up the tables, so place the equipment on those tables. After that, move the balloons and toy-fishing supplies used for the games, and place the trash cans in their designated locations.\nNarrator: What will the volunteer staff do first?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t1-s1",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 356300,
@@ -1090,7 +1098,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t1-s2",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 365592,
@@ -1102,7 +1110,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t2-s1",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s1",
               "order": 3,
               "speaker_id": "female_1",
               "start_ms": 370173,
@@ -1114,7 +1122,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t2-s2",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s2",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 377066,
@@ -1126,7 +1134,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t2-s3",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s3",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 387923,
@@ -1138,7 +1146,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t2-s4",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s4",
               "order": 6,
               "speaker_id": "female_1",
               "start_ms": 394816,
@@ -1150,7 +1158,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t2-s5",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t2-s5",
               "order": 7,
               "speaker_id": "female_1",
               "start_ms": 403341,
@@ -1162,7 +1170,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q4-t3-s1",
+              "id": "jlpt-n2-2025-12-m1-q4__jlpt-n2-2025-12-m1-q4-t3-s1",
               "order": 8,
               "speaker_id": "narrator",
               "start_ms": 416067,
@@ -1213,8 +1221,8 @@
                 "en": "Correct: the manager emphasizes that correcting the data table must come first because the handouts have to be printed today."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m1-q5-t3-s1",
-                "jlpt-n2-2025-12-m1-q5-t11-s1"
+                "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t3-s1",
+                "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t11-s1"
               ]
             },
             {
@@ -1258,13 +1266,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m1-q5",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại công ty, một phụ nữ và một đàn ông đang nói về việc chuẩn bị hội thảo. Sau đây người đàn ông sẽ làm gì trước tiên?\nNữ: Morita, về hội thảo chuyển việc có buổi giao lưu ngày mai, dữ liệu trong tài liệu phát cho người tham gia đang sai.\nNam: Ồ, vậy sao?\nNữ: Bảng ở trang 2 thể hiện số người chuyển việc chưa có dữ liệu năm ngoái. Hãy sửa trước khi in rồi cho tôi xem lại.\nNam: Vâng, tôi xin lỗi.\nNữ: Sau hạn đăng ký có bốn người rất muốn tham gia nên tôi đã cho phép thêm. Tôi đã thêm họ vào danh sách người tham gia, nhờ anh làm thẻ tên cho họ nhé.\nNam: Vâng. Vậy số người dự buổi giao lưu ở quán bên cạnh sau hội thảo cũng thay đổi phải không?\nNữ: À đúng rồi. Hãy xác nhận lại số người dự giao lưu rồi liên hệ với quán.\nNam: Vâng.\nNữ: Tài liệu phải in xong trong hôm nay nên ưu tiên cao nhất là sửa bảng nhé.\nNam: Tôi hiểu rồi.\nNgười dẫn: Sau đây người đàn ông sẽ làm gì trước tiên?",
             "en": "Narrator: At a company, a woman and a man are talking about preparations for a seminar. What will the man do first after this?\nWoman: Morita, about tomorrow’s job-change seminar with the networking event—the data in the materials we’ll hand out to participants is wrong.\nMan: Really?\nWoman: The table on page two showing the number of people changing jobs doesn’t include last year’s data. Fix it before printing and show it to me again.\nMan: Yes, I’m sorry.\nWoman: Also, after registration closed, four people asked if they could still join, so I allowed them to participate. I’ve already added them to the participant list, so could you make name tags for them?\nMan: Yes. Then will the number of people at the networking event in the restaurant next door after the seminar change too?\nWoman: Oh, yes. Please confirm the number of people attending the networking event again and contact the restaurant.\nMan: Yes.\nWoman: The materials have to be printed today, so make correcting the table your top priority.\nMan: Understood.\nNarrator: What will the man do first after this?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t1-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 436200,
@@ -1276,7 +1286,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t1-s2",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 445492,
@@ -1288,7 +1298,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t2-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t2-s1",
               "order": 3,
               "speaker_id": "female_1",
               "start_ms": 450956,
@@ -1300,7 +1310,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t3-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t3-s1",
               "order": 4,
               "speaker_id": "male_1",
               "start_ms": 460227,
@@ -1312,7 +1322,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t4-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t4-s1",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 461980,
@@ -1324,7 +1334,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t4-s2",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t4-s2",
               "order": 6,
               "speaker_id": "female_1",
               "start_ms": 468500,
@@ -1336,7 +1346,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t5-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t5-s1",
               "order": 7,
               "speaker_id": "male_1",
               "start_ms": 473003,
@@ -1348,7 +1358,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t6-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t6-s1",
               "order": 8,
               "speaker_id": "female_1",
               "start_ms": 476039,
@@ -1360,7 +1370,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t6-s2",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t6-s2",
               "order": 9,
               "speaker_id": "female_1",
               "start_ms": 483660,
@@ -1372,7 +1382,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t7-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t7-s1",
               "order": 10,
               "speaker_id": "male_1",
               "start_ms": 491831,
@@ -1384,7 +1394,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t7-s2",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t7-s2",
               "order": 11,
               "speaker_id": "male_1",
               "start_ms": 493034,
@@ -1396,7 +1406,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t8-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t8-s1",
               "order": 12,
               "speaker_id": "female_1",
               "start_ms": 499004,
@@ -1408,7 +1418,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t8-s2",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t8-s2",
               "order": 13,
               "speaker_id": "female_1",
               "start_ms": 500757,
@@ -1420,7 +1430,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t9-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t9-s1",
               "order": 14,
               "speaker_id": "male_1",
               "start_ms": 506727,
@@ -1432,7 +1442,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t10-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t10-s1",
               "order": 15,
               "speaker_id": "female_1",
               "start_ms": 507930,
@@ -1444,7 +1454,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t11-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t11-s1",
               "order": 16,
               "speaker_id": "male_1",
               "start_ms": 515734,
@@ -1456,7 +1466,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m1-q5-t12-s1",
+              "id": "jlpt-n2-2025-12-m1-q5__jlpt-n2-2025-12-m1-q5-t12-s1",
               "order": 17,
               "speaker_id": "narrator",
               "start_ms": 517311,
@@ -1544,7 +1554,7 @@
                 "en": "Correct: he says prior teaching/instruction experience is a requirement he cannot compromise on."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m2-q1-t5-s1"
+                "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t5-s1"
               ]
             },
             {
@@ -1562,13 +1572,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m2-q1",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại lớp hội họa, người đàn ông điều hành lớp và nữ nhân viên hành chính đang nói chuyện. Điều kiện mà người đàn ông cho là cần nhất ở giáo viên mới là gì?\nNam: Về lớp hội họa cho học sinh tiểu học năm tới, chúng ta sắp đăng tuyển giáo viên bán thời gian đúng không?\nNữ: Vâng, lần này không nhất thiết phải phụ trách được trong thời gian dài đúng không ạ?\nNam: Ừ, chỉ làm được một học kỳ cũng không sao. Tôi cũng không quá quan trọng việc đã tốt nghiệp đại học mỹ thuật hay chưa. Ví dụ học thiết kế ở trường chuyên môn cũng được, nhưng người chưa từng có kinh nghiệm hướng dẫn ở trường hay lớp hội họa thì hơi khó.\nNữ: Vâng.\nNam: Vì tôi muốn họ dạy kiến thức cơ bản về hội họa một cách vui vẻ nên kinh nghiệm là điều không thể nhượng bộ. Nếu còn là người thích tiếp xúc với trẻ em thì tuyệt nhất.\nNữ: Tôi hiểu rồi. Tôi sẽ đăng tuyển như vậy.\nNgười dẫn: Điều kiện mà người đàn ông cho là cần nhất ở giáo viên mới là gì?",
             "en": "Narrator: At an art class, the male owner and a female office worker are talking. What condition does the man consider most important for the new instructor?\nMan: About next year’s art class for elementary school students—we’re about to advertise for a part-time instructor, right?\nWoman: Yes. This time, the person doesn’t necessarily have to be able to stay for a long period, correct?\nMan: Right. It’s fine even if they can only work for one semester. I’m also not particular about whether they graduated from an art university. For example, someone who studied design at a vocational school would be fine. But someone with no teaching experience at a school or art class would be difficult.\nWoman: I see.\nMan: I want them to teach the basics of art in an enjoyable way, so experience is something I can’t compromise on. And if they also like working with children, that would be perfect.\nWoman: Understood. I’ll post the opening that way.\nNarrator: What condition does the man consider most important for the new instructor?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t1-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 567650,
@@ -1580,7 +1592,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t1-s2",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 576058,
@@ -1592,7 +1604,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t2-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 585055,
@@ -1604,7 +1616,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t3-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t3-s1",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 598991,
@@ -1616,7 +1628,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t4-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t4-s1",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 608709,
@@ -1628,7 +1640,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t4-s2",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t4-s2",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 615615,
@@ -1640,7 +1652,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t4-s3",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t4-s3",
               "order": 7,
               "speaker_id": "male_1",
               "start_ms": 622802,
@@ -1652,7 +1664,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t5-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t5-s1",
               "order": 8,
               "speaker_id": "female_1",
               "start_ms": 638144,
@@ -1664,7 +1676,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t6-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t6-s1",
               "order": 9,
               "speaker_id": "male_1",
               "start_ms": 639989,
@@ -1676,7 +1688,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t6-s2",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t6-s2",
               "order": 10,
               "speaker_id": "male_1",
               "start_ms": 648863,
@@ -1688,7 +1700,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t7-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t7-s1",
               "order": 11,
               "speaker_id": "female_1",
               "start_ms": 657737,
@@ -1700,7 +1712,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t7-s2",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t7-s2",
               "order": 12,
               "speaker_id": "female_1",
               "start_ms": 660144,
@@ -1712,7 +1724,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q1-t8-s1",
+              "id": "jlpt-n2-2025-12-m2-q1__jlpt-n2-2025-12-m2-q1-t8-s1",
               "order": 13,
               "speaker_id": "narrator",
               "start_ms": 665087,
@@ -1776,9 +1788,9 @@
                 "en": "Correct: he says what makes him happier than anything else is having more time together as parent and child."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m2-q2-t7-s1",
-                "jlpt-n2-2025-12-m2-q2-t7-s2",
-                "jlpt-n2-2025-12-m2-q2-t7-s3"
+                "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t7-s1",
+                "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t7-s2",
+                "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t7-s3"
               ]
             },
             {
@@ -1809,13 +1821,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m2-q2",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Trên radio, một phụ nữ và một giám đốc nam đang nói chuyện. Giám đốc nói điều tốt khi bắt đầu trồng rau trong vườn nhà là gì?\nNữ: Khách mời hôm nay, tiếp tục từ tuần trước, là giám đốc Ueda của Aoi Soft. Hôm nay tôi xin hỏi về đời sống riêng. Anh có việc gì thường làm để thư giãn không?\nNam: Có. Ba năm trước nhân dịp chuyển ra ngoại ô, tôi bắt đầu trồng rau ở vườn nhà, như dưa chuột, cà tím, cải thảo.\nNữ: Trồng rau trong vườn à? Hay quá.\nNam: Tôi còn thay loại rau trồng theo mùa.\nNữ: Anh làm một mình sao?\nNam: Lúc đầu tôi định làm một mình, nhưng con tôi hứng thú nên giờ làm cùng. Điều khiến tôi vui hơn bất cứ điều gì là có nhiều thời gian cha con bên nhau hơn trước. Số loại rau trồng cũng tăng lên.\nNữ: Vậy chắc không cần mua rau ở siêu thị nữa nhỉ.\nNam: Không, đến mức đó thì chưa đâu. Thời gian và thể lực đều có giới hạn mà.\nNgười dẫn: Giám đốc nói điều tốt khi bắt đầu trồng rau trong vườn nhà là gì?",
             "en": "Narrator: On the radio, a woman is talking with a male company president. What does he say has been good about starting to grow vegetables in his home garden?\nWoman: Today’s guest, continuing from last week, is President Ueda of Aoi Soft. Today I’d like to ask about your private life. Is there anything you usually do to relax?\nMan: Yes. Three years ago, when I moved to the suburbs, I started growing vegetables in my garden—cucumbers, eggplants, Chinese cabbage, and so on.\nWoman: Growing vegetables in your garden? That sounds nice.\nMan: I also change what I grow according to the season.\nWoman: Do you do it by yourself?\nMan: At first I planned to, but my child became interested, so now we do it together. More than anything, I’m happy that we have more time together as parent and child than before. We grow more kinds of vegetables now too.\nWoman: Then you probably don’t need to buy vegetables at the supermarket anymore.\nMan: No, not quite that much. There are limits to my time and physical strength.\nNarrator: What does the company president say has been the best thing about growing vegetables in his home garden?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t1-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 689300,
@@ -1827,7 +1841,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t1-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 695648,
@@ -1839,7 +1853,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t2-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t2-s1",
               "order": 3,
               "speaker_id": "female_1",
               "start_ms": 706706,
@@ -1851,7 +1865,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t2-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t2-s2",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 713331,
@@ -1863,7 +1877,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t2-s3",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t2-s3",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 717715,
@@ -1875,7 +1889,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t3-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t3-s1",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 725236,
@@ -1887,7 +1901,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t3-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t3-s2",
               "order": 7,
               "speaker_id": "male_1",
               "start_ms": 733878,
@@ -1899,7 +1913,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t4-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t4-s1",
               "order": 8,
               "speaker_id": "female_1",
               "start_ms": 737589,
@@ -1911,7 +1925,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t4-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t4-s2",
               "order": 9,
               "speaker_id": "female_1",
               "start_ms": 740180,
@@ -1923,7 +1937,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t5-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t5-s1",
               "order": 10,
               "speaker_id": "male_1",
               "start_ms": 741874,
@@ -1935,7 +1949,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t6-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t6-s1",
               "order": 11,
               "speaker_id": "female_1",
               "start_ms": 747154,
@@ -1947,7 +1961,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t6-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t6-s2",
               "order": 12,
               "speaker_id": "female_1",
               "start_ms": 748848,
@@ -1959,7 +1973,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t7-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t7-s1",
               "order": 13,
               "speaker_id": "male_1",
               "start_ms": 752335,
@@ -1971,7 +1985,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t7-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t7-s2",
               "order": 14,
               "speaker_id": "male_1",
               "start_ms": 762322,
@@ -1983,7 +1997,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t7-s3",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t7-s3",
               "order": 15,
               "speaker_id": "male_1",
               "start_ms": 770068,
@@ -1995,7 +2009,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t8-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t8-s1",
               "order": 16,
               "speaker_id": "female_1",
               "start_ms": 774900,
@@ -2007,7 +2021,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t8-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t8-s2",
               "order": 17,
               "speaker_id": "female_1",
               "start_ms": 777043,
@@ -2019,7 +2033,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t9-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t9-s1",
               "order": 18,
               "speaker_id": "male_1",
               "start_ms": 781427,
@@ -2031,7 +2045,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t9-s2",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t9-s2",
               "order": 19,
               "speaker_id": "male_1",
               "start_ms": 784914,
@@ -2043,7 +2057,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q2-t10-s1",
+              "id": "jlpt-n2-2025-12-m2-q2__jlpt-n2-2025-12-m2-q2-t10-s1",
               "order": 20,
               "speaker_id": "narrator",
               "start_ms": 789083,
@@ -2094,9 +2108,9 @@
                 "en": "Correct: she was invited to coach the university track-and-field team and decided to move into that career path sooner."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m2-q3-t3-s1",
-                "jlpt-n2-2025-12-m2-q3-t3-s2",
-                "jlpt-n2-2025-12-m2-q3-t3-s3"
+                "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t3-s1",
+                "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t3-s2",
+                "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t3-s3"
               ]
             },
             {
@@ -2140,13 +2154,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m2-q3",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Trên truyền hình, phát thanh viên và một vận động viên marathon đang nói chuyện. Vận động viên nói lý do quyết định giải nghệ là gì?\nNam: Vận động viên Yamashita, lý do nào khiến chị quyết định giải nghệ?\nNữ: Vốn dĩ tương lai tôi muốn trở thành người hướng dẫn, nên năm ngoái tôi vào cao học và vừa tiếp tục thi đấu vừa học tâm lý học thể thao. Đúng lúc đó tôi được mời làm huấn luyện viên cho đội điền kinh của trường đại học. Năm nay tôi đạt thành tích tốt nhất từ trước tới nay ở giải quốc tế và về thể lực tôi nghĩ mình vẫn còn thi đấu được nên đã phân vân, nhưng tôi quyết định giải nghệ để sớm bước sang con đường đó.\nNgười dẫn: Vận động viên nói lý do quyết định giải nghệ là gì?",
             "en": "Narrator: On television, an announcer and a marathon runner are talking. What does the athlete say is the reason she decided to retire?\nMan: Yamashita, what led you to decide to retire?\nWoman: I had always wanted to become a coach in the future, so last year I entered graduate school and studied subjects such as sports psychology while continuing to compete. Around that time, I was invited to coach the university track-and-field team. This year I achieved my best-ever result at an international competition, and physically I still felt I could compete, so I hesitated. But I decided to retire so I could move into that career path sooner.\nNarrator: What does this athlete say is the reason she decided to retire?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m2-q3-t1-s1",
+              "id": "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 815200,
@@ -2158,7 +2174,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q3-t1-s2",
+              "id": "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 823020,
@@ -2170,7 +2186,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q3-t2-s1",
+              "id": "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 830840,
@@ -2182,7 +2198,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q3-t3-s1",
+              "id": "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t3-s1",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 839953,
@@ -2194,7 +2210,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q3-t3-s2",
+              "id": "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t3-s2",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 859596,
@@ -2206,7 +2222,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q3-t3-s3",
+              "id": "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t3-s3",
               "order": 6,
               "speaker_id": "female_1",
               "start_ms": 870305,
@@ -2218,7 +2234,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q3-t4-s1",
+              "id": "jlpt-n2-2025-12-m2-q3__jlpt-n2-2025-12-m2-q3-t4-s1",
               "order": 7,
               "speaker_id": "narrator",
               "start_ms": 895375,
@@ -2282,10 +2298,10 @@
                 "en": "Correct: she says she placed importance on whether there were days when she could work from home."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m2-q4-t5-s1",
-                "jlpt-n2-2025-12-m2-q4-t5-s2",
-                "jlpt-n2-2025-12-m2-q4-t5-s3",
-                "jlpt-n2-2025-12-m2-q4-t5-s4"
+                "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s1",
+                "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s2",
+                "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s3",
+                "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s4"
               ]
             },
             {
@@ -2316,13 +2332,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m2-q4",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại trường đại học, một nam sinh đang nói chuyện với đàn chị đã tốt nghiệp. Người đàn chị nói cô chọn công ty hiện tại dựa trên điểm nào?\nNam: Chị ơi, em sắp bắt đầu hoạt động tìm việc và đang thắc mắc mọi người chọn công ty theo tiêu chí gì.\nNữ: Ono, em muốn làm ở công ty như thế nào?\nNam: Em nghĩ lương càng cao càng tốt.\nNữ: Vậy à. Chị thì coi trọng việc có ngày được làm tại nhà. Chị nghĩ ở nhà tập trung làm việc tốt hơn, với lại thời gian đi lại cũng phí.\nNam: Ồ, vậy sao.\nNữ: Bạn chị có người chọn vì có cơ hội làm việc ở nước ngoài. Cũng có người muốn đời sống ngoài công việc phong phú nên lấy tiêu chí có thể nghỉ linh hoạt hay không.\nNam: Vậy à? Còn chị bây giờ thấy thế nào?\nNữ: Ừ, chị hài lòng vì có thể làm việc đúng nhịp như đã hình dung.\nNgười dẫn: Người đàn chị nói cô chọn công ty hiện tại dựa trên điểm nào?",
             "en": "Narrator: At a university, a male student is talking with a female senior who has already graduated. What factor does she say she used to choose her current company?\nMan: I’m about to start job hunting, and I’ve been wondering what criteria everyone uses to choose a company.\nWoman: Ono, what kind of company do you want to work for?\nMan: I guess the higher the salary, the better.\nWoman: I see. I placed importance on whether I could work from home on some days. I thought I could concentrate better at home, and commuting time felt like a waste too.\nMan: Oh, really?\nWoman: One of my friends chose a company because it offered opportunities to work overseas. Another person wanted a fulfilling life outside work, so they used how flexibly they could take time off as a criterion.\nMan: I see. And how is it for you now?\nWoman: I’m satisfied. I can work at the pace I imagined.\nNarrator: What factor does the female graduate say she used to choose her current company?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t1-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 918500,
@@ -2334,7 +2352,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t1-s2",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 926025,
@@ -2346,7 +2364,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t2-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 934728,
@@ -2358,7 +2376,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t3-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t3-s1",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 949675,
@@ -2370,7 +2388,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t4-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t4-s1",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 955588,
@@ -2382,7 +2400,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t4-s2",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t4-s2",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 957485,
@@ -2394,7 +2412,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t5-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s1",
               "order": 7,
               "speaker_id": "female_1",
               "start_ms": 962143,
@@ -2406,7 +2424,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t5-s2",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s2",
               "order": 8,
               "speaker_id": "female_1",
               "start_ms": 964291,
@@ -2418,7 +2436,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t5-s3",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s3",
               "order": 9,
               "speaker_id": "female_1",
               "start_ms": 969702,
@@ -2430,7 +2448,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t5-s4",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t5-s4",
               "order": 10,
               "speaker_id": "female_1",
               "start_ms": 975615,
@@ -2442,7 +2460,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t6-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t6-s1",
               "order": 11,
               "speaker_id": "male_1",
               "start_ms": 979520,
@@ -2454,7 +2472,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t7-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t7-s1",
               "order": 12,
               "speaker_id": "female_1",
               "start_ms": 982923,
@@ -2466,7 +2484,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t7-s2",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t7-s2",
               "order": 13,
               "speaker_id": "female_1",
               "start_ms": 990091,
@@ -2478,7 +2496,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t8-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t8-s1",
               "order": 14,
               "speaker_id": "male_1",
               "start_ms": 1003784,
@@ -2490,7 +2508,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t8-s2",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t8-s2",
               "order": 15,
               "speaker_id": "male_1",
               "start_ms": 1006183,
@@ -2502,7 +2520,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t9-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t9-s1",
               "order": 16,
               "speaker_id": "female_1",
               "start_ms": 1010088,
@@ -2514,7 +2532,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t9-s2",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t9-s2",
               "order": 17,
               "speaker_id": "female_1",
               "start_ms": 1011734,
@@ -2526,7 +2544,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q4-t10-s1",
+              "id": "jlpt-n2-2025-12-m2-q4__jlpt-n2-2025-12-m2-q4-t10-s1",
               "order": 18,
               "speaker_id": "narrator",
               "start_ms": 1018659,
@@ -2590,9 +2608,9 @@
                 "en": "Correct: the ad saying the pizza would be discontinued unless it reached the top five caused orders to increase sharply."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m2-q5-t6-s1",
-                "jlpt-n2-2025-12-m2-q5-t6-s2",
-                "jlpt-n2-2025-12-m2-q5-t6-s3"
+                "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t6-s1",
+                "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t6-s2",
+                "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t6-s3"
               ]
             },
             {
@@ -2623,13 +2641,15 @@
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m2-q5",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Trên truyền hình, một phát thanh viên nam và nữ giám đốc cửa hàng pizza đang nói chuyện. Giám đốc nói đã làm thế nào để tăng doanh số pizza dứa?\nNam: Hôm nay chúng tôi trò chuyện với giám đốc Sato của South Pizza. Pizza dứa của South Pizza hiện đang tăng doanh số. Món này vốn đã có trong thực đơn phải không?\nNữ: Vâng. Nhưng trong 15 loại pizza của công ty, mỗi tháng nó luôn bán ít nhất.\nNam: Vậy sao?\nNữ: Nhưng nhân viên rất thích nên chúng tôi muốn khách thử trước. Có nhiều ý kiến như tặng đồ uống miễn phí, nhưng tôi nghĩ nếu quảng cáo không đủ gây ấn tượng thì khách cũng sẽ không gọi món.\nNam: Vì vậy quảng cáo ghi “Nguy cơ biến mất! Nếu doanh số không vào top 5, chúng tôi sẽ ngừng bán!” đúng không?\nNữ: Đúng vậy. Sau đó số người đặt món tăng mạnh.\nNam: Nghe nói còn có một idol nổi tiếng quay video ăn pizza này rồi đăng lên.\nNữ: Vâng, chúng tôi rất vui. Để cảm ơn khách, trong một tuần từ tuần sau pizza dứa sẽ được bán nửa giá, mong mọi người ghé.\nNgười dẫn: Giám đốc nói đã làm thế nào để tăng doanh số pizza dứa?",
             "en": "Narrator: On television, a male announcer and the female president of a pizza company are talking. How does the president say she increased sales of pineapple pizza?\nMan: Today we’re speaking with President Sato of South Pizza. Sales of South Pizza’s pineapple pizza are currently growing. This pizza was already on the menu originally, wasn’t it?\nWoman: Yes. But among our fifteen pizzas, it used to sell the fewest every month.\nMan: Really?\nWoman: Our staff liked it, though, so we wanted customers to try it first. People suggested things like including a free drink, but I thought customers wouldn’t even order it unless the advertisement made a strong impression.\nMan: So you put, “In danger of disappearing! If it doesn’t make the top five in sales, we’ll stop selling it!” in the ad.\nWoman: Exactly. After that, the number of orders jumped.\nMan: I heard a popular idol also filmed and posted a video of themselves eating the pizza.\nWoman: Yes, we’re delighted. As a thank-you to our customers, we’ll offer the pineapple pizza at half price for one week starting next week, so please come by.\nNarrator: How does the company president say she increased sales of pineapple pizza?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t1-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 1042600,
@@ -2641,7 +2661,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t1-s2",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 1051597,
@@ -2653,7 +2673,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t2-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 1062361,
@@ -2665,7 +2685,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t2-s2",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t2-s2",
               "order": 4,
               "speaker_id": "male_1",
               "start_ms": 1067412,
@@ -2677,7 +2697,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t2-s3",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t2-s3",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 1075036,
@@ -2689,7 +2709,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t3-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t3-s1",
               "order": 6,
               "speaker_id": "female_1",
               "start_ms": 1080516,
@@ -2701,7 +2721,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t3-s2",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t3-s2",
               "order": 7,
               "speaker_id": "female_1",
               "start_ms": 1081923,
@@ -2713,7 +2733,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t4-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t4-s1",
               "order": 8,
               "speaker_id": "male_1",
               "start_ms": 1089976,
@@ -2725,7 +2745,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t5-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t5-s1",
               "order": 9,
               "speaker_id": "female_1",
               "start_ms": 1092026,
@@ -2737,7 +2757,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t5-s2",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t5-s2",
               "order": 10,
               "speaker_id": "female_1",
               "start_ms": 1100294,
@@ -2749,7 +2769,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t6-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t6-s1",
               "order": 11,
               "speaker_id": "male_1",
               "start_ms": 1113493,
@@ -2761,7 +2781,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t6-s2",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t6-s2",
               "order": 12,
               "speaker_id": "male_1",
               "start_ms": 1115972,
@@ -2773,7 +2793,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t6-s3",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t6-s3",
               "order": 13,
               "speaker_id": "male_1",
               "start_ms": 1121667,
@@ -2785,7 +2805,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t7-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t7-s1",
               "order": 14,
               "speaker_id": "female_1",
               "start_ms": 1124789,
@@ -2797,7 +2817,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t7-s2",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t7-s2",
               "order": 15,
               "speaker_id": "female_1",
               "start_ms": 1126624,
@@ -2809,7 +2829,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t8-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t8-s1",
               "order": 16,
               "speaker_id": "male_1",
               "start_ms": 1131890,
@@ -2821,7 +2841,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t9-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t9-s1",
               "order": 17,
               "speaker_id": "female_1",
               "start_ms": 1139300,
@@ -2833,7 +2853,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t9-s2",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t9-s2",
               "order": 18,
               "speaker_id": "female_1",
               "start_ms": 1141779,
@@ -2845,7 +2865,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q5-t10-s1",
+              "id": "jlpt-n2-2025-12-m2-q5__jlpt-n2-2025-12-m2-q5-t10-s1",
               "order": 19,
               "speaker_id": "narrator",
               "start_ms": 1151983,
@@ -2935,21 +2955,23 @@
                 "en": "Correct: he says that learning a wide range of things through movies is their greatest appeal for him."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m2-q6-t2-s1",
-                "jlpt-n2-2025-12-m2-q6-t2-s2",
-                "jlpt-n2-2025-12-m2-q6-t2-s3",
-                "jlpt-n2-2025-12-m2-q6-t2-s4"
+                "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s1",
+                "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s2",
+                "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s3",
+                "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s4"
               ]
             }
           ],
           "choice_display_mode": "text",
+          "listening_unit_id": "jlpt-n2-2025-12-m2-q6",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Trên radio, một người đàn ông nói về phim. Anh nói sức hấp dẫn lớn nhất của phim đối với mình là gì?\nNam: Phim rất dễ trở thành chủ đề chung khi trò chuyện nhỉ. Khi buồn, xem một bộ phim buồn, khóc thật nhiều rồi thấy nhẹ nhõm cũng là một cách đổi tâm trạng. Có người thích phim vì có cảm giác như được trải nghiệm cuộc đời nhân vật, nhưng với tôi, hơn việc đồng cảm với cảm xúc của nhân vật chính, điều hấp dẫn nhất là có thể thu nhận rất nhiều loại kiến thức qua phim. Từ vấn đề xã hội, cách phối đồ đẹp cho đến cách xử lý khi gặp tình huống khó, đều có thể học được.\nNgười dẫn: Anh nói sức hấp dẫn lớn nhất của phim đối với mình là gì?",
             "en": "Narrator: On the radio, a man is talking about movies. What does he say is the greatest appeal of movies for him?\nMan: Movies are easy to bring up as a common topic in casual conversation, aren’t they? And when you’re feeling down, watching a sad movie, crying your heart out, and feeling refreshed afterward can be a good change of mood. Some people say they like movies because they can feel as if they have experienced the lives of the characters. But for me, rather than identifying with the main character’s emotions, the greatest appeal is being able to acquire all kinds of knowledge through movies. You can learn about everything from social issues to stylish ways of coordinating clothes and how to respond in a crisis.\nNarrator: What does the man say is the greatest appeal of movies for him?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m2-q6-t1-s1",
+              "id": "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 1178100,
@@ -2961,7 +2983,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q6-t1-s2",
+              "id": "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t1-s2",
               "order": 2,
               "speaker_id": "narrator",
               "start_ms": 1184742,
@@ -2973,7 +2995,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q6-t2-s1",
+              "id": "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 1194328,
@@ -2985,7 +3007,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q6-t2-s2",
+              "id": "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s2",
               "order": 4,
               "speaker_id": "male_1",
               "start_ms": 1202557,
@@ -2997,7 +3019,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q6-t2-s3",
+              "id": "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s3",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 1218277,
@@ -3009,7 +3031,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q6-t2-s4",
+              "id": "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t2-s4",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 1247827,
@@ -3021,7 +3043,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m2-q6-t3-s1",
+              "id": "jlpt-n2-2025-12-m2-q6__jlpt-n2-2025-12-m2-q6-t3-s1",
               "order": 7,
               "speaker_id": "narrator",
               "start_ms": 1259515,
@@ -3059,7 +3081,7 @@
         {
           "id": "jlpt-n2-2025-12-m3-q1",
           "order": 1,
-          "type": "conversation",
+          "type": "listening_multiple_choice",
           "audio": {
             "start_ms": 1315610,
             "end_ms": 1437660
@@ -3069,14 +3091,70 @@
             "vi": "Người đàn ông đang nói về điều gì?",
             "en": "What is the man talking about?"
           },
-          "choice_display_mode": "text",
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "性格に合わせた片付け方。",
+                "vi": "Cách dọn dẹp phù hợp với tính cách.",
+                "en": "Tidying methods suited to one’s personality."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: monologue không nói về cách dọn theo từng tính cách.",
+                "en": "Incorrect: not about personality-based tidying methods."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "片付けを苦手にかんじる理由。",
+                "vi": "Lý do cảm thấy khó dọn dẹp.",
+                "en": "Reasons people find tidying difficult."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chỉ nhắc mở đầu “khó dọn”, không phân tích lý do chính.",
+                "en": "Incorrect: difficulty is only a lead-in, not the main point."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "片付けの効果。",
+                "vi": "Hiệu quả của việc dọn dẹp.",
+                "en": "The effects of tidying up."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: ông nêu các hiệu quả như đổi tâm trạng, tăng tập trung, giảm lãng phí thời gian và tránh mua trùng đồ.",
+                "en": "Correct: he lists effects such as refreshing mood, better focus, less wasted time, and not buying duplicates."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "短い時間でうまく片付ける方法。",
+                "vi": "Cách dọn dẹp hiệu quả trong thời gian ngắn.",
+                "en": "How to tidy effectively in a short time."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không dạy mẹo dọn nhanh.",
+                "en": "Incorrect: no quick-tidying method is given."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m3-q1",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Trên radio, một người đàn ông đang nói.\nNam: Có nhiều người không giỏi dọn phòng và cứ trì hoãn, tôi cũng vậy. Nhưng khi sắp xếp phòng gọn gàng, ta thấy nhẹ nhõm và có thể đổi tâm trạng. Nếu đồ đạc được sắp xếp, ta tập trung vào công việc hoặc học tập hơn, giảm lãng phí thời gian. Cũng tránh việc không tìm thấy thứ cần nên lại mua thêm một món giống hệt. Chỉ việc dọn dẹp thôi cũng có thể thay đổi tâm trạng và hiệu suất làm việc.\nNgười dẫn: Người đàn ông đang nói về điều gì?",
             "en": "Narrator: On the radio, a man is speaking.\nMan: A lot of people are bad at tidying their rooms and keep putting it off. I’m the same. But when you get your room in order, you can feel refreshed and reset your mood. If your belongings are organized, you can concentrate better on work or study and waste less time. It also prevents situations where you can’t find something you need and end up buying the same thing again. Simply tidying up can change your mood and improve your efficiency at work.\nNarrator: What is the man talking about?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t1-s1",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 1315610,
@@ -3088,7 +3166,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t2-s1",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t2-s1",
               "order": 2,
               "speaker_id": "male_1",
               "start_ms": 1324320,
@@ -3100,7 +3178,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t2-s2",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t2-s2",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 1331978,
@@ -3112,7 +3190,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t2-s3",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t2-s3",
               "order": 4,
               "speaker_id": "male_1",
               "start_ms": 1345422,
@@ -3124,7 +3202,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t2-s4",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t2-s4",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 1349925,
@@ -3136,7 +3214,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t2-s5",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t2-s5",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 1369154,
@@ -3148,7 +3226,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t2-s6",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t2-s6",
               "order": 7,
               "speaker_id": "male_1",
               "start_ms": 1389435,
@@ -3160,7 +3238,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t2-s7",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t2-s7",
               "order": 8,
               "speaker_id": "male_1",
               "start_ms": 1411820,
@@ -3172,7 +3250,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q1-t3-s1",
+              "id": "jlpt-n2-2025-12-m3-q1__jlpt-n2-2025-12-m3-q1-t3-s1",
               "order": 9,
               "speaker_id": "narrator",
               "start_ms": 1427893,
@@ -3199,7 +3277,7 @@
         {
           "id": "jlpt-n2-2025-12-m3-q2",
           "order": 2,
-          "type": "conversation",
+          "type": "listening_multiple_choice",
           "audio": {
             "start_ms": 1445840,
             "end_ms": 1535300
@@ -3209,14 +3287,70 @@
             "vi": "Người đàn ông nhận xét thế nào về khóa đào tạo mình đã tham gia?",
             "en": "What does the man say about the training course he attended?"
           },
-          "choice_display_mode": "text",
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "前半も後半も満足した。",
+                "vi": "Hài lòng cả nửa đầu lẫn nửa sau.",
+                "en": "Satisfied with both the first and second halves."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nửa đầu (bài giảng) khiến anh thất vọng vì bị cắt ví dụ.",
+                "en": "Incorrect: he was disappointed with the lecture half."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "前半も後半も期待外れだった。",
+                "vi": "Cả nửa đầu và nửa sau đều không như kỳ vọng.",
+                "en": "Both halves fell short of expectations."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nửa sau (group work) anh thấy có ý nghĩa và đáng tham gia.",
+                "en": "Incorrect: he was satisfied with the group-work half."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "前半は満足したが、後半は期待外れだった。",
+                "vi": "Nửa đầu hài lòng nhưng nửa sau thất vọng.",
+                "en": "Satisfied with the first half but disappointed with the second."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: ngược với nội dung monologue.",
+                "en": "Incorrect: the opposite of what he says."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "前半は期待外れだったが、後半は満足した。",
+                "vi": "Nửa đầu không như kỳ vọng nhưng nửa sau hài lòng.",
+                "en": "Disappointed with the first half but satisfied with the second."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: bài giảng bị cắt ví dụ (kỳ vọng hụt) nhưng thảo luận nhóm sôi nổi, nhiều nhận thức, thấy xứng đáng tham gia.",
+                "en": "Correct: lecture examples were cut (disappointing) but group work was lively and worthwhile."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m3-q2",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại công ty, một phụ nữ và một đàn ông đang nói về khóa đào tạo.\nNữ: Khóa đào tạo lãnh đạo hôm qua thế nào?\nNam: Nửa đầu là bài giảng, nửa sau là hoạt động nhóm. Bài giảng khá chung chung. Tôi nghe nói cuối bài sẽ giới thiệu ví dụ cụ thể nên rất mong chờ, nhưng do thời gian nên phần đó bị cắt khá nhiều. Nửa sau chia nhóm, tôi trao đổi ý kiến với người ở nhiều bộ phận khác nhau; thảo luận rất sôi nổi và tôi nhận ra được nhiều điều. Tôi thấy tham gia là đáng.\nNgười dẫn: Người đàn ông nhận xét thế nào về khóa đào tạo mình đã tham gia?",
             "en": "Narrator: At a company, a woman and a man are talking about a training course.\nWoman: How was yesterday’s leadership training?\nMan: The first half was a lecture and the second half was group work. The lecture was fairly general. I had heard there would be concrete examples at the end, so I was looking forward to them, but because of time constraints that part was cut quite a bit. In the second half, we split into groups and exchanged opinions with people from different departments. The discussion was very active, and I gained a lot of new insights. I think it was worth attending.\nNarrator: What does the man say about the training course he attended?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t1-s1",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 1450040,
@@ -3228,7 +3362,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t2-s1",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t2-s1",
               "order": 2,
               "speaker_id": "female_1",
               "start_ms": 1458881,
@@ -3240,7 +3374,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t3-s1",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t3-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 1464955,
@@ -3252,7 +3386,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t3-s2",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t3-s2",
               "order": 4,
               "speaker_id": "male_1",
               "start_ms": 1473796,
@@ -3264,7 +3398,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t3-s3",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t3-s3",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 1479178,
@@ -3276,7 +3410,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t3-s4",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t3-s4",
               "order": 6,
               "speaker_id": "male_1",
               "start_ms": 1497704,
@@ -3288,7 +3422,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t3-s5",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t3-s5",
               "order": 7,
               "speaker_id": "male_1",
               "start_ms": 1519689,
@@ -3300,7 +3434,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q2-t4-s1",
+              "id": "jlpt-n2-2025-12-m3-q2__jlpt-n2-2025-12-m3-q2-t4-s1",
               "order": 8,
               "speaker_id": "narrator",
               "start_ms": 1525763,
@@ -3327,7 +3461,7 @@
         {
           "id": "jlpt-n2-2025-12-m3-q3",
           "order": 3,
-          "type": "conversation",
+          "type": "listening_multiple_choice",
           "audio": {
             "start_ms": 1543400,
             "end_ms": 1635100
@@ -3337,14 +3471,70 @@
             "vi": "Chuyên gia đang nói về điều gì?",
             "en": "What is the expert talking about?"
           },
-          "choice_display_mode": "text",
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "親と子供が共に学ぶ必要性。",
+                "vi": "Sự cần thiết để cha mẹ và con cùng học.",
+                "en": "The need for parents and children to learn together."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không bàn về học cùng nhau.",
+                "en": "Incorrect: not about co-learning."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "親が子供を褒めるタイミング。",
+                "vi": "Thời điểm cha mẹ khen ngợi con.",
+                "en": "When parents should praise their children."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không chỉ nói về “timing khen”, mà về cách chú ý kèm công nhận nỗ lực.",
+                "en": "Incorrect: not merely praise timing."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "親が子供を叱ることのデメリット。",
+                "vi": "Mặt xấu khi cha mẹ mắng con.",
+                "en": "Disadvantages of parents scolding children."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không liệt kê nhược điểm của việc mắng mỏ.",
+                "en": "Incorrect: not about downsides of scolding."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "親が子供を注意する時、気をつけること。",
+                "vi": "Những điểm cần lưu ý khi cha mẹ nhắc nhở con.",
+                "en": "What parents should keep in mind when cautioning children."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: khi nhắc nhở nên nói cả phần con đã làm được; công nhận nỗ lực giúp con có cảm giác tích cực và dần hành động.",
+                "en": "Correct: when cautioning, also acknowledge what the child already does well and their effort."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m3-q3",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Tại một lớp học dành cho người dân, một chuyên gia đang nói.\nNữ: Tôi thường nhận tư vấn từ phụ huynh học sinh tiểu học rằng dù họ nhắc “Làm bài tập trước khi chơi game”, “Học hành cho tử tế”, trẻ vẫn không chịu hành động. Khi nhắc nhở, nên nói cả những điểm trẻ đã làm được rồi hướng sự chú ý tới phần chưa làm được. Ví dụ hãy chú ý đến nỗ lực học tập và nói “Vì con đã làm bài tập nên phần này con đã làm được rồi. Tiếp theo cố gắng phần này nhé.” Khi nhắc mà vẫn công nhận nỗ lực của trẻ, trẻ có thể có cảm giác tích cực về bản thân và dần dần sẽ hành động.\nNgười dẫn: Chuyên gia đang nói về điều gì?",
             "en": "Narrator: At a public lecture, an expert is speaking.\nWoman: I sometimes receive questions from parents of elementary school children who say that even when they tell their children, “Do your homework before playing games,” or “Study properly,” the children still do not act. When correcting a child, it is good to mention what they are already doing well and then direct their attention to what they still need to work on. For example, focus on their effort in studying and say, “Because you’ve been doing your homework, you can do this part now. Next, let’s work on this part.” By acknowledging the child’s effort while correcting them, the child can develop a positive sense of self and gradually begin to take action.\nNarrator: What is the expert talking about?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m3-q3-t1-s1",
+              "id": "jlpt-n2-2025-12-m3-q3__jlpt-n2-2025-12-m3-q3-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 1547600,
@@ -3356,7 +3546,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q3-t2-s1",
+              "id": "jlpt-n2-2025-12-m3-q3__jlpt-n2-2025-12-m3-q3-t2-s1",
               "order": 2,
               "speaker_id": "female_1",
               "start_ms": 1552770,
@@ -3368,7 +3558,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q3-t2-s2",
+              "id": "jlpt-n2-2025-12-m3-q3__jlpt-n2-2025-12-m3-q3-t2-s2",
               "order": 3,
               "speaker_id": "female_1",
               "start_ms": 1575898,
@@ -3380,7 +3570,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q3-t2-s3",
+              "id": "jlpt-n2-2025-12-m3-q3__jlpt-n2-2025-12-m3-q3-t2-s3",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 1590173,
@@ -3392,7 +3582,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q3-t2-s4",
+              "id": "jlpt-n2-2025-12-m3-q3__jlpt-n2-2025-12-m3-q3-t2-s4",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 1606742,
@@ -3404,7 +3594,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q3-t2-s5",
+              "id": "jlpt-n2-2025-12-m3-q3__jlpt-n2-2025-12-m3-q3-t2-s5",
               "order": 6,
               "speaker_id": "female_1",
               "start_ms": 1613152,
@@ -3416,7 +3606,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q3-t3-s1",
+              "id": "jlpt-n2-2025-12-m3-q3__jlpt-n2-2025-12-m3-q3-t3-s1",
               "order": 7,
               "speaker_id": "narrator",
               "start_ms": 1630051,
@@ -3443,7 +3633,7 @@
         {
           "id": "jlpt-n2-2025-12-m3-q4",
           "order": 4,
-          "type": "conversation",
+          "type": "listening_multiple_choice",
           "audio": {
             "start_ms": 1643200,
             "end_ms": 1732100
@@ -3453,14 +3643,70 @@
             "vi": "Người phụ nữ đang nói về điều gì?",
             "en": "What is the woman talking about?"
           },
-          "choice_display_mode": "text",
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "液体石けんが選ばれる理由。",
+                "vi": "Lý do xà phòng lỏng được chọn.",
+                "en": "Why liquid soap is chosen."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cô từng dùng loại lỏng nhưng trọng tâm là ưu điểm xà phòng cứng.",
+                "en": "Incorrect: liquid soap is only background."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "人気のある石けんの種類。",
+                "vi": "Các loại xà phòng đang phổ biến.",
+                "en": "Popular types of soap."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chỉ liệt kê qua các loại, không xếp hạng phổ biến.",
+                "en": "Incorrect: types are listed briefly, not ranked by popularity."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "固形石けんのいいところ。",
+                "vi": "Những điểm tốt của xà phòng bánh (cứng).",
+                "en": "The good points of bar soap."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: hình dáng/màu đa dạng, lượng chất tẩy (純石けん分) cao, không cần chai nhựa nên thân thiện môi trường.",
+                "en": "Correct: various shapes/colors, high cleansing power, no plastic bottle so eco-friendly."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "目的に合わせた石けんの選び方。",
+                "vi": "Cách chọn xà phòng theo mục đích.",
+                "en": "How to choose soap according to purpose."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không hướng dẫn chọn theo mục đích dùng.",
+                "en": "Incorrect: no purpose-based selection guide."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m3-q4",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Trên radio, một phụ nữ đang nói.\nNữ: Xà phòng có loại lỏng, dạng bánh, dạng bọt... Mọi người dùng loại nào? Trước đây tôi dùng xà phòng lỏng nhưng gần đây dùng dạng bánh. Có nhiều hình dạng và màu sắc như vuông, tròn, hình động vật nên nhìn cũng thú vị. Xà phòng dạng bánh chứa nhiều thành phần xà phòng nguyên chất nên khả năng làm sạch cao. Hơn nữa không cần chai nhựa nên cũng thân thiện với môi trường.\nNgười dẫn: Người phụ nữ đang nói về điều gì?",
             "en": "Narrator: On the radio, a woman is speaking.\nWoman: There are liquid soaps, bar soaps, foaming soaps, and so on. What kind do you use? I used to use liquid soap, but recently I’ve been using bar soap. It comes in many shapes and colors—square, round, animal-shaped—so it is visually enjoyable too. Bar soap contains a high proportion of pure soap ingredients, so it has strong cleaning power. And because it doesn’t need a plastic container, it’s environmentally friendly as well.\nNarrator: What is the woman talking about?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t1-s1",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 1647400,
@@ -3472,7 +3718,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t2-s1",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t2-s1",
               "order": 2,
               "speaker_id": "female_1",
               "start_ms": 1653486,
@@ -3484,7 +3730,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t2-s2",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t2-s2",
               "order": 3,
               "speaker_id": "female_1",
               "start_ms": 1665451,
@@ -3496,7 +3742,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t2-s3",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t2-s3",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 1672639,
@@ -3508,7 +3754,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t2-s4",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t2-s4",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 1686441,
@@ -3520,7 +3766,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t2-s5",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t2-s5",
               "order": 6,
               "speaker_id": "female_1",
               "start_ms": 1698773,
@@ -3532,7 +3778,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t2-s6",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t2-s6",
               "order": 7,
               "speaker_id": "female_1",
               "start_ms": 1712943,
@@ -3544,7 +3790,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q4-t3-s1",
+              "id": "jlpt-n2-2025-12-m3-q4__jlpt-n2-2025-12-m3-q4-t3-s1",
               "order": 8,
               "speaker_id": "narrator",
               "start_ms": 1725275,
@@ -3571,7 +3817,7 @@
         {
           "id": "jlpt-n2-2025-12-m3-q5",
           "order": 5,
-          "type": "conversation",
+          "type": "listening_multiple_choice",
           "audio": {
             "start_ms": 1740200,
             "end_ms": 1854750
@@ -3581,14 +3827,70 @@
             "vi": "Người nông dân đang nói về điều gì?",
             "en": "What is the farmer talking about?"
           },
-          "choice_display_mode": "text",
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "農業を長く続けることの大切さ。",
+                "vi": "Sự quan trọng của việc làm nông lâu dài.",
+                "en": "The importance of continuing farming for a long time."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không nhấn mạnh “tiếp tục lâu dài” như chủ đề chính.",
+                "en": "Incorrect: long-term continuity is not the main topic."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "農業体験会を行う目的。",
+                "vi": "Mục đích tổ chức buổi trải nghiệm nông nghiệp.",
+                "en": "The purpose of holding farm-experience events."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: muốn người tham gia chạm đất/rau, cảm nhận thiên nhiên; coi trải nghiệm là cửa vào để biết nông nghiệp.",
+                "en": "Correct: let people touch soil and produce, feel nature, and use the event as a gateway to farming."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "美味しい野菜を作る努力。",
+                "vi": "Nỗ lực trồng rau ngon.",
+                "en": "Efforts to grow delicious vegetables."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: có khen món ăn từ rau nhưng không phải chủ đề chính của anh.",
+                "en": "Incorrect: delicious vegetables are incidental."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "田舎に住むことのメリット。",
+                "vi": "Lợi ích của việc sống ở quê.",
+                "en": "Benefits of living in the countryside."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: mời người đến trải nghiệm nông thôn chứ không bàn lợi ích cư trú.",
+                "en": "Incorrect: not about merits of rural residence."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m3-q5",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Người dẫn: Trên truyền hình, nữ phát thanh viên và một người nông dân đang nói chuyện.\nNữ: Anh Yamamoto bắt đầu làm nông ở làng Sakura mười năm trước, hiện còn tổ chức các buổi trải nghiệm nông nghiệp và nghe nói rất được yêu thích.\nNam: Vâng. Chủ yếu là các gia đình có trẻ nhỏ và người trẻ sống ở thành phố tham gia. Chúng tôi nhận được những cảm nghĩ như “Làm việc ngoài ruộng rất vui”, “Tôi đã hiểu công việc của nông dân”. Tôi bắt đầu vì muốn mọi người có trải nghiệm và cảm xúc như vậy nên rất vui.\nNữ: Vậy à.\nNam: Bản thân tôi trước đây cũng từng tham gia một buổi trải nghiệm nông nghiệp và trải nghiệm đó đã dẫn tới hiện tại. Trước hết tôi muốn mọi người cứ thoải mái tham gia, ở vùng quê này chạm vào đất và rau, cảm nhận sức mạnh của thiên nhiên.\nNữ: Vậy à. Món ăn từ rau anh vừa cho chúng tôi cũng rất ngon.\nNam: Cảm ơn. Tôi mong trải nghiệm ở đây trở thành cánh cửa để mọi người biết đến nông nghiệp.\nNgười dẫn: Người nông dân đang nói về điều gì?",
             "en": "Narrator: On television, a female announcer and a male farmer are talking.\nWoman: Mr. Yamamoto, I understand you started farming in Sakura Village ten years ago, and now you also hold farm-experience events that are very popular.\nMan: Yes. Most participants are families with children and young people who live in cities. We receive comments such as, “Working in the fields was fun,” and “I learned what a farmer’s job is like.” I started these events because I wanted people to have experiences and feelings like that, so I’m very happy.\nWoman: I see.\nMan: I myself once took part in a farm-experience event, and that experience led me to where I am today. First of all, I want people to feel free to join, touch the soil and vegetables here in the countryside, and experience the power of nature.\nWoman: I see. The dish made with the vegetables you gave us earlier was delicious too.\nMan: Thank you. I hope the experience here can become a gateway for people to learn about agriculture.\nNarrator: What is the farmer talking about?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t1-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t1-s1",
               "order": 1,
               "speaker_id": "narrator",
               "start_ms": 1744400,
@@ -3600,7 +3902,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t2-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t2-s1",
               "order": 2,
               "speaker_id": "female_1",
               "start_ms": 1753692,
@@ -3612,7 +3914,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t3-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t3-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 1767988,
@@ -3624,7 +3926,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t3-s2",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t3-s2",
               "order": 4,
               "speaker_id": "male_1",
               "start_ms": 1769771,
@@ -3636,7 +3938,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t3-s3",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t3-s3",
               "order": 5,
               "speaker_id": "male_1",
               "start_ms": 1789222,
@@ -3648,7 +3950,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t4-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t4-s1",
               "order": 6,
               "speaker_id": "female_1",
               "start_ms": 1799975,
@@ -3660,7 +3962,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t5-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t5-s1",
               "order": 7,
               "speaker_id": "male_1",
               "start_ms": 1802030,
@@ -3672,7 +3974,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t5-s2",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t5-s2",
               "order": 8,
               "speaker_id": "male_1",
               "start_ms": 1812783,
@@ -3684,7 +3986,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t6-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t6-s1",
               "order": 9,
               "speaker_id": "female_1",
               "start_ms": 1827069,
@@ -3696,7 +3998,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t6-s2",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t6-s2",
               "order": 10,
               "speaker_id": "female_1",
               "start_ms": 1829668,
@@ -3708,7 +4010,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t7-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t7-s1",
               "order": 11,
               "speaker_id": "male_1",
               "start_ms": 1837431,
@@ -3720,7 +4022,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t7-s2",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t7-s2",
               "order": 12,
               "speaker_id": "male_1",
               "start_ms": 1840845,
@@ -3732,7 +4034,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m3-q5-t8-s1",
+              "id": "jlpt-n2-2025-12-m3-q5__jlpt-n2-2025-12-m3-q5-t8-s1",
               "order": 13,
               "speaker_id": "narrator",
               "start_ms": 1848885,
@@ -3820,18 +4122,20 @@
                 "en": "Correct: this is a natural response to the suggestion of eating near the bookstore they are already going to."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q1-t1-s1"
+                "jlpt-n2-2025-12-m4-q1__jlpt-n2-2025-12-m4-q1-t1-s1"
               ]
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q1",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Hôm nay trên đường về, nhân tiện đi hiệu sách thì đi ăn luôn nhé?\n1. Vậy là đổi ngày đi hiệu sách nhỉ.\n2. Ơ, không cần đi hiệu sách nữa à?\n3. Ừ, tôi biết một quán ngon gần hiệu sách.",
             "en": "Statement: Hey, on the way home today, since we’re going to the bookstore anyway, want to get something to eat too?\n1. So we’re changing the day we go to the bookstore, right?\n2. Oh, so we don’t need to go to the bookstore anymore?\n3. Sure, I know a good place near the bookstore."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q1-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q1__jlpt-n2-2025-12-m4-q1-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 1890120,
@@ -3843,7 +4147,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q1-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q1__jlpt-n2-2025-12-m4-q1-t2-s1",
               "order": 2,
               "speaker_id": "choice_1",
               "start_ms": 1899512,
@@ -3855,7 +4159,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q1-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q1__jlpt-n2-2025-12-m4-q1-t3-s1",
               "order": 3,
               "speaker_id": "choice_2",
               "start_ms": 1905837,
@@ -3867,7 +4171,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q1-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q1__jlpt-n2-2025-12-m4-q1-t4-s1",
               "order": 4,
               "speaker_id": "choice_3",
               "start_ms": 1912162,
@@ -3944,19 +4248,21 @@
                 "en": "Correct: asking about the deadline is a natural response to a request to review the document."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q2-t1-s1",
-                "jlpt-n2-2025-12-m4-q2-t1-s2"
+                "jlpt-n2-2025-12-m4-q2__jlpt-n2-2025-12-m4-q2-t1-s1",
+                "jlpt-n2-2025-12-m4-q2__jlpt-n2-2025-12-m4-q2-t1-s2"
               ]
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q2",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Trưởng phòng, đây là bản kế hoạch sản phẩm mới mùa xuân, anh/chị có thể xem giúp được không?\n1. Tôi sẽ xem ngay cho bạn.\n2. Vậy tôi mang đến ngay nhé.\n3. Tôi cần xem trước khi nào?",
             "en": "Statement: Section chief, this is the proposal for the new spring product. Could you take a look at it?\n1. I’ll take a look at it right away.\n2. Then I’ll bring it over right now.\n3. By when do I need to look at it?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q2-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q2__jlpt-n2-2025-12-m4-q2-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 1931210,
@@ -3968,7 +4274,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q2-t1-s2",
+              "id": "jlpt-n2-2025-12-m4-q2__jlpt-n2-2025-12-m4-q2-t1-s2",
               "order": 2,
               "speaker_id": "prompt",
               "start_ms": 1933142,
@@ -3980,7 +4286,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q2-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q2__jlpt-n2-2025-12-m4-q2-t2-s1",
               "order": 3,
               "speaker_id": "choice_1",
               "start_ms": 1942139,
@@ -3992,7 +4298,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q2-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q2__jlpt-n2-2025-12-m4-q2-t3-s1",
               "order": 4,
               "speaker_id": "choice_2",
               "start_ms": 1945553,
@@ -4004,7 +4310,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q2-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q2__jlpt-n2-2025-12-m4-q2-t4-s1",
               "order": 5,
               "speaker_id": "choice_3",
               "start_ms": 1948967,
@@ -4068,7 +4374,7 @@
                 "en": "Correct: “I gave it everything I had” fits the idea that the speaker can feel satisfied with the match even though they lost."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q3-t1-s1"
+                "jlpt-n2-2025-12-m4-q3__jlpt-n2-2025-12-m4-q3-t1-s1"
               ]
             },
             {
@@ -4085,14 +4391,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q3",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Trận tennis hôm qua tuy thua nhưng tôi đã phát huy hết khả năng của mình.\n1. Đừng thất vọng quá.\n2. Vậy là một trận đấu khiến bạn thấy thỏa đáng nhỉ.\n3. Vậy là bạn đã không phát huy được như mong muốn nhỉ.",
             "en": "Statement: I lost yesterday’s tennis match, but I gave it everything I had.\n1. Don’t be too disappointed.\n2. Sounds like it was a match you could feel satisfied with.\n3. So you couldn’t play as well as you wanted."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q3-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q3__jlpt-n2-2025-12-m4-q3-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 1965500,
@@ -4104,7 +4412,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q3-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q3__jlpt-n2-2025-12-m4-q3-t2-s1",
               "order": 2,
               "speaker_id": "choice_1",
               "start_ms": 1974792,
@@ -4116,7 +4424,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q3-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q3__jlpt-n2-2025-12-m4-q3-t3-s1",
               "order": 3,
               "speaker_id": "choice_2",
               "start_ms": 1979079,
@@ -4128,7 +4436,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q3-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q3__jlpt-n2-2025-12-m4-q3-t4-s1",
               "order": 4,
               "speaker_id": "choice_3",
               "start_ms": 1982551,
@@ -4192,7 +4500,7 @@
                 "en": "Correct: this naturally accepts the request and asks about a convenient time."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q4-t1-s1"
+                "jlpt-n2-2025-12-m4-q4__jlpt-n2-2025-12-m4-q4-t1-s1"
               ]
             },
             {
@@ -4209,14 +4517,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q4",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Kimura, nếu bạn có thể tư vấn cho tôi về kế hoạch mới thì tôi rất cảm kích.\n1. Vậy là bạn đã được người ta lắng nghe rồi nhỉ.\n2. Được thôi. Khi nào thì tiện?\n3. Bạn vui thì tôi cũng vui.",
             "en": "Statement: Kimura, I’d really appreciate it if you could give me some advice about the new project.\n1. So they listened to you properly, then.\n2. Of course. When would be good for you?\n3. I’m glad you’re happy too."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q4-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q4__jlpt-n2-2025-12-m4-q4-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2000000,
@@ -4228,7 +4538,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q4-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q4__jlpt-n2-2025-12-m4-q4-t2-s1",
               "order": 2,
               "speaker_id": "choice_1",
               "start_ms": 2011058,
@@ -4240,7 +4550,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q4-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q4__jlpt-n2-2025-12-m4-q4-t3-s1",
               "order": 3,
               "speaker_id": "choice_2",
               "start_ms": 2016817,
@@ -4252,7 +4562,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q4-t3-s2",
+              "id": "jlpt-n2-2025-12-m4-q4__jlpt-n2-2025-12-m4-q4-t3-s2",
               "order": 4,
               "speaker_id": "choice_2",
               "start_ms": 2017804,
@@ -4264,7 +4574,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q4-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q4__jlpt-n2-2025-12-m4-q4-t4-s1",
               "order": 5,
               "speaker_id": "choice_3",
               "start_ms": 2019023,
@@ -4315,7 +4625,7 @@
                 "en": "Correct: ～ところでした means “almost” or “nearly,” so the speaker ultimately did make the flight."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q5-t1-s1"
+                "jlpt-n2-2025-12-m4-q5__jlpt-n2-2025-12-m4-q5-t1-s1"
               ]
             },
             {
@@ -4345,14 +4655,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q5",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Chuyến đi cuối tuần, xe buýt bị trễ nên tôi suýt lỡ chuyến bay về.\n1. May mà bạn đã kịp chuyến nhỉ.\n2. Cuối cùng bạn đã không lên được chuyến bay nhỉ.\n3. Vì vậy bạn đã về sớm nhỉ.",
             "en": "Statement: On my weekend trip, the bus was delayed and I almost missed my flight home.\n1. I’m glad you made it in time.\n2. So in the end you couldn’t get on the flight.\n3. So that’s why you came home early."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q5-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q5__jlpt-n2-2025-12-m4-q5-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2036200,
@@ -4364,7 +4676,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q5-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q5__jlpt-n2-2025-12-m4-q5-t2-s1",
               "order": 2,
               "speaker_id": "choice_1",
               "start_ms": 2046080,
@@ -4376,7 +4688,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q5-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q5__jlpt-n2-2025-12-m4-q5-t3-s1",
               "order": 3,
               "speaker_id": "choice_2",
               "start_ms": 2050367,
@@ -4388,7 +4700,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q5-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q5__jlpt-n2-2025-12-m4-q5-t4-s1",
               "order": 4,
               "speaker_id": "choice_3",
               "start_ms": 2054395,
@@ -4452,8 +4764,8 @@
                 "en": "Correct: this directly answers that the project is currently on schedule."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q6-t1-s1",
-                "jlpt-n2-2025-12-m4-q6-t1-s2"
+                "jlpt-n2-2025-12-m4-q6__jlpt-n2-2025-12-m4-q6-t1-s1",
+                "jlpt-n2-2025-12-m4-q6__jlpt-n2-2025-12-m4-q6-t1-s2"
               ]
             },
             {
@@ -4470,14 +4782,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q6",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Hayashi, việc phát triển game bạn phụ trách có đang tiến triển đúng lịch không?\n1. Hay là chúng ta đổi lịch nhé?\n2. Hiện tại chưa có chậm trễ.\n3. Vậy là từ giờ mới lập lịch nhỉ.",
             "en": "Statement: Hayashi, is development of the game you’re in charge of progressing according to schedule?\n1. Should we change the schedule?\n2. So far, there haven’t been any delays.\n3. So you’re going to make the schedule from now on."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q6-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q6__jlpt-n2-2025-12-m4-q6-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2071200,
@@ -4489,7 +4803,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q6-t1-s2",
+              "id": "jlpt-n2-2025-12-m4-q6__jlpt-n2-2025-12-m4-q6-t1-s2",
               "order": 2,
               "speaker_id": "prompt",
               "start_ms": 2073132,
@@ -4501,7 +4815,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q6-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q6__jlpt-n2-2025-12-m4-q6-t2-s1",
               "order": 3,
               "speaker_id": "choice_1",
               "start_ms": 2081835,
@@ -4513,7 +4827,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q6-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q6__jlpt-n2-2025-12-m4-q6-t3-s1",
               "order": 4,
               "speaker_id": "choice_2",
               "start_ms": 2084607,
@@ -4525,7 +4839,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q6-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q6__jlpt-n2-2025-12-m4-q6-t4-s1",
               "order": 5,
               "speaker_id": "choice_3",
               "start_ms": 2087379,
@@ -4576,9 +4890,9 @@
                 "en": "Correct: this directly answers that the speaker will make sure to finish by the deadline."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q7-t1-s1",
-                "jlpt-n2-2025-12-m4-q7-t1-s2",
-                "jlpt-n2-2025-12-m4-q7-t1-s3"
+                "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t1-s1",
+                "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t1-s2",
+                "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t1-s3"
               ]
             },
             {
@@ -4608,14 +4922,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q7",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Ono, hạn nộp luận văn của bạn là tuần sau đúng không? Có xoay xở kịp không?\n1. Dù sao tôi cũng sẽ làm cho kịp.\n2. Đúng là đáng lo nhỉ.\n3. Ơ, bạn được gia hạn à?",
             "en": "Statement: Ono, you said your graduation thesis is due next week, right? Do you think you can manage?\n1. No matter what, I’ll get it done in time.\n2. That’s worrying.\n3. Oh, did they extend your deadline?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q7-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2104900,
@@ -4627,7 +4943,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q7-t1-s2",
+              "id": "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t1-s2",
               "order": 2,
               "speaker_id": "prompt",
               "start_ms": 2106832,
@@ -4639,7 +4955,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q7-t1-s3",
+              "id": "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t1-s3",
               "order": 3,
               "speaker_id": "prompt",
               "start_ms": 2114946,
@@ -4651,7 +4967,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q7-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t2-s1",
               "order": 4,
               "speaker_id": "choice_1",
               "start_ms": 2117585,
@@ -4663,7 +4979,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q7-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t3-s1",
               "order": 5,
               "speaker_id": "choice_2",
               "start_ms": 2121327,
@@ -4675,7 +4991,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q7-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q7__jlpt-n2-2025-12-m4-q7-t4-s1",
               "order": 6,
               "speaker_id": "choice_3",
               "start_ms": 2123967,
@@ -4752,19 +5068,21 @@
                 "en": "Correct: this correctly understands that the meeting will take place after the speaker returns in the afternoon."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q8-t1-s1",
-                "jlpt-n2-2025-12-m4-q8-t1-s2"
+                "jlpt-n2-2025-12-m4-q8__jlpt-n2-2025-12-m4-q8-t1-s1",
+                "jlpt-n2-2025-12-m4-q8__jlpt-n2-2025-12-m4-q8-t1-s2"
               ]
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q8",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Aoki, về việc công bố sản phẩm mới, chiều nay sau khi tôi từ trụ sở chính về thì chúng ta họp nhé.\n1. À, vậy là nên họp trước khi anh/chị đi trụ sở chính nhỉ.\n2. À, hôm nay anh/chị sẽ không quay lại đây nhỉ.\n3. À, vậy là chiều nay sau khi anh/chị quay lại nhỉ.",
             "en": "Statement: Aoki, regarding the new product announcement, let’s have a meeting this afternoon as soon as I get back from headquarters.\n1. Oh, so it would be better to meet before you go to headquarters.\n2. Oh, so you won’t be coming back here today.\n3. Oh, so we’ll meet this afternoon after you come back."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q8-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q8__jlpt-n2-2025-12-m4-q8-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2140500,
@@ -4776,7 +5094,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q8-t1-s2",
+              "id": "jlpt-n2-2025-12-m4-q8__jlpt-n2-2025-12-m4-q8-t1-s2",
               "order": 2,
               "speaker_id": "prompt",
               "start_ms": 2142432,
@@ -4788,7 +5106,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q8-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q8__jlpt-n2-2025-12-m4-q8-t2-s1",
               "order": 3,
               "speaker_id": "choice_1",
               "start_ms": 2152607,
@@ -4800,7 +5118,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q8-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q8__jlpt-n2-2025-12-m4-q8-t3-s1",
               "order": 4,
               "speaker_id": "choice_2",
               "start_ms": 2158443,
@@ -4812,7 +5130,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q8-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q8__jlpt-n2-2025-12-m4-q8-t4-s1",
               "order": 5,
               "speaker_id": "choice_3",
               "start_ms": 2163567,
@@ -4876,7 +5194,7 @@
                 "en": "Correct: this correctly paraphrases the meaning of “regardless of age.”"
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q9-t1-s1"
+                "jlpt-n2-2025-12-m4-q9__jlpt-n2-2025-12-m4-q9-t1-s1"
               ]
             },
             {
@@ -4893,14 +5211,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q9",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Giải marathon thành phố lần này hình như ai cũng có thể tham gia, không phân biệt tuổi tác.\n1. À, vậy là có giới hạn tuổi nhỉ.\n2. Ơ, bao nhiêu tuổi cũng được à?\n3. Vậy là cha mẹ và con cái không thể cùng tham gia nhỉ.",
             "en": "Statement: It looks like anyone can take part in the upcoming city marathon regardless of age.\n1. Oh, so there is an age restriction.\n2. Oh, any age is okay?\n3. Then parents and children can’t participate together."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q9-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q9__jlpt-n2-2025-12-m4-q9-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2180100,
@@ -4912,7 +5232,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q9-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q9__jlpt-n2-2025-12-m4-q9-t2-s1",
               "order": 2,
               "speaker_id": "choice_1",
               "start_ms": 2189097,
@@ -4924,7 +5244,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q9-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q9__jlpt-n2-2025-12-m4-q9-t3-s1",
               "order": 3,
               "speaker_id": "choice_2",
               "start_ms": 2194267,
@@ -4936,7 +5256,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q9-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q9__jlpt-n2-2025-12-m4-q9-t4-s1",
               "order": 4,
               "speaker_id": "choice_3",
               "start_ms": 2199151,
@@ -4987,7 +5307,7 @@
                 "en": "Correct: 安いわりになかなかの味 means that despite the low price, the food was surprisingly good, so a positive response fits."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q10-t1-s1"
+                "jlpt-n2-2025-12-m4-q10__jlpt-n2-2025-12-m4-q10-t1-s1"
               ]
             },
             {
@@ -5017,14 +5337,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q10",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Quán cơm suất mới mở trước công ty, tuy giá rẻ mà vị khá ngon đấy.\n1. Rẻ mà ngon thì ngày nào cũng có thể ghé nhỉ.\n2. Ôi, vậy thì tiếc thật.\n3. Vậy là giá cả và hương vị tương xứng nhỉ.",
             "en": "Statement: The set-meal restaurant that opened in front of the company was pretty tasty considering how cheap it was.\n1. If it’s cheap and good, you could go there every day.\n2. Oh, that’s too bad.\n3. So the price and taste matched each other."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q10-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q10__jlpt-n2-2025-12-m4-q10-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2216500,
@@ -5036,7 +5358,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q10-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q10__jlpt-n2-2025-12-m4-q10-t2-s1",
               "order": 2,
               "speaker_id": "choice_1",
               "start_ms": 2226086,
@@ -5048,7 +5370,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q10-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q10__jlpt-n2-2025-12-m4-q10-t3-s1",
               "order": 3,
               "speaker_id": "choice_2",
               "start_ms": 2232434,
@@ -5060,7 +5382,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q10-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q10__jlpt-n2-2025-12-m4-q10-t4-s1",
               "order": 4,
               "speaker_id": "choice_3",
               "start_ms": 2236539,
@@ -5111,7 +5433,7 @@
                 "en": "Correct: 予想に反して means “contrary to expectations,” so a reaction of surprise is appropriate."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m4-q11-t1-s1"
+                "jlpt-n2-2025-12-m4-q11__jlpt-n2-2025-12-m4-q11-t1-s1"
               ]
             },
             {
@@ -5141,14 +5463,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m4-q11",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Câu: Game mới nhắm đến tuổi teen nhưng trái dự đoán lại được mọi lứa tuổi yêu thích nhỉ.\n1. Bất ngờ thật. Tại sao nhỉ?\n2. Vậy là bạn đã dự đoán kết quả này nhỉ.\n3. Kết quả khắc nghiệt hơn mong đợi nhỉ.",
             "en": "Statement: The newly released game was aimed at teenagers, but contrary to expectations it’s popular with people of all ages.\n1. That’s surprising. I wonder why.\n2. So you expected this result.\n3. So the result was tougher than you expected."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m4-q11-t1-s1",
+              "id": "jlpt-n2-2025-12-m4-q11__jlpt-n2-2025-12-m4-q11-t1-s1",
               "order": 1,
               "speaker_id": "prompt",
               "start_ms": 2252900,
@@ -5160,7 +5484,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q11-t2-s1",
+              "id": "jlpt-n2-2025-12-m4-q11__jlpt-n2-2025-12-m4-q11-t2-s1",
               "order": 2,
               "speaker_id": "choice_1",
               "start_ms": 2263958,
@@ -5172,7 +5496,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q11-t2-s2",
+              "id": "jlpt-n2-2025-12-m4-q11__jlpt-n2-2025-12-m4-q11-t2-s2",
               "order": 3,
               "speaker_id": "choice_1",
               "start_ms": 2266184,
@@ -5184,7 +5508,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q11-t3-s1",
+              "id": "jlpt-n2-2025-12-m4-q11__jlpt-n2-2025-12-m4-q11-t3-s1",
               "order": 4,
               "speaker_id": "choice_2",
               "start_ms": 2268549,
@@ -5196,7 +5520,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m4-q11-t4-s1",
+              "id": "jlpt-n2-2025-12-m4-q11__jlpt-n2-2025-12-m4-q11-t4-s1",
               "order": 5,
               "speaker_id": "choice_3",
               "start_ms": 2272895,
@@ -5271,11 +5595,11 @@
                 "en": "Correct: the manager chooses to keep the price the same and make the bread smaller because it seems more acceptable to customers."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2025-12-m5-q1-t4-s1",
-                "jlpt-n2-2025-12-m5-q1-t4-s2",
-                "jlpt-n2-2025-12-m5-q1-t9-s1",
-                "jlpt-n2-2025-12-m5-q1-t9-s2",
-                "jlpt-n2-2025-12-m5-q1-t9-s3"
+                "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t4-s1",
+                "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t4-s2",
+                "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t9-s1",
+                "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t9-s2",
+                "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t9-s3"
               ]
             },
             {
@@ -5305,14 +5629,16 @@
               }
             }
           ],
-          "choice_display_mode": "text",
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m5-q1",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Quản lý: Gần đây giá bột mì tăng, với cửa hàng nhỏ như chúng ta thì khó khăn. Có lẽ buộc phải tăng giá.\nNam: Bánh của chúng ta vốn rẻ hơn cửa hàng khác nên tôi nghĩ tăng thêm một chút cũng được.\nNữ: Hoặc giảm kích thước cũng là một cách. Khá nhiều khách mua bánh nhỏ vì nói lượng vừa đủ và dễ ăn.\nQuản lý: Ừm. Giữ nguyên giá và làm bánh nhỏ đi có lẽ khách của chúng ta sẽ ít phản ứng hơn.\nNữ: Vâng. Hoặc để không phải tăng giá, chúng ta rút ngắn giờ mở cửa để giảm chi phí thì sao?\nQuản lý: Không nhiều tiệm bánh mở đến 9 giờ tối như chúng ta nên khách rất thích; họ có thể mua bánh ngon trên đường đi làm về. Cũng không thể mở cửa muộn hơn nữa.\nNam: Đúng vậy.\nNam: Vậy đổi loại bột mì thì sao? Loại chúng ta luôn mua chất lượng tốt nhưng anh từng nói giá...\nQuản lý: Đắt thật, nhưng không dùng loại đó thì không tạo ra được hương vị của quán. Ừm... Vậy cứ chọn cách có vẻ khách của chúng ta dễ chấp nhận nhất.\nNgười dẫn: Cửa hàng này quyết định thay đổi điều gì?",
             "en": "Manager: Flour prices have been going up lately, and that’s tough for a small shop like ours. We may have no choice but to raise prices.\nMan: Our bread is cheaper than other shops to begin with, so I think a small price increase would be okay.\nWoman: Or making the bread smaller is another option. Quite a few customers buy the smaller breads and say the portion is just right and they’re easy to eat.\nManager: Hmm. Keeping the price the same and making the bread smaller might meet less resistance from our customers.\nWoman: Right. Or, to avoid raising prices, how about shortening our business hours to cut costs?\nManager: There aren’t many bakeries like ours that stay open until 9 p.m., and customers appreciate that. They can buy good bread on their way home from work. We can’t really open any later either.\nMan: That’s true.\nMan: Then how about changing the type of flour? The flour we always buy is high quality, but you’ve said the price is...\nManager: It is expensive, but we can’t get our shop’s flavor without that flour. Hmm... Let’s go with the method that our customers are most likely to accept.\nNarrator: What did this shop decide to change?"
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t1-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t1-s1",
               "order": 1,
               "speaker_id": "店長",
               "start_ms": 2339940,
@@ -5324,7 +5650,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t1-s2",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t1-s2",
               "order": 2,
               "speaker_id": "店長",
               "start_ms": 2351881,
@@ -5336,7 +5662,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t2-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t2-s1",
               "order": 3,
               "speaker_id": "male_1",
               "start_ms": 2356168,
@@ -5348,7 +5674,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t3-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t3-s1",
               "order": 4,
               "speaker_id": "female_1",
               "start_ms": 2364882,
@@ -5360,7 +5686,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t3-s2",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t3-s2",
               "order": 5,
               "speaker_id": "female_1",
               "start_ms": 2370871,
@@ -5372,7 +5698,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t4-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t4-s1",
               "order": 6,
               "speaker_id": "店長",
               "start_ms": 2380214,
@@ -5384,7 +5710,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t4-s2",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t4-s2",
               "order": 7,
               "speaker_id": "店長",
               "start_ms": 2381590,
@@ -5396,7 +5722,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t5-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t5-s1",
               "order": 8,
               "speaker_id": "female_1",
               "start_ms": 2390724,
@@ -5408,7 +5734,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t5-s2",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t5-s2",
               "order": 9,
               "speaker_id": "female_1",
               "start_ms": 2392100,
@@ -5420,7 +5746,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t6-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t6-s1",
               "order": 10,
               "speaker_id": "店長",
               "start_ms": 2402073,
@@ -5432,7 +5758,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t6-s2",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t6-s2",
               "order": 11,
               "speaker_id": "店長",
               "start_ms": 2410368,
@@ -5444,7 +5770,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t6-s3",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t6-s3",
               "order": 12,
               "speaker_id": "店長",
               "start_ms": 2415098,
@@ -5456,7 +5782,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t7-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t7-s1",
               "order": 13,
               "speaker_id": "male_1",
               "start_ms": 2418990,
@@ -5468,7 +5794,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t8-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t8-s1",
               "order": 14,
               "speaker_id": "male_1",
               "start_ms": 2420575,
@@ -5480,7 +5806,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t8-s2",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t8-s2",
               "order": 15,
               "speaker_id": "male_1",
               "start_ms": 2425096,
@@ -5492,7 +5818,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t9-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t9-s1",
               "order": 16,
               "speaker_id": "店長",
               "start_ms": 2434020,
@@ -5504,7 +5830,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t9-s2",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t9-s2",
               "order": 17,
               "speaker_id": "店長",
               "start_ms": 2440847,
@@ -5516,7 +5842,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t9-s3",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t9-s3",
               "order": 18,
               "speaker_id": "店長",
               "start_ms": 2442223,
@@ -5528,7 +5854,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q1-t10-s1",
+              "id": "jlpt-n2-2025-12-m5-q1__jlpt-n2-2025-12-m5-q1-t10-s1",
               "order": 19,
               "speaker_id": "narrator",
               "start_ms": 2449267,
@@ -5553,21 +5879,96 @@
           }
         },
         {
-          "id": "jlpt-n2-2025-12-m5-q2",
-          "order": 2,
-          "type": "conversation",
+          "id": "jlpt-n2-2025-12-m5-q2-sq1",
+          "order": 201,
+          "type": "listening_multiple_choice",
           "audio": {
             "start_ms": 2492660,
             "end_ms": 2629660
           },
-          "choice_display_mode": "text",
+          "prompt": {
+            "ja": "女の人はどの自転車を買うことにしましたか。",
+            "vi": "Người phụ nữ quyết định mua chiếc xe đạp nào?",
+            "en": "Which bicycle does the woman decide to buy?"
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "1番の自転車",
+                "vi": "Xe đạp số 1",
+                "en": "Bicycle No. 1"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: xe số 1 nhẹ, có giỏ lớn và rẻ nhưng cuối cùng cô ưu tiên độ ổn định.",
+                "en": "Incorrect: bicycle No. 1 is light, inexpensive, and has a large basket, but in the end she prioritizes stability."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "2番の自転車",
+                "vi": "Xe đạp số 2",
+                "en": "Bicycle No. 2"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: xe số 2 gấp gọn, phù hợp cho người đàn ông chở bằng ô tô.",
+                "en": "Incorrect: bicycle No. 2 folds compactly, which suits the man’s need to carry it in his car."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "3番の自転車",
+                "vi": "Xe đạp số 3",
+                "en": "Bicycle No. 3"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: cô quyết định chọn chiếc có độ ổn định cao nhất để đi làm an toàn.",
+                "en": "Correct: she decides to choose the bicycle with the greatest stability so she can commute safely."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s1",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s2",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s3",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s4",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s5",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s6",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s7",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s8",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s9",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s10",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t8-s1",
+                "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t8-s2"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "4番の自転車",
+                "vi": "Xe đạp số 4",
+                "en": "Bicycle No. 4"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: xe số 4 mạnh trên đường gồ ghề nhưng không phải lựa chọn cuối cùng của cô.",
+                "en": "Incorrect: bicycle No. 4 is good on bumpy roads, but it is not her final choice."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m5-q2",
+          "prompt_visibility": "after_submit",
           "dialogue_translation": {
             "vi": "Nhân viên: Sau đây tôi xin giới thiệu bốn loại xe đạp mới. Xe số 1 phù hợp để đi mua sắm, bản thân xe nhẹ và dễ dùng, có giỏ lớn, giá rẻ và bán chạy nhất. Xe số 2 có thể gấp nhỏ để mang bằng tay hoặc cho lên ô tô; tuy gọn nhưng vẫn dùng ngoài trời được. Xe số 3 phù hợp chạy quãng đường dài và có độ ổn định cao nhất trong bốn loại. Xe số 4 chịu rung trên đường gồ ghề tốt, giá hơi cao nhưng chắc chắn, được người thích đi núi, sông và hoạt động ngoài trời ưa chuộng.\nNữ: Nhiều loại thật. Tôi muốn dùng để đi làm.\nNam: Đi làm bằng xe đạp à? Có ổn không? Hơi xa đấy.\nNữ: Không sao. Gần đây tôi thấy mình thiếu vận động. Tôi muốn loại chạy xa mà không mệt. Nhưng loại có giỏ lớn cũng tiện khi đi siêu thị...\nNam: Ừ. Tôi cũng muốn mua. Khi đi câu, khác với ô tô, xe đạp có thể vào các đường nhỏ ven sông. Bạn câu cá của tôi nói sâu trong một con đường nhỏ có chỗ câu được nhiều cá.\nNữ: Vậy loại mạnh trên đường gồ ghề có phải tốt không? Có những đoạn đường ven sông chưa được sửa.\nNam: Đúng. Nhưng lúc về tôi muốn mang cá đã câu nên sẽ đi ô tô và đỗ ở bãi gần sông. Nếu là xe gấp thì chiếc ô tô nhỏ của tôi cũng chở được.\nNữ: Vậy à. Tôi thì cuối cùng sẽ chọn loại ổn định nhất để đi làm an toàn.\nNam: Vậy quyết định nhé.",
             "en": "Staff member: I’ll now introduce four newly released types of bicycles. Bicycle number 1 is ideal for shopping. The bicycle itself is light and easy to use, it has a large basket, and it is inexpensive, so it sells the best. Number 2 can be folded small enough to carry by hand or put in a car. Although it is compact, it can also be used outdoors. Number 3 is suitable for riding long distances and has the best stability of the four. Finally, number 4 is designed to handle vibration on bumpy roads well. It is a little expensive, but it is solidly built and is popular with people who enjoy mountains, rivers, and other outdoor activities.\nWoman: There are so many kinds. I’d like to use one for commuting.\nMan: Commute by bicycle? Are you sure? Isn’t it a little far?\nWoman: It’s fine. I’ve been worried that I’m not getting enough exercise lately. I’d like one that won’t tire me out even over a long distance. But one with a large basket would also be convenient for going to the supermarket...\nMan: Yeah. Maybe I’ll buy one too. When I go fishing, unlike a car, a bicycle can get onto narrow roads along the river. A fishing friend told me there’s a place far down a narrow road where you can catch lots of fish.\nWoman: Then wouldn’t one that handles bumpy roads well be best? Some of the roads along the river aren’t properly maintained.\nMan: True. But on the way back I want to carry the fish I catch, so I think I’ll drive there and park at a parking lot near the river. If the bicycle folds, even my small car can carry it.\nWoman: I see. I’m going to choose the most stable one after all, so I can commute safely.\nMan: Then it’s settled."
           },
           "segments": [
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s1",
               "order": 1,
               "speaker_id": "店員",
               "start_ms": 2496460,
@@ -5579,7 +5980,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s2",
               "order": 2,
               "speaker_id": "店員",
               "start_ms": 2506635,
@@ -5591,7 +5992,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s3",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s3",
               "order": 3,
               "speaker_id": "店員",
               "start_ms": 2513571,
@@ -5603,7 +6004,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s4",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s4",
               "order": 4,
               "speaker_id": "店員",
               "start_ms": 2516788,
@@ -5615,7 +6016,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s5",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s5",
               "order": 5,
               "speaker_id": "店員",
               "start_ms": 2521650,
@@ -5627,7 +6028,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s6",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s6",
               "order": 6,
               "speaker_id": "店員",
               "start_ms": 2529143,
@@ -5639,7 +6040,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s7",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s7",
               "order": 7,
               "speaker_id": "店員",
               "start_ms": 2532853,
@@ -5651,7 +6052,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s8",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s8",
               "order": 8,
               "speaker_id": "店員",
               "start_ms": 2537057,
@@ -5663,7 +6064,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s9",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s9",
               "order": 9,
               "speaker_id": "店員",
               "start_ms": 2541096,
@@ -5675,7 +6076,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t1-s10",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t1-s10",
               "order": 10,
               "speaker_id": "店員",
               "start_ms": 2547109,
@@ -5687,7 +6088,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t2-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t2-s1",
               "order": 11,
               "speaker_id": "female_1",
               "start_ms": 2557398,
@@ -5699,7 +6100,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t2-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t2-s2",
               "order": 12,
               "speaker_id": "female_1",
               "start_ms": 2559464,
@@ -5711,7 +6112,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t3-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t3-s1",
               "order": 13,
               "speaker_id": "male_1",
               "start_ms": 2561859,
@@ -5723,7 +6124,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t3-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t3-s2",
               "order": 14,
               "speaker_id": "male_1",
               "start_ms": 2562938,
@@ -5735,7 +6136,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t3-s3",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t3-s3",
               "order": 15,
               "speaker_id": "male_1",
               "start_ms": 2564839,
@@ -5747,7 +6148,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t3-s4",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t3-s4",
               "order": 16,
               "speaker_id": "male_1",
               "start_ms": 2565918,
@@ -5759,7 +6160,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t4-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t4-s1",
               "order": 17,
               "speaker_id": "female_1",
               "start_ms": 2568148,
@@ -5771,7 +6172,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t4-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t4-s2",
               "order": 18,
               "speaker_id": "female_1",
               "start_ms": 2569227,
@@ -5783,7 +6184,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t4-s3",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t4-s3",
               "order": 19,
               "speaker_id": "female_1",
               "start_ms": 2572280,
@@ -5795,7 +6196,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t4-s4",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t4-s4",
               "order": 20,
               "speaker_id": "female_1",
               "start_ms": 2575826,
@@ -5807,7 +6208,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t5-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t5-s1",
               "order": 21,
               "speaker_id": "male_1",
               "start_ms": 2581839,
@@ -5819,7 +6220,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t5-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t5-s2",
               "order": 22,
               "speaker_id": "male_1",
               "start_ms": 2582918,
@@ -5831,7 +6232,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t5-s3",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t5-s3",
               "order": 23,
               "speaker_id": "male_1",
               "start_ms": 2584490,
@@ -5843,7 +6244,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t6-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t6-s1",
               "order": 24,
               "speaker_id": "female_1",
               "start_ms": 2597575,
@@ -5855,7 +6256,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t6-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t6-s2",
               "order": 25,
               "speaker_id": "female_1",
               "start_ms": 2601285,
@@ -5867,7 +6268,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t7-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t7-s1",
               "order": 26,
               "speaker_id": "male_1",
               "start_ms": 2605653,
@@ -5879,7 +6280,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t7-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t7-s2",
               "order": 27,
               "speaker_id": "male_1",
               "start_ms": 2606732,
@@ -5891,7 +6292,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t7-s3",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t7-s3",
               "order": 28,
               "speaker_id": "male_1",
               "start_ms": 2615541,
@@ -5903,7 +6304,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t8-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t8-s1",
               "order": 29,
               "speaker_id": "female_1",
               "start_ms": 2620238,
@@ -5915,7 +6316,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t8-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t8-s2",
               "order": 30,
               "speaker_id": "female_1",
               "start_ms": 2621317,
@@ -5927,7 +6328,7 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t9-s1",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t9-s1",
               "order": 31,
               "speaker_id": "male_1",
               "start_ms": 2626508,
@@ -5939,7 +6340,494 @@
               "dictation_eligible": true
             },
             {
-              "id": "jlpt-n2-2025-12-m5-q2-t9-s2",
+              "id": "jlpt-n2-2025-12-m5-q2-sq1__jlpt-n2-2025-12-m5-q2-t9-s2",
+              "order": 32,
+              "speaker_id": "male_1",
+              "start_ms": 2627603,
+              "end_ms": 2629660,
+              "text": {
+                "ja": "決まりだね。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          }
+        },
+        {
+          "id": "jlpt-n2-2025-12-m5-q2-sq2",
+          "order": 202,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 2492660,
+            "end_ms": 2629660
+          },
+          "prompt": {
+            "ja": "男の人はどの自転車を買うことにしましたか。",
+            "vi": "Người đàn ông quyết định mua chiếc xe đạp nào?",
+            "en": "Which bicycle does the man decide to buy?"
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "1番の自転車",
+                "vi": "Xe đạp số 1",
+                "en": "Bicycle No. 1"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: giỏ lớn và giá rẻ không giải quyết yêu cầu chở xe bằng ô tô nhỏ.",
+                "en": "Incorrect: the large basket and low price do not address his need to carry the bicycle in a small car."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "2番の自転車",
+                "vi": "Xe đạp số 2",
+                "en": "Bicycle No. 2"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh cần xe có thể gấp gọn để cho vào chiếc ô tô nhỏ của mình.",
+                "en": "Correct: he needs a bicycle that can be folded and placed in his small car."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s1",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s2",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s3",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s4",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s5",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s6",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s7",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s8",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s9",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s10",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t7-s1",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t7-s2",
+                "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t7-s3"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "3番の自転車",
+                "vi": "Xe đạp số 3",
+                "en": "Bicycle No. 3"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: độ ổn định cao là lý do người phụ nữ chọn xe số 3.",
+                "en": "Incorrect: high stability is the reason the woman chooses bicycle No. 3."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "4番の自転車",
+                "vi": "Xe đạp số 4",
+                "en": "Bicycle No. 4"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: xe số 4 hợp đường gồ ghề, nhưng anh quyết định đi ô tô đến gần sông nên ưu tiên khả năng gấp gọn.",
+                "en": "Incorrect: bicycle No. 4 is suitable for bumpy roads, but he decides to drive near the river and therefore prioritizes a foldable bicycle."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "listening_unit_id": "jlpt-n2-2025-12-m5-q2",
+          "prompt_visibility": "after_submit",
+          "dialogue_translation": {
+            "vi": "Nhân viên: Sau đây tôi xin giới thiệu bốn loại xe đạp mới. Xe số 1 phù hợp để đi mua sắm, bản thân xe nhẹ và dễ dùng, có giỏ lớn, giá rẻ và bán chạy nhất. Xe số 2 có thể gấp nhỏ để mang bằng tay hoặc cho lên ô tô; tuy gọn nhưng vẫn dùng ngoài trời được. Xe số 3 phù hợp chạy quãng đường dài và có độ ổn định cao nhất trong bốn loại. Xe số 4 chịu rung trên đường gồ ghề tốt, giá hơi cao nhưng chắc chắn, được người thích đi núi, sông và hoạt động ngoài trời ưa chuộng.\nNữ: Nhiều loại thật. Tôi muốn dùng để đi làm.\nNam: Đi làm bằng xe đạp à? Có ổn không? Hơi xa đấy.\nNữ: Không sao. Gần đây tôi thấy mình thiếu vận động. Tôi muốn loại chạy xa mà không mệt. Nhưng loại có giỏ lớn cũng tiện khi đi siêu thị...\nNam: Ừ. Tôi cũng muốn mua. Khi đi câu, khác với ô tô, xe đạp có thể vào các đường nhỏ ven sông. Bạn câu cá của tôi nói sâu trong một con đường nhỏ có chỗ câu được nhiều cá.\nNữ: Vậy loại mạnh trên đường gồ ghề có phải tốt không? Có những đoạn đường ven sông chưa được sửa.\nNam: Đúng. Nhưng lúc về tôi muốn mang cá đã câu nên sẽ đi ô tô và đỗ ở bãi gần sông. Nếu là xe gấp thì chiếc ô tô nhỏ của tôi cũng chở được.\nNữ: Vậy à. Tôi thì cuối cùng sẽ chọn loại ổn định nhất để đi làm an toàn.\nNam: Vậy quyết định nhé.",
+            "en": "Staff member: I’ll now introduce four newly released types of bicycles. Bicycle number 1 is ideal for shopping. The bicycle itself is light and easy to use, it has a large basket, and it is inexpensive, so it sells the best. Number 2 can be folded small enough to carry by hand or put in a car. Although it is compact, it can also be used outdoors. Number 3 is suitable for riding long distances and has the best stability of the four. Finally, number 4 is designed to handle vibration on bumpy roads well. It is a little expensive, but it is solidly built and is popular with people who enjoy mountains, rivers, and other outdoor activities.\nWoman: There are so many kinds. I’d like to use one for commuting.\nMan: Commute by bicycle? Are you sure? Isn’t it a little far?\nWoman: It’s fine. I’ve been worried that I’m not getting enough exercise lately. I’d like one that won’t tire me out even over a long distance. But one with a large basket would also be convenient for going to the supermarket...\nMan: Yeah. Maybe I’ll buy one too. When I go fishing, unlike a car, a bicycle can get onto narrow roads along the river. A fishing friend told me there’s a place far down a narrow road where you can catch lots of fish.\nWoman: Then wouldn’t one that handles bumpy roads well be best? Some of the roads along the river aren’t properly maintained.\nMan: True. But on the way back I want to carry the fish I catch, so I think I’ll drive there and park at a parking lot near the river. If the bicycle folds, even my small car can carry it.\nWoman: I see. I’m going to choose the most stable one after all, so I can commute safely.\nMan: Then it’s settled."
+          },
+          "segments": [
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s1",
+              "order": 1,
+              "speaker_id": "店員",
+              "start_ms": 2496460,
+              "end_ms": 2506635,
+              "text": {
+                "ja": "皆様、これから新しく発売された4つのタイプの自転車をご紹介します。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s2",
+              "order": 2,
+              "speaker_id": "店員",
+              "start_ms": 2506635,
+              "end_ms": 2513571,
+              "text": {
+                "ja": "まず、1番の自転車はお買い物にぴったりです。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s3",
+              "order": 3,
+              "speaker_id": "店員",
+              "start_ms": 2513571,
+              "end_ms": 2516788,
+              "text": {
+                "ja": "自転車自体が軽く使いやすいんですよ。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s4",
+              "order": 4,
+              "speaker_id": "店員",
+              "start_ms": 2516788,
+              "end_ms": 2521650,
+              "text": {
+                "ja": "大きなかごも付いていますし、価格も安く一番売れています。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s5",
+              "order": 5,
+              "speaker_id": "店員",
+              "start_ms": 2521650,
+              "end_ms": 2529143,
+              "text": {
+                "ja": "次にこちらの2番は小さく畳めますから手で持って運ぶことができますし、車にも乗せられます。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s6",
+              "order": 6,
+              "speaker_id": "店員",
+              "start_ms": 2529143,
+              "end_ms": 2532853,
+              "text": {
+                "ja": "コンパクトな割にはアウトドアでも使えます。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s7",
+              "order": 7,
+              "speaker_id": "店員",
+              "start_ms": 2532853,
+              "end_ms": 2537057,
+              "text": {
+                "ja": "それから、3番は長い距離を走るのに適しています。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s8",
+              "order": 8,
+              "speaker_id": "店員",
+              "start_ms": 2537057,
+              "end_ms": 2541096,
+              "text": {
+                "ja": "こちらの4つの中では最も安定性に優れています。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s9",
+              "order": 9,
+              "speaker_id": "店員",
+              "start_ms": 2541096,
+              "end_ms": 2547109,
+              "text": {
+                "ja": "最後にこちらの4番ですが、これは凸凹道などの振動に強いのが特徴ですね。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t1-s10",
+              "order": 10,
+              "speaker_id": "店員",
+              "start_ms": 2547109,
+              "end_ms": 2557398,
+              "text": {
+                "ja": "値段が少し高いのですが、その分しっかりとした作りになっていて、山や川へ出かけたりと、アウトドアが好きな方に人気の商品です。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t2-s1",
+              "order": 11,
+              "speaker_id": "female_1",
+              "start_ms": 2557398,
+              "end_ms": 2559464,
+              "text": {
+                "ja": "いろんなのがあるのね。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t2-s2",
+              "order": 12,
+              "speaker_id": "female_1",
+              "start_ms": 2559464,
+              "end_ms": 2561859,
+              "text": {
+                "ja": "私、通勤に使ってみたいな。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t3-s1",
+              "order": 13,
+              "speaker_id": "male_1",
+              "start_ms": 2561859,
+              "end_ms": 2562938,
+              "text": {
+                "ja": "え？"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t3-s2",
+              "order": 14,
+              "speaker_id": "male_1",
+              "start_ms": 2562938,
+              "end_ms": 2564839,
+              "text": {
+                "ja": "自転車で通勤するの？"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t3-s3",
+              "order": 15,
+              "speaker_id": "male_1",
+              "start_ms": 2564839,
+              "end_ms": 2565918,
+              "text": {
+                "ja": "大丈夫？"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t3-s4",
+              "order": 16,
+              "speaker_id": "male_1",
+              "start_ms": 2565918,
+              "end_ms": 2568148,
+              "text": {
+                "ja": "ちょっと遠いんじゃない？"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t4-s1",
+              "order": 17,
+              "speaker_id": "female_1",
+              "start_ms": 2568148,
+              "end_ms": 2569227,
+              "text": {
+                "ja": "大丈夫よ。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t4-s2",
+              "order": 18,
+              "speaker_id": "female_1",
+              "start_ms": 2569227,
+              "end_ms": 2572280,
+              "text": {
+                "ja": "最近、運動不足が気になってたんだ。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t4-s3",
+              "order": 19,
+              "speaker_id": "female_1",
+              "start_ms": 2572280,
+              "end_ms": 2575826,
+              "text": {
+                "ja": "長い距離を走っても疲れないのがいいわね。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t4-s4",
+              "order": 20,
+              "speaker_id": "female_1",
+              "start_ms": 2575826,
+              "end_ms": 2581839,
+              "text": {
+                "ja": "あ、でも、大きなかごが付いてる方がスーパーに行く時にも使えて便利か…。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t5-s1",
+              "order": 21,
+              "speaker_id": "male_1",
+              "start_ms": 2581839,
+              "end_ms": 2582918,
+              "text": {
+                "ja": "うん。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t5-s2",
+              "order": 22,
+              "speaker_id": "male_1",
+              "start_ms": 2582918,
+              "end_ms": 2584490,
+              "text": {
+                "ja": "僕も買おうかな。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t5-s3",
+              "order": 23,
+              "speaker_id": "male_1",
+              "start_ms": 2584490,
+              "end_ms": 2597575,
+              "text": {
+                "ja": "釣りに行く時車と違って、自転車なら川沿いも細い道にも入っていけるし、この間釣り仲間から聞いたんだけど、細い道のずっと奥に魚がよく釣れる場所があるらしいんだ。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t6-s1",
+              "order": 24,
+              "speaker_id": "female_1",
+              "start_ms": 2597575,
+              "end_ms": 2601285,
+              "text": {
+                "ja": "だったら、凸凹道に強いのがいいんじゃない？"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t6-s2",
+              "order": 25,
+              "speaker_id": "female_1",
+              "start_ms": 2601285,
+              "end_ms": 2605653,
+              "text": {
+                "ja": "川沿いの道、ちゃんと整備されてないところもあるし。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t7-s1",
+              "order": 26,
+              "speaker_id": "male_1",
+              "start_ms": 2605653,
+              "end_ms": 2606732,
+              "text": {
+                "ja": "そうだね。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t7-s2",
+              "order": 27,
+              "speaker_id": "male_1",
+              "start_ms": 2606732,
+              "end_ms": 2615541,
+              "text": {
+                "ja": "でも、帰りは釣った魚を持って帰りたいから車で行って、川の近くにある駐車場に停めておくのがいいと思うんだ。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t7-s3",
+              "order": 28,
+              "speaker_id": "male_1",
+              "start_ms": 2615541,
+              "end_ms": 2620238,
+              "text": {
+                "ja": "折りたためる自転車ならうちの小さい車でも乗せられるね。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t8-s1",
+              "order": 29,
+              "speaker_id": "female_1",
+              "start_ms": 2620238,
+              "end_ms": 2621317,
+              "text": {
+                "ja": "そっか。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t8-s2",
+              "order": 30,
+              "speaker_id": "female_1",
+              "start_ms": 2621317,
+              "end_ms": 2626508,
+              "text": {
+                "ja": "私はやっぱり安全に通勤できるように一番安定性が高いのにする。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t9-s1",
+              "order": 31,
+              "speaker_id": "male_1",
+              "start_ms": 2626508,
+              "end_ms": 2627603,
+              "text": {
+                "ja": "じゃあ。"
+              },
+              "timing_status": "unverified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n2-2025-12-m5-q2-sq2__jlpt-n2-2025-12-m5-q2-t9-s2",
               "order": 32,
               "speaker_id": "male_1",
               "start_ms": 2627603,

@@ -132,7 +132,10 @@ export const QuestionTypeSchema = z.enum([
   "conversation",
 ]);
 
-export const ChoiceDisplayModeSchema = z.enum(["text", "image"]);
+export const ChoiceDisplayModeSchema = z.enum(["text", "image", "numbers"]);
+
+/** When to show the written prompt in listening UI (JLPT exam authenticity). */
+export const PromptVisibilitySchema = z.enum(["always", "after_submit"]);
 
 export const QuestionSchema = z.object({
   id: z.string().min(1),
@@ -142,6 +145,14 @@ export const QuestionSchema = z.object({
   prompt: LocalizedTextSchema.optional(),
   choices: z.array(ChoiceSchema).optional(),
   choice_display_mode: ChoiceDisplayModeSchema.optional(),
+  /**
+   * Shared UI unit id: multiple MC parts played with the same audio window
+   * (e.g. 問題5 question 2 with two sub-questions answered together).
+   * Defaults to question id when absent.
+   */
+  listening_unit_id: z.string().min(1).optional(),
+  /** Default: always. N2 問題1–5 typically after_submit. */
+  prompt_visibility: PromptVisibilitySchema.optional(),
   /** Full dialogue translation paragraphs when per-segment vi/en missing */
   dialogue_translation: LocalizedTextSchema.optional(),
   segments: z.array(SegmentSchema).min(1),

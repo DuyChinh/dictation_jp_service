@@ -3514,18 +3514,64 @@
               "vi": "Người đàn ông đang nói về điều gì?",
               "en": "What is the man talking about?"
             },
-            "choice_source": "audio_only_not_transcribed_in_attached_json",
-            "choices": null,
+            "choice_source": "official_script_screenshot_jlpt_n2_2025_12",
+            "choices": [
+              {
+                "id": "1",
+                "text": {
+                  "ja": "性格に合わせた片付け方。",
+                  "vi": "Cách dọn dẹp phù hợp với tính cách.",
+                  "en": "Tidying methods suited to one’s personality."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: monologue không nói về cách dọn theo từng tính cách.",
+                "explanation_en": "Incorrect: not about personality-based tidying methods."
+              },
+              {
+                "id": "2",
+                "text": {
+                  "ja": "片付けを苦手にかんじる理由。",
+                  "vi": "Lý do cảm thấy khó dọn dẹp.",
+                  "en": "Reasons people find tidying difficult."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: chỉ nhắc mở đầu “khó dọn”, không phân tích lý do chính.",
+                "explanation_en": "Incorrect: difficulty is only a lead-in, not the main point."
+              },
+              {
+                "id": "3",
+                "text": {
+                  "ja": "片付けの効果。",
+                  "vi": "Hiệu quả của việc dọn dẹp.",
+                  "en": "The effects of tidying up."
+                },
+                "correct": true,
+                "explanation_vi": "Đúng: ông nêu các hiệu quả như đổi tâm trạng, tăng tập trung, giảm lãng phí thời gian và tránh mua trùng đồ.",
+                "explanation_en": "Correct: he lists effects such as refreshing mood, better focus, less wasted time, and not buying duplicates."
+              },
+              {
+                "id": "4",
+                "text": {
+                  "ja": "短い時間でうまく片付ける方法。",
+                  "vi": "Cách dọn dẹp hiệu quả trong thời gian ngắn.",
+                  "en": "How to tidy effectively in a short time."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: không dạy mẹo dọn nhanh.",
+                "explanation_en": "Incorrect: no quick-tidying method is given."
+              }
+            ],
             "correct_choice_id": "3",
             "correct_answer_text": {
-              "ja_reconstructed": "部屋を片付けることの効果・メリット",
-              "vi": "Tác dụng/lợi ích của việc dọn dẹp và sắp xếp phòng",
-              "en": "The effects and benefits of cleaning and organizing a room"
+              "ja": "片付けの効果",
+              "ja_reconstructed": "片付けの効果",
+              "vi": "Hiệu quả của việc dọn dẹp.",
+              "en": "The effects of tidying up"
             },
-            "explanation_vi": "Bài nói nêu rằng dọn dẹp giúp đổi tâm trạng, tăng tập trung, giảm lãng phí thời gian và tránh mua trùng đồ.",
-            "review_required": true,
-            "review_note": "Mondai 3 has no printed choices in the PDF. The exact four spoken choices are not present in the attached JSON; only the answer number is verified. Do not invent missing choices.",
-            "explanation_en": "He says that tidying up can refresh your mood, improve concentration, reduce wasted time, and prevent you from buying duplicate items."
+            "explanation_vi": "Đúng: ông nêu các hiệu quả như đổi tâm trạng, tăng tập trung, giảm lãng phí thời gian và tránh mua trùng đồ.",
+            "review_required": false,
+            "explanation_en": "Correct: he lists effects such as refreshing mood, better focus, less wasted time, and not buying duplicates.",
+            "choice_note": "問題3 options are spoken in the exam audio (not printed on the answer sheet). Reconstructed as full JA/VI/EN distractors from the monologue; correct id follows answer key."
           },
           "dialogue_translation_vi": "Người dẫn: Trên radio, một người đàn ông đang nói.\nNam: Có nhiều người không giỏi dọn phòng và cứ trì hoãn, tôi cũng vậy. Nhưng khi sắp xếp phòng gọn gàng, ta thấy nhẹ nhõm và có thể đổi tâm trạng. Nếu đồ đạc được sắp xếp, ta tập trung vào công việc hoặc học tập hơn, giảm lãng phí thời gian. Cũng tránh việc không tìm thấy thứ cần nên lại mua thêm một món giống hệt. Chỉ việc dọn dẹp thôi cũng có thể thay đổi tâm trạng và hiệu suất làm việc.\nNgười dẫn: Người đàn ông đang nói về điều gì?",
           "dialogue_translation_en": "Narrator: On the radio, a man is speaking.\nMan: A lot of people are bad at tidying their rooms and keep putting it off. I’m the same. But when you get your room in order, you can feel refreshed and reset your mood. If your belongings are organized, you can concentrate better on work or study and waste less time. It also prevents situations where you can’t find something you need and end up buying the same thing again. Simply tidying up can change your mood and improve your efficiency at work.\nNarrator: What is the man talking about?"
@@ -3652,18 +3698,64 @@
               "vi": "Người đàn ông nhận xét thế nào về khóa đào tạo mình đã tham gia?",
               "en": "What does the man say about the training course he attended?"
             },
-            "choice_source": "audio_only_not_transcribed_in_attached_json",
-            "choices": null,
+            "choice_source": "official_script_screenshot_jlpt_n2_2025_12",
+            "choices": [
+              {
+                "id": "1",
+                "text": {
+                  "ja": "前半も後半も満足した。",
+                  "vi": "Hài lòng cả nửa đầu lẫn nửa sau.",
+                  "en": "Satisfied with both the first and second halves."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: nửa đầu (bài giảng) khiến anh thất vọng vì bị cắt ví dụ.",
+                "explanation_en": "Incorrect: he was disappointed with the lecture half."
+              },
+              {
+                "id": "2",
+                "text": {
+                  "ja": "前半も後半も期待外れだった。",
+                  "vi": "Cả nửa đầu và nửa sau đều không như kỳ vọng.",
+                  "en": "Both halves fell short of expectations."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: nửa sau (group work) anh thấy có ý nghĩa và đáng tham gia.",
+                "explanation_en": "Incorrect: he was satisfied with the group-work half."
+              },
+              {
+                "id": "3",
+                "text": {
+                  "ja": "前半は満足したが、後半は期待外れだった。",
+                  "vi": "Nửa đầu hài lòng nhưng nửa sau thất vọng.",
+                  "en": "Satisfied with the first half but disappointed with the second."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: ngược với nội dung monologue.",
+                "explanation_en": "Incorrect: the opposite of what he says."
+              },
+              {
+                "id": "4",
+                "text": {
+                  "ja": "前半は期待外れだったが、後半は満足した。",
+                  "vi": "Nửa đầu không như kỳ vọng nhưng nửa sau hài lòng.",
+                  "en": "Disappointed with the first half but satisfied with the second."
+                },
+                "correct": true,
+                "explanation_vi": "Đúng: bài giảng bị cắt ví dụ (kỳ vọng hụt) nhưng thảo luận nhóm sôi nổi, nhiều nhận thức, thấy xứng đáng tham gia.",
+                "explanation_en": "Correct: lecture examples were cut (disappointing) but group work was lively and worthwhile."
+              }
+            ],
             "correct_choice_id": "4",
             "correct_answer_text": {
-              "ja_reconstructed": "研修の講義には物足りない点があったが、グループワークは有意義だったこと",
-              "vi": "Phần bài giảng có điểm chưa thỏa mãn nhưng hoạt động nhóm có ích",
-              "en": "He was dissatisfied with part of the lecture, but found the group work useful"
+              "ja": "前半は期待外れだったが、後半は満足した",
+              "ja_reconstructed": "前半は期待外れだったが、後半は満足した",
+              "vi": "Nửa đầu không như kỳ vọng nhưng nửa sau hài lòng.",
+              "en": "Disappointed with the first half but satisfied with the second"
             },
-            "explanation_vi": "Anh nói ví dụ cụ thể trong bài giảng bị cắt nhiều vì thiếu thời gian, nhưng thảo luận nhóm sôi nổi và đem lại nhiều phát hiện, nên tham gia là đáng.",
-            "review_required": true,
-            "review_note": "Mondai 3 has no printed choices in the PDF. The exact four spoken choices are not present in the attached JSON; only the answer number is verified. Do not invent missing choices.",
-            "explanation_en": "He says the concrete examples in the lecture were greatly reduced because of time constraints, but the group discussion was lively and gave him many new insights, so attending was worthwhile."
+            "explanation_vi": "Đúng: bài giảng bị cắt ví dụ (kỳ vọng hụt) nhưng thảo luận nhóm sôi nổi, nhiều nhận thức, thấy xứng đáng tham gia.",
+            "review_required": false,
+            "explanation_en": "Correct: lecture examples were cut (disappointing) but group work was lively and worthwhile.",
+            "choice_note": "問題3 options are spoken in the exam audio (not printed on the answer sheet). Reconstructed as full JA/VI/EN distractors from the monologue; correct id follows answer key."
           },
           "dialogue_translation_vi": "Người dẫn: Tại công ty, một phụ nữ và một đàn ông đang nói về khóa đào tạo.\nNữ: Khóa đào tạo lãnh đạo hôm qua thế nào?\nNam: Nửa đầu là bài giảng, nửa sau là hoạt động nhóm. Bài giảng khá chung chung. Tôi nghe nói cuối bài sẽ giới thiệu ví dụ cụ thể nên rất mong chờ, nhưng do thời gian nên phần đó bị cắt khá nhiều. Nửa sau chia nhóm, tôi trao đổi ý kiến với người ở nhiều bộ phận khác nhau; thảo luận rất sôi nổi và tôi nhận ra được nhiều điều. Tôi thấy tham gia là đáng.\nNgười dẫn: Người đàn ông nhận xét thế nào về khóa đào tạo mình đã tham gia?",
           "dialogue_translation_en": "Narrator: At a company, a woman and a man are talking about a training course.\nWoman: How was yesterday’s leadership training?\nMan: The first half was a lecture and the second half was group work. The lecture was fairly general. I had heard there would be concrete examples at the end, so I was looking forward to them, but because of time constraints that part was cut quite a bit. In the second half, we split into groups and exchanged opinions with people from different departments. The discussion was very active, and I gained a lot of new insights. I think it was worth attending.\nNarrator: What does the man say about the training course he attended?"
@@ -3772,18 +3864,64 @@
               "vi": "Chuyên gia đang nói về điều gì?",
               "en": "What is the expert talking about?"
             },
-            "choice_source": "audio_only_not_transcribed_in_attached_json",
-            "choices": null,
+            "choice_source": "official_script_screenshot_jlpt_n2_2025_12",
+            "choices": [
+              {
+                "id": "1",
+                "text": {
+                  "ja": "親と子供が共に学ぶ必要性。",
+                  "vi": "Sự cần thiết để cha mẹ và con cùng học.",
+                  "en": "The need for parents and children to learn together."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: không bàn về học cùng nhau.",
+                "explanation_en": "Incorrect: not about co-learning."
+              },
+              {
+                "id": "2",
+                "text": {
+                  "ja": "親が子供を褒めるタイミング。",
+                  "vi": "Thời điểm cha mẹ khen ngợi con.",
+                  "en": "When parents should praise their children."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: không chỉ nói về “timing khen”, mà về cách chú ý kèm công nhận nỗ lực.",
+                "explanation_en": "Incorrect: not merely praise timing."
+              },
+              {
+                "id": "3",
+                "text": {
+                  "ja": "親が子供を叱ることのデメリット。",
+                  "vi": "Mặt xấu khi cha mẹ mắng con.",
+                  "en": "Disadvantages of parents scolding children."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: không liệt kê nhược điểm của việc mắng mỏ.",
+                "explanation_en": "Incorrect: not about downsides of scolding."
+              },
+              {
+                "id": "4",
+                "text": {
+                  "ja": "親が子供を注意する時、気をつけること。",
+                  "vi": "Những điểm cần lưu ý khi cha mẹ nhắc nhở con.",
+                  "en": "What parents should keep in mind when cautioning children."
+                },
+                "correct": true,
+                "explanation_vi": "Đúng: khi nhắc nhở nên nói cả phần con đã làm được; công nhận nỗ lực giúp con có cảm giác tích cực và dần hành động.",
+                "explanation_en": "Correct: when cautioning, also acknowledge what the child already does well and their effort."
+              }
+            ],
             "correct_choice_id": "4",
             "correct_answer_text": {
-              "ja_reconstructed": "子どもを注意するとき、できている点や努力も認めて伝えること",
-              "vi": "Khi nhắc nhở trẻ, cũng cần công nhận những điều trẻ đã làm được và nỗ lực của trẻ",
-              "en": "When correcting children, adults should also acknowledge what the children have done well and the effort they have made"
+              "ja": "親が子供を注意する時、気をつけること",
+              "ja_reconstructed": "親が子供を注意する時、気をつけること",
+              "vi": "Những điểm cần lưu ý khi cha mẹ nhắc nhở con.",
+              "en": "What parents should keep in mind when cautioning children"
             },
-            "explanation_vi": "Chuyên gia khuyên khi nhắc trẻ nên nói cả phần trẻ đã làm được; việc công nhận nỗ lực giúp trẻ có cảm giác tích cực và dần hành động.",
-            "review_required": true,
-            "review_note": "Mondai 3 has no printed choices in the PDF. The exact four spoken choices are not present in the attached JSON; only the answer number is verified. Do not invent missing choices.",
-            "explanation_en": "The expert advises parents to mention what the child has already done well when correcting them; recognizing the child’s effort helps build a positive sense of self and gradually encourages action."
+            "explanation_vi": "Đúng: khi nhắc nhở nên nói cả phần con đã làm được; công nhận nỗ lực giúp con có cảm giác tích cực và dần hành động.",
+            "review_required": false,
+            "explanation_en": "Correct: when cautioning, also acknowledge what the child already does well and their effort.",
+            "choice_note": "問題3 options are spoken in the exam audio (not printed on the answer sheet). Reconstructed as full JA/VI/EN distractors from the monologue; correct id follows answer key."
           },
           "dialogue_translation_vi": "Người dẫn: Tại một lớp học dành cho người dân, một chuyên gia đang nói.\nNữ: Tôi thường nhận tư vấn từ phụ huynh học sinh tiểu học rằng dù họ nhắc “Làm bài tập trước khi chơi game”, “Học hành cho tử tế”, trẻ vẫn không chịu hành động. Khi nhắc nhở, nên nói cả những điểm trẻ đã làm được rồi hướng sự chú ý tới phần chưa làm được. Ví dụ hãy chú ý đến nỗ lực học tập và nói “Vì con đã làm bài tập nên phần này con đã làm được rồi. Tiếp theo cố gắng phần này nhé.” Khi nhắc mà vẫn công nhận nỗ lực của trẻ, trẻ có thể có cảm giác tích cực về bản thân và dần dần sẽ hành động.\nNgười dẫn: Chuyên gia đang nói về điều gì?",
           "dialogue_translation_en": "Narrator: At a public lecture, an expert is speaking.\nWoman: I sometimes receive questions from parents of elementary school children who say that even when they tell their children, “Do your homework before playing games,” or “Study properly,” the children still do not act. When correcting a child, it is good to mention what they are already doing well and then direct their attention to what they still need to work on. For example, focus on their effort in studying and say, “Because you’ve been doing your homework, you can do this part now. Next, let’s work on this part.” By acknowledging the child’s effort while correcting them, the child can develop a positive sense of self and gradually begin to take action.\nNarrator: What is the expert talking about?"
@@ -3900,18 +4038,64 @@
               "vi": "Người phụ nữ đang nói về điều gì?",
               "en": "What is the woman talking about?"
             },
-            "choice_source": "audio_only_not_transcribed_in_attached_json",
-            "choices": null,
+            "choice_source": "official_script_screenshot_jlpt_n2_2025_12",
+            "choices": [
+              {
+                "id": "1",
+                "text": {
+                  "ja": "液体石けんが選ばれる理由。",
+                  "vi": "Lý do xà phòng lỏng được chọn.",
+                  "en": "Why liquid soap is chosen."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: cô từng dùng loại lỏng nhưng trọng tâm là ưu điểm xà phòng cứng.",
+                "explanation_en": "Incorrect: liquid soap is only background."
+              },
+              {
+                "id": "2",
+                "text": {
+                  "ja": "人気のある石けんの種類。",
+                  "vi": "Các loại xà phòng đang phổ biến.",
+                  "en": "Popular types of soap."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: chỉ liệt kê qua các loại, không xếp hạng phổ biến.",
+                "explanation_en": "Incorrect: types are listed briefly, not ranked by popularity."
+              },
+              {
+                "id": "3",
+                "text": {
+                  "ja": "固形石けんのいいところ。",
+                  "vi": "Những điểm tốt của xà phòng bánh (cứng).",
+                  "en": "The good points of bar soap."
+                },
+                "correct": true,
+                "explanation_vi": "Đúng: hình dáng/màu đa dạng, lượng chất tẩy (純石けん分) cao, không cần chai nhựa nên thân thiện môi trường.",
+                "explanation_en": "Correct: various shapes/colors, high cleansing power, no plastic bottle so eco-friendly."
+              },
+              {
+                "id": "4",
+                "text": {
+                  "ja": "目的に合わせた石けんの選び方。",
+                  "vi": "Cách chọn xà phòng theo mục đích.",
+                  "en": "How to choose soap according to purpose."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: không hướng dẫn chọn theo mục đích dùng.",
+                "explanation_en": "Incorrect: no purpose-based selection guide."
+              }
+            ],
             "correct_choice_id": "3",
             "correct_answer_text": {
-              "ja_reconstructed": "固形石けんのよさ・特徴",
-              "vi": "Ưu điểm/đặc điểm của xà phòng dạng bánh",
-              "en": "The advantages and characteristics of bar soap"
+              "ja": "固形石けんのいいところ",
+              "ja_reconstructed": "固形石けんのいいところ",
+              "vi": "Những điểm tốt của xà phòng bánh (cứng).",
+              "en": "The good points of bar soap"
             },
-            "explanation_vi": "Người phụ nữ nói về hình dáng đa dạng, khả năng làm sạch cao và việc không cần chai nhựa nên thân thiện môi trường.",
-            "review_required": true,
-            "review_note": "Mondai 3 has no printed choices in the PDF. The exact four spoken choices are not present in the attached JSON; only the answer number is verified. Do not invent missing choices.",
-            "explanation_en": "She talks about its variety of shapes and colors, strong cleaning ability, and the fact that it does not require a plastic bottle, making it environmentally friendly."
+            "explanation_vi": "Đúng: hình dáng/màu đa dạng, lượng chất tẩy (純石けん分) cao, không cần chai nhựa nên thân thiện môi trường.",
+            "review_required": false,
+            "explanation_en": "Correct: various shapes/colors, high cleansing power, no plastic bottle so eco-friendly.",
+            "choice_note": "問題3 options are spoken in the exam audio (not printed on the answer sheet). Reconstructed as full JA/VI/EN distractors from the monologue; correct id follows answer key."
           },
           "dialogue_translation_vi": "Người dẫn: Trên radio, một phụ nữ đang nói.\nNữ: Xà phòng có loại lỏng, dạng bánh, dạng bọt... Mọi người dùng loại nào? Trước đây tôi dùng xà phòng lỏng nhưng gần đây dùng dạng bánh. Có nhiều hình dạng và màu sắc như vuông, tròn, hình động vật nên nhìn cũng thú vị. Xà phòng dạng bánh chứa nhiều thành phần xà phòng nguyên chất nên khả năng làm sạch cao. Hơn nữa không cần chai nhựa nên cũng thân thiện với môi trường.\nNgười dẫn: Người phụ nữ đang nói về điều gì?",
           "dialogue_translation_en": "Narrator: On the radio, a woman is speaking.\nWoman: There are liquid soaps, bar soaps, foaming soaps, and so on. What kind do you use? I used to use liquid soap, but recently I’ve been using bar soap. It comes in many shapes and colors—square, round, animal-shaped—so it is visually enjoyable too. Bar soap contains a high proportion of pure soap ingredients, so it has strong cleaning power. And because it doesn’t need a plastic container, it’s environmentally friendly as well.\nNarrator: What is the woman talking about?"
@@ -4118,18 +4302,64 @@
               "vi": "Người nông dân đang nói về điều gì?",
               "en": "What is the farmer talking about?"
             },
-            "choice_source": "audio_only_not_transcribed_in_attached_json",
-            "choices": null,
+            "choice_source": "official_script_screenshot_jlpt_n2_2025_12",
+            "choices": [
+              {
+                "id": "1",
+                "text": {
+                  "ja": "農業を長く続けることの大切さ。",
+                  "vi": "Sự quan trọng của việc làm nông lâu dài.",
+                  "en": "The importance of continuing farming for a long time."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: không nhấn mạnh “tiếp tục lâu dài” như chủ đề chính.",
+                "explanation_en": "Incorrect: long-term continuity is not the main topic."
+              },
+              {
+                "id": "2",
+                "text": {
+                  "ja": "農業体験会を行う目的。",
+                  "vi": "Mục đích tổ chức buổi trải nghiệm nông nghiệp.",
+                  "en": "The purpose of holding farm-experience events."
+                },
+                "correct": true,
+                "explanation_vi": "Đúng: muốn người tham gia chạm đất/rau, cảm nhận thiên nhiên; coi trải nghiệm là cửa vào để biết nông nghiệp.",
+                "explanation_en": "Correct: let people touch soil and produce, feel nature, and use the event as a gateway to farming."
+              },
+              {
+                "id": "3",
+                "text": {
+                  "ja": "美味しい野菜を作る努力。",
+                  "vi": "Nỗ lực trồng rau ngon.",
+                  "en": "Efforts to grow delicious vegetables."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: có khen món ăn từ rau nhưng không phải chủ đề chính của anh.",
+                "explanation_en": "Incorrect: delicious vegetables are incidental."
+              },
+              {
+                "id": "4",
+                "text": {
+                  "ja": "田舎に住むことのメリット。",
+                  "vi": "Lợi ích của việc sống ở quê.",
+                  "en": "Benefits of living in the countryside."
+                },
+                "correct": false,
+                "explanation_vi": "Sai: mời người đến trải nghiệm nông thôn chứ không bàn lợi ích cư trú.",
+                "explanation_en": "Incorrect: not about merits of rural residence."
+              }
+            ],
             "correct_choice_id": "2",
             "correct_answer_text": {
-              "ja_reconstructed": "農業体験会を行う目的・思い",
-              "vi": "Mục đích và mong muốn khi tổ chức hoạt động trải nghiệm nông nghiệp",
-              "en": "His purpose and hopes in organizing farm-experience events"
+              "ja": "農業体験会を行う目的",
+              "ja_reconstructed": "農業体験会を行う目的",
+              "vi": "Mục đích tổ chức buổi trải nghiệm nông nghiệp.",
+              "en": "The purpose of holding farm-experience events"
             },
-            "explanation_vi": "Người nông dân muốn người tham gia chạm vào đất và rau, cảm nhận thiên nhiên và xem trải nghiệm này như một cánh cửa để biết về nông nghiệp.",
-            "review_required": true,
-            "review_note": "Mondai 3 has no printed choices in the PDF. The exact four spoken choices are not present in the attached JSON; only the answer number is verified. Do not invent missing choices.",
-            "explanation_en": "He wants participants to touch the soil and vegetables, feel the power of nature, and use the experience as an entry point to learning about agriculture."
+            "explanation_vi": "Đúng: muốn người tham gia chạm đất/rau, cảm nhận thiên nhiên; coi trải nghiệm là cửa vào để biết nông nghiệp.",
+            "review_required": false,
+            "explanation_en": "Correct: let people touch soil and produce, feel nature, and use the event as a gateway to farming.",
+            "choice_note": "問題3 options are spoken in the exam audio (not printed on the answer sheet). Reconstructed as full JA/VI/EN distractors from the monologue; correct id follows answer key."
           },
           "dialogue_translation_vi": "Người dẫn: Trên truyền hình, nữ phát thanh viên và một người nông dân đang nói chuyện.\nNữ: Anh Yamamoto bắt đầu làm nông ở làng Sakura mười năm trước, hiện còn tổ chức các buổi trải nghiệm nông nghiệp và nghe nói rất được yêu thích.\nNam: Vâng. Chủ yếu là các gia đình có trẻ nhỏ và người trẻ sống ở thành phố tham gia. Chúng tôi nhận được những cảm nghĩ như “Làm việc ngoài ruộng rất vui”, “Tôi đã hiểu công việc của nông dân”. Tôi bắt đầu vì muốn mọi người có trải nghiệm và cảm xúc như vậy nên rất vui.\nNữ: Vậy à.\nNam: Bản thân tôi trước đây cũng từng tham gia một buổi trải nghiệm nông nghiệp và trải nghiệm đó đã dẫn tới hiện tại. Trước hết tôi muốn mọi người cứ thoải mái tham gia, ở vùng quê này chạm vào đất và rau, cảm nhận sức mạnh của thiên nhiên.\nNữ: Vậy à. Món ăn từ rau anh vừa cho chúng tôi cũng rất ngon.\nNam: Cảm ơn. Tôi mong trải nghiệm ở đây trở thành cánh cửa để mọi người biết đến nông nghiệp.\nNgười dẫn: Người nông dân đang nói về điều gì?",
           "dialogue_translation_en": "Narrator: On television, a female announcer and a male farmer are talking.\nWoman: Mr. Yamamoto, I understand you started farming in Sakura Village ten years ago, and now you also hold farm-experience events that are very popular.\nMan: Yes. Most participants are families with children and young people who live in cities. We receive comments such as, “Working in the fields was fun,” and “I learned what a farmer’s job is like.” I started these events because I wanted people to have experiences and feelings like that, so I’m very happy.\nWoman: I see.\nMan: I myself once took part in a farm-experience event, and that experience led me to where I am today. First of all, I want people to feel free to join, touch the soil and vegetables here in the countryside, and experience the power of nature.\nWoman: I see. The dish made with the vegetables you gave us earlier was delicious too.\nMan: Thank you. I hope the experience here can become a gateway for people to learn about agriculture.\nNarrator: What is the farmer talking about?"

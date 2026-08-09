@@ -44,16 +44,42 @@ type V4Choice = {
   explanation_en?: string;
 };
 
-type V4Listening = {
-  enabled?: boolean;
-  prompt?: { ja?: string; vi?: string; en?: string };
+type V4Prompt = {
+  ja?: string;
+  ja_reconstructed?: string;
+  vi?: string;
+  en?: string;
+};
+
+type V4Subquestion = {
+  id: string;
+  order?: number;
+  prompt?: V4Prompt;
   choices?: V4Choice[] | null;
   correct_choice_id?: string;
   explanation_vi?: string;
   explanation_en?: string;
   evidence_turn_ids?: string[];
+};
+
+type V4Listening = {
+  enabled?: boolean;
+  question_type?: string;
+  prompt?: V4Prompt;
+  choices?: V4Choice[] | null;
+  correct_choice_id?: string;
+  correct_answer_text?: {
+    ja?: string;
+    ja_reconstructed?: string;
+    vi?: string;
+    en?: string;
+  };
+  explanation_vi?: string;
+  explanation_en?: string;
+  evidence_turn_ids?: string[];
   choice_presentation?: { type?: string };
   choice_source?: string;
+  subquestions?: V4Subquestion[];
 };
 
 type V4Question = {
@@ -98,6 +124,158 @@ function loc(
   if (en?.trim()) o.en = en.trim();
   if (!o.ja && !o.vi && !o.en) o.ja = "—";
   return o;
+}
+
+function locPrompt(p?: V4Prompt): LocalizedText | undefined {
+  if (!p) return undefined;
+  const ja = p.ja?.trim() || p.ja_reconstructed?.trim();
+  if (!ja && !p.vi?.trim() && !p.en?.trim()) return undefined;
+  return loc(ja, p.vi, p.en);
+}
+
+/** N2 問題3 (spoken choices only): synthesize 1–N numbered stubs for MC UI. */
+function synthesizeNumberChoices(opts: {
+  count: number;
+  correctId?: string;
+  explanationVi?: string;
+  explanationEn?: string;
+  correctAnswerText?: V4Listening["correct_answer_text"];
+}): Choice[] {
+  const correctId = opts.correctId != null ? String(opts.correctId) : undefined;
+  const answerJa =
+    opts.correctAnswerText?.ja?.trim() ||
+    opts.correctAnswerText?.ja_reconstructed?.trim();
+  const answerVi = opts.correctAnswerText?.vi?.trim();
+  const answerEn = opts.correctAnswerText?.en?.trim();
+
+  return Array.from({ length: opts.count }, (_, i) => {
+    const id = String(i + 1);
+    const isCorrect = correctId != null && id === correctId;
+    // Exam UI uses numbers only before submit. After submit, text/vi on correct
+    // come from reconstructed answer; other options are audio-only in source.
+    const text = isCorrect
+      ? loc(answerJa || id, answerVi, answerEn)
+      : loc(
+          id,
+          "（Đáp án trong audio — chưa có bản ghi text đầy đủ）",
+          "(Spoken option in audio — full wording not transcribed)",
+        );
+    return {
+      id,
+      text,
+      correct: isCorrect,
+      explanation: isCorrect
+        ? loc(
+            undefined,
+            opts.explanationVi,
+            opts.explanationEn,
+          )
+        : loc("—", "—", "—"),
+    } satisfies Choice;
+  });
+}
+
+function cloneSegmentsForPart(
+  segs: Segment[],
+  partId: string,
+): Segment[] {
+  return segs.map((s) => ({
+    ...s,
+    id: `${partId}__${s.id}`,
+  }));
+}
+
+function remapEvidence(
+  ids: string[] | undefined,
+  partId: string,
+): string[] | undefined {
+  if (!ids?.length) return ids;
+  return ids.map((id) =>
+    id.startsWith(`${partId}__`) ? id : `${partId}__${id}`,
+  );
+}
+
+function mapChoicesFromV4(
+  rawChoices: V4Choice[],
+  opts: {
+    correctId?: string;
+    evidenceTurnIds?: string[];
+    turnToSentenceIds: Map<string, string[]>;
+    origToFinal: Map<string, string>;
+    imageKeyPrefix: string;
+    imageUrls?: ImageUrlMap;
+    fallbackExplanationVi?: string;
+    fallbackExplanationEn?: string;
+  },
+): Choice[] {
+  const correctId = opts.correctId;
+  let choices = rawChoices.map((c) => {
+    const isCorrect =
+      c.correct === true || (correctId != null && c.id === correctId);
+    let evidence: string[] | undefined;
+    if (isCorrect && opts.evidenceTurnIds?.length) {
+      evidence = [];
+      for (const tid of opts.evidenceTurnIds) {
+        const sids = opts.turnToSentenceIds.get(tid) ?? [];
+        for (const oid of sids) {
+          const fid = opts.origToFinal.get(oid);
+          if (fid) evidence.push(fid);
+        }
+      }
+      if (evidence.length === 0) {
+        for (const tid of opts.evidenceTurnIds) {
+          const fid = opts.origToFinal.get(tid);
+          if (fid) evidence.push(fid);
+        }
+      }
+    }
+
+    const imageKey = `${opts.imageKeyPrefix}:${c.id}`;
+    const url = opts.imageUrls?.[imageKey];
+
+    return {
+      id: c.id,
+      text: loc(c.text?.ja, c.text?.vi, c.text?.en),
+      correct: isCorrect,
+      explanation: loc(
+        undefined,
+        c.explanation_vi ??
+          (isCorrect ? opts.fallbackExplanationVi : undefined),
+        c.explanation_en ??
+          (isCorrect ? opts.fallbackExplanationEn : undefined),
+      ),
+      ...(url
+        ? {
+            image: {
+              url,
+              alt: loc(c.text?.ja, c.text?.vi, c.text?.en),
+            },
+          }
+        : {}),
+      ...(evidence?.length ? { evidence_segment_ids: evidence } : {}),
+    } satisfies Choice;
+  });
+
+  if (choices.filter((c) => c.correct).length !== 1 && correctId) {
+    choices = choices.map((c) => ({
+      ...c,
+      correct: c.id === correctId,
+    }));
+  }
+  return choices;
+}
+
+/** JLPT N2 listening UI flags from 問題 number. */
+function n2ListeningUi(mNum: number): {
+  choiceDisplay: "text" | "image" | "numbers";
+  promptVisibility: "always" | "after_submit";
+} {
+  // 問題1–2: full printed choices, hide question stem until submit
+  // 問題3–5: number-only choices (spoken/printed numbers), hide stem until submit
+  if (mNum >= 3) {
+    return { choiceDisplay: "numbers", promptVisibility: "after_submit" };
+  }
+  return { choiceDisplay: "text", promptVisibility: "after_submit" };
 }
 
 function normSpeaker(raw?: string): string {
@@ -189,8 +367,12 @@ function numberAnnouncementPadMs(opts: {
 
 /**
  * Allocate durations for unverified sentences.
- * Pure char-share of the full window often under-runs natural reading (cuts mid-sentence).
- * Prefer ~ms/char floor (from verified Q1 ~220ms/char, with cushion), then fit [start,end].
+ * Pure equal char-share under-runs natural speech (cuts mid-sentence on line 1).
+ * Strategy:
+ *  1) Floor each line with ms/char (+ pause after 。)
+ *  2) If total fits → stretch leftover time proportionally
+ *  3) If total overflows → keep first 2 lines (scene + task re-ask) near full floor,
+ *     compress the middle dialogue harder (these lines are denser in raw JLPT audio too)
  */
 function allocateUnverifiedDurationsMs(
   texts: string[],
@@ -198,39 +380,67 @@ function allocateUnverifiedDurationsMs(
 ): number[] {
   if (!texts.length) return [];
   const n = texts.length;
-  // ~3.2–3.5 mora/s spoken JLPT pace + short pauses after 。
-  const MS_PER_CHAR = 310;
-  const MIN_SEG = 1400;
-  const PAUSE_AFTER_CLAUSE = 450;
+  const MS_PER_CHAR = 320;
+  const MIN_SEG = 1600;
+  const PAUSE_AFTER_CLAUSE = 500;
 
-  let raw = texts.map((text) => {
+  const floorOf = (text: string) => {
     const len = Math.max(1, text.length);
     let d = Math.max(MIN_SEG, Math.round(len * MS_PER_CHAR));
     if (/[。．.?!？！]$/.test(text.trim())) d += PAUSE_AFTER_CLAUSE;
     return d;
-  });
+  };
 
-  let sum = raw.reduce((a, b) => a + b, 0);
-  if (sum < availableMs && sum > 0) {
-    // stretch remaining time proportionally (speech + dead air between lines)
-    const scale = availableMs / sum;
-    raw = raw.map((d) => Math.floor(d * scale));
-    sum = raw.reduce((a, b) => a + b, 0);
-    raw[raw.length - 1]! += availableMs - sum;
-    return raw;
+  const floors = texts.map(floorOf);
+  const floorSum = floors.reduce((a, b) => a + b, 0);
+
+  if (floorSum <= availableMs) {
+    // Stretch leftover
+    const scale = availableMs / floorSum;
+    const out = floors.map((d) => Math.floor(d * scale));
+    const sum = out.reduce((a, b) => a + b, 0);
+    out[n - 1]! += availableMs - sum;
+    return out;
   }
-  if (sum > availableMs && sum > 0) {
-    const scale = availableMs / sum;
-    raw = raw.map((d) => Math.max(900, Math.floor(d * scale)));
-    sum = raw.reduce((a, b) => a + b, 0);
-    // fix rounding drift on last
-    const drift = availableMs - sum;
-    raw[raw.length - 1]! = Math.max(900, raw[raw.length - 1]! + drift);
-    return raw;
+
+  // Overflow: protect head (scene + question) and tail (final re-ask), squeeze body
+  const headN = Math.min(2, n);
+  const tailN = n > headN + 1 ? 1 : 0;
+  const head = floors.slice(0, headN);
+  const tail = tailN ? floors.slice(n - tailN) : [];
+  const body = floors.slice(headN, n - tailN);
+
+  // Prefer keep ~90% of head floors so scene is almost complete
+  let headAlloc = head.map((d) => Math.floor(d * 0.92));
+  let tailAlloc = tail.map((d) => Math.floor(d * 0.85));
+  let headSum = headAlloc.reduce((a, b) => a + b, 0);
+  let tailSum = tailAlloc.reduce((a, b) => a + b, 0);
+
+  // Ensure body gets at least min per line if possible
+  const bodyMin = body.length * 900;
+  if (headSum + tailSum + bodyMin > availableMs) {
+    // Extreme packing: proportional all floors
+    const scale = availableMs / floorSum;
+    const out = floors.map((d) => Math.max(800, Math.floor(d * scale)));
+    const sum = out.reduce((a, b) => a + b, 0);
+    out[n - 1]! += availableMs - sum;
+    return out;
   }
-  return raw.length
-    ? raw
-    : Array.from({ length: n }, () => Math.floor(availableMs / Math.max(1, n)));
+
+  let bodyBudget = availableMs - headSum - tailSum;
+  const bodyFloorSum = body.reduce((a, b) => a + b, 0) || 1;
+  let bodyAlloc = body.map((d) =>
+    Math.max(900, Math.floor((d / bodyFloorSum) * bodyBudget)),
+  );
+  let bSum = bodyAlloc.reduce((a, b) => a + b, 0);
+  if (bodyAlloc.length) {
+    bodyAlloc[bodyAlloc.length - 1]! += bodyBudget - bSum;
+  }
+
+  const out = [...headAlloc, ...bodyAlloc, ...tailAlloc];
+  const sum = out.reduce((a, b) => a + b, 0);
+  out[n - 1]! += availableMs - sum;
+  return out;
 }
 
 export function adaptV4ToPackage(
@@ -455,112 +665,173 @@ export function adaptV4ToPackage(
       });
 
       const lp = q.listening_practice;
-      const hasChoices = Array.isArray(lp?.choices) && (lp!.choices?.length ?? 0) > 0;
+      const ui = n2ListeningUi(mNum);
       const imageMode =
         Boolean(lp?.choice_presentation?.type?.toLowerCase().includes("image")) ||
         lp?.choice_source === "image_semantic_transcription";
 
-      let choices: Choice[] | undefined;
-      if (hasChoices && lp?.choices) {
-        const correctId = lp.correct_choice_id;
-        choices = lp.choices.map((c) => {
-          const isCorrect =
-            c.correct === true ||
-            (correctId != null && c.id === correctId);
-          let evidence: string[] | undefined;
-          if (isCorrect && lp.evidence_turn_ids?.length) {
-            evidence = [];
-            for (const tid of lp.evidence_turn_ids) {
-              const sids = turnToSentenceIds.get(tid) ?? [];
-              for (const oid of sids) {
-                const fid = origToFinal.get(oid);
-                if (fid) evidence.push(fid);
-              }
-            }
-            // also map if evidence ids are sentence ids already
-            if (evidence.length === 0) {
-              for (const tid of lp.evidence_turn_ids) {
-                const fid = origToFinal.get(tid);
-                if (fid) evidence.push(fid);
-              }
-            }
+      const baseSegs =
+        segments.length > 0
+          ? segments
+          : ([
+              {
+                id: `${questionId}-s1`,
+                order: 1,
+                speaker_id: "narrator",
+                start_ms: qStart,
+                end_ms: qEnd,
+                text: loc("(empty)"),
+                timing_status: "unverified" as const,
+                dictation_eligible: false,
+              },
+            ] satisfies Segment[]);
+
+      const dictationCfg = {
+        enabled: true,
+        modes: {
+          sentence_dictation: { enabled: true },
+          full_question_dictation: { enabled: true },
+        },
+      };
+
+      const choiceMode = (
+        imageMode ? "image" : ui.choiceDisplay
+      ) as "text" | "image" | "numbers";
+
+      type McPart = {
+        id: string;
+        order: number;
+        unitId: string;
+        prompt?: LocalizedText;
+        choices: Choice[];
+      };
+
+      const parts: McPart[] = [];
+      const subqs = Array.isArray(lp?.subquestions) ? lp!.subquestions! : [];
+
+      if (subqs.length > 0) {
+        // 問題5 Q2 style: one audio, multiple sub-questions answered together
+        for (let si = 0; si < subqs.length; si++) {
+          const sq = subqs[si]!;
+          const sqOrder = sq.order ?? si + 1;
+          const sqId = `${questionId}-sq${sqOrder}`;
+          const hasSubChoices =
+            Array.isArray(sq.choices) && (sq.choices?.length ?? 0) > 0;
+          let sqChoices: Choice[] | undefined;
+          if (hasSubChoices && sq.choices) {
+            sqChoices = mapChoicesFromV4(sq.choices, {
+              correctId: sq.correct_choice_id,
+              evidenceTurnIds: sq.evidence_turn_ids,
+              turnToSentenceIds,
+              origToFinal,
+              imageKeyPrefix: sq.id || `${q.id}-sq${sqOrder}`,
+              imageUrls: options.imageUrls,
+              fallbackExplanationVi: sq.explanation_vi,
+              fallbackExplanationEn: sq.explanation_en,
+            });
+          } else if (sq.correct_choice_id) {
+            sqChoices = synthesizeNumberChoices({
+              count: 4,
+              correctId: sq.correct_choice_id,
+              explanationVi: sq.explanation_vi,
+              explanationEn: sq.explanation_en,
+            });
           }
+          if (!sqChoices?.length) continue;
+          parts.push({
+            id: sqId,
+            order: qNum * 100 + sqOrder,
+            unitId: questionId,
+            prompt: locPrompt(sq.prompt),
+            choices: sqChoices,
+          });
+        }
+      } else {
+        const hasChoices =
+          Array.isArray(lp?.choices) && (lp!.choices?.length ?? 0) > 0;
+        let choices: Choice[] | undefined;
+        if (hasChoices && lp?.choices) {
+          choices = mapChoicesFromV4(lp.choices, {
+            correctId: lp.correct_choice_id,
+            evidenceTurnIds: lp.evidence_turn_ids,
+            turnToSentenceIds,
+            origToFinal,
+            imageKeyPrefix: q.id,
+            imageUrls: options.imageUrls,
+            fallbackExplanationVi: lp.explanation_vi,
+            fallbackExplanationEn: lp.explanation_en,
+          });
+        } else if (
+          lp?.enabled !== false &&
+          (lp?.correct_choice_id || lp?.question_type?.includes("choice"))
+        ) {
+          // Mondai 3: choices spoken only / null in source → stub ○1–○4
+          const count = mNum === 4 ? 3 : 4;
+          choices = synthesizeNumberChoices({
+            count,
+            correctId: lp?.correct_choice_id,
+            explanationVi: lp?.explanation_vi,
+            explanationEn: lp?.explanation_en,
+            correctAnswerText: lp?.correct_answer_text,
+          });
+        }
 
-          const imageKey = `${q.id}:${c.id}`;
-          const url = options.imageUrls?.[imageKey];
-
-          return {
-            id: c.id,
-            text: loc(c.text?.ja, c.text?.vi, c.text?.en),
-            correct: isCorrect,
-            explanation: loc(
-              undefined,
-              c.explanation_vi ?? (isCorrect ? lp.explanation_vi : undefined),
-              c.explanation_en ?? (isCorrect ? lp.explanation_en : undefined),
-            ),
-            ...(url
-              ? {
-                  image: {
-                    url,
-                    alt: loc(c.text?.ja, c.text?.vi, c.text?.en),
-                  },
-                }
+        if (choices?.length) {
+          parts.push({
+            id: questionId,
+            order: qNum,
+            unitId: questionId,
+            prompt: locPrompt(lp?.prompt),
+            choices,
+          });
+        } else {
+          // No MC → conversation/dictation-only container
+          questions.push({
+            id: questionId,
+            order: qNum,
+            type: "conversation",
+            audio: { start_ms: qStart, end_ms: qEnd },
+            ...(locPrompt(lp?.prompt)
+              ? { prompt: locPrompt(lp?.prompt) }
               : {}),
-            ...(evidence?.length ? { evidence_segment_ids: evidence } : {}),
-          } satisfies Choice;
-        });
-
-        // ensure exactly one correct
-        if (choices.filter((c) => c.correct).length !== 1 && correctId) {
-          choices = choices.map((c) => ({
-            ...c,
-            correct: c.id === correctId,
-          }));
+            choice_display_mode: "text",
+            dialogue_translation: loc(
+              undefined,
+              q.dialogue_translation_vi,
+              q.dialogue_translation_en,
+            ),
+            segments: baseSegs,
+            dictation: dictationCfg,
+          });
         }
       }
 
-      const type = hasChoices
-        ? ("listening_multiple_choice" as const)
-        : ("conversation" as const);
-
-      questions.push({
-        id: questionId,
-        order: qNum,
-        type,
-        audio: { start_ms: qStart, end_ms: qEnd },
-        ...(lp?.prompt
-          ? { prompt: loc(lp.prompt.ja, lp.prompt.vi, lp.prompt.en) }
-          : {}),
-        ...(choices ? { choices } : {}),
-        choice_display_mode: imageMode && hasChoices ? "image" : "text",
-        dialogue_translation: loc(
-          undefined,
-          q.dialogue_translation_vi,
-          q.dialogue_translation_en,
-        ),
-        segments:
-          segments.length > 0
-            ? segments
-            : [
-                {
-                  id: `${questionId}-s1`,
-                  order: 1,
-                  speaker_id: "narrator",
-                  start_ms: qStart,
-                  end_ms: qEnd,
-                  text: loc("(empty)"),
-                  timing_status: "unverified",
-                  dictation_eligible: false,
-                },
-              ],
-        dictation: {
-          enabled: true,
-          modes: {
-            sentence_dictation: { enabled: true },
-            full_question_dictation: { enabled: true },
-          },
-        },
-      });
+      for (const part of parts) {
+        // Unique segment ids when multiple parts share transcript (問題5 multi-sub)
+        const partSegs = cloneSegmentsForPart(baseSegs, part.id);
+        const partChoices = part.choices.map((c) => ({
+          ...c,
+          evidence_segment_ids: remapEvidence(c.evidence_segment_ids, part.id),
+        }));
+        questions.push({
+          id: part.id,
+          order: part.order,
+          type: "listening_multiple_choice",
+          audio: { start_ms: qStart, end_ms: qEnd },
+          ...(part.prompt ? { prompt: part.prompt } : { prompt: loc("—") }),
+          choices: partChoices,
+          choice_display_mode: choiceMode,
+          listening_unit_id: part.unitId,
+          prompt_visibility: ui.promptVisibility,
+          dialogue_translation: loc(
+            undefined,
+            q.dialogue_translation_vi,
+            q.dialogue_translation_en,
+          ),
+          segments: partSegs,
+          dictation: dictationCfg,
+        });
+      }
     }
 
     sections.push({
