@@ -79,6 +79,17 @@ export function createEvaluateRouter(repo: StaticContentRepository): Router {
       }
       expected = seg.text.ja ?? "";
       expectedVi = seg.text.vi;
+      let expectedEn = seg.text.en;
+      if (!expectedVi && q.dialogue_translation?.vi) {
+        const lines = q.dialogue_translation.vi.split("\n").map((l) => l.trim()).filter(Boolean);
+        const idx = q.segments.findIndex((s) => s.id === sid);
+        if (idx >= 0 && lines[idx]) expectedVi = lines[idx];
+      }
+      if (!expectedEn && q.dialogue_translation?.en) {
+        const lines = q.dialogue_translation.en.split("\n").map((l) => l.trim()).filter(Boolean);
+        const idx = q.segments.findIndex((s) => s.id === sid);
+        if (idx >= 0 && lines[idx]) expectedEn = lines[idx];
+      }
     } else if (mode === "full_question_dictation") {
       expected = joinFullQuestionExpected(
         q.segments.map((s) => ({
@@ -118,7 +129,11 @@ export function createEvaluateRouter(repo: StaticContentRepository): Router {
         ...scored,
         revealed: reveal
           ? {
-              expected_text: { ja: expected, vi: expectedVi ?? "" },
+              expected_text: {
+                ja: expected,
+                vi: expectedVi ?? "",
+                en: (q.segments.find((s) => s.id === body.data.segment_id)?.text.en) ?? (q.dialogue_translation?.en) ?? "",
+              },
               accepted_matched: scored.matched_accepted,
             }
           : null,
