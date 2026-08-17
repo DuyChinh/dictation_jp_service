@@ -16,6 +16,7 @@ import { createEvaluateRouter } from "./modules/evaluate/evaluateRoutes.js";
 import passport from "passport";
 import { configurePassport } from "./config/passport.js";
 import { createAuthRouter } from "./modules/auth/authRoutes.js";
+import { createProgressRouter } from "./modules/progress/progressRoutes.js";
 export function createApp(repo?: StaticContentRepository) {
   const contentRepo = repo ?? new StaticContentRepository(config.contentRoot);
   if (!repo) {
@@ -58,6 +59,7 @@ export function createApp(repo?: StaticContentRepository) {
   app.use("/api/audio", createAudioRouter(contentRepo));
   app.use("/api/evaluate", createEvaluateRouter(contentRepo));
   app.use("/api/auth", createAuthRouter());
+  app.use("/api/progress", createProgressRouter());
 
   app.use(
     (err: unknown, _req: Request, res: Response, _next: NextFunction) => {

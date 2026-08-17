@@ -82,4 +82,22 @@ describe("backend content + evaluate API", () => {
     expect(res.headers["content-range"]).toMatch(/bytes 0-99\//);
     expect(res.headers["content-type"]).toMatch(/audio/);
   });
+
+  it("handles progress requests gracefully without auth", async () => {
+    const postRes = await request(app)
+      .post("/api/progress/dictation")
+      .send({
+        lesson_id: "fixture-sample-1",
+        question_id: "fixture-sample-1-m1-q1",
+        segment_id: "fixture-sample-1-m1-q1-s5",
+        status: "correct",
+        score: 100,
+      });
+    expect(postRes.status).toBe(200);
+    expect(postRes.body.localOnly).toBe(true);
+
+    const getRes = await request(app).get("/api/progress/lesson/fixture-sample-1");
+    expect(getRes.status).toBe(200);
+    expect(getRes.body.progress).toEqual({});
+  });
 });
