@@ -7,15 +7,19 @@ export type LessonCounts = {
   dictation_segments: number;
 };
 
+/** Sentences a learner dictates in this question (sub-questions sharing a dialogue count it once). */
+function dictationSegmentCount(q: Question): number {
+  if (q.dictation?.modes?.sentence_dictation?.enabled === false) return 0;
+  return q.segments.filter((seg) => seg.dictation_eligible !== false).length;
+}
+
 export function computeCounts(pkg: ListeningPackage): LessonCounts {
   let questions = 0;
   let dictation_segments = 0;
   for (const s of pkg.sections) {
     questions += s.questions.length;
     for (const q of s.questions) {
-      dictation_segments += q.segments.filter(
-        (seg) => seg.dictation_eligible !== false,
-      ).length;
+      dictation_segments += dictationSegmentCount(q);
     }
   }
   return {
@@ -52,8 +56,7 @@ export function toLessonDetail(meta: LessonMeta, baseUrl = "") {
       title: s.title,
       question_count: s.questions.length,
       dictation_segment_count: s.questions.reduce(
-        (n, q) =>
-          n + q.segments.filter((seg) => seg.dictation_eligible !== false).length,
+        (n, q) => n + dictationSegmentCount(q),
         0,
       ),
     })),

@@ -153,6 +153,8 @@ export const QuestionSchema = z.object({
   listening_unit_id: z.string().min(1).optional(),
   /** Default: always. N2 問題1–5 typically after_submit. */
   prompt_visibility: PromptVisibilitySchema.optional(),
+  /** Illustration printed with the question (e.g. scenes labelled ア/イ/ウ); shown before answering. */
+  image: ChoiceImageSchema.optional(),
   /** Full dialogue translation paragraphs when per-segment vi/en missing */
   dialogue_translation: LocalizedTextSchema.optional(),
   segments: z.array(SegmentSchema).min(1),
