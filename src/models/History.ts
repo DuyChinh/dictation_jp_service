@@ -10,6 +10,8 @@ export interface IHistory extends Document {
   correctCount: number;
   totalCount: number;
   mascot: string;
+  /** Id the browser gave the session, so re-sending it doesn't store it twice. */
+  clientId?: string;
   createdAt: Date;
 }
 
@@ -54,10 +56,18 @@ const historySchema = new Schema<IHistory>(
       type: String,
       default: "shiba",
     },
+    clientId: {
+      type: String,
+    },
   },
   {
     timestamps: true,
   }
+);
+
+historySchema.index(
+  { userId: 1, clientId: 1 },
+  { unique: true, partialFilterExpression: { clientId: { $type: "string" } } }
 );
 
 export const History = mongoose.model<IHistory>("History", historySchema);

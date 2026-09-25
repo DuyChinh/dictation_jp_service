@@ -100,4 +100,25 @@ describe("backend content + evaluate API", () => {
     expect(getRes.status).toBe(200);
     expect(getRes.body.progress).toEqual({});
   });
+
+  it("keeps listening answers local without auth", async () => {
+    const postRes = await request(app)
+      .post("/api/progress/listening")
+      .send({ lesson_id: "fixture-sample-1", question_id: "q1", choice_id: "1", correct: true });
+    expect(postRes.status).toBe(200);
+    expect(postRes.body.localOnly).toBe(true);
+
+    const getRes = await request(app).get("/api/progress/listening/fixture-sample-1");
+    expect(getRes.status).toBe(200);
+    expect(getRes.body.answers).toEqual({});
+
+    const delRes = await request(app).delete("/api/progress/listening/fixture-sample-1?question_ids=q1");
+    expect(delRes.status).toBe(200);
+    expect(delRes.body.localOnly).toBe(true);
+  });
+
+  it("refuses to import progress without auth", async () => {
+    const res = await request(app).post("/api/progress/import").send({ dictation: [], sessions: [], listening: [] });
+    expect(res.status).toBe(401);
+  });
 });
