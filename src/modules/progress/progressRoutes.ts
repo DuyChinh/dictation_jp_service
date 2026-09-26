@@ -5,9 +5,10 @@ import { config } from "../../config.js";
 import { Progress } from "../../models/Progress.js";
 import { History } from "../../models/History.js";
 import { ListeningAnswer } from "../../models/ListeningAnswer.js";
+import { LessonActivity } from "../../models/LessonActivity.js";
 
 /** Most rows one import request may carry, per kind. */
-const IMPORT_LIMITS = { dictation: 5000, sessions: 50, listening: 2000 };
+const IMPORT_LIMITS = { dictation: 5000, sessions: 50, listening: 2000, activity: 500 };
 
 function str(v: unknown, max = 500): string {
   return typeof v === "string" ? v.slice(0, max) : "";
@@ -348,6 +349,51 @@ export function createProgressRouter(): Router {
     }
   });
 
+  // When the user last practised each lesson, as epoch ms keyed by lesson id
+  r.get("/activity", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) {
+        return res.json({ activity: {} });
+      }
+
+      const items = await LessonActivity.find({ userId }).lean();
+      const activity: Record<string, number> = {};
+      for (const item of items) activity[item.lessonId] = new Date(item.lastActiveAt).getTime();
+
+      return res.json({ activity });
+    } catch (err: any) {
+      console.error("Get lesson activity error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to load activity" } });
+    }
+  });
+
+  // Mark a lesson as practised now
+  r.post("/activity", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) {
+        return res.status(200).json({ success: true, localOnly: true });
+      }
+
+      const lessonId = str(req.body?.lesson_id, 200);
+      if (!lessonId) {
+        return res.status(400).json({ error: { message: "Missing required fields" } });
+      }
+
+      await LessonActivity.updateOne(
+        { userId, lessonId },
+        { $max: { lastActiveAt: new Date() } },
+        { upsert: true }
+      );
+
+      return res.json({ success: true });
+    } catch (err: any) {
+      console.error("Save lesson activity error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to save activity" } });
+    }
+  });
+
   // Move practice done before signing in into this account, merging with what is already stored
   r.post("/import", async (req: Request, res: Response) => {
     try {
@@ -360,10 +406,12 @@ export function createProgressRouter(): Router {
       const dictation: Record<string, unknown>[] = Array.isArray(body.dictation) ? body.dictation : [];
       const sessions: SessionInput[] = Array.isArray(body.sessions) ? body.sessions : [];
       const listening: Record<string, unknown>[] = Array.isArray(body.listening) ? body.listening : [];
+      const activity: Record<string, unknown>[] = Array.isArray(body.activity) ? body.activity : [];
       if (
         dictation.length > IMPORT_LIMITS.dictation ||
         sessions.length > IMPORT_LIMITS.sessions ||
-        listening.length > IMPORT_LIMITS.listening
+        listening.length > IMPORT_LIMITS.listening ||
+        activity.length > IMPORT_LIMITS.activity
       ) {
         return res.status(413).json({ error: { message: "Too much data in one import" } });
       }
@@ -418,13 +466,31 @@ export function createProgressRouter(): Router {
           },
         }));
 
+      const nowMs = now.getTime();
+      const activityOps = activity
+        .filter((a) => str(a.lesson_id) && num(a.last_active_at) > 0)
+        .map((a) => ({
+          updateOne: {
+            filter: { userId, lessonId: str(a.lesson_id, 200) },
+            // Later wins; a clock running ahead can't push a lesson past today.
+            update: { $max: { lastActiveAt: new Date(Math.min(num(a.last_active_at), nowMs)) } },
+            upsert: true,
+          },
+        }));
+
       if (dictationOps.length) await Progress.bulkWrite(dictationOps as any, { ordered: false });
+      if (activityOps.length) await LessonActivity.bulkWrite(activityOps, { ordered: false });
       if (listeningOps.length) await ListeningAnswer.bulkWrite(listeningOps, { ordered: false });
       const sessionsSaved = await insertSessions(userId, sessions);
 
       return res.json({
         success: true,
-        imported: { dictation: dictationOps.length, sessions: sessionsSaved, listening: listeningOps.length },
+        imported: {
+          dictation: dictationOps.length,
+          sessions: sessionsSaved,
+          listening: listeningOps.length,
+          activity: activityOps.length,
+        },
       });
     } catch (err: any) {
       console.error("Import progress error:", err);

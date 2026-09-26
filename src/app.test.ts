@@ -117,6 +117,16 @@ describe("backend content + evaluate API", () => {
     expect(delRes.body.localOnly).toBe(true);
   });
 
+  it("keeps lesson activity local without auth", async () => {
+    const postRes = await request(app).post("/api/progress/activity").send({ lesson_id: "fixture-sample-1" });
+    expect(postRes.status).toBe(200);
+    expect(postRes.body.localOnly).toBe(true);
+
+    const getRes = await request(app).get("/api/progress/activity");
+    expect(getRes.status).toBe(200);
+    expect(getRes.body.activity).toEqual({});
+  });
+
   it("refuses to import progress without auth", async () => {
     const res = await request(app).post("/api/progress/import").send({ dictation: [], sessions: [], listening: [] });
     expect(res.status).toBe(401);

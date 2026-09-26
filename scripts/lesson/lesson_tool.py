@@ -515,7 +515,10 @@ def finalize(pkg: dict, jobs: list[dict], aligned: list, asr: Asr, en: Energy, m
         for i in range(1, len(spans)):  # hand-set boundaries: "<qid>-s<n>": seconds
             key = f"{job['qids'][0]}-s{i + 1}"
             if key in manual:
-                spans[i - 1][3] = spans[i][2] = float(manual[key])
+                t = float(manual[key])
+                # across a pause the previous line keeps its own end (don't pull the pause in)
+                spans[i - 1][3] = min(spans[i - 1][3], t) if spans[i - 1][3] < spans[i][2] else t
+                spans[i][2] = t
         first = spans[0][2]
         cue = [w for w in words if first - 5.0 <= w["s"] < first and "番" in w["w"]]
         q_start = min(first, cue[-1]["s"] - PAD_START) if cue else first
