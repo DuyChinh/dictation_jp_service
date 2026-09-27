@@ -129,8 +129,31 @@ export function createProgressRouter(): Router {
         return res.status(200).json({ success: true, localOnly: true });
       }
 
-      const saved = await insertSessions(userId, [req.body ?? {}]);
-      return res.json({ success: true, saved });
+      const body = req.body ?? {};
+      const clientId = str(body.id, 100);
+      const lessonId = str(body.lessonId, 200);
+      if (!clientId || !lessonId) {
+        return res.status(400).json({ error: { message: "Missing required fields" } });
+      }
+
+      // The browser keeps one session per lesson per day under one id and re-sends it as it grows.
+      await History.updateOne(
+        { userId, clientId },
+        {
+          $set: {
+            lessonTitle: str(body.lessonTitle, 300),
+            level: str(body.level, 20) || "ALL",
+            score: num(body.score),
+            correctCount: num(body.correctCount),
+            totalCount: num(body.totalCount),
+            mascot: str(body.mascot, 50) || "shiba",
+          },
+          $max: { maxStreak: num(body.maxStreak) },
+          $setOnInsert: { lessonId },
+        },
+        { upsert: true }
+      );
+      return res.json({ success: true });
     } catch (err: any) {
       console.error("Save session error:", err);
       return res.status(500).json({ error: { message: err.message || "Failed to save session" } });
@@ -146,7 +169,7 @@ export function createProgressRouter(): Router {
       }
 
       const historyList = await History.find({ userId })
-        .sort({ createdAt: -1 })
+        .sort({ updatedAt: -1 })
         .limit(50)
         .lean();
 
@@ -171,7 +194,7 @@ export function createProgressRouter(): Router {
       }
 
       const mappedHistory = historyList.map((h) => ({
-        id: String(h._id),
+        id: h.clientId || String(h._id),
         lessonId: h.lessonId,
         lessonTitle: h.lessonTitle,
         level: h.level,
@@ -180,7 +203,7 @@ export function createProgressRouter(): Router {
         correctCount: h.correctCount,
         totalCount: h.totalCount,
         mascot: h.mascot,
-        timestamp: new Date(h.createdAt).getTime(),
+        timestamp: new Date(h.updatedAt ?? h.createdAt).getTime(),
       }));
 
       return res.json({
@@ -346,6 +369,47 @@ export function createProgressRouter(): Router {
     } catch (err: any) {
       console.error("Clear listening answers error:", err);
       return res.status(500).json({ error: { message: err.message || "Failed to clear answers" } });
+    }
+  });
+
+  // Everything the progress page needs in one call: dictation progress and listening answers for every lesson
+  r.get("/overview", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) {
+        return res.json({ dictation: {}, listening: {} });
+      }
+
+      const [progressItems, answers] = await Promise.all([
+        Progress.find({ userId }).lean(),
+        ListeningAnswer.find({ userId }).lean(),
+      ]);
+
+      const dictation: Record<string, Record<string, unknown>> = {};
+      for (const p of progressItems) {
+        (dictation[p.lessonId] ??= {})[p.segmentId] = {
+          status: p.status,
+          score: p.score || 0,
+          attempts: p.attempts || 1,
+          lastAnswer: p.lastAnswer,
+          updatedAt: p.updatedAt ? new Date(p.updatedAt).getTime() : Date.now(),
+        };
+      }
+
+      const listening: Record<string, Record<string, unknown>> = {};
+      for (const a of answers) {
+        (listening[a.lessonId] ??= {})[a.questionId] = {
+          choiceId: a.choiceId,
+          correct: a.correct,
+          correctChoiceId: a.correctChoiceId ?? null,
+          answeredAt: new Date(a.answeredAt).getTime(),
+        };
+      }
+
+      return res.json({ dictation, listening });
+    } catch (err: any) {
+      console.error("Get progress overview error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to load progress" } });
     }
   });
 

@@ -127,6 +127,12 @@ describe("backend content + evaluate API", () => {
     expect(getRes.body.activity).toEqual({});
   });
 
+  it("returns an empty progress overview without auth", async () => {
+    const res = await request(app).get("/api/progress/overview");
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual({ dictation: {}, listening: {} });
+  });
+
   it("refuses to import progress without auth", async () => {
     const res = await request(app).post("/api/progress/import").send({ dictation: [], sessions: [], listening: [] });
     expect(res.status).toBe(401);

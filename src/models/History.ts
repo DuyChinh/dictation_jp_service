@@ -13,6 +13,7 @@ export interface IHistory extends Document {
   /** Id the browser gave the session, so re-sending it doesn't store it twice. */
   clientId?: string;
   createdAt: Date;
+  updatedAt: Date;
 }
 
 const historySchema = new Schema<IHistory>(
