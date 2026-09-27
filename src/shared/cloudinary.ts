@@ -47,3 +47,47 @@ export async function destroyImages(urls: string[]): Promise<void> {
     ),
   );
 }
+
+/** Playback and poster URLs for a video the team uploaded; mp4 so every browser can play it. */
+export function uploadedVideoUrls(publicId: string): { url: string; poster: string } | null {
+  const cloud = config.cloudinary.cloudName;
+  if (!cloud) return null;
+  const base = `https://res.cloudinary.com/${cloud}/video/upload`;
+  return { url: `${base}/q_auto/${publicId}.mp4`, poster: `${base}/so_1,q_auto/${publicId}.jpg` };
+}
+
+/**
+ * Lets the admin browser upload a video straight to Cloudinary: videos are far too big to pass
+ * through this server. The signature pins the folder and file name.
+ */
+export function signVideoUpload(folder: string, publicId: string) {
+  const { cloudName, apiKey, apiSecret } = config.cloudinary;
+  const timestamp = Math.floor(Date.now() / 1000);
+  const signature = cloudinary.utils.api_sign_request({ folder, public_id: publicId, timestamp }, apiSecret);
+  return {
+    uploadUrl: `https://api.cloudinary.com/v1_1/${cloudName}/video/upload`,
+    cloudName,
+    apiKey,
+    timestamp,
+    signature,
+    folder,
+    publicId,
+  };
+}
+
+/** Removes uploaded videos by public id; like destroyImages, never throws. */
+export async function destroyVideos(publicIds: string[]): Promise<void> {
+  if (!publicIds.length || !configureCloudinary()) return;
+  await Promise.all(
+    publicIds.map((id) =>
+      cloudinary.uploader
+        .destroy(id, { resource_type: "video", invalidate: true })
+        .catch((err) => console.error("Video cleanup failed:", err)),
+    ),
+  );
+}
+
+/** Public ids of the uploaded videos among a post's videos. */
+export function uploadedVideoIds(videos: Array<{ provider: string; id: string }> | undefined): string[] {
+  return (videos ?? []).filter((v) => v.provider === "cloudinary").map((v) => v.id);
+}

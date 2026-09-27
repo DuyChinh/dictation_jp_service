@@ -2,6 +2,8 @@ import type { Types } from "mongoose";
 import { User } from "../../models/User.js";
 import { REACTIONS, type IFeedback, type IReaction } from "../../models/Feedback.js";
 import type { IFeedbackReply } from "../../models/FeedbackReply.js";
+import { uploadedVideoUrls } from "../../shared/cloudinary.js";
+import type { VideoRef } from "../../shared/videoLinks.js";
 
 type FeedbackDoc = Pick<
   IFeedback,
@@ -27,10 +29,19 @@ type FeedbackDoc = Pick<
 
 type ReplyDoc = Pick<
   IFeedbackReply,
-  "feedbackId" | "userId" | "body" | "images" | "reactions" | "editedAt" | "createdAt"
+  "feedbackId" | "parentId" | "userId" | "body" | "images" | "reactions" | "editedAt" | "createdAt"
 > & { _id: Types.ObjectId };
 
 type Author = { displayName: string; avatar: string | null; email: string };
+
+/** Videos as the client plays them; uploaded ones come with their file and poster URLs. */
+function videoViews(videos: VideoRef[] | undefined) {
+  return (videos ?? []).map((v) =>
+    v.provider === "cloudinary"
+      ? { provider: v.provider, id: v.id, ...uploadedVideoUrls(v.id) }
+      : { provider: v.provider, id: v.id },
+  );
+}
 
 /** Current name and avatar of each author, so renames show on old posts too. */
 export async function authorsFor(docs: Array<{ userId: Types.ObjectId | null }>): Promise<Map<string, Author>> {
@@ -66,7 +77,7 @@ export function toPublicFeedback(doc: FeedbackDoc, authors: Map<string, Author>,
     category: doc.category,
     body: doc.body,
     images: doc.images ?? [],
-    videos: (doc.videos ?? []).map((v) => ({ provider: v.provider, id: v.id })),
+    videos: videoViews(doc.videos),
     status: doc.status,
     pinned: doc.pinned,
     adminReply: doc.adminReply || null,
@@ -85,6 +96,7 @@ export function toPublicReply(doc: ReplyDoc, authors: Map<string, Author>, viewe
   return {
     id: String(doc._id),
     feedbackId: String(doc.feedbackId),
+    parentId: doc.parentId ? String(doc.parentId) : null,
     author: publicAuthor(doc.userId, authors),
     body: doc.body,
     images: doc.images ?? [],
@@ -128,7 +140,7 @@ export function toAdminFeedback(doc: FeedbackDoc, authors: Map<string, Author>) 
     category: doc.category,
     body: doc.body,
     images: doc.images ?? [],
-    videos: (doc.videos ?? []).map((v) => ({ provider: v.provider, id: v.id })),
+    videos: videoViews(doc.videos),
     status: doc.status,
     pinned: doc.pinned,
     hidden: doc.hidden,
@@ -147,6 +159,7 @@ export function toAdminReply(doc: ReplyDoc, authors: Map<string, Author>) {
   const author = authors.get(String(doc.userId));
   return {
     id: String(doc._id),
+    parentId: doc.parentId ? String(doc.parentId) : null,
     authorName: author?.displayName ?? "",
     authorEmail: author?.email ?? "",
     authorAvatar: author?.avatar ?? null,

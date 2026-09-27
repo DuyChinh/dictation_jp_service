@@ -12,18 +12,20 @@ import {
   type IFeedback,
   type IReaction,
 } from "../../models/Feedback.js";
-import { FeedbackReply } from "../../models/FeedbackReply.js";
+import { deleteReplyTree, FeedbackReply } from "../../models/FeedbackReply.js";
 import { AppError } from "../../shared/errors.js";
 import {
   cloudinary,
   configureCloudinary,
   destroyImages,
+  destroyVideos,
+  uploadedVideoIds,
   imageDataUrlProblem,
   isOwnImageUrl,
 } from "../../shared/cloudinary.js";
 import { optionalAuth, requireAuth } from "../../shared/middleware/auth.js";
-import { isValidVideo, VIDEO_PROVIDERS } from "../../shared/videoLinks.js";
-import { ah, idParam, parseBody, parsePaging } from "../admin/helpers.js";
+import { isValidVideo, LINK_PROVIDERS, VIDEO_PROVIDERS } from "../../shared/videoLinks.js";
+import { ah, idParam, objectId, parseBody, parsePaging } from "../admin/helpers.js";
 import { authorsFor, reactorsOf, toPublicFeedback, toPublicReply } from "./feedbackView.js";
 
 /** Per account, per hour: enough for real use, too few for a flood. */
@@ -35,9 +37,14 @@ const MAX_UPLOAD_BYTES = 700 * 1024;
 
 const imageList = (max: number) => z.array(z.string().max(500)).max(max).default([]);
 
-export const videoList = z
-  .array(z.object({ provider: z.enum(VIDEO_PROVIDERS), id: z.string().max(120) }).refine(isValidVideo, "bad video"))
-  .max(MAX_POST_VIDEOS);
+/** Learners attach links; the admin list also takes videos the team uploaded. */
+const videoListOf = (providers: typeof LINK_PROVIDERS | typeof VIDEO_PROVIDERS) =>
+  z
+    .array(z.object({ provider: z.enum(providers), id: z.string().max(120) }).refine(isValidVideo, "bad video"))
+    .max(MAX_POST_VIDEOS);
+
+const videoList = videoListOf(LINK_PROVIDERS);
+export const adminVideoList = videoListOf(VIDEO_PROVIDERS);
 
 const createBody = z.object({
   category: z.enum(FEEDBACK_CATEGORIES),
@@ -50,13 +57,16 @@ const updateBody = z.object({
   category: z.enum(FEEDBACK_CATEGORIES).optional(),
   body: z.string().trim().min(5).max(1000).optional(),
   images: z.array(z.string().max(500)).max(MAX_POST_IMAGES).optional(),
-  videos: videoList.optional(),
+  // Checked below: uploaded videos may only be ones the post already has.
+  videos: adminVideoList.optional(),
 });
 
 const replyBody = z.object({
   body: z.string().trim().max(1000).default(""),
   images: imageList(MAX_REPLY_IMAGES),
 });
+
+const newReplyBody = replyBody.extend({ parentId: objectId.nullable().optional() });
 
 const reactBody = z.object({ emoji: z.enum(REACTIONS) });
 
@@ -248,6 +258,11 @@ export function createFeedbackRouter(): Router {
       const imagesChanged =
         body.images !== undefined &&
         (body.images.length !== doc.images.length || body.images.some((url, i) => url !== doc.images[i]));
+      const kept = uploadedVideoIds(doc.videos);
+      if (uploadedVideoIds(body.videos).some((id) => !kept.includes(id))) {
+        throw new AppError("VALIDATION_ERROR", "videos: unknown video", 400);
+      }
+      const removedVideos = body.videos ? kept.filter((id) => !uploadedVideoIds(body.videos).includes(id)) : [];
       const videoKey = (list: Array<{ provider: string; id: string }>) => list.map((v) => `${v.provider}:${v.id}`).join(",");
       const videosChanged = body.videos !== undefined && videoKey(body.videos) !== videoKey(doc.videos);
       const changed =
@@ -263,6 +278,7 @@ export function createFeedbackRouter(): Router {
         doc.editedAt = new Date();
         await doc.save();
         void destroyImages(removedImages);
+        void destroyVideos(removedVideos);
       }
       const authors = await authorsFor([doc]);
       res.json({ item: toPublicFeedback(doc, authors, String(user._id)) });
@@ -279,6 +295,7 @@ export function createFeedbackRouter(): Router {
       const replies = await FeedbackReply.find({ feedbackId: doc._id }, { images: 1 }).lean();
       await FeedbackReply.deleteMany({ feedbackId: doc._id });
       void destroyImages([...doc.images, ...replies.flatMap((rep) => rep.images)]);
+      void destroyVideos(uploadedVideoIds(doc.videos));
       res.json({ deleted: 1 });
     }),
   );
@@ -301,13 +318,20 @@ export function createFeedbackRouter(): Router {
     "/:id/replies",
     requireAuth,
     ah(async (req, res) => {
-      const body = parseBody(replyBody, req.body);
+      const body = parseBody(newReplyBody, req.body);
       const user = req.user!;
       if (!body.body && body.images.length === 0) {
         throw new AppError("VALIDATION_ERROR", "body: write something or attach a picture", 400);
       }
       assertOwnImages(body.images, user._id);
       const post = await visiblePost(idParam(req));
+      // Answering a nested reply keeps the thread two levels deep: it joins the same parent.
+      let parentId = null;
+      if (body.parentId) {
+        const parent = await FeedbackReply.findOne({ _id: body.parentId, feedbackId: post._id }, { parentId: 1 }).lean();
+        if (!parent) throw new AppError("NOT_FOUND", "Reply not found", 404);
+        parentId = parent.parentId ?? parent._id;
+      }
       const recent = await FeedbackReply.countDocuments({
         userId: user._id,
         createdAt: { $gt: new Date(Date.now() - 3600_000) },
@@ -316,6 +340,7 @@ export function createFeedbackRouter(): Router {
 
       const reply = await FeedbackReply.create({
         feedbackId: post._id,
+        parentId,
         userId: user._id,
         body: body.body,
         images: body.images,
@@ -387,11 +412,14 @@ export function createFeedbackRouter(): Router {
     "/replies/:id",
     requireAuth,
     ah(async (req, res) => {
-      const reply = await FeedbackReply.findOneAndDelete({ _id: idParam(req), userId: req.user!._id });
+      const reply = await FeedbackReply.findOne({ _id: idParam(req), userId: req.user!._id });
       if (!reply) throw new AppError("NOT_FOUND", "Reply not found", 404);
-      await Feedback.updateOne({ _id: reply.feedbackId, replyCount: { $gt: 0 } }, { $inc: { replyCount: -1 } });
-      void destroyImages(reply.images);
-      res.json({ deleted: 1 });
+      const removed = await deleteReplyTree(reply);
+      await Feedback.updateOne({ _id: reply.feedbackId }, [
+        { $set: { replyCount: { $max: [0, { $subtract: ["$replyCount", removed.length] }] } } },
+      ]);
+      void destroyImages(removed.flatMap((r) => r.images ?? []));
+      res.json({ deleted: removed.length });
     }),
   );
 

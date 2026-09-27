@@ -9,17 +9,21 @@ import {
   MAX_POST_IMAGES,
   type IFeedback,
 } from "../../../models/Feedback.js";
-import { FeedbackReply } from "../../../models/FeedbackReply.js";
+import { deleteReplyTree, FeedbackReply } from "../../../models/FeedbackReply.js";
 import {
   cloudinary,
   configureCloudinary,
   destroyImages,
+  destroyVideos,
   imageDataUrlProblem,
   isOwnImageUrl,
+  signVideoUpload,
+  uploadedVideoIds,
 } from "../../../shared/cloudinary.js";
+import { TEAM_VIDEO_FOLDER } from "../../../shared/videoLinks.js";
 import { AppError } from "../../../shared/errors.js";
 import { authorsFor, toAdminFeedback, toAdminReply } from "../../feedback/feedbackView.js";
-import { videoList } from "../../feedback/feedbackRoutes.js";
+import { adminVideoList } from "../../feedback/feedbackRoutes.js";
 import { requirePerm } from "../adminAuth.js";
 import { ah, audit, currentAdmin, idParam, idsBody, parseBody, parsePaging, queryString, searchRegex } from "../helpers.js";
 
@@ -31,7 +35,7 @@ const fields = {
   hidden: z.boolean(),
   adminReply: z.string().trim().max(1000),
   images: z.array(z.string().max(500)).max(MAX_POST_IMAGES),
-  videos: videoList,
+  videos: adminVideoList,
 };
 
 /** Pictures the team uploads from the admin area live here, apart from learners' folders. */
@@ -56,12 +60,13 @@ function snippet(body: string): string {
 /** Deletes posts with their replies, then their pictures; returns how many posts went. */
 async function removePosts(ids: string[]): Promise<number> {
   const [posts, replies] = await Promise.all([
-    Feedback.find({ _id: { $in: ids } }, { images: 1 }).lean(),
+    Feedback.find({ _id: { $in: ids } }, { images: 1, videos: 1 }).lean(),
     FeedbackReply.find({ feedbackId: { $in: ids } }, { images: 1 }).lean(),
   ]);
   const result = await Feedback.deleteMany({ _id: { $in: ids } });
   await FeedbackReply.deleteMany({ feedbackId: { $in: ids } });
   void destroyImages([...posts.flatMap((p) => p.images ?? []), ...replies.flatMap((r) => r.images ?? [])]);
+  void destroyVideos(posts.flatMap((p) => uploadedVideoIds(p.videos)));
   return result.deletedCount;
 }
 
@@ -135,6 +140,15 @@ export function createFeedbackAdminRouter(): Router {
   );
 
   r.post(
+    "/video-upload",
+    write,
+    ah(async (_req, res) => {
+      if (!configureCloudinary()) throw new AppError("UPLOAD_UNAVAILABLE", "Video upload is not available", 503);
+      res.json(signVideoUpload(TEAM_VIDEO_FOLDER, crypto.randomBytes(9).toString("hex")));
+    }),
+  );
+
+  r.post(
     "/",
     write,
     ah(async (req, res) => {
@@ -162,6 +176,9 @@ export function createFeedbackAdminRouter(): Router {
       if (!doc) throw new AppError("NOT_FOUND", "Feedback not found", 404);
       if (body.images) assertAllowedImages(body.images, doc.images);
       const removedImages = body.images ? doc.images.filter((url) => !body.images!.includes(url)) : [];
+      const removedVideos = body.videos
+        ? uploadedVideoIds(doc.videos).filter((id) => !uploadedVideoIds(body.videos).includes(id))
+        : [];
 
       if (body.adminReply !== undefined && body.adminReply !== doc.adminReply) {
         doc.repliedAt = body.adminReply ? new Date() : null;
@@ -169,6 +186,7 @@ export function createFeedbackAdminRouter(): Router {
       Object.assign(doc, body);
       await doc.save();
       void destroyImages(removedImages);
+      void destroyVideos(removedVideos);
 
       await audit(req, currentAdmin(res), "feedback_update", snippet(doc.body), Object.keys(body).join(", "));
       res.json({ item: toAdminFeedback(doc, await authorsFor([doc])) });
@@ -189,12 +207,15 @@ export function createFeedbackAdminRouter(): Router {
     "/replies/:id",
     write,
     ah(async (req, res) => {
-      const reply = await FeedbackReply.findByIdAndDelete(idParam(req));
+      const reply = await FeedbackReply.findById(idParam(req));
       if (!reply) throw new AppError("NOT_FOUND", "Reply not found", 404);
-      await Feedback.updateOne({ _id: reply.feedbackId, replyCount: { $gt: 0 } }, { $inc: { replyCount: -1 } });
-      void destroyImages(reply.images);
-      await audit(req, currentAdmin(res), "feedback_reply_delete", snippet(reply.body || "(ảnh)"));
-      res.json({ deleted: 1 });
+      const removed = await deleteReplyTree(reply);
+      await Feedback.updateOne({ _id: reply.feedbackId }, [
+        { $set: { replyCount: { $max: [0, { $subtract: ["$replyCount", removed.length] }] } } },
+      ]);
+      void destroyImages(removed.flatMap((r) => r.images ?? []));
+      await audit(req, currentAdmin(res), "feedback_reply_delete", snippet(reply.body || "(ảnh)"), `${removed.length} replies`);
+      res.json({ deleted: removed.length });
     }),
   );
 

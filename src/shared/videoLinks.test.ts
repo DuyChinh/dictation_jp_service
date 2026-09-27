@@ -10,3 +10,11 @@ describe("isValidVideo", () => {
     expect(isValidVideo({ provider: "drive", id: "../../etc" })).toBe(false);
   });
 });
+
+describe("uploaded team videos", () => {
+  it("only accepts ids in the team video folder", () => {
+    expect(isValidVideo({ provider: "cloudinary", id: "feedback/team/videos/0123456789abcdef01" })).toBe(true);
+    expect(isValidVideo({ provider: "cloudinary", id: "feedback/64b000000000000000000001/x" })).toBe(false);
+    expect(isValidVideo({ provider: "cloudinary", id: "other/0123456789abcdef01" })).toBe(false);
+  });
+});

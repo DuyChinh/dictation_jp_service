@@ -174,6 +174,8 @@ describe("backend content + evaluate API", () => {
     expect(res.status).toBe(401);
     const upload = await request(app).post("/api/admin/feedback/images").send({ image: "data:image/png;base64,AAAA" });
     expect(upload.status).toBe(401);
+    const video = await request(app).post("/api/admin/feedback/video-upload");
+    expect(video.status).toBe(401);
     expect(canAccess("support", "feedback", "write")).toBe(true);
     expect(canAccess("content", "feedback", "write")).toBe(false);
     expect(canAccess("accountant", "feedback", "read")).toBe(false);
