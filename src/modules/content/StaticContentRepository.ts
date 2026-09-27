@@ -116,10 +116,9 @@ export class StaticContentRepository {
       const p = m.package;
       if (!filter.includeHidden && this.hidden.has(p.id)) return false;
       if (!statuses.includes(p.status)) return false;
-      if (filter.level && p.source.type === "jlpt") {
-        if (p.source.level !== filter.level) return false;
-      } else if (filter.level && p.source.type !== "jlpt") {
-        return false;
+      if (filter.level) {
+        const level = p.source.type === "jlpt" || p.source.type === "practice" ? p.source.level : null;
+        if (level !== filter.level) return false;
       }
       if (filter.year != null && p.source.type === "jlpt") {
         if (p.source.year !== filter.year) return false;

@@ -32,6 +32,14 @@ export const SourceMetaSchema = z.union([
     source_reference: z.string().nullable().optional(),
     rights_note: z.string().nullable().optional(),
   }),
+  /** Original test in the JLPT format (no exam sitting), shown as "JLPT N2 Practice 1". */
+  z.object({
+    type: z.literal("practice"),
+    level: z.enum(["N1", "N2", "N3", "N4", "N5"]),
+    set: z.number().int().min(1),
+    source_reference: z.string().nullable().optional(),
+    rights_note: z.string().nullable().optional(),
+  }),
   z.object({
     type: z.enum(["podcast", "other"]),
     title: z.string().min(1),

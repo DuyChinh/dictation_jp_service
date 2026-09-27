@@ -92,3 +92,27 @@ Scratch output (ASR words, audio backup, reports) lives in `backend/.work/` (git
 - One line = one sentence as spoken; that is the unit learners dictate. Split long turns at 。
 - Leave out section instructions (問題1では…) and the practice example (例) — alignment skips them.
 - Line ids come out as `<lesson>-m<section>-q<question>[-sq<k>]-s<line>`.
+
+## Practice tests (synthesised audio)
+
+An original script can be turned into a lesson without a recording: `practice_tts.py` speaks
+every line with edge-tts and lays the clips out with JLPT pacing (section instructions, 「1番」,
+reading/answer pauses, spoken 「いち、に…」 before options). Timings come from the clips, so
+there is no `transcribe`/`build` step.
+
+```bash
+T=content/jlpt/n2/practice-01      # source.json only
+python3 scripts/lesson/practice_tts.py $T          # → listening.mp3 + listening.json
+python3 scripts/lesson/lesson_tool.py verify $T    # ASR re-listen: catches misread kanji
+```
+
+- `source`: `{ "type": "practice", "level": "N2", "set": 1 }` — the app shows it as "JLPT N2 Practice 1"
+  under the 「Đề luyện tập」 tab; id `jlpt-n2-practice-01`.
+- Voices: `male`, `female`, `male2`, `female2`, `male3`, `female3`, `narrator` (table `VOICES` in
+  the script). Spoken options are read by the narrator. Other speaker ids need `"voice"` in
+  `speakers`, or a per-question `"voices": { "speaker": "male", "choice": "female" }` map
+  (`choice` = who reads the options; 問題4 answers are read by the other person).
+- `tts_readings`: `{ "<text>": "<kana>" }` replaces text only in what is sent to TTS — use it
+  when `verify` shows a misread word.
+- Clips are cached in `.work/<dir>/tts/`; editing a line re-synthesises only that line.
+- Needs `pip install edge-tts numpy` and network access.
