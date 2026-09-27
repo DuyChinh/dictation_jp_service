@@ -1,4 +1,5 @@
 import mongoose, { Document, Schema } from "mongoose";
+import { VIDEO_PROVIDERS, type VideoRef } from "../shared/videoLinks.js";
 
 export const FEEDBACK_CATEGORIES = ["idea", "bug", "content", "other"] as const;
 export type FeedbackCategory = (typeof FEEDBACK_CATEGORIES)[number];
@@ -13,6 +14,15 @@ export type Reaction = (typeof REACTIONS)[number];
 
 export const MAX_POST_IMAGES = 4;
 export const MAX_REPLY_IMAGES = 2;
+export const MAX_POST_VIDEOS = 2;
+
+const videoSchema = new Schema<VideoRef>(
+  {
+    provider: { type: String, enum: VIDEO_PROVIDERS, required: true },
+    id: { type: String, required: true },
+  },
+  { _id: false },
+);
 
 export interface IReaction {
   userId: mongoose.Types.ObjectId;
@@ -36,6 +46,8 @@ export interface IFeedback extends Document {
   body: string;
   /** Cloudinary URLs of attached pictures. */
   images: string[];
+  /** YouTube or Google Drive videos, by id. */
+  videos: VideoRef[];
   status: FeedbackStatus;
   pinned: boolean;
   /** Hidden posts stay in the admin area but leave the public board. */
@@ -59,6 +71,7 @@ const feedbackSchema = new Schema<IFeedback>(
     category: { type: String, enum: FEEDBACK_CATEGORIES, default: "idea" },
     body: { type: String, required: true, maxlength: 1000 },
     images: { type: [String], default: [] },
+    videos: { type: [videoSchema], default: [] },
     status: { type: String, enum: FEEDBACK_STATUSES, default: "open" },
     pinned: { type: Boolean, default: false },
     hidden: { type: Boolean, default: false },

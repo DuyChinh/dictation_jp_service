@@ -6,6 +6,7 @@ import {
   Feedback,
   FEEDBACK_CATEGORIES,
   MAX_POST_IMAGES,
+  MAX_POST_VIDEOS,
   MAX_REPLY_IMAGES,
   REACTIONS,
   type IFeedback,
@@ -21,6 +22,7 @@ import {
   isOwnImageUrl,
 } from "../../shared/cloudinary.js";
 import { optionalAuth, requireAuth } from "../../shared/middleware/auth.js";
+import { isValidVideo, VIDEO_PROVIDERS } from "../../shared/videoLinks.js";
 import { ah, idParam, parseBody, parsePaging } from "../admin/helpers.js";
 import { authorsFor, reactorsOf, toPublicFeedback, toPublicReply } from "./feedbackView.js";
 
@@ -33,16 +35,22 @@ const MAX_UPLOAD_BYTES = 700 * 1024;
 
 const imageList = (max: number) => z.array(z.string().max(500)).max(max).default([]);
 
+export const videoList = z
+  .array(z.object({ provider: z.enum(VIDEO_PROVIDERS), id: z.string().max(120) }).refine(isValidVideo, "bad video"))
+  .max(MAX_POST_VIDEOS);
+
 const createBody = z.object({
   category: z.enum(FEEDBACK_CATEGORIES),
   body: z.string().trim().min(5).max(1000),
   images: imageList(MAX_POST_IMAGES),
+  videos: videoList.default([]),
 });
 
 const updateBody = z.object({
   category: z.enum(FEEDBACK_CATEGORIES).optional(),
   body: z.string().trim().min(5).max(1000).optional(),
   images: z.array(z.string().max(500)).max(MAX_POST_IMAGES).optional(),
+  videos: videoList.optional(),
 });
 
 const replyBody = z.object({
@@ -171,6 +179,7 @@ export function createFeedbackRouter(): Router {
         category: body.category,
         body: body.body,
         images: body.images,
+        videos: body.videos,
       });
       const authors = await authorsFor([doc]);
       res.status(201).json({ item: toPublicFeedback(doc, authors, String(user._id)) });
@@ -239,14 +248,18 @@ export function createFeedbackRouter(): Router {
       const imagesChanged =
         body.images !== undefined &&
         (body.images.length !== doc.images.length || body.images.some((url, i) => url !== doc.images[i]));
+      const videoKey = (list: Array<{ provider: string; id: string }>) => list.map((v) => `${v.provider}:${v.id}`).join(",");
+      const videosChanged = body.videos !== undefined && videoKey(body.videos) !== videoKey(doc.videos);
       const changed =
         imagesChanged ||
+        videosChanged ||
         (body.body !== undefined && body.body !== doc.body) ||
         (body.category !== undefined && body.category !== doc.category);
       if (changed) {
         if (body.body !== undefined) doc.body = body.body;
         if (body.category !== undefined) doc.category = body.category;
         if (body.images !== undefined) doc.images = body.images;
+        if (body.videos !== undefined) doc.videos = body.videos;
         doc.editedAt = new Date();
         await doc.save();
         void destroyImages(removedImages);

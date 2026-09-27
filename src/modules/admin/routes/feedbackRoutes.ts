@@ -1,11 +1,25 @@
+import crypto from "node:crypto";
 import { Router } from "express";
 import type { FilterQuery } from "mongoose";
 import { z } from "zod";
-import { Feedback, FEEDBACK_CATEGORIES, FEEDBACK_STATUSES, type IFeedback } from "../../../models/Feedback.js";
+import {
+  Feedback,
+  FEEDBACK_CATEGORIES,
+  FEEDBACK_STATUSES,
+  MAX_POST_IMAGES,
+  type IFeedback,
+} from "../../../models/Feedback.js";
 import { FeedbackReply } from "../../../models/FeedbackReply.js";
-import { destroyImages } from "../../../shared/cloudinary.js";
+import {
+  cloudinary,
+  configureCloudinary,
+  destroyImages,
+  imageDataUrlProblem,
+  isOwnImageUrl,
+} from "../../../shared/cloudinary.js";
 import { AppError } from "../../../shared/errors.js";
 import { authorsFor, toAdminFeedback, toAdminReply } from "../../feedback/feedbackView.js";
+import { videoList } from "../../feedback/feedbackRoutes.js";
 import { requirePerm } from "../adminAuth.js";
 import { ah, audit, currentAdmin, idParam, idsBody, parseBody, parsePaging, queryString, searchRegex } from "../helpers.js";
 
@@ -16,7 +30,21 @@ const fields = {
   pinned: z.boolean(),
   hidden: z.boolean(),
   adminReply: z.string().trim().max(1000),
+  images: z.array(z.string().max(500)).max(MAX_POST_IMAGES),
+  videos: videoList,
 };
+
+/** Pictures the team uploads from the admin area live here, apart from learners' folders. */
+const TEAM_FOLDER = "feedback/team";
+/** Same cap as learner uploads; the admin UI shrinks pictures the same way. */
+const MAX_UPLOAD_BYTES = 700 * 1024;
+
+/** A post may keep the pictures it has and gain team uploads, nothing else. */
+function assertAllowedImages(images: string[], existing: string[] = []): void {
+  if (images.some((url) => !existing.includes(url) && !isOwnImageUrl(url, TEAM_FOLDER))) {
+    throw new AppError("VALIDATION_ERROR", "images: unknown picture", 400);
+  }
+}
 
 const createBody = z.object(fields).partial().required({ body: true });
 const updateBody = z.object(fields).partial();
@@ -90,10 +118,28 @@ export function createFeedbackAdminRouter(): Router {
   );
 
   r.post(
+    "/images",
+    write,
+    ah(async (req, res) => {
+      const image = typeof req.body?.image === "string" ? req.body.image : "";
+      const problem = imageDataUrlProblem(image, MAX_UPLOAD_BYTES);
+      if (problem) throw new AppError("VALIDATION_ERROR", `image: ${problem}`, 400);
+      if (!configureCloudinary()) throw new AppError("UPLOAD_UNAVAILABLE", "Image upload is not available", 503);
+      const result = await cloudinary.uploader.upload(image, {
+        folder: TEAM_FOLDER,
+        public_id: crypto.randomBytes(9).toString("hex"),
+        resource_type: "image",
+      });
+      res.status(201).json({ url: result.secure_url });
+    }),
+  );
+
+  r.post(
     "/",
     write,
     ah(async (req, res) => {
       const body = parseBody(createBody, req.body);
+      if (body.images) assertAllowedImages(body.images);
       const me = currentAdmin(res);
       const doc = await Feedback.create({
         ...body,
@@ -114,12 +160,15 @@ export function createFeedbackAdminRouter(): Router {
       const body = parseBody(updateBody, req.body);
       const doc = await Feedback.findById(id);
       if (!doc) throw new AppError("NOT_FOUND", "Feedback not found", 404);
+      if (body.images) assertAllowedImages(body.images, doc.images);
+      const removedImages = body.images ? doc.images.filter((url) => !body.images!.includes(url)) : [];
 
       if (body.adminReply !== undefined && body.adminReply !== doc.adminReply) {
         doc.repliedAt = body.adminReply ? new Date() : null;
       }
       Object.assign(doc, body);
       await doc.save();
+      void destroyImages(removedImages);
 
       await audit(req, currentAdmin(res), "feedback_update", snippet(doc.body), Object.keys(body).join(", "));
       res.json({ item: toAdminFeedback(doc, await authorsFor([doc])) });

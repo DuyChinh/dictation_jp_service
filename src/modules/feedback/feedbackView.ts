@@ -10,6 +10,7 @@ type FeedbackDoc = Pick<
   | "category"
   | "body"
   | "images"
+  | "videos"
   | "status"
   | "pinned"
   | "hidden"
@@ -65,6 +66,7 @@ export function toPublicFeedback(doc: FeedbackDoc, authors: Map<string, Author>,
     category: doc.category,
     body: doc.body,
     images: doc.images ?? [],
+    videos: (doc.videos ?? []).map((v) => ({ provider: v.provider, id: v.id })),
     status: doc.status,
     pinned: doc.pinned,
     adminReply: doc.adminReply || null,
@@ -126,6 +128,7 @@ export function toAdminFeedback(doc: FeedbackDoc, authors: Map<string, Author>) 
     category: doc.category,
     body: doc.body,
     images: doc.images ?? [],
+    videos: (doc.videos ?? []).map((v) => ({ provider: v.provider, id: v.id })),
     status: doc.status,
     pinned: doc.pinned,
     hidden: doc.hidden,
