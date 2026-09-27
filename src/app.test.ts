@@ -152,6 +152,31 @@ describe("backend content + evaluate API", () => {
     expect(res.status).toBe(401);
   });
 
+  it("needs a learner sign-in to post, like, react, reply, upload, edit or delete feedback", async () => {
+    const post = await request(app).post("/api/feedback").send({ category: "idea", body: "More N1 tests please" });
+    expect(post.status).toBe(401);
+    const like = await request(app).post("/api/feedback/64b000000000000000000001/like");
+    expect(like.status).toBe(401);
+    const edit = await request(app).patch("/api/feedback/64b000000000000000000001").send({ body: "Edited text" });
+    expect(edit.status).toBe(401);
+    const del = await request(app).delete("/api/feedback/64b000000000000000000001");
+    expect(del.status).toBe(401);
+    const react = await request(app).post("/api/feedback/64b000000000000000000001/react").send({ emoji: "🎉" });
+    expect(react.status).toBe(401);
+    const reply = await request(app).post("/api/feedback/64b000000000000000000001/replies").send({ body: "Agree!" });
+    expect(reply.status).toBe(401);
+    const upload = await request(app).post("/api/feedback/images").send({ image: "data:image/png;base64,AAAA" });
+    expect(upload.status).toBe(401);
+  });
+
+  it("keeps feedback moderation in the admin API", async () => {
+    const res = await request(app).get("/api/admin/feedback");
+    expect(res.status).toBe(401);
+    expect(canAccess("support", "feedback", "write")).toBe(true);
+    expect(canAccess("content", "feedback", "write")).toBe(false);
+    expect(canAccess("accountant", "feedback", "read")).toBe(false);
+  });
+
   it("gives each admin role only its own areas", () => {
     expect(canAccess("super_admin", "admins", "write")).toBe(true);
     expect(canAccess("content", "users", "read")).toBe(false);

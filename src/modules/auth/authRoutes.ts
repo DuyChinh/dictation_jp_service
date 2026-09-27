@@ -1,6 +1,17 @@
 import { Router } from "express";
 import passport from "passport";
-import { register, login, forgotPassword, resetPassword, getCurrentUser, googleCallback } from "./authController.js";
+import {
+  register,
+  login,
+  forgotPassword,
+  resetPassword,
+  getCurrentUser,
+  updateCurrentUser,
+  changePassword,
+  updateAvatar,
+  removeAvatar,
+  googleCallback,
+} from "./authController.js";
 import { config } from "../../config.js";
 import { requireAuth } from "../../shared/middleware/auth.js";
 
@@ -37,6 +48,10 @@ export function createAuthRouter(): Router {
 
   // Get current user info
   router.get("/me", requireAuth, getCurrentUser);
+  router.patch("/me", requireAuth, updateCurrentUser);
+  router.post("/change-password", requireAuth, changePassword);
+  router.post("/avatar", requireAuth, updateAvatar);
+  router.delete("/avatar", requireAuth, removeAvatar);
 
   return router;
 }

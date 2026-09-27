@@ -82,17 +82,77 @@ export async function resetPassword(req: Request, res: Response) {
   }
 }
 
+/** The signed-in user as the client sees it: secrets removed, plus whether a password is set. */
+function currentUserResponse(user: any) {
+  const userResponse = user.toObject ? user.toObject() : { ...user };
+  userResponse.hasPassword = !!userResponse.password;
+  delete userResponse.password;
+  delete userResponse.resetPasswordToken;
+  delete userResponse.resetPasswordExpires;
+  return userResponse;
+}
+
 export function getCurrentUser(req: Request, res: Response) {
   if (!req.user) {
     return res.status(401).json({ error: { code: "UNAUTHORIZED", message: "Not logged in" } });
   }
 
-  const userResponse = (req.user as any).toObject ? (req.user as any).toObject() : { ...req.user };
-  delete userResponse.password;
-  delete userResponse.resetPasswordToken;
-  delete userResponse.resetPasswordExpires;
+  res.json({ user: currentUserResponse(req.user) });
+}
 
-  res.json({ user: userResponse });
+export async function updateCurrentUser(req: Request, res: Response) {
+  try {
+    const { displayName } = req.body;
+    if (typeof displayName !== "string") {
+      return res.status(400).json({ error: { message: "Display name is required" } });
+    }
+
+    const user = await authService.updateProfile(req.user!, displayName);
+    res.json({ user: currentUserResponse(user) });
+  } catch (error: any) {
+    console.error("Update profile error:", error);
+    res.status(400).json({ error: { message: error.message || "Update profile failed" } });
+  }
+}
+
+export async function changePassword(req: Request, res: Response) {
+  try {
+    const { currentPassword, newPassword } = req.body;
+    if (typeof newPassword !== "string") {
+      return res.status(400).json({ error: { message: "Missing required fields" } });
+    }
+
+    await authService.changePassword(req.user!, currentPassword, newPassword);
+    res.json({ user: currentUserResponse(req.user) });
+  } catch (error: any) {
+    console.error("Change password error:", error);
+    res.status(400).json({ error: { message: error.message || "Change password failed" } });
+  }
+}
+
+export async function updateAvatar(req: Request, res: Response) {
+  try {
+    const { image } = req.body;
+    if (typeof image !== "string") {
+      return res.status(400).json({ error: { message: "Image is required" } });
+    }
+
+    const user = await authService.updateAvatar(req.user!, image);
+    res.json({ user: currentUserResponse(user) });
+  } catch (error: any) {
+    console.error("Update avatar error:", error);
+    res.status(400).json({ error: { message: error.message || "Update avatar failed" } });
+  }
+}
+
+export async function removeAvatar(req: Request, res: Response) {
+  try {
+    const user = await authService.removeAvatar(req.user!);
+    res.json({ user: currentUserResponse(user) });
+  } catch (error: any) {
+    console.error("Remove avatar error:", error);
+    res.status(400).json({ error: { message: error.message || "Remove avatar failed" } });
+  }
 }
 
 export function googleCallback(req: Request, res: Response) {

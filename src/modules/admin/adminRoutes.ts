@@ -6,6 +6,7 @@ import { createAdminsAdminRouter, createAuditAdminRouter } from "./routes/admins
 import { createAdminAuthRouter } from "./routes/authRoutes.js";
 import { createCatalogAdminRouter } from "./routes/catalogRoutes.js";
 import { createContentAdminRouter } from "./routes/contentRoutes.js";
+import { createFeedbackAdminRouter } from "./routes/feedbackRoutes.js";
 import { createOverviewAdminRouter } from "./routes/overviewRoutes.js";
 import { createPaymentsAdminRouter } from "./routes/paymentsRoutes.js";
 import { createUsersAdminRouter } from "./routes/usersRoutes.js";
@@ -21,6 +22,7 @@ export function createAdminRouter(repo: StaticContentRepository, cfg: AppConfig)
   r.use("/payments", createPaymentsAdminRouter());
   r.use("/catalog", createCatalogAdminRouter());
   r.use("/content", createContentAdminRouter(repo));
+  r.use("/feedback", createFeedbackAdminRouter());
   r.use("/admins", createAdminsAdminRouter());
   r.use("/audit", createAuditAdminRouter());
   return r;

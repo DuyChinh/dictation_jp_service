@@ -56,6 +56,12 @@ export const config = {
   /** First super admin, created at boot when no admin has this username yet. */
   adminUsername: (process.env.ADMIN_USERNAME ?? "").trim().toLowerCase(),
   adminPassword: process.env.ADMIN_PASSWORD ?? "",
+  /** Stores user avatars; uploads are refused while it is unset. */
+  cloudinary: {
+    cloudName: process.env.CLOUDINARY_CLOUD_NAME || "",
+    apiKey: process.env.CLOUDINARY_API_KEY || "",
+    apiSecret: process.env.CLOUDINARY_API_SECRET || "",
+  },
   corsOrigins: (process.env.CORS_ORIGINS ?? "http://localhost:5173")
     .split(",")
     .map((s) => s.trim())

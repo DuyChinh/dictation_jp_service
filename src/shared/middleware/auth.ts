@@ -39,3 +39,17 @@ export const requireAuth = async (req: Request, res: Response, next: NextFunctio
     return res.status(401).json({ error: { code: "UNAUTHORIZED", message: "Invalid token" } });
   }
 };
+
+/** Like requireAuth, but a missing or bad token just leaves req.user unset. */
+export const optionalAuth = async (req: Request, _res: Response, next: NextFunction) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader?.startsWith("Bearer ")) return next();
+  try {
+    const decoded = jwt.verify(authHeader.split(" ")[1], config.jwtSecret) as { userId: string };
+    const user = await User.findById(decoded.userId);
+    if (user && user.status !== "locked") req.user = user;
+  } catch {
+    // treated as signed out
+  }
+  next();
+};

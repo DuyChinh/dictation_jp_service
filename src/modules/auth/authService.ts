@@ -3,12 +3,20 @@ import bcrypt from "bcryptjs";
 import crypto from "crypto";
 import { User, IUser } from "../../models/User.js";
 import { config } from "../../config.js";
+import { cloudinary, configureCloudinary, imageDataUrlProblem } from "../../shared/cloudinary.js";
 
 export interface GoogleProfile {
   id: string;
   email: string;
   displayName: string;
   avatar?: string;
+}
+
+/** The client sends the avatar already cropped and resized, so anything this big is not one. */
+const MAX_AVATAR_BYTES = 512 * 1024;
+
+function avatarPublicId(user: IUser): string {
+  return `avatars/${user._id}`;
 }
 
 export class AuthService {
@@ -95,6 +103,74 @@ export class AuthService {
     // We can keep authProvider as 'google' or change to 'local'. Let's keep it as is,
     // they just have a password now.
     await user.save();
+  }
+
+  async updateProfile(user: IUser, displayName: string): Promise<IUser> {
+    const name = displayName.trim();
+    if (!name) {
+      throw new Error("Display name is required");
+    }
+    if (name.length > 60) {
+      throw new Error("Display name is too long");
+    }
+    user.displayName = name;
+    await user.save();
+    return user;
+  }
+
+  async changePassword(user: IUser, currentPassword: string | undefined, newPassword: string): Promise<void> {
+    if (newPassword.length < 8) {
+      throw new Error("Password must be at least 8 characters");
+    }
+
+    // A Google account without a password yet can set one without a current password.
+    if (user.password) {
+      const isMatch = await bcrypt.compare(currentPassword || "", user.password);
+      if (!isMatch) {
+        throw new Error("Current password is incorrect");
+      }
+    }
+
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(newPassword, salt);
+    await user.save();
+  }
+
+  async updateAvatar(user: IUser, image: string): Promise<IUser> {
+    const problem = imageDataUrlProblem(image, MAX_AVATAR_BYTES);
+    if (problem) {
+      throw new Error(problem);
+    }
+    if (!configureCloudinary()) {
+      throw new Error("Avatar upload is not available");
+    }
+
+    const res = await cloudinary.uploader.upload(image, {
+      public_id: avatarPublicId(user),
+      overwrite: true,
+      invalidate: true,
+      resource_type: "image",
+      transformation: [{ width: 256, height: 256, crop: "fill", gravity: "center" }],
+    });
+
+    // secure_url carries the upload version, so browsers don't keep showing the old picture.
+    user.avatar = res.secure_url;
+    await user.save();
+    return user;
+  }
+
+  async removeAvatar(user: IUser): Promise<IUser> {
+    const uploaded = user.avatar?.includes(`/${avatarPublicId(user)}`);
+    user.avatar = undefined;
+    await user.save();
+
+    if (uploaded && configureCloudinary()) {
+      // The account no longer points at it; a failed cleanup only leaves an orphan file.
+      await cloudinary.uploader
+        .destroy(avatarPublicId(user), { invalidate: true })
+        .catch((error) => console.error("Avatar cleanup failed:", error));
+    }
+    return user;
   }
 
   generateToken(user: IUser): string {
