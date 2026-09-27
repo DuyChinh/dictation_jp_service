@@ -1,9 +1,12 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import jwt from "jsonwebtoken";
 import request from "supertest";
 import { beforeAll, describe, expect, it } from "vitest";
 import { StaticContentRepository } from "./modules/content/StaticContentRepository.js";
 import { createApp } from "./app.js";
+import { config } from "./config.js";
+import { canAccess } from "./modules/admin/permissions.js";
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -136,5 +139,26 @@ describe("backend content + evaluate API", () => {
   it("refuses to import progress without auth", async () => {
     const res = await request(app).post("/api/progress/import").send({ dictation: [], sessions: [], listening: [] });
     expect(res.status).toBe(401);
+  });
+
+  it("keeps the admin API closed without an admin token", async () => {
+    const res = await request(app).get("/api/admin/users");
+    expect(res.status).toBe(401);
+  });
+
+  it("does not accept a learner token on the admin API", async () => {
+    const learnerToken = jwt.sign({ userId: "64b000000000000000000001", email: "a@example.com" }, config.jwtSecret);
+    const res = await request(app).get("/api/admin/overview").set("Authorization", `Bearer ${learnerToken}`);
+    expect(res.status).toBe(401);
+  });
+
+  it("gives each admin role only its own areas", () => {
+    expect(canAccess("super_admin", "admins", "write")).toBe(true);
+    expect(canAccess("content", "users", "read")).toBe(false);
+    expect(canAccess("content", "content", "write")).toBe(true);
+    expect(canAccess("support", "payments", "read")).toBe(true);
+    expect(canAccess("support", "payments", "write")).toBe(false);
+    expect(canAccess("accountant", "catalog", "write")).toBe(true);
+    expect(canAccess("accountant", "admins", "read")).toBe(false);
   });
 });

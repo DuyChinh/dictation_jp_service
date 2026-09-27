@@ -36,7 +36,11 @@ export function createContentRouter(
 
   r.get("/lessons/:lessonId", (req, res) => {
     const meta = repo.get(req.params.lessonId);
-    if (!meta || !cfg.allowStatuses.includes(meta.package.status as never)) {
+    if (
+      !meta ||
+      repo.isHidden(meta.package.id) ||
+      !cfg.allowStatuses.includes(meta.package.status as never)
+    ) {
       throw new AppError("CONTENT_NOT_FOUND", "Lesson not found", 404);
     }
     res.json({ lesson: toLessonDetail(meta) });
@@ -44,7 +48,11 @@ export function createContentRouter(
 
   r.get("/lessons/:lessonId/practice", (req, res) => {
     const meta = repo.get(req.params.lessonId);
-    if (!meta || !cfg.allowStatuses.includes(meta.package.status as never)) {
+    if (
+      !meta ||
+      repo.isHidden(meta.package.id) ||
+      !cfg.allowStatuses.includes(meta.package.status as never)
+    ) {
       throw new AppError("CONTENT_NOT_FOUND", "Lesson not found", 404);
     }
     let pkg = meta.package;
@@ -61,7 +69,11 @@ export function createContentRouter(
 
   r.get("/lessons/:lessonId/questions/:questionId", (req, res) => {
     const found = repo.getQuestion(req.params.lessonId, req.params.questionId);
-    if (!found || !cfg.allowStatuses.includes(found.meta.package.status as never)) {
+    if (
+      !found ||
+      repo.isHidden(found.meta.package.id) ||
+      !cfg.allowStatuses.includes(found.meta.package.status as never)
+    ) {
       throw new AppError("QUESTION_NOT_FOUND", "Question not found", 404);
     }
     res.json({

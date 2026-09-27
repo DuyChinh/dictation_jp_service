@@ -48,6 +48,14 @@ export const config = {
     "http://localhost:3001/api/auth/google/callback",
   clientUrl: process.env.CLIENT_URL || "http://localhost:5173",
   jwtSecret: process.env.JWT_SECRET || "default_jwt_secret_for_dev",
+  /** Admin tokens carry their own type claim; a separate secret is optional. */
+  adminJwtSecret:
+    process.env.ADMIN_JWT_SECRET ||
+    process.env.JWT_SECRET ||
+    "default_jwt_secret_for_dev",
+  /** First super admin, created at boot when no admin has this username yet. */
+  adminUsername: (process.env.ADMIN_USERNAME ?? "").trim().toLowerCase(),
+  adminPassword: process.env.ADMIN_PASSWORD ?? "",
   corsOrigins: (process.env.CORS_ORIGINS ?? "http://localhost:5173")
     .split(",")
     .map((s) => s.trim())

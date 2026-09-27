@@ -47,6 +47,10 @@ export class AuthService {
       throw new Error("Invalid credentials");
     }
 
+    if (user.status === "locked") {
+      throw new Error("This account has been locked");
+    }
+
     const token = this.generateToken(user);
     return { user, token };
   }

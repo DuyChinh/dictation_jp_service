@@ -9,6 +9,11 @@ export interface IUser extends Document {
   password?: string;
   resetPasswordToken?: string;
   resetPasswordExpires?: Date;
+  /** A locked account can't sign in; set from the admin area. */
+  status: "active" | "locked";
+  /** Plan code ("free" or a Plan's code); set from the admin area. */
+  plan: string;
+  premiumUntil?: Date | null;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -46,6 +51,19 @@ const userSchema = new Schema<IUser>(
     },
     resetPasswordExpires: {
       type: Date,
+    },
+    status: {
+      type: String,
+      enum: ["active", "locked"],
+      default: "active",
+    },
+    plan: {
+      type: String,
+      default: "free",
+    },
+    premiumUntil: {
+      type: Date,
+      default: null,
     },
   },
   {

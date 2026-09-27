@@ -28,6 +28,9 @@ export const requireAuth = async (req: Request, res: Response, next: NextFunctio
     if (!user) {
       return res.status(401).json({ error: { code: "UNAUTHORIZED", message: "User not found or deleted" } });
     }
+    if (user.status === "locked") {
+      return res.status(401).json({ error: { code: "ACCOUNT_LOCKED", message: "This account has been locked" } });
+    }
 
     // Attach to request
     req.user = user;
