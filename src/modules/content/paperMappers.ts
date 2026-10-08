@@ -89,7 +89,7 @@ export function toPassageTranslation(passage: PaperPassage) {
       id: s.id,
       ja: s.ja,
       vi: s.vi ?? "",
-      ...(s.notes ? { notes: s.notes } : {}),
+      ...(s.notes_vi ? { notes_vi: s.notes_vi } : {}),
     })),
     full_translation_vi: passage.full_translation_vi ?? "",
   };

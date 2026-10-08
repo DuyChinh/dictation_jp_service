@@ -56,6 +56,14 @@ const PaperItemBody = z.object({
   choice_id: z.enum(["1", "2", "3", "4"]),
 });
 
+const PaperExamBody = z.object({
+  lesson_id: z.string(),
+  scope: z.enum(["all", "vocab", "grammar", "reading"]),
+  answers: z
+    .array(z.object({ item_id: z.string(), choice_id: z.enum(["1", "2", "3", "4"]) }))
+    .max(300),
+});
+
 const TranslationBody = z.object({
   lesson_id: z.string(),
   sentence_id: z.string(),
@@ -83,6 +91,52 @@ export function createEvaluateRouter(
     res.json({ result: toItemResult(item, choice_id) });
   });
 
+  /**
+   * Grade a timed sitting in one go: the learner answered without seeing any result, so the
+   * correct choices are revealed only here. Explanations stay behind /paper-item (review).
+   */
+  r.post("/paper-exam", (req, res) => {
+    const body = PaperExamBody.safeParse(req.body);
+    if (!body.success) {
+      throw new AppError("VALIDATION_ERROR", "Invalid request", 400, body.error.issues);
+    }
+    const { lesson_id, scope, answers } = body.data;
+    const paper = repo.getPaper(lesson_id, allowStatuses);
+    if (!paper) {
+      throw new AppError("CONTENT_NOT_FOUND", "Paper not found", 404);
+    }
+    const picked = new Map(answers.map((a) => [a.item_id, a.choice_id]));
+    const known = new Set(paper.items.map((i) => i.id));
+    if (answers.some((a) => !known.has(a.item_id))) {
+      throw new AppError("QUESTION_NOT_FOUND", "Unknown question in answers", 404);
+    }
+    const inScope = paper.items
+      .filter((i) => scope === "all" || i.part === scope)
+      .sort((a, b) => a.no - b.no);
+    const items = inScope.map((i) => {
+      const selected = picked.get(i.id) ?? null;
+      const correctChoice = i.choices.find((c) => c.correct)?.id ?? null;
+      return {
+        item_id: i.id,
+        no: i.no,
+        part: i.part,
+        mondai: i.mondai,
+        selected,
+        correct_choice_id: correctChoice,
+        correct: selected !== null && selected === correctChoice,
+      };
+    });
+    res.json({
+      result: {
+        scope,
+        total: items.length,
+        answered: items.filter((i) => i.selected !== null).length,
+        correct: items.filter((i) => i.correct).length,
+        items,
+      },
+    });
+  });
+
   /** Feedback on a learner's Vietnamese translation of one sentence of a passage. */
   r.post("/translation", (req, res) => {
     const body = TranslationBody.safeParse(req.body);
@@ -105,7 +159,7 @@ export function createEvaluateRouter(
         reference: {
           ja: sentence.ja,
           vi: sentence.vi ?? "",
-          ...(sentence.notes ? { notes: sentence.notes } : {}),
+          ...(sentence.notes_vi ? { notes_vi: sentence.notes_vi } : {}),
         },
       },
     });

@@ -89,7 +89,13 @@ export const PaperSentenceSchema = z.object({
   ja_blank: z.string().optional(),
   vi: z.string().optional(),
   reading: z.string().optional(),
+  /**
+   * Footnotes and markers exactly as PRINTED in the exam (Japanese only): （注1）term：definition,
+   * （中略）, and layout markers "A" / "B" / "¶2". Shown to the learner while practising.
+   */
   notes: z.string().optional(),
+  /** Vietnamese glosses and editorial remarks (typo fixes, which phrase is underlined). Shown only after answering. */
+  notes_vi: z.string().optional(),
   /** Drives the translation drill's "which parts were right / wrong" feedback. */
   chunks: z.array(PaperChunkSchema).default([]),
   pitfalls: z.array(PaperPitfallSchema).default([]),

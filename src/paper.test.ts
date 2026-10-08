@@ -52,6 +52,8 @@ function paper(status: string) {
             ja: "市場はただ集まる場ではない。",
             ja_blank: "市場は（　）集まる場ではない。",
             vi: "Chợ không chỉ là nơi tụ tập.",
+            notes: "（注1）市場：いちば",
+            notes_vi: "（注1）市場：いちば = chợ",
             chunks: [
               { ja: "市場は", vi: "chợ", accept_vi: ["thị trường"] },
               { ja: "ただ集まる場ではない", vi: "không chỉ là nơi tụ tập", accept_vi: [] },
@@ -118,6 +120,15 @@ describe("written part (paper.json) API", () => {
     expect(res.body.paper.passages[0].sentences[0].text).toBe("市場は（　）集まる場ではない。");
   });
 
+  it("footnotes are shown as printed; Vietnamese glosses only come with the translation", async () => {
+    const practice = await request(app).get(`/api/content/lessons/${LESSON}/paper`);
+    const sentence = practice.body.paper.passages[0].sentences[0];
+    expect(sentence.notes).toBe("（注1）市場：いちば");
+    expect(JSON.stringify(practice.body)).not.toContain("= chợ");
+    const tr = await request(app).get(`/api/content/lessons/${LESSON}/paper/passages/${LESSON}-r-p1/translation`);
+    expect(tr.body.translation.sentences[0].notes_vi).toBe("（注1）市場：いちば = chợ");
+  });
+
   it("is hidden while the paper is still a draft", async () => {
     expect((await request(draftApp).get(`/api/content/lessons/${LESSON}/paper`)).status).toBe(404);
     const detail = await request(draftApp).get(`/api/content/lessons/${LESSON}`);
@@ -144,6 +155,30 @@ describe("written part (paper.json) API", () => {
     expect((await request(app).post("/api/evaluate/paper-item").send({ lesson_id: LESSON, item_id: "nope", choice_id: "1" })).status).toBe(404);
     expect((await request(app).post("/api/evaluate/paper-item").send({ lesson_id: LESSON, item_id: `${LESSON}-v-q1`, choice_id: "9" })).status).toBe(400);
     expect((await request(draftApp).post("/api/evaluate/paper-item").send({ lesson_id: LESSON, item_id: `${LESSON}-v-q1`, choice_id: "1" })).status).toBe(404);
+  });
+
+  it("grades a timed sitting at once and counts unanswered questions as wrong", async () => {
+    const answers = [
+      { item_id: `${LESSON}-v-q1`, choice_id: "3" },
+      { item_id: `${LESSON}-g-q2`, choice_id: "4" },
+    ];
+    const all = await request(app).post("/api/evaluate/paper-exam").send({ lesson_id: LESSON, scope: "all", answers });
+    expect(all.status).toBe(200);
+    expect(all.body.result).toMatchObject({ total: 3, answered: 2, correct: 1 });
+    expect(all.body.result.items.map((i: { correct: boolean }) => i.correct)).toEqual([true, false, false]);
+    expect(all.body.result.items[1].correct_choice_id).toBe("1");
+    expect(all.body.result.items[2].selected).toBeNull();
+
+    const vocab = await request(app).post("/api/evaluate/paper-exam").send({ lesson_id: LESSON, scope: "vocab", answers });
+    expect(vocab.body.result).toMatchObject({ total: 1, answered: 1, correct: 1 });
+  });
+
+  it("rejects an exam with unknown questions, bad choices or a draft paper", async () => {
+    const bad = (answers: unknown) => request(app).post("/api/evaluate/paper-exam").send({ lesson_id: LESSON, scope: "all", answers });
+    expect((await bad([{ item_id: "nope", choice_id: "1" }])).status).toBe(404);
+    expect((await bad([{ item_id: `${LESSON}-v-q1`, choice_id: "9" }])).status).toBe(400);
+    const draft = await request(draftApp).post("/api/evaluate/paper-exam").send({ lesson_id: LESSON, scope: "all", answers: [] });
+    expect(draft.status).toBe(404);
   });
 
   it("analyses a translation chunk by chunk", async () => {
