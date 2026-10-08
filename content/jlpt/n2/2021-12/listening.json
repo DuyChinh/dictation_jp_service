@@ -407,7 +407,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: người nữ nói 「それは大丈夫だった」 — chị đã kiểm tra rồi, lớp thứ Bảy còn chỗ."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q1-s7",
+                "jlpt-n2-2021-12-m1-q1-s8"
+              ]
             },
             {
               "id": "2",
@@ -419,7 +423,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: báo cho anh Yamada là việc làm sau khi đã hỏi thầy giáo (「で、それを山田さんに伝えてくれる？」)."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q1-s5"
+              ]
             },
             {
               "id": "3",
@@ -433,7 +440,11 @@
                 "vi": "Đúng: 「先生に電話して確かめてもらえないかな」 — trước tiên gọi cho thầy Kimura hỏi buổi tới lớp học đến đâu."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m1-q1-s12"
+                "jlpt-n2-2021-12-m1-q1-s9",
+                "jlpt-n2-2021-12-m1-q1-s10",
+                "jlpt-n2-2021-12-m1-q1-s11",
+                "jlpt-n2-2021-12-m1-q1-s12",
+                "jlpt-n2-2021-12-m1-q1-s13"
               ]
             },
             {
@@ -446,7 +457,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: sửa danh sách học viên là việc cuối cùng, 「山田さんへの連絡が済んだら」."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q1-s16"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -620,7 +634,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: nhổ cỏ là việc nhóm buổi sáng đã làm xong."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q2-s4"
+              ]
             },
             {
               "id": "2",
@@ -646,6 +663,7 @@
                 "vi": "Đúng: 「その間に皆さんには…倉庫から花の苗を運んでいただきます」 — trong lúc nhân viên đánh dấu, tình nguyện viên chuyển cây con từ kho."
               },
               "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q2-s6",
                 "jlpt-n2-2021-12-m1-q2-s7"
               ]
             },
@@ -659,7 +677,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: xếp cây con theo điểm đánh dấu là bước sau (「その後」)."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q2-s9"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -989,7 +1010,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: nhượng cho bạn ở chỗ làm thêm là cách của nam du học sinh."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q3-s5",
+                "jlpt-n2-2021-12-m1-q3-s6"
+              ]
             },
             {
               "id": "2",
@@ -1003,6 +1028,7 @@
                 "vi": "Đúng: nam gợi ý quyên tặng cho nhóm tình nguyện mang đồ cho tân sinh viên, cuối cùng 「新入生に喜んでもらうのがいいんじゃない」「じゃあ、そうしよう」."
               },
               "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q3-s8",
                 "jlpt-n2-2021-12-m1-q3-s9",
                 "jlpt-n2-2021-12-m1-q3-s20",
                 "jlpt-n2-2021-12-m1-q3-s21"
@@ -1018,7 +1044,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: cửa hàng đồ cũ có thể không mua đồ điện cũ."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q3-s11",
+                "jlpt-n2-2021-12-m1-q3-s12"
+              ]
             },
             {
               "id": "4",
@@ -1030,7 +1060,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: bán trên mạng bị khuyên tránh vì dễ gặp rắc rối khi giao nhận và tiền nong."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q3-s17",
+                "jlpt-n2-2021-12-m1-q3-s18"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -1334,7 +1368,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: sinh viên lo bố cục, nhưng thầy nói 「構成は悪くないと思いますよ」."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q4-s6",
+                "jlpt-n2-2021-12-m1-q4-s7"
+              ]
             },
             {
               "id": "2",
@@ -1361,7 +1399,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: phần kinh nghiệm cụ thể là chỗ quan trọng, 「このままでいい」."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q4-s11",
+                "jlpt-n2-2021-12-m1-q4-s12"
+              ]
             },
             {
               "id": "4",
@@ -1373,7 +1415,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: phần kết luận có thể dài hơn, nhưng thầy bảo 「とりあえずこのままにしましょう」."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q4-s15",
+                "jlpt-n2-2021-12-m1-q4-s16"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -1675,7 +1721,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: ghế cạnh lối đi (ngồi cạnh nhau được) chỉ là phương án bất đắc dĩ, anh muốn ghế cửa sổ."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q5-s11",
+                "jlpt-n2-2021-12-m1-q5-s12"
+              ]
             },
             {
               "id": "2",
@@ -1695,7 +1745,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: hàng cuối cùng không ngả ghế được nên anh thấy khó chịu."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m1-q5-s8",
+                "jlpt-n2-2021-12-m1-q5-s9"
+              ]
             },
             {
               "id": "4",
@@ -1708,8 +1762,11 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m1-q5-s13",
+                "jlpt-n2-2021-12-m1-q5-s14",
                 "jlpt-n2-2021-12-m1-q5-s15",
                 "jlpt-n2-2021-12-m1-q5-s16",
+                "jlpt-n2-2021-12-m1-q5-s17",
+                "jlpt-n2-2021-12-m1-q5-s18",
                 "jlpt-n2-2021-12-m1-q5-s19"
               ]
             }
@@ -1943,7 +2000,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: anh không nói trồng vì muốn ăn rau ngon."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q1-s6"
+              ]
             },
             {
               "id": "2",
@@ -1955,7 +2015,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: nhiều người trồng vì lo thuốc trừ sâu, nhưng anh nói 「僕はあまり気にしてない」."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q1-s7",
+                "jlpt-n2-2021-12-m2-q1-s8"
+              ]
             },
             {
               "id": "3",
@@ -1967,7 +2031,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: 「これくらいじゃ節約にならないよ」 — trồng chừng này không tiết kiệm được."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q1-s10"
+              ]
             },
             {
               "id": "4",
@@ -2208,7 +2275,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: lương theo giờ cao là ưu điểm của chỗ dạy thêm cũ (「塾は時給もいいし」)."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q2-s7"
+              ]
             },
             {
               "id": "2",
@@ -2220,7 +2290,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: người bạn là đồng nghiệp ở trung tâm dạy thêm, không phải ở nhà hàng."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q2-s7"
+              ]
             },
             {
               "id": "3",
@@ -2234,6 +2307,8 @@
                 "vi": "Đúng: sắp bận chuẩn bị xin việc, lịch không cố định; chỗ mới chỉ cần nộp lịch từng tuần — dễ làm theo lịch của mình."
               },
               "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q2-s6",
+                "jlpt-n2-2021-12-m2-q2-s9",
                 "jlpt-n2-2021-12-m2-q2-s10",
                 "jlpt-n2-2021-12-m2-q2-s11"
               ]
@@ -2248,7 +2323,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: là việc mới nên phải học nhiều, anh chưa quen."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q2-s12"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -2409,7 +2487,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: 「引用した資料は皆さん信頼できるものを使って書けていました」 — ai cũng dùng tài liệu đáng tin."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q3-s5"
+              ]
             },
             {
               "id": "2",
@@ -2436,7 +2517,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: văn phong đã thống nhất, không lẫn văn nói."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q3-s7"
+              ]
             },
             {
               "id": "4",
@@ -2448,7 +2532,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: lần trước có người vượt số chữ, nhưng lần này mọi người đều viết đúng giới hạn."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q3-s8"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -2713,7 +2800,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: xếp theo kích cỡ thì hôm nay đã làm rồi, không phải việc mới."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q4-s5"
+              ]
             },
             {
               "id": "2",
@@ -2725,7 +2815,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: xếp theo màu bị gạt đi — 「そこまでしなくていいよ」."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q4-s8",
+                "jlpt-n2-2021-12-m2-q4-s9"
+              ]
             },
             {
               "id": "3",
@@ -2737,7 +2831,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: khách vui với giá hiện tại, nên 「値札は変えなくていい」."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q4-s10",
+                "jlpt-n2-2021-12-m2-q4-s11"
+              ]
             },
             {
               "id": "4",
@@ -2752,7 +2850,8 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m2-q4-s13",
-                "jlpt-n2-2021-12-m2-q4-s14"
+                "jlpt-n2-2021-12-m2-q4-s14",
+                "jlpt-n2-2021-12-m2-q4-s15"
               ]
             }
           ],
@@ -2914,7 +3013,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: vì cửa hàng giống quán cà phê nên nhiều người tưởng trong hộp là cà phê, nhưng không phải."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q5-s8"
+              ]
             },
             {
               "id": "2",
@@ -2941,7 +3043,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: chỉ là hộp trông như đựng bánh kẹo."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q5-s6"
+              ]
             },
             {
               "id": "4",
@@ -2953,7 +3058,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: chỉ là hộp trông giống hộp đựng đá quý."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q5-s6"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -3179,7 +3287,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: chơi bóng đá với bạn bè là chuyện hồi trẻ."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q6-s5"
+              ]
             },
             {
               "id": "2",
@@ -3191,7 +3302,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: bạn khuyên chạy bộ nhưng ông thấy khó theo (「なかなか……」) nên chuyển sang đi bộ."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q6-s7"
+              ]
             },
             {
               "id": "3",
@@ -3206,8 +3320,10 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m2-q6-s8",
+                "jlpt-n2-2021-12-m2-q6-s9",
                 "jlpt-n2-2021-12-m2-q6-s10",
-                "jlpt-n2-2021-12-m2-q6-s11"
+                "jlpt-n2-2021-12-m2-q6-s11",
+                "jlpt-n2-2021-12-m2-q6-s12"
               ]
             },
             {
@@ -3220,7 +3336,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: đi du lịch chỉ là dịp ông vẫn đi bộ ở nơi đến, không phải cách giải tỏa chính."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m2-q6-s13"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -3539,7 +3658,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: vẫn là thầy Sato dạy, chỉ đổi ngày học."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q1-s9"
+              ]
             },
             {
               "id": "2",
@@ -3551,7 +3673,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: kết quả học bổng 「まだなんですけど」 — chưa có, không phải chuyện chính."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q1-s6",
+                "jlpt-n2-2021-12-m3-q1-s7"
+              ]
             },
             {
               "id": "3",
@@ -3563,7 +3689,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: học phí John tự nhắc tới, và đã đóng rồi."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q1-s6"
+              ]
             },
             {
               "id": "4",
@@ -3890,6 +4019,7 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m3-q2-s7",
+                "jlpt-n2-2021-12-m3-q2-s8",
                 "jlpt-n2-2021-12-m3-q2-s9",
                 "jlpt-n2-2021-12-m3-q2-s10"
               ]
@@ -3904,7 +4034,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: anh không chê phim; 「そういうわけじゃない」 khi bị hỏi phim có dở không."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q2-s4",
+                "jlpt-n2-2021-12-m3-q2-s5"
+              ]
             },
             {
               "id": "3",
@@ -3916,7 +4050,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: phim dở làm anh buồn vì phí thời gian chỉ là giả định, phim này là phim hay."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q2-s12",
+                "jlpt-n2-2021-12-m3-q2-s13"
+              ]
             },
             {
               "id": "4",
@@ -3928,7 +4066,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: người phụ nữ đùa nên xem phim không hay không dở, nhưng đó không phải phim vừa xem."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q2-s14",
+                "jlpt-n2-2021-12-m3-q2-s15"
+              ]
             }
           ],
           "choice_display_mode": "numbers"
@@ -4132,7 +4274,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: không nói về lợi ích của việc tập liên tục; ngược lại còn nói nên cho cơ nghỉ 48 tiếng."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q3-s2"
+              ]
             },
             {
               "id": "2",
@@ -4146,6 +4291,8 @@
                 "vi": "Đúng: tập 1 hiệp 10 lần, nghỉ khoảng 2 phút, 2–3 hiệp, không tập quá sức, nghỉ 48 tiếng — cách tập hiệu quả."
               },
               "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q3-s3",
+                "jlpt-n2-2021-12-m3-q3-s4",
                 "jlpt-n2-2021-12-m3-q3-s5",
                 "jlpt-n2-2021-12-m3-q3-s6",
                 "jlpt-n2-2021-12-m3-q3-s7"
@@ -4173,7 +4320,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: không nói tại sao cần tập, mà nói tập thế nào cho đúng."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q3-s2"
+              ]
             }
           ],
           "choice_display_mode": "numbers"
@@ -4364,7 +4514,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: chỉ nói cuộc thi được tổ chức hằng năm, không nói mục đích tổ chức."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q4-s2"
+              ]
             },
             {
               "id": "2",
@@ -4404,7 +4557,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: không nhắc đến cách đăng ký lần sau; chỉ mời xem bài trên trang web."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q4-s6"
+              ]
             }
           ],
           "choice_display_mode": "numbers"
@@ -4647,7 +4803,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: nhà khoa học nói rõ chim 「話しているわけではない」 — không phải hiểu tiếng người."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m3-q5-s4"
+              ]
             },
             {
               "id": "2",
@@ -4686,7 +4845,9 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m3-q5-s5",
+                "jlpt-n2-2021-12-m3-q5-s6",
                 "jlpt-n2-2021-12-m3-q5-s7",
+                "jlpt-n2-2021-12-m3-q5-s8",
                 "jlpt-n2-2021-12-m3-q5-s9",
                 "jlpt-n2-2021-12-m3-q5-s10"
               ]
@@ -4825,7 +4986,8 @@
                 "vi": "Đúng: 「徹夜で頑張るしかない」 — chỉ còn cách thức trắng, tức là sát hạn lắm."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q1-s1"
+                "jlpt-n2-2021-12-m4-q1-s1",
+                "jlpt-n2-2021-12-m4-q1-s4"
               ]
             }
           ],
@@ -4939,7 +5101,9 @@
                 "vi": "Đúng: cảm ơn lời an ủi và nói phải lấy lại tinh thần."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q2-s1"
+                "jlpt-n2-2021-12-m4-q2-s1",
+                "jlpt-n2-2021-12-m4-q2-s2",
+                "jlpt-n2-2021-12-m4-q2-s3"
               ]
             },
             {
@@ -5079,7 +5243,9 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m4-q3-s1",
-                "jlpt-n2-2021-12-m4-q3-s2"
+                "jlpt-n2-2021-12-m4-q3-s2",
+                "jlpt-n2-2021-12-m4-q3-s3",
+                "jlpt-n2-2021-12-m4-q3-s4"
               ]
             },
             {
@@ -5217,7 +5383,8 @@
                 "vi": "Đúng: trưởng phòng xin lỗi vì chưa xem."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q4-s1"
+                "jlpt-n2-2021-12-m4-q4-s1",
+                "jlpt-n2-2021-12-m4-q4-s4"
               ]
             }
           ],
@@ -5333,7 +5500,8 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m4-q5-s1",
-                "jlpt-n2-2021-12-m4-q5-s2"
+                "jlpt-n2-2021-12-m4-q5-s2",
+                "jlpt-n2-2021-12-m4-q5-s3"
               ]
             },
             {
@@ -5471,7 +5639,9 @@
                 "vi": "Đúng: 「〜なしには成功しなかった」 = nhờ có lời khuyên mới thành công → phải cảm ơn anh Mori."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q6-s1"
+                "jlpt-n2-2021-12-m4-q6-s1",
+                "jlpt-n2-2021-12-m4-q6-s2",
+                "jlpt-n2-2021-12-m4-q6-s3"
               ]
             },
             {
@@ -5597,7 +5767,9 @@
                 "vi": "Đúng: 「大したもんだ」 = giỏi thật → ngạc nhiên hỏi lại “trưởng phòng khen tôi sao?”."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q7-s1"
+                "jlpt-n2-2021-12-m4-q7-s1",
+                "jlpt-n2-2021-12-m4-q7-s2",
+                "jlpt-n2-2021-12-m4-q7-s3"
               ]
             },
             {
@@ -5711,7 +5883,8 @@
                 "vi": "Đúng: đi thay anh Ono → hỏi anh Ono có chuyện gì."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q8-s1"
+                "jlpt-n2-2021-12-m4-q8-s1",
+                "jlpt-n2-2021-12-m4-q8-s2"
               ]
             },
             {
@@ -5849,7 +6022,9 @@
                 "vi": "Đúng: chúc mừng vì đã vào được công ty mong muốn."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q9-s1"
+                "jlpt-n2-2021-12-m4-q9-s1",
+                "jlpt-n2-2021-12-m4-q9-s2",
+                "jlpt-n2-2021-12-m4-q9-s3"
               ]
             },
             {
@@ -5963,7 +6138,8 @@
                 "vi": "Đúng: cấp trên đã đọc và thấy thú vị → xin được nghe ý kiến góp ý."
               },
               "evidence_segment_ids": [
-                "jlpt-n2-2021-12-m4-q10-s1"
+                "jlpt-n2-2021-12-m4-q10-s1",
+                "jlpt-n2-2021-12-m4-q10-s2"
               ]
             },
             {
@@ -6103,7 +6279,8 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m4-q11-s1",
-                "jlpt-n2-2021-12-m4-q11-s2"
+                "jlpt-n2-2021-12-m4-q11-s2",
+                "jlpt-n2-2021-12-m4-q11-s3"
               ]
             },
             {
@@ -6538,7 +6715,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: thẻ tích điểm tốn chi phí nên quán trưởng còn định bỏ luôn, không đổi quà."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q1-s4",
+                "jlpt-n2-2021-12-m5-q1-s5"
+              ]
             },
             {
               "id": "2",
@@ -6553,7 +6734,10 @@
               },
               "evidence_segment_ids": [
                 "jlpt-n2-2021-12-m5-q1-s8",
+                "jlpt-n2-2021-12-m5-q1-s9",
+                "jlpt-n2-2021-12-m5-q1-s10",
                 "jlpt-n2-2021-12-m5-q1-s11",
+                "jlpt-n2-2021-12-m5-q1-s12",
                 "jlpt-n2-2021-12-m5-q1-s22"
               ]
             },
@@ -6567,7 +6751,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: buổi tham quan đã được quảng bá đủ trên trang web và tờ rơi."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q1-s16",
+                "jlpt-n2-2021-12-m5-q1-s17"
+              ]
             },
             {
               "id": "4",
@@ -6579,7 +6767,12 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: phải tăng người vào ngày sự kiện và tốn công chuẩn bị nên không chọn."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q1-s18",
+                "jlpt-n2-2021-12-m5-q1-s19",
+                "jlpt-n2-2021-12-m5-q1-s20"
+              ]
             }
           ],
           "choice_display_mode": "numbers"
@@ -6870,7 +7063,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: sơ cứu là nơi họ đi sau (「次はそれに行こう」)."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q2-sq1-s3",
+                "jlpt-n2-2021-12-m5-q2-sq1-s16"
+              ]
             },
             {
               "id": "2",
@@ -6887,6 +7084,8 @@
                 "jlpt-n2-2021-12-m5-q2-sq1-s4",
                 "jlpt-n2-2021-12-m5-q2-sq1-s5",
                 "jlpt-n2-2021-12-m5-q2-sq1-s11",
+                "jlpt-n2-2021-12-m5-q2-sq1-s12",
+                "jlpt-n2-2021-12-m5-q2-sq1-s13",
                 "jlpt-n2-2021-12-m5-q2-sq1-s14"
               ]
             },
@@ -6900,7 +7099,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: xe cứu hỏa chỉ là phương án anh đưa ra khi người phụ nữ sợ độ cao, cô bảo anh cứ đi trực thăng."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q2-sq1-s7"
+              ]
             },
             {
               "id": "4",
@@ -6912,7 +7114,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: bơi mặc nguyên quần áo 1 giờ chiều mới bắt đầu, còn 3 tiếng nữa."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q2-sq1-s8",
+                "jlpt-n2-2021-12-m5-q2-sq1-s16"
+              ]
             }
           ],
           "choice_display_mode": "text"
@@ -7220,7 +7426,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: trực thăng là nơi đi đầu tiên."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q2-sq2-s4",
+                "jlpt-n2-2021-12-m5-q2-sq2-s11"
+              ]
             },
             {
               "id": "3",
@@ -7232,7 +7442,11 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: xe cứu hỏa không được chọn."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q2-sq2-s7",
+                "jlpt-n2-2021-12-m5-q2-sq2-s13"
+              ]
             },
             {
               "id": "4",
@@ -7244,7 +7458,10 @@
               "correct": false,
               "explanation": {
                 "vi": "Sai: người phụ nữ hứng thú nhưng còn 3 tiếng nữa mới bắt đầu."
-              }
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2021-12-m5-q2-sq2-s8"
+              ]
             }
           ],
           "choice_display_mode": "text"
