@@ -6,6 +6,68 @@ import { Progress } from "../../models/Progress.js";
 import { History } from "../../models/History.js";
 import { ListeningAnswer } from "../../models/ListeningAnswer.js";
 import { LessonActivity } from "../../models/LessonActivity.js";
+import { ListeningAttempt } from "../../models/ListeningAttempt.js";
+
+/** Attempts kept per lesson and returned per request; older ones drop off. */
+const ATTEMPTS_PER_LESSON = 50;
+/** Answers one attempt may carry: well above any test's question count. */
+const MAX_ATTEMPT_ANSWERS = 300;
+
+type AttemptView = {
+  id: string;
+  lessonId: string;
+  mode: "full" | "retry";
+  startedAt: number | null;
+  submittedAt: number;
+  total: number;
+  right: number;
+  wrong: number;
+  sections: Array<{ sectionId: string; total: number; right: number; wrong: number }>;
+  answers: Record<string, { choiceId: string; correct: boolean; correctChoiceId: string | null; answeredAt: number }>;
+};
+
+function toAttemptView(a: {
+  clientId: string;
+  lessonId: string;
+  mode?: string;
+  startedAt?: Date | null;
+  submittedAt: Date;
+  total: number;
+  right: number;
+  wrong: number;
+  sections?: Array<{ sectionId: string; total: number; right: number; wrong: number }>;
+  answers?: unknown;
+}): AttemptView {
+  return {
+    id: a.clientId,
+    lessonId: a.lessonId,
+    mode: a.mode === "retry" ? "retry" : "full",
+    startedAt: a.startedAt ? new Date(a.startedAt).getTime() : null,
+    submittedAt: new Date(a.submittedAt).getTime(),
+    total: a.total,
+    right: a.right,
+    wrong: a.wrong,
+    sections: (a.sections ?? []).map((s) => ({ sectionId: s.sectionId, total: s.total, right: s.right, wrong: s.wrong })),
+    answers: (a.answers && typeof a.answers === "object" ? a.answers : {}) as AttemptView["answers"],
+  };
+}
+
+/** Keeps only well-formed answers, trimmed to size. */
+function cleanAttemptAnswers(raw: unknown): AttemptView["answers"] {
+  const out: AttemptView["answers"] = {};
+  if (!raw || typeof raw !== "object") return out;
+  for (const [questionId, v] of Object.entries(raw as Record<string, unknown>).slice(0, MAX_ATTEMPT_ANSWERS)) {
+    const a = v as Record<string, unknown>;
+    if (!a || typeof a.choiceId !== "string" || typeof a.correct !== "boolean") continue;
+    out[str(questionId, 200)] = {
+      choiceId: str(a.choiceId, 50),
+      correct: a.correct,
+      correctChoiceId: str(a.correctChoiceId, 50) || null,
+      answeredAt: num(a.answeredAt) || Date.now(),
+    };
+  }
+  return out;
+}
 
 /** Most rows one import request may carry, per kind. */
 const IMPORT_LIMITS = { dictation: 5000, sessions: 50, listening: 2000, activity: 500 };
@@ -369,6 +431,109 @@ export function createProgressRouter(): Router {
     } catch (err: any) {
       console.error("Clear listening answers error:", err);
       return res.status(500).json({ error: { message: err.message || "Failed to clear answers" } });
+    }
+  });
+
+  // Submitted attempts at a lesson's listening test, newest first
+  r.get("/listening-attempts/:lessonId", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) return res.json({ lesson_id: req.params.lessonId, attempts: [] });
+      const items = await ListeningAttempt.find({ userId, lessonId: req.params.lessonId })
+        .sort({ submittedAt: -1 })
+        .limit(ATTEMPTS_PER_LESSON)
+        .lean();
+      return res.json({ lesson_id: req.params.lessonId, attempts: items.map(toAttemptView) });
+    } catch (err: any) {
+      console.error("Get listening attempts error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to load attempts" } });
+    }
+  });
+
+  // Latest attempt per lesson, for the progress page
+  r.get("/listening-attempts", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId || !mongoose.isValidObjectId(userId)) return res.json({ latest: {} });
+      const rows = await ListeningAttempt.aggregate([
+        { $match: { userId: new mongoose.Types.ObjectId(userId) } },
+        { $sort: { submittedAt: -1 } },
+        { $group: { _id: "$lessonId", doc: { $first: "$$ROOT" } } },
+      ]);
+      const latest: Record<string, AttemptView> = {};
+      for (const row of rows) latest[row._id] = { ...toAttemptView(row.doc), answers: {} };
+      return res.json({ latest });
+    } catch (err: any) {
+      console.error("Get latest listening attempts error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to load attempts" } });
+    }
+  });
+
+  // Store a submitted attempt; sending the same id again changes nothing
+  r.post("/listening-attempts", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) return res.status(200).json({ success: true, localOnly: true });
+
+      const b = req.body ?? {};
+      const clientId = str(b.id, 100);
+      const lessonId = str(b.lessonId, 200);
+      if (!clientId || !lessonId) {
+        return res.status(400).json({ error: { message: "Missing required fields" } });
+      }
+      const sections = (Array.isArray(b.sections) ? b.sections : []).slice(0, 20).map((s: Record<string, unknown>) => ({
+        sectionId: str(s?.sectionId, 200),
+        total: num(s?.total),
+        right: num(s?.right),
+        wrong: num(s?.wrong),
+      }));
+
+      await ListeningAttempt.updateOne(
+        { userId, clientId },
+        {
+          $setOnInsert: {
+            lessonId,
+            mode: b.mode === "retry" ? "retry" : "full",
+            startedAt: num(b.startedAt) > 0 ? new Date(num(b.startedAt)) : null,
+            submittedAt: dateFromMs(b.submittedAt),
+            total: num(b.total),
+            right: num(b.right),
+            wrong: num(b.wrong),
+            sections,
+            answers: cleanAttemptAnswers(b.answers),
+          },
+        },
+        { upsert: true },
+      );
+
+      // Keep the newest ones only.
+      const stale = await ListeningAttempt.find({ userId, lessonId }, { _id: 1 })
+        .sort({ submittedAt: -1 })
+        .skip(ATTEMPTS_PER_LESSON)
+        .lean();
+      if (stale.length) await ListeningAttempt.deleteMany({ _id: { $in: stale.map((s) => s._id) } });
+
+      return res.json({ success: true });
+    } catch (err: any) {
+      console.error("Save listening attempt error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to save attempt" } });
+    }
+  });
+
+  // Remove one attempt from the history
+  r.delete("/listening-attempts/:lessonId/:attemptId", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) return res.status(200).json({ success: true, localOnly: true });
+      const { deletedCount } = await ListeningAttempt.deleteOne({
+        userId,
+        lessonId: req.params.lessonId,
+        clientId: req.params.attemptId,
+      });
+      return res.json({ success: true, deleted: deletedCount });
+    } catch (err: any) {
+      console.error("Delete listening attempt error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to delete attempt" } });
     }
   });
 

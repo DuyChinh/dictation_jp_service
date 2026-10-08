@@ -141,6 +141,14 @@ describe("backend content + evaluate API", () => {
     expect(res.status).toBe(401);
   });
 
+  it("keeps listening attempts local for signed-out learners", async () => {
+    const list = await request(app).get("/api/progress/listening-attempts/fixture-sample-1");
+    expect(list.status).toBe(200);
+    expect(list.body.attempts).toEqual([]);
+    const save = await request(app).post("/api/progress/listening-attempts").send({ id: "a1", lessonId: "x" });
+    expect(save.body.localOnly).toBe(true);
+  });
+
   it("keeps the admin API closed without an admin token", async () => {
     const res = await request(app).get("/api/admin/users");
     expect(res.status).toBe(401);

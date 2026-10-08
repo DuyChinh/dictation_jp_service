@@ -1,9 +1,12 @@
 import type {
   ListeningPackage,
+  PaperPackage,
   Question,
   Segment,
 } from "@jd/content-schema";
 import {
+  PaperPackageSchema,
+  checkPaper,
   validatePackageDir,
   type ContentStatus,
 } from "@jd/content-schema";
@@ -14,6 +17,8 @@ export type LessonMeta = {
   package: ListeningPackage;
   dir: string;
   audioPath: string;
+  /** The written part (文字・語彙 / 文法 / 読解) when the folder has a valid paper.json. */
+  paper?: PaperPackage;
 };
 
 export type LessonFilter = {
@@ -80,13 +85,51 @@ export class StaticContentRepository {
         this.lastProblems.push({ dir: this.relative(dir), messages: [`duplicate lesson id: ${pkg.id}`] });
         continue;
       }
+      const paper = this.loadPaper(dir, pkg.id, errors);
       this.byId.set(pkg.id, {
         package: pkg,
         dir,
         audioPath: path.join(dir, pkg.audio.file),
+        ...(paper ? { paper } : {}),
       });
     }
     return { loaded: this.byId.size, errors };
+  }
+
+  /**
+   * paper.json is optional and never blocks the listening lesson: a broken one is reported in
+   * `problems()` and the lesson simply has no written part.
+   */
+  private loadPaper(dir: string, lessonId: string, errors: string[]): PaperPackage | null {
+    const file = path.join(dir, "paper.json");
+    if (!fs.existsSync(file)) return null;
+    const fail = (messages: string[]) => {
+      for (const m of messages) errors.push(`${this.relative(file)}: ${m}`);
+      this.lastProblems.push({ dir: this.relative(dir), messages: messages.map((m) => `paper.json: ${m}`) });
+      return null;
+    };
+    let raw: unknown;
+    try {
+      raw = JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch (e) {
+      return fail([`invalid JSON: ${(e as Error).message}`]);
+    }
+    const parsed = PaperPackageSchema.safeParse(raw);
+    if (!parsed.success) {
+      return fail(parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`));
+    }
+    if (parsed.data.lesson_id !== lessonId) {
+      return fail([`lesson_id ${parsed.data.lesson_id} does not match ${lessonId}`]);
+    }
+    const blocking = checkPaper(parsed.data).filter((i) => i.severity === "ERROR");
+    if (blocking.length) return fail(blocking.slice(0, 5).map((i) => i.message));
+    return parsed.data;
+  }
+
+  /** The written part of a lesson, only if its status is one the caller may serve. */
+  getPaper(lessonId: string, statuses: readonly ContentStatus[]): PaperPackage | null {
+    const paper = this.byId.get(lessonId)?.paper;
+    return paper && statuses.includes(paper.status) ? paper : null;
   }
 
   /** Folders the last load skipped. */

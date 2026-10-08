@@ -2,6 +2,11 @@ import { Router } from "express";
 import fs from "node:fs";
 import type { StaticContentRepository } from "./StaticContentRepository.js";
 import {
+  paperInfo,
+  toPaperPractice,
+  toPassageTranslation,
+} from "./paperMappers.js";
+import {
   stripPackageForPractice,
   stripQuestionForPractice,
   toLessonDetail,
@@ -30,7 +35,10 @@ export function createContentRouter(
 
     const lessons = repo
       .list({ level, year, month, statuses })
-      .map(toLessonSummary);
+      .map((meta) => ({
+        ...toLessonSummary(meta),
+        paper: paperInfo(repo.getPaper(meta.package.id, cfg.allowStatuses)),
+      }));
     res.json({ lessons });
   });
 
@@ -43,7 +51,31 @@ export function createContentRouter(
     ) {
       throw new AppError("CONTENT_NOT_FOUND", "Lesson not found", 404);
     }
-    res.json({ lesson: toLessonDetail(meta) });
+    res.json({
+      lesson: {
+        ...toLessonDetail(meta),
+        paper: paperInfo(repo.getPaper(meta.package.id, cfg.allowStatuses)),
+      },
+    });
+  });
+
+  /** The written part (vocab / grammar / reading) with answers and explanations withheld. */
+  r.get("/lessons/:lessonId/paper", (req, res) => {
+    const meta = repo.get(req.params.lessonId);
+    const paper = repo.getPaper(req.params.lessonId, cfg.allowStatuses);
+    if (!meta || !paper || repo.isHidden(meta.package.id)) {
+      throw new AppError("CONTENT_NOT_FOUND", "Paper not found", 404);
+    }
+    res.json({ paper: toPaperPractice(paper) });
+  });
+
+  r.get("/lessons/:lessonId/paper/passages/:passageId/translation", (req, res) => {
+    const paper = repo.getPaper(req.params.lessonId, cfg.allowStatuses);
+    const passage = paper?.passages.find((p) => p.id === req.params.passageId);
+    if (!paper || !passage || repo.isHidden(req.params.lessonId)) {
+      throw new AppError("CONTENT_NOT_FOUND", "Passage not found", 404);
+    }
+    res.json({ translation: toPassageTranslation(passage) });
   });
 
   r.get("/lessons/:lessonId/practice", (req, res) => {

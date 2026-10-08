@@ -4,10 +4,13 @@ import {
   joinFullQuestionExpected,
   scoreDictation,
   evaluateListening,
+  analyzeTranslation,
 } from "@jd/evaluation";
+import type { ContentStatus } from "@jd/content-schema";
 import { z } from "zod";
 import type { StaticContentRepository } from "../content/StaticContentRepository.js";
 import { AppError } from "../../shared/errors.js";
+import { findSentence, toItemResult } from "../content/paperMappers.js";
 
 const DictationBody = z.object({
   lesson_id: z.string(),
@@ -47,8 +50,66 @@ const ListeningBody = z.object({
     .optional(),
 });
 
-export function createEvaluateRouter(repo: StaticContentRepository): Router {
+const PaperItemBody = z.object({
+  lesson_id: z.string(),
+  item_id: z.string(),
+  choice_id: z.enum(["1", "2", "3", "4"]),
+});
+
+const TranslationBody = z.object({
+  lesson_id: z.string(),
+  sentence_id: z.string(),
+  text: z.string().max(2000),
+});
+
+export function createEvaluateRouter(
+  repo: StaticContentRepository,
+  allowStatuses: readonly ContentStatus[] = ["published"],
+): Router {
   const r = Router();
+
+  /** Answer one question of the written part; the explanations come back only now. */
+  r.post("/paper-item", (req, res) => {
+    const body = PaperItemBody.safeParse(req.body);
+    if (!body.success) {
+      throw new AppError("VALIDATION_ERROR", "Invalid request", 400, body.error.issues);
+    }
+    const { lesson_id, item_id, choice_id } = body.data;
+    const paper = repo.getPaper(lesson_id, allowStatuses);
+    const item = paper?.items.find((i) => i.id === item_id);
+    if (!paper || !item) {
+      throw new AppError("QUESTION_NOT_FOUND", "Question not found", 404);
+    }
+    res.json({ result: toItemResult(item, choice_id) });
+  });
+
+  /** Feedback on a learner's Vietnamese translation of one sentence of a passage. */
+  r.post("/translation", (req, res) => {
+    const body = TranslationBody.safeParse(req.body);
+    if (!body.success) {
+      throw new AppError("VALIDATION_ERROR", "Invalid request", 400, body.error.issues);
+    }
+    const { lesson_id, sentence_id, text } = body.data;
+    const paper = repo.getPaper(lesson_id, allowStatuses);
+    const found = paper && findSentence(paper, sentence_id);
+    if (!found) {
+      throw new AppError("SEGMENT_NOT_FOUND", "Sentence not found", 404);
+    }
+    const { sentence } = found;
+    res.json({
+      result: {
+        analysis: analyzeTranslation(text, {
+          chunks: sentence.chunks,
+          pitfalls: sentence.pitfalls,
+        }),
+        reference: {
+          ja: sentence.ja,
+          vi: sentence.vi ?? "",
+          ...(sentence.notes ? { notes: sentence.notes } : {}),
+        },
+      },
+    });
+  });
 
   r.post("/dictation", (req, res) => {
     const body = DictationBody.safeParse(req.body);

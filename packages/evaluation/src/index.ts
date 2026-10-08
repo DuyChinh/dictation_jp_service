@@ -29,3 +29,13 @@ export {
   type ListeningEvaluateInput,
   type ListeningEvaluateResult,
 } from "./evaluateListening.js";
+
+export {
+  analyzeTranslation,
+  type TranslationChunk,
+  type TranslationPitfall,
+  type TranslationTarget,
+  type ChunkFeedback,
+  type PitfallFeedback,
+  type TranslationAnalysis,
+} from "./analyzeTranslation.js";

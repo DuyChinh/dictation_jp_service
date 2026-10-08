@@ -33,3 +33,19 @@ export {
 
 export { getLocalizedText, type ContentLang, type LocalizedTextLike } from "./getLocalizedText.js";
 export { adaptV4ToPackage, type AdaptV4Options, type ImageUrlMap } from "./adaptV4.js";
+
+export {
+  PaperPackageSchema,
+  PaperItemSchema,
+  PaperPassageSchema,
+  PaperPartSchema,
+  PaperChunkSchema,
+  PaperPitfallSchema,
+  AnswerKeySchema,
+  type PaperPackage,
+  type PaperItem,
+  type PaperPassage,
+  type PaperPart,
+  type AnswerKey,
+} from "./paper.js";
+export { checkPaper } from "./validatePaper.js";
