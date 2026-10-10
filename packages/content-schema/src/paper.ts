@@ -17,12 +17,16 @@ export const PaperChoiceSchema = z.object({
   explanation_vi: z.string(),
   /** Meaning of the choice itself (vocab questions). */
   meaning_vi: z.string().optional(),
+  /** Âm Hán Việt of the kanji in `text`, UPPERCASE, e.g. 豊富 → "PHONG PHÚ". Omit when `text` has no kanji. */
+  sino_vi: z.string().optional(),
 });
 
 export const VocabNoteSchema = z.object({
   word: z.string().min(1),
   reading: z.string().optional(),
   meaning_vi: z.string().min(1),
+  /** Âm Hán Việt of the kanji in `word`, UPPERCASE ("PHONG PHÚ"). "" = kanji with no Hán Việt (jukujikun/ateji). */
+  sino_vi: z.string().optional(),
 });
 
 export const PaperReviewSchema = z.object({

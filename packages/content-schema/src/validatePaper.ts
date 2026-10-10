@@ -11,6 +11,13 @@ function partOf(no: number, key: AnswerKey): PaperPart | null {
   return null;
 }
 
+const KANJI = /[\u4e00-\u9fff]/;
+
+/** Âm Hán Việt is written in capitals ("PHONG PHÚ"): lower case means it was copied from a dictionary gloss. */
+function badSino(s: string | undefined): boolean {
+  return !!s && s !== s.toLocaleUpperCase("vi");
+}
+
 const MIN_CHUNK_COVERAGE = 0.7;
 const MAX_ACCEPT_LENGTH = 40;
 
@@ -91,6 +98,13 @@ export function checkPaper(
       if (c.explanation_vi.trim().length < MIN_EXPLANATION) {
         error(`choice ${c.id} needs an explanation_vi (>= ${MIN_EXPLANATION} chars)`, qid);
       }
+    }
+    for (const c of item.choices) {
+      if (badSino(c.sino_vi)) error(`choice ${c.id}: sino_vi must be UPPERCASE ("${c.sino_vi}")`, qid);
+    }
+    for (const v of item.vocab) {
+      if (badSino(v.sino_vi)) error(`vocab ${v.word}: sino_vi must be UPPERCASE ("${v.sino_vi}")`, qid);
+      else if (v.sino_vi === undefined && KANJI.test(v.word)) gap(`vocab ${v.word} needs sino_vi (âm Hán Việt)`, qid);
     }
     if (!item.summary_vi?.trim()) gap("missing summary_vi", qid);
     if (!item.stem.vi?.trim()) gap("missing stem.vi (translation)", qid);

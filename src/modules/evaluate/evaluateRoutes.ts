@@ -64,6 +64,13 @@ const PaperExamBody = z.object({
     .max(300),
 });
 
+const ListeningExamBody = z.object({
+  lesson_id: z.string(),
+  answers: z
+    .array(z.object({ question_id: z.string(), choice_id: z.string().min(1).max(20) }))
+    .max(300),
+});
+
 const TranslationBody = z.object({
   lesson_id: z.string(),
   sentence_id: z.string(),
@@ -129,6 +136,56 @@ export function createEvaluateRouter(
     res.json({
       result: {
         scope,
+        total: items.length,
+        answered: items.filter((i) => i.selected !== null).length,
+        correct: items.filter((i) => i.correct).length,
+        items,
+      },
+    });
+  });
+
+  /**
+   * Grade a timed listening sitting in one go: every listening question of the lesson is scored
+   * against what the learner picked, and the correct choices are revealed only here. The
+   * explanations stay behind /listening, opened from the review.
+   */
+  r.post("/listening-exam", (req, res) => {
+    const body = ListeningExamBody.safeParse(req.body);
+    if (!body.success) {
+      throw new AppError("VALIDATION_ERROR", "Invalid request", 400, body.error.issues);
+    }
+    const { lesson_id, answers } = body.data;
+    const meta = repo.get(lesson_id);
+    if (!meta) {
+      throw new AppError("CONTENT_NOT_FOUND", "Lesson not found", 404);
+    }
+    const questions = meta.package.sections.flatMap((section) =>
+      section.questions
+        .filter((q) => q.type === "listening_multiple_choice" && q.choices?.length)
+        .map((q) => ({ q, section })),
+    );
+    const known = new Set(questions.map(({ q }) => q.id));
+    if (answers.some((a) => !known.has(a.question_id))) {
+      throw new AppError("QUESTION_NOT_FOUND", "Unknown question in answers", 404);
+    }
+    const picked = new Map(answers.map((a) => [a.question_id, a.choice_id]));
+    const items = questions.map(({ q, section }, i) => {
+      const selected = picked.get(q.id) ?? null;
+      const correctChoice = q.choices?.find((c) => c.correct)?.id ?? null;
+      return {
+        item_id: q.id,
+        no: i + 1,
+        part: "listening" as const,
+        mondai: section.order,
+        section_id: section.id,
+        selected,
+        correct_choice_id: correctChoice,
+        correct: selected !== null && selected === correctChoice,
+      };
+    });
+    res.json({
+      result: {
+        scope: "listening" as const,
         total: items.length,
         answered: items.filter((i) => i.selected !== null).length,
         correct: items.filter((i) => i.correct).length,

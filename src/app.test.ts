@@ -63,6 +63,40 @@ describe("backend content + evaluate API", () => {
     expect(res.body.result.evidence_segments.length).toBeGreaterThan(0);
   });
 
+  it("grades a whole listening sitting at once", async () => {
+    const res = await request(app)
+      .post("/api/evaluate/listening-exam")
+      .send({ lesson_id: "fixture-sample-1", answers: [{ question_id: "fixture-sample-1-m1-q1", choice_id: "1" }] });
+    expect(res.status).toBe(200);
+    expect(res.body.result).toMatchObject({ scope: "listening", total: 1, answered: 1, correct: 1 });
+    expect(res.body.result.items[0]).toMatchObject({
+      item_id: "fixture-sample-1-m1-q1",
+      no: 1,
+      part: "listening",
+      mondai: 1,
+      section_id: "fixture-sample-1-m1",
+      selected: "1",
+      correct_choice_id: "1",
+      correct: true,
+    });
+  });
+
+  it("scores unanswered and wrong listening questions, and rejects unknown ones", async () => {
+    const blank = await request(app).post("/api/evaluate/listening-exam").send({ lesson_id: "fixture-sample-1", answers: [] });
+    expect(blank.body.result).toMatchObject({ total: 1, answered: 0, correct: 0 });
+    expect(blank.body.result.items[0]).toMatchObject({ selected: null, correct: false });
+    const wrong = await request(app)
+      .post("/api/evaluate/listening-exam")
+      .send({ lesson_id: "fixture-sample-1", answers: [{ question_id: "fixture-sample-1-m1-q1", choice_id: "3" }] });
+    expect(wrong.body.result).toMatchObject({ answered: 1, correct: 0 });
+    const unknown = await request(app)
+      .post("/api/evaluate/listening-exam")
+      .send({ lesson_id: "fixture-sample-1", answers: [{ question_id: "nope", choice_id: "1" }] });
+    expect(unknown.status).toBe(404);
+    const noLesson = await request(app).post("/api/evaluate/listening-exam").send({ lesson_id: "nope", answers: [] });
+    expect(noLesson.status).toBe(404);
+  });
+
   it("evaluates dictation exact match", async () => {
     const res = await request(app)
       .post("/api/evaluate/dictation")

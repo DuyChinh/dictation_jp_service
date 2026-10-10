@@ -64,17 +64,20 @@
         {
           "word": "才能",
           "reading": "さいのう",
-          "meaning_vi": "tài năng"
+          "meaning_vi": "tài năng",
+          "sino_vi": "TÀI NĂNG"
         },
         {
           "word": "発揮する",
           "reading": "はっきする",
-          "meaning_vi": "phát huy"
+          "meaning_vi": "phát huy",
+          "sino_vi": "PHÁT HUY"
         },
         {
           "word": "素晴らしい",
           "reading": "すばらしい",
-          "meaning_vi": "tuyệt vời"
+          "meaning_vi": "tuyệt vời",
+          "sino_vi": ""
         }
       ],
       "evidence_sentence_ids": []
@@ -129,7 +132,8 @@
         {
           "word": "辛い",
           "reading": "からい",
-          "meaning_vi": "cay"
+          "meaning_vi": "cay",
+          "sino_vi": "TÂN"
         }
       ],
       "evidence_sentence_ids": []
@@ -184,12 +188,14 @@
         {
           "word": "刑事",
           "reading": "けいじ",
-          "meaning_vi": "cảnh sát hình sự"
+          "meaning_vi": "cảnh sát hình sự",
+          "sino_vi": "HÌNH SỰ"
         },
         {
           "word": "検事",
           "reading": "けんじ",
-          "meaning_vi": "kiểm sát viên"
+          "meaning_vi": "kiểm sát viên",
+          "sino_vi": "KIỂM SỰ"
         }
       ],
       "evidence_sentence_ids": []
@@ -244,7 +250,8 @@
         {
           "word": "起床",
           "reading": "きしょう",
-          "meaning_vi": "thức dậy, rời giường"
+          "meaning_vi": "thức dậy, rời giường",
+          "sino_vi": "KHỞI SÀNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -299,7 +306,8 @@
         {
           "word": "収まる",
           "reading": "おさまる",
-          "meaning_vi": "lắng xuống, dịu đi; được cất vào"
+          "meaning_vi": "lắng xuống, dịu đi; được cất vào",
+          "sino_vi": "THU"
         },
         {
           "word": "ようやく",
@@ -326,28 +334,32 @@
           "text": "液って",
           "correct": false,
           "explanation_vi": "液 (えき) là chất lỏng (液体), không dùng làm động từ ×液る. Chỉ giống bộ ba chấm thuỷ với 湿.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "DỊCH"
         },
         {
           "id": "2",
           "text": "温って",
           "correct": false,
           "explanation_vi": "温 (おん/あたた-) là ấm (温かい, 温める). Không có động từ ×温る. Dễ nhầm vì cùng bộ thuỷ.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "ÔN"
         },
         {
           "id": "3",
           "text": "汗って",
           "correct": false,
           "explanation_vi": "汗 (あせ) là mồ hôi, danh từ, không có động từ ×汗る.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "HÃN"
         },
         {
           "id": "4",
           "text": "湿って",
           "correct": true,
           "explanation_vi": "湿る (しめる) = ẩm, hơi ướt: タオルが湿っている. Cả câu: «Chiếc khăn này vẫn còn ẩm». 湿 còn đọc しつ (湿度 = độ ẩm, 湿気 = hơi ẩm).",
-          "meaning_vi": "ẩm ướt"
+          "meaning_vi": "ẩm ướt",
+          "sino_vi": "THẤP"
         }
       ],
       "summary_vi": "しめる = 湿る (ẩm). 湿度 (しつど) là độ ẩm.",
@@ -359,7 +371,8 @@
         {
           "word": "湿る",
           "reading": "しめる",
-          "meaning_vi": "ẩm, hơi ướt"
+          "meaning_vi": "ẩm, hơi ướt",
+          "sino_vi": "THẤP"
         }
       ],
       "evidence_sentence_ids": []
@@ -381,28 +394,32 @@
           "text": "傾向",
           "correct": true,
           "explanation_vi": "傾向 (けいこう) = xu hướng, chiều hướng: 増える傾向がある (có xu hướng tăng). Cả câu: «Vào thời điểm này có xu hướng số người bị cảm tăng lên». 傾 = nghiêng (傾く), 向 = hướng.",
-          "meaning_vi": "xu hướng"
+          "meaning_vi": "xu hướng",
+          "sino_vi": "KHUYNH HƯỚNG"
         },
         {
           "id": "2",
           "text": "頃向",
           "correct": false,
           "explanation_vi": "頃 (ころ/ごろ) là khoảng, lúc (この頃), không đọc là けい. Từ ×頃向 không tồn tại.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "KHOẢNH HƯỚNG"
         },
         {
           "id": "3",
           "text": "傾高",
           "correct": false,
           "explanation_vi": "傾 đúng nhưng 高 (こう) là cao, không phải chữ trong 傾向. Từ ×傾高 không tồn tại.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "KHUYNH CAO"
         },
         {
           "id": "4",
           "text": "頃高",
           "correct": false,
           "explanation_vi": "Sai cả hai chữ: 頃 (khoảng, lúc) và 高 (cao). Từ ×頃高 không tồn tại.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "KHOẢNH CAO"
         }
       ],
       "summary_vi": "けいこう = 傾向 (xu hướng). 傾 (nghiêng) khác 頃 (khoảng thời gian).",
@@ -414,17 +431,20 @@
         {
           "word": "傾向",
           "reading": "けいこう",
-          "meaning_vi": "xu hướng"
+          "meaning_vi": "xu hướng",
+          "sino_vi": "KHUYNH HƯỚNG"
         },
         {
           "word": "風邪をひく",
           "reading": "かぜをひく",
-          "meaning_vi": "bị cảm"
+          "meaning_vi": "bị cảm",
+          "sino_vi": "PHONG TÀ"
         },
         {
           "word": "時期",
           "reading": "じき",
-          "meaning_vi": "thời kỳ, thời điểm"
+          "meaning_vi": "thời kỳ, thời điểm",
+          "sino_vi": "THỜI KỲ"
         }
       ],
       "evidence_sentence_ids": []
@@ -446,28 +466,32 @@
           "text": "診察",
           "correct": false,
           "explanation_vi": "診察 đọc là しんさつ (khám bệnh, bác sĩ khám cho bệnh nhân), không phải しさつ. Nghĩa «đông người đến khám bệnh» cũng không khớp với しさつ trong đề.",
-          "meaning_vi": "khám bệnh"
+          "meaning_vi": "khám bệnh",
+          "sino_vi": "CHẨN SÁT"
         },
         {
           "id": "2",
           "text": "視祭",
           "correct": false,
           "explanation_vi": "視 đúng nhưng 祭 (まつり/さい) là lễ hội, từ ×視祭 không tồn tại. Cần 察 (さつ).",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "THỊ TẾ"
         },
         {
           "id": "3",
           "text": "視察",
           "correct": true,
           "explanation_vi": "視察 (しさつ) = đi đến tận nơi để xem xét, thị sát (工場を視察する). Cả câu: «Rất đông người đã đến thị sát (nơi đó)». 視 = nhìn, 察 = xét, đoán (警察, 観察).",
-          "meaning_vi": "thị sát, khảo sát thực tế"
+          "meaning_vi": "thị sát, khảo sát thực tế",
+          "sino_vi": "THỊ SÁT"
         },
         {
           "id": "4",
           "text": "診祭",
           "correct": false,
           "explanation_vi": "Sai cả hai chữ: 診 (khám) và 祭 (lễ hội). Từ ×診祭 không tồn tại.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "CHẨN TẾ"
         }
       ],
       "summary_vi": "しさつ = 視察 (thị sát). 診察 là しんさつ (khám bệnh).",
@@ -479,17 +503,20 @@
         {
           "word": "視察",
           "reading": "しさつ",
-          "meaning_vi": "thị sát, đi xem xét thực tế"
+          "meaning_vi": "thị sát, đi xem xét thực tế",
+          "sino_vi": "THỊ SÁT"
         },
         {
           "word": "診察",
           "reading": "しんさつ",
-          "meaning_vi": "khám bệnh"
+          "meaning_vi": "khám bệnh",
+          "sino_vi": "CHẨN SÁT"
         },
         {
           "word": "大勢",
           "reading": "おおぜい",
-          "meaning_vi": "đông người"
+          "meaning_vi": "đông người",
+          "sino_vi": "ĐẠI THẾ"
         }
       ],
       "evidence_sentence_ids": []
@@ -511,28 +538,32 @@
           "text": "絞って",
           "correct": false,
           "explanation_vi": "絞る (しぼる) = vắt, siết (タオルを絞る). Cũng cần dùng lực nhưng nghĩa là vắt nước, không phải gọt bớt; đọc là しぼって, không phải けずって.",
-          "meaning_vi": "vắt, siết"
+          "meaning_vi": "vắt, siết",
+          "sino_vi": "GIẢO"
         },
         {
           "id": "2",
           "text": "削って",
           "correct": true,
           "explanation_vi": "削る (けずる) = gọt, bào, cạo bớt đi (鉛筆を削る, 予算を削る). Cả câu: «Hãy dùng thêm chút lực rồi gọt (cạo) nó đi». 削 còn đọc さく trong 削除, 削減.",
-          "meaning_vi": "gọt, cạo, bào"
+          "meaning_vi": "gọt, cạo, bào",
+          "sino_vi": "TƯỚC"
         },
         {
           "id": "3",
           "text": "握って",
           "correct": false,
           "explanation_vi": "握る (にぎる) = nắm, nắm chặt (手を握る). Đọc là にぎって, không phải けずって.",
-          "meaning_vi": "nắm, cầm chặt"
+          "meaning_vi": "nắm, cầm chặt",
+          "sino_vi": "ÁC"
         },
         {
           "id": "4",
           "text": "掘って",
           "correct": false,
           "explanation_vi": "掘る (ほる) = đào (穴を掘る). Đọc là ほって, không phải けずって.",
-          "meaning_vi": "đào"
+          "meaning_vi": "đào",
+          "sino_vi": "QUẬT"
         }
       ],
       "summary_vi": "けずる = 削る (gọt, cạo). Phân biệt 絞る (しぼる), 握る (にぎる), 掘る (ほる).",
@@ -544,22 +575,26 @@
         {
           "word": "削る",
           "reading": "けずる",
-          "meaning_vi": "gọt, bào, cạo bớt"
+          "meaning_vi": "gọt, bào, cạo bớt",
+          "sino_vi": "TƯỚC"
         },
         {
           "word": "絞る",
           "reading": "しぼる",
-          "meaning_vi": "vắt, siết"
+          "meaning_vi": "vắt, siết",
+          "sino_vi": "GIẢO"
         },
         {
           "word": "握る",
           "reading": "にぎる",
-          "meaning_vi": "nắm chặt"
+          "meaning_vi": "nắm chặt",
+          "sino_vi": "ÁC"
         },
         {
           "word": "掘る",
           "reading": "ほる",
-          "meaning_vi": "đào"
+          "meaning_vi": "đào",
+          "sino_vi": "QUẬT"
         }
       ],
       "evidence_sentence_ids": []
@@ -581,28 +616,32 @@
           "text": "支接",
           "correct": false,
           "explanation_vi": "支 (し) có trong 支店, 支払い; 接 (せつ) có trong 接続. Hai chữ ghép lại thành ×支接 không tồn tại; cần 施 và 設.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "CHI TIẾP"
         },
         {
           "id": "2",
           "text": "施接",
           "correct": false,
           "explanation_vi": "施 đúng nhưng 接 (せつ: tiếp) sai; từ cần là 施設 (設 = thiết lập). ×施接 không tồn tại.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "THI TIẾP"
         },
         {
           "id": "3",
           "text": "支設",
           "correct": false,
           "explanation_vi": "設 đúng nhưng 支 sai; cần 施 (し). ×支設 không tồn tại.",
-          "meaning_vi": "(không có từ này)"
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "CHI THIẾT"
         },
         {
           "id": "4",
           "text": "施設",
           "correct": true,
           "explanation_vi": "施設 (しせつ) = cơ sở vật chất, công trình (病院, 学校, 公共施設). Cả câu: «Cơ sở này không có bãi đỗ xe». 施 = thi hành/thiết lập, 設 = đặt, dựng (設備, 設置).",
-          "meaning_vi": "cơ sở, công trình, thiết bị"
+          "meaning_vi": "cơ sở, công trình, thiết bị",
+          "sino_vi": "THI THIẾT"
         }
       ],
       "summary_vi": "しせつ = 施設 (cơ sở, công trình). 施 (し) + 設 (せつ).",
@@ -614,12 +653,14 @@
         {
           "word": "施設",
           "reading": "しせつ",
-          "meaning_vi": "cơ sở, công trình, thiết bị"
+          "meaning_vi": "cơ sở, công trình, thiết bị",
+          "sino_vi": "THI THIẾT"
         },
         {
           "word": "駐車場",
           "reading": "ちゅうしゃじょう",
-          "meaning_vi": "bãi đỗ xe"
+          "meaning_vi": "bãi đỗ xe",
+          "sino_vi": "TRÚ XA TRƯỜNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -640,28 +681,32 @@
           "text": "則",
           "correct": false,
           "explanation_vi": "則 (そく) = quy tắc, có trong 規則, 原則, 法則. Không đứng sau 教育 thành từ («教育則» không phải cách nói).",
-          "meaning_vi": "quy tắc"
+          "meaning_vi": "quy tắc",
+          "sino_vi": "TẮC"
         },
         {
           "id": "2",
           "text": "理",
           "correct": false,
           "explanation_vi": "理 (り) có trong 理論, 理由, 原理... nhưng «教育理» không thành từ; muốn nói «lý luận giáo dục» phải dùng hậu tố 論.",
-          "meaning_vi": "lý"
+          "meaning_vi": "lý",
+          "sino_vi": "LÝ"
         },
         {
           "id": "3",
           "text": "論",
           "correct": true,
           "explanation_vi": "〜論 (ろん) đi sau danh từ nghĩa là «lý luận/quan điểm về ~»: 教育論, 組織論, 日本人論. Cả câu: «Trong giới giáo viên, một lý luận giáo dục mới đang được chú ý». Nhớ: 〜論 = lý luận, bàn luận về một lĩnh vực.",
-          "meaning_vi": "luận, lý luận"
+          "meaning_vi": "luận, lý luận",
+          "sino_vi": "LUẬN"
         },
         {
           "id": "4",
           "text": "規",
           "correct": false,
           "explanation_vi": "規 (き) = quy, có trong 規則, 規模, 規定. «教育規» không thành từ.",
-          "meaning_vi": "quy"
+          "meaning_vi": "quy",
+          "sino_vi": "QUY"
         }
       ],
       "summary_vi": "〜論 = lý luận/quan điểm về ~: 教育論 (lý luận giáo dục).",
@@ -673,12 +718,14 @@
         {
           "word": "教育論",
           "reading": "きょういくろん",
-          "meaning_vi": "lý luận giáo dục"
+          "meaning_vi": "lý luận giáo dục",
+          "sino_vi": "GIÁO DỤC LUẬN"
         },
         {
           "word": "注目",
           "reading": "ちゅうもく",
-          "meaning_vi": "chú ý, quan tâm"
+          "meaning_vi": "chú ý, quan tâm",
+          "sino_vi": "CHÚ MỤC"
         }
       ],
       "evidence_sentence_ids": []
@@ -732,7 +779,8 @@
         {
           "word": "骨",
           "reading": "ほね",
-          "meaning_vi": "xương"
+          "meaning_vi": "xương",
+          "sino_vi": "CỐT"
         },
         {
           "word": "〜づらい",
@@ -758,28 +806,32 @@
           "text": "損",
           "correct": false,
           "explanation_vi": "損 (そん) = thiệt, lỗ: 損害, 損失. «損条件» không thành từ.",
-          "meaning_vi": "tổn, thiệt"
+          "meaning_vi": "tổn, thiệt",
+          "sino_vi": "TỔN"
         },
         {
           "id": "2",
           "text": "劣",
           "correct": false,
           "explanation_vi": "劣 (れつ/おと-) = kém hơn: 劣等, 劣る. «劣条件» không thành từ.",
-          "meaning_vi": "kém"
+          "meaning_vi": "kém",
+          "sino_vi": "LIỆT"
         },
         {
           "id": "3",
           "text": "危",
           "correct": false,
           "explanation_vi": "危 (き/あぶ-) = nguy hiểm: 危険, 危ない. «危条件» không thành từ (phải nói 危険な条件).",
-          "meaning_vi": "nguy"
+          "meaning_vi": "nguy",
+          "sino_vi": "NGUY"
         },
         {
           "id": "4",
           "text": "悪",
           "correct": true,
           "explanation_vi": "悪〜 (あく) đứng trước danh từ nghĩa là «xấu, bất lợi»: 悪条件 (điều kiện xấu), 悪天候, 悪影響. Cả câu: «Vụ tai nạn lần này xảy ra do nhiều điều kiện xấu chồng chất lên nhau».",
-          "meaning_vi": "xấu"
+          "meaning_vi": "xấu",
+          "sino_vi": "ÁC"
         }
       ],
       "summary_vi": "悪〜 = xấu, bất lợi: 悪条件 (điều kiện xấu), 悪天候, 悪影響.",
@@ -791,17 +843,20 @@
         {
           "word": "悪条件",
           "reading": "あくじょうけん",
-          "meaning_vi": "điều kiện xấu, bất lợi"
+          "meaning_vi": "điều kiện xấu, bất lợi",
+          "sino_vi": "ÁC ĐIỀU KIỆN"
         },
         {
           "word": "重なる",
           "reading": "かさなる",
-          "meaning_vi": "chồng chất, trùng nhau"
+          "meaning_vi": "chồng chất, trùng nhau",
+          "sino_vi": "TRỌNG"
         },
         {
           "word": "事故",
           "reading": "じこ",
-          "meaning_vi": "tai nạn, sự cố"
+          "meaning_vi": "tai nạn, sự cố",
+          "sino_vi": "SỰ CỐ"
         }
       ],
       "evidence_sentence_ids": []
@@ -822,28 +877,32 @@
           "text": "論じた",
           "correct": false,
           "explanation_vi": "論じる (ろんじる) = bàn luận, phân tích một vấn đề có lý lẽ. Không đi với nội dung «sẽ không làm nữa» để cam kết.",
-          "meaning_vi": "bàn luận, thảo luận"
+          "meaning_vi": "bàn luận, thảo luận",
+          "sino_vi": "LUẬN"
         },
         {
           "id": "2",
           "text": "命じた",
           "correct": false,
           "explanation_vi": "命じる (めいじる) = ra lệnh, giao nhiệm vụ cho người khác. Ở đây con trai tự hứa với mình/mọi người chứ không ra lệnh cho ai.",
-          "meaning_vi": "ra lệnh"
+          "meaning_vi": "ra lệnh",
+          "sino_vi": "MỆNH"
         },
         {
           "id": "3",
           "text": "誓った",
           "correct": true,
           "explanation_vi": "誓う (ちかう) = thề, hứa chắc chắn, thường nói trước mặt người khác: 〜と誓う. Cả câu: «Con trai tôi đã thề trước mặt mọi người rằng tuyệt đối sẽ không làm điều xấu nữa». Nhớ mẫu 「〜しないと誓う」.",
-          "meaning_vi": "thề, tuyên thệ"
+          "meaning_vi": "thề, tuyên thệ",
+          "sino_vi": "THỆ"
         },
         {
           "id": "4",
           "text": "迫った",
           "correct": false,
           "explanation_vi": "迫る (せまる) = thúc ép, đòi hỏi (決断を迫る) hoặc tiến sát lại gần. Không có nghĩa «thề/hứa».",
-          "meaning_vi": "ép buộc, thúc ép; đến gần"
+          "meaning_vi": "ép buộc, thúc ép; đến gần",
+          "sino_vi": "BÁCH"
         }
       ],
       "summary_vi": "〜と誓う = thề/hứa chắc rằng sẽ (không) làm gì. Phân biệt 論じる (bàn luận), 命じる (ra lệnh), 迫る (thúc ép).",
@@ -856,22 +915,26 @@
         {
           "word": "誓う",
           "reading": "ちかう",
-          "meaning_vi": "thề, hứa chắc"
+          "meaning_vi": "thề, hứa chắc",
+          "sino_vi": "THỆ"
         },
         {
           "word": "論じる",
           "reading": "ろんじる",
-          "meaning_vi": "bàn luận"
+          "meaning_vi": "bàn luận",
+          "sino_vi": "LUẬN"
         },
         {
           "word": "命じる",
           "reading": "めいじる",
-          "meaning_vi": "ra lệnh"
+          "meaning_vi": "ra lệnh",
+          "sino_vi": "MỆNH"
         },
         {
           "word": "迫る",
           "reading": "せまる",
-          "meaning_vi": "thúc ép, tiến sát"
+          "meaning_vi": "thúc ép, tiến sát",
+          "sino_vi": "BÁCH"
         }
       ],
       "evidence_sentence_ids": []
@@ -892,28 +955,32 @@
           "text": "簡潔に",
           "correct": false,
           "explanation_vi": "簡潔 (かんけつ) = ngắn gọn, súc tích (簡潔に説明する). Dùng cho lời nói/văn bản, không hợp với việc điện bị ngắt.",
-          "meaning_vi": "một cách ngắn gọn"
+          "meaning_vi": "một cách ngắn gọn",
+          "sino_vi": "GIẢN KHIẾT"
         },
         {
           "id": "2",
           "text": "一時的に",
           "correct": true,
           "explanation_vi": "一時的 (いちじてき) = tạm thời, trong một lúc ngắn. 一時的に電気が止まる = điện bị ngắt tạm thời trong lúc thi công. Cả câu: «Do thi công, có lúc điện sẽ bị ngắt tạm thời».",
-          "meaning_vi": "một cách tạm thời"
+          "meaning_vi": "một cách tạm thời",
+          "sino_vi": "NHẤT THỜI ĐÍCH"
         },
         {
           "id": "3",
           "text": "手軽に",
           "correct": false,
           "explanation_vi": "手軽 (てがる) = đơn giản, nhẹ nhàng, ít công sức (手軽に作れる). Không nói về thời gian ngắn của việc mất điện.",
-          "meaning_vi": "một cách đơn giản, dễ dàng"
+          "meaning_vi": "một cách đơn giản, dễ dàng",
+          "sino_vi": "THỦ KHINH"
         },
         {
           "id": "4",
           "text": "不完全に",
           "correct": false,
           "explanation_vi": "不完全 (ふかんぜん) = không hoàn hảo, thiếu sót. 「不完全に電気が止まる」 không tự nhiên vì ý cần nói là «tạm thời».",
-          "meaning_vi": "một cách không hoàn chỉnh"
+          "meaning_vi": "một cách không hoàn chỉnh",
+          "sino_vi": "BẤT HOÀN TOÀN"
         }
       ],
       "summary_vi": "一時的に〜 = tạm thời (trong thời gian ngắn). Đừng nhầm với 簡潔 (ngắn gọn) hay 手軽 (đơn giản).",
@@ -926,22 +993,26 @@
         {
           "word": "一時的",
           "reading": "いちじてき",
-          "meaning_vi": "tạm thời"
+          "meaning_vi": "tạm thời",
+          "sino_vi": "NHẤT THỜI ĐÍCH"
         },
         {
           "word": "簡潔",
           "reading": "かんけつ",
-          "meaning_vi": "ngắn gọn"
+          "meaning_vi": "ngắn gọn",
+          "sino_vi": "GIẢN KHIẾT"
         },
         {
           "word": "手軽",
           "reading": "てがる",
-          "meaning_vi": "đơn giản, dễ làm"
+          "meaning_vi": "đơn giản, dễ làm",
+          "sino_vi": "THỦ KHINH"
         },
         {
           "word": "不完全",
           "reading": "ふかんぜん",
-          "meaning_vi": "không hoàn chỉnh"
+          "meaning_vi": "không hoàn chỉnh",
+          "sino_vi": "BẤT HOÀN TOÀN"
         }
       ],
       "evidence_sentence_ids": []
@@ -962,28 +1033,32 @@
           "text": "参列",
           "correct": false,
           "explanation_vi": "参列 (さんれつ) = có mặt tại nghi lễ như đám cưới, tang lễ (葬儀に参列する). Không đi với 事件.",
-          "meaning_vi": "tham dự (nghi lễ)"
+          "meaning_vi": "tham dự (nghi lễ)",
+          "sino_vi": "THAM LIỆT"
         },
         {
           "id": "2",
           "text": "加入",
           "correct": false,
           "explanation_vi": "加入 (かにゅう) = gia nhập tổ chức, bảo hiểm, câu lạc bộ (保険に加入する). 事件 không phải thứ để «gia nhập».",
-          "meaning_vi": "gia nhập"
+          "meaning_vi": "gia nhập",
+          "sino_vi": "GIA NHẬP"
         },
         {
           "id": "3",
           "text": "登場",
           "correct": false,
           "explanation_vi": "登場 (とうじょう) = xuất hiện trên sân khấu, trong truyện/phim, hoặc sản phẩm mới ra mắt. Không dùng với 事件に登場 theo nghĩa «dính líu».",
-          "meaning_vi": "xuất hiện, ra mắt"
+          "meaning_vi": "xuất hiện, ra mắt",
+          "sino_vi": "ĐĂNG TRƯỜNG"
         },
         {
           "id": "4",
           "text": "関与",
           "correct": true,
           "explanation_vi": "関与 (かんよ) = có liên quan, tham gia vào (thường là việc không hay): 事件に関与する. Cả câu: «Chắc chắn nhân vật đó đã dính líu đến vụ việc lần này».",
-          "meaning_vi": "dính líu, can dự"
+          "meaning_vi": "dính líu, can dự",
+          "sino_vi": "QUAN DỮ"
         }
       ],
       "summary_vi": "事件に関与する = dính líu/can dự vào vụ án. Phân biệt 参列 (dự lễ), 加入 (gia nhập), 登場 (xuất hiện).",
@@ -997,22 +1072,26 @@
         {
           "word": "関与",
           "reading": "かんよ",
-          "meaning_vi": "can dự, dính líu"
+          "meaning_vi": "can dự, dính líu",
+          "sino_vi": "QUAN DỮ"
         },
         {
           "word": "参列",
           "reading": "さんれつ",
-          "meaning_vi": "tham dự nghi lễ"
+          "meaning_vi": "tham dự nghi lễ",
+          "sino_vi": "THAM LIỆT"
         },
         {
           "word": "加入",
           "reading": "かにゅう",
-          "meaning_vi": "gia nhập"
+          "meaning_vi": "gia nhập",
+          "sino_vi": "GIA NHẬP"
         },
         {
           "word": "人物",
           "reading": "じんぶつ",
-          "meaning_vi": "nhân vật"
+          "meaning_vi": "nhân vật",
+          "sino_vi": "NHÂN VẬT"
         }
       ],
       "evidence_sentence_ids": []
@@ -1103,28 +1182,32 @@
           "text": "反則",
           "correct": true,
           "explanation_vi": "反則 (はんそく) = vi phạm luật thi đấu: 反則になる/反則をする. Cả câu: «Bóng đá cấm dùng tay, nếu dùng thì sẽ thành phạm lỗi». Dùng cho luật của trò chơi/thể thao.",
-          "meaning_vi": "phạm luật, lỗi (trong thể thao)"
+          "meaning_vi": "phạm luật, lỗi (trong thể thao)",
+          "sino_vi": "PHẢN TẮC"
         },
         {
           "id": "2",
           "text": "違法",
           "correct": false,
           "explanation_vi": "違法 (いほう) = vi phạm pháp luật của nhà nước (違法駐車). Luật thi đấu bóng đá không phải là pháp luật, nên không dùng 違法.",
-          "meaning_vi": "trái pháp luật"
+          "meaning_vi": "trái pháp luật",
+          "sino_vi": "VI PHÁP"
         },
         {
           "id": "3",
           "text": "非常識",
           "correct": false,
           "explanation_vi": "非常識 (ひじょうしき) = thiếu lẽ thường, cư xử không hợp lẽ. Là đánh giá về hành vi xã hội, không phải việc phạm luật thi đấu.",
-          "meaning_vi": "thiếu thường thức, vô lý"
+          "meaning_vi": "thiếu thường thức, vô lý",
+          "sino_vi": "PHI THƯỜNG THỨC"
         },
         {
           "id": "4",
           "text": "不都合",
           "correct": false,
           "explanation_vi": "不都合 (ふつごう) = điều bất tiện, trục trặc (不都合が生じる). Không mang nghĩa «phạm luật».",
-          "meaning_vi": "bất tiện, không thuận lợi"
+          "meaning_vi": "bất tiện, không thuận lợi",
+          "sino_vi": "BẤT ĐÔ HỢP"
         }
       ],
       "summary_vi": "反則 = lỗi/phạm luật trong thi đấu; 違法 = trái pháp luật; 非常識 = thiếu thường thức.",
@@ -1137,22 +1220,26 @@
         {
           "word": "反則",
           "reading": "はんそく",
-          "meaning_vi": "phạm luật, lỗi"
+          "meaning_vi": "phạm luật, lỗi",
+          "sino_vi": "PHẢN TẮC"
         },
         {
           "word": "違法",
           "reading": "いほう",
-          "meaning_vi": "trái pháp luật"
+          "meaning_vi": "trái pháp luật",
+          "sino_vi": "VI PHÁP"
         },
         {
           "word": "非常識",
           "reading": "ひじょうしき",
-          "meaning_vi": "thiếu thường thức"
+          "meaning_vi": "thiếu thường thức",
+          "sino_vi": "PHI THƯỜNG THỨC"
         },
         {
           "word": "不都合",
           "reading": "ふつごう",
-          "meaning_vi": "bất tiện, trục trặc"
+          "meaning_vi": "bất tiện, trục trặc",
+          "sino_vi": "BẤT ĐÔ HỢP"
         }
       ],
       "evidence_sentence_ids": []
@@ -1173,28 +1260,32 @@
           "text": "連れ出した",
           "correct": false,
           "explanation_vi": "連れ出す (つれだす) = dẫn ai ra ngoài (子どもを外に連れ出す). Dùng cho người/vật được dắt đi, không phải đuổi côn trùng.",
-          "meaning_vi": "dẫn ra ngoài"
+          "meaning_vi": "dẫn ra ngoài",
+          "sino_vi": "LIÊN XUẤT"
         },
         {
           "id": "2",
           "text": "締め出した",
           "correct": false,
           "explanation_vi": "締め出す (しめだす) = đóng cửa không cho vào/loại ra (鍵をかけて締め出す). Hành động ở đây là vẫy mũ, không phải đóng cửa.",
-          "meaning_vi": "khóa cửa không cho vào"
+          "meaning_vi": "khóa cửa không cho vào",
+          "sino_vi": "ĐẾ XUẤT"
         },
         {
           "id": "3",
           "text": "取り払った",
           "correct": false,
           "explanation_vi": "取り払う (とりはらう) = dỡ bỏ, dọn sạch vật cản (塀を取り払う). Không dùng cho việc đuổi côn trùng.",
-          "meaning_vi": "dỡ bỏ, dọn đi"
+          "meaning_vi": "dỡ bỏ, dọn đi",
+          "sino_vi": "THỦ PHẤT"
         },
         {
           "id": "4",
           "text": "追い払った",
           "correct": true,
           "explanation_vi": "追い払う (おいはらう) = xua đuổi, đuổi đi (虫・犬・人を追い払う). Cả câu: «Có con côn trùng bay tới nên tôi vẫy mũ đuổi nó đi xa».",
-          "meaning_vi": "đuổi đi"
+          "meaning_vi": "đuổi đi",
+          "sino_vi": "TRUY PHẤT"
         }
       ],
       "summary_vi": "追い払う = xua đuổi (côn trùng, thú, kẻ phiền). Phân biệt 締め出す (khóa không cho vào), 取り払う (dỡ bỏ).",
@@ -1207,27 +1298,32 @@
         {
           "word": "追い払う",
           "reading": "おいはらう",
-          "meaning_vi": "xua đuổi"
+          "meaning_vi": "xua đuổi",
+          "sino_vi": "TRUY PHẤT"
         },
         {
           "word": "連れ出す",
           "reading": "つれだす",
-          "meaning_vi": "dẫn ra ngoài"
+          "meaning_vi": "dẫn ra ngoài",
+          "sino_vi": "LIÊN XUẤT"
         },
         {
           "word": "締め出す",
           "reading": "しめだす",
-          "meaning_vi": "khóa không cho vào"
+          "meaning_vi": "khóa không cho vào",
+          "sino_vi": "ĐẾ XUẤT"
         },
         {
           "word": "取り払う",
           "reading": "とりはらう",
-          "meaning_vi": "dỡ bỏ"
+          "meaning_vi": "dỡ bỏ",
+          "sino_vi": "THỦ PHẤT"
         },
         {
           "word": "帽子",
           "reading": "ぼうし",
-          "meaning_vi": "mũ"
+          "meaning_vi": "mũ",
+          "sino_vi": "MẠO TỬ"
         }
       ],
       "evidence_sentence_ids": []
@@ -1296,7 +1392,8 @@
         {
           "word": "休日",
           "reading": "きゅうじつ",
-          "meaning_vi": "ngày nghỉ"
+          "meaning_vi": "ngày nghỉ",
+          "sino_vi": "HƯU NHẬT"
         }
       ],
       "evidence_sentence_ids": []
@@ -1318,28 +1415,32 @@
           "text": "恐ろしい",
           "correct": false,
           "explanation_vi": "恐ろしい (おそろしい) = đáng sợ, kinh hoàng. 妙 chỉ sự lạ lùng, khó hiểu, chưa chắc đã đáng sợ.",
-          "meaning_vi": "đáng sợ"
+          "meaning_vi": "đáng sợ",
+          "sino_vi": "KHỦNG"
         },
         {
           "id": "2",
           "text": "不思議な",
           "correct": true,
           "explanation_vi": "妙な (みょうな) = kỳ lạ, khác thường, không giải thích được ≈ 不思議な/変な. Cả câu: «Tối qua gần nhà xảy ra một vụ việc lạ lùng».",
-          "meaning_vi": "kỳ lạ, khó hiểu"
+          "meaning_vi": "kỳ lạ, khó hiểu",
+          "sino_vi": "BẤT TƯ NGHỊ"
         },
         {
           "id": "3",
           "text": "悲しい",
           "correct": false,
           "explanation_vi": "悲しい (かなしい) = buồn. Là cảm xúc, không phải tính chất «kỳ lạ» của vụ việc.",
-          "meaning_vi": "buồn"
+          "meaning_vi": "buồn",
+          "sino_vi": "BI"
         },
         {
           "id": "4",
           "text": "重大な",
           "correct": false,
           "explanation_vi": "重大な (じゅうだいな) = trọng đại, nghiêm trọng. Nói về mức độ nặng, không phải sự kỳ quặc.",
-          "meaning_vi": "nghiêm trọng"
+          "meaning_vi": "nghiêm trọng",
+          "sino_vi": "TRỌNG ĐẠI"
         }
       ],
       "summary_vi": "妙な = lạ, kỳ quặc ≈ 不思議な/変な. Đừng nhầm với 重大な (nghiêm trọng).",
@@ -1351,17 +1452,20 @@
         {
           "word": "妙",
           "reading": "みょう",
-          "meaning_vi": "kỳ lạ, khác thường"
+          "meaning_vi": "kỳ lạ, khác thường",
+          "sino_vi": "DIỆU"
         },
         {
           "word": "不思議",
           "reading": "ふしぎ",
-          "meaning_vi": "kỳ lạ, bí ẩn"
+          "meaning_vi": "kỳ lạ, bí ẩn",
+          "sino_vi": "BẤT TƯ NGHỊ"
         },
         {
           "word": "重大",
           "reading": "じゅうだい",
-          "meaning_vi": "nghiêm trọng, trọng đại"
+          "meaning_vi": "nghiêm trọng, trọng đại",
+          "sino_vi": "TRỌNG ĐẠI"
         }
       ],
       "evidence_sentence_ids": []
@@ -1416,12 +1520,14 @@
         {
           "word": "相当",
           "reading": "そうとう",
-          "meaning_vi": "khá, đáng kể"
+          "meaning_vi": "khá, đáng kể",
+          "sino_vi": "TƯƠNG ĐƯƠNG"
         },
         {
           "word": "迷う",
           "reading": "まよう",
-          "meaning_vi": "phân vân, lạc đường"
+          "meaning_vi": "phân vân, lạc đường",
+          "sino_vi": "MÊ"
         }
       ],
       "evidence_sentence_ids": []
@@ -1450,21 +1556,24 @@
           "text": "汚くて",
           "correct": false,
           "explanation_vi": "汚い (きたない) = bẩn, dơ. Không liên quan đến tiếng ồn.",
-          "meaning_vi": "bẩn"
+          "meaning_vi": "bẩn",
+          "sino_vi": "Ô"
         },
         {
           "id": "3",
           "text": "暑くて",
           "correct": false,
           "explanation_vi": "暑い (あつい) = nóng (thời tiết). やかましい không nói về nhiệt độ.",
-          "meaning_vi": "nóng"
+          "meaning_vi": "nóng",
+          "sino_vi": "THỬ"
         },
         {
           "id": "4",
           "text": "暗くて",
           "correct": false,
           "explanation_vi": "暗い (くらい) = tối. Không phải nghĩa của やかましい (ồn).",
-          "meaning_vi": "tối"
+          "meaning_vi": "tối",
+          "sino_vi": "ÁM"
         }
       ],
       "summary_vi": "やかましい = ồn ào ≈ うるさい.",
@@ -1481,7 +1590,8 @@
         {
           "word": "集中",
           "reading": "しゅうちゅう",
-          "meaning_vi": "tập trung"
+          "meaning_vi": "tập trung",
+          "sino_vi": "TẬP TRUNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -1503,28 +1613,32 @@
           "text": "出張から戻って",
           "correct": false,
           "explanation_vi": "出張 (しゅっちょう) = đi công tác. 帰省 không liên quan đến công tác.",
-          "meaning_vi": "trở về sau chuyến công tác"
+          "meaning_vi": "trở về sau chuyến công tác",
+          "sino_vi": "XUẤT TRƯƠNG LỆ"
         },
         {
           "id": "2",
           "text": "部屋に戻って",
           "correct": false,
           "explanation_vi": "部屋に戻る = quay lại phòng của mình. 帰省 là về quê/nhà bố mẹ, không phải về phòng.",
-          "meaning_vi": "trở về phòng"
+          "meaning_vi": "trở về phòng",
+          "sino_vi": "BỘ ỐC LỆ"
         },
         {
           "id": "3",
           "text": "ふるさとに戻って",
           "correct": true,
           "explanation_vi": "帰省 (きせい) = về quê (thăm gia đình, thường dịp lễ Tết). 帰省する ≈ ふるさとに戻る. Cả câu: «Anh Nakayama đang về quê».",
-          "meaning_vi": "trở về quê hương"
+          "meaning_vi": "trở về quê hương",
+          "sino_vi": "LỆ"
         },
         {
           "id": "4",
           "text": "休暇から戻って",
           "correct": false,
           "explanation_vi": "休暇から戻る = đi làm lại sau kỳ nghỉ. Ngược với 帰省 (đi về quê trong kỳ nghỉ).",
-          "meaning_vi": "trở lại sau kỳ nghỉ"
+          "meaning_vi": "trở lại sau kỳ nghỉ",
+          "sino_vi": "HƯU HÀ LỆ"
         }
       ],
       "summary_vi": "帰省する = về quê (ふるさとに戻る). Chú ý 帰省 (きせい) khác 帰宅 (về nhà).",
@@ -1536,7 +1650,8 @@
         {
           "word": "帰省",
           "reading": "きせい",
-          "meaning_vi": "về quê"
+          "meaning_vi": "về quê",
+          "sino_vi": "QUY TỈNH"
         },
         {
           "word": "ふるさと",
@@ -1546,12 +1661,14 @@
         {
           "word": "出張",
           "reading": "しゅっちょう",
-          "meaning_vi": "đi công tác"
+          "meaning_vi": "đi công tác",
+          "sino_vi": "XUẤT TRƯƠNG"
         },
         {
           "word": "休暇",
           "reading": "きゅうか",
-          "meaning_vi": "kỳ nghỉ"
+          "meaning_vi": "kỳ nghỉ",
+          "sino_vi": "HƯU HÀ"
         }
       ],
       "evidence_sentence_ids": []
@@ -1580,14 +1697,16 @@
           "text": "一度",
           "correct": false,
           "explanation_vi": "一度 (いちど) = một lần. Chỉ số lần, không nói về việc xảy ra bất ngờ.",
-          "meaning_vi": "một lần"
+          "meaning_vi": "một lần",
+          "sino_vi": "NHẤT ĐỘ"
         },
         {
           "id": "3",
           "text": "突然",
           "correct": true,
           "explanation_vi": "いきなり = đột nhiên, không báo trước ≈ 突然 (とつぜん). Cả câu: «Anh Hayashi đột nhiên quay lại».",
-          "meaning_vi": "đột nhiên"
+          "meaning_vi": "đột nhiên",
+          "sino_vi": "ĐỘT NHIÊN"
         },
         {
           "id": "4",
@@ -1611,12 +1730,14 @@
         {
           "word": "突然",
           "reading": "とつぜん",
-          "meaning_vi": "đột nhiên"
+          "meaning_vi": "đột nhiên",
+          "sino_vi": "ĐỘT NHIÊN"
         },
         {
           "word": "振り向く",
           "reading": "ふりむく",
-          "meaning_vi": "quay đầu lại"
+          "meaning_vi": "quay đầu lại",
+          "sino_vi": "CHẤN HƯỚNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -1669,27 +1790,32 @@
         {
           "word": "潰す",
           "reading": "つぶす",
-          "meaning_vi": "làm bẹp, nghiền nát"
+          "meaning_vi": "làm bẹp, nghiền nát",
+          "sino_vi": "HỘI"
         },
         {
           "word": "空き缶",
           "reading": "あきかん",
-          "meaning_vi": "lon rỗng"
+          "meaning_vi": "lon rỗng",
+          "sino_vi": "KHÔNG PHỮU"
         },
         {
           "word": "畳む",
           "reading": "たたむ",
-          "meaning_vi": "gấp (quần áo)"
+          "meaning_vi": "gấp (quần áo)",
+          "sino_vi": "ĐIỆP"
         },
         {
           "word": "洗濯物",
           "reading": "せんたくもの",
-          "meaning_vi": "đồ giặt"
+          "meaning_vi": "đồ giặt",
+          "sino_vi": "TẨY TRẠC VẬT"
         },
         {
           "word": "書類",
           "reading": "しょるい",
-          "meaning_vi": "giấy tờ, tài liệu"
+          "meaning_vi": "giấy tờ, tài liệu",
+          "sino_vi": "THƯ LOẠI"
         }
       ],
       "evidence_sentence_ids": []
@@ -1740,22 +1866,26 @@
         {
           "word": "粗末",
           "reading": "そまつ",
-          "meaning_vi": "sơ sài, đạm bạc"
+          "meaning_vi": "sơ sài, đạm bạc",
+          "sino_vi": "THÔ MẠT"
         },
         {
           "word": "給食",
           "reading": "きゅうしょく",
-          "meaning_vi": "bữa ăn ở trường"
+          "meaning_vi": "bữa ăn ở trường",
+          "sino_vi": "CẤP THỰC"
         },
         {
           "word": "言葉遣い",
           "reading": "ことばづかい",
-          "meaning_vi": "cách dùng từ, cách ăn nói"
+          "meaning_vi": "cách dùng từ, cách ăn nói",
+          "sino_vi": "NGÔN DIỆP KHIỂN"
         },
         {
           "word": "機能",
           "reading": "きのう",
-          "meaning_vi": "chức năng, tính năng"
+          "meaning_vi": "chức năng, tính năng",
+          "sino_vi": "CƠ NĂNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -1807,22 +1937,26 @@
         {
           "word": "熱中",
           "reading": "ねっちゅう",
-          "meaning_vi": "say mê, mải mê"
+          "meaning_vi": "say mê, mải mê",
+          "sino_vi": "NHIỆT TRUNG"
         },
         {
           "word": "批判",
           "reading": "ひはん",
-          "meaning_vi": "phê phán"
+          "meaning_vi": "phê phán",
+          "sino_vi": "PHÊ PHÁN"
         },
         {
           "word": "担当者",
           "reading": "たんとうしゃ",
-          "meaning_vi": "người phụ trách"
+          "meaning_vi": "người phụ trách",
+          "sino_vi": "ĐẢM ĐƯƠNG GIẢ"
         },
         {
           "word": "開催地",
           "reading": "かいさいち",
-          "meaning_vi": "nơi tổ chức"
+          "meaning_vi": "nơi tổ chức",
+          "sino_vi": "KHAI THÔI ĐỊA"
         }
       ],
       "evidence_sentence_ids": []
@@ -1874,22 +2008,26 @@
         {
           "word": "和やか",
           "reading": "なごやか",
-          "meaning_vi": "hòa nhã, êm đềm"
+          "meaning_vi": "hòa nhã, êm đềm",
+          "sino_vi": "HÒA"
         },
         {
           "word": "穏やか",
           "reading": "おだやか",
-          "meaning_vi": "ôn hòa, êm dịu"
+          "meaning_vi": "ôn hòa, êm dịu",
+          "sino_vi": "ỔN"
         },
         {
           "word": "雰囲気",
           "reading": "ふんいき",
-          "meaning_vi": "bầu không khí"
+          "meaning_vi": "bầu không khí",
+          "sino_vi": "PHÂN VI KHÍ"
         },
         {
           "word": "代表者",
           "reading": "だいひょうしゃ",
-          "meaning_vi": "người đại diện"
+          "meaning_vi": "người đại diện",
+          "sino_vi": "ĐẠI BIỂU GIẢ"
         }
       ],
       "evidence_sentence_ids": []
@@ -1941,22 +2079,26 @@
         {
           "word": "愛着",
           "reading": "あいちゃく",
-          "meaning_vi": "gắn bó, quyến luyến"
+          "meaning_vi": "gắn bó, quyến luyến",
+          "sino_vi": "ÁI TRƯỚC"
         },
         {
           "word": "地元",
           "reading": "じもと",
-          "meaning_vi": "địa phương, quê nhà"
+          "meaning_vi": "địa phương, quê nhà",
+          "sino_vi": "ĐỊA NGUYÊN"
         },
         {
           "word": "教育学部",
           "reading": "きょういくがくぶ",
-          "meaning_vi": "khoa sư phạm/giáo dục"
+          "meaning_vi": "khoa sư phạm/giáo dục",
+          "sino_vi": "GIÁO DỤC HỌC BỘ"
         },
         {
           "word": "進学",
           "reading": "しんがく",
-          "meaning_vi": "học lên cao"
+          "meaning_vi": "học lên cao",
+          "sino_vi": "TIẾN HỌC"
         }
       ],
       "evidence_sentence_ids": []
@@ -2005,22 +2147,26 @@
         {
           "word": "建設",
           "reading": "けんせつ",
-          "meaning_vi": "xây dựng"
+          "meaning_vi": "xây dựng",
+          "sino_vi": "KIẾN THIẾT"
         },
         {
           "word": "周辺",
           "reading": "しゅうへん",
-          "meaning_vi": "xung quanh, vùng lân cận"
+          "meaning_vi": "xung quanh, vùng lân cận",
+          "sino_vi": "CHU BIÊN"
         },
         {
           "word": "住民",
           "reading": "じゅうみん",
-          "meaning_vi": "cư dân"
+          "meaning_vi": "cư dân",
+          "sino_vi": "TRÚ DÂN"
         },
         {
           "word": "説明会",
           "reading": "せつめいかい",
-          "meaning_vi": "buổi giải thích, buổi thuyết minh"
+          "meaning_vi": "buổi giải thích, buổi thuyết minh",
+          "sino_vi": "THUYẾT MINH HỘI"
         }
       ],
       "evidence_sentence_ids": []
@@ -2069,7 +2215,8 @@
         {
           "word": "数々",
           "reading": "かずかず",
-          "meaning_vi": "nhiều, vô số"
+          "meaning_vi": "nhiều, vô số",
+          "sino_vi": "SỐ SỐ"
         },
         {
           "word": "コンクール",
@@ -2079,7 +2226,8 @@
         {
           "word": "優勝",
           "reading": "ゆうしょう",
-          "meaning_vi": "giành chiến thắng, vô địch"
+          "meaning_vi": "giành chiến thắng, vô địch",
+          "sino_vi": "ƯU THẮNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -2133,7 +2281,8 @@
         {
           "word": "比べる",
           "reading": "くらべる",
-          "meaning_vi": "so sánh"
+          "meaning_vi": "so sánh",
+          "sino_vi": "TỈ"
         }
       ],
       "evidence_sentence_ids": []
@@ -2182,22 +2331,26 @@
         {
           "word": "旅館",
           "reading": "りょかん",
-          "meaning_vi": "nhà trọ kiểu Nhật, ryokan"
+          "meaning_vi": "nhà trọ kiểu Nhật, ryokan",
+          "sino_vi": "LỮ QUÁN"
         },
         {
           "word": "伺う",
           "reading": "うかがう",
-          "meaning_vi": "đến thăm, hỏi (khiêm nhường ngữ)"
+          "meaning_vi": "đến thăm, hỏi (khiêm nhường ngữ)",
+          "sino_vi": "TỨ"
         },
         {
           "word": "参る",
           "reading": "まいる",
-          "meaning_vi": "đi, đến (khiêm nhường ngữ)"
+          "meaning_vi": "đi, đến (khiêm nhường ngữ)",
+          "sino_vi": "THAM"
         },
         {
           "word": "お越しになる",
           "reading": "おこしになる",
-          "meaning_vi": "đến (tôn kính ngữ)"
+          "meaning_vi": "đến (tôn kính ngữ)",
+          "sino_vi": "VIỆT"
         }
       ],
       "evidence_sentence_ids": []
@@ -2252,7 +2405,8 @@
         {
           "word": "健康",
           "reading": "けんこう",
-          "meaning_vi": "sức khỏe"
+          "meaning_vi": "sức khỏe",
+          "sino_vi": "KIỆN KHANG"
         }
       ],
       "evidence_sentence_ids": []
@@ -2301,12 +2455,14 @@
         {
           "word": "返却期限",
           "reading": "へんきゃくきげん",
-          "meaning_vi": "hạn trả"
+          "meaning_vi": "hạn trả",
+          "sino_vi": "PHẢN KHƯỚC KỲ HẠN"
         },
         {
           "word": "読み終わる",
           "reading": "よみおわる",
-          "meaning_vi": "đọc xong"
+          "meaning_vi": "đọc xong",
+          "sino_vi": "ĐỘC CHUNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -2355,17 +2511,20 @@
         {
           "word": "成績",
           "reading": "せいせき",
-          "meaning_vi": "thành tích, điểm số"
+          "meaning_vi": "thành tích, điểm số",
+          "sino_vi": "THÀNH TÍCH"
         },
         {
           "word": "伸びる",
           "reading": "のびる",
-          "meaning_vi": "tiến bộ, tăng lên"
+          "meaning_vi": "tiến bộ, tăng lên",
+          "sino_vi": "THÂN"
         },
         {
           "word": "相談",
           "reading": "そうだん",
-          "meaning_vi": "bàn bạc, xin ý kiến"
+          "meaning_vi": "bàn bạc, xin ý kiến",
+          "sino_vi": "TƯƠNG ĐÀM"
         }
       ],
       "evidence_sentence_ids": []
@@ -2414,22 +2573,26 @@
         {
           "word": "意識",
           "reading": "いしき",
-          "meaning_vi": "nhận thức, ý thức"
+          "meaning_vi": "nhận thức, ý thức",
+          "sino_vi": "Ý THỨC"
         },
         {
           "word": "高まる",
           "reading": "たかまる",
-          "meaning_vi": "tăng lên, dâng cao"
+          "meaning_vi": "tăng lên, dâng cao",
+          "sino_vi": "CAO"
         },
         {
           "word": "開発競争",
           "reading": "かいはつきょうそう",
-          "meaning_vi": "cạnh tranh phát triển"
+          "meaning_vi": "cạnh tranh phát triển",
+          "sino_vi": "KHAI PHÁT CẠNH TRANH"
         },
         {
           "word": "激しい",
           "reading": "はげしい",
-          "meaning_vi": "gay gắt, dữ dội"
+          "meaning_vi": "gay gắt, dữ dội",
+          "sino_vi": "KÍCH"
         }
       ],
       "evidence_sentence_ids": []
@@ -2478,12 +2641,14 @@
         {
           "word": "頂上",
           "reading": "ちょうじょう",
-          "meaning_vi": "đỉnh núi"
+          "meaning_vi": "đỉnh núi",
+          "sino_vi": "ĐỈNH THƯỢNG"
         },
         {
           "word": "気候",
           "reading": "きこう",
-          "meaning_vi": "khí hậu"
+          "meaning_vi": "khí hậu",
+          "sino_vi": "KHÍ HẬU"
         }
       ],
       "evidence_sentence_ids": []
@@ -2532,12 +2697,14 @@
         {
           "word": "満員電車",
           "reading": "まんいんでんしゃ",
-          "meaning_vi": "tàu điện đông nghẹt người"
+          "meaning_vi": "tàu điện đông nghẹt người",
+          "sino_vi": "MÃN VIÊN ĐIỆN XA"
         },
         {
           "word": "手段",
           "reading": "しゅだん",
-          "meaning_vi": "phương tiện, cách thức"
+          "meaning_vi": "phương tiện, cách thức",
+          "sino_vi": "THỦ ĐOẠN"
         }
       ],
       "evidence_sentence_ids": []
@@ -2587,17 +2754,20 @@
         {
           "word": "司会",
           "reading": "しかい",
-          "meaning_vi": "MC, người dẫn chương trình"
+          "meaning_vi": "MC, người dẫn chương trình",
+          "sino_vi": "TƯ HỘI"
         },
         {
           "word": "効きめ",
           "reading": "ききめ",
-          "meaning_vi": "hiệu quả, tác dụng (của thuốc)"
+          "meaning_vi": "hiệu quả, tác dụng (của thuốc)",
+          "sino_vi": "HIỆU"
         },
         {
           "word": "影響",
           "reading": "えいきょう",
-          "meaning_vi": "ảnh hưởng"
+          "meaning_vi": "ảnh hưởng",
+          "sino_vi": "ẢNH HƯỞNG"
         }
       ],
       "evidence_sentence_ids": []
@@ -2652,7 +2822,8 @@
         {
           "word": "触る",
           "reading": "さわる",
-          "meaning_vi": "sờ, chạm"
+          "meaning_vi": "sờ, chạm",
+          "sino_vi": "XÚC"
         },
         {
           "word": "かゆい",
@@ -2713,12 +2884,14 @@
         {
           "word": "原料",
           "reading": "げんりょう",
-          "meaning_vi": "nguyên liệu"
+          "meaning_vi": "nguyên liệu",
+          "sino_vi": "NGUYÊN LIỆU"
         },
         {
           "word": "小麦粉",
           "reading": "こむぎこ",
-          "meaning_vi": "bột mì"
+          "meaning_vi": "bột mì",
+          "sino_vi": "TIỂU MẠCH PHẤN"
         },
         {
           "word": "こだわる",
@@ -2782,22 +2955,26 @@
         {
           "word": "梅雨",
           "reading": "つゆ",
-          "meaning_vi": "mùa mưa (đầu hè ở Nhật)"
+          "meaning_vi": "mùa mưa (đầu hè ở Nhật)",
+          "sino_vi": "MAI VŨ"
         },
         {
           "word": "洗濯物",
           "reading": "せんたくもの",
-          "meaning_vi": "đồ giặt, quần áo cần phơi"
+          "meaning_vi": "đồ giặt, quần áo cần phơi",
+          "sino_vi": "TẨY TRẠC VẬT"
         },
         {
           "word": "干す",
           "reading": "ほす",
-          "meaning_vi": "phơi"
+          "meaning_vi": "phơi",
+          "sino_vi": "CAN"
         },
         {
           "word": "珍しい",
           "reading": "めずらしい",
-          "meaning_vi": "hiếm, lạ"
+          "meaning_vi": "hiếm, lạ",
+          "sino_vi": "TRÂN"
         }
       ],
       "sort": {
@@ -2857,17 +3034,20 @@
         {
           "word": "開催日",
           "reading": "かいさいび",
-          "meaning_vi": "ngày tổ chức"
+          "meaning_vi": "ngày tổ chức",
+          "sino_vi": "KHAI THÔI NHẬT"
         },
         {
           "word": "平日",
           "reading": "へいじつ",
-          "meaning_vi": "ngày thường (không phải cuối tuần/ngày lễ)"
+          "meaning_vi": "ngày thường (không phải cuối tuần/ngày lễ)",
+          "sino_vi": "BÌNH NHẬT"
         },
         {
           "word": "大成功",
           "reading": "だいせいこう",
-          "meaning_vi": "thành công lớn"
+          "meaning_vi": "thành công lớn",
+          "sino_vi": "ĐẠI THÀNH CÔNG"
         }
       ],
       "sort": {
@@ -2927,12 +3107,14 @@
         {
           "word": "良さ",
           "reading": "よさ",
-          "meaning_vi": "điểm tốt, nét hay"
+          "meaning_vi": "điểm tốt, nét hay",
+          "sino_vi": "LƯƠNG"
         },
         {
           "word": "気づく",
           "reading": "きづく",
-          "meaning_vi": "nhận ra"
+          "meaning_vi": "nhận ra",
+          "sino_vi": "KHÍ"
         }
       ],
       "sort": {
@@ -2992,17 +3174,20 @@
         {
           "word": "目覚まし時計",
           "reading": "めざましどけい",
-          "meaning_vi": "đồng hồ báo thức"
+          "meaning_vi": "đồng hồ báo thức",
+          "sino_vi": "MỤC GIÁC THỜI KẾ"
         },
         {
           "word": "寝坊",
           "reading": "ねぼう",
-          "meaning_vi": "ngủ quên, ngủ dậy muộn"
+          "meaning_vi": "ngủ quên, ngủ dậy muộn",
+          "sino_vi": "TẨM PHƯỜNG"
         },
         {
           "word": "遅刻",
           "reading": "ちこく",
-          "meaning_vi": "đến muộn"
+          "meaning_vi": "đến muộn",
+          "sino_vi": "TRÌ KHẮC"
         },
         {
           "word": "たまたま",
@@ -3068,17 +3253,20 @@
         {
           "word": "最寄り",
           "reading": "もより",
-          "meaning_vi": "gần nhất"
+          "meaning_vi": "gần nhất",
+          "sino_vi": "TỐI KÝ"
         },
         {
           "word": "負担",
           "reading": "ふたん",
-          "meaning_vi": "gánh nặng"
+          "meaning_vi": "gánh nặng",
+          "sino_vi": "PHỤ ĐẢM"
         },
         {
           "word": "送迎",
           "reading": "そうげい",
-          "meaning_vi": "đưa đón"
+          "meaning_vi": "đưa đón",
+          "sino_vi": "TỐNG NGHÊNH"
         }
       ],
       "evidence_sentence_ids": [
@@ -3133,12 +3321,14 @@
         {
           "word": "用事",
           "reading": "ようじ",
-          "meaning_vi": "việc cần làm"
+          "meaning_vi": "việc cần làm",
+          "sino_vi": "DỤNG SỰ"
         },
         {
           "word": "高齢者",
           "reading": "こうれいしゃ",
-          "meaning_vi": "người cao tuổi"
+          "meaning_vi": "người cao tuổi",
+          "sino_vi": "CAO LINH GIẢ"
         }
       ],
       "evidence_sentence_ids": [
@@ -3192,17 +3382,20 @@
         {
           "word": "歩行",
           "reading": "ほこう",
-          "meaning_vi": "việc đi bộ, đi lại"
+          "meaning_vi": "việc đi bộ, đi lại",
+          "sino_vi": "BỘ HÀNH"
         },
         {
           "word": "障害",
           "reading": "しょうがい",
-          "meaning_vi": "trở ngại, khuyết tật"
+          "meaning_vi": "trở ngại, khuyết tật",
+          "sino_vi": "CHƯỚNG HẠI"
         },
         {
           "word": "未満",
           "reading": "みまん",
-          "meaning_vi": "chưa đến, dưới"
+          "meaning_vi": "chưa đến, dưới",
+          "sino_vi": "VỊ MÃN"
         }
       ],
       "evidence_sentence_ids": [
@@ -3258,12 +3451,14 @@
         {
           "word": "高齢化",
           "reading": "こうれいか",
-          "meaning_vi": "già hóa dân số"
+          "meaning_vi": "già hóa dân số",
+          "sino_vi": "CAO LINH HÓA"
         },
         {
           "word": "役割を果たす",
           "reading": "やくわりをはたす",
-          "meaning_vi": "đóng vai trò"
+          "meaning_vi": "đóng vai trò",
+          "sino_vi": "DỊCH CÁT QUẢ"
         }
       ],
       "evidence_sentence_ids": [
@@ -3318,37 +3513,44 @@
         {
           "word": "像を結ぶ",
           "reading": "ぞうをむすぶ",
-          "meaning_vi": "hiện rõ hình ảnh, hiểu rõ hình dáng"
+          "meaning_vi": "hiện rõ hình ảnh, hiểu rõ hình dáng",
+          "sino_vi": "TƯỢNG KẾT"
         },
         {
           "word": "評価",
           "reading": "ひょうか",
-          "meaning_vi": "đánh giá"
+          "meaning_vi": "đánh giá",
+          "sino_vi": "BÌNH GIÁ"
         },
         {
           "word": "好み",
           "reading": "このみ",
-          "meaning_vi": "sở thích"
+          "meaning_vi": "sở thích",
+          "sino_vi": "HẢO"
         },
         {
           "word": "対立",
           "reading": "たいりつ",
-          "meaning_vi": "sự đối lập"
+          "meaning_vi": "sự đối lập",
+          "sino_vi": "ĐỐI LẬP"
         },
         {
           "word": "支え",
           "reading": "ささえ",
-          "meaning_vi": "chỗ dựa, điểm tựa"
+          "meaning_vi": "chỗ dựa, điểm tựa",
+          "sino_vi": "CHI"
         },
         {
           "word": "他者",
           "reading": "たしゃ",
-          "meaning_vi": "người khác"
+          "meaning_vi": "người khác",
+          "sino_vi": "THA GIẢ"
         },
         {
           "word": "付き合い",
           "reading": "つきあい",
-          "meaning_vi": "sự giao thiệp, quan hệ qua lại"
+          "meaning_vi": "sự giao thiệp, quan hệ qua lại",
+          "sino_vi": "PHÓ HỢP"
         },
         {
           "word": "かかわり",
@@ -3409,37 +3611,44 @@
         {
           "word": "試食",
           "reading": "ししょく",
-          "meaning_vi": "ăn thử"
+          "meaning_vi": "ăn thử",
+          "sino_vi": "THÍ THỰC"
         },
         {
           "word": "提供",
           "reading": "ていきょう",
-          "meaning_vi": "cung cấp, phục vụ"
+          "meaning_vi": "cung cấp, phục vụ",
+          "sino_vi": "ĐỀ CUNG"
         },
         {
           "word": "名産",
           "reading": "めいさん",
-          "meaning_vi": "đặc sản"
+          "meaning_vi": "đặc sản",
+          "sino_vi": "DANH SẢN"
         },
         {
           "word": "売店",
           "reading": "ばいてん",
-          "meaning_vi": "quầy bán hàng (lưu niệm)"
+          "meaning_vi": "quầy bán hàng (lưu niệm)",
+          "sino_vi": "MẠI ĐIẾM"
         },
         {
           "word": "対応",
           "reading": "たいおう",
-          "meaning_vi": "đáp ứng, xử lý"
+          "meaning_vi": "đáp ứng, xử lý",
+          "sino_vi": "ĐỐI ỨNG"
         },
         {
           "word": "納品",
           "reading": "のうひん",
-          "meaning_vi": "giao hàng"
+          "meaning_vi": "giao hàng",
+          "sino_vi": "NẠP PHẨM"
         },
         {
           "word": "検討",
           "reading": "けんとう",
-          "meaning_vi": "xem xét, cân nhắc"
+          "meaning_vi": "xem xét, cân nhắc",
+          "sino_vi": "KIỂM THẢO"
         },
         {
           "word": "たびたび",
@@ -3499,42 +3708,50 @@
         {
           "word": "ながら聴き",
           "reading": "ながらぎき",
-          "meaning_vi": "vừa làm việc khác vừa nghe"
+          "meaning_vi": "vừa làm việc khác vừa nghe",
+          "sino_vi": "THÍNH"
         },
         {
           "word": "空想",
           "reading": "くうそう",
-          "meaning_vi": "tưởng tượng, mơ mộng"
+          "meaning_vi": "tưởng tượng, mơ mộng",
+          "sino_vi": "KHÔNG TƯỞNG"
         },
         {
           "word": "余白",
           "reading": "よはく",
-          "meaning_vi": "khoảng trống"
+          "meaning_vi": "khoảng trống",
+          "sino_vi": "DƯ BẠCH"
         },
         {
           "word": "聞き手",
           "reading": "ききて",
-          "meaning_vi": "người nghe"
+          "meaning_vi": "người nghe",
+          "sino_vi": "VĂN THỦ"
         },
         {
           "word": "委ねる",
           "reading": "ゆだねる",
-          "meaning_vi": "giao phó, phó mặc"
+          "meaning_vi": "giao phó, phó mặc",
+          "sino_vi": "ỦY"
         },
         {
           "word": "与える",
           "reading": "あたえる",
-          "meaning_vi": "cho, cung cấp"
+          "meaning_vi": "cho, cung cấp",
+          "sino_vi": "DỮ"
         },
         {
           "word": "自由度",
           "reading": "じゆうど",
-          "meaning_vi": "mức độ tự do"
+          "meaning_vi": "mức độ tự do",
+          "sino_vi": "TỰ DO ĐỘ"
         },
         {
           "word": "浮かぶ",
           "reading": "うかぶ",
-          "meaning_vi": "hiện lên, nổi lên"
+          "meaning_vi": "hiện lên, nổi lên",
+          "sino_vi": "PHÙ"
         }
       ],
       "evidence_sentence_ids": [
@@ -3589,42 +3806,50 @@
         {
           "word": "使用量",
           "reading": "しようりょう",
-          "meaning_vi": "lượng sử dụng"
+          "meaning_vi": "lượng sử dụng",
+          "sino_vi": "SỬ DỤNG LƯỢNG"
         },
         {
           "word": "通知書",
           "reading": "つうちしょ",
-          "meaning_vi": "phiếu thông báo"
+          "meaning_vi": "phiếu thông báo",
+          "sino_vi": "THÔNG TRI THƯ"
         },
         {
           "word": "廃止",
           "reading": "はいし",
-          "meaning_vi": "bãi bỏ"
+          "meaning_vi": "bãi bỏ",
+          "sino_vi": "PHẾ CHỈ"
         },
         {
           "word": "以降",
           "reading": "いこう",
-          "meaning_vi": "từ ~ trở đi"
+          "meaning_vi": "từ ~ trở đi",
+          "sino_vi": "DĨ GIÁNG"
         },
         {
           "word": "引き続き",
           "reading": "ひきつづき",
-          "meaning_vi": "tiếp tục"
+          "meaning_vi": "tiếp tục",
+          "sino_vi": "DẪN TỤC"
         },
         {
           "word": "郵送",
           "reading": "ゆうそう",
-          "meaning_vi": "gửi qua bưu điện"
+          "meaning_vi": "gửi qua bưu điện",
+          "sino_vi": "BƯU TỐNG"
         },
         {
           "word": "手数料",
           "reading": "てすうりょう",
-          "meaning_vi": "phí dịch vụ"
+          "meaning_vi": "phí dịch vụ",
+          "sino_vi": "THỦ SỐ LIỆU"
         },
         {
           "word": "負担",
           "reading": "ふたん",
-          "meaning_vi": "gánh chịu (chi phí)"
+          "meaning_vi": "gánh chịu (chi phí)",
+          "sino_vi": "PHỤ ĐẢM"
         }
       ],
       "evidence_sentence_ids": [
@@ -3680,42 +3905,50 @@
         {
           "word": "専門分野",
           "reading": "せんもんぶんや",
-          "meaning_vi": "lĩnh vực chuyên môn"
+          "meaning_vi": "lĩnh vực chuyên môn",
+          "sino_vi": "CHUYÊN MÔN PHÂN DÃ"
         },
         {
           "word": "調整",
           "reading": "ちょうせい",
-          "meaning_vi": "điều chỉnh, phối hợp"
+          "meaning_vi": "điều chỉnh, phối hợp",
+          "sino_vi": "ĐIỀU CHỈNH"
         },
         {
           "word": "部門",
           "reading": "ぶもん",
-          "meaning_vi": "bộ phận, phòng ban"
+          "meaning_vi": "bộ phận, phòng ban",
+          "sino_vi": "BỘ MÔN"
         },
         {
           "word": "余裕",
           "reading": "よゆう",
-          "meaning_vi": "sự dư dả, thong thả"
+          "meaning_vi": "sự dư dả, thong thả",
+          "sino_vi": "DƯ DỤ"
         },
         {
           "word": "守りに入る",
           "reading": "まもりにはいる",
-          "meaning_vi": "chuyển sang thế thủ"
+          "meaning_vi": "chuyển sang thế thủ",
+          "sino_vi": "THỦ NHẬP"
         },
         {
           "word": "築く",
           "reading": "きずく",
-          "meaning_vi": "xây dựng, gây dựng"
+          "meaning_vi": "xây dựng, gây dựng",
+          "sino_vi": "TRÚC"
         },
         {
           "word": "偉大",
           "reading": "いだい",
-          "meaning_vi": "vĩ đại"
+          "meaning_vi": "vĩ đại",
+          "sino_vi": "VĨ ĐẠI"
         },
         {
           "word": "成す",
           "reading": "なす",
-          "meaning_vi": "làm nên, đạt được"
+          "meaning_vi": "làm nên, đạt được",
+          "sino_vi": "THÀNH"
         }
       ],
       "evidence_sentence_ids": [
@@ -3770,27 +4003,32 @@
         {
           "word": "頑丈",
           "reading": "がんじょう",
-          "meaning_vi": "chắc chắn, vững chắc"
+          "meaning_vi": "chắc chắn, vững chắc",
+          "sino_vi": "NGOAN TRƯỢNG"
         },
         {
           "word": "頭骨",
           "reading": "ずがいこつ",
-          "meaning_vi": "xương sọ"
+          "meaning_vi": "xương sọ",
+          "sino_vi": "ĐẦU CỐT"
         },
         {
           "word": "筋肉",
           "reading": "きんにく",
-          "meaning_vi": "cơ bắp"
+          "meaning_vi": "cơ bắp",
+          "sino_vi": "CÂN NHỤC"
         },
         {
           "word": "維持",
           "reading": "いじ",
-          "meaning_vi": "duy trì"
+          "meaning_vi": "duy trì",
+          "sino_vi": "DUY TRÌ"
         },
         {
           "word": "及ぶ",
           "reading": "およぶ",
-          "meaning_vi": "lên tới, đạt tới"
+          "meaning_vi": "lên tới, đạt tới",
+          "sino_vi": "CẬP"
         }
       ],
       "evidence_sentence_ids": [
@@ -3845,27 +4083,32 @@
         {
           "word": "補う",
           "reading": "おぎなう",
-          "meaning_vi": "bù đắp, bổ sung"
+          "meaning_vi": "bù đắp, bổ sung",
+          "sino_vi": "BỔ"
         },
         {
           "word": "制限",
           "reading": "せいげん",
-          "meaning_vi": "hạn chế"
+          "meaning_vi": "hạn chế",
+          "sino_vi": "CHẾ HẠN"
         },
         {
           "word": "固定",
           "reading": "こてい",
-          "meaning_vi": "cố định"
+          "meaning_vi": "cố định",
+          "sino_vi": "CỐ ĐỊNH"
         },
         {
           "word": "不自由",
           "reading": "ふじゆう",
-          "meaning_vi": "bất tiện, thiếu tự do"
+          "meaning_vi": "bất tiện, thiếu tự do",
+          "sino_vi": "BẤT TỰ DO"
         },
         {
           "word": "機動性",
           "reading": "きどうせい",
-          "meaning_vi": "tính cơ động, linh hoạt"
+          "meaning_vi": "tính cơ động, linh hoạt",
+          "sino_vi": "CƠ ĐỘNG TÍNH"
         }
       ],
       "evidence_sentence_ids": [
@@ -3921,22 +4164,26 @@
         {
           "word": "勘違い",
           "reading": "かんちがい",
-          "meaning_vi": "hiểu lầm"
+          "meaning_vi": "hiểu lầm",
+          "sino_vi": "KHAM VI"
         },
         {
           "word": "隙間",
           "reading": "すきま",
-          "meaning_vi": "khe hở, chỗ trống"
+          "meaning_vi": "khe hở, chỗ trống",
+          "sino_vi": "KHÍCH GIAN"
         },
         {
           "word": "埋める",
           "reading": "うめる",
-          "meaning_vi": "lấp, lấp đầy"
+          "meaning_vi": "lấp, lấp đầy",
+          "sino_vi": "MAI"
         },
         {
           "word": "隠れた",
           "reading": "かくれた",
-          "meaning_vi": "ẩn, tiềm ẩn"
+          "meaning_vi": "ẩn, tiềm ẩn",
+          "sino_vi": "ẨN"
         },
         {
           "word": "ニーズ",
@@ -3997,7 +4244,8 @@
         {
           "word": "職業観",
           "reading": "しょくぎょうかん",
-          "meaning_vi": "quan niệm nghề nghiệp"
+          "meaning_vi": "quan niệm nghề nghiệp",
+          "sino_vi": "CHỨC NGHIỆP QUAN"
         },
         {
           "word": "こだわる",
@@ -4007,17 +4255,20 @@
         {
           "word": "就職",
           "reading": "しゅうしょく",
-          "meaning_vi": "xin việc, đi làm"
+          "meaning_vi": "xin việc, đi làm",
+          "sino_vi": "TỰU CHỨC"
         },
         {
           "word": "現場",
           "reading": "げんば",
-          "meaning_vi": "hiện trường"
+          "meaning_vi": "hiện trường",
+          "sino_vi": "HIỆN TRƯỜNG"
         },
         {
           "word": "仕事に就く",
           "reading": "しごとにつく",
-          "meaning_vi": "nhận việc, đi làm"
+          "meaning_vi": "nhận việc, đi làm",
+          "sino_vi": "SĨ SỰ TỰU"
         }
       ],
       "evidence_sentence_ids": [
@@ -4073,7 +4324,8 @@
         {
           "word": "好奇心",
           "reading": "こうきしん",
-          "meaning_vi": "lòng hiếu kỳ"
+          "meaning_vi": "lòng hiếu kỳ",
+          "sino_vi": "HẢO KỲ TÂM"
         },
         {
           "word": "〜つもり",
@@ -4083,7 +4335,8 @@
         {
           "word": "〜気にさせる",
           "reading": "〜きにさせる",
-          "meaning_vi": "khiến có cảm giác ~"
+          "meaning_vi": "khiến có cảm giác ~",
+          "sino_vi": "KHÍ"
         },
         {
           "word": "やがて",
@@ -4143,12 +4396,14 @@
         {
           "word": "刺激",
           "reading": "しげき",
-          "meaning_vi": "kích thích"
+          "meaning_vi": "kích thích",
+          "sino_vi": "THÍCH KÍCH"
         },
         {
           "word": "背伸び",
           "reading": "せのび",
-          "meaning_vi": "kiễng chân, cố làm quá sức"
+          "meaning_vi": "kiễng chân, cố làm quá sức",
+          "sino_vi": "BỐI THÂN"
         },
         {
           "word": "おおらか",
@@ -4163,7 +4418,8 @@
         {
           "word": "納得",
           "reading": "なっとく",
-          "meaning_vi": "thấu hiểu, thuyết phục"
+          "meaning_vi": "thấu hiểu, thuyết phục",
+          "sino_vi": "NẠP ĐẮC"
         }
       ],
       "evidence_sentence_ids": [
@@ -4218,27 +4474,32 @@
         {
           "word": "個別性",
           "reading": "こべつせい",
-          "meaning_vi": "tính cá biệt"
+          "meaning_vi": "tính cá biệt",
+          "sino_vi": "CÁ BIỆT TÍNH"
         },
         {
           "word": "治療方針",
           "reading": "ちりょうほうしん",
-          "meaning_vi": "phương châm điều trị"
+          "meaning_vi": "phương châm điều trị",
+          "sino_vi": "TRỊ LIỆU PHƯƠNG CHÂM"
         },
         {
           "word": "一切",
           "reading": "いっさい",
-          "meaning_vi": "hoàn toàn (không)"
+          "meaning_vi": "hoàn toàn (không)",
+          "sino_vi": "NHẤT THIẾT"
         },
         {
           "word": "根拠",
           "reading": "こんきょ",
-          "meaning_vi": "căn cứ"
+          "meaning_vi": "căn cứ",
+          "sino_vi": "CĂN CỨ"
         },
         {
           "word": "使命",
           "reading": "しめい",
-          "meaning_vi": "sứ mệnh"
+          "meaning_vi": "sứ mệnh",
+          "sino_vi": "SỬ MỆNH"
         }
       ],
       "evidence_sentence_ids": [
@@ -4292,27 +4553,32 @@
         {
           "word": "把握",
           "reading": "はあく",
-          "meaning_vi": "nắm bắt, hiểu rõ"
+          "meaning_vi": "nắm bắt, hiểu rõ",
+          "sino_vi": "BẢ ÁC"
         },
         {
           "word": "面と向かう",
           "reading": "めんとむかう",
-          "meaning_vi": "đối mặt trực tiếp"
+          "meaning_vi": "đối mặt trực tiếp",
+          "sino_vi": "DIỆN HƯỚNG"
         },
         {
           "word": "死守",
           "reading": "ししゅ",
-          "meaning_vi": "bảo vệ đến cùng"
+          "meaning_vi": "bảo vệ đến cùng",
+          "sino_vi": "TỬ THỦ"
         },
         {
           "word": "向き合う",
           "reading": "むきあう",
-          "meaning_vi": "đối diện"
+          "meaning_vi": "đối diện",
+          "sino_vi": "HƯỚNG HỢP"
         },
         {
           "word": "手助け",
           "reading": "てだすけ",
-          "meaning_vi": "giúp đỡ"
+          "meaning_vi": "giúp đỡ",
+          "sino_vi": "THỦ TRỢ"
         }
       ],
       "evidence_sentence_ids": [
@@ -4369,27 +4635,32 @@
         {
           "word": "観戦",
           "reading": "かんせん",
-          "meaning_vi": "xem (thi đấu)"
+          "meaning_vi": "xem (thi đấu)",
+          "sino_vi": "QUAN CHIẾN"
         },
         {
           "word": "魅力",
           "reading": "みりょく",
-          "meaning_vi": "sức hấp dẫn"
+          "meaning_vi": "sức hấp dẫn",
+          "sino_vi": "MỊ LỰC"
         },
         {
           "word": "共有",
           "reading": "きょうゆう",
-          "meaning_vi": "chia sẻ, cùng có"
+          "meaning_vi": "chia sẻ, cùng có",
+          "sino_vi": "CỘNG HỮU"
         },
         {
           "word": "悔しい",
           "reading": "くやしい",
-          "meaning_vi": "tiếc nuối, ấm ức"
+          "meaning_vi": "tiếc nuối, ấm ức",
+          "sino_vi": "HỐI"
         },
         {
           "word": "緊張感",
           "reading": "きんちょうかん",
-          "meaning_vi": "cảm giác căng thẳng"
+          "meaning_vi": "cảm giác căng thẳng",
+          "sino_vi": "KHẨN TRƯƠNG CẢM"
         }
       ],
       "evidence_sentence_ids": [
@@ -4445,27 +4716,32 @@
         {
           "word": "競技",
           "reading": "きょうぎ",
-          "meaning_vi": "môn thi đấu"
+          "meaning_vi": "môn thi đấu",
+          "sino_vi": "CẠNH KỸ"
         },
         {
           "word": "必ずしも〜ない",
           "reading": "かならずしも〜ない",
-          "meaning_vi": "không nhất thiết"
+          "meaning_vi": "không nhất thiết",
+          "sino_vi": "TẤT"
         },
         {
           "word": "気軽に",
           "reading": "きがるに",
-          "meaning_vi": "thoải mái, nhẹ nhàng"
+          "meaning_vi": "thoải mái, nhẹ nhàng",
+          "sino_vi": "KHÍ KHINH"
         },
         {
           "word": "戦略",
           "reading": "せんりゃく",
-          "meaning_vi": "chiến lược"
+          "meaning_vi": "chiến lược",
+          "sino_vi": "CHIẾN LƯỢC"
         },
         {
           "word": "程度",
           "reading": "ていど",
-          "meaning_vi": "mức độ"
+          "meaning_vi": "mức độ",
+          "sino_vi": "TRÌNH ĐỘ"
         }
       ],
       "evidence_sentence_ids": [
@@ -4523,22 +4799,26 @@
         {
           "word": "分ける",
           "reading": "わける",
-          "meaning_vi": "phân chia, chia loại"
+          "meaning_vi": "phân chia, chia loại",
+          "sino_vi": "PHÂN"
         },
         {
           "word": "仕分け",
           "reading": "しわけ",
-          "meaning_vi": "phân loại, sắp xếp"
+          "meaning_vi": "phân loại, sắp xếp",
+          "sino_vi": "SĨ PHÂN"
         },
         {
           "word": "分類",
           "reading": "ぶんるい",
-          "meaning_vi": "phân loại"
+          "meaning_vi": "phân loại",
+          "sino_vi": "PHÂN LOẠI"
         },
         {
           "word": "関連づける",
           "reading": "かんれんづける",
-          "meaning_vi": "gắn kết, liên hệ"
+          "meaning_vi": "gắn kết, liên hệ",
+          "sino_vi": "QUAN LIÊN"
         },
         {
           "word": "ラベル",
@@ -4605,22 +4885,26 @@
         {
           "word": "誤る",
           "reading": "あやまる",
-          "meaning_vi": "sai, nhầm"
+          "meaning_vi": "sai, nhầm",
+          "sino_vi": "NGỘ"
         },
         {
           "word": "顧みる",
           "reading": "かえりみる",
-          "meaning_vi": "nhìn lại, xem lại"
+          "meaning_vi": "nhìn lại, xem lại",
+          "sino_vi": "CỐ"
         },
         {
           "word": "落とし穴",
           "reading": "おとしあな",
-          "meaning_vi": "cạm bẫy"
+          "meaning_vi": "cạm bẫy",
+          "sino_vi": "LẠC HUYỆT"
         },
         {
           "word": "その場しのぎ",
           "reading": "そのばしのぎ",
-          "meaning_vi": "đối phó tạm thời"
+          "meaning_vi": "đối phó tạm thời",
+          "sino_vi": "TRƯỜNG"
         }
       ],
       "evidence_sentence_ids": [
@@ -4676,27 +4960,32 @@
         {
           "word": "姿勢",
           "reading": "しせい",
-          "meaning_vi": "tư thế, thái độ"
+          "meaning_vi": "tư thế, thái độ",
+          "sino_vi": "TƯ THẾ"
         },
         {
           "word": "一旦",
           "reading": "いったん",
-          "meaning_vi": "tạm thời, trước hết"
+          "meaning_vi": "tạm thời, trước hết",
+          "sino_vi": "NHẤT ĐÁN"
         },
         {
           "word": "受け入れる",
           "reading": "うけいれる",
-          "meaning_vi": "chấp nhận"
+          "meaning_vi": "chấp nhận",
+          "sino_vi": "THỤ NHẬP"
         },
         {
           "word": "通過点",
           "reading": "つうかてん",
-          "meaning_vi": "chặng đường đi qua"
+          "meaning_vi": "chặng đường đi qua",
+          "sino_vi": "THÔNG QUÁ ĐIỂM"
         },
         {
           "word": "障害物",
           "reading": "しょうがいぶつ",
-          "meaning_vi": "chướng ngại vật"
+          "meaning_vi": "chướng ngại vật",
+          "sino_vi": "CHƯỚNG HẠI VẬT"
         }
       ],
       "evidence_sentence_ids": [
@@ -4752,22 +5041,26 @@
         {
           "word": "公開講座",
           "reading": "こうかいこうざ",
-          "meaning_vi": "khóa học mở (dành cho cộng đồng)"
+          "meaning_vi": "khóa học mở (dành cho cộng đồng)",
+          "sino_vi": "CÔNG KHAI GIẢNG TỌA"
         },
         {
           "word": "午前中",
           "reading": "ごぜんちゅう",
-          "meaning_vi": "trong buổi sáng"
+          "meaning_vi": "trong buổi sáng",
+          "sino_vi": "NGỌ TIỀN TRUNG"
         },
         {
           "word": "講義",
           "reading": "こうぎ",
-          "meaning_vi": "bài giảng"
+          "meaning_vi": "bài giảng",
+          "sino_vi": "GIẢNG NGHĨA"
         },
         {
           "word": "実習",
           "reading": "じっしゅう",
-          "meaning_vi": "thực hành"
+          "meaning_vi": "thực hành",
+          "sino_vi": "THỰC TẬP"
         },
         {
           "word": "〜のみ",
@@ -4830,32 +5123,38 @@
         {
           "word": "申し込み",
           "reading": "もうしこみ",
-          "meaning_vi": "đăng ký"
+          "meaning_vi": "đăng ký",
+          "sino_vi": "THÂN"
         },
         {
           "word": "受付期間",
           "reading": "うけつけきかん",
-          "meaning_vi": "thời gian nhận đơn"
+          "meaning_vi": "thời gian nhận đơn",
+          "sino_vi": "THỤ PHÓ KỲ GIAN"
         },
         {
           "word": "定員",
           "reading": "ていいん",
-          "meaning_vi": "số chỗ tối đa, định mức"
+          "meaning_vi": "số chỗ tối đa, định mức",
+          "sino_vi": "ĐỊNH VIÊN"
         },
         {
           "word": "空き",
           "reading": "あき",
-          "meaning_vi": "chỗ trống"
+          "meaning_vi": "chỗ trống",
+          "sino_vi": "KHÔNG"
         },
         {
           "word": "抽選",
           "reading": "ちゅうせん",
-          "meaning_vi": "bốc thăm"
+          "meaning_vi": "bốc thăm",
+          "sino_vi": "TRỪU TUYỂN"
         },
         {
           "word": "ふり込み",
           "reading": "ふりこみ",
-          "meaning_vi": "chuyển khoản"
+          "meaning_vi": "chuyển khoản",
+          "sino_vi": ""
         }
       ],
       "evidence_sentence_ids": [

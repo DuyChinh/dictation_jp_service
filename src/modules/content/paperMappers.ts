@@ -76,6 +76,7 @@ export function toItemResult(item: PaperItem, selectedChoiceId: string) {
       correct: c.correct,
       explanation_vi: c.explanation_vi,
       ...(c.meaning_vi ? { meaning_vi: c.meaning_vi } : {}),
+      ...(c.sino_vi ? { sino_vi: c.sino_vi } : {}),
     })),
     ...(item.sort ? { sort: item.sort } : {}),
     evidence_sentence_ids: item.evidence_sentence_ids,

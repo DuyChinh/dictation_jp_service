@@ -30,7 +30,7 @@ function paper(status: string) {
         id: `${LESSON}-v-q1`, no: 1, part: "vocab", mondai: 1, type: "mcq",
         stem: { ja: "柱はしっかりしている。", vi: "Cột rất vững.", target: "柱" },
         choices: choices("3"), summary_vi: "Tóm tắt", point_tags: ["vocab:柱"],
-        vocab: [{ word: "柱", reading: "はしら", meaning_vi: "cột" }],
+        vocab: [{ word: "柱", reading: "はしら", meaning_vi: "cột", sino_vi: "TRỤ" }],
       },
       {
         id: `${LESSON}-g-q2`, no: 2, part: "grammar", mondai: 8, type: "sort_star",
