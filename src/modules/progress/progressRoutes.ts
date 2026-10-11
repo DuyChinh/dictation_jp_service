@@ -177,7 +177,10 @@ function getUserIdFromAuthHeader(req: Request): string | null {
   const token = authHeader.substring(7);
   try {
     const decoded = jwt.verify(token, config.jwtSecret) as { userId?: string };
-    return decoded.userId || null;
+    if (!decoded.userId || !mongoose.isValidObjectId(decoded.userId)) {
+      return null;
+    }
+    return decoded.userId;
   } catch {
     return null;
   }

@@ -2,11 +2,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import jwt from "jsonwebtoken";
 import request from "supertest";
-import { beforeAll, describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it, vi } from "vitest";
 import { StaticContentRepository } from "./modules/content/StaticContentRepository.js";
 import { createApp } from "./app.js";
 import { config } from "./config.js";
 import { canAccess } from "./modules/admin/permissions.js";
+import { ExamHistory } from "./models/ExamHistory.js";
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -190,6 +191,75 @@ describe("backend content + evaluate API", () => {
     const save = await request(app).post("/api/progress/exam-history").send({ lessonId: "x", startedAt: 1000 });
     expect(save.status).toBe(200);
     expect(save.body.localOnly).toBe(true);
+  });
+
+  it("manages exam history for authenticated learner in DB", async () => {
+    const learnerToken = jwt.sign({ userId: "64b000000000000000000001", email: "a@example.com" }, config.jwtSecret);
+    const mockRow = {
+      lessonId: "jlpt-n2-2022-07",
+      scope: "all",
+      minutes: 105,
+      startedAt: 1000,
+      submittedAt: 5000,
+      total: 105,
+      answered: 105,
+      correct: 90,
+      result: { total: 105, answered: 105, correct: 90, items: [] },
+    };
+
+    const findSpy = vi.spyOn(ExamHistory, "find").mockReturnValue({
+      sort: () => ({
+        lean: () => Promise.resolve([mockRow]),
+      }),
+    } as any);
+
+    const list = await request(app)
+      .get("/api/progress/exam-history")
+      .set("Authorization", `Bearer ${learnerToken}`);
+    expect(list.status).toBe(200);
+    expect(list.body.history).toHaveLength(1);
+    expect(list.body.history[0].lessonId).toBe("jlpt-n2-2022-07");
+    expect(list.body.history[0].result).toBeDefined();
+
+    const updateSpy = vi.spyOn(ExamHistory, "findOneAndUpdate").mockResolvedValue({} as any);
+    const save = await request(app)
+      .post("/api/progress/exam-history")
+      .set("Authorization", `Bearer ${learnerToken}`)
+      .send({
+        lessonId: "jlpt-n2-2022-07",
+        startedAt: 1000,
+        submittedAt: 5000,
+        minutes: 105,
+        total: 105,
+        answered: 105,
+        correct: 90,
+        result: { total: 105 },
+      });
+    expect(save.status).toBe(200);
+    expect(save.body.success).toBe(true);
+    expect(updateSpy).toHaveBeenCalled();
+
+    const deleteSpy = vi.spyOn(ExamHistory, "deleteOne").mockResolvedValue({ deletedCount: 1 } as any);
+    const del = await request(app)
+      .delete("/api/progress/exam-history/jlpt-n2-2022-07/1000")
+      .set("Authorization", `Bearer ${learnerToken}`);
+    expect(del.status).toBe(200);
+    expect(del.body.deleted).toBe(1);
+
+    const bulkSpy = vi.spyOn(ExamHistory, "bulkWrite").mockResolvedValue({} as any);
+    const imp = await request(app)
+      .post("/api/progress/import")
+      .set("Authorization", `Bearer ${learnerToken}`)
+      .send({
+        examHistory: [{ lessonId: "jlpt-n2-2022-07", startedAt: 1000, submittedAt: 5000 }],
+      });
+    expect(imp.status).toBe(200);
+    expect(imp.body.imported.examHistory).toBe(1);
+
+    findSpy.mockRestore();
+    updateSpy.mockRestore();
+    deleteSpy.mockRestore();
+    bulkSpy.mockRestore();
   });
 
   it("keeps the admin API closed without an admin token", async () => {
