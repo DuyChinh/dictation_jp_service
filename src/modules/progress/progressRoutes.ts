@@ -7,6 +7,7 @@ import { History } from "../../models/History.js";
 import { ListeningAnswer } from "../../models/ListeningAnswer.js";
 import { LessonActivity } from "../../models/LessonActivity.js";
 import { ListeningAttempt } from "../../models/ListeningAttempt.js";
+import { ExamHistory } from "../../models/ExamHistory.js";
 
 /** Attempts kept per lesson and returned per request; older ones drop off. */
 const ATTEMPTS_PER_LESSON = 50;
@@ -49,6 +50,42 @@ function toAttemptView(a: {
     wrong: a.wrong,
     sections: (a.sections ?? []).map((s) => ({ sectionId: s.sectionId, total: s.total, right: s.right, wrong: s.wrong })),
     answers: (a.answers && typeof a.answers === "object" ? a.answers : {}) as AttemptView["answers"],
+  };
+}
+
+type ExamHistoryView = {
+  lessonId: string;
+  scope: string;
+  minutes: number;
+  startedAt: number;
+  submittedAt: number;
+  total: number;
+  answered: number;
+  correct: number;
+  result?: Record<string, unknown>;
+};
+
+function toExamHistoryView(row: {
+  lessonId: string;
+  scope: string;
+  minutes: number;
+  startedAt: number;
+  submittedAt: number;
+  total: number;
+  answered: number;
+  correct: number;
+  result?: unknown;
+}): ExamHistoryView {
+  return {
+    lessonId: row.lessonId,
+    scope: row.scope || "all",
+    minutes: row.minutes,
+    startedAt: row.startedAt,
+    submittedAt: row.submittedAt,
+    total: row.total,
+    answered: row.answered,
+    correct: row.correct,
+    ...(row.result && typeof row.result === "object" ? { result: row.result as Record<string, unknown> } : {}),
   };
 }
 
@@ -537,6 +574,89 @@ export function createProgressRouter(): Router {
     }
   });
 
+  // Exam sittings for the logged-in user, sorted newest to oldest. No limit in DB.
+  r.get("/exam-history", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) return res.json({ history: [] });
+
+      const lessonId = req.query.lesson_id as string | undefined;
+      const filter: Record<string, unknown> = { userId };
+      if (lessonId) filter.lessonId = str(lessonId, 200);
+
+      const items = await ExamHistory.find(filter)
+        .sort({ submittedAt: -1 })
+        .lean();
+
+      return res.json({ history: items.map(toExamHistoryView) });
+    } catch (err: any) {
+      console.error("Get exam history error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to load exam history" } });
+    }
+  });
+
+  // Save a submitted exam sitting for the logged in user; no limit in DB
+  r.post("/exam-history", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) return res.status(200).json({ success: true, localOnly: true });
+
+      const b = req.body ?? {};
+      const lessonId = str(b.lessonId, 200);
+      const startedAt = num(b.startedAt);
+      if (!lessonId || !startedAt) {
+        return res.status(400).json({ error: { message: "Missing required fields" } });
+      }
+
+      const scope = str(b.scope, 50) || "all";
+      const minutes = num(b.minutes);
+      const submittedAt = num(b.submittedAt) || Date.now();
+      const total = num(b.total);
+      const answered = num(b.answered);
+      const correct = num(b.correct);
+      const result = b.result && typeof b.result === "object" ? b.result : undefined;
+
+      await ExamHistory.findOneAndUpdate(
+        { userId, lessonId, startedAt },
+        {
+          $set: {
+            scope,
+            minutes,
+            submittedAt,
+            total,
+            answered,
+            correct,
+            ...(result ? { result } : {}),
+          },
+        },
+        { upsert: true, new: true }
+      );
+
+      return res.json({ success: true });
+    } catch (err: any) {
+      console.error("Save exam history error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to save exam history" } });
+    }
+  });
+
+  // Remove one exam sitting from the history
+  r.delete("/exam-history/:lessonId/:startedAt", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) return res.status(200).json({ success: true, localOnly: true });
+      const startedAt = Number(req.params.startedAt);
+      const { deletedCount } = await ExamHistory.deleteOne({
+        userId,
+        lessonId: req.params.lessonId,
+        startedAt,
+      });
+      return res.json({ success: true, deleted: deletedCount });
+    } catch (err: any) {
+      console.error("Delete exam history error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to delete exam history" } });
+    }
+  });
+
   // Everything the progress page needs in one call: dictation progress and listening answers for every lesson
   r.get("/overview", async (req: Request, res: Response) => {
     try {
@@ -636,11 +756,13 @@ export function createProgressRouter(): Router {
       const sessions: SessionInput[] = Array.isArray(body.sessions) ? body.sessions : [];
       const listening: Record<string, unknown>[] = Array.isArray(body.listening) ? body.listening : [];
       const activity: Record<string, unknown>[] = Array.isArray(body.activity) ? body.activity : [];
+      const examHistory: Record<string, unknown>[] = Array.isArray(body.examHistory) ? body.examHistory : [];
       if (
         dictation.length > IMPORT_LIMITS.dictation ||
         sessions.length > IMPORT_LIMITS.sessions ||
         listening.length > IMPORT_LIMITS.listening ||
-        activity.length > IMPORT_LIMITS.activity
+        activity.length > IMPORT_LIMITS.activity ||
+        examHistory.length > 500
       ) {
         return res.status(413).json({ error: { message: "Too much data in one import" } });
       }
@@ -707,9 +829,30 @@ export function createProgressRouter(): Router {
           },
         }));
 
+      const examOps = examHistory
+        .filter((e) => str(e.lessonId) && num(e.startedAt) > 0)
+        .map((e) => ({
+          updateOne: {
+            filter: { userId, lessonId: str(e.lessonId, 200), startedAt: num(e.startedAt) },
+            update: {
+              $set: {
+                scope: str(e.scope, 50) || "all",
+                minutes: num(e.minutes),
+                submittedAt: num(e.submittedAt) || Date.now(),
+                total: num(e.total),
+                answered: num(e.answered),
+                correct: num(e.correct),
+                ...(e.result && typeof e.result === "object" ? { result: e.result } : {}),
+              },
+            },
+            upsert: true,
+          },
+        }));
+
       if (dictationOps.length) await Progress.bulkWrite(dictationOps as any, { ordered: false });
       if (activityOps.length) await LessonActivity.bulkWrite(activityOps, { ordered: false });
       if (listeningOps.length) await ListeningAnswer.bulkWrite(listeningOps, { ordered: false });
+      if (examOps.length) await ExamHistory.bulkWrite(examOps as any, { ordered: false });
       const sessionsSaved = await insertSessions(userId, sessions);
 
       return res.json({
@@ -719,6 +862,7 @@ export function createProgressRouter(): Router {
           sessions: sessionsSaved,
           listening: listeningOps.length,
           activity: activityOps.length,
+          examHistory: examOps.length,
         },
       });
     } catch (err: any) {

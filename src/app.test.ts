@@ -183,6 +183,15 @@ describe("backend content + evaluate API", () => {
     expect(save.body.localOnly).toBe(true);
   });
 
+  it("keeps exam history local for signed-out learners", async () => {
+    const list = await request(app).get("/api/progress/exam-history");
+    expect(list.status).toBe(200);
+    expect(list.body.history).toEqual([]);
+    const save = await request(app).post("/api/progress/exam-history").send({ lessonId: "x", startedAt: 1000 });
+    expect(save.status).toBe(200);
+    expect(save.body.localOnly).toBe(true);
+  });
+
   it("keeps the admin API closed without an admin token", async () => {
     const res = await request(app).get("/api/admin/users");
     expect(res.status).toBe(401);
