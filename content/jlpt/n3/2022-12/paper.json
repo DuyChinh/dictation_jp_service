@@ -2698,25 +2698,29 @@
           "id": "1",
           "text": "営業課でコピーをする。中島さんに言う必要はない。",
           "correct": false,
-          "explanation_vi": "Máy photocopy của phòng kinh doanh đang bị hỏng, đến chiều mai thợ mới đến sửa."
+          "explanation_vi": "Máy photocopy của phòng kinh doanh đang bị hỏng, đến chiều mai thợ mới đến sửa.",
+          "meaning_vi": "Photo ở phòng kinh doanh. Không cần báo cho anh Nakajima."
         },
         {
           "id": "2",
           "text": "会計課でコピーをする。中島さんに言う必要はない。",
           "correct": true,
-          "explanation_vi": "Tài liệu cần trong ngày phải photo ở phòng kế toán («会計課のコピー機を使用してください»). Quy định chỉ yêu cầu báo anh Nakajima khi photo từ 50 bản trở lên («50枚以上コピーをする場合は... 中島に知らせてください»), ở đây anh Hong chỉ photo 5 bản nên không cần báo."
+          "explanation_vi": "Tài liệu cần trong ngày phải photo ở phòng kế toán («会計課のコピー機を使用してください»). Quy định chỉ yêu cầu báo anh Nakajima khi photo từ 50 bản trở lên («50枚以上コピーをする場合は... 中島に知らせてください»), ở đây anh Hong chỉ photo 5 bản nên không cần báo.",
+          "meaning_vi": "Photo ở phòng kế toán. Không cần báo cho anh Nakajima."
         },
         {
           "id": "3",
           "text": "中島さんに言ってから、営業課でコピーをする。",
           "correct": false,
-          "explanation_vi": "Máy phòng kinh doanh đang hỏng không dùng được."
+          "explanation_vi": "Máy phòng kinh doanh đang hỏng không dùng được.",
+          "meaning_vi": "Báo cho anh Nakajima rồi photo ở phòng kinh doanh."
         },
         {
           "id": "4",
           "text": "中島さんに言ってから、会計課でコピーをする。",
           "correct": false,
-          "explanation_vi": "Chỉ photo 5 tờ nên không cần báo anh Nakajima trước."
+          "explanation_vi": "Chỉ photo 5 tờ nên không cần báo anh Nakajima trước.",
+          "meaning_vi": "Báo cho anh Nakajima rồi photo ở phòng kế toán."
         }
       ],
       "summary_vi": "Photo ở phòng kế toán, dưới 50 bản thì không cần báo anh Nakajima (câu s3, s4).",
@@ -2745,25 +2749,29 @@
           "id": "1",
           "text": "上手な投げ方についての「私」の説明が下手だったから。",
           "correct": false,
-          "explanation_vi": "Bài không nói lý do là vì lời giải thích của người cha dở."
+          "explanation_vi": "Bài không nói lý do là vì lời giải thích của người cha dở.",
+          "meaning_vi": "Vì lời giải thích của \"tôi\" về cách ném giỏi quá dở."
         },
         {
           "id": "2",
           "text": "繰り返し同じ投げ方で投げる練習をさせていなかったから。",
           "correct": false,
-          "explanation_vi": "Người cha đã bắt con ném lặp đi lặp lại nhiều lần («何回もボールを投げさせているが»)."
+          "explanation_vi": "Người cha đã bắt con ném lặp đi lặp lại nhiều lần («何回もボールを投げさせているが»).",
+          "meaning_vi": "Vì đã không cho con luyện tập ném lặp đi lặp lại bằng cùng một cách ném."
         },
         {
           "id": "3",
           "text": "実際に「私」が上手に投げているところを見せていなかったから。",
           "correct": false,
-          "explanation_vi": "Bài không đề cập đến việc người cha không làm mẫu ném bóng."
+          "explanation_vi": "Bài không đề cập đến việc người cha không làm mẫu ném bóng.",
+          "meaning_vi": "Vì \"tôi\" đã không cho con xem trực tiếp cảnh mình ném giỏi."
         },
         {
           "id": "4",
           "text": "ちょうどいい力の入れ方を体で覚える練習をさせていなかったから。",
           "correct": true,
-          "explanation_vi": "Chương trình tivi chỉ ra rằng cần cho trẻ ném các loại bóng khác nhau hoặc phi máy bay giấy để cơ thể tự cảm nhận cách dùng lực vừa vặn («ちょうどいい力の入れ方を体で覚えさせていた»), và người cha nhận ra con gái mình chưa được luyện tập theo cách này: «娘に必要なのは、これかもしれない»."
+          "explanation_vi": "Chương trình tivi chỉ ra rằng cần cho trẻ ném các loại bóng khác nhau hoặc phi máy bay giấy để cơ thể tự cảm nhận cách dùng lực vừa vặn («ちょうどいい力の入れ方を体で覚えさせていた»), và người cha nhận ra con gái mình chưa được luyện tập theo cách này: «娘に必要なのは、これかもしれない».",
+          "meaning_vi": "Vì đã không cho con luyện tập để cơ thể tự ghi nhớ cách dùng lực vừa vặn."
         }
       ],
       "summary_vi": "Chưa cho con luyện tập để cơ thể tự ghi nhớ cách phát lực vừa vặn (câu s4, s5).",
@@ -2792,25 +2800,29 @@
           "id": "1",
           "text": "商品が品切れになったから、3月上旬に送る。",
           "correct": false,
-          "explanation_vi": "Cửa hàng hỏi ý kiến khách xem có muốn đợi hay hủy đơn, chứ không tự ý gửi vào đầu tháng 3."
+          "explanation_vi": "Cửa hàng hỏi ý kiến khách xem có muốn đợi hay hủy đơn, chứ không tự ý gửi vào đầu tháng 3.",
+          "meaning_vi": "Vì sản phẩm đã hết hàng nên sẽ gửi vào đầu tháng 3."
         },
         {
           "id": "2",
           "text": "商品が品切れになったから、3月上旬にもう一度注文してほしい。",
           "correct": false,
-          "explanation_vi": "Cửa hàng không yêu cầu khách đặt hàng lại."
+          "explanation_vi": "Cửa hàng không yêu cầu khách đặt hàng lại.",
+          "meaning_vi": "Vì sản phẩm đã hết hàng nên mong quý khách đặt hàng lại vào đầu tháng 3."
         },
         {
           "id": "3",
           "text": "商品が品切れで、届けるまでに時間がかかるから、どうしたいか知らせてほしい。",
           "correct": true,
-          "explanation_vi": "Chiếc ví da màu nâu bị hết hàng và phải đầu tháng 3 mới có hàng («お届けできるのは3月上旬になってしまいますが、いかがいたしましょうか»), cửa hàng có thể hủy đơn hoặc đổi màu khác nên mong khách cho biết nguyện vọng: «キャンセルもお受けいたしますので、ご希望をお聞かせください»."
+          "explanation_vi": "Chiếc ví da màu nâu bị hết hàng và phải đầu tháng 3 mới có hàng («お届けできるのは3月上旬になってしまいますが、いかがいたしましょうか»), cửa hàng có thể hủy đơn hoặc đổi màu khác nên mong khách cho biết nguyện vọng: «キャンセルもお受けいたしますので、ご希望をお聞かせください».",
+          "meaning_vi": "Vì sản phẩm hết hàng và phải mất thời gian mới giao được nên mong quý khách cho biết muốn xử lý thế nào."
         },
         {
           "id": "4",
           "text": "注文と違う色の商品を送ってしまったから、正しい色のものをすぐに送る。",
           "correct": false,
-          "explanation_vi": "Cửa hàng chưa gửi hàng đi, chỉ thông báo màu nâu bị hết và hỏi khách có muốn đổi màu khác không."
+          "explanation_vi": "Cửa hàng chưa gửi hàng đi, chỉ thông báo màu nâu bị hết và hỏi khách có muốn đổi màu khác không.",
+          "meaning_vi": "Vì đã lỡ gửi sản phẩm khác màu với đơn đặt hàng nên sẽ gửi ngay sản phẩm đúng màu."
         }
       ],
       "summary_vi": "Hàng hết phải chờ đến đầu tháng 3 nên đề nghị khách phản hồi mong muốn (câu s3, s4, s5).",
@@ -2840,25 +2852,29 @@
           "id": "1",
           "text": "古い靴を割引券と交換して、新しい靴を買うときに使いたいと思ったから。",
           "correct": true,
-          "explanation_vi": "Tác giả nêu rõ: dù có mang giày đi tái chế thì một mình mình cũng không tác động môi trường được bao nhiêu, nhưng nếu mua giày mới được giảm giá thì sẽ đem tới tiệm: «新しい靴が安く買えるなら、古い靴は捨てないで店に持っていこうと思った»."
+          "explanation_vi": "Tác giả nêu rõ: dù có mang giày đi tái chế thì một mình mình cũng không tác động môi trường được bao nhiêu, nhưng nếu mua giày mới được giảm giá thì sẽ đem tới tiệm: «新しい靴が安く買えるなら、古い靴は捨てないで店に持っていこうと思った».",
+          "meaning_vi": "Vì muốn đổi giày cũ lấy phiếu giảm giá để dùng khi mua giày mới."
         },
         {
           "id": "2",
           "text": "古い靴を売ってお金をもらい、そのお金で新しい靴を買いたいと思ったから。",
           "correct": false,
-          "explanation_vi": "Cửa hàng đổi lấy phiếu giảm giá (割引券) chứ không thu mua trả tiền mặt."
+          "explanation_vi": "Cửa hàng đổi lấy phiếu giảm giá (割引券) chứ không thu mua trả tiền mặt.",
+          "meaning_vi": "Vì muốn bán giày cũ lấy tiền rồi dùng số tiền đó mua giày mới."
         },
         {
           "id": "3",
           "text": "古い靴をきれいに直してもらって、もう一度履きたいと思ったから。",
           "correct": false,
-          "explanation_vi": "Giày cũ đem đi để tiêu hủy/tái chế phát điện, không phải để sửa chữa lại."
+          "explanation_vi": "Giày cũ đem đi để tiêu hủy/tái chế phát điện, không phải để sửa chữa lại.",
+          "meaning_vi": "Vì muốn nhờ người ta sửa giày cũ cho đẹp để mang lại lần nữa."
         },
         {
           "id": "4",
           "text": "古い靴を利用してもらって、環境をよくしたいと思ったから。",
           "correct": false,
-          "explanation_vi": "Tác giả tự nhận hành động của riêng mình không ảnh hưởng lớn đến môi trường, động lực chính là mua giày mới được rẻ."
+          "explanation_vi": "Tác giả tự nhận hành động của riêng mình không ảnh hưởng lớn đến môi trường, động lực chính là mua giày mới được rẻ.",
+          "meaning_vi": "Vì muốn giày cũ được tận dụng để làm cho môi trường tốt hơn."
         }
       ],
       "summary_vi": "Muốn đổi giày cũ lấy phiếu giảm giá để mua giày mới với giá rẻ hơn (câu s4).",
@@ -2886,25 +2902,29 @@
           "id": "1",
           "text": "「私」が高校生のころの父の声。",
           "correct": false,
-          "explanation_vi": "Đây là chiếc đài của người bố nhưng giọng phát ra từ đài là của phát thanh viên, không phải giọng của bố."
+          "explanation_vi": "Đây là chiếc đài của người bố nhưng giọng phát ra từ đài là của phát thanh viên, không phải giọng của bố.",
+          "meaning_vi": "Giọng của bố \"tôi\" hồi \"tôi\" còn học cấp 3."
         },
         {
           "id": "2",
           "text": "「私」高校生のころの自分の声。",
           "correct": false,
-          "explanation_vi": "Không phải giọng của chính tác giả."
+          "explanation_vi": "Không phải giọng của chính tác giả.",
+          "meaning_vi": "Giọng của chính \"tôi\" hồi còn học cấp 3."
         },
         {
           "id": "3",
           "text": "「私」が高校生のころ大好きだった歌手の声。",
           "correct": false,
-          "explanation_vi": "Không phải giọng của ca sĩ yêu thích."
+          "explanation_vi": "Không phải giọng của ca sĩ yêu thích.",
+          "meaning_vi": "Giọng của ca sĩ mà \"tôi\" vô cùng yêu thích hồi học cấp 3."
         },
         {
           "id": "4",
           "text": "「私」が高校生のころ聞いていたアナウンサーの声。",
           "correct": true,
-          "explanation_vi": "Câu văn tiếp theo nêu rõ: «高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった» (Đó là người phát thanh viên chương trình ca nhạc trên radio mà hồi cấp 3 tôi vô cùng yêu thích)."
+          "explanation_vi": "Câu văn tiếp theo nêu rõ: «高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった» (Đó là người phát thanh viên chương trình ca nhạc trên radio mà hồi cấp 3 tôi vô cùng yêu thích).",
+          "meaning_vi": "Giọng của người phát thanh viên mà \"tôi\" thường nghe hồi học cấp 3."
         }
       ],
       "summary_vi": "Giọng nói của người phát thanh viên chương trình ca nhạc radio mà tác giả từng nghe hồi học cấp 3 (câu s2, s3).",
@@ -2933,25 +2953,29 @@
           "id": "1",
           "text": "ラジオは、テレビより小さくて身近に置くことができるから",
           "correct": false,
-          "explanation_vi": "Bài không so sánh kích thước với tivi để làm lý do nghe lại hiện nay."
+          "explanation_vi": "Bài không so sánh kích thước với tivi để làm lý do nghe lại hiện nay.",
+          "meaning_vi": "Vì radio nhỏ hơn tivi nên có thể để ở gần bên mình."
         },
         {
           "id": "2",
           "text": "ラジオは、インターネットより多くのことを教えてくれるから",
           "correct": false,
-          "explanation_vi": "Tác giả thừa nhận Internet có thể xem tin tức và nghe nhạc bất cứ lúc nào nên thuận tiện hơn về mặt lượng thông tin theo yêu cầu."
+          "explanation_vi": "Tác giả thừa nhận Internet có thể xem tin tức và nghe nhạc bất cứ lúc nào nên thuận tiện hơn về mặt lượng thông tin theo yêu cầu.",
+          "meaning_vi": "Vì radio cho ta biết nhiều điều hơn Internet."
         },
         {
           "id": "3",
           "text": "ラジオは、新しいことだけでなく古いことも伝えてくれるから",
           "correct": false,
-          "explanation_vi": "Bài không nói radio truyền tải những điều xưa cũ."
+          "explanation_vi": "Bài không nói radio truyền tải những điều xưa cũ.",
+          "meaning_vi": "Vì radio không chỉ truyền tải những điều mới mà còn cả những điều cũ."
         },
         {
           "id": "4",
           "text": "ラジオは、何かをしながらでも、いろいろなことを知ることができるから",
           "correct": true,
-          "explanation_vi": "Tác giả chỉ ra ưu điểm độc đáo của radio: «ほかのことをしながらでも、さまざまな情報が手に入るというラジオにしかない良さ、便利さがあるのだ。私も掃除や料理をするようなときには、また、ラジオを聞こうと思った» (vừa làm việc khác như dọn dẹp, nấu ăn vừa có thể nắm bắt nhiều thông tin)."
+          "explanation_vi": "Tác giả chỉ ra ưu điểm độc đáo của radio: «ほかのことをしながらでも、さまざまな情報が手に入るというラジオにしかない良さ、便利さがあるのだ。私も掃除や料理をするようなときには、また、ラジオを聞こうと思った» (vừa làm việc khác như dọn dẹp, nấu ăn vừa có thể nắm bắt nhiều thông tin).",
+          "meaning_vi": "Vì radio giúp ta biết được nhiều điều khác nhau ngay cả khi đang làm việc khác."
         }
       ],
       "summary_vi": "Radio có ưu điểm tuyệt vời là vừa làm việc khác vừa có thể nghe để biết nhiều thông tin (câu s11, s12).",
@@ -2980,25 +3004,29 @@
           "id": "1",
           "text": "ラジオ番組の楽しさ。",
           "correct": false,
-          "explanation_vi": "Chỉ là một phần cảm xúc ban đầu, không phải chủ đề bao quát cả bài."
+          "explanation_vi": "Chỉ là một phần cảm xúc ban đầu, không phải chủ đề bao quát cả bài.",
+          "meaning_vi": "Niềm vui của các chương trình radio."
         },
         {
           "id": "2",
           "text": "ラジオの良さ。",
           "correct": true,
-          "explanation_vi": "Toàn bài phân tích điểm tốt, sự tiện lợi độc đáo của radio mà các phương tiện hiện đại như Internet hay tivi không thể thay thế: nghe thụ động trong khi tay chân đang bận làm việc khác («ラジオにしかない良さ、便利さ»)."
+          "explanation_vi": "Toàn bài phân tích điểm tốt, sự tiện lợi độc đáo của radio mà các phương tiện hiện đại như Internet hay tivi không thể thay thế: nghe thụ động trong khi tay chân đang bận làm việc khác («ラジオにしかない良さ、便利さ»).",
+          "meaning_vi": "Điểm tốt của radio."
         },
         {
           "id": "3",
           "text": "ラジオの歴史の長さ。",
           "correct": false,
-          "explanation_vi": "Bài không bàn về lịch sử phát triển của máy thu thanh."
+          "explanation_vi": "Bài không bàn về lịch sử phát triển của máy thu thanh.",
+          "meaning_vi": "Lịch sử lâu đời của radio."
         },
         {
           "id": "4",
           "text": "ラジオの使い方の工夫。",
           "correct": false,
-          "explanation_vi": "Bài không hướng dẫn cách sử dụng đài radio."
+          "explanation_vi": "Bài không hướng dẫn cách sử dụng đài radio.",
+          "meaning_vi": "Sự khéo léo trong cách sử dụng radio."
         }
       ],
       "summary_vi": "Điểm hay, điểm tốt độc đáo của đài radio (câu s6, s7, s11).",
@@ -3028,25 +3056,29 @@
           "id": "1",
           "text": "町に引っ越して来てくれる人を募集すること。",
           "correct": true,
-          "explanation_vi": "Bài viết nêu rõ lý do: «その町では人口が減ったので、町民を募集するために説明会を開いています» (Vì dân số trong thị trấn giảm sút nên họ tổ chức buổi giải thích để chiêu mộ, thu hút người dân chuyển về sinh sống)."
+          "explanation_vi": "Bài viết nêu rõ lý do: «その町では人口が減ったので、町民を募集するために説明会を開いています» (Vì dân số trong thị trấn giảm sút nên họ tổ chức buổi giải thích để chiêu mộ, thu hút người dân chuyển về sinh sống).",
+          "meaning_vi": "Chiêu mộ những người chuyển đến sống ở thị trấn."
         },
         {
           "id": "2",
           "text": "町に引っ越して来る人を助けてくれる町民を募集すること。",
           "correct": false,
-          "explanation_vi": "Mục đích là thu hút người chuyển đến sống, không phải tuyển người dân bản địa đi hỗ trợ."
+          "explanation_vi": "Mục đích là thu hút người chuyển đến sống, không phải tuyển người dân bản địa đi hỗ trợ.",
+          "meaning_vi": "Chiêu mộ những người dân thị trấn giúp đỡ những người chuyển đến thị trấn."
         },
         {
           "id": "3",
           "text": "町の農業について、アドバイスをしてくれる専門家を募集すること。",
           "correct": false,
-          "explanation_vi": "Không phải tuyển chuyên gia cố vấn nông nghiệp."
+          "explanation_vi": "Không phải tuyển chuyên gia cố vấn nông nghiệp.",
+          "meaning_vi": "Chiêu mộ các chuyên gia tư vấn về nông nghiệp của thị trấn."
         },
         {
           "id": "4",
           "text": "町の人口を増やすにはどうしたらいいか、考えてくれる人を募集すること。",
           "correct": false,
-          "explanation_vi": "Không phải tuyển người hiến kế gia tăng dân số."
+          "explanation_vi": "Không phải tuyển người hiến kế gia tăng dân số.",
+          "meaning_vi": "Chiêu mộ những người suy nghĩ giúp xem làm thế nào để tăng dân số của thị trấn."
         }
       ],
       "summary_vi": "Chiêu mộ người chuyển đến thị trấn sinh sống nhằm khắc phục tình trạng giảm dân số (câu s3).",
@@ -3074,25 +3106,29 @@
           "id": "1",
           "text": "期待していた生活ができていないが、我慢して生活している点。",
           "correct": false,
-          "explanation_vi": "Những người này không nhẫn nhịn chịu đựng mà có người đã bỏ cuộc chuyển về lại thành phố («都会に戻ってしまった例もありました»)."
+          "explanation_vi": "Những người này không nhẫn nhịn chịu đựng mà có người đã bỏ cuộc chuyển về lại thành phố («都会に戻ってしまった例もありました»).",
+          "meaning_vi": "Điểm là không sống được cuộc sống như mong đợi nhưng vẫn cố chịu đựng mà sống."
         },
         {
           "id": "2",
           "text": "期待していた生活ができるようになり、楽しく生活ができている点。",
           "correct": false,
-          "explanation_vi": "Đây là những trường hợp thất bại, không phải sống vui vẻ."
+          "explanation_vi": "Đây là những trường hợp thất bại, không phải sống vui vẻ.",
+          "meaning_vi": "Điểm là đã có thể sống cuộc sống như mong đợi và sống vui vẻ."
         },
         {
           "id": "3",
           "text": "期待していた生活と実際の生活が同じではなかったが、満足している点。",
           "correct": false,
-          "explanation_vi": "Họ cảm thấy bất mãn, chán ghét («退屈な毎日が嫌になった», «めんどうくさいと感じる») chứ không hề hài lòng."
+          "explanation_vi": "Họ cảm thấy bất mãn, chán ghét («退屈な毎日が嫌になった», «めんどうくさいと感じる») chứ không hề hài lòng.",
+          "meaning_vi": "Điểm là cuộc sống thực tế không giống như cuộc sống mong đợi nhưng vẫn hài lòng."
         },
         {
           "id": "4",
           "text": "期待していた生活と実際の生活が違い、不満を感じた点。",
           "correct": true,
-          "explanation_vi": "Các ví dụ thất bại đều gặp phải tình cảnh thực tế khác xa với kỳ vọng ban đầu (nghĩ nông thôn thơ mộng nhưng thấy tẻ nhạt, nghĩ làm nông thích thú nhưng quá vất vả, phiền toái vì việc dọn dẹp làng xóm) dẫn tới nảy sinh bất mãn và chán nản."
+          "explanation_vi": "Các ví dụ thất bại đều gặp phải tình cảnh thực tế khác xa với kỳ vọng ban đầu (nghĩ nông thôn thơ mộng nhưng thấy tẻ nhạt, nghĩ làm nông thích thú nhưng quá vất vả, phiền toái vì việc dọn dẹp làng xóm) dẫn tới nảy sinh bất mãn và chán nản.",
+          "meaning_vi": "Điểm là cuộc sống thực tế khác với cuộc sống mong đợi nên cảm thấy bất mãn."
         }
       ],
       "summary_vi": "Thực tế cuộc sống khác biệt so với kỳ vọng ban đầu dẫn đến cảm giác bất mãn (câu s6, s7, s8, s9).",
@@ -3123,25 +3159,29 @@
           "id": "1",
           "text": "失敗例が多すぎるから、実行するのはあきらめたほうがよさそうだ。",
           "correct": false,
-          "explanation_vi": "Tác giả khẳng định không muốn từ bỏ ước mơ («夢はあきらめたくないので»)."
+          "explanation_vi": "Tác giả khẳng định không muốn từ bỏ ước mơ («夢はあきらめたくないので»).",
+          "meaning_vi": "Vì có quá nhiều trường hợp thất bại nên có vẻ nên từ bỏ việc thực hiện."
         },
         {
           "id": "2",
           "text": "失敗例を知ったので、実行するかしないかを検討したい。",
           "correct": false,
-          "explanation_vi": "Tác giả đã quyết tâm thực hiện chứ không phải đắn đo có làm hay không."
+          "explanation_vi": "Tác giả đã quyết tâm thực hiện chứ không phải đắn đo có làm hay không.",
+          "meaning_vi": "Vì đã biết các trường hợp thất bại nên muốn cân nhắc xem có thực hiện hay không."
         },
         {
           "id": "3",
           "text": "失敗例のことも考えて、しっかり計画を立てて実行したい。",
           "correct": true,
-          "explanation_vi": "Tác giả nhận thấy mình trước đây suy nghĩ còn quá ngây thơ, nhưng không muốn từ bỏ mà muốn tìm hiểu kỹ lưỡng và lập kế hoạch chắc chắn có tính đến cả những thất bại để có thể thực hiện thành công: «よく調べて、計画を立てて、実行できるように頑張りたいと思います»."
+          "explanation_vi": "Tác giả nhận thấy mình trước đây suy nghĩ còn quá ngây thơ, nhưng không muốn từ bỏ mà muốn tìm hiểu kỹ lưỡng và lập kế hoạch chắc chắn có tính đến cả những thất bại để có thể thực hiện thành công: «よく調べて、計画を立てて、実行できるように頑張りたいと思います».",
+          "meaning_vi": "Muốn cân nhắc cả các trường hợp thất bại, lập kế hoạch chắc chắn rồi thực hiện."
         },
         {
           "id": "4",
           "text": "失敗例より成功例がたくさんあるから、失敗例は気にせずにすぐ実行したい。",
           "correct": false,
-          "explanation_vi": "Tác giả nhận ra không thể xem nhẹ những ví dụ thất bại."
+          "explanation_vi": "Tác giả nhận ra không thể xem nhẹ những ví dụ thất bại.",
+          "meaning_vi": "Vì có nhiều trường hợp thành công hơn trường hợp thất bại nên muốn thực hiện ngay mà không bận tâm đến các trường hợp thất bại."
         }
       ],
       "summary_vi": "Cân nhắc cả các bài học thất bại, tìm hiểu kỹ càng và lập kế hoạch chu đáo để thực hiện ước mơ (câu s11, s12).",
@@ -3170,25 +3210,29 @@
           "id": "1",
           "text": "布団に入ってもしばらく眠れないこと。",
           "correct": true,
-          "explanation_vi": "Ngay mở đầu bài viết: «最近、私は布団に入ってもしばらく眠れなくて、悩んでいる... 2週間続けてみても、全然変わらない» (dù đã chạy bộ trước khi ngủ suốt 2 tuần liền nhưng tình trạng trằn trọc nằm vào chăn đệm một lúc lâu mà không ngủ được vẫn chẳng hề thay đổi)."
+          "explanation_vi": "Ngay mở đầu bài viết: «最近、私は布団に入ってもしばらく眠れなくて、悩んでいる... 2週間続けてみても、全然変わらない» (dù đã chạy bộ trước khi ngủ suốt 2 tuần liền nhưng tình trạng trằn trọc nằm vào chăn đệm một lúc lâu mà không ngủ được vẫn chẳng hề thay đổi).",
+          "meaning_vi": "Việc đã vào chăn nằm rồi mà một lúc lâu vẫn không ngủ được."
         },
         {
           "id": "2",
           "text": "運動しないと眠れないこと。",
           "correct": false,
-          "explanation_vi": "Tác giả vận động nhưng vẫn không ngủ được, không phải do không vận động."
+          "explanation_vi": "Tác giả vận động nhưng vẫn không ngủ được, không phải do không vận động.",
+          "meaning_vi": "Việc không vận động thì không ngủ được."
         },
         {
           "id": "3",
           "text": "朝、決まった時間に起きられないこと。",
           "correct": false,
-          "explanation_vi": "Buổi sáng tác giả vẫn phải dậy đúng giờ quy định («朝は決まった時間に起きなければならない»)."
+          "explanation_vi": "Buổi sáng tác giả vẫn phải dậy đúng giờ quy định («朝は決まった時間に起きなければならない»).",
+          "meaning_vi": "Việc buổi sáng không dậy được vào giờ quy định."
         },
         {
           "id": "4",
           "text": "1時間も走り続けられないこと。",
           "correct": false,
-          "explanation_vi": "Tác giả chạy trước giờ ngủ 1 tiếng chứ không phải chạy liên tục 1 tiếng."
+          "explanation_vi": "Tác giả chạy trước giờ ngủ 1 tiếng chứ không phải chạy liên tục 1 tiếng.",
+          "meaning_vi": "Việc không thể chạy liên tục suốt 1 tiếng."
         }
       ],
       "summary_vi": "Tình trạng nằm vào chăn nhưng trằn trọc mãi không ngủ được vẫn không hề thay đổi (câu s1, s4).",
@@ -3217,25 +3261,29 @@
           "id": "1",
           "text": "体の中心の温度をまず下げることで、中心の温度が上がる状態を作る。",
           "correct": false,
-          "explanation_vi": "Ngược chiều quy trình sinh học trong bài mô tả."
+          "explanation_vi": "Ngược chiều quy trình sinh học trong bài mô tả.",
+          "meaning_vi": "Trước tiên hạ nhiệt độ trung tâm cơ thể xuống để tạo ra trạng thái nhiệt độ trung tâm tăng lên."
         },
         {
           "id": "2",
           "text": "体の中心の温度をまず上げることで、中心の温度が下がる状態を作る。",
           "correct": true,
-          "explanation_vi": "Bài viết giải thích cơ chế: làm ấm cơ thể trước («体が中心まで温まる»), sau đó cơ thể sẽ tỏa nhiệt qua bề mặt và làm nhiệt độ trung tâm hạ dần xuống («中心の温度が下がっていく»), từ đó giúp con người dễ đi vào giấc ngủ: «中心の温度が下がる状態を作ると、人は眠りやすくなるのだそうだ»."
+          "explanation_vi": "Bài viết giải thích cơ chế: làm ấm cơ thể trước («体が中心まで温まる»), sau đó cơ thể sẽ tỏa nhiệt qua bề mặt và làm nhiệt độ trung tâm hạ dần xuống («中心の温度が下がっていく»), từ đó giúp con người dễ đi vào giấc ngủ: «中心の温度が下がる状態を作ると、人は眠りやすくなるのだそうだ».",
+          "meaning_vi": "Trước tiên tăng nhiệt độ trung tâm cơ thể lên để tạo ra trạng thái nhiệt độ trung tâm hạ xuống."
         },
         {
           "id": "3",
           "text": "体の中心の温度を上げて、中心の温度が決まった温度から下がらない状態を作る。",
           "correct": false,
-          "explanation_vi": "Phải để nhiệt độ hạ xuống thì mới buồn ngủ, không phải giữ nguyên nhiệt độ cao."
+          "explanation_vi": "Phải để nhiệt độ hạ xuống thì mới buồn ngủ, không phải giữ nguyên nhiệt độ cao.",
+          "meaning_vi": "Tăng nhiệt độ trung tâm cơ thể lên để tạo ra trạng thái nhiệt độ trung tâm không hạ xuống khỏi mức nhiệt nhất định."
         },
         {
           "id": "4",
           "text": "体の中心の温度を上げたり下げたりして、中心の温度が変化し続ける状態を作る。",
           "correct": false,
-          "explanation_vi": "Không phải làm biến đổi liên tục tăng giảm."
+          "explanation_vi": "Không phải làm biến đổi liên tục tăng giảm.",
+          "meaning_vi": "Làm nhiệt độ trung tâm cơ thể lúc tăng lúc giảm để tạo ra trạng thái nhiệt độ trung tâm liên tục thay đổi."
         }
       ],
       "summary_vi": "Đầu tiên làm ấm nhiệt độ trung tâm lên, sau đó để nhiệt tỏa ra bề mặt giúp nhiệt độ trung tâm hạ xuống (câu s8, s9, s10, s11).",
@@ -3266,25 +3314,29 @@
           "id": "1",
           "text": "寝る1時間前に体が疲れるまで運動をすること。",
           "correct": true,
-          "explanation_vi": "Tác giả đã chạy bộ ngay trước giờ ngủ 1 tiếng cho tới khi mệt lả («寝る1時間前に走る», «体が疲れるまで運動をすれば»). Tuy nhiên bài báo chỉ ra vận động quá mức ngay sát giờ ngủ sẽ kích thích thần kinh tỉnh táo, phản tác dụng: «寝る直前に運動しすぎたり... 逆効果らしい。つまり、私のやっていたことは間違いだったのだ»."
+          "explanation_vi": "Tác giả đã chạy bộ ngay trước giờ ngủ 1 tiếng cho tới khi mệt lả («寝る1時間前に走る», «体が疲れるまで運動をすれば»). Tuy nhiên bài báo chỉ ra vận động quá mức ngay sát giờ ngủ sẽ kích thích thần kinh tỉnh táo, phản tác dụng: «寝る直前に運動しすぎたり... 逆効果らしい。つまり、私のやっていたことは間違いだったのだ».",
+          "meaning_vi": "Vận động cho đến khi cơ thể mệt vào 1 tiếng trước khi ngủ."
         },
         {
           "id": "2",
           "text": "寝る1時間前に軽い運動をすること。",
           "correct": false,
-          "explanation_vi": "Tác giả tập mệt lử chứ không phải vận động nhẹ."
+          "explanation_vi": "Tác giả tập mệt lử chứ không phải vận động nhẹ.",
+          "meaning_vi": "Vận động nhẹ vào 1 tiếng trước khi ngủ."
         },
         {
           "id": "3",
           "text": "寝る2、3時間前に体が疲れるまで運動をすること。",
           "correct": false,
-          "explanation_vi": "Tác giả đã tập trước 1 tiếng chứ không phải trước 2-3 tiếng."
+          "explanation_vi": "Tác giả đã tập trước 1 tiếng chứ không phải trước 2-3 tiếng.",
+          "meaning_vi": "Vận động cho đến khi cơ thể mệt vào 2, 3 tiếng trước khi ngủ."
         },
         {
           "id": "4",
           "text": "寝る2、3時間前に軽い運動をすること。",
           "correct": false,
-          "explanation_vi": "Đây là phương pháp đúng được khuyên dùng, không phải sai lầm của tác giả."
+          "explanation_vi": "Đây là phương pháp đúng được khuyên dùng, không phải sai lầm của tác giả.",
+          "meaning_vi": "Vận động nhẹ vào 2, 3 tiếng trước khi ngủ."
         }
       ],
       "summary_vi": "Vận động cho tới khi kiệt sức vào thời điểm chỉ 1 tiếng trước khi đi ngủ (câu s3, s13, s14).",
@@ -3314,25 +3366,29 @@
           "id": "1",
           "text": "起きる時間を遅くしよう。",
           "correct": false,
-          "explanation_vi": "Giờ thức dậy đã cố định không thể lùi lại."
+          "explanation_vi": "Giờ thức dậy đã cố định không thể lùi lại.",
+          "meaning_vi": "Hãy dậy muộn hơn."
         },
         {
           "id": "2",
           "text": "布団に入って自然に眠くなるのを待とう。",
           "correct": false,
-          "explanation_vi": "Tác giả đã tìm ra giải pháp mới chứ không thụ động chờ đợi."
+          "explanation_vi": "Tác giả đã tìm ra giải pháp mới chứ không thụ động chờ đợi.",
+          "meaning_vi": "Hãy vào chăn nằm và chờ cho tự nhiên buồn ngủ."
         },
         {
           "id": "3",
           "text": "ぬるめの風呂にゆっくり入ってから寝よう。",
           "correct": true,
-          "explanation_vi": "Tác giả nói mình sợ chạy một mình trong đêm và cũng không thích thể thao, nên rất vui khi biết có phương pháp khác ngoài vận động. Phương pháp đó được nêu ở đoạn 2 chính là tắm nước ấm thư thả: «ぬるめの風呂にゆっくり入ったりするといい»."
+          "explanation_vi": "Tác giả nói mình sợ chạy một mình trong đêm và cũng không thích thể thao, nên rất vui khi biết có phương pháp khác ngoài vận động. Phương pháp đó được nêu ở đoạn 2 chính là tắm nước ấm thư thả: «ぬるめの風呂にゆっくり入ったりするといい».",
+          "meaning_vi": "Hãy ngâm mình thong thả trong bồn tắm nước ấm rồi mới đi ngủ."
         },
         {
           "id": "4",
           "text": "軽く走ってから寝よう。",
           "correct": false,
-          "explanation_vi": "Tác giả không thích vận động và sợ chạy đêm một mình nên chọn phương án tắm bồn."
+          "explanation_vi": "Tác giả không thích vận động và sợ chạy đêm một mình nên chọn phương án tắm bồn.",
+          "meaning_vi": "Hãy chạy nhẹ rồi mới đi ngủ."
         }
       ],
       "summary_vi": "Ngâm mình thong thả trong bồn nước ấm trước khi đi ngủ (câu s7, s15, s16).",
@@ -3362,25 +3418,29 @@
           "id": "1",
           "text": "①",
           "correct": false,
-          "explanation_vi": "Tour ① không kèm bữa trưa («食事：ついていません»)."
+          "explanation_vi": "Tour ① không kèm bữa trưa («食事：ついていません»).",
+          "meaning_vi": "①"
         },
         {
           "id": "2",
           "text": "②",
           "correct": false,
-          "explanation_vi": "Tour ② là tham quan bảo tàng mỹ thuật và xưởng phô mai, không đi tắm suối nước nóng."
+          "explanation_vi": "Tour ② là tham quan bảo tàng mỹ thuật và xưởng phô mai, không đi tắm suối nước nóng.",
+          "meaning_vi": "②"
         },
         {
           "id": "3",
           "text": "③",
           "correct": false,
-          "explanation_vi": "Tour ③ khởi hành vào thứ Hai (29/10) và Chủ nhật (11/11), không có lịch khởi hành vào thứ Bảy."
+          "explanation_vi": "Tour ③ khởi hành vào thứ Hai (29/10) và Chủ nhật (11/11), không có lịch khởi hành vào thứ Bảy.",
+          "meaning_vi": "③"
         },
         {
           "id": "4",
           "text": "④",
           "correct": true,
-          "explanation_vi": "Tour ④ đi tắm suối nước nóng Soraishi («空石温泉»), có kèm bữa trưa («食事：昼食»), và có lịch khởi hành vào thứ Bảy ngày 3 tháng 11 («出発日：11月3日(土)»), hoàn toàn khớp cả 3 điều kiện của anh Tanaka."
+          "explanation_vi": "Tour ④ đi tắm suối nước nóng Soraishi («空石温泉»), có kèm bữa trưa («食事：昼食»), và có lịch khởi hành vào thứ Bảy ngày 3 tháng 11 («出発日：11月3日(土)»), hoàn toàn khớp cả 3 điều kiện của anh Tanaka.",
+          "meaning_vi": "④"
         }
       ],
       "summary_vi": "Tour ④ đáp ứng đủ cả 3 điều kiện: khởi hành thứ Bảy, có ăn trưa và có tắm suối nước nóng (câu s5).",
@@ -3411,25 +3471,29 @@
           "id": "1",
           "text": "7,500円の40%を払う。",
           "correct": false,
-          "explanation_vi": "Mức giá 7.500 yên là giá ngày thường; tour của anh Robert khởi hành vào thứ Bảy (土曜日) nên giá tour là 8.500 yên."
+          "explanation_vi": "Mức giá 7.500 yên là giá ngày thường; tour của anh Robert khởi hành vào thứ Bảy (土曜日) nên giá tour là 8.500 yên.",
+          "meaning_vi": "Trả 40% của 7.500 yên."
         },
         {
           "id": "2",
           "text": "8,500円の40%を払う。",
           "correct": true,
-          "explanation_vi": "Tour ① khởi hành thứ Bảy 6/10 có giá là 8.500 yên («土・日 8,500円»). Anh Robert hủy vào hôm nay (tức 1 ngày trước ngày khởi hành - 出発日の前日), quy định hủy nêu rõ mức phí trước 1 ngày là 40% («出発日の前日は40%»). Do đó phải trả 40% của 8.500 yên."
+          "explanation_vi": "Tour ① khởi hành thứ Bảy 6/10 có giá là 8.500 yên («土・日 8,500円»). Anh Robert hủy vào hôm nay (tức 1 ngày trước ngày khởi hành - 出発日の前日), quy định hủy nêu rõ mức phí trước 1 ngày là 40% («出発日の前日は40%»). Do đó phải trả 40% của 8.500 yên.",
+          "meaning_vi": "Trả 40% của 8.500 yên."
         },
         {
           "id": "3",
           "text": "7,500円の50%を払う。",
           "correct": false,
-          "explanation_vi": "Sai cả mức giá ngày thường và tỷ lệ phí hủy."
+          "explanation_vi": "Sai cả mức giá ngày thường và tỷ lệ phí hủy.",
+          "meaning_vi": "Trả 50% của 7.500 yên."
         },
         {
           "id": "4",
           "text": "8,500円の50%を払う。",
           "correct": false,
-          "explanation_vi": "Tỷ lệ 50% chỉ áp dụng nếu hủy vào ngày khởi hành trước giờ xuất phát («当日の出発前までは50%»)."
+          "explanation_vi": "Tỷ lệ 50% chỉ áp dụng nếu hủy vào ngày khởi hành trước giờ xuất phát («当日の出発前までは50%»).",
+          "meaning_vi": "Trả 50% của 8.500 yên."
         }
       ],
       "summary_vi": "Hủy tour thứ Bảy (8.500 yên) vào ngày hôm trước thì chịu phí 40% của 8.500 yên (câu s2, s11).",

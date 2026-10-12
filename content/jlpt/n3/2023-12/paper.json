@@ -2667,25 +2667,29 @@
           "id": "1",
           "text": "映画開始時間の15分前までに、券売機に必要な情報を入力する。",
           "correct": false,
-          "explanation_vi": "Trong thông báo ghi rõ là quá 15 phút sau khi phim bắt đầu (開始から15分を過ぎますと), không phải 15 phút trước giờ chiếu."
+          "explanation_vi": "Trong thông báo ghi rõ là quá 15 phút sau khi phim bắt đầu (開始から15分を過ぎますと), không phải 15 phút trước giờ chiếu.",
+          "meaning_vi": "Nhập thông tin cần thiết vào máy bán vé tự động trước giờ phim bắt đầu 15 phút."
         },
         {
           "id": "2",
           "text": "映画開始時間の15分前までに、券売機でお金を払う。",
           "correct": false,
-          "explanation_vi": "Tiền vé đã được thanh toán online trước đó rồi (「チケット代金を支払っていただき、ありがとうございました」)."
+          "explanation_vi": "Tiền vé đã được thanh toán online trước đó rồi (「チケット代金を支払っていただき、ありがとうございました」).",
+          "meaning_vi": "Trả tiền tại máy bán vé tự động trước giờ phim bắt đầu 15 phút."
         },
         {
           "id": "3",
           "text": "映画開始時間の15分後までに、券売機に必要な情報を入力する。",
           "correct": true,
-          "explanation_vi": "Thông báo nêu: «映画開始から15分を過ぎますと、券売機での発券はできなくなります» (quá 15 phút sau khi phim bắt đầu thì không in ở máy được nữa), và phải nhập mã đặt chỗ cùng số điện thoại («券売機に＜予約番号＞と＜電話番号＞をご入力ください»). Do đó phải nhập thông tin cần thiết trước mốc 15 phút sau giờ chiếu."
+          "explanation_vi": "Thông báo nêu: «映画開始から15分を過ぎますと、券売機での発券はできなくなります» (quá 15 phút sau khi phim bắt đầu thì không in ở máy được nữa), và phải nhập mã đặt chỗ cùng số điện thoại («券売機に＜予約番号＞と＜電話番号＞をご入力ください»). Do đó phải nhập thông tin cần thiết trước mốc 15 phút sau giờ chiếu.",
+          "meaning_vi": "Nhập thông tin cần thiết vào máy bán vé tự động trong vòng 15 phút sau khi phim bắt đầu."
         },
         {
           "id": "4",
           "text": "映画開始時間の15分後までに、券売機でお金を払う。",
           "correct": false,
-          "explanation_vi": "Tiền vé đã được trả trước khi đặt qua mạng, không phải trả tiền tại máy."
+          "explanation_vi": "Tiền vé đã được trả trước khi đặt qua mạng, không phải trả tiền tại máy.",
+          "meaning_vi": "Trả tiền tại máy bán vé tự động trong vòng 15 phút sau khi phim bắt đầu."
         }
       ],
       "summary_vi": "Nhập mã đặt chỗ và số điện thoại trước khi quá 15 phút sau giờ chiếu (câu s7, s8).",
@@ -2714,25 +2718,29 @@
           "id": "1",
           "text": "大学の事務所に行って、書類を出すこと",
           "correct": false,
-          "explanation_vi": "Harumi tự mình đi đến văn phòng trường đại học để nộp giấy tờ («ちょっと行ってきます»), không nhờ Arisa."
+          "explanation_vi": "Harumi tự mình đi đến văn phòng trường đại học để nộp giấy tờ («ちょっと行ってきます»), không nhờ Arisa.",
+          "meaning_vi": "Đến văn phòng trường đại học để nộp giấy tờ."
         },
         {
           "id": "2",
           "text": "カレーとスープを作ること",
           "correct": false,
-          "explanation_vi": "Cà ri và súp thì Harumi đã nấu xong rồi («カレーとスープはできたんだけど»)."
+          "explanation_vi": "Cà ri và súp thì Harumi đã nấu xong rồi («カレーとスープはできたんだけど»).",
+          "meaning_vi": "Nấu cà ri và súp."
         },
         {
           "id": "3",
           "text": "サラダを作ること",
           "correct": true,
-          "explanation_vi": "Harumi viết: «サラダがまだできていないので、お願いできますか» (món salad vẫn chưa làm xong nên nhờ bạn làm giúp nhé)."
+          "explanation_vi": "Harumi viết: «サラダがまだできていないので、お願いできますか» (món salad vẫn chưa làm xong nên nhờ bạn làm giúp nhé).",
+          "meaning_vi": "Làm món salad."
         },
         {
           "id": "4",
           "text": "甘いものを買うこと",
           "correct": false,
-          "explanation_vi": "Món đồ ngọt là do Harumi sẽ mua về khi trên đường về nhà («帰りに何か甘いものを買ってきますね»)."
+          "explanation_vi": "Món đồ ngọt là do Harumi sẽ mua về khi trên đường về nhà («帰りに何か甘いものを買ってきますね»).",
+          "meaning_vi": "Mua đồ ngọt."
         }
       ],
       "summary_vi": "Nhờ làm món rau trộn salad (câu s3).",
@@ -2760,25 +2768,29 @@
           "id": "1",
           "text": "「私」と同じタイプの人が、最も多い点",
           "correct": true,
-          "explanation_vi": "Tác giả luôn đi sớm nhưng bạn bè hay đến trễ nên tưởng mình là kiểu người hiếm hoi («私が珍しいタイプなのかと思っていた»). Tuy nhiên kết quả khảo sát lại cho thấy người đi sớm chiếm tới 59% và là nhóm đông nhất («早めに行く人は、全体の59%で最も多く»), nên tác giả thấy bất ngờ."
+          "explanation_vi": "Tác giả luôn đi sớm nhưng bạn bè hay đến trễ nên tưởng mình là kiểu người hiếm hoi («私が珍しいタイプなのかと思っていた»). Tuy nhiên kết quả khảo sát lại cho thấy người đi sớm chiếm tới 59% và là nhóm đông nhất («早めに行く人は、全体の59%で最も多く»), nên tác giả thấy bất ngờ.",
+          "meaning_vi": "Điểm là những người cùng kiểu với «tôi» chiếm đông nhất."
         },
         {
           "id": "2",
           "text": "「私」と同じタイプの人が、二番目に多い点",
           "correct": false,
-          "explanation_vi": "Người giống tác giả (đi sớm) là đông nhất (59%), không phải đông thứ hai."
+          "explanation_vi": "Người giống tác giả (đi sớm) là đông nhất (59%), không phải đông thứ hai.",
+          "meaning_vi": "Điểm là những người cùng kiểu với «tôi» chiếm đông thứ hai."
         },
         {
           "id": "3",
           "text": "「私」と同じタイプの人が、最も少ない点",
           "correct": false,
-          "explanation_vi": "Nhóm ít nhất là người trễ hẹn (chỉ 3%), không phải nhóm đi sớm của tác giả."
+          "explanation_vi": "Nhóm ít nhất là người trễ hẹn (chỉ 3%), không phải nhóm đi sớm của tác giả.",
+          "meaning_vi": "Điểm là những người cùng kiểu với «tôi» chiếm ít nhất."
         },
         {
           "id": "4",
           "text": "「私」と反対のタイプの人が、最も多い点",
           "correct": false,
-          "explanation_vi": "Kiểu người ngược lại với tác giả (đến trễ) chỉ chiếm 3%, hoàn toàn không phải đông nhất."
+          "explanation_vi": "Kiểu người ngược lại với tác giả (đến trễ) chỉ chiếm 3%, hoàn toàn không phải đông nhất.",
+          "meaning_vi": "Điểm là những người ngược kiểu với «tôi» chiếm đông nhất."
         }
       ],
       "summary_vi": "Tác giả tưởng mình là thiểu số nhưng thực tế kiểu người đi sớm chiếm số lượng đông nhất (câu s2, s5).",
@@ -2807,25 +2819,29 @@
           "id": "1",
           "text": "体へのよい効果が弱くなってしまう料理のしかたで、納豆を食べていたから",
           "correct": true,
-          "explanation_vi": "Enzyme giúp máu lưu thông tốt bị giảm đi khi đun nóng trên 50 độ («50度以上の熱で減ってしまう»). Tác giả lại hay nướng với trứng hoặc cho vào súp miso nóng, khiến tác dụng bổ dưỡng bị hao hụt nên thấy lãng phí."
+          "explanation_vi": "Enzyme giúp máu lưu thông tốt bị giảm đi khi đun nóng trên 50 độ («50度以上の熱で減ってしまう»). Tác giả lại hay nướng với trứng hoặc cho vào súp miso nóng, khiến tác dụng bổ dưỡng bị hao hụt nên thấy lãng phí.",
+          "meaning_vi": "Vì đã ăn natto theo cách chế biến làm giảm tác dụng tốt cho cơ thể."
         },
         {
           "id": "2",
           "text": "体へのよい効果が消えるような、たくさんの量の納豆を食べていたから",
           "correct": false,
-          "explanation_vi": "Vấn đề không phải là lượng ăn nhiều hay ít mà là nhiệt độ nấu nướng."
+          "explanation_vi": "Vấn đề không phải là lượng ăn nhiều hay ít mà là nhiệt độ nấu nướng.",
+          "meaning_vi": "Vì đã ăn một lượng natto lớn đến mức làm mất tác dụng tốt cho cơ thể."
         },
         {
           "id": "3",
           "text": "おいしさがわからなくなるような料理のしかたで、納豆を食べていたから",
           "correct": false,
-          "explanation_vi": "Tác giả vẫn thấy các món đó ngon miệng, điều lãng phí là tác dụng tốt cho cơ thể bị giảm."
+          "explanation_vi": "Tác giả vẫn thấy các món đó ngon miệng, điều lãng phí là tác dụng tốt cho cơ thể bị giảm.",
+          "meaning_vi": "Vì đã ăn natto theo cách chế biến khiến không còn cảm nhận được vị ngon."
         },
         {
           "id": "4",
           "text": "おいしくなる料理方法があるのに、それを知らないで納豆を食べていたから",
           "correct": false,
-          "explanation_vi": "Không phải về hương vị thơm ngon mà là về sự suy giảm hiệu quả của enzyme."
+          "explanation_vi": "Không phải về hương vị thơm ngon mà là về sự suy giảm hiệu quả của enzyme.",
+          "meaning_vi": "Vì có cách chế biến làm natto ngon hơn mà lại ăn natto khi không biết điều đó."
         }
       ],
       "summary_vi": "Chế biến ở nhiệt độ trên 50 độ làm giảm enzyme tốt cho máu (câu s4, s5, s6).",
@@ -2855,25 +2871,29 @@
           "id": "1",
           "text": "授業で先生に扱ってもらいたい漫画を見つけてくること",
           "correct": false,
-          "explanation_vi": "Không phải sinh viên tìm truyện mình muốn học, mà là truyện do giáo viên chỉ định."
+          "explanation_vi": "Không phải sinh viên tìm truyện mình muốn học, mà là truyện do giáo viên chỉ định.",
+          "meaning_vi": "Tìm một bộ truyện tranh mà mình muốn giáo viên đưa vào giảng dạy trong giờ học rồi mang đến."
         },
         {
           "id": "2",
           "text": "社会問題がテーマになっている漫画を見つけてくること",
           "correct": false,
-          "explanation_vi": "Chủ đề lớp học là suy ngẫm về xã hội qua truyện tranh, nhưng truyện là do giáo viên chỉ định trước."
+          "explanation_vi": "Chủ đề lớp học là suy ngẫm về xã hội qua truyện tranh, nhưng truyện là do giáo viên chỉ định trước.",
+          "meaning_vi": "Tìm một bộ truyện tranh có chủ đề là vấn đề xã hội rồi mang đến."
         },
         {
           "id": "3",
           "text": "先生に読んでくるように言われた漫画を読んでおくこと",
           "correct": true,
-          "explanation_vi": "Đoạn 2 nêu rõ quy định: «学生は毎週の授業の前に、先生が指定した漫画を読んでいくことになっていました» (sinh viên phải đọc trước bộ truyện tranh mà giáo viên đã chỉ định trước mỗi buổi học hàng tuần)."
+          "explanation_vi": "Đoạn 2 nêu rõ quy định: «学生は毎週の授業の前に、先生が指定した漫画を読んでいくことになっていました» (sinh viên phải đọc trước bộ truyện tranh mà giáo viên đã chỉ định trước mỗi buổi học hàng tuần).",
+          "meaning_vi": "Đọc trước bộ truyện tranh mà giáo viên đã bảo đọc rồi mang đến."
         },
         {
           "id": "4",
           "text": "自分が読んだことがない漫画を探して、読んでおくこと",
           "correct": false,
-          "explanation_vi": "Việc tác giả chưa từng đọc các bộ truyện đó là do ngẫu nhiên tác giả không biết những bộ thầy chọn, không phải yêu cầu sinh viên tự đi tìm truyện chưa đọc."
+          "explanation_vi": "Việc tác giả chưa từng đọc các bộ truyện đó là do ngẫu nhiên tác giả không biết những bộ thầy chọn, không phải yêu cầu sinh viên tự đi tìm truyện chưa đọc.",
+          "meaning_vi": "Tìm một bộ truyện tranh mà mình chưa từng đọc rồi đọc trước."
         }
       ],
       "summary_vi": "Quy định đọc trước bộ truyện tranh do giáo viên chỉ định trước mỗi buổi học (câu s4).",
@@ -2901,25 +2921,29 @@
           "id": "1",
           "text": "ほかの試験の勉強がしたいのに、漫画を読まなければならなかった。",
           "correct": true,
-          "explanation_vi": "Tác giả viết: vì phải đọc bộ truyện dài 3 tập cho kỳ thi của môn này nên không thể ôn tập các môn thi khác («そのために、ほかの試験の勉強ができなくなり»). Bình thường mùa thi thì nhịn đọc truyện để ôn bài, lúc này lại ngược lại: muốn ôn các môn khác mà lại bắt buộc phải đọc truyện tranh."
+          "explanation_vi": "Tác giả viết: vì phải đọc bộ truyện dài 3 tập cho kỳ thi của môn này nên không thể ôn tập các môn thi khác («そのために、ほかの試験の勉強ができなくなり»). Bình thường mùa thi thì nhịn đọc truyện để ôn bài, lúc này lại ngược lại: muốn ôn các môn khác mà lại bắt buộc phải đọc truyện tranh.",
+          "meaning_vi": "Muốn ôn thi các môn khác nhưng lại phải đọc truyện tranh."
         },
         {
           "id": "2",
           "text": "漫画が読みたいのに、試験の勉強をしなければならなかった。",
           "correct": false,
-          "explanation_vi": "Đây là trạng thái bình thường của tác giả vào các kỳ thi khác («いつもなら、試験期間中は漫画を読むのを我慢する»), không phải trạng thái ngược đời ở kỳ thi này."
+          "explanation_vi": "Đây là trạng thái bình thường của tác giả vào các kỳ thi khác («いつもなら、試験期間中は漫画を読むのを我慢する»), không phải trạng thái ngược đời ở kỳ thi này.",
+          "meaning_vi": "Muốn đọc truyện tranh nhưng lại phải ôn thi."
         },
         {
           "id": "3",
           "text": "好きな漫画が読みたいのに、好きではない漫画を読まなければならなかった。",
           "correct": false,
-          "explanation_vi": "Trọng tâm bài viết không phải phân biệt giữa truyện thích và không thích, mà là giữa việc ôn các môn thi khác và việc bắt buộc phải đọc truyện để thi môn này."
+          "explanation_vi": "Trọng tâm bài viết không phải phân biệt giữa truyện thích và không thích, mà là giữa việc ôn các môn thi khác và việc bắt buộc phải đọc truyện để thi môn này.",
+          "meaning_vi": "Muốn đọc bộ truyện tranh mình thích nhưng lại phải đọc bộ truyện tranh mình không thích."
         },
         {
           "id": "4",
           "text": "試験の勉強をしなければならないのに、漫画を読むのを我慢できなかった。",
           "correct": false,
-          "explanation_vi": "Tác giả đọc truyện là do thầy giáo yêu cầu để thi («試験の前に、ある漫画を読んでおくように先生に言われました»), không phải do tác giả không kiềm chế được ham muốn cá nhân."
+          "explanation_vi": "Tác giả đọc truyện là do thầy giáo yêu cầu để thi («試験の前に、ある漫画を読んでおくように先生に言われました»), không phải do tác giả không kiềm chế được ham muốn cá nhân.",
+          "meaning_vi": "Phải ôn thi nhưng lại không thể nhịn đọc truyện tranh."
         }
       ],
       "summary_vi": "Muốn ôn tập các môn thi khác nhưng lại bắt buộc phải đọc truyện tranh cho kỳ thi môn này (câu s9, s10).",
@@ -2948,25 +2972,29 @@
           "id": "1",
           "text": "しばらくは、休みの日だけに漫画を読もう。",
           "correct": false,
-          "explanation_vi": "Tác giả muốn tạm dừng hoàn toàn việc đọc truyện tranh, không phải chỉ đọc vào ngày nghỉ."
+          "explanation_vi": "Tác giả muốn tạm dừng hoàn toàn việc đọc truyện tranh, không phải chỉ đọc vào ngày nghỉ.",
+          "meaning_vi": "Một thời gian tới, mình chỉ đọc truyện tranh vào ngày nghỉ thôi."
         },
         {
           "id": "2",
           "text": "しばらくは、好きな漫画しか読みたくない。",
           "correct": false,
-          "explanation_vi": "Tác giả muốn nghỉ ngơi không đọc truyện tranh một thời gian («漫画はお休みにしたい»), chứ không nói chỉ đọc truyện mình thích."
+          "explanation_vi": "Tác giả muốn nghỉ ngơi không đọc truyện tranh một thời gian («漫画はお休みにしたい»), chứ không nói chỉ đọc truyện mình thích.",
+          "meaning_vi": "Một thời gian tới, mình chỉ muốn đọc những bộ truyện tranh mình thích."
         },
         {
           "id": "3",
           "text": "しばらくは、我慢して漫画を読もう。",
           "correct": false,
-          "explanation_vi": "Sai nghĩa, không phải nhịn nhục để đọc tiếp."
+          "explanation_vi": "Sai nghĩa, không phải nhịn nhục để đọc tiếp.",
+          "meaning_vi": "Một thời gian tới, mình sẽ cố nhịn để đọc truyện tranh."
         },
         {
           "id": "4",
           "text": "しばらくは、漫画は読みたくない。",
           "correct": true,
-          "explanation_vi": "Câu kết của bài viết nêu rõ: «試験はうまくいきましたが、今はしばらく漫画はお休みにしたい気分です» (Kỳ thi suôn sẻ nhưng lúc này tôi có tâm trạng muốn tạm nghỉ đọc truyện tranh một thời gian = không muốn đọc truyện tranh trong một khoảng thời gian tới)."
+          "explanation_vi": "Câu kết của bài viết nêu rõ: «試験はうまくいきましたが、今はしばらく漫画はお休みにしたい気分です» (Kỳ thi suôn sẻ nhưng lúc này tôi có tâm trạng muốn tạm nghỉ đọc truyện tranh một thời gian = không muốn đọc truyện tranh trong một khoảng thời gian tới).",
+          "meaning_vi": "Một thời gian tới, mình không muốn đọc truyện tranh."
         }
       ],
       "summary_vi": "Tác giả muốn tạm dừng đọc truyện tranh trong một thời gian (câu s11).",
@@ -2994,25 +3022,29 @@
           "id": "1",
           "text": "町の中に、安く買い物ができるところを増やすため",
           "correct": false,
-          "explanation_vi": "Mục đích không phải là để tăng điểm mua sắm giá rẻ."
+          "explanation_vi": "Mục đích không phải là để tăng điểm mua sắm giá rẻ.",
+          "meaning_vi": "Để tăng số nơi có thể mua sắm giá rẻ trong thị trấn."
         },
         {
           "id": "2",
           "text": "町の中に、近くの市や町から来る客が楽しめる場所を作るため",
           "correct": false,
-          "explanation_vi": "Tạo điểm vui chơi cho khách vùng lân cận không phải mục đích ban đầu của các chủ tiệm."
+          "explanation_vi": "Tạo điểm vui chơi cho khách vùng lân cận không phải mục đích ban đầu của các chủ tiệm.",
+          "meaning_vi": "Để tạo ra trong thị trấn một nơi mà khách đến từ các thành phố và thị trấn lân cận có thể vui chơi."
         },
         {
           "id": "3",
           "text": "自分たちの町の景色の美しさをもっと宣伝するため",
           "correct": false,
-          "explanation_vi": "Thị trấn vốn có cảnh đẹp ven biển nhưng mở chợ sáng không nhằm mục đích quảng bá cảnh quan."
+          "explanation_vi": "Thị trấn vốn có cảnh đẹp ven biển nhưng mở chợ sáng không nhằm mục đích quảng bá cảnh quan.",
+          "meaning_vi": "Để quảng bá thêm vẻ đẹp phong cảnh của thị trấn mình."
         },
         {
           "id": "4",
           "text": "自分たちの店の商品の良さをもっと知ってもらうため",
           "correct": true,
-          "explanation_vi": "Đoạn 3 giải thích: do siêu thị lớn mọc lên khiến nhiều người sang siêu thị mua sắm, các chủ tiệm truyền thống đã mở chợ sáng với mong muốn để mọi người biết nhiều hơn đến chất lượng tuyệt vời của các sản phẩm ở tiệm mình («自分たちの店の商品の良さをもっと知ってもらおうと、朝市を始めたのだ»)."
+          "explanation_vi": "Đoạn 3 giải thích: do siêu thị lớn mọc lên khiến nhiều người sang siêu thị mua sắm, các chủ tiệm truyền thống đã mở chợ sáng với mong muốn để mọi người biết nhiều hơn đến chất lượng tuyệt vời của các sản phẩm ở tiệm mình («自分たちの店の商品の良さをもっと知ってもらおうと、朝市を始めたのだ»).",
+          "meaning_vi": "Để mọi người biết thêm về chất lượng tốt của sản phẩm ở cửa hàng mình."
         }
       ],
       "summary_vi": "Mở chợ sáng để khách hàng biết đến chất lượng tốt của hàng hóa tiệm mình (câu s5).",
@@ -3040,25 +3072,29 @@
           "id": "1",
           "text": "朝市で人気がある商品を、店で売るより高く売ること",
           "correct": false,
-          "explanation_vi": "Bài đọc không hề đề cập đến việc tăng giá bán ở chợ sáng."
+          "explanation_vi": "Bài đọc không hề đề cập đến việc tăng giá bán ở chợ sáng.",
+          "meaning_vi": "Bán các mặt hàng đắt khách ở chợ sáng với giá cao hơn so với bán ở cửa hàng."
         },
         {
           "id": "2",
           "text": "朝市で人気がある商品を、朝市でもっと売ること",
           "correct": true,
-          "explanation_vi": "Đoạn 4 viết: các món đắt khách bán hết veo rất nhanh, nếu đắt hàng như vậy thì bán số lượng nhiều hơn ở chợ sáng cũng được («たくさん売ればいいのだが»), nhưng họ lại không làm điều đó («それはしないそうだ»). Vậy «それ» chỉ việc gia tăng số lượng bán ra ở chợ sáng («朝市でもっと売ること»)."
+          "explanation_vi": "Đoạn 4 viết: các món đắt khách bán hết veo rất nhanh, nếu đắt hàng như vậy thì bán số lượng nhiều hơn ở chợ sáng cũng được («たくさん売ればいいのだが»), nhưng họ lại không làm điều đó («それはしないそうだ»). Vậy «それ» chỉ việc gia tăng số lượng bán ra ở chợ sáng («朝市でもっと売ること»).",
+          "meaning_vi": "Bán thêm nhiều các mặt hàng đắt khách ở chợ sáng."
         },
         {
           "id": "3",
           "text": "朝市でしか買えない商品の種類を増やすこと",
           "correct": false,
-          "explanation_vi": "Không phải việc tăng chủng loại hàng chỉ bán ở chợ sáng."
+          "explanation_vi": "Không phải việc tăng chủng loại hàng chỉ bán ở chợ sáng.",
+          "meaning_vi": "Tăng chủng loại các mặt hàng chỉ có thể mua được ở chợ sáng."
         },
         {
           "id": "4",
           "text": "朝市でしか買えない商品を平日に店でも売ること",
           "correct": false,
-          "explanation_vi": "Sai với nội dung câu văn trước đó liên quan đến việc bán số lượng nhiều."
+          "explanation_vi": "Sai với nội dung câu văn trước đó liên quan đến việc bán số lượng nhiều.",
+          "meaning_vi": "Bán ở cửa hàng vào ngày thường các mặt hàng chỉ có thể mua được ở chợ sáng."
         }
       ],
       "summary_vi": "それ thay thế cho việc tăng số lượng hàng bán ra ở chợ sáng (たくさん売る) (câu s7).",
@@ -3086,25 +3122,29 @@
           "id": "1",
           "text": "A町に店がある人",
           "correct": true,
-          "explanation_vi": "Mục đích của chợ sáng là để khách biết đến tiệm và tăng lượng khách tới mua sắm thường nhật tại các cửa tiệm ở thị trấn A («まず朝市で自分たちの店について知ってもらって、ふだんA町の店で買い物をする客を増やすことだからだ»). Do đó người được bày bán ở chợ sáng chỉ quy định dành cho những người có tiệm ở thị trấn A («A町に店がある人だけ»)."
+          "explanation_vi": "Mục đích của chợ sáng là để khách biết đến tiệm và tăng lượng khách tới mua sắm thường nhật tại các cửa tiệm ở thị trấn A («まず朝市で自分たちの店について知ってもらって、ふだんA町の店で買い物をする客を増やすことだからだ»). Do đó người được bày bán ở chợ sáng chỉ quy định dành cho những người có tiệm ở thị trấn A («A町に店がある人だけ»).",
+          "meaning_vi": "Người có cửa hàng ở thị trấn A"
         },
         {
           "id": "2",
           "text": "A町以外の市や町に店がある人",
           "correct": false,
-          "explanation_vi": "Trái ngược hoàn toàn, nếu người ngoài thị trấn bày bán thì không phục vụ được mục đích kéo khách về các tiệm trong thị trấn A."
+          "explanation_vi": "Trái ngược hoàn toàn, nếu người ngoài thị trấn bày bán thì không phục vụ được mục đích kéo khách về các tiệm trong thị trấn A.",
+          "meaning_vi": "Người có cửa hàng ở thành phố hoặc thị trấn khác ngoài thị trấn A"
         },
         {
           "id": "3",
           "text": "A町で店を開きたいと思っている人",
           "correct": false,
-          "explanation_vi": "Những người có ý định mở tiệm chưa phải là chủ các tiệm truyền thống cần duy trì lượng khách thường nhật."
+          "explanation_vi": "Những người có ý định mở tiệm chưa phải là chủ các tiệm truyền thống cần duy trì lượng khách thường nhật.",
+          "meaning_vi": "Người đang muốn mở cửa hàng ở thị trấn A"
         },
         {
           "id": "4",
           "text": "A町の店でふだんから買い物をしている人",
           "correct": false,
-          "explanation_vi": "Đây là đối tượng khách hàng mua sắm, không phải người bày bán hàng hóa tại chợ sáng."
+          "explanation_vi": "Đây là đối tượng khách hàng mua sắm, không phải người bày bán hàng hóa tại chợ sáng.",
+          "meaning_vi": "Người thường xuyên mua sắm ở các cửa hàng của thị trấn A"
         }
       ],
       "summary_vi": "Quy định người bán ở chợ sáng chỉ gồm những ai có cửa tiệm tại thị trấn A (câu s8, s9).",
@@ -3133,25 +3173,29 @@
           "id": "1",
           "text": "買いたいと思うオートバイがなかったから",
           "correct": false,
-          "explanation_vi": "Bài viết không hề nói lý do vì không có xe muốn mua."
+          "explanation_vi": "Bài viết không hề nói lý do vì không có xe muốn mua.",
+          "meaning_vi": "Vì không có chiếc xe máy nào mà tôi muốn mua."
         },
         {
           "id": "2",
           "text": "仕事や子供の世話で忙しかったから",
           "correct": true,
-          "explanation_vi": "Đoạn 1 nêu rõ: sau khi tốt nghiệp đại học, tác giả luôn bận rộn với công việc và việc chăm sóc con cái («卒業後はずっと仕事や子供の世話で忙しかったが»), gần đây mới có thêm thời gian tự do."
+          "explanation_vi": "Đoạn 1 nêu rõ: sau khi tốt nghiệp đại học, tác giả luôn bận rộn với công việc và việc chăm sóc con cái («卒業後はずっと仕事や子供の世話で忙しかったが»), gần đây mới có thêm thời gian tự do.",
+          "meaning_vi": "Vì bận rộn với công việc và chăm sóc con cái."
         },
         {
           "id": "3",
           "text": "「私」のオートバイを妻が使っていたから",
           "correct": false,
-          "explanation_vi": "Vợ tác giả chỉ ủng hộ khi tác giả bàn việc mua xe máy mới, không phải đi xe của tác giả."
+          "explanation_vi": "Vợ tác giả chỉ ủng hộ khi tác giả bàn việc mua xe máy mới, không phải đi xe của tác giả.",
+          "meaning_vi": "Vì vợ tôi đã dùng xe máy của «tôi»."
         },
         {
           "id": "4",
           "text": "家にあるオートバイが壊れていたから",
           "correct": false,
-          "explanation_vi": "Không có chi tiết nói xe ở nhà bị hỏng."
+          "explanation_vi": "Không có chi tiết nói xe ở nhà bị hỏng.",
+          "meaning_vi": "Vì chiếc xe máy ở nhà bị hỏng."
         }
       ],
       "summary_vi": "Sau khi ra trường bận rộn với công việc và con cái nên không đi xe máy (câu s3, s4).",
@@ -3180,25 +3224,29 @@
           "id": "1",
           "text": "先月、新しいオートバイを買ってから3日目の朝",
           "correct": false,
-          "explanation_vi": "Sự cố xảy ra trong chuyến đi 20 năm trước, không phải tháng trước."
+          "explanation_vi": "Sự cố xảy ra trong chuyến đi 20 năm trước, không phải tháng trước.",
+          "meaning_vi": "Buổi sáng ngày thứ ba sau khi mua xe máy mới vào tháng trước."
         },
         {
           "id": "2",
           "text": "先月、オートバイ旅行を始めてから3日目の朝",
           "correct": false,
-          "explanation_vi": "Chuyến đi diễn ra từ 20 năm trước thời sinh viên."
+          "explanation_vi": "Chuyến đi diễn ra từ 20 năm trước thời sinh viên.",
+          "meaning_vi": "Buổi sáng ngày thứ ba sau khi bắt đầu chuyến du lịch bằng xe máy vào tháng trước."
         },
         {
           "id": "3",
           "text": "20年前、新しいオートバイを買ってから3日目の朝",
           "correct": false,
-          "explanation_vi": "Xe thời đó là xe của bố tặng («父にもらったオートバイ»), không phải xe mới mua."
+          "explanation_vi": "Xe thời đó là xe của bố tặng («父にもらったオートバイ»), không phải xe mới mua.",
+          "meaning_vi": "Buổi sáng ngày thứ ba sau khi mua xe máy mới cách đây 20 năm."
         },
         {
           "id": "4",
           "text": "20年前、オートバイ旅行を始めてから3日目の朝",
           "correct": true,
-          "explanation_vi": "Đoạn 3 và 4 nêu: 20 năm trước tác giả đi du lịch từ Tokyo đến Kyoto («20年前の春、私は...旅行をしていた»). Đến sáng ngày thứ 3 của chuyến đi («3日目の朝、道を走っているとき...»), một linh kiện phía trước xe máy bị gãy hỏng."
+          "explanation_vi": "Đoạn 3 và 4 nêu: 20 năm trước tác giả đi du lịch từ Tokyo đến Kyoto («20年前の春、私は...旅行をしていた»). Đến sáng ngày thứ 3 của chuyến đi («3日目の朝、道を走っているとき...»), một linh kiện phía trước xe máy bị gãy hỏng.",
+          "meaning_vi": "Buổi sáng ngày thứ ba sau khi bắt đầu chuyến du lịch bằng xe máy cách đây 20 năm."
         }
       ],
       "summary_vi": "Sáng ngày thứ ba của chuyến phượt xe máy 20 năm trước (câu s8, s10).",
@@ -3227,25 +3275,29 @@
           "id": "1",
           "text": "店にあった新しいオートバイを安く売ってくれたから",
           "correct": false,
-          "explanation_vi": "Lúc đó tác giả vào sửa xe, không phải mua xe mới."
+          "explanation_vi": "Lúc đó tác giả vào sửa xe, không phải mua xe mới.",
+          "meaning_vi": "Vì họ đã bán chiếc xe máy mới có ở cửa hàng cho tôi với giá rẻ."
         },
         {
           "id": "2",
           "text": "オートバイを修理してくれそうな店を教えてくれたから",
           "correct": false,
-          "explanation_vi": "Nhân viên tiệm Garon tự tay sửa xe cho tác giả chứ không phải chỉ điểm tiệm khác."
+          "explanation_vi": "Nhân viên tiệm Garon tự tay sửa xe cho tác giả chứ không phải chỉ điểm tiệm khác.",
+          "meaning_vi": "Vì họ đã chỉ cho tôi cửa hàng có vẻ sẽ sửa xe máy giúp tôi."
         },
         {
           "id": "3",
           "text": "壊れて動かなくなりそうなオートバイを買ってくれたから",
           "correct": false,
-          "explanation_vi": "Tiệm sửa xe giúp tác giả, không phải mua lại chiếc xe hỏng."
+          "explanation_vi": "Tiệm sửa xe giúp tác giả, không phải mua lại chiếc xe hỏng.",
+          "meaning_vi": "Vì họ đã mua chiếc xe máy có vẻ sắp hỏng và không chạy được nữa của tôi."
         },
         {
           "id": "4",
           "text": "ほかの店で修理を断られたオートバイを直してくれたから",
           "correct": true,
-          "explanation_vi": "Tác giả đi hỏi hai tiệm trước đều bị từ chối vì ca sửa khó («難しい修理だからできない、と断られてしまった»). Đến tiệm Garon, dù khó nhưng nhân viên vẫn nhận lời vì thấy tác giả đang gặp khó khăn và mất 2 tiếng để sửa xong giúp tác giả."
+          "explanation_vi": "Tác giả đi hỏi hai tiệm trước đều bị từ chối vì ca sửa khó («難しい修理だからできない、と断られてしまった»). Đến tiệm Garon, dù khó nhưng nhân viên vẫn nhận lời vì thấy tác giả đang gặp khó khăn và mất 2 tiếng để sửa xong giúp tác giả.",
+          "meaning_vi": "Vì họ đã sửa chiếc xe máy mà các cửa hàng khác đã từ chối sửa."
         }
       ],
       "summary_vi": "Vì nhân viên tiệm Garon đã sửa giúp chiếc xe máy mà các tiệm khác đều từ chối (câu s12, s13, s14, s15).",
@@ -3276,25 +3328,29 @@
           "id": "1",
           "text": "もう一度、オートバイに乗ることができたから",
           "correct": false,
-          "explanation_vi": "Được đi xe máy lại là niềm vui chung, nhưng việc 'mãn nguyện' ở đây gắn liền với quyết định mua xe tại tiệm Garon."
+          "explanation_vi": "Được đi xe máy lại là niềm vui chung, nhưng việc 'mãn nguyện' ở đây gắn liền với quyết định mua xe tại tiệm Garon.",
+          "meaning_vi": "Vì đã có thể đi xe máy một lần nữa."
         },
         {
           "id": "2",
           "text": "「ガロン」でオートバイを買うことができたから",
           "correct": true,
-          "explanation_vi": "20 năm trước, nhân viên sửa xe đã cười và nói 'Một ngày nào đó hãy mua xe ở tiệm này nhé', tác giả đã quyết tâm nhất định sẽ làm như vậy. Nay tác giả đã thực hiện được lời hứa mua xe tại tiệm Garon, nên dù không gặp lại nhân viên năm xưa tác giả vẫn cảm thấy rất mãn nguyện."
+          "explanation_vi": "20 năm trước, nhân viên sửa xe đã cười và nói 'Một ngày nào đó hãy mua xe ở tiệm này nhé', tác giả đã quyết tâm nhất định sẽ làm như vậy. Nay tác giả đã thực hiện được lời hứa mua xe tại tiệm Garon, nên dù không gặp lại nhân viên năm xưa tác giả vẫn cảm thấy rất mãn nguyện.",
+          "meaning_vi": "Vì đã có thể mua xe máy ở «Garon»."
         },
         {
           "id": "3",
           "text": "壊れてしまったオートバイを修理してもらうことができたから",
           "correct": false,
-          "explanation_vi": "Sự việc sửa xe đã là chuyện của 20 năm về trước."
+          "explanation_vi": "Sự việc sửa xe đã là chuyện của 20 năm về trước.",
+          "meaning_vi": "Vì đã có thể nhờ sửa chiếc xe máy bị hỏng."
         },
         {
           "id": "4",
           "text": "オートバイの修理をしてくれた店員に、お礼を伝えることができたから",
           "correct": false,
-          "explanation_vi": "Tác giả không gặp lại được người nhân viên năm xưa («今の『ガロン』には、もうあの店員はいなかった。会えなかったのは残念だった»)."
+          "explanation_vi": "Tác giả không gặp lại được người nhân viên năm xưa («今の『ガロン』には、もうあの店員はいなかった。会えなかったのは残念だった»).",
+          "meaning_vi": "Vì đã có thể nói lời cảm ơn với nhân viên đã sửa xe máy cho mình."
         }
       ],
       "summary_vi": "Vì đã thực hiện được quyết tâm mua xe máy tại tiệm Garon như lời hẹn năm xưa (câu s16, s17, s19).",
@@ -3324,25 +3380,29 @@
           "id": "1",
           "text": "2月2日の午前9時までに、電話か窓口で申し込む。",
           "correct": false,
-          "explanation_vi": "Đây là thời hạn và phương thức dành cho khóa học đặc biệt buổi chiều, không phải khóa thông thường."
+          "explanation_vi": "Đây là thời hạn và phương thức dành cho khóa học đặc biệt buổi chiều, không phải khóa thông thường.",
+          "meaning_vi": "Đăng ký bằng điện thoại hoặc tại quầy trước 9 giờ sáng ngày 2 tháng 2."
         },
         {
           "id": "2",
           "text": "2月2日の午前9時30分までに、窓口で申し込む。",
           "correct": false,
-          "explanation_vi": "Mốc 9h30 sáng là dành cho người muốn học khóa thông thường vào buổi sáng."
+          "explanation_vi": "Mốc 9h30 sáng là dành cho người muốn học khóa thông thường vào buổi sáng.",
+          "meaning_vi": "Đăng ký tại quầy trước 9 giờ 30 sáng ngày 2 tháng 2."
         },
         {
           "id": "3",
           "text": "2月2日の午後1時30分までに、窓口で申し込む。",
           "correct": true,
-          "explanation_vi": "Mục đăng ký nêu rõ: khóa thông thường nếu học buổi chiều thì phải đăng ký trước 1h30 chiều của ngày học tại quầy lớp học trượt tuyết ở tầng 1 khách sạn («普通コースは、...午後に受ける場合は当日の午後1時30分までに、スキー教室の窓口で申し込んでください»)."
+          "explanation_vi": "Mục đăng ký nêu rõ: khóa thông thường nếu học buổi chiều thì phải đăng ký trước 1h30 chiều của ngày học tại quầy lớp học trượt tuyết ở tầng 1 khách sạn («普通コースは、...午後に受ける場合は当日の午後1時30分までに、スキー教室の窓口で申し込んでください»).",
+          "meaning_vi": "Đăng ký tại quầy trước 1 giờ 30 chiều ngày 2 tháng 2."
         },
         {
           "id": "4",
           "text": "2月2日の午後1時30分までに、電話か窓口で申し込む。",
           "correct": false,
-          "explanation_vi": "Khóa thông thường bắt buộc phải đăng ký trực tiếp tại quầy («窓口で»), không áp dụng đăng ký qua điện thoại."
+          "explanation_vi": "Khóa thông thường bắt buộc phải đăng ký trực tiếp tại quầy («窓口で»), không áp dụng đăng ký qua điện thoại.",
+          "meaning_vi": "Đăng ký bằng điện thoại hoặc tại quầy trước 1 giờ 30 chiều ngày 2 tháng 2."
         }
       ],
       "summary_vi": "Khóa học thông thường buổi chiều phải đăng ký trước 1h30 chiều cùng ngày tại quầy (câu s16).",
@@ -3370,25 +3430,29 @@
           "id": "1",
           "text": "22,000円を支払う。",
           "correct": false,
-          "explanation_vi": "Chưa tính mức giảm giá 2.000 yên dành cho khách lưu trú tại khách sạn Asahiyama."
+          "explanation_vi": "Chưa tính mức giảm giá 2.000 yên dành cho khách lưu trú tại khách sạn Asahiyama.",
+          "meaning_vi": "Trả 22.000 yên."
         },
         {
           "id": "2",
           "text": "22,000円から2,000円を引いたものを支払う。",
           "correct": true,
-          "explanation_vi": "Anh Nguyễn cùng 4 người bạn là 5 người, phù hợp nhóm 4-6 người của khóa đặc biệt. Thời gian học từ 2h đến 4h chiều là 2 tiếng, giá cho 1 nhóm là 22.000 yên. Vì nhóm có người nghỉ tại khách sạn Asahiyama nên được giảm 2.000 yên trên giá nhóm («グループの料金から2,000円割引します»). Vậy số tiền phải trả là 22.000 yên trừ đi 2.000 yên."
+          "explanation_vi": "Anh Nguyễn cùng 4 người bạn là 5 người, phù hợp nhóm 4-6 người của khóa đặc biệt. Thời gian học từ 2h đến 4h chiều là 2 tiếng, giá cho 1 nhóm là 22.000 yên. Vì nhóm có người nghỉ tại khách sạn Asahiyama nên được giảm 2.000 yên trên giá nhóm («グループの料金から2,000円割引します»). Vậy số tiền phải trả là 22.000 yên trừ đi 2.000 yên.",
+          "meaning_vi": "Trả số tiền là 22.000 yên trừ đi 2.000 yên."
         },
         {
           "id": "3",
           "text": "39,000円を支払う。",
           "correct": false,
-          "explanation_vi": "Mức 39.000 yên là giá dành cho khóa đặc biệt 4 tiếng."
+          "explanation_vi": "Mức 39.000 yên là giá dành cho khóa đặc biệt 4 tiếng.",
+          "meaning_vi": "Trả 39.000 yên."
         },
         {
           "id": "4",
           "text": "39,000円から2,000円を引いたものを支払う。",
           "correct": false,
-          "explanation_vi": "Đây là số tiền nếu học 4 tiếng, trong khi nhóm chỉ học 2 tiếng (từ 14h đến 16h)."
+          "explanation_vi": "Đây là số tiền nếu học 4 tiếng, trong khi nhóm chỉ học 2 tiếng (từ 14h đến 16h).",
+          "meaning_vi": "Trả số tiền là 39.000 yên trừ đi 2.000 yên."
         }
       ],
       "summary_vi": "Khóa đặc biệt 2 tiếng cho 1 nhóm là 22.000 yên, trừ 2.000 yên ưu đãi khách ở khách sạn (câu s13, s14).",

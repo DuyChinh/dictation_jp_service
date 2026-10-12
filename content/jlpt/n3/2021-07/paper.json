@@ -2598,25 +2598,29 @@
           "id": "1",
           "text": "おじいちゃんの所へ行く。",
           "correct": false,
-          "explanation_vi": "Người đi đến nhà ông là mẹ chứ không phải Takashi."
+          "explanation_vi": "Người đi đến nhà ông là mẹ chứ không phải Takashi.",
+          "meaning_vi": "Đến chỗ ông."
         },
         {
           "id": "2",
           "text": "昨日のカレーの残りを温めて食べる。",
           "correct": false,
-          "explanation_vi": "Mẹ chỉ bảo nếu đói không chờ được thì ăn cà ri, đây không phải việc bắt buộc."
+          "explanation_vi": "Mẹ chỉ bảo nếu đói không chờ được thì ăn cà ri, đây không phải việc bắt buộc.",
+          "meaning_vi": "Hâm nóng chỗ cà ri thừa hôm qua rồi ăn."
         },
         {
           "id": "3",
           "text": "洗濯物を取り込む。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s4: mẹ dặn quần áo đang phơi ngoài sân nên con nhớ thu vào (洗濯物が干したままになっているから、取り込んでおいてね)."
+          "explanation_vi": "Đúng với câu s4: mẹ dặn quần áo đang phơi ngoài sân nên con nhớ thu vào (洗濯物が干したままになっているから、取り込んでおいてね).",
+          "meaning_vi": "Thu quần áo đang phơi vào."
         },
         {
           "id": "4",
           "text": "ケーキを買って帰る。",
           "correct": false,
-          "explanation_vi": "Người mua bánh mang về nhà là mẹ."
+          "explanation_vi": "Người mua bánh mang về nhà là mẹ.",
+          "meaning_vi": "Mua bánh ngọt mang về."
         }
       ],
       "summary_vi": "Việc cần làm là thu gom quần áo phơi vào nhà (câu s4).",
@@ -2644,25 +2648,29 @@
           "id": "1",
           "text": "インターネットで予約すると、1泊料金と朝食が10%割引になる場合がある。",
           "correct": false,
-          "explanation_vi": "Bữa sáng được miễn phí hoàn toàn chứ không phải giảm 10%."
+          "explanation_vi": "Bữa sáng được miễn phí hoàn toàn chứ không phải giảm 10%.",
+          "meaning_vi": "Nếu đặt phòng qua internet thì có trường hợp được giảm 10% tiền phòng một đêm và tiền bữa sáng."
         },
         {
           "id": "2",
           "text": "インターネットで2月中に予約すると、朝食が10%割引になる場合がある。",
           "correct": false,
-          "explanation_vi": "Sai vì bữa sáng được miễn phí và phải ở trước 28/2."
+          "explanation_vi": "Sai vì bữa sáng được miễn phí và phải ở trước 28/2.",
+          "meaning_vi": "Nếu đặt phòng qua internet trong tháng 2 thì có trường hợp được giảm 10% tiền bữa sáng."
         },
         {
           "id": "3",
           "text": "インターネットで予約し、2月中に泊まると、1泊料金が10%割引され、朝食が無料になる場合がある。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s5 và s6: khách đặt qua mạng và lưu trú trước 28/2 được giảm 10% tiền phòng và miễn phí bữa sáng (áp dụng tối đa 10 phòng mỗi ngày)."
+          "explanation_vi": "Đúng với câu s5 và s6: khách đặt qua mạng và lưu trú trước 28/2 được giảm 10% tiền phòng và miễn phí bữa sáng (áp dụng tối đa 10 phòng mỗi ngày).",
+          "meaning_vi": "Nếu đặt phòng qua internet và lưu trú trong tháng 2 thì có trường hợp được giảm 10% tiền phòng một đêm và được miễn phí bữa sáng."
         },
         {
           "id": "4",
           "text": "インターネット、電話、ファックスのどれで予約しても、2月中は朝食だけ無料になる場合がある。",
           "correct": false,
-          "explanation_vi": "Ưu đãi chỉ dành riêng cho đặt qua mạng, không áp dụng cho điện thoại và fax."
+          "explanation_vi": "Ưu đãi chỉ dành riêng cho đặt qua mạng, không áp dụng cho điện thoại và fax.",
+          "meaning_vi": "Dù đặt qua internet, điện thoại hay fax thì trong tháng 2 vẫn có trường hợp chỉ được miễn phí bữa sáng."
         }
       ],
       "summary_vi": "Đặt qua mạng và ở trong tháng 2 được giảm 10% tiền phòng và miễn phí ăn sáng (câu s5, s6).",
@@ -2691,25 +2699,29 @@
           "id": "1",
           "text": "自分では歩くのが速くなったと思っていたが、実はそうではなかったから。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s3 và s4: tác giả tưởng chân mình đi nhanh hơn trước nên vui mừng, nhưng sự thật là cảnh sát đã kéo dài thời gian đèn xanh qua đường."
+          "explanation_vi": "Đúng với câu s3 và s4: tác giả tưởng chân mình đi nhanh hơn trước nên vui mừng, nhưng sự thật là cảnh sát đã kéo dài thời gian đèn xanh qua đường.",
+          "meaning_vi": "Vì bản thân tưởng rằng mình đã đi nhanh hơn, nhưng thực ra không phải vậy."
         },
         {
           "id": "2",
           "text": "せっかく走って渡れるようになったのに、その必要がなくなったから。",
           "correct": false,
-          "explanation_vi": "Tác giả vui vì đi bộ qua được chứ không phải muốn chạy."
+          "explanation_vi": "Tác giả vui vì đi bộ qua được chứ không phải muốn chạy.",
+          "meaning_vi": "Vì khó khăn lắm mới có thể chạy qua được, vậy mà giờ không còn cần thiết nữa."
         },
         {
           "id": "3",
           "text": "自分は時間内に歩いて渡れるのに、歩行者用信号の青の時間が長くなったから。",
           "correct": false,
-          "explanation_vi": "Không phải thất vọng vì thời gian đèn xanh tăng lên mà vì nhận ra bản thân không hề đi nhanh hơn."
+          "explanation_vi": "Không phải thất vọng vì thời gian đèn xanh tăng lên mà vì nhận ra bản thân không hề đi nhanh hơn.",
+          "meaning_vi": "Vì bản thân có thể đi bộ qua trong thời gian cho phép, vậy mà thời gian đèn xanh cho người đi bộ lại được kéo dài."
         },
         {
           "id": "4",
           "text": "警察が、歩行者用信号の青の時間を少ししか長くしてくれなかったから。",
           "correct": false,
-          "explanation_vi": "Không có ý trách cứ cảnh sát kéo dài quá ít thời gian."
+          "explanation_vi": "Không có ý trách cứ cảnh sát kéo dài quá ít thời gian.",
+          "meaning_vi": "Vì cảnh sát chỉ kéo dài thời gian đèn xanh cho người đi bộ có một chút ít."
         }
       ],
       "summary_vi": "Thất vọng vì ngỡ mình đi nhanh hơn hóa ra là do đèn xanh kéo dài thêm (câu s3, s4).",
@@ -2738,25 +2750,29 @@
           "id": "1",
           "text": "男性は「食前」に磨く人が「食後」に磨く人より多い。",
           "correct": false,
-          "explanation_vi": "Sai vì ở cả hai giới thì số người đánh răng 'sau ăn' (食後) luôn chiếm nhiều nhất (nam 64%)."
+          "explanation_vi": "Sai vì ở cả hai giới thì số người đánh răng 'sau ăn' (食後) luôn chiếm nhiều nhất (nam 64%).",
+          "meaning_vi": "Ở nam giới, số người đánh răng 'trước ăn' nhiều hơn số người đánh răng 'sau ăn'."
         },
         {
           "id": "2",
           "text": "女性は「食前と食後」に磨く人が「食前」に、磨く人より多い。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s3: ở nữ giới, sau lựa chọn đông nhất là 'sau ăn' (72%) thì đứng tiếp theo là 'cả trước và sau ăn', do đó nhóm này nhiều hơn nhóm chỉ đánh 'trước ăn'."
+          "explanation_vi": "Đúng với câu s3: ở nữ giới, sau lựa chọn đông nhất là 'sau ăn' (72%) thì đứng tiếp theo là 'cả trước và sau ăn', do đó nhóm này nhiều hơn nhóm chỉ đánh 'trước ăn'.",
+          "meaning_vi": "Ở nữ giới, số người đánh răng 'cả trước và sau ăn' nhiều hơn số người đánh răng 'trước ăn'."
         },
         {
           "id": "3",
           "text": "性別に関係なく、「食前」に歯を磨いている人が60%以上いる。",
           "correct": false,
-          "explanation_vi": "Tỷ lệ trên 60% thuộc về nhóm đánh răng 'sau ăn', không phải trước ăn."
+          "explanation_vi": "Tỷ lệ trên 60% thuộc về nhóm đánh răng 'sau ăn', không phải trước ăn.",
+          "meaning_vi": "Bất kể giới tính, có trên 60% người đánh răng 'trước ăn'."
         },
         {
           "id": "4",
           "text": "年齢が高くなると、「食後」に磨く人より「食前」に磨く人が多くなる。",
           "correct": false,
-          "explanation_vi": "Dù tuổi cao thì ở mọi độ tuổi nhóm đánh 'sau ăn' vẫn là đông nhất (各年齢で一番多いのはやはり「食後」)."
+          "explanation_vi": "Dù tuổi cao thì ở mọi độ tuổi nhóm đánh 'sau ăn' vẫn là đông nhất (各年齢で一番多いのはやはり「食後」).",
+          "meaning_vi": "Khi tuổi càng cao thì số người đánh răng 'trước ăn' nhiều hơn số người đánh răng 'sau ăn'."
         }
       ],
       "summary_vi": "Ở nữ giới, số người đánh răng cả trước và sau ăn nhiều hơn số người chỉ đánh trước ăn (câu s3).",
@@ -2784,25 +2800,29 @@
           "id": "1",
           "text": "わたしが小学校に入学した時に、この花屋が開店したこと。",
           "correct": false,
-          "explanation_vi": "Tiệm hoa mở từ trước khi tác giả vào tiểu học, không phải mở đúng lúc nhập học."
+          "explanation_vi": "Tiệm hoa mở từ trước khi tác giả vào tiểu học, không phải mở đúng lúc nhập học.",
+          "meaning_vi": "Việc tiệm hoa này khai trương vào lúc tôi vào học tiểu học."
         },
         {
           "id": "2",
           "text": "小学校を卒業する時に、先生といっしょにこの花屋で花を買ったこと。",
           "correct": false,
-          "explanation_vi": "Học sinh cả lớp tự góp tiền mua hoa tặng thầy giáo chứ không phải cùng thầy giáo đi mua hoa."
+          "explanation_vi": "Học sinh cả lớp tự góp tiền mua hoa tặng thầy giáo chứ không phải cùng thầy giáo đi mua hoa.",
+          "meaning_vi": "Việc khi tốt nghiệp tiểu học, tôi đã cùng thầy giáo mua hoa ở tiệm hoa này."
         },
         {
           "id": "3",
           "text": "特別なことがある時には、よくこの店で花を買っていたこと。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s3: mỗi khi có sự kiện đặc biệt như sinh nhật gia đình hay có khách đến chơi nhà, tác giả lại cùng mẹ mua hoa ở tiệm này (家族の誕生日や家にお客さんが来る時などには、母といっしょにこの店で花を買っていた)."
+          "explanation_vi": "Đúng với câu s3: mỗi khi có sự kiện đặc biệt như sinh nhật gia đình hay có khách đến chơi nhà, tác giả lại cùng mẹ mua hoa ở tiệm này (家族の誕生日や家にお客さんが来る時などには、母といっしょにこの店で花を買っていた).",
+          "meaning_vi": "Việc mỗi khi có dịp đặc biệt, tôi thường mua hoa ở tiệm này."
         },
         {
           "id": "4",
           "text": "おじさんが大好きだったので、よくこの店で花を買っていたこと。",
           "correct": false,
-          "explanation_vi": "Lý do mua hoa là vì các sự kiện đặc biệt của gia đình, không phải vì yêu thích ông chủ tiệm."
+          "explanation_vi": "Lý do mua hoa là vì các sự kiện đặc biệt của gia đình, không phải vì yêu thích ông chủ tiệm.",
+          "meaning_vi": "Việc vì rất quý ông chủ nên tôi thường mua hoa ở tiệm này."
         }
       ],
       "summary_vi": "Kỷ niệm cùng mẹ mua hoa tại tiệm vào những dịp gia đình đặc biệt (câu s3).",
@@ -2830,25 +2850,29 @@
           "id": "1",
           "text": "もうすぐ閉店する花屋のおじさんに、無理なお願いをするから。",
           "correct": false,
-          "explanation_vi": "Vào thời điểm tác giả tốt nghiệp tiểu học thì tiệm hoa vẫn hoạt động bình thường, chưa đóng cửa."
+          "explanation_vi": "Vào thời điểm tác giả tốt nghiệp tiểu học thì tiệm hoa vẫn hoạt động bình thường, chưa đóng cửa.",
+          "meaning_vi": "Vì sắp nhờ vả một việc quá sức với ông chủ tiệm hoa sắp đóng cửa."
         },
         {
           "id": "2",
           "text": "いやそうな顔をしているおじさんに、無理なお願いをするから。",
           "correct": false,
-          "explanation_vi": "Ông chủ không hề cau có khó chịu (おじさんは嫌な顔もしないで)."
+          "explanation_vi": "Ông chủ không hề cau có khó chịu (おじさんは嫌な顔もしないで).",
+          "meaning_vi": "Vì sắp nhờ vả một việc quá sức với ông chủ đang có vẻ mặt khó chịu."
         },
         {
           "id": "3",
           "text": "お店に花があまりないのに、おじさんに無理なお願いをするから。",
           "correct": false,
-          "explanation_vi": "Trong tiệm hoa có đầy đủ hoa, không phải do tiệm thiếu hoa."
+          "explanation_vi": "Trong tiệm hoa có đầy đủ hoa, không phải do tiệm thiếu hoa.",
+          "meaning_vi": "Vì sắp nhờ vả một việc quá sức với ông chủ trong khi trong tiệm không có nhiều hoa."
         },
         {
           "id": "4",
           "text": "お金が少ししかないのに、おじさんに無理なお願いをするから。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s5 và s6: số tiền tiêu vặt gom góp của các bạn học sinh tiểu học chỉ có một chút ít, nhưng lại đưa ra yêu cầu khó là muốn làm bó hoa thật to (集まったお金は少しだけだった。それで...できるだけ大きい花束を作ってくださいとお願いした)."
+          "explanation_vi": "Đúng với câu s5 và s6: số tiền tiêu vặt gom góp của các bạn học sinh tiểu học chỉ có một chút ít, nhưng lại đưa ra yêu cầu khó là muốn làm bó hoa thật to (集まったお金は少しだけだった。それで...できるだけ大きい花束を作ってくださいとお願いした).",
+          "meaning_vi": "Vì sắp nhờ vả một việc quá sức với ông chủ trong khi chỉ có một ít tiền."
         }
       ],
       "summary_vi": "Hồi hộp vì có rất ít tiền nhưng lại nhờ làm một bó hoa thật lớn (câu s5, s6).",
@@ -2877,25 +2901,29 @@
           "id": "1",
           "text": "小学校時代にとてもお世話になった先生へののお礼の気持ち。",
           "correct": false,
-          "explanation_vi": "Mục đích chính của bài văn là tri ân ông chủ tiệm hoa nhân dịp tiệm đóng cửa, không phải viết để cảm ơn giáo viên."
+          "explanation_vi": "Mục đích chính của bài văn là tri ân ông chủ tiệm hoa nhân dịp tiệm đóng cửa, không phải viết để cảm ơn giáo viên.",
+          "meaning_vi": "Tấm lòng biết ơn đối với thầy giáo đã giúp đỡ rất nhiều thời tiểu học."
         },
         {
           "id": "2",
           "text": "よい思い出を作ってくれた花屋のおじさんへの感謝の気持ち。",
           "correct": true,
-          "explanation_vi": "Đúng với câu kết s7: tác giả muốn gửi lời cảm ơn sâu sắc và tri ân tới ông chủ tiệm hoa đã cống hiến suốt 30 năm mang lại nhiều kỷ niệm ấm áp (あたたかい思い出を作ってくれたおじさんに、「ありがとう、お疲れ様でした」と言いたい)."
+          "explanation_vi": "Đúng với câu kết s7: tác giả muốn gửi lời cảm ơn sâu sắc và tri ân tới ông chủ tiệm hoa đã cống hiến suốt 30 năm mang lại nhiều kỷ niệm ấm áp (あたたかい思い出を作ってくれたおじさんに、「ありがとう、お疲れ様でした」と言いたい).",
+          "meaning_vi": "Tấm lòng cảm ơn đối với ông chủ tiệm hoa đã tạo nên những kỷ niệm đẹp."
         },
         {
           "id": "3",
           "text": "大好きだった花屋さんが閉店するので、さびしいという気持ち。",
           "correct": false,
-          "explanation_vi": "Nỗi buồn chỉ là một phần cảm xúc, trọng tâm lớn nhất của bài là lòng biết ơn đối với ông chủ tiệm."
+          "explanation_vi": "Nỗi buồn chỉ là một phần cảm xúc, trọng tâm lớn nhất của bài là lòng biết ơn đối với ông chủ tiệm.",
+          "meaning_vi": "Cảm giác buồn vì tiệm hoa mà tôi rất yêu thích đóng cửa."
         },
         {
           "id": "4",
           "text": "近所の花屋さんが閉店したので、とても不便だという気持ち。",
           "correct": false,
-          "explanation_vi": "Bài viết không hề đề cập đến sự bất tiện khi tiệm đóng cửa."
+          "explanation_vi": "Bài viết không hề đề cập đến sự bất tiện khi tiệm đóng cửa.",
+          "meaning_vi": "Cảm giác rất bất tiện vì tiệm hoa gần nhà đóng cửa."
         }
       ],
       "summary_vi": "Lòng biết ơn sâu sắc đối với ông chủ tiệm hoa đã tạo nên những kỷ niệm ấm áp (câu s7).",
@@ -2923,25 +2951,29 @@
           "id": "1",
           "text": "暑い夏に冷たいものを食べると、体が涼しく感じるから。",
           "correct": false,
-          "explanation_vi": "Đây là cảm giác thông thường khi ăn đồ lạnh vào mùa hè, không phải điều thú vị tác giả muốn nhấn mạnh."
+          "explanation_vi": "Đây là cảm giác thông thường khi ăn đồ lạnh vào mùa hè, không phải điều thú vị tác giả muốn nhấn mạnh.",
+          "meaning_vi": "Vì khi ăn đồ lạnh vào mùa hè nóng bức, cơ thể cảm thấy mát mẻ."
         },
         {
           "id": "2",
           "text": "寒い冬に冷たいものを食べると、おいしく感じられるから。",
           "correct": false,
-          "explanation_vi": "Không phải trọng tâm của điều thú vị được nói ở câu s2."
+          "explanation_vi": "Không phải trọng tâm của điều thú vị được nói ở câu s2.",
+          "meaning_vi": "Vì khi ăn đồ lạnh vào mùa đông giá rét, cảm thấy ngon miệng."
         },
         {
           "id": "3",
           "text": "季節に関係なく一年中アイスクリームが売られているから。",
           "correct": false,
-          "explanation_vi": "Việc kem bán quanh năm là bối cảnh chung, không phải điều thú vị được chỉ ra."
+          "explanation_vi": "Việc kem bán quanh năm là bối cảnh chung, không phải điều thú vị được chỉ ra.",
+          "meaning_vi": "Vì kem được bán quanh năm bất kể mùa nào."
         },
         {
           "id": "4",
           "text": "よく売れるアイスクリームの種類は季節によって違うから。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s2 và s3: điều thú vị là các loại kem bán chạy vào mùa hè và mùa đông lại khác nhau hoàn toàn (面白いのは、夏と冬ではよく売れるアイスの種類が違うことです)."
+          "explanation_vi": "Đúng với câu s2 và s3: điều thú vị là các loại kem bán chạy vào mùa hè và mùa đông lại khác nhau hoàn toàn (面白いのは、夏と冬ではよく売れるアイスの種類が違うことです).",
+          "meaning_vi": "Vì loại kem bán chạy khác nhau tùy theo mùa."
         }
       ],
       "summary_vi": "Điều thú vị là loại kem bán chạy có sự khác biệt rõ rệt giữa mùa hè và mùa đông (câu s2, s3).",
@@ -2970,25 +3002,29 @@
           "id": "1",
           "text": "冬に特別な部屋で作った氷だったし、とけないように運ぶのも大変だったから。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s5 và s6: băng mùa đông phải bảo quản trong căn phòng đặc biệt (hầm băng 氷室) và quãng đường vận chuyển tới thị trấn rất xa xôi, băng dễ tan nên việc giữ gìn và vận chuyển vô cùng gian nan."
+          "explanation_vi": "Đúng với câu s5 và s6: băng mùa đông phải bảo quản trong căn phòng đặc biệt (hầm băng 氷室) và quãng đường vận chuyển tới thị trấn rất xa xôi, băng dễ tan nên việc giữ gìn và vận chuyển vô cùng gian nan.",
+          "meaning_vi": "Vì đó là băng được làm vào mùa đông trong căn phòng đặc biệt, và việc vận chuyển sao cho không bị tan cũng rất vất vả."
         },
         {
           "id": "2",
           "text": "冬に作った氷は特別な味がしたし、時間がたつととけてなくなってしまうから。",
           "correct": false,
-          "explanation_vi": "Bài đọc không nói băng có mùi vị đặc biệt."
+          "explanation_vi": "Bài đọc không nói băng có mùi vị đặc biệt.",
+          "meaning_vi": "Vì băng làm vào mùa đông có vị đặc biệt, và để lâu thì sẽ tan mất."
         },
         {
           "id": "3",
           "text": "夏に作った氷はとてもめずらしかったし、暑さですぐとけてしまうものだったから。",
           "correct": false,
-          "explanation_vi": "Băng được làm vào mùa đông (冬に作った氷) chứ không phải làm vào mùa hè."
+          "explanation_vi": "Băng được làm vào mùa đông (冬に作った氷) chứ không phải làm vào mùa hè.",
+          "meaning_vi": "Vì băng làm vào mùa hè rất hiếm có, và nó là thứ tan ngay vì nóng."
         },
         {
           "id": "4",
           "text": "夏の氷はめずらしかったし、町まで運ぶ途中でとけて小さくなってしまうから。",
           "correct": false,
-          "explanation_vi": "Lựa chọn 1 đầy đủ và chính xác hơn về nguồn gốc và sự kỳ công bảo quản trong phòng đặc biệt."
+          "explanation_vi": "Lựa chọn 1 đầy đủ và chính xác hơn về nguồn gốc và sự kỳ công bảo quản trong phòng đặc biệt.",
+          "meaning_vi": "Vì băng mùa hè rất hiếm, và trên đường chở tới thị trấn nó bị tan và nhỏ lại."
         }
       ],
       "summary_vi": "Băng quý vì làm trong phòng đặc biệt vào mùa đông và việc vận chuyển xa để không bị tan rất gian nan (câu s5, s6).",
@@ -3017,25 +3053,29 @@
           "id": "1",
           "text": "氷は昔は冬の食べ物だったので、夏に食べることはとてもめずらしいことだった。",
           "correct": false,
-          "explanation_vi": "Băng không phải là món ăn của mùa đông."
+          "explanation_vi": "Băng không phải là món ăn của mùa đông.",
+          "meaning_vi": "Ngày xưa băng là món ăn của mùa đông, nên việc ăn vào mùa hè là chuyện rất hiếm."
         },
         {
           "id": "2",
           "text": "まだアイスクリームを買うことは難しかったので、みんな氷でがまんしていた。",
           "correct": false,
-          "explanation_vi": "Người xưa không phải nhẫn nhịn ăn băng vì thiếu kem, mà băng là món sơn hào hải vị xa xỉ thời bấy giờ."
+          "explanation_vi": "Người xưa không phải nhẫn nhịn ăn băng vì thiếu kem, mà băng là món sơn hào hải vị xa xỉ thời bấy giờ.",
+          "meaning_vi": "Vì khi đó vẫn còn khó mua được kem nên mọi người đành chịu ăn băng."
         },
         {
           "id": "3",
           "text": "暑い夏に氷を食べて涼しさを感じることは、日常的にできることではなかった。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s7: vào mùa hè nóng nực ngày xưa, việc được thưởng thức món đá bào mát lạnh để giải nhiệt không phải là thứ có thể làm thường nhật như ngày nay mà là một đặc ân hiếm có."
+          "explanation_vi": "Đúng với câu s7: vào mùa hè nóng nực ngày xưa, việc được thưởng thức món đá bào mát lạnh để giải nhiệt không phải là thứ có thể làm thường nhật như ngày nay mà là một đặc ân hiếm có.",
+          "meaning_vi": "Việc ăn băng vào mùa hè nóng bức để cảm thấy mát mẻ không phải là điều có thể làm hằng ngày."
         },
         {
           "id": "4",
           "text": "涼しくなるように氷を食べることは、そのころ人々がよくやっていたことだった。",
           "correct": false,
-          "explanation_vi": "Ngược lại, đây là thứ xa xỉ quý giá chứ người bình thường không thể làm thường xuyên."
+          "explanation_vi": "Ngược lại, đây là thứ xa xỉ quý giá chứ người bình thường không thể làm thường xuyên.",
+          "meaning_vi": "Việc ăn băng để cho mát là điều mà mọi người thời đó thường làm."
         }
       ],
       "summary_vi": "Ăn băng mùa hè để giải nhiệt ngày xưa không phải là điều bình thường ai cũng làm được thường ngày (câu s7).",
@@ -3063,25 +3103,29 @@
           "id": "1",
           "text": "洗濯洗剤のCMに女性が登場している点。",
           "correct": false,
-          "explanation_vi": "Việc phụ nữ xuất hiện trong quảng cáo bột giặt là bình thường, không phải điểm gây ấn tượng kỳ lạ."
+          "explanation_vi": "Việc phụ nữ xuất hiện trong quảng cáo bột giặt là bình thường, không phải điểm gây ấn tượng kỳ lạ.",
+          "meaning_vi": "Điểm có một người phụ nữ xuất hiện trong quảng cáo bột giặt."
         },
         {
           "id": "2",
           "text": "洗濯洗剤なのに、いい香りがついている点。",
           "correct": false,
-          "explanation_vi": "Đây là đặc tính của sản phẩm chứ không phải điểm nhấn khác thường của nội dung quảng cáo."
+          "explanation_vi": "Đây là đặc tính của sản phẩm chứ không phải điểm nhấn khác thường của nội dung quảng cáo.",
+          "meaning_vi": "Điểm tuy là bột giặt nhưng lại có hương thơm dễ chịu."
         },
         {
           "id": "3",
           "text": "洗濯洗剤が汚れをよく落とすことを強く言っている点。",
           "correct": false,
-          "explanation_vi": "Ngược lại, quảng cáo hoàn toàn không nhắc gì tới việc giặt sạch vết bẩn."
+          "explanation_vi": "Ngược lại, quảng cáo hoàn toàn không nhắc gì tới việc giặt sạch vết bẩn.",
+          "meaning_vi": "Điểm nhấn mạnh mạnh mẽ rằng bột giặt giặt sạch vết bẩn tốt."
         },
         {
           "id": "4",
           "text": "洗濯洗剤なのに、汚れを落とすことについて全く言っていない点。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s2 và s3: mục đích của bột giặt là giặt sạch bẩn, nhưng quảng cáo chỉ toàn nói về hương thơm mà hoàn toàn không hề đả động đến khả năng tẩy sạch vết bẩn (汚れをよく落とすことは全く言っていなかった)."
+          "explanation_vi": "Đúng với câu s2 và s3: mục đích của bột giặt là giặt sạch bẩn, nhưng quảng cáo chỉ toàn nói về hương thơm mà hoàn toàn không hề đả động đến khả năng tẩy sạch vết bẩn (汚れをよく落とすことは全く言っていなかった).",
+          "meaning_vi": "Điểm tuy là bột giặt nhưng hoàn toàn không nói gì về việc giặt sạch vết bẩn."
         }
       ],
       "summary_vi": "Điểm gây ấn tượng kỳ lạ là quảng cáo bột giặt nhưng hoàn toàn không nói đến việc giặt sạch vết bẩn (câu s2, s3).",
@@ -3110,25 +3154,29 @@
           "id": "1",
           "text": "シーツを洗うための洗濯洗剤であること。",
           "correct": false,
-          "explanation_vi": "Khăn trải giường chỉ là hình ảnh minh họa trong quảng cáo chứ không phải công dụng giới hạn của bột giặt."
+          "explanation_vi": "Khăn trải giường chỉ là hình ảnh minh họa trong quảng cáo chứ không phải công dụng giới hạn của bột giặt.",
+          "meaning_vi": "Là bột giặt dùng để giặt khăn trải giường."
         },
         {
           "id": "2",
           "text": "洗濯洗剤「A」より値段がとても安いこと。",
           "correct": false,
-          "explanation_vi": "Giá thành của X không khác nhiều so với A (値段はあまり変わらない)."
+          "explanation_vi": "Giá thành của X không khác nhiều so với A (値段はあまり変わらない).",
+          "meaning_vi": "Là giá rẻ hơn nhiều so với bột giặt 'A'."
         },
         {
           "id": "3",
           "text": "どんな洗濯洗剤よりも汚れをよく落とすこと。",
           "correct": false,
-          "explanation_vi": "X không phải loại giặt sạch hơn tất cả các loại khác."
+          "explanation_vi": "X không phải loại giặt sạch hơn tất cả các loại khác.",
+          "meaning_vi": "Là giặt sạch vết bẩn tốt hơn bất kỳ loại bột giặt nào."
         },
         {
           "id": "4",
           "text": "香りを楽しめる洗濯洗剤であること。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s6: đặc trưng nổi bật của X là bên cạnh việc tẩy sạch vết bẩn thì người dùng còn có thể thưởng thức hương thơm dễ chịu (汚れを落とすだけでなく、香りも楽しめるのが特長だった)."
+          "explanation_vi": "Đúng với câu s6: đặc trưng nổi bật của X là bên cạnh việc tẩy sạch vết bẩn thì người dùng còn có thể thưởng thức hương thơm dễ chịu (汚れを落とすだけでなく、香りも楽しめるのが特長だった).",
+          "meaning_vi": "Là bột giặt có thể thưởng thức hương thơm."
         }
       ],
       "summary_vi": "Đặc trưng nổi trội là bột giặt có mùi thơm dễ chịu để thưởng thức (câu s6).",
@@ -3156,25 +3204,29 @@
           "id": "1",
           "text": "初めはあまり売れなかったが、よく売れるようになった。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s7 và s11: ban đầu X không bán chạy như kỳ vọng, nhưng sau khi đổi sang chiến dịch quảng cáo mới thì bán rất chạy (最初、「X」は期待していたようには売れなかった... それ以降、「X」もよく売れるようになった)."
+          "explanation_vi": "Đúng với câu s7 và s11: ban đầu X không bán chạy như kỳ vọng, nhưng sau khi đổi sang chiến dịch quảng cáo mới thì bán rất chạy (最初、「X」は期待していたようには売れなかった... それ以降、「X」もよく売れるようになった).",
+          "meaning_vi": "Lúc đầu không bán chạy lắm, nhưng sau đó đã bán chạy."
         },
         {
           "id": "2",
           "text": "初めはよく売れたが、あまり売れなくなった。",
           "correct": false,
-          "explanation_vi": "Ngược lại với diễn biến trong bài đọc."
+          "explanation_vi": "Ngược lại với diễn biến trong bài đọc.",
+          "meaning_vi": "Lúc đầu bán chạy, nhưng sau đó không còn bán chạy nữa."
         },
         {
           "id": "3",
           "text": "初めからずっとよく売れていた。",
           "correct": false,
-          "explanation_vi": "Ban đầu không bán chạy như kỳ vọng."
+          "explanation_vi": "Ban đầu không bán chạy như kỳ vọng.",
+          "meaning_vi": "Bán chạy liên tục từ đầu."
         },
         {
           "id": "4",
           "text": "初めからずっとあまり売れなかった。",
           "correct": false,
-          "explanation_vi": "Sau khi đổi quảng cáo thì sản phẩm bán rất chạy."
+          "explanation_vi": "Sau khi đổi quảng cáo thì sản phẩm bán rất chạy.",
+          "meaning_vi": "Không bán chạy lắm liên tục từ đầu."
         }
       ],
       "summary_vi": "Lúc đầu bán không chạy, nhưng sau đó đã bán rất chạy nhờ quảng cáo mới (câu s7, s11).",
@@ -3203,25 +3255,29 @@
           "id": "1",
           "text": "「私」には意味がわからなかったし、多くの消費者にも宣伝効果がなかったのだ。",
           "correct": false,
-          "explanation_vi": "Quảng cáo thực tế mang lại hiệu quả truyền thông rất lớn."
+          "explanation_vi": "Quảng cáo thực tế mang lại hiệu quả truyền thông rất lớn.",
+          "meaning_vi": "'Tôi' không hiểu ý nghĩa của nó, và đối với đông đảo người tiêu dùng nó cũng không có hiệu quả quảng bá."
         },
         {
           "id": "2",
           "text": "「私」は変なCMだと思っていたが、多くの消費者には宣伝効果があったのだ。",
           "correct": true,
-          "explanation_vi": "Đúng với câu kết s12: tác giả từng cảm thấy đó là quảng cáo kỳ quặc, nhưng đọc sách xong mới hiểu rằng thực tế nó đã phát huy hiệu quả tuyên truyền rất tốt đến số đông người tiêu dùng (私がちょっと変だと感じたあのCMは、実は十分に宣伝効果があったのだ)."
+          "explanation_vi": "Đúng với câu kết s12: tác giả từng cảm thấy đó là quảng cáo kỳ quặc, nhưng đọc sách xong mới hiểu rằng thực tế nó đã phát huy hiệu quả tuyên truyền rất tốt đến số đông người tiêu dùng (私がちょっと変だと感じたあのCMは、実は十分に宣伝効果があったのだ).",
+          "meaning_vi": "'Tôi' đã nghĩ đó là đoạn quảng cáo kỳ lạ, nhưng đối với đông đảo người tiêu dùng nó lại có hiệu quả quảng bá."
         },
         {
           "id": "3",
           "text": "「私」は効果的なCMだと思っていたし、多くの消費者にも宣伝効果があったのだ。",
           "correct": false,
-          "explanation_vi": "Ban đầu tác giả thấy đó là quảng cáo lạ lùng (変なCM) chứ không nghĩ là hiệu quả."
+          "explanation_vi": "Ban đầu tác giả thấy đó là quảng cáo lạ lùng (変なCM) chứ không nghĩ là hiệu quả.",
+          "meaning_vi": "'Tôi' đã nghĩ đó là đoạn quảng cáo hiệu quả, và đối với đông đảo người tiêu dùng nó cũng có hiệu quả quảng bá."
         },
         {
           "id": "4",
           "text": "「私」には印象的だったが、多くの消費者には宣伝効果がなかったのだ。",
           "correct": false,
-          "explanation_vi": "Sai vì quảng cáo đã mang lại hiệu quả xúc tiến bán hàng vượt trội."
+          "explanation_vi": "Sai vì quảng cáo đã mang lại hiệu quả xúc tiến bán hàng vượt trội.",
+          "meaning_vi": "Đối với 'tôi' nó để lại ấn tượng, nhưng đối với đông đảo người tiêu dùng nó không có hiệu quả quảng bá."
         }
       ],
       "summary_vi": "Từng nghĩ là quảng cáo kỳ cục nhưng thực chất lại mang lại hiệu quả quảng bá rất cao (câu s12).",
@@ -3249,25 +3305,29 @@
           "id": "1",
           "text": "①と②",
           "correct": false,
-          "explanation_vi": "Ca ① và ② diễn ra vào thứ Bảy (4/4), thời điểm Taro bận hoạt động câu lạc bộ nên không thể tham gia."
+          "explanation_vi": "Ca ① và ② diễn ra vào thứ Bảy (4/4), thời điểm Taro bận hoạt động câu lạc bộ nên không thể tham gia.",
+          "meaning_vi": "① và ②"
         },
         {
           "id": "2",
           "text": "②と③",
           "correct": false,
-          "explanation_vi": "Ca ② là thứ Bảy (bận câu lạc bộ) và ca ③ chỉ dành cho người từ 20 tuổi trở lên (Taro mới 17 tuổi)."
+          "explanation_vi": "Ca ② là thứ Bảy (bận câu lạc bộ) và ca ③ chỉ dành cho người từ 20 tuổi trở lên (Taro mới 17 tuổi).",
+          "meaning_vi": "② và ③"
         },
         {
           "id": "3",
           "text": "④と⑤",
           "correct": true,
-          "explanation_vi": "Đúng với thông báo: Taro rảnh ngày Chủ Nhật (5/4), đủ 17 tuổi (trên 16 tuổi) và ca ④ (9h-13h), ca ⑤ (13h-18h) không yêu cầu trên 20 tuổi, thỏa mãn điều kiện tham gia từ 2 ca trở lên."
+          "explanation_vi": "Đúng với thông báo: Taro rảnh ngày Chủ Nhật (5/4), đủ 17 tuổi (trên 16 tuổi) và ca ④ (9h-13h), ca ⑤ (13h-18h) không yêu cầu trên 20 tuổi, thỏa mãn điều kiện tham gia từ 2 ca trở lên.",
+          "meaning_vi": "④ và ⑤"
         },
         {
           "id": "4",
           "text": "⑤と⑥",
           "correct": false,
-          "explanation_vi": "Ca ⑥ chỉ dành riêng cho người từ 20 tuổi trở lên (③と⑥は20歳以上の方だけです), Taro 17 tuổi không đủ điều kiện tham gia ca này."
+          "explanation_vi": "Ca ⑥ chỉ dành riêng cho người từ 20 tuổi trở lên (③と⑥は20歳以上の方だけです), Taro 17 tuổi không đủ điều kiện tham gia ca này.",
+          "meaning_vi": "⑤ và ⑥"
         }
       ],
       "summary_vi": "Chủ Nhật Taro rảnh, đủ tuổi tham gia ca ④ và ⑤ (ca ③ và ⑥ yêu cầu từ 20 tuổi trở lên).",
@@ -3296,25 +3356,29 @@
           "id": "1",
           "text": "3月27日までになるべく早く市役所に郵便かファックスで申し込む。",
           "correct": true,
-          "explanation_vi": "Đúng với câu s8 và s9: hạn chót là 17h ngày 27/3, ưu tiên người nộp trước (先着順) nên cần đăng ký càng sớm càng tốt, hình thức gửi là qua đường bưu điện hoặc gửi fax tới Tòa thị chính (ファックスまたは郵送してください)."
+          "explanation_vi": "Đúng với câu s8 và s9: hạn chót là 17h ngày 27/3, ưu tiên người nộp trước (先着順) nên cần đăng ký càng sớm càng tốt, hình thức gửi là qua đường bưu điện hoặc gửi fax tới Tòa thị chính (ファックスまたは郵送してください).",
+          "meaning_vi": "Đăng ký với tòa thị chính qua đường bưu điện hoặc fax càng sớm càng tốt trước ngày 27/3."
         },
         {
           "id": "2",
           "text": "3月27日までの平日の午前9時から午後5時の間に電話で申し込む。",
           "correct": false,
-          "explanation_vi": "Số điện thoại chỉ để liên hệ giải đáp thắc mắc (問い合わせ先), không dùng để đăng ký trực tiếp."
+          "explanation_vi": "Số điện thoại chỉ để liên hệ giải đáp thắc mắc (問い合わせ先), không dùng để đăng ký trực tiếp.",
+          "meaning_vi": "Đăng ký qua điện thoại trong khoảng từ 9 giờ sáng đến 5 giờ chiều các ngày thường trước ngày 27/3."
         },
         {
           "id": "3",
           "text": "できるだけ早く山中市役所の市民課広田さんにEメールで申し込む。",
           "correct": false,
-          "explanation_vi": "Email chỉ là kênh giải đáp thắc mắc, không phải phương thức nộp đơn đăng ký."
+          "explanation_vi": "Email chỉ là kênh giải đáp thắc mắc, không phải phương thức nộp đơn đăng ký.",
+          "meaning_vi": "Đăng ký qua email càng sớm càng tốt cho anh Hirota ở Phòng Dân sự Tòa thị chính Yamanaka."
         },
         {
           "id": "4",
           "text": "市役所ホームページの応募用紙を使ってインターネットで申し込む。",
           "correct": false,
-          "explanation_vi": "Mẫu đơn có trên trang web nhưng phải in ra điền rồi gửi bưu điện hoặc fax, không có hình thức nộp trực tuyến qua mạng."
+          "explanation_vi": "Mẫu đơn có trên trang web nhưng phải in ra điền rồi gửi bưu điện hoặc fax, không có hình thức nộp trực tuyến qua mạng.",
+          "meaning_vi": "Đăng ký qua internet bằng phiếu đăng ký trên trang web của tòa thị chính."
         }
       ],
       "summary_vi": "Nộp đơn đăng ký qua bưu điện hoặc fax trước 27/3 càng sớm càng tốt (câu s8, s9).",
