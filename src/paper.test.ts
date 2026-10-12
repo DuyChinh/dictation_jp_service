@@ -196,4 +196,51 @@ describe("written part (paper.json) API", () => {
     expect(res.body.translation.sentences[0].vi).toBe("Chợ không chỉ là nơi tụ tập.");
     expect(res.body.translation.sentences[0].ja).toBe("市場はただ集まる場ではない。");
   });
+
+  it("loads and serves paper-only lessons (e.g. without listening.json)", async () => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), "paper-only-"));
+    try {
+      const lessonDir = path.join(root, "jlpt", "n3", "2025-07");
+      fs.mkdirSync(lessonDir, { recursive: true });
+      const paperOnlyData = {
+        schema_version: 1,
+        id: "jlpt-n3-2025-07-paper",
+        lesson_id: "jlpt-n3-2025-07",
+        status: "published",
+        content_version: 1,
+        source: { level: "N3", year: 2025, month: 7 },
+        items: [
+          {
+            id: "jlpt-n3-2025-07-v-q1", no: 1, part: "vocab", mondai: 1, type: "mcq",
+            stem: { ja: "問題。", vi: "Câu hỏi." }, choices: choices("1"),
+            summary_vi: "Tóm tắt.", point_tags: ["vocab:test"],
+          },
+        ],
+        passages: [],
+      };
+      fs.writeFileSync(path.join(lessonDir, "paper.json"), JSON.stringify(paperOnlyData));
+
+      const repo = new StaticContentRepository(root);
+      const { loaded, errors } = repo.load();
+      expect(errors).toEqual([]);
+      expect(loaded).toBe(1);
+
+      const paperApp = createApp(repo).app;
+
+      // Filter by level=N3
+      const listRes = await request(paperApp).get("/api/content/lessons?level=N3");
+      expect(listRes.status).toBe(200);
+      expect(listRes.body.lessons).toHaveLength(1);
+      expect(listRes.body.lessons[0].id).toBe("jlpt-n3-2025-07");
+      expect(listRes.body.lessons[0].source.level).toBe("N3");
+      expect(listRes.body.lessons[0].paper.counts).toEqual({ vocab: 1, grammar: 0, reading: 0 });
+
+      // Fetch paper practice
+      const paperRes = await request(paperApp).get("/api/content/lessons/jlpt-n3-2025-07/paper");
+      expect(paperRes.status).toBe(200);
+      expect(paperRes.body.paper.items).toHaveLength(1);
+    } finally {
+      fs.rmSync(root, { recursive: true, force: true });
+    }
+  });
 });

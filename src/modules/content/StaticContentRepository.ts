@@ -60,7 +60,7 @@ export class StaticContentRepository {
       return { loaded: 0, errors };
     }
 
-    const { packages, audioOnly } = findPackageDirs(this.contentRoot);
+    const { packages, paperOnly, audioOnly } = findPackageDirs(this.contentRoot);
     for (const dir of audioOnly) {
       this.lastProblems.push({ dir: this.relative(dir), messages: ["listening.json missing (audio only)"] });
     }
@@ -93,6 +93,54 @@ export class StaticContentRepository {
         ...(paper ? { paper } : {}),
       });
     }
+
+    for (const dir of paperOnly) {
+      // Skip known invalid test fixtures from catalog
+      if (dir.includes(`${path.sep}invalid-`)) continue;
+
+      const paper = this.loadPaper(dir, undefined, errors);
+      if (!paper) continue;
+
+      if (this.byId.has(paper.lesson_id)) {
+        errors.push(`duplicate lesson id: ${paper.lesson_id}`);
+        this.lastProblems.push({ dir: this.relative(dir), messages: [`duplicate lesson id: ${paper.lesson_id}`] });
+        continue;
+      }
+
+      const mp3Path = path.join(dir, "listening.mp3");
+      const audioPath = fs.existsSync(mp3Path) ? mp3Path : "";
+
+      const pkg: ListeningPackage = {
+        schema_version: 1,
+        id: paper.lesson_id,
+        status: paper.status,
+        content_version: paper.content_version,
+        title: {
+          ja: `JLPT ${paper.source.level} ${paper.source.year}年${paper.source.month}月`,
+          vi: `JLPT ${paper.source.level} ${paper.source.month}/${paper.source.year}`,
+          en: `JLPT ${paper.source.level} ${String(paper.source.month).padStart(2, "0")}/${paper.source.year}`,
+        },
+        source: {
+          type: "jlpt",
+          level: paper.source.level,
+          year: paper.source.year,
+          month: paper.source.month,
+        },
+        audio: {
+          file: audioPath ? path.basename(audioPath) : "",
+        },
+        speakers: [],
+        sections: [],
+      };
+
+      this.byId.set(paper.lesson_id, {
+        package: pkg,
+        dir,
+        audioPath,
+        paper,
+      });
+    }
+
     return { loaded: this.byId.size, errors };
   }
 
@@ -100,7 +148,7 @@ export class StaticContentRepository {
    * paper.json is optional and never blocks the listening lesson: a broken one is reported in
    * `problems()` and the lesson simply has no written part.
    */
-  private loadPaper(dir: string, lessonId: string, errors: string[]): PaperPackage | null {
+  private loadPaper(dir: string, lessonId: string | undefined, errors: string[]): PaperPackage | null {
     const file = path.join(dir, "paper.json");
     if (!fs.existsSync(file)) return null;
     const fail = (messages: string[]) => {
@@ -118,7 +166,7 @@ export class StaticContentRepository {
     if (!parsed.success) {
       return fail(parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`));
     }
-    if (parsed.data.lesson_id !== lessonId) {
+    if (lessonId && parsed.data.lesson_id !== lessonId) {
       return fail([`lesson_id ${parsed.data.lesson_id} does not match ${lessonId}`]);
     }
     const blocking = checkPaper(parsed.data).filter((i) => i.severity === "ERROR");
@@ -206,9 +254,14 @@ export class StaticContentRepository {
   }
 }
 
-/** Folders holding a listening.json, and folders with audio but no listening.json. */
-function findPackageDirs(root: string): { packages: string[]; audioOnly: string[] } {
+/** Folders holding a listening.json, folders holding only paper.json, and folders with audio but no json. */
+function findPackageDirs(root: string): {
+  packages: string[];
+  paperOnly: string[];
+  audioOnly: string[];
+} {
   const packages: string[] = [];
+  const paperOnly: string[] = [];
   const audioOnly: string[] = [];
   function walk(dir: string): void {
     let entries: fs.Dirent[];
@@ -217,15 +270,26 @@ function findPackageDirs(root: string): { packages: string[]; audioOnly: string[
     } catch {
       return;
     }
-    if (entries.some((e) => e.isFile() && e.name === "listening.json")) {
+    const hasListening = entries.some((e) => e.isFile() && e.name === "listening.json");
+    const hasPaper = entries.some((e) => e.isFile() && e.name === "paper.json");
+    const hasMp3 = entries.some((e) => e.isFile() && e.name.endsWith(".mp3"));
+
+    if (hasListening) {
       packages.push(dir);
-    } else if (entries.some((e) => e.isFile() && e.name.endsWith(".mp3"))) {
+      return;
+    }
+    if (hasPaper) {
+      paperOnly.push(dir);
+      return;
+    }
+    if (hasMp3) {
       audioOnly.push(dir);
+      return;
     }
     for (const e of entries) {
-      if (e.isDirectory()) walk(path.join(dir, e.name));
+      if (e.isDirectory() && !e.name.startsWith(".")) walk(path.join(dir, e.name));
     }
   }
   walk(root);
-  return { packages, audioOnly };
+  return { packages, paperOnly, audioOnly };
 }
