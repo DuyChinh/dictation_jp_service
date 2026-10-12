@@ -3,6 +3,7 @@ import { createApp } from "./app.js";
 import { connectMongo } from "./database/mongo.js";
 import { seedAdmin } from "./modules/admin/adminAuth.js";
 import { loadHiddenLessons } from "./modules/admin/routes/contentRoutes.js";
+import { startLeaderboardJobs } from "./modules/leaderboard/leaderboardService.js";
 
 assertConfig();
 
@@ -13,6 +14,7 @@ async function main() {
     await connectMongo();
     await seedAdmin();
     await loadHiddenLessons(contentRepo);
+    await startLeaderboardJobs();
   } catch (e) {
     console.error("[mongo] connection failed:", e);
     if (config.nodeEnv === "production") process.exit(1);

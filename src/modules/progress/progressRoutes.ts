@@ -8,6 +8,7 @@ import { ListeningAnswer } from "../../models/ListeningAnswer.js";
 import { LessonActivity } from "../../models/LessonActivity.js";
 import { ListeningAttempt } from "../../models/ListeningAttempt.js";
 import { ExamHistory } from "../../models/ExamHistory.js";
+import { awardPoints, POINTS } from "../leaderboard/leaderboardService.js";
 
 /** Attempts kept per lesson and returned per request; older ones drop off. */
 const ATTEMPTS_PER_LESSON = 50;
@@ -202,6 +203,10 @@ export function createProgressRouter(): Router {
         return res.status(400).json({ error: { message: "Missing required fields" } });
       }
 
+      // A segment pays out once: the first time it is answered correctly.
+      const wasCorrect =
+        status === "correct" && !!(await Progress.exists({ userId, lessonId: lesson_id, segmentId: segment_id, status: "correct" }));
+
       const updated = await Progress.findOneAndUpdate(
         { userId, lessonId: lesson_id, segmentId: segment_id },
         {
@@ -215,6 +220,8 @@ export function createProgressRouter(): Router {
         },
         { upsert: true, new: true, setDefaultsOnInsert: true }
       );
+
+      if (status === "correct" && !wasCorrect) await awardPoints(userId, POINTS.dictationCorrect);
 
       return res.json({ success: true, progress: updated });
     } catch (err: any) {
@@ -432,6 +439,8 @@ export function createProgressRouter(): Router {
         return res.status(400).json({ error: { message: "Missing required fields" } });
       }
 
+      const isFirstAnswer = !(await ListeningAnswer.exists({ userId, lessonId: str(lesson_id, 200), questionId: str(question_id, 200) }));
+
       const saved = await ListeningAnswer.findOneAndUpdate(
         { userId, lessonId: str(lesson_id, 200), questionId: str(question_id, 200) },
         {
@@ -444,6 +453,8 @@ export function createProgressRouter(): Router {
         },
         { upsert: true, new: true, setDefaultsOnInsert: true }
       );
+
+      if (isFirstAnswer) await awardPoints(userId, correct ? POINTS.listeningCorrect : POINTS.listeningWrong);
 
       return res.json({ success: true, answer: saved });
     } catch (err: any) {
@@ -471,6 +482,21 @@ export function createProgressRouter(): Router {
     } catch (err: any) {
       console.error("Clear listening answers error:", err);
       return res.status(500).json({ error: { message: err.message || "Failed to clear answers" } });
+    }
+  });
+
+  // Clear a lesson's dictation progress so the learner can start it over
+  r.delete("/lesson/:lessonId", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) {
+        return res.status(200).json({ success: true, localOnly: true });
+      }
+      const { deletedCount } = await Progress.deleteMany({ userId, lessonId: req.params.lessonId });
+      return res.json({ success: true, deleted: deletedCount });
+    } catch (err: any) {
+      console.error("Clear dictation progress error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to clear progress" } });
     }
   });
 
@@ -619,6 +645,8 @@ export function createProgressRouter(): Router {
       const correct = num(b.correct);
       const result = b.result && typeof b.result === "object" ? b.result : undefined;
 
+      const isNewSitting = !(await ExamHistory.exists({ userId, lessonId, startedAt }));
+
       await ExamHistory.findOneAndUpdate(
         { userId, lessonId, startedAt },
         {
@@ -634,6 +662,10 @@ export function createProgressRouter(): Router {
         },
         { upsert: true, new: true }
       );
+
+      if (isNewSitting && answered > 0) {
+        await awardPoints(userId, POINTS.examSitting + Math.min(Math.max(correct, 0), total) * POINTS.examCorrect);
+      }
 
       return res.json({ success: true });
     } catch (err: any) {

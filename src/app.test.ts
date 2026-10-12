@@ -8,6 +8,7 @@ import { createApp } from "./app.js";
 import { config } from "./config.js";
 import { canAccess } from "./modules/admin/permissions.js";
 import { ExamHistory } from "./models/ExamHistory.js";
+import { LeaderboardDaily, LeaderboardEntry } from "./models/LeaderboardEntry.js";
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -193,6 +194,55 @@ describe("backend content + evaluate API", () => {
     expect(save.body.localOnly).toBe(true);
   });
 
+  it("lists the leaderboard and marks the caller's own row", async () => {
+    const token = jwt.sign({ userId: "64b000000000000000000001" }, config.jwtSecret);
+    const rows = [
+      { _id: "a", name: "Top Learner", points: 5000 },
+      { _id: "b", name: "Me", points: 1200, avatar: "https://img/x.png" },
+    ];
+    const findSpy = vi.spyOn(LeaderboardEntry, "find").mockReturnValue({
+      sort: () => ({ skip: () => ({ limit: () => ({ lean: () => Promise.resolve(rows) }) }) }),
+    } as any);
+    const countSpy = vi.spyOn(LeaderboardEntry, "countDocuments").mockImplementation((async (q: any) =>
+      q?.$or ? 1 : 200) as any);
+    const oneSpy = vi.spyOn(LeaderboardEntry, "findOne").mockReturnValue({
+      lean: () => Promise.resolve(rows[1]),
+    } as any);
+
+    const res = await request(app).get("/api/leaderboard?limit=2").set("Authorization", `Bearer ${token}`);
+    expect(res.status).toBe(200);
+    expect(res.body.total).toBe(200);
+    expect(res.body.entries.map((e: any) => [e.rank, e.isMe])).toEqual([
+      [1, false],
+      [2, true],
+    ]);
+    expect(res.body.entries[0]).not.toHaveProperty("userId");
+    expect(res.body.me).toMatchObject({ rank: 2, points: 1200 });
+
+    const weekly = vi.spyOn(LeaderboardDaily, "aggregate").mockImplementation((async (stages: any[]) => {
+      if (stages.some((st) => st.$facet)) {
+        return [{ rows: [{ _id: "b", points: 340, name: "Me", avatar: null }], total: [{ n: 57 }] }];
+      }
+      if (stages.some((st) => st.$count)) return [{ n: 11 }];
+      return [{ points: 340 }];
+    }) as any);
+    const week = await request(app).get("/api/leaderboard?period=week&limit=5").set("Authorization", `Bearer ${token}`);
+    expect(week.status).toBe(200);
+    expect(week.body.total).toBe(57);
+    expect(week.body.participants).toBe(200);
+    expect(week.body.entries).toEqual([{ rank: 1, name: "Me", avatar: null, points: 340, isMe: true }]);
+    expect(week.body.me).toMatchObject({ rank: 12, points: 340 });
+    weekly.mockRestore();
+
+    const guest = await request(app).get("/api/leaderboard");
+    expect(guest.status).toBe(200);
+    expect(guest.body.me).toBeNull();
+
+    findSpy.mockRestore();
+    countSpy.mockRestore();
+    oneSpy.mockRestore();
+  });
+
   it("manages exam history for authenticated learner in DB", async () => {
     const learnerToken = jwt.sign({ userId: "64b000000000000000000001", email: "a@example.com" }, config.jwtSecret);
     const mockRow = {
@@ -222,6 +272,9 @@ describe("backend content + evaluate API", () => {
     expect(list.body.history[0].result).toBeDefined();
 
     const updateSpy = vi.spyOn(ExamHistory, "findOneAndUpdate").mockResolvedValue({} as any);
+    const existsSpy = vi.spyOn(ExamHistory, "exists").mockResolvedValue(null);
+    const awardSpy = vi.spyOn(LeaderboardEntry, "findOneAndUpdate").mockResolvedValue({ _id: "e1", lastGain: 500 } as any);
+    const dailySpy = vi.spyOn(LeaderboardDaily, "updateOne").mockResolvedValue({} as any);
     const save = await request(app)
       .post("/api/progress/exam-history")
       .set("Authorization", `Bearer ${learnerToken}`)
@@ -238,6 +291,16 @@ describe("backend content + evaluate API", () => {
     expect(save.status).toBe(200);
     expect(save.body.success).toBe(true);
     expect(updateSpy).toHaveBeenCalled();
+    // A new sitting earns points: 50 for taking it plus 5 for each of the 90 right answers.
+    expect(awardSpy).toHaveBeenCalledTimes(1);
+    expect(JSON.stringify(awardSpy.mock.calls[0]![1])).toContain("500");
+    expect(dailySpy).toHaveBeenCalledWith({ entryId: "e1", day: expect.any(String) }, { $inc: { points: 500 } }, { upsert: true });
+    existsSpy.mockResolvedValue({ _id: "x" } as any);
+    await request(app)
+      .post("/api/progress/exam-history")
+      .set("Authorization", `Bearer ${learnerToken}`)
+      .send({ lessonId: "jlpt-n2-2022-07", startedAt: 1000, submittedAt: 5000, total: 105, answered: 105, correct: 90 });
+    expect(awardSpy).toHaveBeenCalledTimes(1);
 
     const deleteSpy = vi.spyOn(ExamHistory, "deleteOne").mockResolvedValue({ deletedCount: 1 } as any);
     const del = await request(app)
@@ -258,6 +321,9 @@ describe("backend content + evaluate API", () => {
 
     findSpy.mockRestore();
     updateSpy.mockRestore();
+    existsSpy.mockRestore();
+    awardSpy.mockRestore();
+    dailySpy.mockRestore();
     deleteSpy.mockRestore();
     bulkSpy.mockRestore();
   });

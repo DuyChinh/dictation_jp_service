@@ -62,6 +62,8 @@ export const config = {
     apiKey: process.env.CLOUDINARY_API_KEY || "",
     apiSecret: process.env.CLOUDINARY_API_SECRET || "",
   },
+  /** Demo learners on the leaderboard; set LEADERBOARD_SEED=off to hide them (their rows are kept). */
+  leaderboardSeed: !["off", "false", "0"].includes((process.env.LEADERBOARD_SEED ?? "on").trim().toLowerCase()),
   corsOrigins: (process.env.CORS_ORIGINS ?? "http://localhost:5173")
     .split(",")
     .map((s) => s.trim())

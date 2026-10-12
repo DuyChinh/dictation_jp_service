@@ -19,6 +19,7 @@ import { createAuthRouter } from "./modules/auth/authRoutes.js";
 import { createProgressRouter } from "./modules/progress/progressRoutes.js";
 import { createAdminRouter } from "./modules/admin/adminRoutes.js";
 import { createFeedbackRouter } from "./modules/feedback/feedbackRoutes.js";
+import { createLeaderboardRouter } from "./modules/leaderboard/leaderboardRoutes.js";
 export function createApp(repo?: StaticContentRepository) {
   const contentRepo = repo ?? new StaticContentRepository(config.contentRoot);
   if (!repo) {
@@ -63,6 +64,7 @@ export function createApp(repo?: StaticContentRepository) {
   app.use("/api/auth", createAuthRouter());
   app.use("/api/progress", createProgressRouter());
   app.use("/api/feedback", createFeedbackRouter());
+  app.use("/api/leaderboard", createLeaderboardRouter());
   app.use("/api/admin", createAdminRouter(contentRepo, config));
 
   app.use(

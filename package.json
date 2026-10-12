@@ -7,7 +7,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "tsx watch src/server.ts",
+    "dev": "nodemon",
     "build": "npx tsc -p packages/evaluation/tsconfig.json && npx tsc -p packages/content-schema/tsconfig.json && npx tsc -p tsconfig.json && ([ -L node_modules/@jd/evaluation ] || (mkdir -p node_modules/@jd/evaluation && cp -r packages/evaluation/dist node_modules/@jd/evaluation/)) && ([ -L node_modules/@jd/content-schema ] || (mkdir -p node_modules/@jd/content-schema && cp -r packages/content-schema/dist node_modules/@jd/content-schema/))",
     "start": "node dist/server.js",
     "typecheck": "npx tsc -p tsconfig.json --noEmit",
@@ -35,8 +35,9 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@types/supertest": "^6.0.2",
     "@types/bcryptjs": "^2.4.6",
+    "@types/supertest": "^6.0.2",
+    "nodemon": "^3.1.14",
     "supertest": "^7.0.0",
     "tsx": "^4.19.2",
     "vitest": "^3.0.5"
