@@ -7,7 +7,7 @@
   "month": 7
  },
  "status": "published",
- "review_note": "Đáp án 問題3, 4, 5 theo bảng đáp án nguồn. 問題1 và 問題2 chưa có phương án in trong đề nên chưa gắn đáp án (bảng nguồn đã có, sẽ gắn khi có phương án). Chưa có hình minh họa cho 問題4.",
+ "review_note": "Đáp án 問題1-5 theo bảng đáp án nguồn; phương án in của 問題1, 2 chép từ hình đề trong video nghe, các đáp án khoanh tròn trong video khớp với bảng. Chưa có hình minh họa cho 問題4.",
  "speakers": {
   "speaker": {
    "ja": "話し手",
@@ -112,7 +112,59 @@
        "男の留学生はこの後まず何をしますか。",
        "Sau đó, du học sinh nam sẽ làm gì trước tiên?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "生地を麺棒で丸く伸ばす",
+       "vi": "Cán bột thành hình tròn bằng cây cán",
+       "en": "Roll the dough out round with a rolling pin",
+       "image": {
+        "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908753/jlpt/n3/2024-07/m1-q1-c1.png"
+       }
+      },
+      {
+       "id": "2",
+       "ja": "ピザソースを塗る",
+       "vi": "Phết sốt pizza",
+       "en": "Spread the pizza sauce",
+       "image": {
+        "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908755/jlpt/n3/2024-07/m1-q1-c2.png"
+       }
+      },
+      {
+       "id": "3",
+       "ja": "ピーマンとソーセージを切る",
+       "vi": "Cắt ớt chuông và xúc xích",
+       "en": "Cut the bell pepper and sausage",
+       "image": {
+        "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908756/jlpt/n3/2024-07/m1-q1-c3.png"
+       }
+      },
+      {
+       "id": "4",
+       "ja": "切った具をピザにのせる",
+       "vi": "Đặt nguyên liệu đã cắt lên pizza",
+       "en": "Put the cut toppings on the pizza",
+       "image": {
+        "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908758/jlpt/n3/2024-07/m1-q1-c4.png"
+       }
+      }
+     ],
+     "mode": "image",
+     "answer": "2",
+     "evidence": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "why": {
+      "1": "Sai: bột pizza có loại đông lạnh làm sẵn nên không cần cán bột.",
+      "2": "Đúng: người mẹ nhờ phết sốt pizza lên trước và cậu nhận lời \"はい\".",
+      "3": "Sai: việc cắt xúc xích và ớt chuông do người mẹ nói \"私、切るね\".",
+      "4": "Sai: đặt phần đã cắt lên là bước sau khi phết sốt."
+     }
     },
     {
      "no": 2,
@@ -172,7 +224,45 @@
        "女の人は資料をどのように直しますか。",
        "Người phụ nữ sẽ sửa tài liệu như thế nào?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "グラフの説明を消す",
+       "vi": "Xóa phần giải thích biểu đồ",
+       "en": "Delete the explanations of the graphs"
+      },
+      {
+       "id": "2",
+       "ja": "グラフの説明を詳しくする",
+       "vi": "Viết giải thích biểu đồ chi tiết hơn",
+       "en": "Make the graph explanations more detailed"
+      },
+      {
+       "id": "3",
+       "ja": "グラフを増やす",
+       "vi": "Thêm biểu đồ",
+       "en": "Add more graphs"
+      },
+      {
+       "id": "4",
+       "ja": "グラフを減らす",
+       "vi": "Giảm bớt biểu đồ",
+       "en": "Reduce the number of graphs"
+      }
+     ],
+     "answer": "1",
+     "evidence": [
+      5,
+      8,
+      9
+     ],
+     "why": {
+      "1": "Đúng: trưởng phòng bảo bỏ phần giải thích, chỉ để tiêu đề, và cô nhận lời.",
+      "2": "Sai: trưởng phòng nói phần giải thích đã quá dài, không bảo viết chi tiết hơn.",
+      "3": "Sai: nhiều biểu đồ là điểm được khen, không ai bảo thêm.",
+      "4": "Sai: không bảo giảm biểu đồ, chỉ bảo bỏ phần giải thích."
+     }
     },
     {
      "no": 3,
@@ -247,7 +337,46 @@
        "男の留学生は何をしなければなりませんか。",
        "Du học sinh nam phải làm gì?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "授業中に発表する",
+       "vi": "Thuyết trình trong giờ học",
+       "en": "Give the presentation during class"
+      },
+      {
+       "id": "2",
+       "ja": "先生の部屋で発表する",
+       "vi": "Thuyết trình ở phòng giáo viên",
+       "en": "Give the presentation in the teacher's room"
+      },
+      {
+       "id": "3",
+       "ja": "レポートを書いて出す",
+       "vi": "Viết báo cáo rồi nộp",
+       "en": "Write a report and hand it in"
+      },
+      {
+       "id": "4",
+       "ja": "発表をビデオに録って出す",
+       "vi": "Quay video bài thuyết trình rồi nộp",
+       "en": "Record the presentation on video and hand it in"
+      }
+     ],
+     "answer": "4",
+     "evidence": [
+      6,
+      8,
+      10,
+      12
+     ],
+     "why": {
+      "1": "Sai: cậu phải về nước sớm một tuần nên không thể thuyết trình trong giờ cuối.",
+      "2": "Sai: cô nói không thu xếp được thời gian để cậu thuyết trình ở phòng cô.",
+      "3": "Sai: cô nói báo cáo không thể thay cho thuyết trình.",
+      "4": "Đúng: cô bảo quay video bài thuyết trình trước khi về nước rồi nộp, và cậu đồng ý."
+     }
     },
     {
      "no": 4,
@@ -352,7 +481,46 @@
        "男の人はこの後まず何をしなければなりませんか。",
        "Sau đó, người đàn ông trước tiên phải làm gì?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "出張の報告を出す",
+       "vi": "Nộp báo cáo chuyến công tác",
+       "en": "Hand in the business trip report"
+      },
+      {
+       "id": "2",
+       "ja": "資料を探す",
+       "vi": "Tìm tài liệu",
+       "en": "Look for the materials"
+      },
+      {
+       "id": "3",
+       "ja": "西田さんに連絡する",
+       "vi": "Liên lạc với anh Nishida",
+       "en": "Contact Mr. Nishida"
+      },
+      {
+       "id": "4",
+       "ja": "会議室にいすを運ぶ",
+       "vi": "Mang ghế vào phòng họp",
+       "en": "Carry chairs to the meeting room"
+      }
+     ],
+     "answer": "4",
+     "evidence": [
+      6,
+      7,
+      15,
+      16
+     ],
+     "why": {
+      "1": "Sai: báo cáo công tác phải nộp trong hôm nay, nhưng trước hết anh được nhờ giúp việc chuẩn bị họp.",
+      "2": "Sai: tìm tài liệu là việc người phụ nữ nói cô sẽ làm khi liên lạc được.",
+      "3": "Sai: liên lạc với anh Nishida cũng là việc người phụ nữ tự làm.",
+      "4": "Đúng: anh được nhờ mang khoảng 15 cái ghế từ phòng khác sang phòng họp trước."
+     }
     },
     {
      "no": 5,
@@ -427,7 +595,47 @@
        "女の学生は何を買いますか。",
        "Nữ sinh viên sẽ mua gì?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "洗剤とゴミ袋",
+       "vi": "Nước tẩy rửa và túi rác",
+       "en": "Detergent and garbage bags"
+      },
+      {
+       "id": "2",
+       "ja": "洗剤と蛍光灯",
+       "vi": "Nước tẩy rửa và bóng đèn huỳnh quang",
+       "en": "Detergent and a fluorescent light"
+      },
+      {
+       "id": "3",
+       "ja": "雑巾とゴミ袋",
+       "vi": "Giẻ lau và túi rác",
+       "en": "Cleaning cloths and garbage bags"
+      },
+      {
+       "id": "4",
+       "ja": "雑巾と蛍光灯",
+       "vi": "Giẻ lau và bóng đèn huỳnh quang",
+       "en": "Cleaning cloths and a fluorescent light"
+      }
+     ],
+     "answer": "1",
+     "evidence": [
+      4,
+      6,
+      7,
+      8,
+      12
+     ],
+     "why": {
+      "1": "Đúng: cô mua nước tẩy rửa và túi rác; giẻ lau dùng khăn cũ ở nhà, còn bóng đèn thì nam sinh viên sẽ nhờ trường thay.",
+      "2": "Sai: bóng đèn huỳnh quang do nam sinh viên liên lạc với trường để thay, cô không mua.",
+      "3": "Sai: giẻ lau lấy từ khăn cũ ở nhà cô nên không phải mua.",
+      "4": "Sai: cả giẻ lau lẫn bóng đèn đều không phải do cô mua."
+     }
     },
     {
      "no": 6,
@@ -472,7 +680,43 @@
        "新入社員は今日何をしますか。",
        "Hôm nay nhân viên mới sẽ làm gì?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "工場を見学する",
+       "vi": "Tham quan nhà máy",
+       "en": "Tour the factory"
+      },
+      {
+       "id": "2",
+       "ja": "製品の作り方を覚える",
+       "vi": "Học cách làm sản phẩm",
+       "en": "Learn how the products are made"
+      },
+      {
+       "id": "3",
+       "ja": "仕事での話し方を練習する",
+       "vi": "Luyện cách nói chuyện trong công việc",
+       "en": "Practise how to speak at work"
+      },
+      {
+       "id": "4",
+       "ja": "商品の発表会に行く",
+       "vi": "Đi đến buổi giới thiệu sản phẩm",
+       "en": "Go to the product presentation"
+      }
+     ],
+     "answer": "3",
+     "evidence": [
+      5
+     ],
+     "why": {
+      "1": "Sai: tham quan nhà máy là việc đã làm từ tuần trước.",
+      "2": "Sai: cách làm sản phẩm đã được hiểu qua buổi tham quan nhà máy, không phải việc hôm nay.",
+      "3": "Đúng: hôm nay mời giáo viên để luyện kính ngữ và cách dùng từ khi làm việc.",
+      "4": "Sai: buổi giới thiệu sản phẩm mới là việc của ngày mai."
+     }
     }
    ]
   },
@@ -552,7 +796,45 @@
        "女の人はどうして先生になったと言っていますか。",
        "Người phụ nữ nói vì sao cô trở thành giáo viên?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "子どもが好きだから",
+       "vi": "Vì thích trẻ con",
+       "en": "Because she likes children"
+      },
+      {
+       "id": "2",
+       "ja": "親の仕事がおもしろそうだったから",
+       "vi": "Vì công việc của bố mẹ trông thú vị",
+       "en": "Because her parents' job looked interesting"
+      },
+      {
+       "id": "3",
+       "ja": "教えるのが好きだから",
+       "vi": "Vì thích dạy học",
+       "en": "Because she likes teaching"
+      },
+      {
+       "id": "4",
+       "ja": "あこがれる先生がいたから",
+       "vi": "Vì có một thầy cô cô ngưỡng mộ",
+       "en": "Because there was a teacher she admired"
+      }
+     ],
+     "answer": "4",
+     "evidence": [
+      8,
+      9,
+      10
+     ],
+     "why": {
+      "1": "Sai: chính người đàn ông nói cô không có ấn tượng thích trẻ con, và cô đồng ý; đó không phải lý do.",
+      "2": "Sai: bố mẹ làm giáo viên và trông vất vả, hồi nhỏ cô còn nghĩ nghề giáo thì thôi.",
+      "3": "Sai: khi được hỏi có phải vì thích dạy không, cô trả lời \"そうじゃなくて\", cô từng ghét học.",
+      "4": "Đúng: cô giáo chủ nhiệm lớp 6 rất thú vị nên cô thích học và muốn trở thành giáo viên như vậy."
+     }
     },
     {
      "no": 2,
@@ -622,7 +904,45 @@
        "男の人は今回の旅行で何が一番印象に残っていると言っていますか。",
        "Người đàn ông nói điều gì ấn tượng nhất trong chuyến du lịch lần này?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "おいしいレストランで食事したこと",
+       "vi": "Được ăn ở một nhà hàng ngon",
+       "en": "Eating at a delicious restaurant"
+      },
+      {
+       "id": "2",
+       "ja": "親切な運転手と知り合ったこと",
+       "vi": "Quen được một tài xế tử tế",
+       "en": "Getting to know a kind driver"
+      },
+      {
+       "id": "3",
+       "ja": "森できれいな湖を見たこと",
+       "vi": "Nhìn thấy một hồ nước đẹp trong rừng",
+       "en": "Seeing a beautiful lake in the forest"
+      },
+      {
+       "id": "4",
+       "ja": "自然の中で子どもたちと遊んだこと",
+       "vi": "Chơi cùng bọn trẻ giữa thiên nhiên",
+       "en": "Playing with children in nature"
+      }
+     ],
+     "answer": "3",
+     "evidence": [
+      7,
+      8,
+      10
+     ],
+     "why": {
+      "1": "Sai: nhà hàng ngon do tài xế giới thiệu, nhưng không phải điều anh nói đọng lại nhất.",
+      "2": "Sai: tài xế tử tế có được nhắc tới, nhưng điều đọng lại nhất là cái hồ trong rừng.",
+      "3": "Đúng: anh thấy một cái hồ màu xanh đẹp chưa từng thấy trong rừng và nói đó là điều đọng lại nhất.",
+      "4": "Sai: cảnh bọn trẻ chơi chỉ là điều anh \"cũng thấy hay\", không phải điều ấn tượng nhất."
+     }
     },
     {
      "no": 3,
@@ -697,7 +1017,44 @@
        "男の学生はどうして女の学生を駅前のカフェに誘っていますか。",
        "Vì sao nam sinh viên mời nữ sinh viên đến quán cà phê trước ga?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "山田さんが猫と遊びたがっていたから",
+       "vi": "Vì Yamada muốn chơi với mèo",
+       "en": "Because Yamada wanted to play with cats"
+      },
+      {
+       "id": "2",
+       "ja": "新しくて人気のカフェだから",
+       "vi": "Vì đó là quán mới và nổi tiếng",
+       "en": "Because it is a new and popular café"
+      },
+      {
+       "id": "3",
+       "ja": "山田さんがアルバイトを探しているから",
+       "vi": "Vì Yamada đang tìm việc làm thêm",
+       "en": "Because Yamada is looking for a part-time job"
+      },
+      {
+       "id": "4",
+       "ja": "カフェにいる猫を見てほしいから",
+       "vi": "Vì muốn Yamada xem những chú mèo ở quán",
+       "en": "Because he wants her to see the cats at the café"
+      }
+     ],
+     "answer": "4",
+     "evidence": [
+      8,
+      9
+     ],
+     "why": {
+      "1": "Sai: nam sinh viên chỉ nhắc Yamada muốn nuôi mèo, không nói cô muốn chơi với mèo.",
+      "2": "Sai: quán mới mở được nhắc tới nhưng không phải lý do mời Yamada.",
+      "3": "Sai: người làm thêm ở quán là nam sinh viên, không phải Yamada.",
+      "4": "Đúng: anh muốn cô đến xem những chú mèo ở quán vì chúng rất dễ thương."
+     }
     },
     {
      "no": 4,
@@ -747,7 +1104,44 @@
        "南ショッピングセンターで今年海外からの客のために始めたことは何ですか。",
        "Năm nay, Trung tâm mua sắm Minami đã bắt đầu làm gì cho khách từ nước ngoài?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "空港からの無料のバス",
+       "vi": "Xe buýt miễn phí từ sân bay",
+       "en": "Free buses from the airport"
+      },
+      {
+       "id": "2",
+       "ja": "浴衣が着られるサービス",
+       "vi": "Dịch vụ cho mặc yukata",
+       "en": "A service where you can wear a yukata"
+      },
+      {
+       "id": "3",
+       "ja": "折り紙の教室",
+       "vi": "Lớp học gấp giấy origami",
+       "en": "An origami class"
+      },
+      {
+       "id": "4",
+       "ja": "漫画やアニメの紹介",
+       "vi": "Giới thiệu truyện tranh và anime",
+       "en": "An introduction to manga and anime"
+      }
+     ],
+     "answer": "2",
+     "evidence": [
+      5,
+      6
+     ],
+     "why": {
+      "1": "Sai: xe buýt miễn phí từ sân bay là việc của các khách sạn.",
+      "2": "Đúng: năm nay trung tâm bắt đầu dịch vụ cho thuê yukata.",
+      "3": "Sai: lớp học origami đã bắt đầu từ năm ngoái.",
+      "4": "Sai: góc giới thiệu truyện tranh, anime cũng bắt đầu từ năm ngoái."
+     }
     },
     {
      "no": 5,
@@ -822,7 +1216,45 @@
        "男の生徒はダンスが上手になるために何をしたのが一番よかったと言っていますか。",
        "Nam học sinh nói làm gì là tốt nhất để nhảy giỏi hơn?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "うまい人の動きを多く見たこと",
+       "vi": "Xem nhiều chuyển động của người nhảy giỏi",
+       "en": "Watching a lot of skilled dancers move"
+      },
+      {
+       "id": "2",
+       "ja": "足の動きを集中して練習したこと",
+       "vi": "Tập trung luyện động tác chân",
+       "en": "Practising only the footwork"
+      },
+      {
+       "id": "3",
+       "ja": "音楽をよく聞くようにしたこと",
+       "vi": "Cố gắng nghe nhạc thật kỹ",
+       "en": "Listening carefully to the music"
+      },
+      {
+       "id": "4",
+       "ja": "鏡で自分の動きを見たこと",
+       "vi": "Nhìn động tác của mình qua gương",
+       "en": "Checking his own movements in a mirror"
+      }
+     ],
+     "answer": "1",
+     "evidence": [
+      4,
+      6,
+      10
+     ],
+     "why": {
+      "1": "Đúng: anh nói việc xem nhiều người khác nhảy là điều có ích nhất với anh.",
+      "2": "Sai: luyện riêng động tác chân là cách của một số bạn nhảy khác.",
+      "3": "Sai: cố gắng nghe nhạc kỹ là cách của nhiều người khác chứ không phải điều anh thấy tốt nhất.",
+      "4": "Sai: anh cũng xem qua gương nhưng nói chỉ vậy thì chưa đủ."
+     }
     },
     {
      "no": 6,
@@ -872,7 +1304,43 @@
        "大学の図書館ではいつから本が借りられなくなりますか。",
        "Từ khi nào sách ở thư viện đại học không thể mượn được nữa?"
       ]
-     ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "9月4日",
+       "vi": "Ngày 4 tháng 9",
+       "en": "September 4"
+      },
+      {
+       "id": "2",
+       "ja": "9月5日",
+       "vi": "Ngày 5 tháng 9",
+       "en": "September 5"
+      },
+      {
+       "id": "3",
+       "ja": "9月26日",
+       "vi": "Ngày 26 tháng 9",
+       "en": "September 26"
+      },
+      {
+       "id": "4",
+       "ja": "9月27日",
+       "vi": "Ngày 27 tháng 9",
+       "en": "September 27"
+      }
+     ],
+     "answer": "2",
+     "evidence": [
+      5
+     ],
+     "why": {
+      "1": "Sai: 4/9 là ngày cuối cùng còn mượn được sách.",
+      "2": "Đúng: mượn được đến hết 4/9, từ hôm sau là 5/9 thì không còn mượn được.",
+      "3": "Sai: 26/9 là ngày thư viện dùng lại được.",
+      "4": "Sai: 27/9 là ngày bắt đầu học kỳ mới."
+     }
     }
    ]
   },

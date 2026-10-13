@@ -342,7 +342,76 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "生地を麺棒で丸く伸ばす",
+                "vi": "Cán bột thành hình tròn bằng cây cán",
+                "en": "Roll the dough out round with a rolling pin"
+              },
+              "correct": false,
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908753/jlpt/n3/2024-07/m1-q1-c1.png"
+              },
+              "explanation": {
+                "vi": "Sai: bột pizza có loại đông lạnh làm sẵn nên không cần cán bột."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "ピザソースを塗る",
+                "vi": "Phết sốt pizza",
+                "en": "Spread the pizza sauce"
+              },
+              "correct": true,
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908755/jlpt/n3/2024-07/m1-q1-c2.png"
+              },
+              "explanation": {
+                "vi": "Đúng: người mẹ nhờ phết sốt pizza lên trước và cậu nhận lời \"はい\"."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m1-q1-s8",
+                "jlpt-n3-2024-07-m1-q1-s9",
+                "jlpt-n3-2024-07-m1-q1-s10",
+                "jlpt-n3-2024-07-m1-q1-s11"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "ピーマンとソーセージを切る",
+                "vi": "Cắt ớt chuông và xúc xích",
+                "en": "Cut the bell pepper and sausage"
+              },
+              "correct": false,
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908756/jlpt/n3/2024-07/m1-q1-c3.png"
+              },
+              "explanation": {
+                "vi": "Sai: việc cắt xúc xích và ớt chuông do người mẹ nói \"私、切るね\"."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "切った具をピザにのせる",
+                "vi": "Đặt nguyên liệu đã cắt lên pizza",
+                "en": "Put the cut toppings on the pizza"
+              },
+              "correct": false,
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791908758/jlpt/n3/2024-07/m1-q1-c4.png"
+              },
+              "explanation": {
+                "vi": "Sai: đặt phần đã cắt lên là bước sau khi phết sốt."
+              }
+            }
+          ],
+          "choice_display_mode": "image"
         },
         {
           "id": "jlpt-n3-2024-07-m1-q2",
@@ -501,7 +570,63 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "グラフの説明を消す",
+                "vi": "Xóa phần giải thích biểu đồ",
+                "en": "Delete the explanations of the graphs"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: trưởng phòng bảo bỏ phần giải thích, chỉ để tiêu đề, và cô nhận lời."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m1-q2-s5",
+                "jlpt-n3-2024-07-m1-q2-s8",
+                "jlpt-n3-2024-07-m1-q2-s9"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "グラフの説明を詳しくする",
+                "vi": "Viết giải thích biểu đồ chi tiết hơn",
+                "en": "Make the graph explanations more detailed"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: trưởng phòng nói phần giải thích đã quá dài, không bảo viết chi tiết hơn."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "グラフを増やす",
+                "vi": "Thêm biểu đồ",
+                "en": "Add more graphs"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nhiều biểu đồ là điểm được khen, không ai bảo thêm."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "グラフを減らす",
+                "vi": "Giảm bớt biểu đồ",
+                "en": "Reduce the number of graphs"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không bảo giảm biểu đồ, chỉ bảo bỏ phần giải thích."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m1-q3",
@@ -699,7 +824,64 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "授業中に発表する",
+                "vi": "Thuyết trình trong giờ học",
+                "en": "Give the presentation during class"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cậu phải về nước sớm một tuần nên không thể thuyết trình trong giờ cuối."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "先生の部屋で発表する",
+                "vi": "Thuyết trình ở phòng giáo viên",
+                "en": "Give the presentation in the teacher's room"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cô nói không thu xếp được thời gian để cậu thuyết trình ở phòng cô."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "レポートを書いて出す",
+                "vi": "Viết báo cáo rồi nộp",
+                "en": "Write a report and hand it in"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cô nói báo cáo không thể thay cho thuyết trình."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "発表をビデオに録って出す",
+                "vi": "Quay video bài thuyết trình rồi nộp",
+                "en": "Record the presentation on video and hand it in"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: cô bảo quay video bài thuyết trình trước khi về nước rồi nộp, và cậu đồng ý."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m1-q3-s6",
+                "jlpt-n3-2024-07-m1-q3-s8",
+                "jlpt-n3-2024-07-m1-q3-s10",
+                "jlpt-n3-2024-07-m1-q3-s12"
+              ]
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m1-q4",
@@ -975,7 +1157,64 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "出張の報告を出す",
+                "vi": "Nộp báo cáo chuyến công tác",
+                "en": "Hand in the business trip report"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: báo cáo công tác phải nộp trong hôm nay, nhưng trước hết anh được nhờ giúp việc chuẩn bị họp."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "資料を探す",
+                "vi": "Tìm tài liệu",
+                "en": "Look for the materials"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: tìm tài liệu là việc người phụ nữ nói cô sẽ làm khi liên lạc được."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "西田さんに連絡する",
+                "vi": "Liên lạc với anh Nishida",
+                "en": "Contact Mr. Nishida"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: liên lạc với anh Nishida cũng là việc người phụ nữ tự làm."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "会議室にいすを運ぶ",
+                "vi": "Mang ghế vào phòng họp",
+                "en": "Carry chairs to the meeting room"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh được nhờ mang khoảng 15 cái ghế từ phòng khác sang phòng họp trước."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m1-q4-s6",
+                "jlpt-n3-2024-07-m1-q4-s7",
+                "jlpt-n3-2024-07-m1-q4-s15",
+                "jlpt-n3-2024-07-m1-q4-s16"
+              ]
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m1-q5",
@@ -1173,7 +1412,65 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "洗剤とゴミ袋",
+                "vi": "Nước tẩy rửa và túi rác",
+                "en": "Detergent and garbage bags"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: cô mua nước tẩy rửa và túi rác; giẻ lau dùng khăn cũ ở nhà, còn bóng đèn thì nam sinh viên sẽ nhờ trường thay."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m1-q5-s4",
+                "jlpt-n3-2024-07-m1-q5-s6",
+                "jlpt-n3-2024-07-m1-q5-s7",
+                "jlpt-n3-2024-07-m1-q5-s8",
+                "jlpt-n3-2024-07-m1-q5-s12"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "洗剤と蛍光灯",
+                "vi": "Nước tẩy rửa và bóng đèn huỳnh quang",
+                "en": "Detergent and a fluorescent light"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: bóng đèn huỳnh quang do nam sinh viên liên lạc với trường để thay, cô không mua."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "雑巾とゴミ袋",
+                "vi": "Giẻ lau và túi rác",
+                "en": "Cleaning cloths and garbage bags"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: giẻ lau lấy từ khăn cũ ở nhà cô nên không phải mua."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "雑巾と蛍光灯",
+                "vi": "Giẻ lau và bóng đèn huỳnh quang",
+                "en": "Cleaning cloths and a fluorescent light"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cả giẻ lau lẫn bóng đèn đều không phải do cô mua."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m1-q6",
@@ -1293,7 +1590,61 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "工場を見学する",
+                "vi": "Tham quan nhà máy",
+                "en": "Tour the factory"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: tham quan nhà máy là việc đã làm từ tuần trước."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "製品の作り方を覚える",
+                "vi": "Học cách làm sản phẩm",
+                "en": "Learn how the products are made"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cách làm sản phẩm đã được hiểu qua buổi tham quan nhà máy, không phải việc hôm nay."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "仕事での話し方を練習する",
+                "vi": "Luyện cách nói chuyện trong công việc",
+                "en": "Practise how to speak at work"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: hôm nay mời giáo viên để luyện kính ngữ và cách dùng từ khi làm việc."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m1-q6-s5"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "商品の発表会に行く",
+                "vi": "Đi đến buổi giới thiệu sản phẩm",
+                "en": "Go to the product presentation"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: buổi giới thiệu sản phẩm mới là việc của ngày mai."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
         }
       ]
     },
@@ -1502,7 +1853,63 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "子どもが好きだから",
+                "vi": "Vì thích trẻ con",
+                "en": "Because she likes children"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chính người đàn ông nói cô không có ấn tượng thích trẻ con, và cô đồng ý; đó không phải lý do."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "親の仕事がおもしろそうだったから",
+                "vi": "Vì công việc của bố mẹ trông thú vị",
+                "en": "Because her parents' job looked interesting"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: bố mẹ làm giáo viên và trông vất vả, hồi nhỏ cô còn nghĩ nghề giáo thì thôi."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "教えるのが好きだから",
+                "vi": "Vì thích dạy học",
+                "en": "Because she likes teaching"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: khi được hỏi có phải vì thích dạy không, cô trả lời \"そうじゃなくて\", cô từng ghét học."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "あこがれる先生がいたから",
+                "vi": "Vì có một thầy cô cô ngưỡng mộ",
+                "en": "Because there was a teacher she admired"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: cô giáo chủ nhiệm lớp 6 rất thú vị nên cô thích học và muốn trở thành giáo viên như vậy."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m2-q1-s8",
+                "jlpt-n3-2024-07-m2-q1-s9",
+                "jlpt-n3-2024-07-m2-q1-s10"
+              ]
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m2-q2",
@@ -1687,7 +2094,63 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "おいしいレストランで食事したこと",
+                "vi": "Được ăn ở một nhà hàng ngon",
+                "en": "Eating at a delicious restaurant"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nhà hàng ngon do tài xế giới thiệu, nhưng không phải điều anh nói đọng lại nhất."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "親切な運転手と知り合ったこと",
+                "vi": "Quen được một tài xế tử tế",
+                "en": "Getting to know a kind driver"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: tài xế tử tế có được nhắc tới, nhưng điều đọng lại nhất là cái hồ trong rừng."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "森できれいな湖を見たこと",
+                "vi": "Nhìn thấy một hồ nước đẹp trong rừng",
+                "en": "Seeing a beautiful lake in the forest"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh thấy một cái hồ màu xanh đẹp chưa từng thấy trong rừng và nói đó là điều đọng lại nhất."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m2-q2-s7",
+                "jlpt-n3-2024-07-m2-q2-s8",
+                "jlpt-n3-2024-07-m2-q2-s10"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "自然の中で子どもたちと遊んだこと",
+                "vi": "Chơi cùng bọn trẻ giữa thiên nhiên",
+                "en": "Playing with children in nature"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cảnh bọn trẻ chơi chỉ là điều anh \"cũng thấy hay\", không phải điều ấn tượng nhất."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m2-q3",
@@ -1885,7 +2348,62 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "山田さんが猫と遊びたがっていたから",
+                "vi": "Vì Yamada muốn chơi với mèo",
+                "en": "Because Yamada wanted to play with cats"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nam sinh viên chỉ nhắc Yamada muốn nuôi mèo, không nói cô muốn chơi với mèo."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "新しくて人気のカフェだから",
+                "vi": "Vì đó là quán mới và nổi tiếng",
+                "en": "Because it is a new and popular café"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: quán mới mở được nhắc tới nhưng không phải lý do mời Yamada."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "山田さんがアルバイトを探しているから",
+                "vi": "Vì Yamada đang tìm việc làm thêm",
+                "en": "Because Yamada is looking for a part-time job"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: người làm thêm ở quán là nam sinh viên, không phải Yamada."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "カフェにいる猫を見てほしいから",
+                "vi": "Vì muốn Yamada xem những chú mèo ở quán",
+                "en": "Because he wants her to see the cats at the café"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh muốn cô đến xem những chú mèo ở quán vì chúng rất dễ thương."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m2-q3-s8",
+                "jlpt-n3-2024-07-m2-q3-s9"
+              ]
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m2-q4",
@@ -2018,7 +2536,62 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "空港からの無料のバス",
+                "vi": "Xe buýt miễn phí từ sân bay",
+                "en": "Free buses from the airport"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: xe buýt miễn phí từ sân bay là việc của các khách sạn."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "浴衣が着られるサービス",
+                "vi": "Dịch vụ cho mặc yukata",
+                "en": "A service where you can wear a yukata"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: năm nay trung tâm bắt đầu dịch vụ cho thuê yukata."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m2-q4-s5",
+                "jlpt-n3-2024-07-m2-q4-s6"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "折り紙の教室",
+                "vi": "Lớp học gấp giấy origami",
+                "en": "An origami class"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: lớp học origami đã bắt đầu từ năm ngoái."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "漫画やアニメの紹介",
+                "vi": "Giới thiệu truyện tranh và anime",
+                "en": "An introduction to manga and anime"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: góc giới thiệu truyện tranh, anime cũng bắt đầu từ năm ngoái."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m2-q5",
@@ -2216,7 +2789,63 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "うまい人の動きを多く見たこと",
+                "vi": "Xem nhiều chuyển động của người nhảy giỏi",
+                "en": "Watching a lot of skilled dancers move"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh nói việc xem nhiều người khác nhảy là điều có ích nhất với anh."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m2-q5-s4",
+                "jlpt-n3-2024-07-m2-q5-s6",
+                "jlpt-n3-2024-07-m2-q5-s10"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "足の動きを集中して練習したこと",
+                "vi": "Tập trung luyện động tác chân",
+                "en": "Practising only the footwork"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: luyện riêng động tác chân là cách của một số bạn nhảy khác."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "音楽をよく聞くようにしたこと",
+                "vi": "Cố gắng nghe nhạc thật kỹ",
+                "en": "Listening carefully to the music"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cố gắng nghe nhạc kỹ là cách của nhiều người khác chứ không phải điều anh thấy tốt nhất."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "鏡で自分の動きを見たこと",
+                "vi": "Nhìn động tác của mình qua gương",
+                "en": "Checking his own movements in a mirror"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh cũng xem qua gương nhưng nói chỉ vậy thì chưa đủ."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
         },
         {
           "id": "jlpt-n3-2024-07-m2-q6",
@@ -2349,7 +2978,61 @@
                 "enabled": true
               }
             }
-          }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "9月4日",
+                "vi": "Ngày 4 tháng 9",
+                "en": "September 4"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 4/9 là ngày cuối cùng còn mượn được sách."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "9月5日",
+                "vi": "Ngày 5 tháng 9",
+                "en": "September 5"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: mượn được đến hết 4/9, từ hôm sau là 5/9 thì không còn mượn được."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-07-m2-q6-s5"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "9月26日",
+                "vi": "Ngày 26 tháng 9",
+                "en": "September 26"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 26/9 là ngày thư viện dùng lại được."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "9月27日",
+                "vi": "Ngày 27 tháng 9",
+                "en": "September 27"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 27/9 là ngày bắt đầu học kỳ mới."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
         }
       ]
     },
@@ -4923,5 +5606,5 @@
     }
   ],
   "review_required": true,
-  "review_note": "Đáp án 問題3, 4, 5 theo bảng đáp án nguồn. 問題1 và 問題2 chưa có phương án in trong đề nên chưa gắn đáp án (bảng nguồn đã có, sẽ gắn khi có phương án). Chưa có hình minh họa cho 問題4."
+  "review_note": "Đáp án 問題1-5 theo bảng đáp án nguồn; phương án in của 問題1, 2 chép từ hình đề trong video nghe, các đáp án khoanh tròn trong video khớp với bảng. Chưa có hình minh họa cho 問題4."
 }
