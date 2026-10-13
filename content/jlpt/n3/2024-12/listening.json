@@ -1,0 +1,5565 @@
+{
+  "schema_version": 2,
+  "id": "jlpt-n3-2024-12",
+  "status": "published",
+  "content_version": 1,
+  "title": {
+    "ja": "JLPT N3 2024年12月 聴解",
+    "vi": "JLPT N3 12/2024 Nghe hiểu",
+    "en": "JLPT N3 12/2024 Listening"
+  },
+  "source": {
+    "type": "jlpt",
+    "level": "N3",
+    "year": 2024,
+    "month": 12
+  },
+  "audio": {
+    "file": "listening.mp3",
+    "duration_ms": 2274142
+  },
+  "speakers": [
+    {
+      "id": "narrator",
+      "label": {
+        "ja": "ナレーション",
+        "vi": "Người dẫn",
+        "en": "Narrator"
+      }
+    },
+    {
+      "id": "female",
+      "label": {
+        "ja": "女",
+        "vi": "Nữ",
+        "en": "Woman"
+      }
+    },
+    {
+      "id": "male",
+      "label": {
+        "ja": "男",
+        "vi": "Nam",
+        "en": "Man"
+      }
+    },
+    {
+      "id": "speaker",
+      "label": {
+        "ja": "話し手",
+        "vi": "Người nói",
+        "en": "Speaker"
+      }
+    },
+    {
+      "id": "choice_1",
+      "label": {
+        "ja": "1",
+        "vi": "1",
+        "en": "1"
+      }
+    },
+    {
+      "id": "choice_2",
+      "label": {
+        "ja": "2",
+        "vi": "2",
+        "en": "2"
+      }
+    },
+    {
+      "id": "choice_3",
+      "label": {
+        "ja": "3",
+        "vi": "3",
+        "en": "3"
+      }
+    },
+    {
+      "id": "choice_4",
+      "label": {
+        "ja": "4",
+        "vi": "4",
+        "en": "4"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "jlpt-n3-2024-12-m1",
+      "order": 1,
+      "title": {
+        "ja": "問題1",
+        "vi": "Vấn đề 1",
+        "en": "Part 1"
+      },
+      "questions": [
+        {
+          "id": "jlpt-n3-2024-12-m1-q1",
+          "order": 1,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 108910,
+            "end_ms": 165680
+          },
+          "prompt": {
+            "ja": "男の人は出張レポートのどこを直さなければなりませんか。",
+            "vi": "Người đàn ông phải sửa chỗ nào trong báo cáo công tác?",
+            "en": "Which part of the business trip report must the man revise?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m1-q1",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 110140,
+              "end_ms": 114230,
+              "text": {
+                "ja": "会社で課長と男の人が話しています。",
+                "vi": "Ở công ty, trưởng phòng và một người đàn ông đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 115050,
+              "end_ms": 120710,
+              "text": {
+                "ja": "男の人は出張レポートのどこを直さなければなりませんか。",
+                "vi": "Người đàn ông phải sửa chỗ nào trong báo cáo công tác?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 122320,
+              "end_ms": 126310,
+              "text": {
+                "ja": "田中さん、初めての出張お疲れ様でした。",
+                "vi": "Anh Tanaka, anh đã vất vả trong chuyến công tác đầu tiên."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s4",
+              "order": 4,
+              "speaker_id": "female",
+              "start_ms": 127100,
+              "end_ms": 129810,
+              "text": {
+                "ja": "この出張のレポートを読みました。",
+                "vi": "Tôi đã đọc báo cáo công tác này."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 131500,
+              "end_ms": 131970,
+              "text": {
+                "ja": "はい。",
+                "vi": "Vâng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s6",
+              "order": 6,
+              "speaker_id": "female",
+              "start_ms": 131970,
+              "end_ms": 137320,
+              "text": {
+                "ja": "出張の目的と訪問した会社で誰に会ったのかはこれでいいです。",
+                "vi": "Mục đích chuyến công tác và việc đã gặp ai ở công ty đến thăm thì như thế này là được."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s7",
+              "order": 7,
+              "speaker_id": "female",
+              "start_ms": 137980,
+              "end_ms": 144120,
+              "text": {
+                "ja": "ただ、話し合いについては最終的にどうなったのかが分かりにくいですね。",
+                "vi": "Có điều, về phần thảo luận thì khó hiểu là cuối cùng đã ra sao."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s8",
+              "order": 8,
+              "speaker_id": "female",
+              "start_ms": 144690,
+              "end_ms": 146430,
+              "text": {
+                "ja": "そこを直してください。",
+                "vi": "Anh hãy sửa chỗ đó."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s9",
+              "order": 9,
+              "speaker_id": "male",
+              "start_ms": 146610,
+              "end_ms": 148410,
+              "text": {
+                "ja": "はい、分かりました。",
+                "vi": "Vâng, tôi hiểu rồi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s10",
+              "order": 10,
+              "speaker_id": "female",
+              "start_ms": 148850,
+              "end_ms": 153220,
+              "text": {
+                "ja": "次の訪問日は3か月後になったんですね。",
+                "vi": "Ngày đến thăm lần tới là 3 tháng sau nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s11",
+              "order": 11,
+              "speaker_id": "male",
+              "start_ms": 153420,
+              "end_ms": 154110,
+              "text": {
+                "ja": "はい。",
+                "vi": "Vâng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q1-s12",
+              "order": 12,
+              "speaker_id": "narrator",
+              "start_ms": 159720,
+              "end_ms": 165680,
+              "text": {
+                "ja": "男の人は出張レポートのどこを直さなければなりませんか。",
+                "vi": "Người đàn ông phải sửa chỗ nào trong báo cáo công tác?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "しゅっちょうの もくてき",
+                "vi": "Mục đích chuyến công tác",
+                "en": "The purpose of the trip"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: trưởng phòng nói mục đích chuyến công tác như vậy là được."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "会った人のじょうほう",
+                "vi": "Thông tin về người đã gặp",
+                "en": "Information about the people met"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: việc đã gặp ai ở công ty đến thăm cũng ổn rồi."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "話し合いのけっか",
+                "vi": "Kết quả của cuộc thảo luận",
+                "en": "The result of the discussions"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: phần thảo luận khó hiểu là cuối cùng đã ra sao nên phải sửa."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m1-q1-s6",
+                "jlpt-n3-2024-12-m1-q1-s7",
+                "jlpt-n3-2024-12-m1-q1-s8"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "つぎのほうもん日",
+                "vi": "Ngày đến thăm lần tới",
+                "en": "The next visit date"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: ngày đến thăm lần tới chỉ được nhắc để xác nhận, không bị yêu cầu sửa."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m1-q2",
+          "order": 2,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 177990,
+            "end_ms": 251670
+          },
+          "prompt": {
+            "ja": "男の学生は本の予約をするためにこの後何をしますか。",
+            "vi": "Để đặt trước sách, nam sinh viên sau đây sẽ làm gì?",
+            "en": "What will the male student do next to reserve the book?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m1-q2",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 179260,
+              "end_ms": 184400,
+              "text": {
+                "ja": "図書館で男の学生と受付の人が話しています。",
+                "vi": "Ở thư viện, một nam sinh viên và nhân viên quầy tiếp nhận đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 185020,
+              "end_ms": 191540,
+              "text": {
+                "ja": "男の学生は本の予約をするためにこの後何をしますか。",
+                "vi": "Để đặt trước sách, nam sinh viên sau đây sẽ làm gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s3",
+              "order": 3,
+              "speaker_id": "male",
+              "start_ms": 193150,
+              "end_ms": 204510,
+              "text": {
+                "ja": "すみません。借りたい本があるんですが、図書館のパソコンで調べたら貸し出し中になっていて、予約っていうボタンがあるけど押せないんです。",
+                "vi": "Xin lỗi. Tôi có cuốn sách muốn mượn, nhưng tra bằng máy tính của thư viện thì thấy đang cho mượn, có nút 「đặt trước」 nhưng tôi không bấm được."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s4",
+              "order": 4,
+              "speaker_id": "female",
+              "start_ms": 204830,
+              "end_ms": 211270,
+              "text": {
+                "ja": "ああ、すみません。そちらのパソコンは今問題があって使えなくなっています。",
+                "vi": "À, xin lỗi. Máy tính đó hiện đang gặp sự cố nên không dùng được."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s5",
+              "order": 5,
+              "speaker_id": "female",
+              "start_ms": 212120,
+              "end_ms": 216440,
+              "text": {
+                "ja": "あの、図書館の利用カードは持っていらっしゃいますか。",
+                "vi": "Anh có mang thẻ thư viện không ạ?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s6",
+              "order": 6,
+              "speaker_id": "male",
+              "start_ms": 216490,
+              "end_ms": 217220,
+              "text": {
+                "ja": "はい。",
+                "vi": "Có ạ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s7",
+              "order": 7,
+              "speaker_id": "female",
+              "start_ms": 217380,
+              "end_ms": 224730,
+              "text": {
+                "ja": "それでしたら、こちらの申し込み用紙に書いて出していただければ予約できますよ。",
+                "vi": "Vậy thì anh điền vào phiếu đăng ký này rồi nộp là đặt trước được ạ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s8",
+              "order": 8,
+              "speaker_id": "male",
+              "start_ms": 224860,
+              "end_ms": 227950,
+              "text": {
+                "ja": "あ、そうなんですか。分かりました。",
+                "vi": "À, vậy ạ. Tôi hiểu rồi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s9",
+              "order": 9,
+              "speaker_id": "female",
+              "start_ms": 228150,
+              "end_ms": 236090,
+              "text": {
+                "ja": "あ、ただ、借りていらっしゃる本の中に貸し出し期限を過ぎた本があると予約できませんが。",
+                "vi": "À, có điều nếu trong số sách đang mượn có cuốn quá hạn thì không đặt trước được."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s10",
+              "order": 10,
+              "speaker_id": "male",
+              "start_ms": 236260,
+              "end_ms": 239520,
+              "text": {
+                "ja": "それは大丈夫です。ありがとうございます。",
+                "vi": "Chuyện đó thì không sao ạ. Cảm ơn chị."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q2-s11",
+              "order": 11,
+              "speaker_id": "narrator",
+              "start_ms": 245150,
+              "end_ms": 251670,
+              "text": {
+                "ja": "男の学生は本の予約をするためにこの後何をしますか。",
+                "vi": "Để đặt trước sách, nam sinh viên sau đây sẽ làm gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "パソコンでもうしこむ",
+                "vi": "Đăng ký bằng máy tính",
+                "en": "Apply on the computer"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: máy tính ở đó đang gặp sự cố nên không dùng được."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "利用カードを作る",
+                "vi": "Làm thẻ thư viện",
+                "en": "Make a library card"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh đã có thẻ thư viện rồi."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "もうしこみ用紙に書いて出す",
+                "vi": "Điền vào phiếu đăng ký rồi nộp",
+                "en": "Fill in the application form and hand it in"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: nhân viên bảo điền vào phiếu đăng ký rồi nộp là đặt trước được."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m1-q2-s4",
+                "jlpt-n3-2024-12-m1-q2-s7"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "かりている本をかえす",
+                "vi": "Trả sách đang mượn",
+                "en": "Return the books he has borrowed"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh không có sách nào quá hạn nên không cần trả."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m1-q3",
+          "order": 3,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 264070,
+            "end_ms": 343500
+          },
+          "prompt": {
+            "ja": "女の学生はこの後何をしなければなりませんか。",
+            "vi": "Sau đây, nữ sinh viên phải làm gì?",
+            "en": "What must the female student do next?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m1-q3",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 265830,
+              "end_ms": 273150,
+              "text": {
+                "ja": "大学の音楽クラブの部屋で女の学生と男の学生が話しています。",
+                "vi": "Trong phòng câu lạc bộ âm nhạc của trường đại học, một nữ sinh viên và một nam sinh viên đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 274310,
+              "end_ms": 279700,
+              "text": {
+                "ja": "女の学生はこの後何をしなければなりませんか。",
+                "vi": "Sau đây, nữ sinh viên phải làm gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 281310,
+              "end_ms": 291130,
+              "text": {
+                "ja": "遅くなってごめん。明日のコンサートの準備、もう始まってるよね。みんなもう会場の方に行ってる？",
+                "vi": "Xin lỗi mình đến muộn. Việc chuẩn bị cho buổi hòa nhạc ngày mai bắt đầu rồi nhỉ. Mọi người đã đến hội trường chưa?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s4",
+              "order": 4,
+              "speaker_id": "male",
+              "start_ms": 291510,
+              "end_ms": 296170,
+              "text": {
+                "ja": "あ、伊藤さん。みんな体育館に椅子を並べに行ったよ。",
+                "vi": "À, Ito. Mọi người đã đến nhà thi đấu xếp ghế rồi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 296380,
+              "end_ms": 302640,
+              "text": {
+                "ja": "伊藤さんも行ってくれる？今ちょうどプログラム印刷し終わったから、持ってって。",
+                "vi": "Ito cũng đến giúp nhé? Vừa lúc mình in xong chương trình, cậu mang đi giúp."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s6",
+              "order": 6,
+              "speaker_id": "male",
+              "start_ms": 303270,
+              "end_ms": 308680,
+              "text": {
+                "ja": "体育館の入り口に受付用のテーブルがあるから、その上に置いといて。",
+                "vi": "Ở lối vào nhà thi đấu có bàn tiếp tân, cậu để lên đó nhé."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s7",
+              "order": 7,
+              "speaker_id": "female",
+              "start_ms": 308800,
+              "end_ms": 309710,
+              "text": {
+                "ja": "分かった。",
+                "vi": "Mình biết rồi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s8",
+              "order": 8,
+              "speaker_id": "male",
+              "start_ms": 309990,
+              "end_ms": 314570,
+              "text": {
+                "ja": "その後、みんなと一緒に椅子並べてくれる？",
+                "vi": "Sau đó cậu xếp ghế cùng mọi người nhé?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s9",
+              "order": 9,
+              "speaker_id": "female",
+              "start_ms": 315160,
+              "end_ms": 321490,
+              "text": {
+                "ja": "OK。楽器を運ぶのはその後？大きいのだけ今日のうちに運ぶんだよね。",
+                "vi": "OK. Việc chuyển nhạc cụ là sau đó nhỉ? Chỉ những cái lớn là chuyển trong hôm nay đúng không?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s10",
+              "order": 10,
+              "speaker_id": "male",
+              "start_ms": 321590,
+              "end_ms": 326300,
+              "text": {
+                "ja": "ああ、さっき体育館に行く人たちに最初に運んでもらった。",
+                "vi": "À, lúc nãy mình đã nhờ những người đi nhà thi đấu chuyển trước rồi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s11",
+              "order": 11,
+              "speaker_id": "male",
+              "start_ms": 326800,
+              "end_ms": 331570,
+              "text": {
+                "ja": "僕は先生に明日のこと相談しに行ってから体育館に向かうね。",
+                "vi": "Mình sẽ đi hỏi ý kiến thầy về ngày mai rồi mới đến nhà thi đấu."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s12",
+              "order": 12,
+              "speaker_id": "female",
+              "start_ms": 331680,
+              "end_ms": 332590,
+              "text": {
+                "ja": "分かった。",
+                "vi": "Mình biết rồi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q3-s13",
+              "order": 13,
+              "speaker_id": "narrator",
+              "start_ms": 338200,
+              "end_ms": 343500,
+              "text": {
+                "ja": "女の学生はこの後何をしなければなりませんか。",
+                "vi": "Sau đây, nữ sinh viên phải làm gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "ア イ",
+                "vi": "ア イ",
+                "en": "A, I"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: cô mang chương trình đặt lên bàn tiếp tân (イ), sau đó cùng mọi người xếp ghế (ア)."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m1-q3-s5",
+                "jlpt-n3-2024-12-m1-q3-s6",
+                "jlpt-n3-2024-12-m1-q3-s8",
+                "jlpt-n3-2024-12-m1-q3-s10"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "ア イ ウ",
+                "vi": "ア イ ウ",
+                "en": "A, I, U"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nhạc cụ (ウ) đã được những người khác chuyển trước rồi."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "ア エ",
+                "vi": "ア エ",
+                "en": "A, E"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: thiếu việc đặt chương trình (イ), còn bàn bạc với thầy (エ) là việc của nam sinh viên."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "イ ウ エ",
+                "vi": "イ ウ エ",
+                "en": "I, U, E"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chuyển nhạc cụ (ウ) và bàn bạc với thầy (エ) không phải việc của cô."
+              }
+            }
+          ],
+          "choice_display_mode": "text",
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791899542/jlpt/n3/2024-12/m1-q3-figure.png",
+            "alt": {
+              "ja": "ア 椅子を並べる、イ プログラムを机に置く、ウ 楽器（太鼓）を運ぶ、エ 先生に相談する",
+              "vi": "ア: xếp ghế; イ: đặt chương trình lên bàn; ウ: chuyển nhạc cụ (trống); エ: bàn bạc với thầy giáo",
+              "en": "A: arranging chairs; I: putting the programs on the table; U: carrying an instrument (drum); E: consulting the teacher"
+            }
+          }
+        },
+        {
+          "id": "jlpt-n3-2024-12-m1-q4",
+          "order": 4,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 355870,
+            "end_ms": 449410
+          },
+          "prompt": {
+            "ja": "女の人はこの後まず何をしますか。",
+            "vi": "Sau đây, người phụ nữ sẽ làm gì trước tiên?",
+            "en": "What will the woman do first?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m1-q4",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 357610,
+              "end_ms": 362410,
+              "text": {
+                "ja": "会社で女の人と男の人が話しています。",
+                "vi": "Ở công ty, một người phụ nữ và một người đàn ông đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 363550,
+              "end_ms": 368160,
+              "text": {
+                "ja": "女の人はこの後まず何をしますか。",
+                "vi": "Sau đây, người phụ nữ sẽ làm gì trước tiên?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 369770,
+              "end_ms": 379215,
+              "text": {
+                "ja": "村上さん、今年の新入社員のセミナー、来月ですが、1日目の予定表はこれでよろしいですか。",
+                "vi": "Anh Murakami, về buổi hội thảo cho nhân viên mới năm nay vào tháng sau, bảng lịch ngày đầu như thế này có được không ạ?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s4",
+              "order": 4,
+              "speaker_id": "male",
+              "start_ms": 379240,
+              "end_ms": 390990,
+              "text": {
+                "ja": "あ、はい。えっと、9時スタートで社長の話、その後昼までビジネスマナーの先生の講義、去年と同じだね。",
+                "vi": "À, được. Ừm, 9 giờ bắt đầu với bài phát biểu của giám đốc, sau đó đến trưa là bài giảng của giáo viên dạy phép lịch sự công sở, giống năm ngoái nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 391660,
+              "end_ms": 398750,
+              "text": {
+                "ja": "ああ、毎年9時スタートで、朝から準備で忙しいっていう意見が多くてねえ。",
+                "vi": "À, năm nào cũng bắt đầu lúc 9 giờ nên có nhiều ý kiến cho rằng buổi sáng phải chuẩn bị rất bận."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s6",
+              "order": 6,
+              "speaker_id": "female",
+              "start_ms": 398900,
+              "end_ms": 400465,
+              "text": {
+                "ja": "そうなんですか。",
+                "vi": "Vậy ạ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s7",
+              "order": 7,
+              "speaker_id": "male",
+              "start_ms": 400510,
+              "end_ms": 407160,
+              "text": {
+                "ja": "それで今年は30分遅くして9時半開始にしようという話になってたんだ。",
+                "vi": "Vì thế năm nay đã bàn là lùi 30 phút, bắt đầu lúc 9 rưỡi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s8",
+              "order": 8,
+              "speaker_id": "male",
+              "start_ms": 407460,
+              "end_ms": 411830,
+              "text": {
+                "ja": "終わるのは12時じゃなくて12時半になるけど。",
+                "vi": "Kết thúc sẽ là 12 rưỡi chứ không phải 12 giờ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s9",
+              "order": 9,
+              "speaker_id": "female",
+              "start_ms": 411980,
+              "end_ms": 412750,
+              "text": {
+                "ja": "はい。",
+                "vi": "Vâng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s10",
+              "order": 10,
+              "speaker_id": "male",
+              "start_ms": 413070,
+              "end_ms": 417060,
+              "text": {
+                "ja": "会場は一応午後1時まで取ってるから問題ないね。",
+                "vi": "Hội trường tạm thời đã thuê đến 1 giờ chiều nên không vấn đề gì nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s11",
+              "order": 11,
+              "speaker_id": "male",
+              "start_ms": 417710,
+              "end_ms": 428340,
+              "text": {
+                "ja": "社長に、去年より30分遅くなってもいいかご都合を聞いてみて。いらっしゃるのは最初のところだけだから大丈夫だと思うけど。",
+                "vi": "Em hỏi giám đốc xem trễ hơn năm ngoái 30 phút có tiện không. Giám đốc chỉ đến phần đầu nên anh nghĩ sẽ ổn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s12",
+              "order": 12,
+              "speaker_id": "female",
+              "start_ms": 428430,
+              "end_ms": 429530,
+              "text": {
+                "ja": "わかりました。",
+                "vi": "Em hiểu rồi ạ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s13",
+              "order": 13,
+              "speaker_id": "male",
+              "start_ms": 429850,
+              "end_ms": 433920,
+              "text": {
+                "ja": "先生とは今日会うことになっているから確認しておくよ。",
+                "vi": "Hôm nay anh có hẹn gặp thầy giáo nên anh sẽ xác nhận."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s14",
+              "order": 14,
+              "speaker_id": "male",
+              "start_ms": 434400,
+              "end_ms": 438300,
+              "text": {
+                "ja": "全部確認とれてから予定表直してくれる？",
+                "vi": "Sau khi xác nhận hết rồi, em sửa bảng lịch nhé?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s15",
+              "order": 15,
+              "speaker_id": "female",
+              "start_ms": 438540,
+              "end_ms": 439180,
+              "text": {
+                "ja": "はい。",
+                "vi": "Vâng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q4-s16",
+              "order": 16,
+              "speaker_id": "narrator",
+              "start_ms": 444790,
+              "end_ms": 449410,
+              "text": {
+                "ja": "女の人はこの後まず何をしますか。",
+                "vi": "Sau đây, người phụ nữ sẽ làm gì trước tiên?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "会場のよやく時間をかえる",
+                "vi": "Đổi thời gian đặt hội trường",
+                "en": "Change the venue reservation time"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: hội trường đã thuê đến 1 giờ chiều nên không cần đổi."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "しゃちょうに予定を聞く",
+                "vi": "Hỏi giám đốc về lịch",
+                "en": "Ask the president about his schedule"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: nam đồng nghiệp bảo hỏi giám đốc xem lùi 30 phút có tiện không."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m1-q4-s11",
+                "jlpt-n3-2024-12-m1-q4-s12"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "先生に会いに行く",
+                "vi": "Đi gặp thầy giáo",
+                "en": "Go to see the lecturer"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: người sẽ gặp thầy hôm nay là nam đồng nghiệp."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "よていひょうをなおす",
+                "vi": "Sửa bảng lịch",
+                "en": "Revise the schedule"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: sửa bảng lịch chỉ làm sau khi đã xác nhận xong mọi việc."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m1-q5",
+          "order": 5,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 461700,
+            "end_ms": 556650
+          },
+          "prompt": {
+            "ja": "男の人はこれから何を変えますか。",
+            "vi": "Từ giờ người đàn ông sẽ thay đổi điều gì?",
+            "en": "What will the man change from now on?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m1-q5",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 462930,
+              "end_ms": 467880,
+              "text": {
+                "ja": "健康診断で医者と男の人が話しています。",
+                "vi": "Trong buổi khám sức khỏe, bác sĩ và một người đàn ông đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 469040,
+              "end_ms": 472900,
+              "text": {
+                "ja": "男の人はこれから何を変えますか。",
+                "vi": "Từ giờ người đàn ông sẽ thay đổi điều gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 474510,
+              "end_ms": 483070,
+              "text": {
+                "ja": "検査結果は特に問題はなさそうですね。健康のことで何か気になることはありますか。",
+                "vi": "Kết quả xét nghiệm có vẻ không có vấn đề gì đặc biệt. Về sức khỏe anh có điều gì băn khoăn không?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s4",
+              "order": 4,
+              "speaker_id": "male",
+              "start_ms": 483750,
+              "end_ms": 492090,
+              "text": {
+                "ja": "最近、夜なかなか眠れないことが多くて困ってるんです。ストレスは特にないんですけど。",
+                "vi": "Gần đây tôi hay khó ngủ vào ban đêm nên rất khổ sở. Tôi không bị căng thẳng gì đặc biệt cả."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s5",
+              "order": 5,
+              "speaker_id": "female",
+              "start_ms": 492210,
+              "end_ms": 500560,
+              "text": {
+                "ja": "寝る直前まで携帯を見たり、寝る時間が不規則だったりすると、眠れなくなることがありますよ。",
+                "vi": "Nếu xem điện thoại đến sát giờ ngủ hoặc giờ ngủ không đều thì có thể bị mất ngủ đấy."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s6",
+              "order": 6,
+              "speaker_id": "male",
+              "start_ms": 501310,
+              "end_ms": 507690,
+              "text": {
+                "ja": "布団に入る時間はいつも11時ごろですし、携帯は寝る前には見ないようにしています。",
+                "vi": "Tôi lúc nào cũng vào giường khoảng 11 giờ, và cố gắng không xem điện thoại trước khi ngủ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s7",
+              "order": 7,
+              "speaker_id": "female",
+              "start_ms": 507870,
+              "end_ms": 513920,
+              "text": {
+                "ja": "そうですか。あとは食事してすぐ寝るのも良くないですよ。",
+                "vi": "Vậy à. Ngoài ra, ăn xong là đi ngủ ngay cũng không tốt đâu."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s8",
+              "order": 8,
+              "speaker_id": "male",
+              "start_ms": 514540,
+              "end_ms": 517815,
+              "text": {
+                "ja": "だいたい夜8時には食べ終わりますが。",
+                "vi": "Tôi thường ăn xong vào khoảng 8 giờ tối."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s9",
+              "order": 9,
+              "speaker_id": "female",
+              "start_ms": 517900,
+              "end_ms": 523910,
+              "text": {
+                "ja": "3時間空いてるなら大丈夫ですね。夕食の内容はどうですか。",
+                "vi": "Cách 3 tiếng thì không sao. Còn nội dung bữa tối thì sao?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s10",
+              "order": 10,
+              "speaker_id": "female",
+              "start_ms": 524230,
+              "end_ms": 535690,
+              "text": {
+                "ja": "もしフライとか油をたくさん使ったものが多いなら、そういうのは昼食にして、夕食は軽いものにしてみてください。",
+                "vi": "Nếu có nhiều món chiên hay dùng nhiều dầu mỡ thì hãy chuyển những món đó sang bữa trưa, còn bữa tối thì ăn nhẹ thôi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s11",
+              "order": 11,
+              "speaker_id": "male",
+              "start_ms": 535990,
+              "end_ms": 542250,
+              "text": {
+                "ja": "ああ、好物なので、確かにそういうものが多いですね。でもやってみます。",
+                "vi": "À, vì là món ưa thích nên đúng là tôi ăn những món như vậy nhiều. Nhưng tôi sẽ thử."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s12",
+              "order": 12,
+              "speaker_id": "female",
+              "start_ms": 542410,
+              "end_ms": 547000,
+              "text": {
+                "ja": "年齢に合わせて生活習慣に気をつけてくださいね。",
+                "vi": "Anh hãy chú ý đến thói quen sinh hoạt phù hợp với tuổi tác nhé."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q5-s13",
+              "order": 13,
+              "speaker_id": "narrator",
+              "start_ms": 552630,
+              "end_ms": 556650,
+              "text": {
+                "ja": "男の人はこれから何を変えますか。",
+                "vi": "Từ giờ người đàn ông sẽ thay đổi điều gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "ねる前にけいたいを見るしゅうかん",
+                "vi": "Thói quen xem điện thoại trước khi ngủ",
+                "en": "The habit of looking at his phone before bed"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh đã cố gắng không xem điện thoại trước khi ngủ."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "夜、ふとんに入る時間",
+                "vi": "Giờ vào giường buổi tối",
+                "en": "The time he goes to bed at night"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh lúc nào cũng vào giường khoảng 11 giờ."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "ばんごはんの時間",
+                "vi": "Giờ ăn tối",
+                "en": "The time of his dinner"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh ăn xong lúc 8 giờ, cách giờ ngủ 3 tiếng nên không sao."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "夜、食べる物",
+                "vi": "Món ăn buổi tối",
+                "en": "What he eats at night"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: bác sĩ khuyên chuyển món chiên, nhiều dầu mỡ sang bữa trưa và ăn nhẹ vào bữa tối; anh nói sẽ thử."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m1-q5-s9",
+                "jlpt-n3-2024-12-m1-q5-s10",
+                "jlpt-n3-2024-12-m1-q5-s11"
+              ]
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m1-q6",
+          "order": 6,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 568940,
+            "end_ms": 634190
+          },
+          "prompt": {
+            "ja": "団体旅行の客は船を降りてまず何をしますか。",
+            "vi": "Sau khi xuống tàu, đoàn khách du lịch sẽ làm gì trước tiên?",
+            "en": "What will the tour group do first after getting off the ship?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m1-q6",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 570300,
+              "end_ms": 576810,
+              "text": {
+                "ja": "船の中で旅行会社の人が団体旅行の客に話しています。",
+                "vi": "Trên tàu, nhân viên công ty du lịch đang nói với đoàn khách du lịch."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 578020,
+              "end_ms": 584000,
+              "text": {
+                "ja": "団体旅行の客は船を降りてまず何をしますか。",
+                "vi": "Sau khi xuống tàu, đoàn khách du lịch sẽ làm gì trước tiên?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s3",
+              "order": 3,
+              "speaker_id": "speaker",
+              "start_ms": 585610,
+              "end_ms": 591850,
+              "text": {
+                "ja": "皆さん、もうすぐ青島に到着します。ちょうどお昼になりました。",
+                "vi": "Thưa quý vị, chẳng bao lâu nữa chúng ta sẽ đến đảo Aoshima. Vừa đúng giờ trưa."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s4",
+              "order": 4,
+              "speaker_id": "speaker",
+              "start_ms": 592250,
+              "end_ms": 601360,
+              "text": {
+                "ja": "昼ご飯はカニ料理を食べに行きます。今朝島の市場に届いたばかりの新鮮なカニだそうです。",
+                "vi": "Bữa trưa chúng ta sẽ đi ăn món cua. Nghe nói là cua tươi vừa được đưa đến chợ trên đảo sáng nay."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s5",
+              "order": 5,
+              "speaker_id": "speaker",
+              "start_ms": 601660,
+              "end_ms": 609340,
+              "text": {
+                "ja": "島ではバスで移動しますので、船を降りましたら、正面に止まっているバスにお乗りください。",
+                "vi": "Trên đảo chúng ta di chuyển bằng xe buýt, nên sau khi xuống tàu, xin quý vị lên chiếc xe buýt đang đậu ở phía trước."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s6",
+              "order": 6,
+              "speaker_id": "speaker",
+              "start_ms": 609970,
+              "end_ms": 617080,
+              "text": {
+                "ja": "さっきお配りした黄色い名札は、はい、皆さんつけていらっしゃいますね。",
+                "vi": "Còn thẻ tên màu vàng đã phát lúc nãy, vâng, mọi người đều đã đeo rồi nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s7",
+              "order": 7,
+              "speaker_id": "speaker",
+              "start_ms": 617720,
+              "end_ms": 622160,
+              "text": {
+                "ja": "お帰りになる時までつけたままでお願いします。",
+                "vi": "Xin quý vị cứ đeo như vậy cho đến lúc ra về."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m1-q6-s8",
+              "order": 8,
+              "speaker_id": "narrator",
+              "start_ms": 628130,
+              "end_ms": 634190,
+              "text": {
+                "ja": "団体旅行の客は船を降りてまず何をしますか。",
+                "vi": "Sau khi xuống tàu, đoàn khách du lịch sẽ làm gì trước tiên?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "昼ご飯を食べる",
+                "vi": "Ăn trưa",
+                "en": "Eat lunch"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: bữa trưa ăn sau khi di chuyển bằng xe buýt."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "市場を見物する",
+                "vi": "Tham quan chợ",
+                "en": "Look around the market"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không có chương trình tham quan chợ; chợ chỉ được nhắc vì cua mới được đưa đến sáng nay."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "バスに乗る",
+                "vi": "Lên xe buýt",
+                "en": "Get on the bus"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: sau khi xuống tàu phải lên chiếc xe buýt đang đậu ở phía trước."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m1-q6-s5"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "名札をつける",
+                "vi": "Đeo thẻ tên",
+                "en": "Put on the name tag"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: mọi người đã đeo thẻ tên màu vàng rồi."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n3-2024-12-m2",
+      "order": 2,
+      "title": {
+        "ja": "問題2",
+        "vi": "Vấn đề 2",
+        "en": "Part 2"
+      },
+      "questions": [
+        {
+          "id": "jlpt-n3-2024-12-m2-q1",
+          "order": 1,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 680690,
+            "end_ms": 764900
+          },
+          "prompt": {
+            "ja": "夫はどうして家に戻ってきましたか。",
+            "vi": "Vì sao người chồng quay lại nhà?",
+            "en": "Why did the husband come back home?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m2-q1",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 681930,
+              "end_ms": 686600,
+              "text": {
+                "ja": "朝、家の玄関で妻と夫が話しています。",
+                "vi": "Buổi sáng, ở lối vào nhà, vợ và chồng đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 687410,
+              "end_ms": 690790,
+              "text": {
+                "ja": "夫はどうして家に戻ってきましたか。",
+                "vi": "Vì sao người chồng quay lại nhà?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 714390,
+              "end_ms": 718930,
+              "text": {
+                "ja": "あれ、どうしたの？忘れ物？書類？",
+                "vi": "Ơ, sao thế anh? Quên đồ à? Tài liệu à?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s4",
+              "order": 4,
+              "speaker_id": "male",
+              "start_ms": 719090,
+              "end_ms": 724830,
+              "text": {
+                "ja": "いや、バス停で待ってたんだけど、なぜかバスがなかなか来なくて。",
+                "vi": "Không, anh đứng đợi ở trạm xe buýt nhưng không hiểu sao mãi không thấy xe đến."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 725180,
+              "end_ms": 730560,
+              "text": {
+                "ja": "今日は車で会社に行くよ。車の鍵取ってくれる？",
+                "vi": "Hôm nay anh đi làm bằng ô tô. Em lấy giúp anh chìa khóa xe được không?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s6",
+              "order": 6,
+              "speaker_id": "female",
+              "start_ms": 730710,
+              "end_ms": 737030,
+              "text": {
+                "ja": "え、私今日車使いたいんだけど。会社まで送ってってあげるよ。",
+                "vi": "Ơ, hôm nay em muốn dùng xe. Để em đưa anh đến công ty."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s7",
+              "order": 7,
+              "speaker_id": "male",
+              "start_ms": 737080,
+              "end_ms": 746500,
+              "text": {
+                "ja": "本当？悪いね。走って戻ってきたら喉乾いちゃった。ちょっと水飲んでくるから待ってて。",
+                "vi": "Thật à? Ngại quá. Anh chạy về nên khát nước rồi. Anh đi uống chút nước, em đợi anh nhé."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s8",
+              "order": 8,
+              "speaker_id": "female",
+              "start_ms": 746720,
+              "end_ms": 752240,
+              "text": {
+                "ja": "あ、机の上に切手が貼ってあるはがきがあったけど、出さなくていいの？",
+                "vi": "À, trên bàn có tấm bưu thiếp đã dán tem, anh không gửi sao?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s9",
+              "order": 9,
+              "speaker_id": "male",
+              "start_ms": 752330,
+              "end_ms": 755740,
+              "text": {
+                "ja": "ああ、忘れてた。取ってくるよ。",
+                "vi": "À, anh quên mất. Để anh đi lấy."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q1-s10",
+              "order": 10,
+              "speaker_id": "narrator",
+              "start_ms": 761350,
+              "end_ms": 764900,
+              "text": {
+                "ja": "夫はどうして家に戻ってきましたか。",
+                "vi": "Vì sao người chồng quay lại nhà?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "しょるいを わすれたから",
+                "vi": "Vì quên tài liệu",
+                "en": "Because he forgot his documents"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: vợ đoán là quên tài liệu nhưng anh phủ nhận."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "車で会社に行くことにしたから",
+                "vi": "Vì quyết định đi làm bằng ô tô",
+                "en": "Because he decided to go to work by car"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: xe buýt mãi không đến nên anh quay về để lấy chìa khóa xe đi làm."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m2-q1-s4",
+                "jlpt-n3-2024-12-m2-q1-s5"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "のどがかわいたから",
+                "vi": "Vì khát nước",
+                "en": "Because he was thirsty"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: khát nước chỉ là chuyện sau khi anh chạy về."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "はがきをわすれたから",
+                "vi": "Vì quên bưu thiếp",
+                "en": "Because he forgot a postcard"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: bưu thiếp là chuyện vợ nhắc sau đó, không phải lý do anh quay về."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m2-q2",
+          "order": 2,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 777130,
+            "end_ms": 874630
+          },
+          "prompt": {
+            "ja": "男の人は犬を飼って何が最も良かったと言っていますか。",
+            "vi": "Người đàn ông nói nuôi chó điều gì là tốt nhất?",
+            "en": "What does the man say was the best thing about getting a dog?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m2-q2",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 778390,
+              "end_ms": 781920,
+              "text": {
+                "ja": "女の人と男の人が話しています。",
+                "vi": "Một người phụ nữ và một người đàn ông đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 783220,
+              "end_ms": 789070,
+              "text": {
+                "ja": "男の人は犬を飼って何が最も良かったと言っていますか。",
+                "vi": "Người đàn ông nói nuôi chó điều gì là tốt nhất?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 812680,
+              "end_ms": 816440,
+              "text": {
+                "ja": "木村君、犬を飼い始めたんだって？",
+                "vi": "Kimura, nghe nói cậu bắt đầu nuôi chó à?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s4",
+              "order": 4,
+              "speaker_id": "male",
+              "start_ms": 816660,
+              "end_ms": 820960,
+              "text": {
+                "ja": "うん。すごく可愛くて、すっかり家族のアイドルだよ。",
+                "vi": "Ừ. Nó dễ thương lắm, đã hoàn toàn thành thần tượng của cả nhà."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s5",
+              "order": 5,
+              "speaker_id": "female",
+              "start_ms": 821100,
+              "end_ms": 823435,
+              "text": {
+                "ja": "毎日散歩に連れて行くの？",
+                "vi": "Ngày nào cậu cũng dắt đi dạo à?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s6",
+              "order": 6,
+              "speaker_id": "male",
+              "start_ms": 823460,
+              "end_ms": 829430,
+              "text": {
+                "ja": "うん。朝は僕、夕方は母の係なんだけど、いい運動になってるよ。",
+                "vi": "Ừ. Buổi sáng là mình, buổi chiều là phần của mẹ, và đó là cách vận động tốt."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s7",
+              "order": 7,
+              "speaker_id": "male",
+              "start_ms": 829930,
+              "end_ms": 835725,
+              "text": {
+                "ja": "母は他の犬の飼い主さんたちと仲良くなったらしくて、知り合いが増えたって言ってるんだ。",
+                "vi": "Mẹ mình hình như thân với những người nuôi chó khác, bảo là quen biết thêm được nhiều người."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s8",
+              "order": 8,
+              "speaker_id": "female",
+              "start_ms": 835750,
+              "end_ms": 837030,
+              "text": {
+                "ja": "そうなんだ。",
+                "vi": "Vậy à."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s9",
+              "order": 9,
+              "speaker_id": "male",
+              "start_ms": 837110,
+              "end_ms": 840990,
+              "text": {
+                "ja": "最初は朝早く起きるのが辛かったんだけどね。",
+                "vi": "Lúc đầu dậy sớm vào buổi sáng khá cực."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s10",
+              "order": 10,
+              "speaker_id": "male",
+              "start_ms": 841120,
+              "end_ms": 845340,
+              "text": {
+                "ja": "おかげで寝る時間も早くなって、規則正しい生活になったよ。",
+                "vi": "Nhờ vậy giờ đi ngủ cũng sớm hơn, sinh hoạt trở nên đều đặn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s11",
+              "order": 11,
+              "speaker_id": "male",
+              "start_ms": 845630,
+              "end_ms": 851270,
+              "text": {
+                "ja": "それに家族で話す機会が多くなったんだ。それが一番だなと思ってる。",
+                "vi": "Hơn nữa, cả nhà có nhiều dịp trò chuyện hơn. Mình nghĩ đó là điều tốt nhất."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s12",
+              "order": 12,
+              "speaker_id": "male",
+              "start_ms": 851740,
+              "end_ms": 857660,
+              "text": {
+                "ja": "散歩中にこんなことがあったとか、変な姿勢で寝てて可愛かったとか、楽しいよ。",
+                "vi": "Nào là trong lúc đi dạo có chuyện này, nào là nó ngủ tư thế lạ trông dễ thương, rất vui."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s13",
+              "order": 13,
+              "speaker_id": "female",
+              "start_ms": 857810,
+              "end_ms": 861860,
+              "text": {
+                "ja": "そっか。今度会いに行きたいな。",
+                "vi": "Vậy à. Lần tới mình muốn đến gặp nó."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s14",
+              "order": 14,
+              "speaker_id": "male",
+              "start_ms": 861900,
+              "end_ms": 863240,
+              "text": {
+                "ja": "うん、いいよ。",
+                "vi": "Ừ, được thôi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q2-s15",
+              "order": 15,
+              "speaker_id": "narrator",
+              "start_ms": 868860,
+              "end_ms": 874630,
+              "text": {
+                "ja": "男の人は犬を飼って何が最も良かったと言っていますか。",
+                "vi": "Người đàn ông nói nuôi chó điều gì là tốt nhất?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "犬のさんぽがいい運動になること",
+                "vi": "Dắt chó đi dạo là cách vận động tốt",
+                "en": "Walking the dog is good exercise"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: đây là điều tốt nhưng không phải điều anh cho là tốt nhất."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "知り合いがふえたこと",
+                "vi": "Quen biết thêm nhiều người",
+                "en": "Making more acquaintances"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: người quen biết thêm là mẹ anh chứ không phải anh."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "きそく正しい生活になったこと",
+                "vi": "Sinh hoạt trở nên đều đặn",
+                "en": "Living a regular life"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cũng là điều tốt nhưng anh nói điều tốt nhất là chuyện khác."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "かぞくの会話がふえたこと",
+                "vi": "Cả nhà trò chuyện nhiều hơn",
+                "en": "More conversation in the family"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh nói cả nhà có nhiều dịp trò chuyện hơn và đó là điều tốt nhất."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m2-q2-s11"
+              ]
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m2-q3",
+          "order": 3,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 886900,
+            "end_ms": 989760
+          },
+          "prompt": {
+            "ja": "女の人は何のためにもう一度パン屋に行きますか。",
+            "vi": "Người phụ nữ sẽ đến tiệm bánh mì lần nữa để làm gì?",
+            "en": "Why will the woman go to the bakery again?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m2-q3",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 888210,
+              "end_ms": 894240,
+              "text": {
+                "ja": "雑誌を作る会社で男の人と女の人が話しています。",
+                "vi": "Ở công ty làm tạp chí, một người đàn ông và một người phụ nữ đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 895490,
+              "end_ms": 900990,
+              "text": {
+                "ja": "女の人は何のためにもう一度パン屋に行きますか。",
+                "vi": "Người phụ nữ sẽ đến tiệm bánh mì lần nữa để làm gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s3",
+              "order": 3,
+              "speaker_id": "male",
+              "start_ms": 926880,
+              "end_ms": 935460,
+              "text": {
+                "ja": "青木さん、お帰り。来月雑誌で取り上げる桜町の人気のパン屋、いろいろ話聞けた？",
+                "vi": "Chị Aoki, chị về rồi à. Tiệm bánh mì nổi tiếng ở Sakuramachi sẽ lên tạp chí tháng sau, chị hỏi được nhiều chuyện chưa?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s4",
+              "order": 4,
+              "speaker_id": "female",
+              "start_ms": 935590,
+              "end_ms": 941560,
+              "text": {
+                "ja": "あ、はい。でも今日の夕方、もう一度行かなくちゃならないんです。",
+                "vi": "À, vâng. Nhưng chiều nay tôi phải đến đó thêm một lần nữa."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 941560,
+              "end_ms": 943375,
+              "text": {
+                "ja": "何か聞くの忘れた？",
+                "vi": "Chị quên hỏi gì à?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s6",
+              "order": 6,
+              "speaker_id": "female",
+              "start_ms": 943440,
+              "end_ms": 948680,
+              "text": {
+                "ja": "いえ、奥さんが急な用事ができたそうでいらっしゃらなかったんです。",
+                "vi": "Không, vì bà chủ nghe nói có việc đột xuất nên không có mặt."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s7",
+              "order": 7,
+              "speaker_id": "female",
+              "start_ms": 949560,
+              "end_ms": 957055,
+              "text": {
+                "ja": "店長さんが、雑誌に写真が載るならできれば2人で写っている写真がいいっておっしゃるので。",
+                "vi": "Ông chủ nói nếu ảnh được đăng lên tạp chí thì muốn là ảnh có cả hai người chụp chung."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s8",
+              "order": 8,
+              "speaker_id": "male",
+              "start_ms": 957110,
+              "end_ms": 963050,
+              "text": {
+                "ja": "ああ、あの店はご夫婦で20年以上一緒に頑張ってきた店だからね。",
+                "vi": "À, đó là tiệm mà hai vợ chồng đã cùng nhau cố gắng hơn 20 năm mà."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s9",
+              "order": 9,
+              "speaker_id": "female",
+              "start_ms": 963050,
+              "end_ms": 971360,
+              "text": {
+                "ja": "そうみたいですね。新商品のパンを試食させてもらったんですが、奥さんが考えたっておっしゃってました。",
+                "vi": "Hình như vậy. Tôi được ăn thử loại bánh mới, ông ấy nói là do bà chủ nghĩ ra."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s10",
+              "order": 10,
+              "speaker_id": "male",
+              "start_ms": 971430,
+              "end_ms": 977710,
+              "text": {
+                "ja": "あ、僕も挨拶しに夕方一緒に行くよ。新商品のパンも買いたいし。",
+                "vi": "À, chiều anh cũng đi cùng để chào hỏi. Anh cũng muốn mua loại bánh mới."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s11",
+              "order": 11,
+              "speaker_id": "female",
+              "start_ms": 977780,
+              "end_ms": 978930,
+              "text": {
+                "ja": "わかりました。",
+                "vi": "Tôi hiểu rồi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q3-s12",
+              "order": 12,
+              "speaker_id": "narrator",
+              "start_ms": 984530,
+              "end_ms": 989760,
+              "text": {
+                "ja": "女の人は何のためにもう一度パン屋に行きますか。",
+                "vi": "Người phụ nữ sẽ đến tiệm bánh mì lần nữa để làm gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "てんちょうの話を聞くため",
+                "vi": "Để nghe ông chủ nói chuyện",
+                "en": "To listen to the owner"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cô đã hỏi chuyện ông chủ rồi, không quên hỏi gì cả."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "てんちょうとおくさんの写真をとるため",
+                "vi": "Để chụp ảnh ông chủ và bà chủ",
+                "en": "To take a photo of the owner and his wife"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: bà chủ hôm trước vắng mặt, ông chủ muốn ảnh đăng tạp chí là ảnh chụp chung hai vợ chồng."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m2-q3-s6",
+                "jlpt-n3-2024-12-m2-q3-s7"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "新しいパンを試食するため",
+                "vi": "Để ăn thử loại bánh mới",
+                "en": "To taste the new bread"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cô đã được ăn thử loại bánh mới rồi."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "パンを買うため",
+                "vi": "Để mua bánh mì",
+                "en": "To buy bread"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: người muốn mua bánh mới là nam đồng nghiệp."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m2-q4",
+          "order": 4,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1002790,
+            "end_ms": 1082070
+          },
+          "prompt": {
+            "ja": "先生は生徒に夏休みに何をして欲しいと言っていますか。",
+            "vi": "Giáo viên nói muốn học sinh làm gì trong kỳ nghỉ hè?",
+            "en": "What does the teacher say they want the students to do during summer vacation?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m2-q4",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m2-q4-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1003370,
+              "end_ms": 1006700,
+              "text": {
+                "ja": "高校で先生が話しています。",
+                "vi": "Ở trường cấp ba, một giáo viên đang nói."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q4-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 1007750,
+              "end_ms": 1013830,
+              "text": {
+                "ja": "先生は生徒に夏休みに何をして欲しいと言っていますか。",
+                "vi": "Giáo viên nói muốn học sinh làm gì trong kỳ nghỉ hè?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q4-s3",
+              "order": 3,
+              "speaker_id": "speaker",
+              "start_ms": 1037440,
+              "end_ms": 1040010,
+              "text": {
+                "ja": "明日から夏休みが始まります。",
+                "vi": "Từ ngày mai kỳ nghỉ hè bắt đầu."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q4-s4",
+              "order": 4,
+              "speaker_id": "speaker",
+              "start_ms": 1040400,
+              "end_ms": 1049570,
+              "text": {
+                "ja": "皆さん、クラブ活動や旅行など計画を立てていると思いますが、計画に読書をぜひ加えてください。",
+                "vi": "Tôi nghĩ các em đã lập kế hoạch cho hoạt động câu lạc bộ hay du lịch, nhưng hãy nhất định thêm việc đọc sách vào kế hoạch."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q4-s5",
+              "order": 5,
+              "speaker_id": "speaker",
+              "start_ms": 1050210,
+              "end_ms": 1055670,
+              "text": {
+                "ja": "普段は選ばないようなさまざまな内容の本にチャレンジしてください。",
+                "vi": "Hãy thử thách bản thân với những cuốn sách có nhiều nội dung khác nhau mà bình thường các em không chọn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q4-s6",
+              "order": 6,
+              "speaker_id": "speaker",
+              "start_ms": 1056340,
+              "end_ms": 1070640,
+              "text": {
+                "ja": "次の学期から小論文などの長い文章を書く機会が増えますが、多くの文章の中で言葉の使い方や考え方を知ることはきっと役に立つはずです。",
+                "vi": "Từ học kỳ sau cơ hội viết những bài dài như tiểu luận sẽ tăng lên, và việc biết cách dùng từ cũng như cách suy nghĩ qua nhiều bài viết chắc chắn sẽ có ích."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q4-s7",
+              "order": 7,
+              "speaker_id": "narrator",
+              "start_ms": 1076260,
+              "end_ms": 1082070,
+              "text": {
+                "ja": "先生は生徒に夏休みに何をして欲しいと言っていますか。",
+                "vi": "Giáo viên nói muốn học sinh làm gì trong kỳ nghỉ hè?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "クラブ活動をがんばること",
+                "vi": "Cố gắng với hoạt động câu lạc bộ",
+                "en": "Working hard at club activities"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: hoạt động câu lạc bộ chỉ được nhắc như kế hoạch học sinh đã có."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "つぎのがっきの計画を立てること",
+                "vi": "Lập kế hoạch cho học kỳ sau",
+                "en": "Making plans for next term"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: học kỳ sau chỉ được nhắc để giải thích vì sao đọc sách có ích."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "いろいろな内容の本を読むこと",
+                "vi": "Đọc sách có nhiều nội dung khác nhau",
+                "en": "Reading books on a variety of subjects"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: thầy bảo hãy thêm việc đọc sách, thử những cuốn có nhiều nội dung khác nhau."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m2-q4-s4",
+                "jlpt-n3-2024-12-m2-q4-s5"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "ながいぶんしょうを書くこと",
+                "vi": "Viết bài dài",
+                "en": "Writing long texts"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: viết bài dài là việc sẽ tăng lên từ học kỳ sau, không phải điều thầy muốn làm trong kỳ nghỉ hè."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m2-q5",
+          "order": 5,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1094380,
+            "end_ms": 1208860
+          },
+          "prompt": {
+            "ja": "男の学生は会社説明会に参加して良かったことは何だと言っていますか。",
+            "vi": "Nam sinh viên nói điều tốt khi tham gia buổi giới thiệu công ty là gì?",
+            "en": "What does the male student say was good about attending the company information session?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m2-q5",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1095630,
+              "end_ms": 1100530,
+              "text": {
+                "ja": "大学で女の学生と男の学生が話しています。",
+                "vi": "Ở trường đại học, một nữ sinh viên và một nam sinh viên đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 1101830,
+              "end_ms": 1108990,
+              "text": {
+                "ja": "男の学生は会社説明会に参加して良かったことは何だと言っていますか。",
+                "vi": "Nam sinh viên nói điều tốt khi tham gia buổi giới thiệu công ty là gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 1132590,
+              "end_ms": 1140150,
+              "text": {
+                "ja": "昨日会社説明会行ってきたんでしょ？どうだった？私も今度行くんだけど。",
+                "vi": "Hôm qua cậu đi buổi giới thiệu công ty đúng không? Thế nào? Lần tới mình cũng đi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s4",
+              "order": 4,
+              "speaker_id": "male",
+              "start_ms": 1140650,
+              "end_ms": 1145470,
+              "text": {
+                "ja": "20ぐらいの会社が参加してて、学生もたくさん来てたよ。",
+                "vi": "Có khoảng 20 công ty tham gia, sinh viên cũng đến rất đông."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 1145980,
+              "end_ms": 1153390,
+              "text": {
+                "ja": "広い会場で会社ごとに場所が分かれてて、興味のある会社のところに説明を聞きに行くんだ。",
+                "vi": "Hội trường rộng, mỗi công ty ở một khu riêng, mình đi đến chỗ công ty mình quan tâm để nghe giải thích."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s6",
+              "order": 6,
+              "speaker_id": "female",
+              "start_ms": 1153580,
+              "end_ms": 1157920,
+              "text": {
+                "ja": "そうなんだ。働きたい会社見つかった？",
+                "vi": "Vậy à. Cậu tìm được công ty muốn làm chưa?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s7",
+              "order": 7,
+              "speaker_id": "male",
+              "start_ms": 1158030,
+              "end_ms": 1168100,
+              "text": {
+                "ja": "いや、まだなんだけど、僕の場合、自分がどんな仕事がしたいのかイメージがはっきりしてなかったから、それが見えてきたのがよかったよ。",
+                "vi": "Chưa, nhưng với mình thì vì chưa hình dung rõ mình muốn làm công việc gì nên việc điều đó dần rõ ra là điều tốt."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s8",
+              "order": 8,
+              "speaker_id": "male",
+              "start_ms": 1168520,
+              "end_ms": 1171800,
+              "text": {
+                "ja": "複数の会社の話を具体的に聞けたから。",
+                "vi": "Vì mình nghe được câu chuyện cụ thể từ nhiều công ty."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s9",
+              "order": 9,
+              "speaker_id": "female",
+              "start_ms": 1171970,
+              "end_ms": 1179175,
+              "text": {
+                "ja": "そうか。会社説明会って具体的な就職先を選ぶって感じじゃないんだね。",
+                "vi": "Vậy à. Buổi giới thiệu công ty không phải kiểu để chọn nơi làm việc cụ thể nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s10",
+              "order": 10,
+              "speaker_id": "male",
+              "start_ms": 1179240,
+              "end_ms": 1189405,
+              "text": {
+                "ja": "うーん、でも一緒に行った友達は、説明会の後に第一希望の会社の人と話せたって言ってたし、人によって違うんじゃない？",
+                "vi": "Ừm, nhưng bạn đi cùng mình nói là sau buổi giới thiệu đã nói chuyện được với người của công ty nguyện vọng một, nên chắc tùy người."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s11",
+              "order": 11,
+              "speaker_id": "female",
+              "start_ms": 1189480,
+              "end_ms": 1196230,
+              "text": {
+                "ja": "そっか。参加するといろんな情報が集められるし、役に立ちそうだね。",
+                "vi": "Vậy à. Tham gia thì thu thập được nhiều thông tin, có vẻ hữu ích nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q5-s12",
+              "order": 12,
+              "speaker_id": "narrator",
+              "start_ms": 1201840,
+              "end_ms": 1208860,
+              "text": {
+                "ja": "男の学生は会社説明会に参加して良かったことは何だと言っていますか。",
+                "vi": "Nam sinh viên nói điều tốt khi tham gia buổi giới thiệu công ty là gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "はたらきたい会社が見つかったこと",
+                "vi": "Tìm được công ty muốn làm",
+                "en": "Finding a company he wants to work for"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh nói vẫn chưa tìm được công ty muốn làm."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "自分がしたい仕事が分かってきたこと",
+                "vi": "Dần hiểu rõ công việc mình muốn làm",
+                "en": "Coming to understand the work he wants to do"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh nói điều tốt là hình dung rõ hơn mình muốn làm công việc gì nhờ nghe cụ thể từ nhiều công ty."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m2-q5-s7",
+                "jlpt-n3-2024-12-m2-q5-s8"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "きぼうする会社の人と話せたこと",
+                "vi": "Nói chuyện được với người của công ty nguyện vọng",
+                "en": "Being able to talk with someone from his preferred company"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: đó là chuyện của người bạn đi cùng."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "友人とじょうほうをこうかんできたこと",
+                "vi": "Trao đổi thông tin với bạn bè",
+                "en": "Exchanging information with friends"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: anh không nhắc đến việc trao đổi thông tin với bạn bè."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m2-q6",
+          "order": 6,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1221070,
+            "end_ms": 1313720
+          },
+          "prompt": {
+            "ja": "女の人はこのテーブルがお年寄りに人気がある理由は何だと言っていますか。",
+            "vi": "Người phụ nữ nói lý do chiếc bàn này được người lớn tuổi ưa chuộng là gì?",
+            "en": "What reason does the woman give for this table being popular with older people?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m2-q6",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1222390,
+              "end_ms": 1227440,
+              "text": {
+                "ja": "テレビで女の人があるテーブルの紹介をしています。",
+                "vi": "Trên tivi, một người phụ nữ đang giới thiệu một chiếc bàn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 1228270,
+              "end_ms": 1235290,
+              "text": {
+                "ja": "女の人はこのテーブルがお年寄りに人気がある理由は何だと言っていますか。",
+                "vi": "Người phụ nữ nói lý do chiếc bàn này được người lớn tuổi ưa chuộng là gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s3",
+              "order": 3,
+              "speaker_id": "speaker",
+              "start_ms": 1258880,
+              "end_ms": 1264470,
+              "text": {
+                "ja": "今日は、今人気のちょっと変わったテーブルをご紹介します。",
+                "vi": "Hôm nay tôi xin giới thiệu một chiếc bàn hơi khác lạ đang được ưa chuộng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s4",
+              "order": 4,
+              "speaker_id": "speaker",
+              "start_ms": 1264800,
+              "end_ms": 1271030,
+              "text": {
+                "ja": "こちら、ダンボールで作った自分で組み立てるタイプのテーブルなんです。",
+                "vi": "Đây là loại bàn làm bằng bìa các-tông, tự mình lắp ráp."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s5",
+              "order": 5,
+              "speaker_id": "speaker",
+              "start_ms": 1271590,
+              "end_ms": 1277360,
+              "text": {
+                "ja": "ダンボールは紙ですが丈夫なので、家具の材料にもいいそうです。",
+                "vi": "Bìa các-tông tuy là giấy nhưng rất chắc nên nghe nói cũng thích hợp làm vật liệu cho đồ nội thất."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s6",
+              "order": 6,
+              "speaker_id": "speaker",
+              "start_ms": 1277880,
+              "end_ms": 1281990,
+              "text": {
+                "ja": "子供がぶつかっても怪我をする心配は少ないです。",
+                "vi": "Dù trẻ em va vào cũng ít lo bị thương."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s7",
+              "order": 7,
+              "speaker_id": "speaker",
+              "start_ms": 1282140,
+              "end_ms": 1287590,
+              "text": {
+                "ja": "そしてこのテーブル、実はお年寄りに人気があるんです。",
+                "vi": "Và thật ra chiếc bàn này được người lớn tuổi ưa chuộng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s8",
+              "order": 8,
+              "speaker_id": "speaker",
+              "start_ms": 1288090,
+              "end_ms": 1293870,
+              "text": {
+                "ja": "2キロしかありませんから、自分で簡単に動かせるのがいいそうです。",
+                "vi": "Vì chỉ nặng 2 ký nên họ thích việc tự mình di chuyển dễ dàng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s9",
+              "order": 9,
+              "speaker_id": "speaker",
+              "start_ms": 1294110,
+              "end_ms": 1301050,
+              "text": {
+                "ja": "また、値段がそれほど高くないことから、買っていく学生さんが多いようです。",
+                "vi": "Ngoài ra, vì giá không quá cao nên có vẻ nhiều sinh viên mua."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m2-q6-s10",
+              "order": 10,
+              "speaker_id": "narrator",
+              "start_ms": 1306680,
+              "end_ms": 1313720,
+              "text": {
+                "ja": "女の人はこのテーブルがお年寄りに人気がある理由は何だと言っていますか。",
+                "vi": "Người phụ nữ nói lý do chiếc bàn này được người lớn tuổi ưa chuộng là gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "自分でくみたてるのが楽しいから",
+                "vi": "Vì tự lắp ráp rất vui",
+                "en": "Because assembling it yourself is fun"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: tự lắp ráp chỉ là đặc điểm của chiếc bàn, không phải lý do người lớn tuổi thích."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "ぶつかってもけがをしにくいから",
+                "vi": "Vì có va vào cũng khó bị thương",
+                "en": "Because it is hard to get hurt if you bump into it"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: ít bị thương là điểm dành cho trẻ em."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "軽くて動かしやすいから",
+                "vi": "Vì nhẹ, dễ di chuyển",
+                "en": "Because it is light and easy to move"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: chiếc bàn chỉ nặng 2 ký nên người lớn tuổi tự di chuyển dễ dàng."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m2-q6-s7",
+                "jlpt-n3-2024-12-m2-q6-s8"
+              ]
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "ねだんが高くないから",
+                "vi": "Vì giá không cao",
+                "en": "Because it is not expensive"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: giá không cao là lý do nhiều sinh viên mua."
+              }
+            }
+          ],
+          "choice_display_mode": "text"
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n3-2024-12-m3",
+      "order": 3,
+      "title": {
+        "ja": "問題3",
+        "vi": "Vấn đề 3",
+        "en": "Part 3"
+      },
+      "questions": [
+        {
+          "id": "jlpt-n3-2024-12-m3-q1",
+          "order": 1,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1363540,
+            "end_ms": 1457040
+          },
+          "prompt": {
+            "ja": "二人は何について話していますか。",
+            "vi": "Hai người đang nói về điều gì?",
+            "en": "What are the two talking about?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m3-q1",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1364810,
+              "end_ms": 1371120,
+              "text": {
+                "ja": "日本語学校で女の留学生と男の留学生が話しています。",
+                "vi": "Ở trường tiếng Nhật, một nữ du học sinh và một nam du học sinh đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s2",
+              "order": 2,
+              "speaker_id": "female",
+              "start_ms": 1372780,
+              "end_ms": 1377320,
+              "text": {
+                "ja": "来月で佐藤先生、学校をやめちゃうんだよね。",
+                "vi": "Tháng sau cô Sato nghỉ việc ở trường rồi nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s3",
+              "order": 3,
+              "speaker_id": "male",
+              "start_ms": 1377450,
+              "end_ms": 1379045,
+              "text": {
+                "ja": "寂しくなるね。",
+                "vi": "Buồn nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s4",
+              "order": 4,
+              "speaker_id": "female",
+              "start_ms": 1379080,
+              "end_ms": 1386665,
+              "text": {
+                "ja": "うん。ねえ、クラスのみんなで先生に何か記念になるものをあげたいね。",
+                "vi": "Ừ. Này, cả lớp mình muốn tặng cô một món gì đó làm kỷ niệm nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 1386760,
+              "end_ms": 1391400,
+              "text": {
+                "ja": "あ、いいね。何か身につけるものとか。",
+                "vi": "À, hay đấy. Một món đồ đeo mang theo người chẳng hạn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s6",
+              "order": 6,
+              "speaker_id": "female",
+              "start_ms": 1391590,
+              "end_ms": 1396480,
+              "text": {
+                "ja": "先生おしゃれだし、そういうの選ぶの難しくない？",
+                "vi": "Cô ăn mặc rất sành điệu nên chọn loại đó chẳng phải khó sao?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s7",
+              "order": 7,
+              "speaker_id": "female",
+              "start_ms": 1396960,
+              "end_ms": 1400450,
+              "text": {
+                "ja": "それより、私たちで何か作ろうよ。",
+                "vi": "Thay vì vậy, chúng mình tự làm gì đó đi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s8",
+              "order": 8,
+              "speaker_id": "female",
+              "start_ms": 1400890,
+              "end_ms": 1403360,
+              "text": {
+                "ja": "あ、メッセージカードは？",
+                "vi": "À, thiệp nhắn thì sao?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s9",
+              "order": 9,
+              "speaker_id": "female",
+              "start_ms": 1403870,
+              "end_ms": 1406480,
+              "text": {
+                "ja": "クラスのみんなにも書いてもらおうよ。",
+                "vi": "Nhờ cả lớp cùng viết nữa."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s10",
+              "order": 10,
+              "speaker_id": "male",
+              "start_ms": 1406820,
+              "end_ms": 1415490,
+              "text": {
+                "ja": "じゃあ、スポーツ大会の時に撮ったクラスの集合写真を真ん中に貼って、周りにメッセージを書いてもらう？",
+                "vi": "Vậy thì dán ảnh tập thể của lớp chụp lúc hội thao vào giữa, rồi nhờ mọi người viết lời nhắn xung quanh nhé?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s11",
+              "order": 11,
+              "speaker_id": "female",
+              "start_ms": 1415680,
+              "end_ms": 1419290,
+              "text": {
+                "ja": "いいね。喜んでもらえるといいな。",
+                "vi": "Hay đấy. Mong là cô sẽ vui."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s12",
+              "order": 12,
+              "speaker_id": "female",
+              "start_ms": 1419780,
+              "end_ms": 1423980,
+              "text": {
+                "ja": "明日休み時間にクラスのみんなに話してみよう。",
+                "vi": "Mai giờ ra chơi mình thử nói với cả lớp nhé."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s13",
+              "order": 13,
+              "speaker_id": "narrator",
+              "start_ms": 1429590,
+              "end_ms": 1433180,
+              "text": {
+                "ja": "二人は何について話していますか。",
+                "vi": "Hai người đang nói về điều gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s14",
+              "order": 14,
+              "speaker_id": "choice_1",
+              "start_ms": 1435990,
+              "end_ms": 1439120,
+              "text": {
+                "ja": "先生が学校をやめる理由",
+                "vi": "Lý do giáo viên nghỉ việc ở trường",
+                "en": "Why the teacher is leaving the school"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s15",
+              "order": 15,
+              "speaker_id": "choice_2",
+              "start_ms": 1443000,
+              "end_ms": 1444880,
+              "text": {
+                "ja": "先生に送るもの",
+                "vi": "Món quà tặng cô giáo",
+                "en": "What to give the teacher"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s16",
+              "order": 16,
+              "speaker_id": "choice_3",
+              "start_ms": 1448890,
+              "end_ms": 1451120,
+              "text": {
+                "ja": "先生からのメッセージ",
+                "vi": "Lời nhắn từ cô giáo",
+                "en": "A message from the teacher"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q1-s17",
+              "order": 17,
+              "speaker_id": "choice_4",
+              "start_ms": 1455100,
+              "end_ms": 1457040,
+              "text": {
+                "ja": "先生との思い出",
+                "vi": "Kỷ niệm với cô giáo",
+                "en": "Memories with the teacher"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "先生が学校をやめる理由",
+                "vi": "Lý do giáo viên nghỉ việc ở trường",
+                "en": "Why the teacher is leaving the school"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chỉ nhắc cô giáo sắp nghỉ việc ở đầu câu chuyện, không bàn về lý do cô nghỉ."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "先生に送るもの",
+                "vi": "Món quà tặng cô giáo",
+                "en": "What to give the teacher"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: cả hai bàn nên tặng cô giáo món quà kỷ niệm gì, và quyết định làm thiệp có ảnh tập thể cùng lời nhắn."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m3-q1-s4",
+                "jlpt-n3-2024-12-m3-q1-s5",
+                "jlpt-n3-2024-12-m3-q1-s7",
+                "jlpt-n3-2024-12-m3-q1-s10"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "先生からのメッセージ",
+                "vi": "Lời nhắn từ cô giáo",
+                "en": "A message from the teacher"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: lời nhắn là thứ cả lớp sẽ viết gửi cô, chứ họ không nói về lời nhắn của cô giáo."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "先生との思い出",
+                "vi": "Kỷ niệm với cô giáo",
+                "en": "Memories with the teacher"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: ảnh chụp ở hội thao chỉ là một phần của món quà, họ không nói về kỷ niệm với cô."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m3-q2",
+          "order": 2,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1465290,
+            "end_ms": 1562130
+          },
+          "prompt": {
+            "ja": "女の人は何について話していますか。",
+            "vi": "Người phụ nữ đang nói về điều gì?",
+            "en": "What is the woman talking about?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m3-q2",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1466520,
+              "end_ms": 1471590,
+              "text": {
+                "ja": "ラジオでアナウンサーが女の人にインタビューしています。",
+                "vi": "Trên radio, phát thanh viên đang phỏng vấn một người phụ nữ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s2",
+              "order": 2,
+              "speaker_id": "male",
+              "start_ms": 1473190,
+              "end_ms": 1479280,
+              "text": {
+                "ja": "高橋さんのグループは20年前から緑山に関わっていらっしゃるそうですね。",
+                "vi": "Nghe nói nhóm của chị Takahashi đã gắn bó với núi Midori từ 20 năm trước."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s3",
+              "order": 3,
+              "speaker_id": "female",
+              "start_ms": 1479360,
+              "end_ms": 1486020,
+              "text": {
+                "ja": "はい。私たちは緑山の自然を未来に残したいと考えています。",
+                "vi": "Vâng. Chúng tôi muốn giữ lại thiên nhiên của núi Midori cho tương lai."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s4",
+              "order": 4,
+              "speaker_id": "female",
+              "start_ms": 1486530,
+              "end_ms": 1497670,
+              "text": {
+                "ja": "緑山の木はほとんどは自然のものなんですが、商業目的で木が切られて、その後新しく植えられたところもあるんです。",
+                "vi": "Cây ở núi Midori phần lớn là cây tự nhiên, nhưng cũng có chỗ cây bị chặt vì mục đích thương mại rồi sau đó được trồng mới."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s5",
+              "order": 5,
+              "speaker_id": "male",
+              "start_ms": 1497790,
+              "end_ms": 1499080,
+              "text": {
+                "ja": "そうなんですか。",
+                "vi": "Vậy sao."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s6",
+              "order": 6,
+              "speaker_id": "female",
+              "start_ms": 1499560,
+              "end_ms": 1505410,
+              "text": {
+                "ja": "人の手で植えられた木は、世話をしないと細く弱くなります。",
+                "vi": "Cây do con người trồng nếu không chăm sóc sẽ gầy yếu."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s7",
+              "order": 7,
+              "speaker_id": "female",
+              "start_ms": 1505640,
+              "end_ms": 1516050,
+              "text": {
+                "ja": "根も強くないので、大雨や強い風で倒れたり流されたりしてしまうこともあって、山全体にも影響が出てきます。",
+                "vi": "Rễ cũng không khỏe nên có khi bị đổ hay bị cuốn trôi do mưa lớn, gió mạnh, và ảnh hưởng đến cả ngọn núi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s8",
+              "order": 8,
+              "speaker_id": "female",
+              "start_ms": 1516310,
+              "end_ms": 1526720,
+              "text": {
+                "ja": "そうならないように、細い枝を落としたり、周りの草を取ったりして、1本1本世話をして木を育てています。",
+                "vi": "Để không xảy ra điều đó, chúng tôi tỉa cành nhỏ, nhổ cỏ xung quanh, chăm sóc từng cây một để nuôi cây lớn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s9",
+              "order": 9,
+              "speaker_id": "narrator",
+              "start_ms": 1532340,
+              "end_ms": 1536160,
+              "text": {
+                "ja": "女の人は何について話していますか。",
+                "vi": "Người phụ nữ đang nói về điều gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s10",
+              "order": 10,
+              "speaker_id": "choice_1",
+              "start_ms": 1539100,
+              "end_ms": 1542120,
+              "text": {
+                "ja": "緑山の自然を守る活動",
+                "vi": "Hoạt động bảo vệ thiên nhiên núi Midori",
+                "en": "Activities to protect the nature of Mt. Midori"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s11",
+              "order": 11,
+              "speaker_id": "choice_2",
+              "start_ms": 1546030,
+              "end_ms": 1549070,
+              "text": {
+                "ja": "緑山の木が減っている原因",
+                "vi": "Nguyên nhân cây ở núi Midori giảm đi",
+                "en": "Why the trees on Mt. Midori are decreasing"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s12",
+              "order": 12,
+              "speaker_id": "choice_3",
+              "start_ms": 1553080,
+              "end_ms": 1555720,
+              "text": {
+                "ja": "自然に育った木の特徴",
+                "vi": "Đặc điểm của cây mọc tự nhiên",
+                "en": "Features of naturally grown trees"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q2-s13",
+              "order": 13,
+              "speaker_id": "choice_4",
+              "start_ms": 1559740,
+              "end_ms": 1562130,
+              "text": {
+                "ja": "山に木を植える方法",
+                "vi": "Cách trồng cây trên núi",
+                "en": "How to plant trees on a mountain"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "緑山の自然を守る活動",
+                "vi": "Hoạt động bảo vệ thiên nhiên núi Midori",
+                "en": "Activities to protect the nature of Mt. Midori"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: nhóm của chị muốn giữ lại thiên nhiên núi Midori cho tương lai, và chị kể về việc tỉa cành, nhổ cỏ, chăm sóc từng cây."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m3-q2-s3",
+                "jlpt-n3-2024-12-m3-q2-s8"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "緑山の木が減っている原因",
+                "vi": "Nguyên nhân cây ở núi Midori giảm đi",
+                "en": "Why the trees on Mt. Midori are decreasing"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chỉ nhắc có nơi cây bị chặt vì mục đích thương mại, không nói về nguyên nhân cây giảm."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "自然に育った木の特徴",
+                "vi": "Đặc điểm của cây mọc tự nhiên",
+                "en": "Features of naturally grown trees"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không nói về đặc điểm của cây mọc tự nhiên, mà nói về cây được trồng bởi con người."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "山に木を植える方法",
+                "vi": "Cách trồng cây trên núi",
+                "en": "How to plant trees on a mountain"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không giải thích cách trồng cây, mà nói về việc chăm sóc cây đã trồng."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m3-q3",
+          "order": 3,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1570550,
+            "end_ms": 1644280
+          },
+          "prompt": {
+            "ja": "男の人は何について話していますか。",
+            "vi": "Người đàn ông đang nói về điều gì?",
+            "en": "What is the man talking about?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m3-q3",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1571730,
+              "end_ms": 1575190,
+              "text": {
+                "ja": "ラジオで男の人が話しています。",
+                "vi": "Trên radio, một người đàn ông đang nói chuyện."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s2",
+              "order": 2,
+              "speaker_id": "speaker",
+              "start_ms": 1576790,
+              "end_ms": 1583250,
+              "text": {
+                "ja": "僕、わさびが好きで、お寿司や刺身にたくさんつけて食べるのが好きなんですよ。",
+                "vi": "Tôi thích wasabi, và thích chấm thật nhiều vào sushi hay sashimi."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s3",
+              "order": 3,
+              "speaker_id": "speaker",
+              "start_ms": 1583760,
+              "end_ms": 1597970,
+              "text": {
+                "ja": "わさびって、食べると鼻が痛くなったり、涙が出たりして苦手な人もいるかもしれませんけど、生魚の匂いを消してくれたり、食べ物が悪くなるのを防いでくれたりするんですよね。",
+                "vi": "Wasabi ăn vào thì cay mũi, chảy nước mắt nên có thể có người không thích, nhưng nó giúp khử mùi cá sống và ngăn thực phẩm bị hỏng."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s4",
+              "order": 4,
+              "speaker_id": "speaker",
+              "start_ms": 1598530,
+              "end_ms": 1610870,
+              "text": {
+                "ja": "最近、雑誌で読んだんですが、わさびを食べると食欲が出たり、風邪を引きにくくなったりするなど、健康にも良いらしいということが、研究によって分かってきたそうです。",
+                "vi": "Gần đây tôi đọc trên tạp chí, nghiên cứu cho thấy ăn wasabi giúp thèm ăn hơn, khó bị cảm hơn, tức là có vẻ tốt cho sức khỏe."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s5",
+              "order": 5,
+              "speaker_id": "narrator",
+              "start_ms": 1616460,
+              "end_ms": 1620250,
+              "text": {
+                "ja": "男の人は何について話していますか。",
+                "vi": "Người đàn ông đang nói về điều gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s6",
+              "order": 6,
+              "speaker_id": "choice_1",
+              "start_ms": 1623200,
+              "end_ms": 1625360,
+              "text": {
+                "ja": "わさびを好きになったわけ",
+                "vi": "Lý do trở nên thích wasabi",
+                "en": "Why he came to like wasabi"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s7",
+              "order": 7,
+              "speaker_id": "choice_2",
+              "start_ms": 1629260,
+              "end_ms": 1630800,
+              "text": {
+                "ja": "わさびの効果",
+                "vi": "Tác dụng của wasabi",
+                "en": "The effects of wasabi"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s8",
+              "order": 8,
+              "speaker_id": "choice_3",
+              "start_ms": 1634800,
+              "end_ms": 1637750,
+              "text": {
+                "ja": "わさびが苦手な人が多い理由",
+                "vi": "Lý do nhiều người không thích wasabi",
+                "en": "Why many people dislike wasabi"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m3-q3-s9",
+              "order": 9,
+              "speaker_id": "choice_4",
+              "start_ms": 1641760,
+              "end_ms": 1644280,
+              "text": {
+                "ja": "わさびのおいしさの研究",
+                "vi": "Nghiên cứu về vị ngon của wasabi",
+                "en": "Research on the deliciousness of wasabi"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "わさびを好きになったわけ",
+                "vi": "Lý do trở nên thích wasabi",
+                "en": "Why he came to like wasabi"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chỉ nói mình thích wasabi ở câu mở đầu, không kể lý do trở nên thích."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "わさびの効果",
+                "vi": "Tác dụng của wasabi",
+                "en": "The effects of wasabi"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: anh nói về tác dụng của wasabi: khử mùi cá sống, ngăn thực phẩm hỏng, và tốt cho sức khỏe theo nghiên cứu."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m3-q3-s3",
+                "jlpt-n3-2024-12-m3-q3-s4"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "わさびが苦手な人が多い理由",
+                "vi": "Lý do nhiều người không thích wasabi",
+                "en": "Why many people dislike wasabi"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chỉ nhắc có người không quen ăn wasabi, không nói lý do vì sao nhiều người như vậy."
+              }
+            },
+            {
+              "id": "4",
+              "text": {
+                "ja": "わさびのおいしさの研究",
+                "vi": "Nghiên cứu về vị ngon của wasabi",
+                "en": "Research on the deliciousness of wasabi"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: không nói về vị ngon của wasabi, mà nói về lợi ích sức khỏe mà nghiên cứu phát hiện."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n3-2024-12-m4",
+      "order": 4,
+      "title": {
+        "ja": "問題4",
+        "vi": "Vấn đề 4",
+        "en": "Part 4"
+      },
+      "questions": [
+        {
+          "id": "jlpt-n3-2024-12-m4-q1",
+          "order": 1,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1678810,
+            "end_ms": 1702680
+          },
+          "prompt": {
+            "ja": "美味しいお菓子を買ってきました。会社の人にあげます。何と言いますか。",
+            "vi": "Bạn mua được bánh kẹo ngon và định tặng người trong công ty. Bạn sẽ nói gì?",
+            "en": "You bought some delicious sweets and will offer them to colleagues. What do you say?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m4-q1",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m4-q1-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1680030,
+              "end_ms": 1682550,
+              "text": {
+                "ja": "美味しいお菓子を買ってきました。",
+                "vi": "Bạn đã mua được bánh kẹo ngon."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q1-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 1682950,
+              "end_ms": 1684960,
+              "text": {
+                "ja": "会社の人にあげます。",
+                "vi": "Bạn định tặng người trong công ty."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q1-s3",
+              "order": 3,
+              "speaker_id": "narrator",
+              "start_ms": 1685300,
+              "end_ms": 1689100,
+              "text": {
+                "ja": "何と言いますか。",
+                "vi": "Bạn sẽ nói gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q1-s4",
+              "order": 4,
+              "speaker_id": "choice_1",
+              "start_ms": 1689710,
+              "end_ms": 1691980,
+              "text": {
+                "ja": "お味はいかがですか。",
+                "vi": "Vị thế nào ạ?",
+                "en": "How does it taste?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q1-s5",
+              "order": 5,
+              "speaker_id": "choice_2",
+              "start_ms": 1694870,
+              "end_ms": 1697060,
+              "text": {
+                "ja": "ではいただきますね。",
+                "vi": "Vậy tôi xin nhận nhé.",
+                "en": "Then I'll gladly have some."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q1-s6",
+              "order": 6,
+              "speaker_id": "choice_3",
+              "start_ms": 1700080,
+              "end_ms": 1702680,
+              "text": {
+                "ja": "一つ召し上がりませんか。",
+                "vi": "Anh/chị dùng một cái nhé?",
+                "en": "Won't you have one?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "お味はいかがですか。",
+                "vi": "Vị thế nào ạ?",
+                "en": "How does it taste?"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 「お味はいかがですか」 hỏi cảm nhận sau khi người kia đã ăn."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "ではいただきますね。",
+                "vi": "Vậy tôi xin nhận nhé.",
+                "en": "Then I'll gladly have some."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 「いただきますね」 là lời của người nhận, không phải người mời."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "一つ召し上がりませんか。",
+                "vi": "Anh/chị dùng một cái nhé?",
+                "en": "Won't you have one?"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: 「一つ召し上がりませんか」 là cách mời lịch sự dùng kính ngữ với người trong công ty."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m4-q1-s1",
+                "jlpt-n3-2024-12-m4-q1-s2"
+              ]
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791899544/jlpt/n3/2024-12/m4-q1-figure.png",
+            "alt": {
+              "ja": "社員用の休憩所。矢印の女の人が、座っている男の人にお菓子を差し出している。",
+              "vi": "Ở khu nghỉ của công ty, người phụ nữ có mũi tên đưa hộp bánh cho người đàn ông đang ngồi.",
+              "en": "In a staff lounge, the woman with the arrow offers sweets to a seated man."
+            }
+          }
+        },
+        {
+          "id": "jlpt-n3-2024-12-m4-q2",
+          "order": 2,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1713140,
+            "end_ms": 1738780
+          },
+          "prompt": {
+            "ja": "映画館で自分の席に他の人が座っています。何と言いますか。",
+            "vi": "Ở rạp chiếu phim, có người khác đang ngồi vào ghế của bạn. Bạn sẽ nói gì?",
+            "en": "At the cinema, someone else is sitting in your seat. What do you say?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m4-q2",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m4-q2-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1714360,
+              "end_ms": 1719190,
+              "text": {
+                "ja": "映画館で自分の席に他の人が座っています。",
+                "vi": "Ở rạp chiếu phim, có người khác đang ngồi vào ghế của bạn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q2-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 1719430,
+              "end_ms": 1723250,
+              "text": {
+                "ja": "何と言いますか。",
+                "vi": "Bạn sẽ nói gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q2-s3",
+              "order": 3,
+              "speaker_id": "choice_1",
+              "start_ms": 1723870,
+              "end_ms": 1728970,
+              "text": {
+                "ja": "あの、隣空いてますか。",
+                "vi": "Xin lỗi, ghế bên cạnh có trống không ạ?",
+                "en": "Excuse me, is the seat next to you free?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q2-s4",
+              "order": 4,
+              "speaker_id": "choice_2",
+              "start_ms": 1729600,
+              "end_ms": 1733020,
+              "text": {
+                "ja": "あの、ここ私の席なんですけど。",
+                "vi": "Xin lỗi, đây là ghế của tôi ạ.",
+                "en": "Excuse me, this is my seat."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q2-s5",
+              "order": 5,
+              "speaker_id": "choice_3",
+              "start_ms": 1736040,
+              "end_ms": 1738780,
+              "text": {
+                "ja": "あの、どうぞ座ってください。",
+                "vi": "Xin lỗi, mời anh/chị ngồi ạ.",
+                "en": "Excuse me, please sit down."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "あの、隣空いてますか。",
+                "vi": "Xin lỗi, ghế bên cạnh có trống không ạ?",
+                "en": "Excuse me, is the seat next to you free?"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: hỏi ghế bên cạnh có trống không, trong khi ghế của mình đang bị người khác ngồi."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "あの、ここ私の席なんですけど。",
+                "vi": "Xin lỗi, đây là ghế của tôi ạ.",
+                "en": "Excuse me, this is my seat."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: lịch sự nói rằng đây là ghế của mình để người kia nhận ra."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m4-q2-s1"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "あの、どうぞ座ってください。",
+                "vi": "Xin lỗi, mời anh/chị ngồi ạ.",
+                "en": "Excuse me, please sit down."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: mời người đó ngồi, ngược với việc muốn lấy lại ghế của mình."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791899548/jlpt/n3/2024-12/m4-q2-figure.png",
+            "alt": {
+              "ja": "映画館で、矢印の男の人の席に、別の男の人が座っている。",
+              "vi": "Ở rạp chiếu phim, có người đàn ông khác đang ngồi vào chỗ của người đàn ông có mũi tên.",
+              "en": "In a cinema, another man is sitting in the seat of the man with the arrow."
+            }
+          }
+        },
+        {
+          "id": "jlpt-n3-2024-12-m4-q3",
+          "order": 3,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1749330,
+            "end_ms": 1773360
+          },
+          "prompt": {
+            "ja": "友達のネクタイにカレーがつきそうです。教えたいです。何と言いますか。",
+            "vi": "Món cà ri sắp dính vào cà vạt của bạn. Bạn muốn báo cho bạn biết. Bạn sẽ nói gì?",
+            "en": "Curry is about to get on your friend's tie. You want to let them know. What do you say?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m4-q3",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m4-q3-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1750570,
+              "end_ms": 1754260,
+              "text": {
+                "ja": "友達のネクタイにカレーがつきそうです。",
+                "vi": "Món cà ri sắp dính vào cà vạt của bạn."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q3-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 1754870,
+              "end_ms": 1756400,
+              "text": {
+                "ja": "教えたいです。",
+                "vi": "Bạn muốn báo cho bạn biết."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q3-s3",
+              "order": 3,
+              "speaker_id": "narrator",
+              "start_ms": 1756910,
+              "end_ms": 1758480,
+              "text": {
+                "ja": "何と言いますか。",
+                "vi": "Bạn sẽ nói gì?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q3-s4",
+              "order": 4,
+              "speaker_id": "choice_1",
+              "start_ms": 1761430,
+              "end_ms": 1763300,
+              "text": {
+                "ja": "あ、つけなくちゃ。",
+                "vi": "A, phải làm cho dính mới được.",
+                "en": "Oh, I have to put it on."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q3-s5",
+              "order": 5,
+              "speaker_id": "choice_2",
+              "start_ms": 1766180,
+              "end_ms": 1768120,
+              "text": {
+                "ja": "あ、ついちゃうよ。",
+                "vi": "A, sắp dính mất đấy.",
+                "en": "Oh, it's going to get on it!"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q3-s6",
+              "order": 6,
+              "speaker_id": "choice_3",
+              "start_ms": 1771110,
+              "end_ms": 1773360,
+              "text": {
+                "ja": "あ、ついたら教えて。",
+                "vi": "A, nếu dính thì bảo mình nhé.",
+                "en": "Oh, tell me if it gets on."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "あ、つけなくちゃ。",
+                "vi": "A, phải làm cho dính mới được.",
+                "en": "Oh, I have to put it on."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 「つけなくちゃ」 nghĩa là phải làm cho dính vào, sai ý."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "あ、ついちゃうよ。",
+                "vi": "A, sắp dính mất đấy.",
+                "en": "Oh, it's going to get on it!"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: 「ついちゃうよ」 cảnh báo rằng cà ri sắp dính vào cà vạt."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m4-q3-s1",
+                "jlpt-n3-2024-12-m4-q3-s2"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "あ、ついたら教えて。",
+                "vi": "A, nếu dính thì bảo mình nhé.",
+                "en": "Oh, tell me if it gets on."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 「ついたら教えて」 là nhờ bạn báo khi nó dính, trong khi mình mới là người muốn báo."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791899550/jlpt/n3/2024-12/m4-q3-figure.png",
+            "alt": {
+              "ja": "食事中、矢印の女の人が、友達のネクタイにカレーがつきそうなのを見ている。",
+              "vi": "Đang ăn, người phụ nữ có mũi tên thấy cà vạt của bạn sắp dính cà ri.",
+              "en": "During a meal, the woman with the arrow sees that curry is about to get on her friend's tie."
+            }
+          }
+        },
+        {
+          "id": "jlpt-n3-2024-12-m4-q4",
+          "order": 4,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1784030,
+            "end_ms": 1812920
+          },
+          "prompt": {
+            "ja": "ハサミが使いたいですが持っていません。先輩に何と言いますか。",
+            "vi": "Bạn muốn dùng kéo nhưng không có. Bạn sẽ nói gì với tiền bối?",
+            "en": "You want to use scissors but don't have any. What do you say to your senior?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m4-q4",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m4-q4-s1",
+              "order": 1,
+              "speaker_id": "narrator",
+              "start_ms": 1785070,
+              "end_ms": 1788980,
+              "text": {
+                "ja": "ハサミが使いたいですが持っていません。",
+                "vi": "Bạn muốn dùng kéo nhưng không có."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q4-s2",
+              "order": 2,
+              "speaker_id": "narrator",
+              "start_ms": 1789440,
+              "end_ms": 1792200,
+              "text": {
+                "ja": "先輩に何と言いますか。",
+                "vi": "Bạn sẽ nói gì với tiền bối?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q4-s3",
+              "order": 3,
+              "speaker_id": "choice_1",
+              "start_ms": 1794400,
+              "end_ms": 1799420,
+              "text": {
+                "ja": "あの、ハサミをちょっとお借りできますか。",
+                "vi": "Xin lỗi, cho em mượn kéo một chút được không ạ?",
+                "en": "Excuse me, could I borrow your scissors for a moment?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q4-s4",
+              "order": 4,
+              "speaker_id": "choice_2",
+              "start_ms": 1802330,
+              "end_ms": 1805250,
+              "text": {
+                "ja": "ハサミお返ししましょうか。",
+                "vi": "Để em trả lại kéo nhé?",
+                "en": "Shall I return the scissors?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m4-q4-s5",
+              "order": 5,
+              "speaker_id": "choice_3",
+              "start_ms": 1808260,
+              "end_ms": 1812920,
+              "text": {
+                "ja": "すみません。ハサミを使っていただきたいんですが。",
+                "vi": "Xin lỗi. Em muốn nhờ anh/chị dùng kéo ạ.",
+                "en": "Sorry. I'd like you to use the scissors."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "あの、ハサミをちょっとお借りできますか。",
+                "vi": "Xin lỗi, cho em mượn kéo một chút được không ạ?",
+                "en": "Excuse me, could I borrow your scissors for a moment?"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: 「お借りできますか」 là cách xin mượn lịch sự với người trên."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m4-q4-s1",
+                "jlpt-n3-2024-12-m4-q4-s2"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "ハサミお返ししましょうか。",
+                "vi": "Để em trả lại kéo nhé?",
+                "en": "Shall I return the scissors?"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 「お返ししましょうか」 là đề nghị trả lại đồ đã mượn, mà mình chưa mượn gì."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "すみません。ハサミを使っていただきたいんですが。",
+                "vi": "Xin lỗi. Em muốn nhờ anh/chị dùng kéo ạ.",
+                "en": "Sorry. I'd like you to use the scissors."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: 「使っていただきたい」 là nhờ người kia dùng, sai chủ thể, không phải xin mượn."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers",
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1791899553/jlpt/n3/2024-12/m4-q4-figure.png",
+            "alt": {
+              "ja": "会社で、矢印の男の人が、隣の席の先輩に話しかけようとしている。",
+              "vi": "Ở công ty, người đàn ông có mũi tên định nói chuyện với tiền bối ngồi bên cạnh.",
+              "en": "At the office, the man with the arrow is about to speak to the senior colleague next to him."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n3-2024-12-m5",
+      "order": 5,
+      "title": {
+        "ja": "問題5",
+        "vi": "Vấn đề 5",
+        "en": "Part 5"
+      },
+      "questions": [
+        {
+          "id": "jlpt-n3-2024-12-m5-q1",
+          "order": 1,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1851050,
+            "end_ms": 1875450
+          },
+          "prompt": {
+            "ja": "足痛そうだね。午後のテニスの練習休んだら？",
+            "vi": "Chân cậu trông đau nhỉ. Buổi tập tennis chiều nay cậu nghỉ đi?",
+            "en": "Your leg looks painful. Why don't you skip this afternoon's tennis practice?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q1",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q1-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 1852260,
+              "end_ms": 1857960,
+              "text": {
+                "ja": "足痛そうだね。午後のテニスの練習休んだら？",
+                "vi": "Chân cậu trông đau nhỉ. Buổi tập tennis chiều nay cậu nghỉ đi?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q1-s2",
+              "order": 2,
+              "speaker_id": "choice_1",
+              "start_ms": 1861110,
+              "end_ms": 1864210,
+              "text": {
+                "ja": "そうする。今日は帰るね。",
+                "vi": "Ừ, mình sẽ nghỉ. Hôm nay mình về nhé.",
+                "en": "I will. I'll head home today."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q1-s3",
+              "order": 3,
+              "speaker_id": "choice_2",
+              "start_ms": 1867100,
+              "end_ms": 1869790,
+              "text": {
+                "ja": "今日は練習ないんだね。",
+                "vi": "Hôm nay không có tập nhỉ.",
+                "en": "So there's no practice today."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q1-s4",
+              "order": 4,
+              "speaker_id": "choice_3",
+              "start_ms": 1872790,
+              "end_ms": 1875450,
+              "text": {
+                "ja": "テニス、今日は休むの？",
+                "vi": "Tennis, hôm nay cậu nghỉ à?",
+                "en": "Tennis, are you taking today off?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "そうする。今日は帰るね。",
+                "vi": "Ừ, mình sẽ nghỉ. Hôm nay mình về nhé.",
+                "en": "I will. I'll head home today."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: nghe theo lời khuyên nghỉ tập và nói sẽ về nhà luôn."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q1-s1"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "今日は練習ないんだね。",
+                "vi": "Hôm nay không có tập nhỉ.",
+                "en": "So there's no practice today."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: câu này nhận xét hôm nay không có buổi tập, không đáp lại lời khuyên."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "テニス、今日は休むの？",
+                "vi": "Tennis, hôm nay cậu nghỉ à?",
+                "en": "Tennis, are you taking today off?"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: hỏi ngược lại người nói có nghỉ không, trong khi chính họ đang khuyên."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q2",
+          "order": 2,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1883870,
+            "end_ms": 1907400
+          },
+          "prompt": {
+            "ja": "町の花火大会、今年はやらないことになったそうだよ。",
+            "vi": "Nghe nói lễ hội pháo hoa của thị trấn năm nay quyết định không tổ chức đấy.",
+            "en": "I heard the town's fireworks festival has been canceled this year."
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q2",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q2-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 1885310,
+              "end_ms": 1889610,
+              "text": {
+                "ja": "町の花火大会、今年はやらないことになったそうだよ。",
+                "vi": "Nghe nói lễ hội pháo hoa của thị trấn năm nay quyết định không tổ chức đấy."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q2-s2",
+              "order": 2,
+              "speaker_id": "choice_1",
+              "start_ms": 1892630,
+              "end_ms": 1894900,
+              "text": {
+                "ja": "やらないかもしれないんだね。",
+                "vi": "Có thể sẽ không tổ chức nhỉ.",
+                "en": "So it might not be held."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q2-s3",
+              "order": 3,
+              "speaker_id": "choice_2",
+              "start_ms": 1897780,
+              "end_ms": 1901960,
+              "text": {
+                "ja": "え、なんで？楽しみにしてたのに。",
+                "vi": "Hả, sao vậy? Mình đã mong chờ lắm.",
+                "en": "What, why? I was looking forward to it."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q2-s4",
+              "order": 4,
+              "speaker_id": "choice_3",
+              "start_ms": 1904980,
+              "end_ms": 1907400,
+              "text": {
+                "ja": "じゃあ、見に行かなきゃね。",
+                "vi": "Vậy thì phải đi xem nhỉ.",
+                "en": "Then we'd better go see it."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "やらないかもしれないんだね。",
+                "vi": "Có thể sẽ không tổ chức nhỉ.",
+                "en": "So it might not be held."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: người nói đã khẳng định là không tổ chức, không phải chỉ có thể."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "え、なんで？楽しみにしてたのに。",
+                "vi": "Hả, sao vậy? Mình đã mong chờ lắm.",
+                "en": "What, why? I was looking forward to it."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: ngạc nhiên và tiếc vì đã mong chờ, hỏi lý do."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q2-s1"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "じゃあ、見に行かなきゃね。",
+                "vi": "Vậy thì phải đi xem nhỉ.",
+                "en": "Then we'd better go see it."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nói như vậy là không hiểu rằng lễ hội đã bị hủy."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q3",
+          "order": 3,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1916010,
+            "end_ms": 1941310
+          },
+          "prompt": {
+            "ja": "吉田さん、今回の旅行楽しかったよ。吉田さんが案内してくれたおかげだよ。",
+            "vi": "Yoshida, chuyến du lịch lần này vui lắm. Nhờ có bạn hướng dẫn đấy.",
+            "en": "Yoshida, this trip was great. It's thanks to you showing us around."
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q3",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q3-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 1917210,
+              "end_ms": 1921140,
+              "text": {
+                "ja": "吉田さん、今回の旅行楽しかったよ。",
+                "vi": "Yoshida, chuyến du lịch lần này vui lắm."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q3-s2",
+              "order": 2,
+              "speaker_id": "speaker",
+              "start_ms": 1921760,
+              "end_ms": 1924810,
+              "text": {
+                "ja": "吉田さんが案内してくれたおかげだよ。",
+                "vi": "Nhờ có bạn hướng dẫn đấy."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q3-s3",
+              "order": 3,
+              "speaker_id": "choice_1",
+              "start_ms": 1927770,
+              "end_ms": 1930320,
+              "text": {
+                "ja": "喜んでもらえてよかった。",
+                "vi": "Bạn vui là mình mừng rồi.",
+                "en": "I'm glad you enjoyed it."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q3-s4",
+              "order": 4,
+              "speaker_id": "choice_2",
+              "start_ms": 1933220,
+              "end_ms": 1935840,
+              "text": {
+                "ja": "一緒に行けなくてごめんね。",
+                "vi": "Xin lỗi vì mình không đi cùng được.",
+                "en": "Sorry I couldn't go with you."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q3-s5",
+              "order": 5,
+              "speaker_id": "choice_3",
+              "start_ms": 1938850,
+              "end_ms": 1941310,
+              "text": {
+                "ja": "案内してくれてありがとう。",
+                "vi": "Cảm ơn bạn đã hướng dẫn.",
+                "en": "Thank you for showing us around."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "喜んでもらえてよかった。",
+                "vi": "Bạn vui là mình mừng rồi.",
+                "en": "I'm glad you enjoyed it."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: đáp lại lời cảm ơn, vui vì người kia thấy vui."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q3-s1",
+                "jlpt-n3-2024-12-m5-q3-s2"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "一緒に行けなくてごめんね。",
+                "vi": "Xin lỗi vì mình không đi cùng được.",
+                "en": "Sorry I couldn't go with you."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: xin lỗi vì không đi cùng, trong khi người nói đã đi cùng trong chuyến này."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "案内してくれてありがとう。",
+                "vi": "Cảm ơn bạn đã hướng dẫn.",
+                "en": "Thank you for showing us around."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cảm ơn người kia vì đã hướng dẫn, nhưng người hướng dẫn chính là mình."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q4",
+          "order": 4,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1949920,
+            "end_ms": 1976620
+          },
+          "prompt": {
+            "ja": "来週の食事会、参加できるかまだ分からなくて。いつまでにお返事すればいいですか。",
+            "vi": "Về bữa ăn tuần sau, tôi vẫn chưa biết có tham gia được không. Tôi nên trả lời trước khi nào ạ?",
+            "en": "I still don't know whether I can join next week's dinner. By when should I reply?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q4",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q4-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 1951120,
+              "end_ms": 1955680,
+              "text": {
+                "ja": "来週の食事会、参加できるかまだ分からなくて。",
+                "vi": "Về bữa ăn tuần sau, tôi vẫn chưa biết có tham gia được không."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q4-s2",
+              "order": 2,
+              "speaker_id": "speaker",
+              "start_ms": 1956140,
+              "end_ms": 1958630,
+              "text": {
+                "ja": "いつまでにお返事すればいいですか。",
+                "vi": "Tôi nên trả lời trước khi nào ạ?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q4-s3",
+              "order": 3,
+              "speaker_id": "choice_1",
+              "start_ms": 1961620,
+              "end_ms": 1964400,
+              "text": {
+                "ja": "今週中なら大丈夫ですよ。",
+                "vi": "Trong tuần này thì được ạ.",
+                "en": "Anytime this week is fine."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q4-s4",
+              "order": 4,
+              "speaker_id": "choice_2",
+              "start_ms": 1967310,
+              "end_ms": 1970140,
+              "text": {
+                "ja": "参加できそうでよかったです。",
+                "vi": "Mừng là có vẻ anh/chị tham gia được.",
+                "en": "I'm glad it looks like you can come."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q4-s5",
+              "order": 5,
+              "speaker_id": "choice_3",
+              "start_ms": 1973150,
+              "end_ms": 1976620,
+              "text": {
+                "ja": "はい、返事お待ちしていますね。",
+                "vi": "Vâng, tôi sẽ chờ câu trả lời.",
+                "en": "Yes, I'll be waiting for your reply."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "今週中なら大丈夫ですよ。",
+                "vi": "Trong tuần này thì được ạ.",
+                "en": "Anytime this week is fine."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: trả lời trực tiếp thời hạn hồi âm: trong tuần này."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q4-s1",
+                "jlpt-n3-2024-12-m5-q4-s2"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "参加できそうでよかったです。",
+                "vi": "Mừng là có vẻ anh/chị tham gia được.",
+                "en": "I'm glad it looks like you can come."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nói như thể đã chắc chắn tham gia được, trong khi người hỏi vẫn chưa biết."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "はい、返事お待ちしていますね。",
+                "vi": "Vâng, tôi sẽ chờ câu trả lời.",
+                "en": "Yes, I'll be waiting for your reply."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: chỉ nói sẽ đợi câu trả lời, không cho biết thời hạn."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q5",
+          "order": 5,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 1985130,
+            "end_ms": 2006750
+          },
+          "prompt": {
+            "ja": "曇ってきたね。雨が降らないうちに帰ろうか。",
+            "vi": "Trời bắt đầu có mây rồi nhỉ. Mình về trước khi trời mưa nhé?",
+            "en": "It's getting cloudy. Shall we head home before it rains?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q5",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q5-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 1986360,
+              "end_ms": 1987880,
+              "text": {
+                "ja": "曇ってきたね。",
+                "vi": "Trời bắt đầu có mây rồi nhỉ."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q5-s2",
+              "order": 2,
+              "speaker_id": "speaker",
+              "start_ms": 1988210,
+              "end_ms": 1990890,
+              "text": {
+                "ja": "雨が降らないうちに帰ろうか。",
+                "vi": "Mình về trước khi trời mưa nhé?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q5-s3",
+              "order": 3,
+              "speaker_id": "choice_1",
+              "start_ms": 1993850,
+              "end_ms": 1996040,
+              "text": {
+                "ja": "え、もう降ってきた。",
+                "vi": "Ơ, mưa rồi kìa.",
+                "en": "Oh, it's already started raining."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q5-s4",
+              "order": 4,
+              "speaker_id": "choice_2",
+              "start_ms": 1998930,
+              "end_ms": 2001260,
+              "text": {
+                "ja": "雨が止んでから帰るの？",
+                "vi": "Cậu về sau khi mưa tạnh à?",
+                "en": "You'll go home after the rain stops?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q5-s5",
+              "order": 5,
+              "speaker_id": "choice_3",
+              "start_ms": 2004270,
+              "end_ms": 2006750,
+              "text": {
+                "ja": "降る前に帰った方がいいね。",
+                "vi": "Nên về trước khi mưa nhỉ.",
+                "en": "We'd better go home before it rains."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "え、もう降ってきた。",
+                "vi": "Ơ, mưa rồi kìa.",
+                "en": "Oh, it's already started raining."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: trời chưa mưa, người nói chỉ đề nghị về trước khi mưa."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "雨が止んでから帰るの？",
+                "vi": "Cậu về sau khi mưa tạnh à?",
+                "en": "You'll go home after the rain stops?"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: người nói đề nghị về trước khi mưa, không phải đợi mưa tạnh mới về."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "降る前に帰った方がいいね。",
+                "vi": "Nên về trước khi mưa nhỉ.",
+                "en": "We'd better go home before it rains."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: đồng ý rằng nên về trước khi trời mưa."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q5-s1",
+                "jlpt-n3-2024-12-m5-q5-s2"
+              ]
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q6",
+          "order": 6,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 2015160,
+            "end_ms": 2040760
+          },
+          "prompt": {
+            "ja": "森さん、悪いけどドアの近くにあるダンボール箱、倉庫に運んどいてくれる？",
+            "vi": "Mori, xin lỗi nhưng cậu chuyển giúp thùng các-tông gần cửa vào kho được không?",
+            "en": "Mori, sorry, but could you carry the cardboard box near the door to the storeroom?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q6",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q6-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 2016530,
+              "end_ms": 2024120,
+              "text": {
+                "ja": "森さん、悪いけどドアの近くにあるダンボール箱、倉庫に運んどいてくれる？",
+                "vi": "Mori, xin lỗi nhưng cậu chuyển giúp thùng các-tông gần cửa vào kho được không?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q6-s2",
+              "order": 2,
+              "speaker_id": "choice_1",
+              "start_ms": 2027080,
+              "end_ms": 2030150,
+              "text": {
+                "ja": "倉庫にあるんですね。取ってきます。",
+                "vi": "Nó đang ở trong kho nhỉ. Em đi lấy ạ.",
+                "en": "It's in the storeroom, right? I'll go get it."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q6-s3",
+              "order": 3,
+              "speaker_id": "choice_2",
+              "start_ms": 2033050,
+              "end_ms": 2036080,
+              "text": {
+                "ja": "ありがとうございます。お願いします。",
+                "vi": "Cảm ơn ạ. Nhờ anh/chị giúp.",
+                "en": "Thank you. Please do."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q6-s4",
+              "order": 4,
+              "speaker_id": "choice_3",
+              "start_ms": 2039080,
+              "end_ms": 2040760,
+              "text": {
+                "ja": "後でもいいですか。",
+                "vi": "Làm sau có được không ạ?",
+                "en": "Is it all right if I do it later?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "倉庫にあるんですね。取ってきます。",
+                "vi": "Nó đang ở trong kho nhỉ. Em đi lấy ạ.",
+                "en": "It's in the storeroom, right? I'll go get it."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: hiểu lầm rằng thùng đang ở trong kho, trong khi cần chuyển vào kho."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "ありがとうございます。お願いします。",
+                "vi": "Cảm ơn ạ. Nhờ anh/chị giúp.",
+                "en": "Thank you. Please do."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: câu này đáp như thể người kia vừa đề nghị giúp mình, trong khi chính họ là người nhờ."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "後でもいいですか。",
+                "vi": "Làm sau có được không ạ?",
+                "en": "Is it all right if I do it later?"
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: đáp lại lời nhờ bằng cách hỏi xem làm sau có được không."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q6-s1"
+              ]
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q7",
+          "order": 7,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 2049220,
+            "end_ms": 2075940
+          },
+          "prompt": {
+            "ja": "あの、こちらのお店、店の中の写真を撮っても構いませんか。すごく素敵なので。",
+            "vi": "Xin lỗi, ở tiệm này tôi chụp ảnh bên trong có được không ạ? Vì tiệm rất đẹp.",
+            "en": "Excuse me, is it all right to take photos inside this shop? It's so lovely."
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q7",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q7-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 2050470,
+              "end_ms": 2056400,
+              "text": {
+                "ja": "あの、こちらのお店、店の中の写真を撮っても構いませんか。",
+                "vi": "Xin lỗi, ở tiệm này tôi chụp ảnh bên trong có được không ạ?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q7-s2",
+              "order": 2,
+              "speaker_id": "speaker",
+              "start_ms": 2056690,
+              "end_ms": 2058700,
+              "text": {
+                "ja": "すごく素敵なので。",
+                "vi": "Vì tiệm rất đẹp."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q7-s3",
+              "order": 3,
+              "speaker_id": "choice_1",
+              "start_ms": 2062740,
+              "end_ms": 2064870,
+              "text": {
+                "ja": "あ、写真はご遠慮ください。",
+                "vi": "À, xin quý khách vui lòng không chụp ảnh ạ.",
+                "en": "Oh, please refrain from taking photos."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q7-s4",
+              "order": 4,
+              "speaker_id": "choice_2",
+              "start_ms": 2067780,
+              "end_ms": 2070580,
+              "text": {
+                "ja": "素敵な写真ありがとうございます。",
+                "vi": "Cảm ơn vì bức ảnh đẹp ạ.",
+                "en": "Thank you for the lovely photo."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q7-s5",
+              "order": 5,
+              "speaker_id": "choice_3",
+              "start_ms": 2073590,
+              "end_ms": 2075940,
+              "text": {
+                "ja": "写真は撮ってないんですよ。",
+                "vi": "Chúng tôi không chụp ảnh đâu ạ.",
+                "en": "We don't take photos."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "あ、写真はご遠慮ください。",
+                "vi": "À, xin quý khách vui lòng không chụp ảnh ạ.",
+                "en": "Oh, please refrain from taking photos."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: nhân viên đáp lại lời xin phép bằng cách lịch sự từ chối chụp ảnh."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q7-s1",
+                "jlpt-n3-2024-12-m5-q7-s2"
+              ]
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "素敵な写真ありがとうございます。",
+                "vi": "Cảm ơn vì bức ảnh đẹp ạ.",
+                "en": "Thank you for the lovely photo."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: cảm ơn vì những bức ảnh đẹp, trong khi khách chưa đưa ảnh nào."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "写真は撮ってないんですよ。",
+                "vi": "Chúng tôi không chụp ảnh đâu ạ.",
+                "en": "We don't take photos."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nói rằng mình không chụp ảnh, không trả lời câu hỏi xin phép."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q8",
+          "order": 8,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 2084480,
+            "end_ms": 2112320
+          },
+          "prompt": {
+            "ja": "今課長から電話があったんですが、訪問先から会社に戻らずに帰宅されるそうです。",
+            "vi": "Vừa rồi trưởng phòng có gọi điện, nghe nói sẽ không quay lại công ty mà về thẳng nhà từ nơi đến thăm.",
+            "en": "The section chief just called; he says he'll go straight home from the client's without returning to the office."
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q8",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q8-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 2085690,
+              "end_ms": 2095820,
+              "text": {
+                "ja": "今課長から電話があったんですが、訪問先から会社に戻らずに帰宅されるそうです。",
+                "vi": "Vừa rồi trưởng phòng có gọi điện, nghe nói sẽ không quay lại công ty mà về thẳng nhà từ nơi đến thăm."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q8-s2",
+              "order": 2,
+              "speaker_id": "choice_1",
+              "start_ms": 2096420,
+              "end_ms": 2099500,
+              "text": {
+                "ja": "一度会社に戻ってこられるんですね。",
+                "vi": "Trưởng phòng sẽ quay lại công ty một lần nhỉ.",
+                "en": "So he'll come back to the office once."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q8-s3",
+              "order": 3,
+              "speaker_id": "choice_2",
+              "start_ms": 2102390,
+              "end_ms": 2106020,
+              "text": {
+                "ja": "あ、そのまま家に帰られるんですね。",
+                "vi": "À, trưởng phòng sẽ về thẳng nhà nhỉ.",
+                "en": "Oh, so he'll go straight home."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q8-s4",
+              "order": 4,
+              "speaker_id": "choice_3",
+              "start_ms": 2109980,
+              "end_ms": 2112320,
+              "text": {
+                "ja": "え、家に寄ってこられるんですか。",
+                "vi": "Hả, trưởng phòng sẽ ghé nhà tôi ạ?",
+                "en": "What, he's going to stop by my house?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "一度会社に戻ってこられるんですね。",
+                "vi": "Trưởng phòng sẽ quay lại công ty một lần nhỉ.",
+                "en": "So he'll come back to the office once."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: người nói bảo trưởng phòng không quay lại công ty, không phải sẽ quay lại một lần."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "あ、そのまま家に帰られるんですね。",
+                "vi": "À, trưởng phòng sẽ về thẳng nhà nhỉ.",
+                "en": "Oh, so he'll go straight home."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: xác nhận lại rằng trưởng phòng sẽ về thẳng nhà."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q8-s1"
+              ]
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "え、家に寄ってこられるんですか。",
+                "vi": "Hả, trưởng phòng sẽ ghé nhà tôi ạ?",
+                "en": "What, he's going to stop by my house?"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nói rằng trưởng phòng ghé qua nhà mình, sai ý của câu nói."
+              }
+            }
+          ],
+          "choice_display_mode": "numbers"
+        },
+        {
+          "id": "jlpt-n3-2024-12-m5-q9",
+          "order": 9,
+          "type": "listening_multiple_choice",
+          "audio": {
+            "start_ms": 2120870,
+            "end_ms": 2146380
+          },
+          "prompt": {
+            "ja": "工事遅れてるんだって。課長に報告した方がいいんじゃない？",
+            "vi": "Nghe nói công trình bị chậm đấy. Báo cáo với trưởng phòng thì hơn nhỉ?",
+            "en": "I hear the construction is behind schedule. Shouldn't we report it to the section chief?"
+          },
+          "listening_unit_id": "jlpt-n3-2024-12-m5-q9",
+          "prompt_visibility": "after_submit",
+          "segments": [
+            {
+              "id": "jlpt-n3-2024-12-m5-q9-s1",
+              "order": 1,
+              "speaker_id": "speaker",
+              "start_ms": 2122160,
+              "end_ms": 2124560,
+              "text": {
+                "ja": "工事遅れてるんだって。",
+                "vi": "Nghe nói công trình bị chậm đấy."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q9-s2",
+              "order": 2,
+              "speaker_id": "speaker",
+              "start_ms": 2125180,
+              "end_ms": 2127790,
+              "text": {
+                "ja": "課長に報告した方がいいんじゃない？",
+                "vi": "Báo cáo với trưởng phòng thì hơn nhỉ?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q9-s3",
+              "order": 3,
+              "speaker_id": "choice_1",
+              "start_ms": 2130780,
+              "end_ms": 2134190,
+              "text": {
+                "ja": "遅れてるって課長が言ってたんですか。",
+                "vi": "Trưởng phòng nói là công trình chậm ạ?",
+                "en": "Did the section chief say it's behind schedule?"
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q9-s4",
+              "order": 4,
+              "speaker_id": "choice_2",
+              "start_ms": 2137100,
+              "end_ms": 2140410,
+              "text": {
+                "ja": "じゃあ、報告はしないことにします。",
+                "vi": "Vậy tôi sẽ không báo cáo.",
+                "en": "Then I'll decide not to report it."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            },
+            {
+              "id": "jlpt-n3-2024-12-m5-q9-s5",
+              "order": 5,
+              "speaker_id": "choice_3",
+              "start_ms": 2143430,
+              "end_ms": 2146380,
+              "text": {
+                "ja": "そうですね。伝えておきます。",
+                "vi": "Đúng vậy. Tôi sẽ báo lại ạ.",
+                "en": "That's right. I'll let him know."
+              },
+              "timing_status": "verified",
+              "dictation_eligible": true
+            }
+          ],
+          "dictation": {
+            "enabled": true,
+            "modes": {
+              "sentence_dictation": {
+                "enabled": true
+              },
+              "full_question_dictation": {
+                "enabled": true
+              }
+            }
+          },
+          "choices": [
+            {
+              "id": "1",
+              "text": {
+                "ja": "遅れてるって課長が言ってたんですか。",
+                "vi": "Trưởng phòng nói là công trình chậm ạ?",
+                "en": "Did the section chief say it's behind schedule?"
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: hỏi lại xem trưởng phòng có nói công trình chậm không, trong khi người nói đang khuyên báo cáo cho trưởng phòng."
+              }
+            },
+            {
+              "id": "2",
+              "text": {
+                "ja": "じゃあ、報告はしないことにします。",
+                "vi": "Vậy tôi sẽ không báo cáo.",
+                "en": "Then I'll decide not to report it."
+              },
+              "correct": false,
+              "explanation": {
+                "vi": "Sai: nói sẽ không báo cáo, ngược với lời khuyên."
+              }
+            },
+            {
+              "id": "3",
+              "text": {
+                "ja": "そうですね。伝えておきます。",
+                "vi": "Đúng vậy. Tôi sẽ báo lại ạ.",
+                "en": "That's right. I'll let him know."
+              },
+              "correct": true,
+              "explanation": {
+                "vi": "Đúng: đồng ý với lời khuyên và nói sẽ báo lại."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n3-2024-12-m5-q9-s1",
+                "jlpt-n3-2024-12-m5-q9-s2"
+              ]
+            }
+          ],
+          "choice_display_mode": "numbers"
+        }
+      ]
+    }
+  ],
+  "review_required": true,
+  "review_note": "Đáp án 問題1, 2 và 3 theo bảng đáp án nguồn (phương án lấy từ đề PDF); đáp án 問題4 và 問題5 được suy ra từ audio vì bảng nguồn chưa có hai phần này."
+}
