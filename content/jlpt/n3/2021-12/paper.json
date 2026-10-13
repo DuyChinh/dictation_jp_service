@@ -2942,7 +2942,7 @@
           "id": "1",
           "text": "無理をせずにできるトレーニングを自分用に作ってもらったから",
           "correct": false,
-          "explanation_vi": "Bài viết không đề cập đến việc lập giáo án luyện tập riêng.",
+          "explanation_vi": "Bản gốc có nhắc đến việc cả bệnh viện lẫn CLB thể thao đều thiết kế bài tập vừa sức riêng cho từng người (câu «病院でもスポーツクラブでも、無理をせずにできるトレーニングを一人一人に考えてくれる»), nhưng đây là điểm CHUNG của cả hai nơi, không phải lý do riêng khiến CLB thể thao giúp mẹ hồi phục — lý do đó nằm ở việc được vận động cùng người trẻ và bạn bè cùng lứa tuổi (đáp án đúng, câu s10).",
           "meaning_vi": "Vì được lập cho một chương trình tập luyện riêng, có thể tập mà không bị quá sức"
         },
         {
@@ -2973,7 +2973,7 @@
       ],
       "vocab": [],
       "evidence_sentence_ids": [
-        "s9"
+        "s10"
       ]
     },
     {
@@ -3023,9 +3023,9 @@
       ],
       "vocab": [],
       "evidence_sentence_ids": [
-        "s10",
         "s11",
-        "s12"
+        "s12",
+        "s13"
       ]
     },
     {
@@ -4389,8 +4389,8 @@
         },
         {
           "id": "s8",
-          "ja": "すると、たった1か月で母は以前の元気を取り戻したのだ。",
-          "vi": "Thế rồi, chỉ sau vỏn vẹn 1 tháng, mẹ tôi đã lấy lại được sự hoạt bát khỏe mạnh như ngày nào.",
+          "ja": "すると、たった1か月で全く違う人のように元気になったのだ。",
+          "vi": "Thế rồi, chỉ trong vòng 1 tháng, mẹ tôi đã khỏe lên như biến thành một người hoàn toàn khác.",
           "chunks": [
             {
               "ja": "すると、たった1か月で",
@@ -4398,8 +4398,8 @@
               "accept_vi": []
             },
             {
-              "ja": "母は以前の元気を取り戻したのだ。",
-              "vi": "mẹ đã lấy lại được sức khỏe như xưa.",
+              "ja": "全く違う人のように元気になったのだ。",
+              "vi": "mẹ đã khỏe lên như một người hoàn toàn khác.",
               "accept_vi": []
             }
           ],
@@ -4407,6 +4407,31 @@
         },
         {
           "id": "s9",
+          "ja": "病院でもスポーツクラブでも、無理をせずにできるトレーニングを一人一人に考えてくれる。",
+          "vi": "Dù là bệnh viện hay câu lạc bộ thể thao, họ đều nghĩ ra bài tập luyện vừa sức riêng cho từng người.",
+          "chunks": [
+            {
+              "ja": "病院でもスポーツクラブでも、",
+              "vi": "Dù là bệnh viện hay câu lạc bộ thể thao,",
+              "accept_vi": []
+            },
+            {
+              "ja": "無理をせずにできるトレーニングを",
+              "vi": "bài tập luyện không gắng sức quá mức",
+              "accept_vi": [
+                "bài tập vừa sức"
+              ]
+            },
+            {
+              "ja": "一人一人に考えてくれる。",
+              "vi": "đều được nghĩ ra riêng cho từng người.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "s10",
           "ja": "元気な若い人たちと同じ場所で運動したり、同じくらいの年の仲間と一緒に頑張ったりすることは、スポーツクラブだからできたのである。",
           "vi": "Việc được tập luyện ở cùng một không gian với những người trẻ tuổi tràn đầy năng lượng và cùng cố gắng với những người bạn trạc tuổi mình là điều chỉ ở câu lạc bộ thể thao mới làm được.",
           "chunks": [
@@ -4429,7 +4454,7 @@
           "pitfalls": []
         },
         {
-          "id": "s10",
+          "id": "s11",
           "ja": "そして、それが母の生きる力を引き出してくれたのだろう。",
           "vi": "Và có lẽ chính điều đó đã khơi dậy nghị lực sống cho mẹ tôi.",
           "chunks": [
@@ -4447,7 +4472,7 @@
           "pitfalls": []
         },
         {
-          "id": "s11",
+          "id": "s12",
           "ja": "スポーツクラブは運動するだけの場所ではない。",
           "vi": "Câu lạc bộ thể thao không chỉ là nơi thuần túy để tập thể dục.",
           "chunks": [
@@ -4460,7 +4485,7 @@
           "pitfalls": []
         },
         {
-          "id": "s12",
+          "id": "s13",
           "ja": "それ以上の価値があるのだ。",
           "vi": "Nó còn chứa đựng giá trị to lớn hơn thế rất nhiều.",
           "chunks": [
@@ -4473,7 +4498,7 @@
           "pitfalls": []
         },
         {
-          "id": "s13",
+          "id": "s14",
           "ja": "私は、今、母の通うスポーツクラブに心から感謝している。",
           "vi": "Giờ đây, tôi thực sự biết ơn câu lạc bộ thể thao mà mẹ tôi đang theo học từ tận đáy lòng.",
           "chunks": [
