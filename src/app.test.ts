@@ -205,9 +205,10 @@ describe("backend content + evaluate API", () => {
     } as any);
     const countSpy = vi.spyOn(LeaderboardEntry, "countDocuments").mockImplementation((async (q: any) =>
       q?.$or ? 1 : 200) as any);
-    const oneSpy = vi.spyOn(LeaderboardEntry, "findOne").mockReturnValue({
-      lean: () => Promise.resolve(rows[1]),
-    } as any);
+    const oneSpy = vi.spyOn(LeaderboardEntry, "findOne").mockImplementation(((q: any) =>
+      q?.userId
+        ? { lean: () => Promise.resolve(rows[1]) }
+        : { sort: () => ({ lean: () => Promise.resolve(rows[0]) }) }) as any);
 
     const res = await request(app).get("/api/leaderboard?limit=2").set("Authorization", `Bearer ${token}`);
     expect(res.status).toBe(200);
@@ -217,21 +218,38 @@ describe("backend content + evaluate API", () => {
       [2, true],
     ]);
     expect(res.body.entries[0]).not.toHaveProperty("userId");
-    expect(res.body.me).toMatchObject({ rank: 2, points: 1200 });
+    expect(res.body.me).toMatchObject({ rank: 2, points: 1200, ahead: { name: "Top Learner", gap: 3801 } });
 
     const weekly = vi.spyOn(LeaderboardDaily, "aggregate").mockImplementation((async (stages: any[]) => {
-      if (stages.some((st) => st.$facet)) {
-        return [{ rows: [{ _id: "b", points: 340, name: "Me", avatar: null }], total: [{ n: 57 }] }];
+      const facet = stages.find((st) => st.$facet)?.$facet;
+      if (facet?.rows) {
+        return [{ rows: [{ _id: "b", points: 340, totalPoints: 1540, name: "Me", avatar: null }], total: [{ n: 57 }] }];
       }
-      if (stages.some((st) => st.$count)) return [{ n: 11 }];
+      if (facet?.n) return [{ n: [{ n: 11 }], next: [{ points: 360, name: "Ngô Minh Hà" }] }];
       return [{ points: 340 }];
     }) as any);
     const week = await request(app).get("/api/leaderboard?period=week&limit=5").set("Authorization", `Bearer ${token}`);
     expect(week.status).toBe(200);
     expect(week.body.total).toBe(57);
     expect(week.body.participants).toBe(200);
-    expect(week.body.entries).toEqual([{ rank: 1, name: "Me", avatar: null, points: 340, isMe: true }]);
-    expect(week.body.me).toMatchObject({ rank: 12, points: 340 });
+    expect(week.body.entries).toEqual([
+      { rank: 1, name: "Me", avatar: null, points: 340, totalPoints: 1540, level: null, isMe: true },
+    ]);
+    expect(week.body.me).toMatchObject({
+      rank: 12,
+      points: 340,
+      totalPoints: 1200,
+      ahead: { name: "Ngô Minh Hà", gap: 21 },
+    });
+    const n2 = await request(app).get("/api/leaderboard?period=week&level=n2&limit=5");
+    expect(n2.status).toBe(200);
+    const matchStage = weekly.mock.calls.at(-1)![0].find((st: any) => st.$match);
+    expect(matchStage.$match.level).toBe("N2");
+    await request(app).get("/api/leaderboard?period=year&limit=5");
+    expect(weekly.mock.calls.at(-1)![0].find((st: any) => st.$match).$match.day.$gte).toMatch(/^\d{4}-01-01$/);
+    const noLevel = await request(app).get("/api/leaderboard?period=week&level=bogus");
+    expect(noLevel.status).toBe(200);
+    expect(weekly.mock.calls.at(-1)![0].find((st: any) => st.$match).$match).not.toHaveProperty("level");
     weekly.mockRestore();
 
     const guest = await request(app).get("/api/leaderboard");
@@ -294,7 +312,11 @@ describe("backend content + evaluate API", () => {
     // A new sitting earns points: 50 for taking it plus 5 for each of the 90 right answers.
     expect(awardSpy).toHaveBeenCalledTimes(1);
     expect(JSON.stringify(awardSpy.mock.calls[0]![1])).toContain("500");
-    expect(dailySpy).toHaveBeenCalledWith({ entryId: "e1", day: expect.any(String) }, { $inc: { points: 500 } }, { upsert: true });
+    expect(dailySpy).toHaveBeenCalledWith(
+      { entryId: "e1", day: expect.any(String), level: expect.any(String) },
+      { $inc: { points: 500 } },
+      { upsert: true },
+    );
     existsSpy.mockResolvedValue({ _id: "x" } as any);
     await request(app)
       .post("/api/progress/exam-history")

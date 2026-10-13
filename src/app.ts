@@ -62,7 +62,7 @@ export function createApp(repo?: StaticContentRepository) {
   app.use("/api/audio", createAudioRouter(contentRepo));
   app.use("/api/evaluate", createEvaluateRouter(contentRepo, config.allowStatuses));
   app.use("/api/auth", createAuthRouter());
-  app.use("/api/progress", createProgressRouter());
+  app.use("/api/progress", createProgressRouter(contentRepo));
   app.use("/api/feedback", createFeedbackRouter());
   app.use("/api/leaderboard", createLeaderboardRouter());
   app.use("/api/admin", createAdminRouter(contentRepo, config));

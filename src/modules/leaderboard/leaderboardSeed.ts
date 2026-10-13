@@ -60,8 +60,29 @@ function makeName(rand: Rand): string {
   return pick(JP_NAMES, rand);
 }
 
+export const LEVELS = ["N5", "N4", "N3", "N2", "N1"] as const;
+export type Level = (typeof LEVELS)[number];
+
+/** Share of learners per level: N3 and N2 are the busiest. */
+const LEVEL_WEIGHTS: Array<[Level, number]> = [["N5", 0.18], ["N4", 0.2], ["N3", 0.27], ["N2", 0.24], ["N1", 0.11]];
+
+export function isLevel(v: unknown): v is Level {
+  return typeof v === "string" && (LEVELS as readonly string[]).includes(v);
+}
+
+/** A demo learner's level, fixed by their name so it never changes between runs. */
+export function levelForName(name: string): Level {
+  let roll = (hashString(`${name}|level`) % 1000) / 1000;
+  for (const [level, weight] of LEVEL_WEIGHTS) {
+    if (roll < weight) return level;
+    roll -= weight;
+  }
+  return "N3";
+}
+
 export interface SeedLearner {
   name: string;
+  level: Level;
   points: number;
   activity: number;
   intensity: number;
@@ -77,6 +98,7 @@ export function buildSeedLearners(count = SEED_COUNT, rand: Rand = mulberry32(20
     names.add(name);
     out.push({
       name,
+      level: levelForName(name),
       points: BASE_POINTS + Math.floor(Math.pow(rand(), 2.2) * 9000),
       activity: 0.25 + 0.7 * rand(),
       intensity: 0.3 + 1.2 * Math.pow(rand(), 1.5),
@@ -92,16 +114,64 @@ export function dailyGain(learner: { points: number; activity: number; intensity
   return Math.max(10, Math.round(learner.intensity * (30 + rand() * 270) * taper));
 }
 
-export type Period = "week" | "month" | "all";
+export type Period = "week" | "month" | "year" | "all";
 
 export function addDays(key: string, n: number): string {
   return new Date(Date.parse(`${key}T00:00:00Z`) + n * 86_400_000).toISOString().slice(0, 10);
 }
 
-/** First day (a key) a period counts from: the Monday of this week or the 1st of this month. */
-export function periodStart(period: "week" | "month", now: Date): string {
+/** First day (a key) a period counts from: the Monday of this week, the 1st of this month or of this year. */
+export function periodStart(period: "week" | "month" | "year", now: Date): string {
   const today = dayKey(now);
+  if (period === "year") return `${today.slice(0, 4)}-01-01`;
   if (period === "month") return `${today.slice(0, 7)}-01`;
   const weekday = new Date(`${today}T00:00:00Z`).getUTCDay();
   return addDays(today, -((weekday + 6) % 7));
+}
+
+export function hashString(text: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
+  return h >>> 0;
+}
+
+/** Share of a day's study done by this hour (Vietnam time): quiet at night, busy in the evening. */
+const DAY_CURVE: Array<[number, number]> = [
+  [0, 0], [6, 0.03], [9, 0.2], [12, 0.4], [15, 0.55], [18, 0.7], [21, 0.92], [24, 1],
+];
+
+export function dayProgress(hour: number): number {
+  const h = Math.min(24, Math.max(0, hour));
+  for (let i = 1; i < DAY_CURVE.length; i++) {
+    const [h1, p1] = DAY_CURVE[i]!;
+    if (h <= h1) {
+      const [h0, p0] = DAY_CURVE[i - 1]!;
+      return p0 + ((p1 - p0) * (h - h0)) / (h1 - h0);
+    }
+  }
+  return 1;
+}
+
+export function vietnamHour(now: Date): number {
+  const vn = new Date(now.getTime() + DAY_OFFSET_MS);
+  return vn.getUTCHours() + vn.getUTCMinutes() / 60;
+}
+
+/** What a learner will have earned by the end of `day`; the same answer every time it is asked. */
+export function plannedGain(
+  learner: { points: number; activity: number; intensity: number },
+  id: string,
+  day: string,
+): number {
+  return dailyGain(learner, mulberry32(hashString(`${id}|${day}`)));
+}
+
+/**
+ * How much of that day's gain is done at `hour` (0-24, Vietnam time). Each learner is a couple of hours
+ * early or late, so they don't all move at the same moment. Past days (`hour` of 24 or more) are complete.
+ */
+export function gainSoFar(planned: number, id: string, day: string, hour: number): number {
+  if (hour >= 24) return planned;
+  const shift = mulberry32(hashString(`${id}|${day}|shift`))() * 4 - 2;
+  return Math.round(planned * dayProgress(hour + shift));
 }

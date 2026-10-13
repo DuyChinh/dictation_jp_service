@@ -5,13 +5,16 @@ import { config } from "../../config.js";
 import { LeaderboardEntry } from "../../models/LeaderboardEntry.js";
 import { requireAuth } from "../../shared/middleware/auth.js";
 import {
+  aheadOf,
   boardFilter,
   claimDailyCheckin,
   ensureEntry,
   periodRanking,
   periodStanding,
   rankOf,
+  type LevelFilter,
 } from "./leaderboardService.js";
+import { isLevel } from "./leaderboardSeed.js";
 
 const DEFAULT_LIMIT = 10;
 const MAX_LIMIT = 500;
@@ -35,32 +38,58 @@ function intParam(v: unknown, fallback: number, min: number, max: number): numbe
 export function createLeaderboardRouter(): Router {
   const r = Router();
 
-  // The ranking, highest first: this week, this month or all time. A signed-in caller also gets their own standing.
+  // The ranking, highest first: this week, month, year or all time, for one JLPT level or all of them.
+  // A signed-in caller also gets their own standing.
   r.get("/", async (req: Request, res: Response) => {
     try {
       const limit = intParam(req.query.limit, DEFAULT_LIMIT, 1, MAX_LIMIT);
       const offset = intParam(req.query.offset, 0, 0, 100_000);
-      const period = req.query.period === "week" || req.query.period === "month" ? req.query.period : "all";
+      const period =
+        req.query.period === "week" || req.query.period === "month" || req.query.period === "year" ? req.query.period : "all";
+      const levelParam = String(req.query.level ?? "ALL").toUpperCase();
+      const level: LevelFilter = isLevel(levelParam) ? levelParam : "ALL";
       const userId = optionalUserId(req);
       const filter = boardFilter();
 
       const mine = userId ? await LeaderboardEntry.findOne({ userId }).lean() : null;
-      const participants = await LeaderboardEntry.countDocuments(filter);
 
-      let rows: Array<{ _id: unknown; name: string; avatar?: string | null; points: number }>;
-      let total = participants;
-      let me: { rank: number; name: string; avatar: string | null; points: number } | null = null;
+      type Row = { _id: unknown; name: string; avatar?: string | null; points: number; totalPoints?: number; level?: string | null };
+      let rows: Row[];
+      let total: number;
+      let participants: number;
+      let me: Record<string, unknown> | null = null;
 
-      if (period === "all") {
+      if (period === "all" && level === "ALL") {
         rows = await LeaderboardEntry.find(filter).sort({ points: -1, _id: 1 }).skip(offset).limit(limit).lean();
-        if (mine) me = { rank: await rankOf(mine), name: mine.name, avatar: mine.avatar || null, points: mine.points };
+        total = participants = await LeaderboardEntry.countDocuments(filter);
+        if (mine) {
+          const ahead = await aheadOf(mine);
+          me = {
+            rank: await rankOf(mine),
+            name: mine.name,
+            avatar: mine.avatar || null,
+            points: mine.points,
+            totalPoints: mine.points,
+            level: mine.level ?? null,
+            ahead: ahead ? { name: ahead.name, gap: ahead.points - mine.points + 1 } : null,
+          };
+        }
       } else {
-        const ranked = await periodRanking(period, limit, offset);
+        const ranked = await periodRanking(period, level, limit, offset);
         rows = ranked.rows;
         total = ranked.total;
+        participants = level === "ALL" ? await LeaderboardEntry.countDocuments(filter) : ranked.total;
         if (mine) {
-          const standing = await periodStanding(period, mine._id);
-          me = { rank: standing.rank, name: mine.name, avatar: mine.avatar || null, points: standing.points };
+          const standing = await periodStanding(period, level, mine._id);
+          me = {
+            rank: standing.rank,
+            name: mine.name,
+            avatar: mine.avatar || null,
+            points: standing.points,
+            totalPoints: mine.points,
+            level: mine.level ?? null,
+            ahead: standing.ahead ? { name: standing.ahead.name, gap: standing.ahead.points - standing.points + 1 } : null,
+          };
         }
       }
 
@@ -69,6 +98,8 @@ export function createLeaderboardRouter(): Router {
         name: row.name,
         avatar: row.avatar || null,
         points: row.points,
+        totalPoints: row.totalPoints ?? row.points,
+        level: row.level ?? null,
         isMe: !!mine && String(row._id) === String(mine._id),
       }));
 

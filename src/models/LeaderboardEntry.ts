@@ -7,6 +7,8 @@ export interface ILeaderboardEntry extends Document {
   avatar?: string;
   points: number;
   isSeed: boolean;
+  /** The JLPT level (N5-N1) a learner mostly studies; for demo learners it is fixed, for real ones it follows their latest study. */
+  level?: string;
   /** Seeded learners only: chance of studying on a given day, and how much they earn when they do. */
   activity?: number;
   intensity?: number;
@@ -27,6 +29,7 @@ const leaderboardEntrySchema = new Schema<ILeaderboardEntry>(
     avatar: { type: String },
     points: { type: Number, default: 1000, index: -1 },
     isSeed: { type: Boolean, default: false, index: true },
+    level: { type: String },
     activity: { type: Number },
     intensity: { type: Number },
     lastCheckinDay: { type: String },
@@ -55,14 +58,17 @@ export const LeaderboardMeta = mongoose.model<ILeaderboardMeta>("LeaderboardMeta
 interface ILeaderboardDaily extends Document {
   entryId: mongoose.Types.ObjectId;
   day: string;
+  /** JLPT level of the study that earned it ("" for points with no level, such as the daily check-in). */
+  level?: string;
   points: number;
 }
 
 const leaderboardDailySchema = new Schema<ILeaderboardDaily>({
   entryId: { type: Schema.Types.ObjectId, ref: "LeaderboardEntry", required: true },
   day: { type: String, required: true, index: true },
+  level: { type: String, default: "" },
   points: { type: Number, default: 0 },
 });
-leaderboardDailySchema.index({ entryId: 1, day: 1 }, { unique: true });
+leaderboardDailySchema.index({ entryId: 1, day: 1, level: 1 }, { unique: true });
 
 export const LeaderboardDaily = mongoose.model<ILeaderboardDaily>("LeaderboardDaily", leaderboardDailySchema);

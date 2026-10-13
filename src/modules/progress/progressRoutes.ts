@@ -9,6 +9,8 @@ import { LessonActivity } from "../../models/LessonActivity.js";
 import { ListeningAttempt } from "../../models/ListeningAttempt.js";
 import { ExamHistory } from "../../models/ExamHistory.js";
 import { awardPoints, POINTS } from "../leaderboard/leaderboardService.js";
+import { isLevel, type Level } from "../leaderboard/leaderboardSeed.js";
+import type { StaticContentRepository } from "../content/StaticContentRepository.js";
 
 /** Attempts kept per lesson and returned per request; older ones drop off. */
 const ATTEMPTS_PER_LESSON = 50;
@@ -187,8 +189,15 @@ function getUserIdFromAuthHeader(req: Request): string | null {
   }
 }
 
-export function createProgressRouter(): Router {
+export function createProgressRouter(repo?: StaticContentRepository): Router {
   const r = Router();
+
+  /** The JLPT level of a lesson's content, when it has one. */
+  const levelOf = (lessonId: string): Level | null => {
+    const source = repo?.get(lessonId)?.package.source;
+    const level = source && (source.type === "jlpt" || source.type === "practice") ? String(source.level).toUpperCase() : "";
+    return isLevel(level) ? level : null;
+  };
 
   // Save / update progress for a segment
   r.post("/dictation", async (req: Request, res: Response) => {
@@ -221,7 +230,7 @@ export function createProgressRouter(): Router {
         { upsert: true, new: true, setDefaultsOnInsert: true }
       );
 
-      if (status === "correct" && !wasCorrect) await awardPoints(userId, POINTS.dictationCorrect);
+      if (status === "correct" && !wasCorrect) await awardPoints(userId, POINTS.dictationCorrect, levelOf(String(lesson_id)));
 
       return res.json({ success: true, progress: updated });
     } catch (err: any) {
@@ -454,7 +463,7 @@ export function createProgressRouter(): Router {
         { upsert: true, new: true, setDefaultsOnInsert: true }
       );
 
-      if (isFirstAnswer) await awardPoints(userId, correct ? POINTS.listeningCorrect : POINTS.listeningWrong);
+      if (isFirstAnswer) await awardPoints(userId, correct ? POINTS.listeningCorrect : POINTS.listeningWrong, levelOf(str(lesson_id, 200)));
 
       return res.json({ success: true, answer: saved });
     } catch (err: any) {
@@ -664,7 +673,11 @@ export function createProgressRouter(): Router {
       );
 
       if (isNewSitting && answered > 0) {
-        await awardPoints(userId, POINTS.examSitting + Math.min(Math.max(correct, 0), total) * POINTS.examCorrect);
+        await awardPoints(
+          userId,
+          POINTS.examSitting + Math.min(Math.max(correct, 0), total) * POINTS.examCorrect,
+          levelOf(lessonId),
+        );
       }
 
       return res.json({ success: true });
