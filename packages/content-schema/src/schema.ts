@@ -37,6 +37,8 @@ export const SourceMetaSchema = z.union([
     type: z.literal("practice"),
     level: z.enum(["N1", "N2", "N3", "N4", "N5"]),
     set: z.number().int().min(1),
+    /** Replaces "Practice <set>" in titles, e.g. "Đề dự đoán T12/2026". */
+    label: z.string().min(1).optional(),
     source_reference: z.string().nullable().optional(),
     rights_note: z.string().nullable().optional(),
   }),
