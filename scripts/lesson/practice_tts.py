@@ -53,6 +53,13 @@ INSTRUCTIONS = {
 }
 M5_SINGLE = "問題用紙に何も印刷されていません。まず話を聞いてください。それから、質問とせんたくしを聞いて、1から4の中から、最もよいものを一つ選んでください。"
 M5_MULTI = "まず話を聞いてください。それから、二つの質問を聞いて、それぞれ問題用紙の1から4の中から、最もよいものを一つ選んでください。"
+# N3 has no long talks: 問題4 is "what do you say?" from a situation, 問題5 is a quick reply.
+N3_INSTRUCTIONS = {
+    **INSTRUCTIONS,
+    4: "問題4では、絵を見ながら質問を聞いてください。矢印の人は何と言いますか。1から3の中から、最もよいものを一つ選んでください。",
+    5: "問題5では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。",
+}
+N3_ANSWER = {1: 10.0, 2: 10.0, 3: 8.0, 4: 5.0, 5: 5.0}
 CHOICE_NUM = {1: "いち", 2: "に", 3: "さん", 4: "よん"}
 
 # seconds of silence
@@ -206,13 +213,16 @@ def plan(src: dict) -> list[dict]:
     def say(voice, text, pause, **kw):
         ev.append({"voice": voice, "text": tts_text(text, readings), "pause": pause, **kw})
 
+    n3 = src.get("source", {}).get("level") == "N3"
+    instructions = N3_INSTRUCTIONS if n3 else INSTRUCTIONS
+    answer = N3_ANSWER if n3 else P["answer"]
     for si, sec in enumerate(src["sections"]):
         no = sec["no"]
         say("narrator", f"問題{no}。", P["after_section"] if si else 0.0)
-        say("narrator", INSTRUCTIONS[no], 0.8)
+        say("narrator", instructions[no], 0.8)
         for qi, qsrc in enumerate(sec["questions"]):
-            pause = P["after_intro"] if qi == 0 else P["answer"][no]
-            if no == 5:
+            pause = P["after_intro"] if qi == 0 else answer[no]
+            if no == 5 and not n3:
                 say("narrator", M5_MULTI if "sub" in qsrc else M5_SINGLE, pause)
                 pause = 1.5
             say("narrator", f"{qsrc['no']}番。", pause, cue=qsrc)
