@@ -314,16 +314,49 @@ async function extendSeedHistory(now = new Date()): Promise<void> {
   if (docs.length) await LeaderboardDaily.insertMany(docs, { ordered: false });
 }
 
-/** Fills the board with demo learners the first time, so it never looks empty. */
-export async function ensureSeedLearners(): Promise<number> {
-  let created = 0;
-  if (!(await LeaderboardEntry.exists({ isSeed: true }))) {
-    const docs = buildSeedLearners().map((l) => ({ ...l, isSeed: true }));
-    await LeaderboardEntry.insertMany(docs, { ordered: false });
-    created = docs.length;
+/** Writes a day-by-day history from the start of the year for demo learners added after the crowd was first built. */
+async function writeSeedHistory(
+  seeds: Array<{ _id: unknown; points: number; activity?: number; intensity?: number; level?: string }>,
+  now = new Date(),
+): Promise<void> {
+  const today = dayKey(now);
+  const hour = vietnamHour(now);
+  const first = periodStart("year", now);
+  let docs: Array<{ entryId: unknown; day: string; level: string; points: number }> = [];
+  for (const s of seeds) {
+    const learner = { points: s.points, activity: s.activity ?? 0.6, intensity: s.intensity ?? 1 };
+    for (let day = first; day <= today; day = addDays(day, 1)) {
+      const points = gainSoFar(plannedGain(learner, String(s._id), day), String(s._id), day, day === today ? hour : 24);
+      if (points > 0) docs.push({ entryId: s._id, day, level: s.level ?? "", points });
+    }
+    if (docs.length >= 20_000) {
+      await LeaderboardDaily.insertMany(docs, { ordered: false });
+      docs = [];
+    }
   }
+  if (docs.length) await LeaderboardDaily.insertMany(docs, { ordered: false });
+}
+
+/** Adds demo learners until every level has its target crowd; returns how many were added. */
+async function topUpSeedLearners(hadSeeds: boolean): Promise<number> {
+  const existing = await LeaderboardEntry.find({ isSeed: true }, { name: 1, level: 1 }).lean();
+  const missing = buildSeedLearners(existing);
+  if (missing.length === 0) return 0;
+  const inserted = await LeaderboardEntry.insertMany(
+    missing.map((l) => ({ ...l, isSeed: true })),
+    { ordered: false },
+  );
+  // On the very first run the regular backfill below covers everyone; later arrivals need their own history.
+  if (hadSeeds) await writeSeedHistory(inserted);
+  return inserted.length;
+}
+
+/** Fills the board with demo learners, and tops each level up to its target, so it never looks thin. */
+export async function ensureSeedLearners(): Promise<number> {
+  const hadSeeds = !!(await LeaderboardEntry.exists({ isSeed: true }));
   await ensureSeedLevels();
   await migrateDailyIndex();
+  const created = await topUpSeedLearners(hadSeeds);
   await backfillSeedHistory();
   await extendSeedHistory();
   await reconcileSeedPoints();

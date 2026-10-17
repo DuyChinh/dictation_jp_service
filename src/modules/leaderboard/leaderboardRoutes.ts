@@ -81,6 +81,9 @@ export function createLeaderboardRouter(): Router {
         participants = level === "ALL" ? await LeaderboardEntry.countDocuments(filter) : ranked.total;
         if (mine) {
           const standing = await periodStanding(period, level, mine._id);
+          // A level board only lists learners who earned points there; someone with none is ranked last,
+          // so count them in, or the page reads "47 / 46".
+          if (level !== "ALL" && standing.points === 0) participants += 1;
           me = {
             rank: standing.rank,
             name: mine.name,

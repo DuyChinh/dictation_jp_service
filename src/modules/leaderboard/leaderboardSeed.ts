@@ -1,7 +1,9 @@
 /** Pure helpers for the demo learners: who they are, how many points they start with, what they earn per day. */
 
 export const BASE_POINTS = 1000;
-export const SEED_COUNT = 200;
+/** Every level gets a random crowd of this many demo learners or more (up to MIN + SPREAD), so no board looks thin. */
+export const SEED_MIN_PER_LEVEL = 300;
+const SEED_SPREAD_PER_LEVEL = 100;
 
 /** Vietnam is where the learners are, so "today" rolls over at midnight there. */
 const DAY_OFFSET_MS = 7 * 60 * 60 * 1000;
@@ -88,21 +90,40 @@ export interface SeedLearner {
   intensity: number;
 }
 
-/** A crowd with a long tail: a few leaders, many mid-table, and plenty of newcomers near the base. */
-export function buildSeedLearners(count = SEED_COUNT, rand: Rand = mulberry32(20241012)): SeedLearner[] {
-  const names = new Set<string>();
+/** How many demo learners each level should have: a random number above the minimum, the same on every run. */
+export function seedTargets(rand: Rand = mulberry32(7331)): Record<Level, number> {
+  const out = {} as Record<Level, number>;
+  for (const level of LEVELS) out[level] = SEED_MIN_PER_LEVEL + 1 + Math.floor(rand() * SEED_SPREAD_PER_LEVEL);
+  return out;
+}
+
+/**
+ * The learners still missing to bring every level up to its target, given who already exists. A crowd with a
+ * long tail: a few leaders, many mid-table, and plenty of newcomers near the base.
+ */
+export function buildSeedLearners(
+  existing: ReadonlyArray<{ name: string; level?: string | null }> = [],
+  targets: Record<Level, number> = seedTargets(),
+  rand: Rand = mulberry32(20241012),
+): SeedLearner[] {
+  const names = new Set(existing.map((e) => e.name));
+  const have = new Map<string, number>();
+  for (const e of existing) if (e.level) have.set(e.level, (have.get(e.level) ?? 0) + 1);
   const out: SeedLearner[] = [];
-  while (out.length < count) {
-    const name = makeName(rand);
-    if (names.has(name)) continue;
-    names.add(name);
-    out.push({
-      name,
-      level: levelForName(name),
-      points: BASE_POINTS + Math.floor(Math.pow(rand(), 2.2) * 9000),
-      activity: 0.25 + 0.7 * rand(),
-      intensity: 0.3 + 1.2 * Math.pow(rand(), 1.5),
-    });
+  for (const level of LEVELS) {
+    for (let need = targets[level] - (have.get(level) ?? 0); need > 0; ) {
+      const name = makeName(rand);
+      if (names.has(name)) continue;
+      names.add(name);
+      need--;
+      out.push({
+        name,
+        level,
+        points: BASE_POINTS + Math.floor(Math.pow(rand(), 2.2) * 9000),
+        activity: 0.25 + 0.7 * rand(),
+        intensity: 0.3 + 1.2 * Math.pow(rand(), 1.5),
+      });
+    }
   }
   return out;
 }

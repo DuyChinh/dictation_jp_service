@@ -1,13 +1,33 @@
 import { describe, expect, it } from "vitest";
-import { BASE_POINTS, LEVELS, isLevel, levelForName, addDays, dayProgress, gainSoFar, plannedGain, vietnamHour, buildSeedLearners, dailyGain, dayKey, daysBetween, mulberry32, periodStart } from "./leaderboardSeed.js";
+import { BASE_POINTS, LEVELS, isLevel, seedTargets, SEED_MIN_PER_LEVEL, addDays, dayProgress, gainSoFar, plannedGain, vietnamHour, buildSeedLearners, dailyGain, dayKey, daysBetween, mulberry32, periodStart } from "./leaderboardSeed.js";
 
 describe("demo learners", () => {
   const learners = buildSeedLearners();
 
-  it("builds 200 unique, reproducible learners", () => {
-    expect(learners).toHaveLength(200);
-    expect(new Set(learners.map((l) => l.name)).size).toBe(200);
+  it("gives every level a crowd above the minimum, the same one every run", () => {
+    const targets = seedTargets();
+    expect(Object.keys(targets).sort()).toEqual([...LEVELS].sort());
+    for (const level of LEVELS) {
+      expect(targets[level]).toBeGreaterThan(SEED_MIN_PER_LEVEL);
+      expect(learners.filter((l) => l.level === level)).toHaveLength(targets[level]);
+    }
+    expect(new Set(Object.values(targets)).size).toBeGreaterThan(1);
+    expect(new Set(learners.map((l) => l.name)).size).toBe(learners.length);
     expect(buildSeedLearners().map((l) => l.name)).toEqual(learners.map((l) => l.name));
+  });
+
+  it("only adds what is missing, and never repeats an existing name", () => {
+    const targets = seedTargets();
+    const existing = learners.slice(0, 50);
+    const more = buildSeedLearners(existing, targets);
+    expect(more).toHaveLength(learners.length - existing.length);
+    const have = new Set(existing.map((e) => e.name));
+    expect(more.some((m) => have.has(m.name))).toBe(false);
+    for (const level of LEVELS) {
+      const n = [...existing, ...more].filter((l) => l.level === level).length;
+      expect(n).toBe(targets[level]);
+    }
+    expect(buildSeedLearners(learners, targets)).toHaveLength(0);
   });
 
   it("starts everyone at or above the base score, with a long tail", () => {
@@ -34,7 +54,7 @@ describe("dailyGain", () => {
 
   it("varies from learner to learner over a month", () => {
     const rand = mulberry32(7);
-    const totals = buildSeedLearners(30).map((l) => {
+    const totals = buildSeedLearners().slice(0, 30).map((l) => {
       let sum = 0;
       for (let d = 0; d < 30; d++) sum += dailyGain(l, rand);
       return sum;
@@ -102,15 +122,6 @@ describe("spreading a day's gain over the day", () => {
 });
 
 describe("levels", () => {
-  it("gives every demo learner a fixed level, with all five used", () => {
-    const learners = buildSeedLearners();
-    const counts = new Map<string, number>();
-    for (const l of learners) counts.set(l.level, (counts.get(l.level) ?? 0) + 1);
-    expect([...counts.keys()].sort()).toEqual([...LEVELS].sort());
-    expect(Math.min(...counts.values())).toBeGreaterThan(8);
-    expect(levelForName(learners[0]!.name)).toBe(learners[0]!.level);
-  });
-
   it("accepts only N1 to N5", () => {
     expect(isLevel("N2")).toBe(true);
     expect(isLevel("n2")).toBe(false);
