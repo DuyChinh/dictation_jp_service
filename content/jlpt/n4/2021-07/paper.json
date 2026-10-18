@@ -1,0 +1,5945 @@
+{
+  "schema_version": 1,
+  "id": "jlpt-n4-2021-07-paper",
+  "lesson_id": "jlpt-n4-2021-07",
+  "status": "published",
+  "content_version": 1,
+  "source": {
+    "level": "N4",
+    "year": 2021,
+    "month": 7,
+    "answer_key": {
+      "file": "content/jlpt/n4/answer_N4/ĐÁP ÁN JLPT N4 các năm.pdf",
+      "page": 7
+    }
+  },
+  "items": [
+    {
+      "id": "jlpt-n4-2021-07-v-q1",
+      "no": 1,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "きのう 3時間以上 べんきょうしました。",
+        "vi": "Hôm qua tôi đã học từ 3 tiếng trở lên.",
+        "target": "以上"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "いがい",
+          "correct": false,
+          "explanation_vi": "いがい là 以外 (ngoài ra, trừ ra), không phải cách đọc của 以上. Nếu dùng thì câu thành «ngoài 3 tiếng ra», sai nghĩa.",
+          "meaning_vi": "ngoài ra (以外)"
+        },
+        {
+          "id": "2",
+          "text": "いじょう",
+          "correct": true,
+          "explanation_vi": "以上 đọc là いじょう, nghĩa là «từ ... trở lên». Cả câu: «Hôm qua tôi đã học từ 3 tiếng trở lên». Chú ý âm dài じょう.",
+          "meaning_vi": "trở lên (以上)"
+        },
+        {
+          "id": "3",
+          "text": "いない",
+          "correct": false,
+          "explanation_vi": "いない là 以内 (trong vòng, không quá), ví dụ 3時間以内 = trong vòng 3 tiếng. Chữ Hán 内 khác với 上.",
+          "meaning_vi": "trong vòng (以内)"
+        },
+        {
+          "id": "4",
+          "text": "いか",
+          "correct": false,
+          "explanation_vi": "いか là 以下 (từ ... trở xuống), nghĩa ngược với 以上.",
+          "meaning_vi": "trở xuống (以下)"
+        }
+      ],
+      "summary_vi": "以上 = いじょう (trở lên). Phân biệt 以下 (いか), 以内 (いない), 以外 (いがい).",
+      "point_tags": [
+        "kanji:reading",
+        "vocab:以上"
+      ],
+      "vocab": [
+        {
+          "word": "以上",
+          "reading": "いじょう",
+          "meaning_vi": "trở lên, từ ... trở lên",
+          "sino_vi": "DĨ THƯỢNG"
+        },
+        {
+          "word": "以下",
+          "reading": "いか",
+          "meaning_vi": "trở xuống",
+          "sino_vi": "DĨ HẠ"
+        },
+        {
+          "word": "以内",
+          "reading": "いない",
+          "meaning_vi": "trong vòng",
+          "sino_vi": "DĨ NỘI"
+        },
+        {
+          "word": "以外",
+          "reading": "いがい",
+          "meaning_vi": "ngoài ra",
+          "sino_vi": "DĨ NGOẠI"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q2",
+      "no": 2,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "もう 少し 近い ほうが いいです。",
+        "vi": "Gần hơn một chút thì tốt hơn.",
+        "target": "近い"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "ちかい",
+          "correct": true,
+          "explanation_vi": "近い đọc là ちかい, nghĩa là gần. Cả câu: «Gần hơn một chút thì tốt hơn».",
+          "meaning_vi": "gần"
+        },
+        {
+          "id": "2",
+          "text": "はやい",
+          "correct": false,
+          "explanation_vi": "はやい là 早い/速い (sớm, nhanh), chữ Hán khác 近い.",
+          "meaning_vi": "nhanh, sớm"
+        },
+        {
+          "id": "3",
+          "text": "ひろい",
+          "correct": false,
+          "explanation_vi": "ひろい là 広い (rộng), chữ Hán khác 近い và nghĩa cũng không phải «gần».",
+          "meaning_vi": "rộng"
+        },
+        {
+          "id": "4",
+          "text": "ふとい",
+          "correct": false,
+          "explanation_vi": "ふとい là 太い (to, mập, dày), dùng cho dây, cây, ngón tay... Không liên quan đến khoảng cách.",
+          "meaning_vi": "to, dày (vật dài)"
+        }
+      ],
+      "summary_vi": "近い = ちかい (gần). Đối nghĩa: 遠い (とおい).",
+      "point_tags": [
+        "kanji:reading",
+        "vocab:近い"
+      ],
+      "vocab": [
+        {
+          "word": "近い",
+          "reading": "ちかい",
+          "meaning_vi": "gần",
+          "sino_vi": "CẬN"
+        },
+        {
+          "word": "遠い",
+          "reading": "とおい",
+          "meaning_vi": "xa",
+          "sino_vi": "VIỄN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q3",
+      "no": 3,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "あしたは 都合が わるいです。",
+        "vi": "Ngày mai tôi không tiện (có việc bận).",
+        "target": "都合"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "とごう",
+          "correct": false,
+          "explanation_vi": "とごう không phải cách đọc đúng của 都合; chỉ có つごう, không có âm dài hay biến âm nào khác.",
+          "meaning_vi": "(không phải từ đúng)"
+        },
+        {
+          "id": "2",
+          "text": "つかい",
+          "correct": false,
+          "explanation_vi": "つかい (như 使い) là cách đọc của chữ khác; 都合 không đọc là つかい.",
+          "meaning_vi": "(không phải từ đúng)"
+        },
+        {
+          "id": "3",
+          "text": "つごう",
+          "correct": true,
+          "explanation_vi": "都合 đọc là つごう, nghĩa là «hoàn cảnh, sự thuận tiện». 都合がわるい = không tiện (có việc bận). Cả câu: «Ngày mai tôi không tiện».",
+          "meaning_vi": "sự thuận tiện, hoàn cảnh"
+        },
+        {
+          "id": "4",
+          "text": "とかい",
+          "correct": false,
+          "explanation_vi": "とかい là 都会 (đô thị, thành phố lớn), chữ Hán khác nên không đọc cho 都合.",
+          "meaning_vi": "thành phố lớn (都会)"
+        }
+      ],
+      "summary_vi": "都合 = つごう. 都合がわるい/いい = không tiện/tiện (hay dùng khi hẹn).",
+      "point_tags": [
+        "kanji:reading",
+        "vocab:都合"
+      ],
+      "vocab": [
+        {
+          "word": "都合",
+          "reading": "つごう",
+          "meaning_vi": "hoàn cảnh, sự thuận tiện",
+          "sino_vi": "ĐÔ HỢP"
+        },
+        {
+          "word": "都会",
+          "reading": "とかい",
+          "meaning_vi": "thành phố lớn, đô thị",
+          "sino_vi": "ĐÔ HỘI"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q4",
+      "no": 4,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "ドアを 引いて ください。",
+        "vi": "Hãy kéo cửa.",
+        "target": "引いて"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "ふいて",
+          "correct": false,
+          "explanation_vi": "ふいて là thể て của 吹く (thổi) hoặc 拭く (lau), không phải cách đọc của 引く.",
+          "meaning_vi": "thổi / lau (吹いて・拭いて)"
+        },
+        {
+          "id": "2",
+          "text": "ひいて",
+          "correct": true,
+          "explanation_vi": "引く đọc là ひく, thể て là ひいて, nghĩa là «kéo». Cả câu: «Hãy kéo cửa». Đối nghĩa: 押す (おす, đẩy).",
+          "meaning_vi": "kéo (引く)"
+        },
+        {
+          "id": "3",
+          "text": "ついて",
+          "correct": false,
+          "explanation_vi": "ついて là thể て của 付く (dính, bật) hoặc 着く (đến nơi), không phải 引く.",
+          "meaning_vi": "đi kèm, bật (付いて・着いて)"
+        },
+        {
+          "id": "4",
+          "text": "おいて",
+          "correct": false,
+          "explanation_vi": "おいて là thể て của 置く (đặt, để), chữ Hán khác 引.",
+          "meaning_vi": "đặt, để (置いて)"
+        }
+      ],
+      "summary_vi": "引く = ひく (kéo), thể て: ひいて. Đối nghĩa: 押す (おす).",
+      "point_tags": [
+        "kanji:reading",
+        "vocab:引く"
+      ],
+      "vocab": [
+        {
+          "word": "引く",
+          "reading": "ひく",
+          "meaning_vi": "kéo",
+          "sino_vi": "DẪN"
+        },
+        {
+          "word": "押す",
+          "reading": "おす",
+          "meaning_vi": "đẩy",
+          "sino_vi": "ÁP"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q5",
+      "no": 5,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "女性の おてあらいは あちらです。",
+        "vi": "Nhà vệ sinh nữ ở phía kia.",
+        "target": "女性"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "しょせい",
+          "correct": false,
+          "explanation_vi": "しょせい không phải cách đọc của 女性 (âm đọc của 女 trong từ này là じょ).",
+          "meaning_vi": "(không phải từ đúng)"
+        },
+        {
+          "id": "2",
+          "text": "だんせい",
+          "correct": false,
+          "explanation_vi": "だんせい là 男性 (nam giới). 女性 và 男性 chỉ khác chữ đầu nên dễ nhầm; câu này là nhà vệ sinh nữ.",
+          "meaning_vi": "nam giới (男性)"
+        },
+        {
+          "id": "3",
+          "text": "じょせい",
+          "correct": true,
+          "explanation_vi": "女性 đọc là じょせい, nghĩa là nữ giới. Cả câu: «Nhà vệ sinh nữ ở phía kia». おてあらい = nhà vệ sinh.",
+          "meaning_vi": "nữ giới (女性)"
+        },
+        {
+          "id": "4",
+          "text": "たんせい",
+          "correct": false,
+          "explanation_vi": "たんせい không phải cách đọc của 女性; 女 đọc là じょ, không phải たん.",
+          "meaning_vi": "(không phải từ đúng)"
+        }
+      ],
+      "summary_vi": "女性 = じょせい (nữ), 男性 = だんせい (nam).",
+      "point_tags": [
+        "kanji:reading",
+        "vocab:女性"
+      ],
+      "vocab": [
+        {
+          "word": "女性",
+          "reading": "じょせい",
+          "meaning_vi": "nữ giới, phụ nữ",
+          "sino_vi": "NỮ TÍNH"
+        },
+        {
+          "word": "男性",
+          "reading": "だんせい",
+          "meaning_vi": "nam giới",
+          "sino_vi": "NAM TÍNH"
+        },
+        {
+          "word": "おてあらい",
+          "reading": "おてあらい",
+          "meaning_vi": "nhà vệ sinh"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q6",
+      "no": 6,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "いつから 習って いるんですか。",
+        "vi": "Bạn học từ khi nào vậy?",
+        "target": "習って"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "おそわって",
+          "correct": false,
+          "explanation_vi": "おそわって là thể て của 教わる (được dạy, học từ ai), chữ Hán là 教, không phải 習.",
+          "meaning_vi": "được dạy (教わる)"
+        },
+        {
+          "id": "2",
+          "text": "かよって",
+          "correct": false,
+          "explanation_vi": "かよって là thể て của 通う (đi lại, theo học ở trường/lớp), chữ Hán 通, khác 習.",
+          "meaning_vi": "đi đi về về (通う)"
+        },
+        {
+          "id": "3",
+          "text": "おこなって",
+          "correct": false,
+          "explanation_vi": "おこなって là thể て của 行う (tiến hành, tổ chức), không phải 習う.",
+          "meaning_vi": "tiến hành (行う)"
+        },
+        {
+          "id": "4",
+          "text": "ならって",
+          "correct": true,
+          "explanation_vi": "習う đọc là ならう, thể て là ならって, nghĩa là «học (một kỹ năng)». Cả câu: «Bạn học từ khi nào vậy?»",
+          "meaning_vi": "học (習う)"
+        }
+      ],
+      "summary_vi": "習う = ならう (học một kỹ năng), thể て: ならって. Khác 教わる (おそわる).",
+      "point_tags": [
+        "kanji:reading",
+        "vocab:習う"
+      ],
+      "vocab": [
+        {
+          "word": "習う",
+          "reading": "ならう",
+          "meaning_vi": "học (kỹ năng)",
+          "sino_vi": "TẬP"
+        },
+        {
+          "word": "教わる",
+          "reading": "おそわる",
+          "meaning_vi": "được dạy",
+          "sino_vi": "GIÁO"
+        },
+        {
+          "word": "通う",
+          "reading": "かよう",
+          "meaning_vi": "đi đi về về, theo học",
+          "sino_vi": "THÔNG"
+        },
+        {
+          "word": "行う",
+          "reading": "おこなう",
+          "meaning_vi": "tiến hành",
+          "sino_vi": "HÀNH"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q7",
+      "no": 7,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "あそこに いるのは はやしさんの お姉さんです。",
+        "vi": "Người đang ở đằng kia là chị gái của anh/chị Hayashi.",
+        "target": "お姉さん"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "おねえさん",
+          "correct": true,
+          "explanation_vi": "お姉さん đọc là おねえさん (có âm dài ええ), nghĩa là chị gái. Cả câu: «Người đang ở đằng kia là chị gái của anh/chị Hayashi».",
+          "meaning_vi": "chị gái (của người khác)"
+        },
+        {
+          "id": "2",
+          "text": "おにいさん",
+          "correct": false,
+          "explanation_vi": "おにいさん là 兄 (anh trai). 姉 là chị, 兄 là anh, chữ Hán khác nhau.",
+          "meaning_vi": "anh trai (お兄さん)"
+        },
+        {
+          "id": "3",
+          "text": "おねさん",
+          "correct": false,
+          "explanation_vi": "おねさん thiếu âm dài, không phải từ đúng. Chị gái là おねえさん.",
+          "meaning_vi": "(không phải từ đúng)"
+        },
+        {
+          "id": "4",
+          "text": "おにさん",
+          "correct": false,
+          "explanation_vi": "おにさん không phải từ đúng (おに là quỷ). Anh trai là おにいさん, chị gái là おねえさん.",
+          "meaning_vi": "(không phải từ đúng)"
+        }
+      ],
+      "summary_vi": "お姉さん = おねえさん (chị), お兄さん = おにいさん (anh); chú ý âm dài.",
+      "point_tags": [
+        "kanji:reading",
+        "vocab:お姉さん"
+      ],
+      "vocab": [
+        {
+          "word": "姉",
+          "reading": "あね",
+          "meaning_vi": "chị gái (của mình)",
+          "sino_vi": "TỶ"
+        },
+        {
+          "word": "兄",
+          "reading": "あに",
+          "meaning_vi": "anh trai (của mình)",
+          "sino_vi": "HUYNH"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q8",
+      "no": 8,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "おとといの よる パーティーに 行きました。",
+        "vi": "Tối hôm kia tôi đã đi dự tiệc.",
+        "target": "よる"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "晩",
+          "correct": false,
+          "explanation_vi": "晩 đọc là ばん (buổi tối, cũng như 今晩), ít khi dùng làm よる. Không phải chữ viết của よる.",
+          "meaning_vi": "buổi tối (ばん)",
+          "sino_vi": "VÃN"
+        },
+        {
+          "id": "2",
+          "text": "夜",
+          "correct": true,
+          "explanation_vi": "夜 đọc là よる, nghĩa là buổi tối/ban đêm. Cả câu: «Tối hôm kia tôi đã đi dự tiệc».",
+          "meaning_vi": "đêm, buổi tối (よる)",
+          "sino_vi": "DẠ"
+        },
+        {
+          "id": "3",
+          "text": "挽",
+          "correct": false,
+          "explanation_vi": "挽 là chữ có bộ tay (扌), không dùng cho 'đêm'. Nó giống 晩 về hình nên dễ nhầm.",
+          "meaning_vi": "kéo, vãn hồi (chữ lạ)",
+          "sino_vi": "VÃN"
+        },
+        {
+          "id": "4",
+          "text": "液",
+          "correct": false,
+          "explanation_vi": "液 đọc là えき, nghĩa là chất lỏng (như 液体). Chỉ giống chữ 夜 về hình.",
+          "meaning_vi": "chất lỏng (えき)",
+          "sino_vi": "DỊCH"
+        }
+      ],
+      "summary_vi": "よる = 夜 (đêm). Chú ý không nhầm với 液 (えき), 晩 (ばん).",
+      "point_tags": [
+        "kanji:writing",
+        "vocab:夜"
+      ],
+      "vocab": [
+        {
+          "word": "夜",
+          "reading": "よる",
+          "meaning_vi": "đêm, buổi tối",
+          "sino_vi": "DẠ"
+        },
+        {
+          "word": "晩",
+          "reading": "ばん",
+          "meaning_vi": "buổi tối",
+          "sino_vi": "VÃN"
+        },
+        {
+          "word": "液",
+          "reading": "えき",
+          "meaning_vi": "chất lỏng",
+          "sino_vi": "DỊCH"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q9",
+      "no": 9,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "あの しろい 車が わたしのです。",
+        "vi": "Chiếc xe màu trắng kia là của tôi.",
+        "target": "しろい"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "赤い",
+          "correct": false,
+          "explanation_vi": "赤い đọc là あかい, nghĩa là màu đỏ, không phải màu trắng.",
+          "meaning_vi": "đỏ (あかい)",
+          "sino_vi": "XÍCH"
+        },
+        {
+          "id": "2",
+          "text": "青い",
+          "correct": false,
+          "explanation_vi": "青い đọc là あおい, nghĩa là màu xanh (lam/lục), không phải màu trắng.",
+          "meaning_vi": "xanh (あおい)",
+          "sino_vi": "THANH"
+        },
+        {
+          "id": "3",
+          "text": "黒い",
+          "correct": false,
+          "explanation_vi": "黒い đọc là くろい, nghĩa là màu đen.",
+          "meaning_vi": "đen (くろい)",
+          "sino_vi": "HẮC"
+        },
+        {
+          "id": "4",
+          "text": "白い",
+          "correct": true,
+          "explanation_vi": "白い đọc là しろい, nghĩa là màu trắng. Cả câu: «Chiếc xe màu trắng kia là của tôi».",
+          "meaning_vi": "trắng (しろい)",
+          "sino_vi": "BẠCH"
+        }
+      ],
+      "summary_vi": "しろい = 白い (trắng). Các màu: 赤い, 青い, 黒い, 白い.",
+      "point_tags": [
+        "kanji:writing",
+        "vocab:白い"
+      ],
+      "vocab": [
+        {
+          "word": "白い",
+          "reading": "しろい",
+          "meaning_vi": "trắng",
+          "sino_vi": "BẠCH"
+        },
+        {
+          "word": "赤い",
+          "reading": "あかい",
+          "meaning_vi": "đỏ",
+          "sino_vi": "XÍCH"
+        },
+        {
+          "word": "青い",
+          "reading": "あおい",
+          "meaning_vi": "xanh",
+          "sino_vi": "THANH"
+        },
+        {
+          "word": "黒い",
+          "reading": "くろい",
+          "meaning_vi": "đen",
+          "sino_vi": "HẮC"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q10",
+      "no": 10,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "しょくどうは あの たてもの の中です。",
+        "vi": "Nhà ăn ở trong tòa nhà kia.",
+        "target": "しょくどう"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "食室",
+          "correct": false,
+          "explanation_vi": "食室 không phải từ tiếng Nhật thông thường. Nhà ăn viết là 食堂.",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "THỰC THẤT"
+        },
+        {
+          "id": "2",
+          "text": "飯室",
+          "correct": false,
+          "explanation_vi": "飯室 không phải từ đúng. Chữ 飯 (めし) là cơm, nhưng «nhà ăn» là 食堂.",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "PHẠN THẤT"
+        },
+        {
+          "id": "3",
+          "text": "食堂",
+          "correct": true,
+          "explanation_vi": "食堂 đọc là しょくどう, nghĩa là nhà ăn/căng tin. Cả câu: «Nhà ăn ở trong tòa nhà kia».",
+          "meaning_vi": "nhà ăn, căng tin",
+          "sino_vi": "THỰC ĐƯỜNG"
+        },
+        {
+          "id": "4",
+          "text": "飯堂",
+          "correct": false,
+          "explanation_vi": "飯堂 không phải từ đúng. Nhà ăn là 食堂 (chữ 食, không phải 飯).",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "PHẠN ĐƯỜNG"
+        }
+      ],
+      "summary_vi": "しょくどう = 食堂 (nhà ăn). 食 trong しょく, 堂 trong どう.",
+      "point_tags": [
+        "kanji:writing",
+        "vocab:食堂"
+      ],
+      "vocab": [
+        {
+          "word": "食堂",
+          "reading": "しょくどう",
+          "meaning_vi": "nhà ăn, căng tin",
+          "sino_vi": "THỰC ĐƯỜNG"
+        },
+        {
+          "word": "建物",
+          "reading": "たてもの",
+          "meaning_vi": "tòa nhà",
+          "sino_vi": "KIẾN VẬT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q11",
+      "no": 11,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "まどを しめて ください。",
+        "vi": "Hãy đóng cửa sổ lại.",
+        "target": "しめて"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "関めて",
+          "correct": false,
+          "explanation_vi": "関 (quan) là chữ trong 関係, không dùng cho động từ «đóng». Đóng là 閉める.",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "QUAN"
+        },
+        {
+          "id": "2",
+          "text": "閉めて",
+          "correct": true,
+          "explanation_vi": "閉める đọc là しめる, thể て: 閉めて, nghĩa là đóng (cửa, cửa sổ). Cả câu: «Hãy đóng cửa sổ lại».",
+          "meaning_vi": "đóng (閉める)",
+          "sino_vi": "BẾ"
+        },
+        {
+          "id": "3",
+          "text": "問めて",
+          "correct": false,
+          "explanation_vi": "問 là chữ «câu hỏi» (質問). Không có động từ 問める.",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "VẤN"
+        },
+        {
+          "id": "4",
+          "text": "開めて",
+          "correct": false,
+          "explanation_vi": "開 là «mở» (あける/ひらく), nghĩa ngược với «đóng». Cần nhớ 閉 = đóng, 開 = mở.",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "KHAI"
+        }
+      ],
+      "summary_vi": "しめる = 閉める (đóng); đối nghĩa あける = 開ける (mở).",
+      "point_tags": [
+        "kanji:writing",
+        "vocab:閉める"
+      ],
+      "vocab": [
+        {
+          "word": "閉める",
+          "reading": "しめる",
+          "meaning_vi": "đóng",
+          "sino_vi": "BẾ"
+        },
+        {
+          "word": "開ける",
+          "reading": "あける",
+          "meaning_vi": "mở",
+          "sino_vi": "KHAI"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q12",
+      "no": 12,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "なかさんは しんせつです。",
+        "vi": "Anh/chị Naka thì tốt bụng.",
+        "target": "しんせつ"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "親切",
+          "correct": true,
+          "explanation_vi": "親切 đọc là しんせつ, nghĩa là tốt bụng, chu đáo. Cả câu: «Anh/chị Naka thì tốt bụng».",
+          "meaning_vi": "tốt bụng, thân thiện",
+          "sino_vi": "THÂN THIẾT"
+        },
+        {
+          "id": "2",
+          "text": "新切",
+          "correct": false,
+          "explanation_vi": "新切 không phải từ đúng; 新 là «mới» (しん) nhưng しんせつ không có nghĩa «mới».",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "TÂN THIẾT"
+        },
+        {
+          "id": "3",
+          "text": "親功",
+          "correct": false,
+          "explanation_vi": "親功 không phải từ đúng. Chữ thứ hai phải là 切, không phải 功.",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "THÂN CÔNG"
+        },
+        {
+          "id": "4",
+          "text": "新功",
+          "correct": false,
+          "explanation_vi": "新功 không phải từ đúng, sai cả hai chữ so với 親切.",
+          "meaning_vi": "(không có từ này)",
+          "sino_vi": "TÂN CÔNG"
+        }
+      ],
+      "summary_vi": "しんせつ = 親切 (tốt bụng). Chú ý 親 (thân) ≠ 新 (tân), 切 ≠ 功.",
+      "point_tags": [
+        "kanji:writing",
+        "vocab:親切"
+      ],
+      "vocab": [
+        {
+          "word": "親切",
+          "reading": "しんせつ",
+          "meaning_vi": "tốt bụng, thân thiện",
+          "sino_vi": "THÂN THIẾT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q13",
+      "no": 13,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "このどうぐは、あのきかいを なおす ために（　　）です。",
+        "vi": "Dụng cụ này là thứ cần thiết để sửa cái máy kia.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "ねっしん",
+          "correct": false,
+          "explanation_vi": "ねっしん (熱心) mô tả người, thái độ nhiệt tình; không đi với «dụng cụ». Không hợp nghĩa.",
+          "meaning_vi": "nhiệt tình, hăng hái"
+        },
+        {
+          "id": "2",
+          "text": "ていねい",
+          "correct": false,
+          "explanation_vi": "ていねい (丁寧) là lịch sự, cẩn thận (cách nói, cách làm), không dùng để nói «dụng cụ này ... để sửa máy».",
+          "meaning_vi": "lịch sự, cẩn thận"
+        },
+        {
+          "id": "3",
+          "text": "ひつよう",
+          "correct": true,
+          "explanation_vi": "ひつよう (必要) = cần thiết. 〜ために必要です = cần thiết để ~. Cả câu: «Dụng cụ này cần thiết để sửa cái máy kia».",
+          "meaning_vi": "cần thiết"
+        },
+        {
+          "id": "4",
+          "text": "とくべつ",
+          "correct": false,
+          "explanation_vi": "とくべつ (特別) là đặc biệt. «特別です» không nối tự nhiên với «để sửa máy», nghĩa không phù hợp.",
+          "meaning_vi": "đặc biệt"
+        }
+      ],
+      "summary_vi": "〜ために＋必要です = cần thiết để làm ~. ひつよう (必要).",
+      "point_tags": [
+        "vocab:必要",
+        "grammar:〜ために"
+      ],
+      "vocab": [
+        {
+          "word": "道具",
+          "reading": "どうぐ",
+          "meaning_vi": "dụng cụ, đồ nghề",
+          "sino_vi": "ĐẠO CỤ"
+        },
+        {
+          "word": "機械",
+          "reading": "きかい",
+          "meaning_vi": "máy móc",
+          "sino_vi": "CƠ GIỚI"
+        },
+        {
+          "word": "必要",
+          "reading": "ひつよう",
+          "meaning_vi": "cần thiết",
+          "sino_vi": "TẤT YẾU"
+        },
+        {
+          "word": "直す",
+          "reading": "なおす",
+          "meaning_vi": "sửa",
+          "sino_vi": "TRỰC"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q14",
+      "no": 14,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "このプールは（　　）ですから、子どもは およがないで ください。",
+        "vi": "Vì hồ bơi này sâu nên trẻ em xin đừng bơi.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "かたい",
+          "correct": false,
+          "explanation_vi": "かたい (硬い) là cứng; hồ bơi không nói «cứng» để cấm trẻ em bơi.",
+          "meaning_vi": "cứng"
+        },
+        {
+          "id": "2",
+          "text": "おもい",
+          "correct": false,
+          "explanation_vi": "おもい (重い) là nặng; không dùng để mô tả hồ bơi.",
+          "meaning_vi": "nặng"
+        },
+        {
+          "id": "3",
+          "text": "ふかい",
+          "correct": true,
+          "explanation_vi": "ふかい (深い) là sâu. Hồ bơi sâu thì trẻ em nguy hiểm nên «xin đừng bơi». Cả câu: «Vì hồ bơi này sâu nên trẻ em xin đừng bơi».",
+          "meaning_vi": "sâu"
+        },
+        {
+          "id": "4",
+          "text": "にがい",
+          "correct": false,
+          "explanation_vi": "にがい (苦い) là đắng (vị), không dùng cho hồ bơi.",
+          "meaning_vi": "đắng"
+        }
+      ],
+      "summary_vi": "プールが深い (ふかい) → 子どもはあぶない. Đối nghĩa: 浅い (あさい).",
+      "point_tags": [
+        "vocab:深い"
+      ],
+      "vocab": [
+        {
+          "word": "深い",
+          "reading": "ふかい",
+          "meaning_vi": "sâu",
+          "sino_vi": "THÂM"
+        },
+        {
+          "word": "浅い",
+          "reading": "あさい",
+          "meaning_vi": "nông",
+          "sino_vi": "THIỂN"
+        },
+        {
+          "word": "硬い",
+          "reading": "かたい",
+          "meaning_vi": "cứng",
+          "sino_vi": "NGẠNH"
+        },
+        {
+          "word": "重い",
+          "reading": "おもい",
+          "meaning_vi": "nặng",
+          "sino_vi": "TRỌNG"
+        },
+        {
+          "word": "苦い",
+          "reading": "にがい",
+          "meaning_vi": "đắng",
+          "sino_vi": "KHỔ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q15",
+      "no": 15,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "その はがきに この きってを（　　）ください。",
+        "vi": "Hãy dán con tem này lên tấm bưu thiếp đó.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "かけて",
+          "correct": false,
+          "explanation_vi": "かけて (掛ける) là treo, gọi (điện thoại), đeo... Không đi với «dán tem».",
+          "meaning_vi": "treo, gọi (掛ける)"
+        },
+        {
+          "id": "2",
+          "text": "はって",
+          "correct": true,
+          "explanation_vi": "はって (貼る) là dán, đi với きってを (dán tem). Cả câu: «Hãy dán con tem này lên tấm bưu thiếp đó». Cũng nói 切手をはる.",
+          "meaning_vi": "dán (貼る)"
+        },
+        {
+          "id": "3",
+          "text": "ぬって",
+          "correct": false,
+          "explanation_vi": "ぬって (塗る) là bôi, quét (sơn, kem). Không dùng cho tem.",
+          "meaning_vi": "bôi, sơn (塗る)"
+        },
+        {
+          "id": "4",
+          "text": "すてて",
+          "correct": false,
+          "explanation_vi": "すてて (捨てる) là vứt đi. Nghĩa «hãy vứt tem» không hợp với việc gửi bưu thiếp.",
+          "meaning_vi": "vứt (捨てる)"
+        }
+      ],
+      "summary_vi": "切手をはる = dán tem. はる (貼る) = dán.",
+      "point_tags": [
+        "vocab:貼る",
+        "vocab:切手"
+      ],
+      "vocab": [
+        {
+          "word": "切手",
+          "reading": "きって",
+          "meaning_vi": "tem",
+          "sino_vi": "THIẾT THỦ"
+        },
+        {
+          "word": "貼る",
+          "reading": "はる",
+          "meaning_vi": "dán",
+          "sino_vi": "THIẾP"
+        },
+        {
+          "word": "塗る",
+          "reading": "ぬる",
+          "meaning_vi": "bôi, sơn",
+          "sino_vi": "ĐỒ"
+        },
+        {
+          "word": "捨てる",
+          "reading": "すてる",
+          "meaning_vi": "vứt",
+          "sino_vi": "XẢ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q16",
+      "no": 16,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "えきまえの ほんやは あさ8時から（　　）しています。",
+        "vi": "Hiệu sách trước nhà ga mở cửa (kinh doanh) từ 8 giờ sáng.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "えいぎょう",
+          "correct": true,
+          "explanation_vi": "えいぎょう (営業) = kinh doanh. 営業しています = đang mở cửa bán hàng. Cả câu: «Hiệu sách trước nhà ga mở cửa từ 8 giờ sáng».",
+          "meaning_vi": "kinh doanh, mở cửa bán hàng"
+        },
+        {
+          "id": "2",
+          "text": "せいさん",
+          "correct": false,
+          "explanation_vi": "せいさん (生産) là sản xuất ở nhà máy; nhà sách không «sản xuất» từ 8 giờ.",
+          "meaning_vi": "sản xuất (生産)"
+        },
+        {
+          "id": "3",
+          "text": "ぼうえき",
+          "correct": false,
+          "explanation_vi": "ぼうえき (貿易) là buôn bán quốc tế, không hợp với một hiệu sách.",
+          "meaning_vi": "mậu dịch, ngoại thương (貿易)"
+        },
+        {
+          "id": "4",
+          "text": "ゆしゅつ",
+          "correct": false,
+          "explanation_vi": "ゆしゅつ (輸出) là xuất khẩu hàng ra nước ngoài, không hợp ngữ cảnh.",
+          "meaning_vi": "xuất khẩu (輸出)"
+        }
+      ],
+      "summary_vi": "営業する = kinh doanh/mở cửa (cửa hàng). 営業時間 = giờ mở cửa.",
+      "point_tags": [
+        "vocab:営業"
+      ],
+      "vocab": [
+        {
+          "word": "営業",
+          "reading": "えいぎょう",
+          "meaning_vi": "kinh doanh, mở cửa bán hàng",
+          "sino_vi": "DOANH NGHIỆP"
+        },
+        {
+          "word": "生産",
+          "reading": "せいさん",
+          "meaning_vi": "sản xuất",
+          "sino_vi": "SINH SẢN"
+        },
+        {
+          "word": "貿易",
+          "reading": "ぼうえき",
+          "meaning_vi": "mậu dịch",
+          "sino_vi": "MẬU DỊCH"
+        },
+        {
+          "word": "輸出",
+          "reading": "ゆしゅつ",
+          "meaning_vi": "xuất khẩu",
+          "sino_vi": "THÂU XUẤT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q17",
+      "no": 17,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "この みちを まっすぐ（　　）と、右がわに としょかんが あります。",
+        "vi": "Nếu cứ đi thẳng con đường này thì bên phải có thư viện.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "でかける",
+          "correct": false,
+          "explanation_vi": "でかける (出かける) là ra ngoài, đi chơi; không đi với 道をまっすぐ để chỉ đường.",
+          "meaning_vi": "đi ra ngoài (出かける)"
+        },
+        {
+          "id": "2",
+          "text": "うごく",
+          "correct": false,
+          "explanation_vi": "うごく (動く) là di chuyển, hoạt động; không dùng với «đi thẳng theo đường».",
+          "meaning_vi": "chuyển động (動く)"
+        },
+        {
+          "id": "3",
+          "text": "たずねる",
+          "correct": false,
+          "explanation_vi": "たずねる là hỏi (尋ねる) hoặc đến thăm (訪ねる). Không có nghĩa «đi tiếp theo đường».",
+          "meaning_vi": "hỏi, thăm (尋ねる・訪ねる)"
+        },
+        {
+          "id": "4",
+          "text": "すすむ",
+          "correct": true,
+          "explanation_vi": "すすむ (進む) là tiến về phía trước. 道をまっすぐ進むと〜 = đi thẳng đường này thì ~. Cả câu: «Đi thẳng đường này thì bên phải có thư viện».",
+          "meaning_vi": "tiến lên, đi tiếp (進む)"
+        }
+      ],
+      "summary_vi": "道をまっすぐ進むと〜 = cứ đi thẳng thì ~ (cách chỉ đường). 〜と = hễ ~ thì.",
+      "point_tags": [
+        "vocab:進む",
+        "grammar:〜と"
+      ],
+      "vocab": [
+        {
+          "word": "進む",
+          "reading": "すすむ",
+          "meaning_vi": "tiến lên, đi tiếp",
+          "sino_vi": "TIẾN"
+        },
+        {
+          "word": "出かける",
+          "reading": "でかける",
+          "meaning_vi": "ra ngoài",
+          "sino_vi": "XUẤT"
+        },
+        {
+          "word": "動く",
+          "reading": "うごく",
+          "meaning_vi": "chuyển động",
+          "sino_vi": "ĐỘNG"
+        },
+        {
+          "word": "尋ねる",
+          "reading": "たずねる",
+          "meaning_vi": "hỏi",
+          "sino_vi": "TẦM"
+        },
+        {
+          "word": "図書館",
+          "reading": "としょかん",
+          "meaning_vi": "thư viện",
+          "sino_vi": "ĐỒ THƯ QUÁN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q18",
+      "no": 18,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "どちらの けいかくが いいと おもうか、みんなの（　　）聞きました。",
+        "vi": "Tôi đã hỏi ý kiến mọi người xem họ nghĩ kế hoạch nào tốt hơn.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "やくそく",
+          "correct": false,
+          "explanation_vi": "やくそく (約束) là lời hứa/cuộc hẹn. «みんなの約束を聞く» không hợp nghĩa.",
+          "meaning_vi": "lời hứa, cuộc hẹn"
+        },
+        {
+          "id": "2",
+          "text": "いけん",
+          "correct": true,
+          "explanation_vi": "いけん (意見) = ý kiến. 意見を聞く = hỏi ý kiến. Cả câu: «Tôi đã hỏi ý kiến mọi người xem kế hoạch nào tốt hơn».",
+          "meaning_vi": "ý kiến"
+        },
+        {
+          "id": "3",
+          "text": "あいさつ",
+          "correct": false,
+          "explanation_vi": "あいさつ (挨拶) là lời chào, không đi với «hỏi (kế hoạch nào tốt)».",
+          "meaning_vi": "chào hỏi"
+        },
+        {
+          "id": "4",
+          "text": "ひみつ",
+          "correct": false,
+          "explanation_vi": "ひみつ (秘密) là bí mật; hỏi «bí mật của mọi người» không hợp với việc chọn kế hoạch.",
+          "meaning_vi": "bí mật"
+        }
+      ],
+      "summary_vi": "意見を聞く = hỏi ý kiến. いけん (意見) = ý kiến.",
+      "point_tags": [
+        "vocab:意見",
+        "vocab:計画"
+      ],
+      "vocab": [
+        {
+          "word": "計画",
+          "reading": "けいかく",
+          "meaning_vi": "kế hoạch",
+          "sino_vi": "KẾ HOẠCH"
+        },
+        {
+          "word": "意見",
+          "reading": "いけん",
+          "meaning_vi": "ý kiến",
+          "sino_vi": "Ý KIẾN"
+        },
+        {
+          "word": "約束",
+          "reading": "やくそく",
+          "meaning_vi": "lời hứa, cuộc hẹn",
+          "sino_vi": "ƯỚC THÚC"
+        },
+        {
+          "word": "秘密",
+          "reading": "ひみつ",
+          "meaning_vi": "bí mật",
+          "sino_vi": "BÍ MẬT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q19",
+      "no": 19,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "きのう うちの ねこが 子どもを 3びき（　　）。",
+        "vi": "Hôm qua con mèo nhà tôi đã đẻ 3 con.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "しました",
+          "correct": false,
+          "explanation_vi": "しました (する) = đã làm. «子どもを3匹しました» không thành câu có nghĩa.",
+          "meaning_vi": "đã làm"
+        },
+        {
+          "id": "2",
+          "text": "だしました",
+          "correct": false,
+          "explanation_vi": "だしました (出す) là lấy ra, gửi, nộp. Không dùng cho việc đẻ con.",
+          "meaning_vi": "đã đưa ra, nộp"
+        },
+        {
+          "id": "3",
+          "text": "やりました",
+          "correct": false,
+          "explanation_vi": "やりました (やる) là làm hoặc cho (động vật ăn). «子どもをやる» không có nghĩa đẻ con.",
+          "meaning_vi": "đã làm, đã cho"
+        },
+        {
+          "id": "4",
+          "text": "うみました",
+          "correct": true,
+          "explanation_vi": "うみました (生む・産む) = đẻ, sinh. 子どもを3匹うみました = đẻ ra 3 con. Cả câu: «Hôm qua con mèo nhà tôi đã đẻ 3 con».",
+          "meaning_vi": "đã đẻ"
+        }
+      ],
+      "summary_vi": "子どもを産む/生む = đẻ con. 匹 (ひき/びき) là đơn vị đếm con vật nhỏ.",
+      "point_tags": [
+        "vocab:産む",
+        "usage:〜匹"
+      ],
+      "vocab": [
+        {
+          "word": "産む",
+          "reading": "うむ",
+          "meaning_vi": "đẻ, sinh",
+          "sino_vi": "SẢN"
+        },
+        {
+          "word": "匹",
+          "reading": "ひき",
+          "meaning_vi": "con (đếm động vật nhỏ)",
+          "sino_vi": "THẤT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q20",
+      "no": 20,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "しけんの（　　）が よかったので、うれしいです。",
+        "vi": "Vì kết quả bài thi tốt nên tôi vui.",
+        "target": "（　）"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "けっか",
+          "correct": true,
+          "explanation_vi": "けっか (結果) = kết quả. しけんの結果がよかった = kết quả thi tốt. Cả câu: «Vì kết quả bài thi tốt nên tôi vui».",
+          "meaning_vi": "kết quả"
+        },
+        {
+          "id": "2",
+          "text": "ごうかく",
+          "correct": false,
+          "explanation_vi": "ごうかく (合格) là đỗ; nói 合格しました (đã đỗ), không nói «合格がよかった».",
+          "meaning_vi": "đỗ, thi đậu"
+        },
+        {
+          "id": "3",
+          "text": "げんいん",
+          "correct": false,
+          "explanation_vi": "げんいん (原因) là nguyên nhân, không dùng cho kết quả thi.",
+          "meaning_vi": "nguyên nhân"
+        },
+        {
+          "id": "4",
+          "text": "せいこう",
+          "correct": false,
+          "explanation_vi": "せいこう (成功) là thành công (làm được việc); không đi với «しけんの成功がよかった».",
+          "meaning_vi": "thành công"
+        }
+      ],
+      "summary_vi": "試験の結果がいい = kết quả thi tốt. けっか (結果) = kết quả.",
+      "point_tags": [
+        "vocab:結果"
+      ],
+      "vocab": [
+        {
+          "word": "結果",
+          "reading": "けっか",
+          "meaning_vi": "kết quả",
+          "sino_vi": "KẾT QUẢ"
+        },
+        {
+          "word": "合格",
+          "reading": "ごうかく",
+          "meaning_vi": "đỗ, thi đậu",
+          "sino_vi": "HỢP CÁCH"
+        },
+        {
+          "word": "原因",
+          "reading": "げんいん",
+          "meaning_vi": "nguyên nhân",
+          "sino_vi": "NGUYÊN NHÂN"
+        },
+        {
+          "word": "成功",
+          "reading": "せいこう",
+          "meaning_vi": "thành công",
+          "sino_vi": "THÀNH CÔNG"
+        },
+        {
+          "word": "試験",
+          "reading": "しけん",
+          "meaning_vi": "kỳ thi",
+          "sino_vi": "THÍ NGHIỆM"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q21",
+      "no": 21,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "さいきん いそがしくて、うんどうできません。",
+        "vi": "Dạo này bận nên tôi không vận động (tập thể thao) được.",
+        "target": "うんどうできません"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "さいきん いそがしくて、本を 読んで いません。",
+          "correct": false,
+          "explanation_vi": "Câu gốc nói «không vận động được», không liên quan đến việc đọc sách. 読む (よむ) = đọc.",
+          "meaning_vi": "Dạo này bận nên không đọc sách."
+        },
+        {
+          "id": "2",
+          "text": "さいきん いそがしくて、休んで いません。",
+          "correct": false,
+          "explanation_vi": "休む (やすむ) là nghỉ ngơi/nghỉ làm. Câu gốc nói về việc vận động, không phải nghỉ ngơi.",
+          "meaning_vi": "Dạo này bận nên không nghỉ ngơi."
+        },
+        {
+          "id": "3",
+          "text": "さいきん いそがしくて、うちの しごとを して いません。",
+          "correct": false,
+          "explanation_vi": "うちのしごと = việc nhà. Câu gốc không nói về việc nhà.",
+          "meaning_vi": "Dạo này bận nên không làm việc nhà."
+        },
+        {
+          "id": "4",
+          "text": "さいきん いそがしくて、スポーツを して いません。",
+          "correct": true,
+          "explanation_vi": "うんどうする (運動する) = vận động, tập thể dục thể thao, gần nghĩa với スポーツをする. Vậy 4 có nghĩa gần nhất với câu gốc.",
+          "meaning_vi": "Dạo này bận nên không chơi thể thao."
+        }
+      ],
+      "summary_vi": "うんどう (運動) ≈ スポーツをする (vận động, chơi thể thao).",
+      "point_tags": [
+        "vocab:運動"
+      ],
+      "vocab": [
+        {
+          "word": "運動",
+          "reading": "うんどう",
+          "meaning_vi": "vận động, tập thể thao",
+          "sino_vi": "VẬN ĐỘNG"
+        },
+        {
+          "word": "最近",
+          "reading": "さいきん",
+          "meaning_vi": "gần đây, dạo này",
+          "sino_vi": "TỐI CẬN"
+        },
+        {
+          "word": "忙しい",
+          "reading": "いそがしい",
+          "meaning_vi": "bận",
+          "sino_vi": "MANG"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q22",
+      "no": 22,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "くうこうは ここから とおいですか。",
+        "vi": "Sân bay có xa chỗ này không?",
+        "target": "くうこう"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "ひこうきに のる ところは ここから とおいですか。",
+          "correct": true,
+          "explanation_vi": "くうこう (空港) là nơi lên xuống máy bay (飛行機に乗るところ). Cả câu: «Nơi lên máy bay có xa chỗ này không?» — đồng nghĩa với câu gốc.",
+          "meaning_vi": "Nơi lên máy bay có xa chỗ này không?"
+        },
+        {
+          "id": "2",
+          "text": "ふねに のる ところは ここから とおいですか。",
+          "correct": false,
+          "explanation_vi": "ふねに乗るところ là bến cảng (みなと/こうこう 港), không phải くうこう.",
+          "meaning_vi": "Nơi lên tàu thủy có xa không?"
+        },
+        {
+          "id": "3",
+          "text": "たべものを 買う ところは ここから とおいですか。",
+          "correct": false,
+          "explanation_vi": "たべものを買うところ là cửa hàng/siêu thị, không phải sân bay.",
+          "meaning_vi": "Nơi mua đồ ăn có xa không?"
+        },
+        {
+          "id": "4",
+          "text": "きっぷを 買う ところは ここから とおいですか。",
+          "correct": false,
+          "explanation_vi": "きっぷを買うところ là quầy bán vé, không phải sân bay.",
+          "meaning_vi": "Nơi mua vé có xa không?"
+        }
+      ],
+      "summary_vi": "くうこう (空港) = sân bay = 飛行機に乗るところ.",
+      "point_tags": [
+        "vocab:空港"
+      ],
+      "vocab": [
+        {
+          "word": "空港",
+          "reading": "くうこう",
+          "meaning_vi": "sân bay",
+          "sino_vi": "KHÔNG CẢNG"
+        },
+        {
+          "word": "飛行機",
+          "reading": "ひこうき",
+          "meaning_vi": "máy bay",
+          "sino_vi": "PHI HÀNH CƠ"
+        },
+        {
+          "word": "切符",
+          "reading": "きっぷ",
+          "meaning_vi": "vé",
+          "sino_vi": "THIẾT PHÙ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q23",
+      "no": 23,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "もりさんに たのみました。",
+        "vi": "Tôi đã nhờ anh/chị Mori.",
+        "target": "たのみました"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "もりさんに れんらくしました。",
+          "correct": false,
+          "explanation_vi": "れんらくする (連絡する) là liên lạc, báo tin. Không phải «nhờ vả».",
+          "meaning_vi": "Tôi đã liên lạc với anh/chị Mori."
+        },
+        {
+          "id": "2",
+          "text": "もりさんに へんじしました。",
+          "correct": false,
+          "explanation_vi": "へんじする (返事する) là trả lời. Nghĩa khác với たのむ.",
+          "meaning_vi": "Tôi đã trả lời anh/chị Mori."
+        },
+        {
+          "id": "3",
+          "text": "もりさんに おねがいしました。",
+          "correct": true,
+          "explanation_vi": "たのむ (頼む) = nhờ vả, đồng nghĩa với おねがいする (お願いする, dạng lịch sự). Vậy 3 là đúng.",
+          "meaning_vi": "Tôi đã nhờ anh/chị Mori."
+        },
+        {
+          "id": "4",
+          "text": "もりさんに しょうかいしました。",
+          "correct": false,
+          "explanation_vi": "しょうかいする (紹介する) là giới thiệu (người, vật). Không phải nhờ vả.",
+          "meaning_vi": "Tôi đã giới thiệu cho anh/chị Mori."
+        }
+      ],
+      "summary_vi": "頼む (たのむ) = お願いする (nhờ vả).",
+      "point_tags": [
+        "vocab:頼む"
+      ],
+      "vocab": [
+        {
+          "word": "頼む",
+          "reading": "たのむ",
+          "meaning_vi": "nhờ, yêu cầu",
+          "sino_vi": "LẠI"
+        },
+        {
+          "word": "お願い",
+          "reading": "おねがい",
+          "meaning_vi": "sự nhờ vả",
+          "sino_vi": "NGUYỆN"
+        },
+        {
+          "word": "連絡",
+          "reading": "れんらく",
+          "meaning_vi": "liên lạc",
+          "sino_vi": "LIÊN LẠC"
+        },
+        {
+          "word": "返事",
+          "reading": "へんじ",
+          "meaning_vi": "trả lời",
+          "sino_vi": "PHẢN SỰ"
+        },
+        {
+          "word": "紹介",
+          "reading": "しょうかい",
+          "meaning_vi": "giới thiệu",
+          "sino_vi": "THIỆU GIỚI"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q24",
+      "no": 24,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "けさから 雨が ざあざあ ふっています。",
+        "vi": "Từ sáng nay trời mưa ào ào.",
+        "target": "ざあざあ"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "けさから つめたい 雨が ふっています。",
+          "correct": false,
+          "explanation_vi": "つめたい (冷たい) là lạnh buốt. ざあざあ chỉ độ mạnh của mưa, không phải độ lạnh.",
+          "meaning_vi": "Từ sáng nay mưa lạnh."
+        },
+        {
+          "id": "2",
+          "text": "けさから こまかい 雨が ふっています。",
+          "correct": false,
+          "explanation_vi": "こまかい (細かい) là nhỏ, mịn (hạt mưa nhỏ). ざあざあ là mưa to nặng hạt nên ngược nghĩa.",
+          "meaning_vi": "Từ sáng nay mưa phùn nhỏ hạt."
+        },
+        {
+          "id": "3",
+          "text": "けさから 雨が しずかに ふっています。",
+          "correct": false,
+          "explanation_vi": "しずかに (静かに) là yên lặng; ざあざあ là tiếng mưa ồn ào nên ngược nghĩa.",
+          "meaning_vi": "Từ sáng nay mưa rơi lặng lẽ."
+        },
+        {
+          "id": "4",
+          "text": "けさから 雨が つよく ふっています。",
+          "correct": true,
+          "explanation_vi": "ざあざあ là từ tượng thanh chỉ tiếng mưa to, nặng hạt, tức là mưa «mạnh» (つよく). Vậy 4 là đúng.",
+          "meaning_vi": "Từ sáng nay mưa rơi mạnh."
+        }
+      ],
+      "summary_vi": "ざあざあ (mưa) = 雨がつよくふる (mưa to, mạnh).",
+      "point_tags": [
+        "vocab:ざあざあ"
+      ],
+      "vocab": [
+        {
+          "word": "ざあざあ",
+          "reading": "ざあざあ",
+          "meaning_vi": "ào ào (mưa to)"
+        },
+        {
+          "word": "強い",
+          "reading": "つよい",
+          "meaning_vi": "mạnh",
+          "sino_vi": "CƯỜNG"
+        },
+        {
+          "word": "静か",
+          "reading": "しずか",
+          "meaning_vi": "yên tĩnh",
+          "sino_vi": "TĨNH"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q25",
+      "no": 25,
+      "part": "vocab",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "しんぱい",
+        "vi": "lo lắng (用法)",
+        "target": "しんぱい"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "たなか「先週 ひさしぶりに ともだちに あったんです。」\nやまだ「それは しんぱいですね。」",
+          "correct": false,
+          "explanation_vi": "Gặp lại bạn lâu ngày là chuyện vui, phản ứng đúng sẽ là «それはよかったですね». Không có lý do để lo lắng.",
+          "meaning_vi": "Tuần trước lâu rồi mới gặp bạn. → «Thế thì lo nhỉ.»"
+        },
+        {
+          "id": "2",
+          "text": "たなか「先週 わたしに たんじょうびの プレゼントが とどいたんです。」\nやまだ「それは しんぱいですね。」",
+          "correct": false,
+          "explanation_vi": "Nhận quà sinh nhật là chuyện vui, nên đáp «よかったですね». Dùng «しんぱい» là sai.",
+          "meaning_vi": "Nhận được quà sinh nhật. → «Thế thì lo nhỉ.»"
+        },
+        {
+          "id": "3",
+          "text": "たなか「先週 かっていた いぬが しんだんです。」\nやまだ「それは しんぱいですね。」",
+          "correct": false,
+          "explanation_vi": "Chó đã chết là chuyện buồn đã xảy ra, đáp tự nhiên là «それはかなしいですね / ざんねんですね». しんぱい là lo cho chuyện chưa rõ kết quả.",
+          "meaning_vi": "Con chó nuôi đã chết. → «Thế thì lo nhỉ.»"
+        },
+        {
+          "id": "4",
+          "text": "たなか「先週 あにが にゅういんしたんです。」\nやまだ「それは しんぱいですね。」",
+          "correct": true,
+          "explanation_vi": "Anh nhập viện là chuyện đáng lo (không biết bệnh có nặng không), nên đáp «それはしんぱいですね» rất tự nhiên. しんぱい (心配) = lo lắng.",
+          "meaning_vi": "Anh trai tôi phải nhập viện. → «Thế thì lo nhỉ.»"
+        }
+      ],
+      "summary_vi": "しんぱい (心配) = lo lắng, dùng khi chuyện chưa rõ kết quả/xấu (nhập viện), không dùng cho chuyện vui.",
+      "point_tags": [
+        "usage:心配"
+      ],
+      "vocab": [
+        {
+          "word": "心配",
+          "reading": "しんぱい",
+          "meaning_vi": "lo lắng",
+          "sino_vi": "TÂM PHỐI"
+        },
+        {
+          "word": "入院",
+          "reading": "にゅういん",
+          "meaning_vi": "nhập viện",
+          "sino_vi": "NHẬP VIỆN"
+        },
+        {
+          "word": "届く",
+          "reading": "とどく",
+          "meaning_vi": "được chuyển đến",
+          "sino_vi": "GIỚI"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q26",
+      "no": 26,
+      "part": "vocab",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "せまい",
+        "vi": "chật, hẹp (用法)",
+        "target": "せまい"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "このみちは せまいので、車は とおれません。",
+          "correct": true,
+          "explanation_vi": "せまい (狭い) = hẹp, chật (đường, phòng). Đường hẹp nên xe hơi không qua được là cách dùng đúng.",
+          "meaning_vi": "Con đường này hẹp nên xe hơi không đi qua được."
+        },
+        {
+          "id": "2",
+          "text": "この ズボンは わたしには 少しせまいです。",
+          "correct": false,
+          "explanation_vi": "Quần áo hay giày vừa vặn/chật dùng きつい (kitsui) chứ không dùng せまい. せまい chỉ không gian.",
+          "meaning_vi": "Chiếc quần này hơi chật với tôi."
+        },
+        {
+          "id": "3",
+          "text": "小さい じを 書く ときは、せまいペンが いいです。",
+          "correct": false,
+          "explanation_vi": "Bút đầu nhỏ, mảnh là ほそい (細い), không phải せまい.",
+          "meaning_vi": "Khi viết chữ nhỏ thì nên dùng bút mảnh."
+        },
+        {
+          "id": "4",
+          "text": "その やさいは せまく きって ください。",
+          "correct": false,
+          "explanation_vi": "Cắt rau mảnh/nhỏ là ほそく/こまかく切る. せまい không dùng cho độ dày mảnh.",
+          "meaning_vi": "Hãy cắt rau đó thành sợi mảnh."
+        }
+      ],
+      "summary_vi": "せまい (狭い) = hẹp, chật (đường, phòng, chỗ ngồi); quần áo chật = きつい, bút mảnh = 細い.",
+      "point_tags": [
+        "usage:狭い"
+      ],
+      "vocab": [
+        {
+          "word": "狭い",
+          "reading": "せまい",
+          "meaning_vi": "hẹp, chật",
+          "sino_vi": "HIỆP"
+        },
+        {
+          "word": "通る",
+          "reading": "とおる",
+          "meaning_vi": "đi qua",
+          "sino_vi": "THÔNG"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q27",
+      "no": 27,
+      "part": "vocab",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "こしょう",
+        "vi": "hỏng, trục trặc (用法)",
+        "target": "こしょう"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "水を あげるのを わすれて、花が こしょうして しまいました。",
+          "correct": false,
+          "explanation_vi": "Hoa héo thì dùng かれる (枯れる). こしょう (故障) chỉ dùng cho máy móc, thiết bị.",
+          "meaning_vi": "Quên tưới nước nên hoa bị héo mất."
+        },
+        {
+          "id": "2",
+          "text": "その パソコンは こしようして いるので、つかえません。",
+          "correct": true,
+          "explanation_vi": "こしょう (故障) = hỏng, trục trặc (máy móc, thiết bị). パソコンが故障しているので使えない là đúng nghĩa. Lưu ý: bản in ghi «こしよう» (ょ in thành よ), đây là lỗi in, ý là こしょう.",
+          "meaning_vi": "Máy tính đó bị hỏng nên không dùng được."
+        },
+        {
+          "id": "3",
+          "text": "この ぎゅうにゅうは こしょうして いるので、飲まないで ください。",
+          "correct": false,
+          "explanation_vi": "Thực phẩm hư thì dùng くさる (腐る) / わるくなる. こしょう không dùng cho đồ ăn.",
+          "meaning_vi": "Sữa này hỏng nên đừng uống."
+        },
+        {
+          "id": "4",
+          "text": "テーブルから おちて、コップが こしょうしました。",
+          "correct": false,
+          "explanation_vi": "Cốc rơi vỡ là われる (割れる). こしょう dùng cho máy móc, không dùng với cốc.",
+          "meaning_vi": "Rơi từ bàn xuống nên cái cốc bị hỏng."
+        }
+      ],
+      "summary_vi": "こしょう (故障) = máy móc hỏng/trục trặc; hoa héo = かれる, sữa hư = くさる, cốc vỡ = われる.",
+      "point_tags": [
+        "usage:故障"
+      ],
+      "vocab": [
+        {
+          "word": "故障",
+          "reading": "こしょう",
+          "meaning_vi": "hỏng, trục trặc (máy)",
+          "sino_vi": "CỐ CHƯỚNG"
+        },
+        {
+          "word": "枯れる",
+          "reading": "かれる",
+          "meaning_vi": "héo",
+          "sino_vi": "KHÔ"
+        },
+        {
+          "word": "割れる",
+          "reading": "われる",
+          "meaning_vi": "vỡ",
+          "sino_vi": "CÁT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-v-q28",
+      "no": 28,
+      "part": "vocab",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "たおれる",
+        "vi": "đổ, ngã (用法)",
+        "target": "たおれる"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "たいふうで 山が たおれました。",
+          "correct": false,
+          "explanation_vi": "Núi không «たおれる» được. Núi lở dùng くずれる (崩れる).",
+          "meaning_vi": "Vì bão mà núi đổ."
+        },
+        {
+          "id": "2",
+          "text": "おとうとは こうつうじこで 足が たおれました。",
+          "correct": false,
+          "explanation_vi": "Chân bị gãy là おれる (折れる). たおれる dùng cho vật đứng đổ xuống hoặc người ngã/gục.",
+          "meaning_vi": "Em trai bị tai nạn giao thông, chân đổ."
+        },
+        {
+          "id": "3",
+          "text": "大きい じしんで ほんだなが たおれました。",
+          "correct": true,
+          "explanation_vi": "たおれる (倒れる) = đổ, ngã (vật đứng bị đổ). Giá sách bị đổ vì động đất là cách dùng đúng.",
+          "meaning_vi": "Vì động đất lớn mà giá sách đổ."
+        },
+        {
+          "id": "4",
+          "text": "先生の びょうきで じゅぎょうが たおれました。",
+          "correct": false,
+          "explanation_vi": "Buổi học bị hủy là きゅうこうになる (休講). Không dùng たおれる.",
+          "meaning_vi": "Vì cô giáo bệnh nên buổi học đổ."
+        }
+      ],
+      "summary_vi": "たおれる (倒れる) = đổ, ngã (cây, giá sách, người bị gục). Núi lở = 崩れる, gãy = 折れる.",
+      "point_tags": [
+        "usage:倒れる"
+      ],
+      "vocab": [
+        {
+          "word": "倒れる",
+          "reading": "たおれる",
+          "meaning_vi": "đổ, ngã",
+          "sino_vi": "ĐẢO"
+        },
+        {
+          "word": "地震",
+          "reading": "じしん",
+          "meaning_vi": "động đất",
+          "sino_vi": "ĐỊA CHẤN"
+        },
+        {
+          "word": "台風",
+          "reading": "たいふう",
+          "meaning_vi": "bão",
+          "sino_vi": "ĐÀI PHONG"
+        },
+        {
+          "word": "本棚",
+          "reading": "ほんだな",
+          "meaning_vi": "giá sách",
+          "sino_vi": "BẢN BẰNG"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q29",
+      "no": 29,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "田中さんはかぜ（　　）仕事を休みました。",
+        "vi": "Anh/chị Tanaka đã nghỉ làm vì bị cảm."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "を",
+          "correct": false,
+          "explanation_vi": "を đánh dấu tân ngữ trực tiếp của động từ (〜を休む). Ở đây 'かぜ' không phải đối tượng bị nghỉ; «かぜを仕事を休みました» sai vì có hai を."
+        },
+        {
+          "id": "2",
+          "text": "で",
+          "correct": true,
+          "explanation_vi": "Danh từ chỉ bệnh/nguyên nhân + で = «vì, do». かぜで = vì bị cảm. Cả câu: «Anh/chị Tanaka đã nghỉ làm vì bị cảm»."
+        },
+        {
+          "id": "3",
+          "text": "に",
+          "correct": false,
+          "explanation_vi": "に chỉ thời điểm, đích đến, đối tượng nhận... «かぜに休みました» không nói được lý do."
+        },
+        {
+          "id": "4",
+          "text": "が",
+          "correct": false,
+          "explanation_vi": "が đánh dấu chủ ngữ; «かぜが仕事を休みました» sẽ thành «cơn cảm nghỉ làm», vô lý (chủ ngữ là 田中さん)."
+        }
+      ],
+      "summary_vi": "N + で = vì N (nguyên nhân). かぜで休む = nghỉ vì bị cảm.",
+      "point_tags": [
+        "grammar:〜で(原因)"
+      ],
+      "vocab": [
+        {
+          "word": "かぜ",
+          "reading": "かぜ",
+          "meaning_vi": "cảm cúm"
+        },
+        {
+          "word": "休む",
+          "reading": "やすむ",
+          "meaning_vi": "nghỉ",
+          "sino_vi": "HƯU"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q30",
+      "no": 30,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "私は毎朝、天気予報を見て、駅まで自転車で行くかバスで行く（　　）決めます。",
+        "vi": "Mỗi sáng tôi xem dự báo thời tiết rồi quyết định đi tới ga bằng xe đạp hay bằng xe buýt."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "を",
+          "correct": false,
+          "explanation_vi": "を không nối được «A か B» với động từ 決めます theo kiểu «đi bằng xe đạp hay xe buýt». Cần か để tạo cấu trúc lựa chọn."
+        },
+        {
+          "id": "2",
+          "text": "と",
+          "correct": false,
+          "explanation_vi": "と trích dẫn hoặc điều kiện («決めると»), không có nghĩa lựa chọn «A hay B»."
+        },
+        {
+          "id": "3",
+          "text": "か",
+          "correct": true,
+          "explanation_vi": "「AかBか決める」 = quyết định A hay B. Đã có «行くか» ở trước, nên sau «バスで行く» cũng cần か. Cả câu: «...đi bằng xe đạp hay bằng xe buýt thì tôi quyết định»."
+        },
+        {
+          "id": "4",
+          "text": "が",
+          "correct": false,
+          "explanation_vi": "が là trợ từ chủ ngữ/đối lập, không dùng để kết thúc cụm lựa chọn trước 決めます."
+        }
+      ],
+      "summary_vi": "AかBか決める = quyết định A hay B (mẫu câu hỏi gián tiếp).",
+      "point_tags": [
+        "grammar:〜か〜か"
+      ],
+      "vocab": [
+        {
+          "word": "天気予報",
+          "reading": "てんきよほう",
+          "meaning_vi": "dự báo thời tiết",
+          "sino_vi": "THIÊN KHÍ DỰ BÁO"
+        },
+        {
+          "word": "自転車",
+          "reading": "じてんしゃ",
+          "meaning_vi": "xe đạp",
+          "sino_vi": "TỰ CHUYỂN XA"
+        },
+        {
+          "word": "決める",
+          "reading": "きめる",
+          "meaning_vi": "quyết định",
+          "sino_vi": "QUYẾT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q31",
+      "no": 31,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "バターはぎゅうにゅう（　　）作られます。",
+        "vi": "Bơ được làm từ sữa bò."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "の",
+          "correct": false,
+          "explanation_vi": "の nối danh từ (ぎゅうにゅうの〜). «ぎゅうにゅうの作られます» không thành câu."
+        },
+        {
+          "id": "2",
+          "text": "を",
+          "correct": false,
+          "explanation_vi": "を là tân ngữ của câu chủ động; ở đây là câu bị động 作られます nên không dùng を cho nguyên liệu."
+        },
+        {
+          "id": "3",
+          "text": "から",
+          "correct": true,
+          "explanation_vi": "Câu bị động 〜から作られる = «được làm từ (nguyên liệu mà hình dạng ban đầu bị biến đổi)». バターはぎゅうにゅうから作られます = bơ được làm từ sữa bò."
+        },
+        {
+          "id": "4",
+          "text": "には",
+          "correct": false,
+          "explanation_vi": "には chỉ nơi chốn/đối tượng + nhấn mạnh, không diễn tả nguyên liệu."
+        }
+      ],
+      "summary_vi": "N（原料）＋から作られる = được làm từ N (nguyên liệu bị biến đổi); khác でできる.",
+      "point_tags": [
+        "grammar:〜から作られる"
+      ],
+      "vocab": [
+        {
+          "word": "バター",
+          "reading": "バター",
+          "meaning_vi": "bơ"
+        },
+        {
+          "word": "牛乳",
+          "reading": "ぎゅうにゅう",
+          "meaning_vi": "sữa bò",
+          "sino_vi": "NGƯU NHŨ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q32",
+      "no": 32,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "（かばん屋で）\n客「すみません、このスーツケース（　　）同じくらいの大きさで、もっと軽いのはありますか。」",
+        "vi": "(Ở tiệm túi xách) Khách: «Xin lỗi, có cái nào cỡ bằng chiếc vali này mà nhẹ hơn không?»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "が",
+          "correct": false,
+          "explanation_vi": "が là chủ ngữ; «このスーツケースが同じくらい» làm câu mất đối tượng so sánh và thiếu nghĩa «bằng với»."
+        },
+        {
+          "id": "2",
+          "text": "に",
+          "correct": false,
+          "explanation_vi": "«〜に同じ» không dùng; cấu trúc đúng là Aと同じ."
+        },
+        {
+          "id": "3",
+          "text": "を",
+          "correct": false,
+          "explanation_vi": "を là tân ngữ, không dùng với 同じ."
+        },
+        {
+          "id": "4",
+          "text": "と",
+          "correct": true,
+          "explanation_vi": "「AとBは同じ」/「Aと同じ〜」: と chỉ đối tượng so sánh. このスーツケースと同じくらいの大きさ = cỡ ngang chiếc vali này."
+        }
+      ],
+      "summary_vi": "Aと同じ(くらい) = giống/ngang với A.",
+      "point_tags": [
+        "grammar:〜と同じ"
+      ],
+      "vocab": [
+        {
+          "word": "同じ",
+          "reading": "おなじ",
+          "meaning_vi": "giống nhau",
+          "sino_vi": ""
+        },
+        {
+          "word": "軽い",
+          "reading": "かるい",
+          "meaning_vi": "nhẹ",
+          "sino_vi": "KHINH"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q33",
+      "no": 33,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "田中「リーさんは日本でもちゅうか料理をたべていますか。」\nリー「いいえ。（　　）に来てから食べていません。」",
+        "vi": "Tanaka: «Anh Lee ở Nhật cũng ăn món Trung à?» Lee: «Không. Từ khi đến chỗ này (nước Nhật) tôi chưa ăn.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "あっち",
+          "correct": false,
+          "explanation_vi": "あっち = «phía kia/đằng kia» (xa cả người nói lẫn người nghe). Nơi «đến» ở đây là Nhật Bản, nơi hai người đang nói chuyện nên không dùng あっち."
+        },
+        {
+          "id": "2",
+          "text": "どっち",
+          "correct": false,
+          "explanation_vi": "どっち = «bên nào», là từ nghi vấn; không dùng trong câu trả lời phủ định này."
+        },
+        {
+          "id": "3",
+          "text": "こっち",
+          "correct": true,
+          "explanation_vi": "こっち = «phía này, chỗ này», ở đây ý là Nhật Bản (nơi người nói đang sống). こっちに来てから = từ khi đến đây."
+        },
+        {
+          "id": "4",
+          "text": "そっち",
+          "correct": false,
+          "explanation_vi": "そっち = «phía đó (gần người nghe)», chỉ nơi gần người nghe, không chỉ nơi mà cả hai đang ở."
+        }
+      ],
+      "summary_vi": "こっち (đây) chỉ nơi người nói đang ở. こっちに来てから = từ khi đến đây.",
+      "point_tags": [
+        "vocab:こっち"
+      ],
+      "vocab": [
+        {
+          "word": "中華料理",
+          "reading": "ちゅうかりょうり",
+          "meaning_vi": "món ăn Trung Hoa",
+          "sino_vi": "TRUNG HOA LIỆU LÝ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q34",
+      "no": 34,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "私はアイスクリームが大好きです。（　　）いちごのアイスクリームが好きです。",
+        "vi": "Tôi rất thích kem. Đặc biệt tôi thích kem dâu."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "とくに",
+          "correct": true,
+          "explanation_vi": "とくに (特に) = đặc biệt là. Từ một nhóm chung (kem) nêu ra thứ yêu thích nhất (kem dâu). Cả câu: «Tôi rất thích kem. Đặc biệt là kem dâu»."
+        },
+        {
+          "id": "2",
+          "text": "かならず",
+          "correct": false,
+          "explanation_vi": "かならず (必ず) = nhất định, chắc chắn; không dùng để nêu ví dụ nổi bật."
+        },
+        {
+          "id": "3",
+          "text": "よく",
+          "correct": false,
+          "explanation_vi": "よく = thường xuyên / giỏi. Không có nghĩa «đặc biệt»."
+        },
+        {
+          "id": "4",
+          "text": "だんだん",
+          "correct": false,
+          "explanation_vi": "だんだん = dần dần (thay đổi theo thời gian), không hợp với «thích kem dâu»."
+        }
+      ],
+      "summary_vi": "とくに (特に) = đặc biệt là, nhất là.",
+      "point_tags": [
+        "vocab:特に"
+      ],
+      "vocab": [
+        {
+          "word": "特に",
+          "reading": "とくに",
+          "meaning_vi": "đặc biệt là",
+          "sino_vi": "ĐẶC"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q35",
+      "no": 35,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "きのうは私は一日（　　）家にいました。",
+        "vi": "Hôm qua tôi ở nhà suốt cả ngày."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "しか",
+          "correct": false,
+          "explanation_vi": "しか đi với phủ định (一日しか〜ない = chỉ có một ngày). Câu này là khẳng định «いました» nên sai."
+        },
+        {
+          "id": "2",
+          "text": "ごろ",
+          "correct": false,
+          "explanation_vi": "ごろ chỉ thời điểm xấp xỉ (3時ごろ), không đi với 一日."
+        },
+        {
+          "id": "3",
+          "text": "間",
+          "correct": false,
+          "explanation_vi": "「一日間」ít dùng; khi nói «suốt một ngày» dùng 一日中 (いちにちじゅう). Ngoài ra 間 đọc là かん/あいだ không hợp ở đây."
+        },
+        {
+          "id": "4",
+          "text": "中",
+          "correct": true,
+          "explanation_vi": "N＋中 (じゅう) = suốt cả N. 一日中 = suốt cả ngày. Cả câu: «Hôm qua tôi ở nhà suốt cả ngày»."
+        }
+      ],
+      "summary_vi": "一日中 (いちにちじゅう) = suốt cả ngày. 〜中 (じゅう) = suốt cả...",
+      "point_tags": [
+        "grammar:〜中(じゅう)"
+      ],
+      "vocab": [
+        {
+          "word": "一日中",
+          "reading": "いちにちじゅう",
+          "meaning_vi": "suốt cả ngày",
+          "sino_vi": "NHẤT NHẬT TRUNG"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q36",
+      "no": 36,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "A「週末は何か予定がありますか。」\nB「ええ、（　　）ともだちとテニスをしようと思っています。」",
+        "vi": "A: «Cuối tuần bạn có kế hoạch gì không?» B: «Có, nếu trời nắng thì tôi định chơi tennis với bạn.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "晴れて",
+          "correct": false,
+          "explanation_vi": "晴れて (thể て) = «trời nắng rồi (và)...», nối hành động theo trình tự/nguyên nhân; không diễn tả điều kiện «nếu trời nắng» cho dự định."
+        },
+        {
+          "id": "2",
+          "text": "晴れたり",
+          "correct": false,
+          "explanation_vi": "〜たり〜たり liệt kê hành động; một vế 晴れたり đơn lẻ không thành nghĩa."
+        },
+        {
+          "id": "3",
+          "text": "晴れると",
+          "correct": false,
+          "explanation_vi": "〜と = hễ... thì (kết quả tự nhiên), vế sau không đi với ý chí/dự định (しようと思っています). Vì vậy không dùng."
+        },
+        {
+          "id": "4",
+          "text": "晴れたら",
+          "correct": true,
+          "explanation_vi": "〜たら = nếu/khi ~, vế sau có thể diễn tả ý chí, dự định. 晴れたらテニスをしようと思っています = nếu trời nắng thì tôi định chơi tennis."
+        }
+      ],
+      "summary_vi": "〜たら = nếu ~; vế sau được phép là ý chí/dự định. 〜と thì không.",
+      "point_tags": [
+        "grammar:〜たら"
+      ],
+      "vocab": [
+        {
+          "word": "予定",
+          "reading": "よてい",
+          "meaning_vi": "dự định, kế hoạch",
+          "sino_vi": "DỰ ĐỊNH"
+        },
+        {
+          "word": "晴れる",
+          "reading": "はれる",
+          "meaning_vi": "nắng, quang đãng",
+          "sino_vi": "TÌNH"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q37",
+      "no": 37,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "わたしはいい仕事を見つけて両親を（　　）ことができました。",
+        "vi": "Tôi tìm được công việc tốt nên đã làm cho bố mẹ yên tâm."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "安心する",
+          "correct": false,
+          "explanation_vi": "安心する = mình thấy yên tâm (tự động từ, chủ thể là người cảm thấy). Ở đây tân ngữ là 両親を, nên cần dạng sai khiến."
+        },
+        {
+          "id": "2",
+          "text": "安心させる",
+          "correct": true,
+          "explanation_vi": "安心させる = làm cho (ai) yên tâm; đi với 両親を. 両親を安心させることができた = đã có thể làm bố mẹ yên tâm."
+        },
+        {
+          "id": "3",
+          "text": "安心している",
+          "correct": false,
+          "explanation_vi": "安心している = đang yên tâm (trạng thái). Trước ことができました phải dùng dạng từ điển, và 両親を không hợp với tự động từ."
+        },
+        {
+          "id": "4",
+          "text": "安心させている",
+          "correct": false,
+          "explanation_vi": "安心させている = đang làm cho yên tâm; trước ことができる phải dùng thể từ điển (安心させる), không dùng thể ている."
+        }
+      ],
+      "summary_vi": "Nをさせる (安心させる) = làm cho N yên tâm; ことができる đi với thể từ điển.",
+      "point_tags": [
+        "grammar:使役(〜させる)",
+        "grammar:〜ことができる"
+      ],
+      "vocab": [
+        {
+          "word": "両親",
+          "reading": "りょうしん",
+          "meaning_vi": "bố mẹ",
+          "sino_vi": "LƯỠNG THÂN"
+        },
+        {
+          "word": "安心",
+          "reading": "あんしん",
+          "meaning_vi": "yên tâm",
+          "sino_vi": "AN TÂM"
+        },
+        {
+          "word": "見つける",
+          "reading": "みつける",
+          "meaning_vi": "tìm thấy",
+          "sino_vi": "KIẾN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q38",
+      "no": 38,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "A「みんな集まりましたか。」\nB「田中さんがまだ（　　）。」",
+        "vi": "A: «Mọi người tập trung đủ rồi chứ?» B: «Anh Tanaka vẫn chưa đến.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "来ません",
+          "correct": true,
+          "explanation_vi": "まだ〜ません = «vẫn chưa ~». 田中さんがまだ来ません = anh Tanaka vẫn chưa đến (tình trạng đến thời điểm hiện tại)."
+        },
+        {
+          "id": "2",
+          "text": "来ませんでした",
+          "correct": false,
+          "explanation_vi": "Quá khứ phủ định, thường chỉ sự việc trong quá khứ đã kết thúc (hôm đó không đến); với まだ chỉ tình trạng hiện tại thì dùng 来ません."
+        },
+        {
+          "id": "3",
+          "text": "来ました",
+          "correct": false,
+          "explanation_vi": "来ました = đã đến, mâu thuẫn với まだ (vẫn chưa)."
+        },
+        {
+          "id": "4",
+          "text": "来るでしょう",
+          "correct": false,
+          "explanation_vi": "来るでしょう = chắc sẽ đến (suy đoán), nhưng まだ không đi với dạng này vì まだ cần phủ định."
+        }
+      ],
+      "summary_vi": "まだ〜ません = vẫn chưa ~ (đến hiện tại).",
+      "point_tags": [
+        "grammar:まだ〜ません"
+      ],
+      "vocab": [
+        {
+          "word": "集まる",
+          "reading": "あつまる",
+          "meaning_vi": "tập hợp",
+          "sino_vi": "TẬP"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q39",
+      "no": 39,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "ジョン「サムさん、しゅくだいは出しましたか。」\nサム「ええ。今、先生に出して（　　）。」",
+        "vi": "John: «Sam, cậu nộp bài tập chưa?» Sam: «Rồi. Vừa mới đi nộp cho thầy xong.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "いきました",
+          "correct": false,
+          "explanation_vi": "出していきました = nộp rồi đi (ý «để lại rồi đi»). Hướng «đi» không hợp với việc báo vừa đi nộp và quay lại."
+        },
+        {
+          "id": "2",
+          "text": "きました",
+          "correct": true,
+          "explanation_vi": "〜てきました = đi làm rồi quay lại. 先生に出してきました = đã đi nộp cho thầy rồi (và đã về). Cả câu: «Vừa nộp cho thầy rồi.»"
+        },
+        {
+          "id": "3",
+          "text": "いました",
+          "correct": false,
+          "explanation_vi": "出していました = đã (đang) nộp, nghĩa là «tôi (có thói quen) nộp»; không có sắc thái vừa đi vừa về."
+        },
+        {
+          "id": "4",
+          "text": "ありました",
+          "correct": false,
+          "explanation_vi": "ありました không đi với động từ thể て của hành động có chủ ý như 出して (khác với 〜てあります)."
+        }
+      ],
+      "summary_vi": "〜てきました = đi làm một việc rồi quay lại (出してきました = đã đi nộp).",
+      "point_tags": [
+        "grammar:〜てくる(行って戻る)"
+      ],
+      "vocab": [
+        {
+          "word": "宿題",
+          "reading": "しゅくだい",
+          "meaning_vi": "bài tập về nhà",
+          "sino_vi": "TÚC ĐỀ"
+        },
+        {
+          "word": "出す",
+          "reading": "だす",
+          "meaning_vi": "nộp, đưa ra",
+          "sino_vi": "XUẤT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q40",
+      "no": 40,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "（映画館の前で）\nA：「山田さんおそいですね。」\nB：「そうですね。電車がおくれている（　　）。」",
+        "vi": "(Trước rạp chiếu phim) A: «Anh Yamada muộn nhỉ.» B: «Ừ nhỉ. Tàu đang bị trễ...»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "のかもしれません",
+          "correct": true,
+          "explanation_vi": "のかもしれません = «có lẽ là ~». Cả câu: «Ừ nhỉ. Có lẽ tàu đang bị trễ.» — B đoán lý do anh Yamada đến muộn. Lưu ý: bảng đáp án nguồn ghi 4 cho câu này, nhưng ところです không hợp nghĩa ở đây nên đáp án được đặt là 1; cần đối chiếu với đề gốc."
+        },
+        {
+          "id": "2",
+          "text": "つもりです",
+          "correct": false,
+          "explanation_vi": "つもりです = dự định làm. «電車がおくれているつもり» không hợp vì tàu trễ không phải điều ai dự định."
+        },
+        {
+          "id": "3",
+          "text": "ことになります",
+          "correct": false,
+          "explanation_vi": "ことになります = (được quyết định / kết cục là) sẽ ~. Không dùng để nói tàu đang trễ."
+        },
+        {
+          "id": "4",
+          "text": "ところです",
+          "correct": false,
+          "explanation_vi": "〜ているところです = «đang ở giữa việc ~» (nhấn mạnh thời điểm đang diễn ra một hành động). Dùng với «tàu đang trễ» để đoán lý do thì không tự nhiên bằng のかもしれません; bảng đáp án nguồn ghi đây là 4 nhưng đã được đặt lại thành 1."
+        }
+      ],
+      "summary_vi": "Đoán lý do bằng 〜のかもしれません («có lẽ là ~»). Bảng đáp án nguồn ghi 4 (ところです) nhưng nghĩa câu hợp với 1.",
+      "point_tags": [
+        "grammar:〜ているところ"
+      ],
+      "vocab": [
+        {
+          "word": "遅れる",
+          "reading": "おくれる",
+          "meaning_vi": "trễ, muộn",
+          "sino_vi": "TRÌ"
+        },
+        {
+          "word": "映画館",
+          "reading": "えいがかん",
+          "meaning_vi": "rạp chiếu phim",
+          "sino_vi": "ẢNH HỌA QUÁN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q41",
+      "no": 41,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "mcq",
+      "stem": {
+        "ja": "A：「もしもし、タクシーを一台　おねがい（　　）。」\nB：「はい。場所はどちらですか。」\nA：「西山びょういんまで来てください。」",
+        "vi": "A: «A lô, tôi muốn gọi một chiếc taxi (nhờ một chiếc taxi ạ).» B: «Vâng. Địa điểm ở đâu ạ?» A: «Xin hãy đến bệnh viện Nishiyama.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "したいんですが",
+          "correct": true,
+          "explanation_vi": "お願いしたいんですが = «tôi muốn nhờ... ạ» — cách mở lời lịch sự khi gọi nhờ (câu bỏ lửng bằng が). Đây là cách đặt xe taxi tự nhiên nhất. Chú ý N + をお願いしたい."
+        },
+        {
+          "id": "2",
+          "text": "しますが",
+          "correct": false,
+          "explanation_vi": "お願いしますが rất ít dùng ở đây: が lẫn nghĩa đối lập/tiếp lời; mẫu quen thuộc là お願いします hoặc お願いしたいんですが."
+        },
+        {
+          "id": "3",
+          "text": "したいんですか",
+          "correct": false,
+          "explanation_vi": "したいんですか là câu hỏi «bạn muốn... à?», người gọi đang đặt xe nên không tự hỏi như vậy."
+        },
+        {
+          "id": "4",
+          "text": "しますか",
+          "correct": false,
+          "explanation_vi": "お願いしますか = «anh có nhờ không?», không phải câu của người đặt xe."
+        }
+      ],
+      "summary_vi": "〜をお願いしたいんですが = tôi muốn nhờ ~ ạ (mở lời lịch sự).",
+      "point_tags": [
+        "grammar:お願いしたいんですが"
+      ],
+      "vocab": [
+        {
+          "word": "一台",
+          "reading": "いちだい",
+          "meaning_vi": "một chiếc (xe)",
+          "sino_vi": "NHẤT ĐÀI"
+        },
+        {
+          "word": "病院",
+          "reading": "びょういん",
+          "meaning_vi": "bệnh viện",
+          "sino_vi": "BỆNH VIỆN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q42",
+      "no": 42,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "sort_star",
+      "stem": {
+        "ja": "弟は 映画が 好きで、ビデオ＿＿ ＿＿ ★ ＿＿。",
+        "vi": "Em trai tôi thích phim nên có tới 200 cuốn video."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "持っています",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 4 (cuối câu): động từ làm vị ngữ «đang có/sở hữu»."
+        },
+        {
+          "id": "2",
+          "text": "も",
+          "correct": true,
+          "explanation_vi": "Nằm ở vị trí thứ 3 (vị trí ngôi sao ★): 数量＋も = «tới tận ~» (nhấn mạnh số lượng nhiều), đặt sau 200本."
+        },
+        {
+          "id": "3",
+          "text": "を",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 1: ビデオを = tân ngữ của 持っています."
+        },
+        {
+          "id": "4",
+          "text": "200本",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 2: số lượng 200本 (cuốn băng), đi sau を và trước も."
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: ビデオ[を][200本][★も][持っています]。 ★ = も (số lượng + も = tận ~).",
+      "point_tags": [
+        "grammar:文の組み立て",
+        "grammar:数量+も"
+      ],
+      "vocab": [
+        {
+          "word": "本",
+          "reading": "ほん",
+          "meaning_vi": "cuốn (đếm vật dài, băng, sách...)",
+          "sino_vi": "BẢN"
+        },
+        {
+          "word": "持つ",
+          "reading": "もつ",
+          "meaning_vi": "có, cầm",
+          "sino_vi": "TRÌ"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "を",
+          "200本",
+          "も",
+          "持っています"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q43",
+      "no": 43,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "sort_star",
+      "stem": {
+        "ja": "わたしは 日本の料理を、はしを ＿＿ ＿＿ ★ ＿＿ しました。",
+        "vi": "Vì muốn ăn món Nhật bằng đũa nên tôi đã luyện tập cách dùng (đũa)."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "使って",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 1: はしを使って = dùng đũa (làm phương tiện) để ăn."
+        },
+        {
+          "id": "2",
+          "text": "食べたくて",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 2: 食べたくて = vì muốn ăn (lý do), nối với vế sau."
+        },
+        {
+          "id": "3",
+          "text": "練習を",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 4: 練習をしました = đã luyện tập."
+        },
+        {
+          "id": "4",
+          "text": "使い方の",
+          "correct": true,
+          "explanation_vi": "Nằm ở vị trí thứ 3 (vị trí ngôi sao ★): 使い方の練習 = luyện tập cách sử dụng (đũa)."
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: はしを[使って][食べたくて][★使い方の][練習を]しました。 ★ = 使い方の.",
+      "point_tags": [
+        "grammar:文の組み立て",
+        "grammar:〜たくて"
+      ],
+      "vocab": [
+        {
+          "word": "練習",
+          "reading": "れんしゅう",
+          "meaning_vi": "luyện tập",
+          "sino_vi": "LUYỆN TẬP"
+        },
+        {
+          "word": "使い方",
+          "reading": "つかいかた",
+          "meaning_vi": "cách dùng",
+          "sino_vi": "SỬ PHƯƠNG"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "使って",
+          "食べたくて",
+          "使い方の",
+          "練習を"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q44",
+      "no": 44,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "sort_star",
+      "stem": {
+        "ja": "A：「新しい アパートは どう？」\nB：「ちょっと 駅から ＿＿ ＿＿ ★ ＿＿ ところだよ。」",
+        "vi": "A: «Căn hộ mới thế nào?» B: «Hơi xa ga một chút nhưng là chỗ yên tĩnh, tốt đấy.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "静かで",
+          "correct": true,
+          "explanation_vi": "Nằm ở vị trí thứ 3 (vị trí ngôi sao ★): thể て của tính từ な 静か, nối với いい (yên tĩnh và tốt)."
+        },
+        {
+          "id": "2",
+          "text": "遠い",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 1: 駅から遠い = xa ga."
+        },
+        {
+          "id": "3",
+          "text": "けど",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 2: けど = nhưng, đặt sau 遠い để tạo vế tương phản."
+        },
+        {
+          "id": "4",
+          "text": "いい",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 4: いいところ = chỗ tốt, đứng trước ところ."
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: 駅から[遠い][けど][★静かで][いい]ところだよ。 ★ = 静かで.",
+      "point_tags": [
+        "grammar:文の組み立て",
+        "grammar:〜けど"
+      ],
+      "vocab": [
+        {
+          "word": "静か",
+          "reading": "しずか",
+          "meaning_vi": "yên tĩnh",
+          "sino_vi": "TĨNH"
+        },
+        {
+          "word": "遠い",
+          "reading": "とおい",
+          "meaning_vi": "xa",
+          "sino_vi": "VIỄN"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "遠い",
+          "けど",
+          "静かで",
+          "いい"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q45",
+      "no": 45,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "sort_star",
+      "stem": {
+        "ja": "外国に住んでいる＿＿ ＿＿ ★ ＿＿思う。",
+        "vi": "Vì nghe tin người bạn sống ở nước ngoài sắp kết hôn nên tôi định gửi quà."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "けっこんすると",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 2: けっこんすると = (nghe nói) sẽ kết hôn, nội dung thông tin."
+        },
+        {
+          "id": "2",
+          "text": "プレゼントを送ろうと",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 4: ～ようと思う = định làm ~; đứng ngay trước 思う."
+        },
+        {
+          "id": "3",
+          "text": "ともだちが",
+          "correct": false,
+          "explanation_vi": "Nằm ở vị trí thứ 1: 外国に住んでいる友達が = người bạn đang sống ở nước ngoài, chủ ngữ của けっこんする."
+        },
+        {
+          "id": "4",
+          "text": "聞いたので",
+          "correct": true,
+          "explanation_vi": "Nằm ở vị trí thứ 3 (vị trí ngôi sao ★): 〜と聞いたので = vì nghe nói rằng ~."
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: 外国に住んでいる[ともだちが][けっこんすると][★聞いたので][プレゼントを送ろうと]思う。 ★ = 聞いたので.",
+      "point_tags": [
+        "grammar:文の組み立て",
+        "grammar:〜ようと思う"
+      ],
+      "vocab": [
+        {
+          "word": "結婚",
+          "reading": "けっこん",
+          "meaning_vi": "kết hôn",
+          "sino_vi": "KẾT HÔN"
+        },
+        {
+          "word": "送る",
+          "reading": "おくる",
+          "meaning_vi": "gửi",
+          "sino_vi": "TỐNG"
+        },
+        {
+          "word": "外国",
+          "reading": "がいこく",
+          "meaning_vi": "nước ngoài",
+          "sino_vi": "NGOẠI QUỐC"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "ともだちが",
+          "けっこんすると",
+          "聞いたので",
+          "プレゼントを送ろうと"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q46",
+      "no": 46,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n4-2021-07-g-p1",
+      "stem": {
+        "ja": "「18」に入る最もよいものを選びなさい。",
+        "vi": "Chọn phương án thích hợp nhất điền vào chỗ trống (18)."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "もっと",
+          "correct": false,
+          "explanation_vi": "もっと = hơn nữa, nhiều hơn (so sánh). Vế trước «ずっとやりたかった» nói về nguyện vọng lâu năm; «もっと野球ができる» không có đối tượng so sánh nên không hợp."
+        },
+        {
+          "id": "2",
+          "text": "やっと",
+          "correct": true,
+          "explanation_vi": "やっと = cuối cùng cũng, mãi mới (sau thời gian dài mong chờ). ずっとやりたかった野球が、やっとできることになって、うれしかった = mãi mới được chơi nên mừng."
+        },
+        {
+          "id": "3",
+          "text": "また",
+          "correct": false,
+          "explanation_vi": "また = lại, lần nữa. Người viết trước đó chưa từng chơi bóng chày nên không phải «lại»."
+        },
+        {
+          "id": "4",
+          "text": "まだ",
+          "correct": false,
+          "explanation_vi": "まだ = vẫn, chưa. «まだ野球ができることになって» không thành nghĩa, vì đây là kết quả đã đạt được chứ không phải «vẫn chưa»."
+        }
+      ],
+      "summary_vi": "ずっとやりたかった → やっとできる (cuối cùng cũng được).",
+      "point_tags": [
+        "vocab:やっと",
+        "grammar:副詞やっと"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-g-p1-s5",
+        "jlpt-n4-2021-07-g-p1-s6"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q47",
+      "no": 47,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n4-2021-07-g-p1",
+      "stem": {
+        "ja": "「19」に入る最もよいものを選びなさい。",
+        "vi": "Chọn phương án thích hợp nhất điền vào chỗ trống (19)."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "教えて くれました",
+          "correct": true,
+          "explanation_vi": "〜てくれる = ai đó làm gì giúp «tôi». クラブの人たちが (chủ ngữ) → 教えてくれた = các thành viên đã dạy cho tôi. Rất hợp."
+        },
+        {
+          "id": "2",
+          "text": "教えて あげました",
+          "correct": false,
+          "explanation_vi": "〜てあげる = mình làm cho người khác. Chủ ngữ ở đây là クラブの人たち (người khác làm cho mình) nên sai hướng."
+        },
+        {
+          "id": "3",
+          "text": "教えて もらいました",
+          "correct": false,
+          "explanation_vi": "〜てもらう = mình nhờ/được ai làm. Chủ ngữ ở đây là 人たちが nên phải dùng くれる; もらう cần chủ ngữ là mình (私は〜に教えてもらった)."
+        },
+        {
+          "id": "4",
+          "text": "教えて やりました",
+          "correct": false,
+          "explanation_vi": "〜てやる = làm cho ai (người dưới, động vật), nghĩa là người của câu lạc bộ cho người khác; sai hướng."
+        }
+      ],
+      "summary_vi": "Ai (khác) làm cho mình → 〜てくれる. クラブの人たちが…教えてくれました.",
+      "point_tags": [
+        "grammar:〜てくれる"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-g-p1-s8"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q48",
+      "no": 48,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n4-2021-07-g-p1",
+      "stem": {
+        "ja": "「20」に入る最もよいものを選びなさい。",
+        "vi": "Chọn phương án thích hợp nhất điền vào chỗ trống (20)."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "たとえば",
+          "correct": false,
+          "explanation_vi": "たとえば = ví dụ. Câu sau không phải ví dụ của câu trước."
+        },
+        {
+          "id": "2",
+          "text": "それに",
+          "correct": false,
+          "explanation_vi": "それに = hơn nữa (bổ sung ý cùng chiều). Câu sau là kết quả/quyết định chứ không phải thêm lý do."
+        },
+        {
+          "id": "3",
+          "text": "けれども",
+          "correct": false,
+          "explanation_vi": "けれども = tuy nhiên (đối lập). Câu trước khen bóng chày thú vị, câu sau vào CLB: cùng chiều, không đối lập."
+        },
+        {
+          "id": "4",
+          "text": "それで",
+          "correct": true,
+          "explanation_vi": "それで = vì vậy, do đó. Lý do «cảm thấy bóng chày thú vị» → kết quả «quyết định vào câu lạc bộ». Rất hợp."
+        }
+      ],
+      "summary_vi": "それで = vì vậy (kết quả theo lý do vừa nêu).",
+      "point_tags": [
+        "grammar:接続詞それで"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-g-p1-s9",
+        "jlpt-n4-2021-07-g-p1-s10"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-g-q49",
+      "no": 49,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n4-2021-07-g-p1",
+      "stem": {
+        "ja": "「21」に入る最もよいものを選びなさい。",
+        "vi": "Chọn phương án thích hợp nhất điền vào chỗ trống (21)."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "出るからです",
+          "correct": false,
+          "explanation_vi": "〜からです = «bởi vì ~». Câu «いつか試合に出るからです» thành «vì một ngày nào đó sẽ ra thi đấu», không nối với câu trước nói về luyện tập."
+        },
+        {
+          "id": "2",
+          "text": "出るためです",
+          "correct": false,
+          "explanation_vi": "〜ためです = «để ~/vì mục đích ~»: không tự nhiên khi muốn nói nguyện vọng cá nhân sau câu «ここから練習します»."
+        },
+        {
+          "id": "3",
+          "text": "出てみたいです",
+          "correct": true,
+          "explanation_vi": "〜てみたい = muốn thử làm ~. そして、いつか試合に出てみたいです = «Rồi một ngày nào đó tôi muốn thử ra thi đấu» — nêu mục tiêu/mong muốn tự nhiên."
+        },
+        {
+          "id": "4",
+          "text": "出てみることです",
+          "correct": false,
+          "explanation_vi": "〜ことです = «điều quan trọng là ~» (lời khuyên/định nghĩa); không hợp để nói mong muốn của chính mình."
+        }
+      ],
+      "summary_vi": "いつか〜てみたいです = mong một ngày nào đó được thử ~.",
+      "point_tags": [
+        "grammar:〜てみたい"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-g-p1-s11",
+        "jlpt-n4-2021-07-g-p1-s12"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q50",
+      "no": 50,
+      "part": "reading",
+      "mondai": 9,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p1",
+      "stem": {
+        "ja": "「私」の友達は、嫌なことがあったとき、どうしますか。",
+        "vi": "Khi gặp chuyện khó chịu, bạn của «tôi» làm gì?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "忘れるために、友達に話します。",
+          "correct": false,
+          "explanation_vi": "Bài không nói bạn ấy kể cho bạn bè nghe; bạn ấy «viết vào nhật ký» (日記に書く).",
+          "meaning_vi": "Để quên, kể cho bạn bè."
+        },
+        {
+          "id": "2",
+          "text": "忘れるために、カラオケで歌います。",
+          "correct": false,
+          "explanation_vi": "Hát karaoke là việc của «tôi» (私はカラオケに行って…歌います), không phải của bạn.",
+          "meaning_vi": "Để quên, hát karaoke."
+        },
+        {
+          "id": "3",
+          "text": "忘れるために、日記に書きます。",
+          "correct": true,
+          "explanation_vi": "Đúng. Bài viết: «嫌なことがあったら、私の友達は日記に書くそうです» và «嫌な気持ちを外に出せるから忘れられる». Vậy bạn viết nhật ký để quên.",
+          "meaning_vi": "Để quên, viết vào nhật ký."
+        },
+        {
+          "id": "4",
+          "text": "覚えておくために、日記に書きます。",
+          "correct": false,
+          "explanation_vi": "Sai mục đích: bạn viết để «quên» (忘れられる), không phải để «nhớ» (覚えておく).",
+          "meaning_vi": "Để nhớ, viết vào nhật ký."
+        }
+      ],
+      "summary_vi": "Bạn viết chuyện khó chịu vào nhật ký để quên; còn 'tôi' thì hát karaoke.",
+      "point_tags": [
+        "reading:short_text"
+      ],
+      "vocab": [
+        {
+          "word": "嫌な",
+          "reading": "いやな",
+          "meaning_vi": "khó chịu, không thích",
+          "sino_vi": "HIỀM"
+        },
+        {
+          "word": "日記",
+          "reading": "にっき",
+          "meaning_vi": "nhật ký",
+          "sino_vi": "NHẬT KÝ"
+        },
+        {
+          "word": "気持ち",
+          "reading": "きもち",
+          "meaning_vi": "cảm xúc, tâm trạng",
+          "sino_vi": "KHÍ TRÌ"
+        },
+        {
+          "word": "思い出す",
+          "reading": "おもいだす",
+          "meaning_vi": "nhớ lại",
+          "sino_vi": "TƯ XUẤT"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p1-s1",
+        "jlpt-n4-2021-07-r-p1-s2"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q51",
+      "no": 51,
+      "part": "reading",
+      "mondai": 9,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p2",
+      "stem": {
+        "ja": "来週の授業について、正しいものはどれですか。",
+        "vi": "Điều nào đúng về giờ học tuần sau?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "来週の火曜日は、いつもより長く授業を受けます。",
+          "correct": false,
+          "explanation_vi": "Thứ Ba học 1:30–2:30 = 1 tiếng, ngắn hơn lệ thường (1:00–2:30 = 1,5 tiếng), nên không phải «lâu hơn».",
+          "meaning_vi": "Thứ Ba tuần sau học lâu hơn thường lệ."
+        },
+        {
+          "id": "2",
+          "text": "来週の木曜日は、いつもより早く授業に行きます。",
+          "correct": true,
+          "explanation_vi": "Đúng. Thứ Năm bắt đầu 12:30 thay vì 1:00 như thường lệ, nên phải đi học sớm hơn (và kéo dài 2 tiếng, nghỉ trưa ngắn lại).",
+          "meaning_vi": "Thứ Năm tuần sau đi học sớm hơn thường lệ."
+        },
+        {
+          "id": "3",
+          "text": "来週の火曜日と木曜日は、いつもより長く授業を受けます。",
+          "correct": false,
+          "explanation_vi": "Chỉ thứ Năm dài hơn (2 tiếng so với 1,5 tiếng); thứ Ba ngắn hơn. Vậy không đúng cho cả hai.",
+          "meaning_vi": "Thứ Ba và thứ Năm học lâu hơn thường lệ."
+        },
+        {
+          "id": "4",
+          "text": "来週の火曜日と木曜日は、いつもより早く授業に行きます。",
+          "correct": false,
+          "explanation_vi": "Thứ Ba bắt đầu 1:30 (muộn hơn 1:00 thường lệ). Chỉ thứ Năm (12:30) là sớm hơn.",
+          "meaning_vi": "Thứ Ba và thứ Năm đi học sớm hơn."
+        }
+      ],
+      "summary_vi": "Thường lệ 1:00–2:30. Thứ Ba 1:30–2:30 (muộn hơn), thứ Năm 12:30–2:30 (sớm hơn, dài hơn).",
+      "point_tags": [
+        "reading:notice"
+      ],
+      "vocab": [
+        {
+          "word": "授業",
+          "reading": "じゅぎょう",
+          "meaning_vi": "giờ học, buổi học",
+          "sino_vi": "THỤ NGHIỆP"
+        },
+        {
+          "word": "昼休み",
+          "reading": "ひるやすみ",
+          "meaning_vi": "giờ nghỉ trưa",
+          "sino_vi": "TRÚ HƯU"
+        },
+        {
+          "word": "変わる",
+          "reading": "かわる",
+          "meaning_vi": "thay đổi",
+          "sino_vi": "BIẾN"
+        },
+        {
+          "word": "遅れる",
+          "reading": "おくれる",
+          "meaning_vi": "đến muộn, trễ",
+          "sino_vi": "TRÌ"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p2-s1",
+        "jlpt-n4-2021-07-r-p2-s2",
+        "jlpt-n4-2021-07-r-p2-s3"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q52",
+      "no": 52,
+      "part": "reading",
+      "mondai": 9,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p3",
+      "stem": {
+        "ja": "ロンさんは石田さんに何を頼みましたか。",
+        "vi": "Anh Ron đã nhờ anh/chị Ishida việc gì?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "ロンさんと一緒に、部長会議に出ること。",
+          "correct": false,
+          "explanation_vi": "Chỉ có Ron được gọi vào họp (私は…部長会議に出る). Ishida không được nhờ đi họp.",
+          "meaning_vi": "Cùng anh Ron dự cuộc họp trưởng phòng."
+        },
+        {
+          "id": "2",
+          "text": "11時半に、弁当を部長会議に持って行くこと。",
+          "correct": false,
+          "explanation_vi": "Ron nhờ để cơm hộp trên bàn của Ron (私の机に置いて), không phải mang đến phòng họp. 11:30 là giờ Ron vốn định đi lấy.",
+          "meaning_vi": "Mang cơm hộp đến họp lúc 11:30."
+        },
+        {
+          "id": "3",
+          "text": "「こま屋」が弁当を持ってきたら、弁当代を払うこと。",
+          "correct": false,
+          "explanation_vi": "Ron đã trả tiền rồi (お金は払ってあります) và nhờ Ishida đi lấy chứ không phải chờ tiệm mang đến.",
+          "meaning_vi": "Khi Komaya mang cơm đến thì trả tiền."
+        },
+        {
+          "id": "4",
+          "text": "弁当を「こま屋」に取りに行って、ロンさんの机に置くこと。",
+          "correct": true,
+          "explanation_vi": "Đúng. Ron nhờ «行ってきてください» (đi lấy ở tiệm Komaya, tiền đã trả) và «弁当は私の机に置いておいてください».",
+          "meaning_vi": "Đi lấy cơm hộp ở Komaya và đặt lên bàn Ron."
+        }
+      ],
+      "summary_vi": "Ron nhờ Ishida đi lấy cơm hộp ở Komaya (tiền đã trả) rồi để lên bàn Ron.",
+      "point_tags": [
+        "reading:memo"
+      ],
+      "vocab": [
+        {
+          "word": "部長",
+          "reading": "ぶちょう",
+          "meaning_vi": "trưởng phòng",
+          "sino_vi": "BỘ TRƯỞNG"
+        },
+        {
+          "word": "会議",
+          "reading": "かいぎ",
+          "meaning_vi": "cuộc họp",
+          "sino_vi": "HỘI NGHỊ"
+        },
+        {
+          "word": "弁当",
+          "reading": "べんとう",
+          "meaning_vi": "cơm hộp",
+          "sino_vi": "BIỆN ĐƯƠNG"
+        },
+        {
+          "word": "払う",
+          "reading": "はらう",
+          "meaning_vi": "trả (tiền)",
+          "sino_vi": "PHẤT"
+        },
+        {
+          "word": "頼む",
+          "reading": "たのむ",
+          "meaning_vi": "nhờ",
+          "sino_vi": "LẠI"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p3-s3",
+        "jlpt-n4-2021-07-r-p3-s5"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q53",
+      "no": 53,
+      "part": "reading",
+      "mondai": 10,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p4",
+      "stem": {
+        "ja": "どうして「私」は内村さんと一緒に山に行くことにしましたか。",
+        "vi": "Vì sao «tôi» quyết định cùng đi núi với Uchimura?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "内村さんが山で昼ご飯を作ってくれると言ったから。",
+          "correct": false,
+          "explanation_vi": "Bài không nói Uchimura nấu bữa trưa; hai người ăn cơm hộp (弁当).",
+          "meaning_vi": "Vì Uchimura nói sẽ nấu bữa trưa trên núi."
+        },
+        {
+          "id": "2",
+          "text": "内村さんに山を好きになってもらいたかったから。",
+          "correct": false,
+          "explanation_vi": "Uchimura vốn đã thích núi (山が好きなことがわかりました), không cần làm cho thích.",
+          "meaning_vi": "Vì muốn Uchimura thích núi."
+        },
+        {
+          "id": "3",
+          "text": "内村さんも山が好きなことがわかったから。",
+          "correct": true,
+          "explanation_vi": "Đúng. Bài: «内村さんも山が好きなことがわかりました。それで、…一緒に行くことになりました。» (それで = vì vậy).",
+          "meaning_vi": "Vì biết Uchimura cũng thích núi."
+        },
+        {
+          "id": "4",
+          "text": "内村さんの好きな山に登ってみたかったから。",
+          "correct": false,
+          "explanation_vi": "Đó là ngọn núi mà «私たちがよく行く» (nơi cả hai thường đến), không phải núi riêng của Uchimura.",
+          "meaning_vi": "Vì muốn thử leo ngọn núi Uchimura thích."
+        }
+      ],
+      "summary_vi": "Biết Uchimura cũng thích núi → thành ra cùng đi.",
+      "point_tags": [
+        "reading:medium_text"
+      ],
+      "vocab": [
+        {
+          "word": "趣味",
+          "reading": "しゅみ",
+          "meaning_vi": "sở thích",
+          "sino_vi": "THÚ VỊ"
+        },
+        {
+          "word": "先輩",
+          "reading": "せんぱい",
+          "meaning_vi": "tiền bối, người đi trước",
+          "sino_vi": "TIÊN BỐI"
+        },
+        {
+          "word": "景色",
+          "reading": "けしき",
+          "meaning_vi": "phong cảnh",
+          "sino_vi": "CẢNH SẮC"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p4-s3",
+        "jlpt-n4-2021-07-r-p4-s4"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q54",
+      "no": 54,
+      "part": "reading",
+      "mondai": 10,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p4",
+      "stem": {
+        "ja": "どうして①ちょっと残念でしたか。",
+        "vi": "Vì sao «tôi» thấy hơi tiếc?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "山のいちばん上で弁当が食べられなかったから。",
+          "correct": true,
+          "explanation_vi": "Đúng. Bài: «私は①ちょっと残念でした。山の上で食べたかったからです。» — vì đã muốn ăn ở trên đỉnh nhưng lại ăn giữa đường.",
+          "meaning_vi": "Vì không được ăn cơm hộp trên đỉnh núi."
+        },
+        {
+          "id": "2",
+          "text": "持ってきた弁当がおいしくなかったから。",
+          "correct": false,
+          "explanation_vi": "Bài không nhắc cơm hộp dở.",
+          "meaning_vi": "Vì cơm hộp mang theo không ngon."
+        },
+        {
+          "id": "3",
+          "text": "咲いていた花があまりきれいではなかったから。",
+          "correct": false,
+          "explanation_vi": "Ngược lại: ảnh hoa «とてもきれいだった».",
+          "meaning_vi": "Vì hoa nở không đẹp lắm."
+        },
+        {
+          "id": "4",
+          "text": "花の写真を撮る時間が短かったから。",
+          "correct": false,
+          "explanation_vi": "Thực tế Uchimura chụp hoa rất lâu («ずっと花の写真を撮っていて»), nên không phải thời gian ngắn.",
+          "meaning_vi": "Vì thời gian chụp ảnh hoa ngắn."
+        }
+      ],
+      "summary_vi": "Tiếc vì muốn ăn trên đỉnh núi nhưng phải ăn giữa đường.",
+      "point_tags": [
+        "reading:medium_text",
+        "reading:reason"
+      ],
+      "vocab": [
+        {
+          "word": "残念",
+          "reading": "ざんねん",
+          "meaning_vi": "đáng tiếc",
+          "sino_vi": "TÀN NIỆM"
+        },
+        {
+          "word": "弁当",
+          "reading": "べんとう",
+          "meaning_vi": "cơm hộp",
+          "sino_vi": "BIỆN ĐƯƠNG"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p4-s9",
+        "jlpt-n4-2021-07-r-p4-s10"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q55",
+      "no": 55,
+      "part": "reading",
+      "mondai": 10,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p4",
+      "stem": {
+        "ja": "②山の新しい楽しみとありますが、どんな楽しみですか。",
+        "vi": "«Thú vui mới của núi» (②) là thú vui nào?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "山の上で景色を見る楽しみ。",
+          "correct": false,
+          "explanation_vi": "Đây là thú vui vốn có của tác giả (趣味), không phải điều mới.",
+          "meaning_vi": "Thú vui ngắm cảnh trên đỉnh núi."
+        },
+        {
+          "id": "2",
+          "text": "山の上で昼ご飯を食べる楽しみ。",
+          "correct": false,
+          "explanation_vi": "Cũng là thú vui sẵn có (山のいちばん上で…昼ご飯を食べるのが楽しみ). Hôm đó còn không ăn trên đỉnh.",
+          "meaning_vi": "Thú vui ăn trưa trên đỉnh núi."
+        },
+        {
+          "id": "3",
+          "text": "山の登り方を人に教える楽しみ。",
+          "correct": false,
+          "explanation_vi": "Người chỉ dạy là Uchimura (撮り方を教えてくれた), và là cách chụp hoa, không phải cách leo núi.",
+          "meaning_vi": "Thú vui chỉ cách leo núi cho người khác."
+        },
+        {
+          "id": "4",
+          "text": "山に咲いている花の写真を撮る楽しみ。",
+          "correct": true,
+          "explanation_vi": "Đúng. Nhờ Uchimura, tác giả thử chụp ảnh hoa núi và «楽しくなりました»; đó là thú vui mới.",
+          "meaning_vi": "Thú vui chụp ảnh hoa nở trên núi."
+        }
+      ],
+      "summary_vi": "Thú vui mới = chụp ảnh hoa nở trên núi (học từ Uchimura).",
+      "point_tags": [
+        "reading:medium_text",
+        "reading:underlined_meaning"
+      ],
+      "vocab": [
+        {
+          "word": "楽しみ",
+          "reading": "たのしみ",
+          "meaning_vi": "niềm vui, điều mong đợi",
+          "sino_vi": "LẠC"
+        },
+        {
+          "word": "撮る",
+          "reading": "とる",
+          "meaning_vi": "chụp (ảnh)",
+          "sino_vi": "TOÁT"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p4-s12",
+        "jlpt-n4-2021-07-r-p4-s13",
+        "jlpt-n4-2021-07-r-p4-s14",
+        "jlpt-n4-2021-07-r-p4-s18"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q56",
+      "no": 56,
+      "part": "reading",
+      "mondai": 11,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p5",
+      "stem": {
+        "ja": "料理の教室はいくらかかりますか。",
+        "vi": "Lớp nấu ăn tốn bao nhiêu tiền?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "1か月500円",
+          "correct": false,
+          "explanation_vi": "500 yên mỗi tháng là học phí của lớp tennis, không phải lớp nấu ăn.",
+          "meaning_vi": "500 yên một tháng"
+        },
+        {
+          "id": "2",
+          "text": "1回500円",
+          "correct": true,
+          "explanation_vi": "Đúng. Lớp «おべんとうを作りましょう！» ghi «お金：1回500円».",
+          "meaning_vi": "500 yên một lần"
+        },
+        {
+          "id": "3",
+          "text": "1回100円",
+          "correct": false,
+          "explanation_vi": "100 yên mỗi lần là phí lớp tiếng Nhật.",
+          "meaning_vi": "100 yên một lần"
+        },
+        {
+          "id": "4",
+          "text": "ただ",
+          "correct": false,
+          "explanation_vi": "Miễn phí (ただ) là lớp chạy bộ, không phải lớp nấu ăn.",
+          "meaning_vi": "miễn phí"
+        }
+      ],
+      "summary_vi": "Lớp nấu ăn: 1回500円.",
+      "point_tags": [
+        "reading:info_retrieval"
+      ],
+      "vocab": [
+        {
+          "word": "教室",
+          "reading": "きょうしつ",
+          "meaning_vi": "lớp học",
+          "sino_vi": "GIÁO THẤT"
+        },
+        {
+          "word": "1回",
+          "reading": "いっかい",
+          "meaning_vi": "một lần",
+          "sino_vi": "NHẤT HỒI"
+        },
+        {
+          "word": "ただ",
+          "reading": "ただ",
+          "meaning_vi": "miễn phí"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p5-s5"
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-q57",
+      "no": 57,
+      "part": "reading",
+      "mondai": 11,
+      "type": "mcq",
+      "passage_id": "jlpt-n4-2021-07-r-p5",
+      "stem": {
+        "ja": "リーさんは、朝9時から夕方5時まではたらいています。休みは水曜日と日曜日です。いつもすわって仕事をしているので、運動したいと思っています。リーさんは、どの教室に行きますか。",
+        "vi": "Anh/chị Lee làm việc từ 9 giờ sáng đến 5 giờ chiều. Ngày nghỉ là thứ Tư và Chủ nhật. Vì lúc nào cũng ngồi làm việc nên muốn vận động. Lee sẽ đi lớp nào?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "料理",
+          "correct": false,
+          "explanation_vi": "Lớp nấu ăn học thứ Ba 10:00–12:30, giờ Lee đang làm việc; hơn nữa đây không phải vận động.",
+          "meaning_vi": "nấu ăn"
+        },
+        {
+          "id": "2",
+          "text": "テニス",
+          "correct": true,
+          "explanation_vi": "Đúng. Tennis là vận động, học thứ Tư 15:00–18:00 — thứ Tư là ngày nghỉ của Lee. Điều kiện: từ 18 tuổi, người nước ngoài được nhận.",
+          "meaning_vi": "tennis"
+        },
+        {
+          "id": "3",
+          "text": "ジョギング",
+          "correct": false,
+          "explanation_vi": "Chạy bộ cũng là vận động nhưng học thứ Bảy 10:30–12:00 mà thứ Bảy Lee phải đi làm (nghỉ chỉ thứ Tư và Chủ nhật).",
+          "meaning_vi": "chạy bộ"
+        },
+        {
+          "id": "4",
+          "text": "日本語",
+          "correct": false,
+          "explanation_vi": "Lớp tiếng Nhật học Chủ nhật (ngày nghỉ của Lee) nhưng đó không phải vận động.",
+          "meaning_vi": "tiếng Nhật"
+        }
+      ],
+      "summary_vi": "Muốn vận động + rảnh thứ Tư/Chủ nhật → tennis (thứ Tư 15:00).",
+      "point_tags": [
+        "reading:info_retrieval"
+      ],
+      "vocab": [
+        {
+          "word": "夕方",
+          "reading": "ゆうがた",
+          "meaning_vi": "chiều tối",
+          "sino_vi": "TỊCH PHƯƠNG"
+        },
+        {
+          "word": "運動",
+          "reading": "うんどう",
+          "meaning_vi": "vận động",
+          "sino_vi": "VẬN ĐỘNG"
+        },
+        {
+          "word": "働く",
+          "reading": "はたらく",
+          "meaning_vi": "làm việc",
+          "sino_vi": "ĐỘNG"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n4-2021-07-r-p5-s8",
+        "jlpt-n4-2021-07-r-p5-s6"
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "jlpt-n4-2021-07-g-p1",
+      "mondai": 8,
+      "kind": "cloze",
+      "title_ja": "初めての野球（パホモフ セリク）",
+      "sentences": [
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s1",
+          "ja": "日本に 来る 前に まんがで 野球という スポーツを 知って、きょうみを もちました。",
+          "vi": "Trước khi đến Nhật, tôi biết đến môn thể thao gọi là bóng chày qua truyện tranh và nảy sinh hứng thú.",
+          "chunks": [
+            {
+              "ja": "日本に 来る 前に",
+              "vi": "trước khi đến Nhật",
+              "accept_vi": [
+                "trước khi tới Nhật Bản",
+                "trước lúc đến Nhật"
+              ],
+              "note_vi": "〜前に: trước khi ~"
+            },
+            {
+              "ja": "まんがで",
+              "vi": "qua truyện tranh",
+              "accept_vi": [
+                "bằng truyện tranh",
+                "trong truyện tranh"
+              ],
+              "note_vi": "で: phương tiện/nguồn"
+            },
+            {
+              "ja": "野球という スポーツを 知って",
+              "vi": "biết môn thể thao gọi là bóng chày",
+              "accept_vi": [
+                "biết đến môn bóng chày",
+                "biết môn thể thao tên là bóng chày"
+              ],
+              "note_vi": "AというB: B gọi là A"
+            },
+            {
+              "ja": "きょうみを もちました",
+              "vi": "nảy sinh hứng thú",
+              "accept_vi": [
+                "có hứng thú",
+                "quan tâm",
+                "trở nên hứng thú"
+              ],
+              "note_vi": "興味を持つ: có hứng thú"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s2",
+          "ja": "でも、私の 国では、野球を して いる 人を 見たことが ありません。",
+          "vi": "Nhưng ở nước tôi, tôi chưa từng thấy ai chơi bóng chày.",
+          "chunks": [
+            {
+              "ja": "でも、",
+              "vi": "nhưng",
+              "accept_vi": [
+                "tuy nhiên"
+              ]
+            },
+            {
+              "ja": "私の 国では、",
+              "vi": "ở nước tôi",
+              "accept_vi": [
+                "tại đất nước tôi",
+                "ở đất nước tôi"
+              ],
+              "note_vi": "では: ở (phạm vi nước)"
+            },
+            {
+              "ja": "野球を して いる 人を",
+              "vi": "người đang chơi bóng chày",
+              "accept_vi": [
+                "những người chơi bóng chày",
+                "ai chơi bóng chày"
+              ]
+            },
+            {
+              "ja": "見たことが ありません",
+              "vi": "chưa từng thấy",
+              "accept_vi": [
+                "chưa bao giờ thấy",
+                "chưa thấy bao giờ"
+              ],
+              "note_vi": "〜たことがない: chưa từng"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s3",
+          "ja": "道具も ないので、野球は できませんでした。",
+          "vi": "Vì cũng không có dụng cụ nên tôi đã không thể chơi bóng chày.",
+          "chunks": [
+            {
+              "ja": "道具も ないので、",
+              "vi": "vì cũng không có dụng cụ",
+              "accept_vi": [
+                "do cũng không có dụng cụ",
+                "vì không có đồ nghề"
+              ],
+              "note_vi": "〜ので: vì"
+            },
+            {
+              "ja": "野球は できませんでした",
+              "vi": "đã không thể chơi bóng chày",
+              "accept_vi": [
+                "không chơi được bóng chày",
+                "không thể chơi bóng chày"
+              ],
+              "note_vi": "できませんでした: đã không thể"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s4",
+          "ja": "先週の 土曜日に ともだちが 入って いる 野球クラブの 見学に 行きました。",
+          "vi": "Thứ Bảy tuần trước, tôi đã đi tham quan câu lạc bộ bóng chày mà bạn tôi đang tham gia.",
+          "chunks": [
+            {
+              "ja": "先週の 土曜日に",
+              "vi": "thứ Bảy tuần trước",
+              "accept_vi": [
+                "vào thứ Bảy tuần trước",
+                "thứ bảy tuần rồi"
+              ]
+            },
+            {
+              "ja": "ともだちが 入って いる",
+              "vi": "bạn tôi đang tham gia",
+              "accept_vi": [
+                "bạn đang ở trong",
+                "người bạn đang là thành viên"
+              ],
+              "note_vi": "入っている: đang là thành viên"
+            },
+            {
+              "ja": "野球クラブの 見学に",
+              "vi": "tham quan câu lạc bộ bóng chày",
+              "accept_vi": [
+                "đi tham quan CLB bóng chày",
+                "xem thử câu lạc bộ bóng chày"
+              ],
+              "note_vi": "見学: tham quan học hỏi"
+            },
+            {
+              "ja": "行きました",
+              "vi": "đã đi",
+              "accept_vi": [
+                "đã đến"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s5",
+          "ja": "クラブの人たちに さそわれて、ずっと やりたかった 野球の 練習を 初めすること になりました。",
+          "vi": "Được mọi người trong câu lạc bộ rủ, tôi đã bắt đầu tập luyện bóng chày mà tôi vẫn luôn muốn làm.",
+          "notes_vi": "Bản in ghi «初めする» (có lẽ là lỗi in của 始める/初めてする); ý là «bắt đầu tập».",
+          "chunks": [
+            {
+              "ja": "クラブの人たちに さそわれて、",
+              "vi": "được mọi người trong câu lạc bộ rủ",
+              "accept_vi": [
+                "được các thành viên CLB mời",
+                "bị mọi người trong CLB rủ"
+              ],
+              "note_vi": "さそわれて: bị động của 誘う"
+            },
+            {
+              "ja": "ずっと やりたかった",
+              "vi": "vẫn luôn muốn làm",
+              "accept_vi": [
+                "luôn muốn làm",
+                "đã muốn làm từ lâu"
+              ],
+              "note_vi": "ずっと: suốt, mãi"
+            },
+            {
+              "ja": "野球の 練習を",
+              "vi": "tập luyện bóng chày",
+              "accept_vi": [
+                "luyện tập bóng chày",
+                "buổi tập bóng chày"
+              ]
+            },
+            {
+              "ja": "初めすること になりました",
+              "vi": "đã (trở nên) bắt đầu",
+              "accept_vi": [
+                "thành ra bắt đầu",
+                "bắt đầu tập"
+              ],
+              "note_vi": "〜ことになる: được quyết định/thành ra"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s6",
+          "ja": "やっと 野球が できることに なって、うれしかったです。",
+          "ja_blank": "（18 ）野球が できることに なって、うれしかったです。",
+          "vi": "Cuối cùng cũng có thể chơi bóng chày nên tôi đã rất vui.",
+          "chunks": [
+            {
+              "ja": "やっと",
+              "vi": "cuối cùng cũng",
+              "accept_vi": [
+                "mãi mới",
+                "cuối cùng thì"
+              ],
+              "note_vi": "やっと: sau bao lâu mới được"
+            },
+            {
+              "ja": "野球が できることに なって、",
+              "vi": "trở nên có thể chơi bóng chày",
+              "accept_vi": [
+                "được chơi bóng chày",
+                "có thể chơi bóng chày"
+              ],
+              "note_vi": "〜ことになる: trở nên ~"
+            },
+            {
+              "ja": "うれしかったです",
+              "vi": "đã rất vui",
+              "accept_vi": [
+                "đã vui lắm",
+                "rất vui mừng"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s7",
+          "ja": "ボールを 打つのは 難しかったです。",
+          "vi": "Đánh bóng thì khó.",
+          "chunks": [
+            {
+              "ja": "ボールを 打つのは",
+              "vi": "việc đánh bóng",
+              "accept_vi": [
+                "đánh bóng",
+                "việc đập bóng"
+              ],
+              "note_vi": "V のは: danh từ hóa"
+            },
+            {
+              "ja": "難しかったです",
+              "vi": "đã khó",
+              "accept_vi": [
+                "khó",
+                "thật khó"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s8",
+          "ja": "でも、クラブの 人たちが やさしく 教えて くれました。",
+          "ja_blank": "でも、クラブの 人たちが やさしく （19 ）。",
+          "vi": "Nhưng mọi người trong câu lạc bộ đã chỉ dạy cho tôi một cách tử tế.",
+          "chunks": [
+            {
+              "ja": "でも、",
+              "vi": "nhưng",
+              "accept_vi": [
+                "tuy nhiên"
+              ]
+            },
+            {
+              "ja": "クラブの 人たちが",
+              "vi": "mọi người trong câu lạc bộ",
+              "accept_vi": [
+                "các thành viên câu lạc bộ",
+                "những người trong CLB"
+              ]
+            },
+            {
+              "ja": "やさしく",
+              "vi": "một cách tử tế",
+              "accept_vi": [
+                "dịu dàng",
+                "tận tình",
+                "ân cần"
+              ],
+              "note_vi": "やさしい: tử tế, hiền"
+            },
+            {
+              "ja": "教えて くれました",
+              "vi": "đã chỉ dạy cho (tôi)",
+              "accept_vi": [
+                "đã dạy cho tôi",
+                "đã chỉ bảo tôi"
+              ],
+              "note_vi": "〜てくれる: ai làm gì cho mình"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s9",
+          "ja": "野球は やはり おもしろい スポーツだと 思いました。",
+          "vi": "Tôi nghĩ bóng chày quả đúng là môn thể thao thú vị.",
+          "chunks": [
+            {
+              "ja": "野球は",
+              "vi": "bóng chày",
+              "accept_vi": [
+                "môn bóng chày"
+              ]
+            },
+            {
+              "ja": "やはり",
+              "vi": "quả đúng là",
+              "accept_vi": [
+                "quả nhiên",
+                "vẫn là",
+                "đúng như mong đợi"
+              ],
+              "note_vi": "やはり: quả nhiên"
+            },
+            {
+              "ja": "おもしろい スポーツだと",
+              "vi": "là môn thể thao thú vị",
+              "accept_vi": [
+                "là môn thể thao hay",
+                "là môn thể thao vui"
+              ]
+            },
+            {
+              "ja": "思いました",
+              "vi": "đã nghĩ",
+              "accept_vi": [
+                "nghĩ rằng",
+                "cảm thấy"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s10",
+          "ja": "それで、クラブに入ることにしました。",
+          "ja_blank": "（20 ）クラブに入ることにしました。",
+          "vi": "Vì vậy, tôi đã quyết định vào câu lạc bộ.",
+          "chunks": [
+            {
+              "ja": "それで、",
+              "vi": "vì vậy",
+              "accept_vi": [
+                "do đó",
+                "vì thế"
+              ],
+              "note_vi": "それで: chỉ kết quả theo lý do trước"
+            },
+            {
+              "ja": "クラブに入る",
+              "vi": "vào câu lạc bộ",
+              "accept_vi": [
+                "gia nhập câu lạc bộ",
+                "tham gia CLB"
+              ]
+            },
+            {
+              "ja": "ことにしました",
+              "vi": "đã quyết định",
+              "accept_vi": [
+                "quyết định",
+                "đã chọn"
+              ],
+              "note_vi": "〜ことにする: quyết định ~"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s11",
+          "ja": "これから 毎日 クラブで たくさん 練習します。",
+          "vi": "Từ nay tôi sẽ luyện tập nhiều mỗi ngày ở câu lạc bộ.",
+          "chunks": [
+            {
+              "ja": "これから",
+              "vi": "từ nay",
+              "accept_vi": [
+                "từ bây giờ",
+                "sắp tới"
+              ]
+            },
+            {
+              "ja": "毎日 クラブで",
+              "vi": "mỗi ngày ở câu lạc bộ",
+              "accept_vi": [
+                "hàng ngày tại CLB"
+              ]
+            },
+            {
+              "ja": "たくさん 練習します",
+              "vi": "luyện tập nhiều",
+              "accept_vi": [
+                "tập luyện thật nhiều",
+                "sẽ tập nhiều"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-g-p1-s12",
+          "ja": "そして、いつか試合に 出てみたいです。",
+          "ja_blank": "そして、いつか試合に （21 ）。",
+          "vi": "Và rồi một ngày nào đó tôi muốn thử tham gia thi đấu.",
+          "chunks": [
+            {
+              "ja": "そして、",
+              "vi": "và",
+              "accept_vi": [
+                "rồi",
+                "sau đó"
+              ]
+            },
+            {
+              "ja": "いつか",
+              "vi": "một lúc nào đó",
+              "accept_vi": [
+                "một ngày nào đó",
+                "một ngày kia"
+              ],
+              "note_vi": "いつか: một lúc nào đó"
+            },
+            {
+              "ja": "試合に",
+              "vi": "vào trận đấu",
+              "accept_vi": [
+                "trong trận thi đấu",
+                "ra thi đấu",
+                "thi đấu"
+              ],
+              "note_vi": "試合に出る: tham gia trận đấu"
+            },
+            {
+              "ja": "出てみたいです",
+              "vi": "muốn thử ra (thi đấu)",
+              "accept_vi": [
+                "muốn tham gia thử",
+                "muốn thử thi đấu"
+              ],
+              "note_vi": "〜てみたい: muốn thử ~"
+            }
+          ],
+          "pitfalls": []
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-p1",
+      "mondai": 9,
+      "kind": "prose",
+      "sentences": [
+        {
+          "id": "jlpt-n4-2021-07-r-p1-s1",
+          "ja": "嫌なことがあったら、私の友達は日記に書くそうです。",
+          "vi": "Khi có chuyện khó chịu, nghe nói bạn tôi sẽ viết vào nhật ký.",
+          "chunks": [
+            {
+              "ja": "嫌なことがあったら、",
+              "vi": "nếu có chuyện khó chịu",
+              "accept_vi": [
+                "khi gặp chuyện không vui",
+                "khi có điều phiền lòng",
+                "nếu có chuyện không hay"
+              ],
+              "note_vi": "嫌: khó chịu, ghét; 〜たら: nếu/khi"
+            },
+            {
+              "ja": "私の友達は",
+              "vi": "bạn tôi",
+              "accept_vi": [
+                "người bạn của tôi"
+              ]
+            },
+            {
+              "ja": "日記に書く",
+              "vi": "viết vào nhật ký",
+              "accept_vi": [
+                "ghi vào nhật ký",
+                "viết nhật ký"
+              ]
+            },
+            {
+              "ja": "そうです",
+              "vi": "nghe nói",
+              "accept_vi": [
+                "nghe bảo",
+                "được biết"
+              ],
+              "note_vi": "〜そうです: nghe nói (truyền đạt)"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p1-s2",
+          "ja": "嫌な気持ちを外に出せるから忘れられると言っています。",
+          "vi": "Bạn ấy nói rằng vì có thể đưa cảm xúc khó chịu ra ngoài nên quên được.",
+          "chunks": [
+            {
+              "ja": "嫌な気持ちを",
+              "vi": "cảm xúc khó chịu",
+              "accept_vi": [
+                "tâm trạng khó chịu",
+                "cảm giác không vui",
+                "cảm xúc tiêu cực"
+              ]
+            },
+            {
+              "ja": "外に出せるから",
+              "vi": "vì có thể đưa ra ngoài",
+              "accept_vi": [
+                "vì có thể trút ra ngoài",
+                "do có thể bộc lộ ra"
+              ],
+              "note_vi": "出せる: khả năng của 出す; 外に出す: bộc lộ ra"
+            },
+            {
+              "ja": "忘れられる",
+              "vi": "có thể quên",
+              "accept_vi": [
+                "quên được",
+                "sẽ quên"
+              ],
+              "note_vi": "忘れられる: khả năng của 忘れる"
+            },
+            {
+              "ja": "と言っています",
+              "vi": "bạn ấy nói rằng",
+              "accept_vi": [
+                "bạn ấy bảo rằng",
+                "đang nói rằng"
+              ]
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "không thể quên",
+                "không quên được"
+              ],
+              "explanation_vi": "Sai: 忘れられる là thể khả năng khẳng định «quên được», lý do là vì có thể bộc lộ cảm xúc ra ngoài."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p1-s3",
+          "ja": "でも、私はカラオケに行って、好きな歌を歌います。",
+          "vi": "Nhưng tôi thì đi hát karaoke và hát bài mình thích.",
+          "chunks": [
+            {
+              "ja": "でも、",
+              "vi": "nhưng",
+              "accept_vi": [
+                "tuy nhiên"
+              ]
+            },
+            {
+              "ja": "私はカラオケに行って、",
+              "vi": "tôi đi karaoke và",
+              "accept_vi": [
+                "tôi đến karaoke rồi",
+                "tôi đi hát karaoke"
+              ]
+            },
+            {
+              "ja": "好きな歌を歌います",
+              "vi": "hát bài hát yêu thích",
+              "accept_vi": [
+                "hát bài mình thích",
+                "hát những bài mình thích"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p1-s4",
+          "ja": "書いているときに嫌なことを思い出してしまうので。",
+          "vi": "Vì khi viết (nhật ký) tôi lại nhớ lại chuyện khó chịu.",
+          "notes_vi": "Bản in ngắt câu bằng 。 sau ので; ý nối với câu sau: «vì ... nên không viết vào nhật ký».",
+          "chunks": [
+            {
+              "ja": "書いているときに",
+              "vi": "khi đang viết",
+              "accept_vi": [
+                "lúc viết",
+                "khi viết"
+              ]
+            },
+            {
+              "ja": "嫌なことを",
+              "vi": "chuyện khó chịu",
+              "accept_vi": [
+                "điều không vui",
+                "chuyện không hay"
+              ]
+            },
+            {
+              "ja": "思い出してしまうので",
+              "vi": "vì lỡ nhớ lại",
+              "accept_vi": [
+                "vì cứ nhớ lại",
+                "vì nhớ lại mất"
+              ],
+              "note_vi": "〜てしまう: lỡ/không mong muốn"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p1-s5",
+          "ja": "日記には書きません。",
+          "vi": "Tôi không viết vào nhật ký.",
+          "chunks": [
+            {
+              "ja": "日記には",
+              "vi": "vào nhật ký thì",
+              "accept_vi": [
+                "nhật ký thì",
+                "trong nhật ký"
+              ],
+              "note_vi": "には: nhấn mạnh đối lập với bạn"
+            },
+            {
+              "ja": "書きません",
+              "vi": "không viết",
+              "accept_vi": [
+                "sẽ không viết",
+                "không ghi"
+              ]
+            }
+          ],
+          "pitfalls": []
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-p2",
+      "mondai": 9,
+      "kind": "notice",
+      "title_ja": "お知らせ",
+      "layout_ja": "お知らせ\n「日本語会話」(月曜日から金曜日の1時から2時半まで)は、\n来週の火曜日と木曜日だけ投案時間がかわります。\n火曜日:1時半から2時半まで\n木曜日:12時半から2時半まで\n木曜日は昼休みが短くなりますが、おくれないで来てください。",
+      "sentences": [
+        {
+          "id": "jlpt-n4-2021-07-r-p2-s1",
+          "ja": "「日本語会話」(月曜日から金曜日の1時から2時半まで)は、来週の火曜日と木曜日だけ投案時間がかわります。",
+          "vi": "Lớp «Hội thoại tiếng Nhật» (từ thứ Hai đến thứ Sáu, 1 giờ đến 2 giờ rưỡi) chỉ có giờ học thay đổi vào thứ Ba và thứ Năm tuần sau.",
+          "notes_vi": "Bản in ghi 投案時間 (lỗi in), ý là 授業時間 (giờ học). Cả hai dòng đầu được gạch chân trong đề.",
+          "chunks": [
+            {
+              "ja": "「日本語会話」",
+              "vi": "lớp «Hội thoại tiếng Nhật»",
+              "accept_vi": [
+                "môn hội thoại tiếng Nhật",
+                "lớp hội thoại tiếng Nhật"
+              ]
+            },
+            {
+              "ja": "(月曜日から金曜日の1時から2時半まで)",
+              "vi": "(thứ Hai đến thứ Sáu, từ 1 giờ đến 2 giờ rưỡi)",
+              "accept_vi": [
+                "từ thứ hai đến thứ sáu, 1h đến 2h30",
+                "thứ Hai đến thứ Sáu từ 1 giờ đến 2:30"
+              ],
+              "note_vi": "半: rưỡi (2時半 = 2 giờ rưỡi)"
+            },
+            {
+              "ja": "来週の火曜日と木曜日だけ",
+              "vi": "chỉ thứ Ba và thứ Năm tuần sau",
+              "accept_vi": [
+                "chỉ vào thứ ba và thứ năm tuần sau",
+                "duy nhất thứ Ba và thứ Năm tuần tới"
+              ],
+              "note_vi": "だけ: chỉ"
+            },
+            {
+              "ja": "投案時間が",
+              "vi": "giờ học",
+              "accept_vi": [
+                "thời gian học",
+                "thời gian giảng"
+              ]
+            },
+            {
+              "ja": "かわります",
+              "vi": "thay đổi",
+              "accept_vi": [
+                "sẽ đổi",
+                "được thay đổi"
+              ]
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "tất cả các ngày",
+                "cả tuần thay đổi",
+                "mọi ngày"
+              ],
+              "explanation_vi": "Sai: だけ giới hạn chỉ thứ Ba và thứ Năm tuần sau thay đổi giờ; các ngày khác vẫn như thường."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p2-s2",
+          "ja": "火曜日:1時半から2時半まで",
+          "vi": "Thứ Ba: từ 1 giờ rưỡi đến 2 giờ rưỡi.",
+          "chunks": [
+            {
+              "ja": "火曜日:",
+              "vi": "thứ Ba:",
+              "accept_vi": [
+                "thứ ba",
+                "ngày thứ Ba"
+              ]
+            },
+            {
+              "ja": "1時半から2時半まで",
+              "vi": "từ 1 giờ rưỡi đến 2 giờ rưỡi",
+              "accept_vi": [
+                "1:30 đến 2:30",
+                "1h30 đến 2h30"
+              ],
+              "note_vi": "半: rưỡi"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p2-s3",
+          "ja": "木曜日:12時半から2時半まで",
+          "vi": "Thứ Năm: từ 12 giờ rưỡi đến 2 giờ rưỡi.",
+          "chunks": [
+            {
+              "ja": "木曜日:",
+              "vi": "thứ Năm:",
+              "accept_vi": [
+                "thứ năm",
+                "ngày thứ Năm"
+              ]
+            },
+            {
+              "ja": "12時半から2時半まで",
+              "vi": "từ 12 giờ rưỡi đến 2 giờ rưỡi",
+              "accept_vi": [
+                "12:30 đến 2:30",
+                "12h30 đến 2h30"
+              ],
+              "note_vi": "半: rưỡi"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p2-s4",
+          "ja": "木曜日は昼休みが短くなりますが、おくれないで来てください。",
+          "vi": "Thứ Năm giờ nghỉ trưa sẽ ngắn lại, nhưng xin đừng đến muộn.",
+          "chunks": [
+            {
+              "ja": "木曜日は",
+              "vi": "thứ Năm",
+              "accept_vi": [
+                "vào thứ Năm",
+                "thứ năm thì"
+              ]
+            },
+            {
+              "ja": "昼休みが短くなりますが、",
+              "vi": "giờ nghỉ trưa ngắn lại nhưng",
+              "accept_vi": [
+                "nghỉ trưa sẽ ngắn hơn nhưng",
+                "giờ nghỉ trưa bị rút ngắn nhưng"
+              ],
+              "note_vi": "短くなる: trở nên ngắn; が: nhưng"
+            },
+            {
+              "ja": "おくれないで来てください",
+              "vi": "xin đừng đến muộn",
+              "accept_vi": [
+                "đừng đến trễ",
+                "hãy đến đúng giờ"
+              ],
+              "note_vi": "〜ないで ください: xin đừng ~"
+            }
+          ],
+          "pitfalls": []
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-p3",
+      "mondai": 9,
+      "kind": "notice",
+      "title_ja": "ロンさんのメモ",
+      "layout_ja": "石田さん\n\n　青木部長によばれて、今から部長会議に出ることになりました。\n\n　部長会議の弁当は、私が11時半に「こま屋」に取りに行く予定でしたが、行けなくなったので、行ってきてください。お金は払ってあります。\n\n　弁当は、私の机に置いておいてください。\n\n　すみませんが、よろしくお願いします。\n\n　　　　　　　　　　　　　　　　　　　10月4日 10:30\n　　　　　　　　　　　　　　　　　　　　　　ロン",
+      "sentences": [
+        {
+          "id": "jlpt-n4-2021-07-r-p3-s1",
+          "ja": "石田さんの机の上に、このメモが置いております。",
+          "vi": "Trên bàn của anh/chị Ishida có đặt tờ ghi chú này.",
+          "notes": "（会社で）",
+          "notes_vi": "Bản in là 置いております (đúng ra là 置いてあります); ý: tờ ghi chú được để sẵn trên bàn.",
+          "chunks": [
+            {
+              "ja": "石田さんの机の上に、",
+              "vi": "trên bàn của anh/chị Ishida",
+              "accept_vi": [
+                "trên bàn anh Ishida",
+                "trên bàn của Ishida"
+              ]
+            },
+            {
+              "ja": "このメモが",
+              "vi": "tờ ghi chú này",
+              "accept_vi": [
+                "mẩu giấy nhắn này",
+                "tờ giấy nhớ này"
+              ]
+            },
+            {
+              "ja": "置いております",
+              "vi": "đang được đặt",
+              "accept_vi": [
+                "đã đặt",
+                "được để"
+              ],
+              "note_vi": "ております: dạng khiêm nhường của ている"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p3-s2",
+          "ja": "青木部長によばれて、今から部長会議に出ることになりました。",
+          "vi": "Tôi được trưởng phòng Aoki gọi nên từ bây giờ phải tham dự cuộc họp trưởng phòng.",
+          "chunks": [
+            {
+              "ja": "青木部長によばれて、",
+              "vi": "được trưởng phòng Aoki gọi",
+              "accept_vi": [
+                "bị trưởng phòng Aoki gọi",
+                "trưởng phòng Aoki gọi"
+              ],
+              "note_vi": "〜によばれて: bị động của 呼ぶ"
+            },
+            {
+              "ja": "今から",
+              "vi": "từ bây giờ",
+              "accept_vi": [
+                "bây giờ",
+                "ngay từ bây giờ"
+              ]
+            },
+            {
+              "ja": "部長会議に出ることになりました",
+              "vi": "phải tham dự cuộc họp trưởng phòng",
+              "accept_vi": [
+                "sẽ tham dự cuộc họp trưởng phòng",
+                "được quyết định đi họp trưởng phòng"
+              ],
+              "note_vi": "〜ことになりました: được quyết định/thành ra"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p3-s3",
+          "ja": "部長会議の弁当は、私が11時半に「こま屋」に取りに行く予定でしたが、行けなくなったので、行ってきてください。",
+          "vi": "Phần cơm hộp cho cuộc họp trưởng phòng, tôi vốn định đến tiệm «Komaya» lấy lúc 11 giờ rưỡi, nhưng vì không đi được nữa nên nhờ bạn đi lấy giúp.",
+          "chunks": [
+            {
+              "ja": "部長会議の弁当は、",
+              "vi": "cơm hộp cho họp trưởng phòng",
+              "accept_vi": [
+                "phần cơm hộp của buổi họp trưởng phòng",
+                "cơm hộp của cuộc họp"
+              ]
+            },
+            {
+              "ja": "私が11時半に",
+              "vi": "tôi (định) lúc 11 giờ rưỡi",
+              "accept_vi": [
+                "tôi lúc 11h30",
+                "tôi vào 11:30"
+              ],
+              "note_vi": "半: rưỡi"
+            },
+            {
+              "ja": "「こま屋」に取りに行く予定でしたが、",
+              "vi": "đi lấy ở Komaya nhưng",
+              "accept_vi": [
+                "định đến Komaya lấy nhưng",
+                "dự định đi lấy ở tiệm Komaya nhưng"
+              ],
+              "note_vi": "取りに行く: đi lấy; 予定でした: đã dự định"
+            },
+            {
+              "ja": "行けなくなったので、",
+              "vi": "vì không thể đi được nữa nên",
+              "accept_vi": [
+                "vì không đi được nữa",
+                "do không thể đi nữa"
+              ],
+              "note_vi": "行けなくなる: trở nên không đi được"
+            },
+            {
+              "ja": "行ってきてください",
+              "vi": "hãy đi (lấy) giúp",
+              "accept_vi": [
+                "hãy đi rồi về nhé",
+                "nhờ bạn đi lấy giúp"
+              ],
+              "note_vi": "〜てきてください: đi làm rồi quay lại"
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "tôi đi lấy",
+                "tôi sẽ đi lấy",
+                "bạn không cần đi"
+              ],
+              "explanation_vi": "Sai người: Ron không đi được nữa (行けなくなった) nên nhờ Ishida đi lấy (行ってきてください)."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p3-s4",
+          "ja": "お金は払ってあります。",
+          "vi": "Tiền thì đã trả rồi.",
+          "chunks": [
+            {
+              "ja": "お金は",
+              "vi": "tiền",
+              "accept_vi": [
+                "còn tiền thì",
+                "tiền bạc"
+              ]
+            },
+            {
+              "ja": "払ってあります",
+              "vi": "đã trả sẵn",
+              "accept_vi": [
+                "đã thanh toán rồi",
+                "đã được trả"
+              ],
+              "note_vi": "〜てある: trạng thái kết quả của hành động có chủ ý"
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "hãy trả tiền",
+                "phải trả tiền",
+                "chưa trả"
+              ],
+              "explanation_vi": "Sai: 払ってあります = đã trả sẵn rồi, Ishida không cần trả."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p3-s5",
+          "ja": "弁当は、私の机に置いておいてください。",
+          "vi": "Xin hãy để cơm hộp lên bàn của tôi.",
+          "chunks": [
+            {
+              "ja": "弁当は、",
+              "vi": "cơm hộp",
+              "accept_vi": [
+                "cơm hộp thì",
+                "phần cơm hộp"
+              ]
+            },
+            {
+              "ja": "私の机に",
+              "vi": "lên bàn của tôi",
+              "accept_vi": [
+                "trên bàn tôi",
+                "ở bàn của tôi"
+              ],
+              "note_vi": "私 = Ron (người viết)"
+            },
+            {
+              "ja": "置いておいてください",
+              "vi": "xin hãy để sẵn",
+              "accept_vi": [
+                "hãy để lại giúp",
+                "hãy đặt sẵn"
+              ],
+              "note_vi": "〜ておく: làm sẵn"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p3-s6",
+          "ja": "すみませんが、よろしくお願いします。",
+          "vi": "Xin lỗi vì làm phiền, nhờ bạn giúp nhé.",
+          "chunks": [
+            {
+              "ja": "すみませんが、",
+              "vi": "xin lỗi nhưng",
+              "accept_vi": [
+                "xin lỗi vì làm phiền",
+                "xin lỗi, nhưng"
+              ]
+            },
+            {
+              "ja": "よろしくお願いします",
+              "vi": "nhờ bạn giúp",
+              "accept_vi": [
+                "xin nhờ cậy",
+                "mong bạn giúp đỡ"
+              ],
+              "note_vi": "よろしくお願いします: lời nhờ vả lịch sự"
+            }
+          ],
+          "pitfalls": []
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-p4",
+      "mondai": 10,
+      "kind": "prose",
+      "title_ja": "山に行った日",
+      "sentences": [
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s1",
+          "ja": "私の趣味は山に登ることです。",
+          "vi": "Sở thích của tôi là leo núi.",
+          "chunks": [
+            {
+              "ja": "私の趣味は",
+              "vi": "sở thích của tôi",
+              "accept_vi": [
+                "sở thích của mình",
+                "thú vui của tôi"
+              ]
+            },
+            {
+              "ja": "山に登ることです",
+              "vi": "là leo núi",
+              "accept_vi": [
+                "là việc leo núi",
+                "là đi leo núi"
+              ],
+              "note_vi": "V ことです: là việc ~"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s2",
+          "ja": "山のいちばん上で景色を見ながら昼ご飯を食べるのが、私の楽しみです。",
+          "vi": "Điều tôi mong chờ là vừa ngắm cảnh trên đỉnh núi vừa ăn trưa.",
+          "chunks": [
+            {
+              "ja": "山のいちばん上で",
+              "vi": "ở trên đỉnh núi",
+              "accept_vi": [
+                "trên cao nhất của ngọn núi",
+                "ở chỗ cao nhất của núi",
+                "trên đỉnh núi"
+              ],
+              "note_vi": "いちばん上: chỗ cao nhất"
+            },
+            {
+              "ja": "景色を見ながら",
+              "vi": "vừa ngắm cảnh",
+              "accept_vi": [
+                "vừa ngắm phong cảnh",
+                "vừa nhìn cảnh"
+              ],
+              "note_vi": "〜ながら: vừa ~ vừa"
+            },
+            {
+              "ja": "昼ご飯を食べるのが、",
+              "vi": "việc ăn cơm trưa",
+              "accept_vi": [
+                "ăn cơm trưa",
+                "ăn trưa"
+              ],
+              "note_vi": "V のが: danh từ hóa"
+            },
+            {
+              "ja": "私の楽しみです",
+              "vi": "là niềm vui của tôi",
+              "accept_vi": [
+                "là điều tôi mong đợi",
+                "là thú vui của tôi"
+              ],
+              "note_vi": "楽しみ: niềm vui, điều mong đợi"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s3",
+          "ja": "先週、会社の先輩の内村さんと話していて、内村さんも山が好きなことがわかりました。",
+          "vi": "Tuần trước, khi nói chuyện với anh/chị Uchimura, đàn anh ở công ty, tôi biết Uchimura cũng thích núi.",
+          "chunks": [
+            {
+              "ja": "先週、",
+              "vi": "tuần trước",
+              "accept_vi": [
+                "tuần rồi"
+              ]
+            },
+            {
+              "ja": "会社の先輩の内村さんと話していて、",
+              "vi": "khi nói chuyện với anh/chị Uchimura, đàn anh ở công ty",
+              "accept_vi": [
+                "nói chuyện với tiền bối Uchimura",
+                "trò chuyện với Uchimura ở công ty"
+              ],
+              "note_vi": "先輩: tiền bối, người vào làm trước"
+            },
+            {
+              "ja": "内村さんも山が好きなことが",
+              "vi": "việc Uchimura cũng thích núi",
+              "accept_vi": [
+                "chuyện Uchimura cũng thích núi",
+                "Uchimura cũng thích núi"
+              ],
+              "note_vi": "N も: cũng"
+            },
+            {
+              "ja": "わかりました",
+              "vi": "đã biết",
+              "accept_vi": [
+                "đã hiểu ra",
+                "nhận ra"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s4",
+          "ja": "それで、私たちがよく行く山に、一緒に行くことになりました。",
+          "vi": "Vì vậy, chúng tôi đã đi cùng nhau đến ngọn núi mà chúng tôi thường đi.",
+          "chunks": [
+            {
+              "ja": "それで、",
+              "vi": "vì vậy",
+              "accept_vi": [
+                "thế là",
+                "do đó"
+              ]
+            },
+            {
+              "ja": "私たちがよく行く山に、",
+              "vi": "ngọn núi chúng tôi thường đi",
+              "accept_vi": [
+                "núi mà chúng tôi hay đến",
+                "ngọn núi thường đến"
+              ]
+            },
+            {
+              "ja": "一緒に行くことになりました",
+              "vi": "(thành ra) cùng đi",
+              "accept_vi": [
+                "đã quyết định cùng đi",
+                "đi cùng nhau"
+              ],
+              "note_vi": "〜ことになる: thành ra/được quyết định"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s5",
+          "ja": "週末、私たちは山の近くの駅で会って、山に向かいました。",
+          "vi": "Cuối tuần, chúng tôi gặp nhau ở ga gần núi rồi hướng đến núi.",
+          "chunks": [
+            {
+              "ja": "週末、",
+              "vi": "cuối tuần",
+              "accept_vi": [
+                "vào cuối tuần"
+              ]
+            },
+            {
+              "ja": "私たちは山の近くの駅で会って、",
+              "vi": "chúng tôi gặp nhau ở ga gần núi",
+              "accept_vi": [
+                "chúng tôi gặp ở nhà ga gần núi",
+                "gặp nhau ở ga gần ngọn núi"
+              ]
+            },
+            {
+              "ja": "山に向かいました",
+              "vi": "hướng về phía núi",
+              "accept_vi": [
+                "đi về phía núi",
+                "tiến đến núi"
+              ],
+              "note_vi": "向かう: hướng tới"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s6",
+          "ja": "1時間ぐらい登ったとき、内村さんが止まって、「珍しい花が咲いていますね。ここで少し休みませんか。」と言ったので、休むことにしました。",
+          "vi": "Khi leo được khoảng 1 tiếng, anh/chị Uchimura dừng lại nói: «Hoa lạ đang nở nhỉ. Nghỉ một chút ở đây nhé?», nên chúng tôi quyết định nghỉ.",
+          "chunks": [
+            {
+              "ja": "1時間ぐらい登ったとき、",
+              "vi": "khi leo khoảng 1 tiếng",
+              "accept_vi": [
+                "lúc leo được khoảng một giờ",
+                "sau khi leo khoảng 1 tiếng"
+              ],
+              "note_vi": "〜とき: khi ~"
+            },
+            {
+              "ja": "内村さんが止まって、",
+              "vi": "Uchimura dừng lại và",
+              "accept_vi": [
+                "Uchimura dừng bước",
+                "Uchimura đứng lại"
+              ]
+            },
+            {
+              "ja": "「珍しい花が咲いていますね。",
+              "vi": "«hoa lạ đang nở nhỉ.",
+              "accept_vi": [
+                "hoa hiếm đang nở nhỉ",
+                "có bông hoa lạ nở nhỉ"
+              ],
+              "note_vi": "珍しい: hiếm, lạ"
+            },
+            {
+              "ja": "ここで少し休みませんか。」",
+              "vi": "nghỉ chút ở đây nhé?»",
+              "accept_vi": [
+                "nghỉ một chút ở đây nhé",
+                "mình nghỉ ở đây một lát không"
+              ],
+              "note_vi": "〜ませんか: rủ rê"
+            },
+            {
+              "ja": "休むことにしました",
+              "vi": "đã quyết định nghỉ",
+              "accept_vi": [
+                "quyết định nghỉ",
+                "chúng tôi nghỉ"
+              ],
+              "note_vi": "〜ことにする: quyết định ~"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s7",
+          "ja": "内村さんは「少し」と言ったのに、ずっと花の写真を撮っていて、12時になってしまいました。",
+          "vi": "Uchimura nói «một chút» vậy mà cứ chụp hoa suốt, đến 12 giờ mất rồi.",
+          "chunks": [
+            {
+              "ja": "内村さんは「少し」と言ったのに、",
+              "vi": "Uchimura nói «một chút» thế mà",
+              "accept_vi": [
+                "Uchimura đã nói «một lát» vậy mà",
+                "dù Uchimura nói «chút thôi»"
+              ],
+              "note_vi": "〜のに: vậy mà (bất mãn)"
+            },
+            {
+              "ja": "ずっと花の写真を撮っていて、",
+              "vi": "cứ chụp ảnh hoa suốt",
+              "accept_vi": [
+                "chụp ảnh hoa mãi",
+                "chụp hoa suốt"
+              ],
+              "note_vi": "ずっと: suốt, liên tục"
+            },
+            {
+              "ja": "12時になってしまいました",
+              "vi": "đến 12 giờ mất rồi",
+              "accept_vi": [
+                "đã đến 12 giờ mất",
+                "thành ra đã 12 giờ"
+              ],
+              "note_vi": "〜てしまう: lỡ, mất"
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "một chút thôi",
+                "chỉ nghỉ một chút",
+                "nghỉ ngắn"
+              ],
+              "explanation_vi": "Dễ nhầm: Uchimura nói «少し» nhưng thực tế chụp ảnh rất lâu (ずっと), nên 〜のに = trái với dự kiến."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s8",
+          "ja": "それで、私たちは弁当を食べました。",
+          "vi": "Vì vậy chúng tôi đã ăn cơm hộp.",
+          "chunks": [
+            {
+              "ja": "それで、",
+              "vi": "vì vậy",
+              "accept_vi": [
+                "thế là",
+                "do đó"
+              ]
+            },
+            {
+              "ja": "私たちは弁当を食べました",
+              "vi": "chúng tôi đã ăn cơm hộp",
+              "accept_vi": [
+                "chúng tôi ăn cơm hộp",
+                "bọn tôi ăn cơm hộp"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s9",
+          "ja": "私は①ちょっと残念でした。",
+          "vi": "Tôi hơi tiếc.",
+          "notes_vi": "①ちょっと残念でした là phần được gạch chân trong đề (câu hỏi 54).",
+          "chunks": [
+            {
+              "ja": "私は",
+              "vi": "tôi",
+              "accept_vi": [
+                "mình"
+              ]
+            },
+            {
+              "ja": "①ちょっと残念でした",
+              "vi": "hơi tiếc",
+              "accept_vi": [
+                "hơi buồn",
+                "có chút tiếc nuối",
+                "thấy hơi tiếc"
+              ],
+              "note_vi": "残念: đáng tiếc"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s10",
+          "ja": "山の上で食べたかったからです。",
+          "vi": "Vì tôi đã muốn ăn ở trên đỉnh núi.",
+          "chunks": [
+            {
+              "ja": "山の上で",
+              "vi": "ở trên núi",
+              "accept_vi": [
+                "trên đỉnh núi",
+                "ở trên đỉnh"
+              ]
+            },
+            {
+              "ja": "食べたかったからです",
+              "vi": "vì đã muốn ăn",
+              "accept_vi": [
+                "do đã muốn ăn",
+                "bởi vì muốn ăn"
+              ],
+              "note_vi": "〜たい: muốn; 〜からです: vì"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s11",
+          "ja": "弁当を食べながら、内村さんは撮った写真を見せてくれました。",
+          "vi": "Vừa ăn cơm hộp, Uchimura vừa cho tôi xem những tấm ảnh đã chụp.",
+          "chunks": [
+            {
+              "ja": "弁当を食べながら、",
+              "vi": "vừa ăn cơm hộp",
+              "accept_vi": [
+                "trong lúc ăn cơm hộp"
+              ],
+              "note_vi": "〜ながら: vừa ~ vừa"
+            },
+            {
+              "ja": "内村さんは撮った写真を",
+              "vi": "Uchimura (cho xem) những ảnh đã chụp",
+              "accept_vi": [
+                "những tấm ảnh Uchimura chụp",
+                "ảnh mà Uchimura đã chụp"
+              ]
+            },
+            {
+              "ja": "見せてくれました",
+              "vi": "đã cho tôi xem",
+              "accept_vi": [
+                "cho tôi xem",
+                "đưa cho tôi xem"
+              ],
+              "note_vi": "〜てくれる: làm cho mình"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s12",
+          "ja": "とてもきれいだったので、私も撮ってみたくなりました。",
+          "vi": "Vì rất đẹp nên tôi cũng muốn thử chụp.",
+          "chunks": [
+            {
+              "ja": "とてもきれいだったので、",
+              "vi": "vì rất đẹp",
+              "accept_vi": [
+                "bởi vì rất đẹp",
+                "vì đẹp lắm"
+              ]
+            },
+            {
+              "ja": "私も",
+              "vi": "tôi cũng",
+              "accept_vi": [
+                "mình cũng"
+              ]
+            },
+            {
+              "ja": "撮ってみたくなりました",
+              "vi": "đã muốn thử chụp",
+              "accept_vi": [
+                "trở nên muốn thử chụp",
+                "muốn chụp thử"
+              ],
+              "note_vi": "〜てみたくなる: trở nên muốn thử"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s13",
+          "ja": "昼ご飯のあとで、内村さんは山の花の上手な撮り方を教えてくれました。",
+          "vi": "Sau bữa trưa, Uchimura đã chỉ cho tôi cách chụp hoa núi cho khéo.",
+          "chunks": [
+            {
+              "ja": "昼ご飯のあとで、",
+              "vi": "sau bữa trưa",
+              "accept_vi": [
+                "sau khi ăn trưa"
+              ]
+            },
+            {
+              "ja": "内村さんは",
+              "vi": "Uchimura",
+              "accept_vi": [
+                "anh/chị Uchimura"
+              ]
+            },
+            {
+              "ja": "山の花の上手な撮り方を",
+              "vi": "cách chụp hoa núi cho đẹp",
+              "accept_vi": [
+                "cách chụp hoa núi khéo",
+                "cách chụp hoa trên núi giỏi"
+              ],
+              "note_vi": "〜方: cách ~; 上手な: giỏi, khéo"
+            },
+            {
+              "ja": "教えてくれました",
+              "vi": "đã chỉ cho tôi",
+              "accept_vi": [
+                "đã dạy tôi",
+                "chỉ dạy cho tôi"
+              ],
+              "note_vi": "〜てくれる"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s14",
+          "ja": "私も少し撮ってみて、楽しくなりました。",
+          "vi": "Tôi cũng thử chụp một chút và thấy vui.",
+          "chunks": [
+            {
+              "ja": "私も少し撮ってみて、",
+              "vi": "tôi cũng thử chụp một chút",
+              "accept_vi": [
+                "tôi cũng chụp thử một ít"
+              ],
+              "note_vi": "〜てみる: thử"
+            },
+            {
+              "ja": "楽しくなりました",
+              "vi": "trở nên vui",
+              "accept_vi": [
+                "thấy vui",
+                "thấy thích thú"
+              ],
+              "note_vi": "〜くなる: trở nên"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s15",
+          "ja": "そして、2時間ぐらい写真を撮って、山をおりました。",
+          "vi": "Rồi chúng tôi chụp ảnh khoảng 2 tiếng và xuống núi.",
+          "chunks": [
+            {
+              "ja": "そして、",
+              "vi": "và rồi",
+              "accept_vi": [
+                "sau đó"
+              ]
+            },
+            {
+              "ja": "2時間ぐらい写真を撮って、",
+              "vi": "chụp ảnh khoảng 2 tiếng",
+              "accept_vi": [
+                "chụp hình khoảng hai giờ"
+              ]
+            },
+            {
+              "ja": "山をおりました",
+              "vi": "đã xuống núi",
+              "accept_vi": [
+                "xuống núi",
+                "đi xuống núi"
+              ],
+              "note_vi": "山をおりる: xuống núi"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s16",
+          "ja": "山に行って、上まで登らないで帰ったのは初めてでした。",
+          "vi": "Đây là lần đầu tiên tôi đi núi mà về nhà mà không leo lên tới đỉnh.",
+          "chunks": [
+            {
+              "ja": "山に行って、",
+              "vi": "đi núi",
+              "accept_vi": [
+                "đi leo núi"
+              ]
+            },
+            {
+              "ja": "上まで登らないで帰ったのは",
+              "vi": "việc về mà không leo lên tới trên",
+              "accept_vi": [
+                "việc về mà không leo tới đỉnh",
+                "chuyện đã về mà không leo lên đến đỉnh"
+              ],
+              "note_vi": "〜ないで: mà không ~"
+            },
+            {
+              "ja": "初めてでした",
+              "vi": "là lần đầu",
+              "accept_vi": [
+                "là lần đầu tiên"
+              ]
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "leo lên tới đỉnh",
+                "đã leo tới đỉnh"
+              ],
+              "explanation_vi": "Sai: 登らないで = không leo (lên tới đỉnh) mà về; đây là lần đầu như vậy."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s17",
+          "ja": "でも、とてもいい一日でした。",
+          "vi": "Nhưng đó là một ngày rất tuyệt.",
+          "chunks": [
+            {
+              "ja": "でも、",
+              "vi": "nhưng",
+              "accept_vi": [
+                "tuy vậy"
+              ]
+            },
+            {
+              "ja": "とてもいい一日でした",
+              "vi": "là một ngày rất tuyệt",
+              "accept_vi": [
+                "một ngày rất tốt",
+                "ngày rất vui"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s18",
+          "ja": "内村さんと山に行って、私は②山の新しい楽しみを知りました。",
+          "vi": "Đi núi cùng Uchimura, tôi đã biết thêm một thú vui mới của núi.",
+          "notes_vi": "②山の新しい楽しみ là phần được gạch chân trong đề (câu hỏi 55).",
+          "chunks": [
+            {
+              "ja": "内村さんと山に行って、",
+              "vi": "đi núi với Uchimura",
+              "accept_vi": [
+                "cùng Uchimura đi núi"
+              ]
+            },
+            {
+              "ja": "私は",
+              "vi": "tôi",
+              "accept_vi": [
+                "mình"
+              ]
+            },
+            {
+              "ja": "②山の新しい楽しみを",
+              "vi": "niềm vui mới của việc leo núi",
+              "accept_vi": [
+                "thú vui mới ở núi",
+                "niềm vui mới về núi"
+              ]
+            },
+            {
+              "ja": "知りました",
+              "vi": "đã biết",
+              "accept_vi": [
+                "đã khám phá ra",
+                "đã nhận ra"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p4-s19",
+          "ja": "また一緒に山に行きたいと思います。",
+          "vi": "Tôi muốn lại cùng đi núi lần nữa.",
+          "chunks": [
+            {
+              "ja": "また一緒に",
+              "vi": "lại cùng nhau",
+              "accept_vi": [
+                "lần nữa cùng nhau",
+                "lại cùng"
+              ]
+            },
+            {
+              "ja": "山に行きたいと思います",
+              "vi": "muốn đi núi",
+              "accept_vi": [
+                "nghĩ muốn đi núi",
+                "muốn đi leo núi"
+              ],
+              "note_vi": "〜たいと思う: muốn"
+            }
+          ],
+          "pitfalls": []
+        }
+      ]
+    },
+    {
+      "id": "jlpt-n4-2021-07-r-p5",
+      "mondai": 11,
+      "kind": "info",
+      "title_ja": "山川市「国際教室のお知らせ」",
+      "layout_ja": "山川市「国際教室のお知らせ」\n\n【おべんとうを作りましょう！】\n外国人と日本人。30人以内。\n子供を連れて来てもいいです。\n・時間：毎週（火）10：00～12：30\n・場所：スーパー「もどり」4階\n・お金：1回500円\n\n【テニスをしましょう！】\n18歳以上の人、外国人15人以内、日本人15人以内。\n・時間：毎週（水）15：00～18：00\n・場所：山川運動場\n・お金：1か月500円\n\n【ジョギングをしましょう！】\n15歳以上の外国人と日本人。\n子供を連れて来てもいいです。\n・時間：毎週（土）10：30～12：00\n・集まる場所：山川公園入口\n・お金：ただです。\n\n【日本語で話しましょう！】\n15歳以上の人、外国人30人以内、日本人30人以内。\n・時間：毎週（日）14：00～16：00\n・場所：山川市図書館3階\n・お金：1回100円",
+      "sentences": [
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s1",
+          "ja": "おべんとうを作りましょう！",
+          "vi": "Cùng làm cơm hộp nào!",
+          "chunks": [
+            {
+              "ja": "おべんとうを",
+              "vi": "cơm hộp",
+              "accept_vi": [
+                "bento",
+                "hộp cơm"
+              ]
+            },
+            {
+              "ja": "作りましょう",
+              "vi": "cùng làm nào",
+              "accept_vi": [
+                "hãy cùng làm",
+                "làm thôi"
+              ],
+              "note_vi": "〜ましょう: cùng làm nhé"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s2",
+          "ja": "外国人と日本人。30人以内。子供を連れて来てもいいです。",
+          "vi": "Người nước ngoài và người Nhật. Tối đa 30 người. Có thể dẫn theo trẻ em.",
+          "chunks": [
+            {
+              "ja": "外国人と日本人。",
+              "vi": "người nước ngoài và người Nhật",
+              "accept_vi": [
+                "người ngoại quốc và người Nhật"
+              ]
+            },
+            {
+              "ja": "30人以内。",
+              "vi": "trong vòng 30 người",
+              "accept_vi": [
+                "tối đa 30 người",
+                "không quá 30 người"
+              ],
+              "note_vi": "以内: trong vòng, không quá"
+            },
+            {
+              "ja": "子供を連れて来てもいいです。",
+              "vi": "được phép dẫn trẻ em theo",
+              "accept_vi": [
+                "có thể dẫn con đến",
+                "mang theo trẻ em cũng được"
+              ],
+              "note_vi": "〜てもいい: được phép"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s3",
+          "ja": "時間：毎週（火）10：00～12：30",
+          "vi": "Thời gian: mỗi tuần vào thứ Ba, 10:00 đến 12:30.",
+          "chunks": [
+            {
+              "ja": "時間：",
+              "vi": "thời gian:",
+              "accept_vi": [
+                "giờ:"
+              ]
+            },
+            {
+              "ja": "毎週（火）",
+              "vi": "mỗi tuần thứ Ba",
+              "accept_vi": [
+                "hàng tuần vào thứ ba"
+              ],
+              "note_vi": "毎週: mỗi tuần; 火: thứ Ba"
+            },
+            {
+              "ja": "10：00～12：30",
+              "vi": "10:00 đến 12:30",
+              "accept_vi": [
+                "10 giờ đến 12 giờ rưỡi"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s4",
+          "ja": "場所：スーパー「もどり」4階",
+          "vi": "Địa điểm: tầng 4 siêu thị «Modori».",
+          "chunks": [
+            {
+              "ja": "場所：",
+              "vi": "địa điểm:",
+              "accept_vi": [
+                "nơi:"
+              ]
+            },
+            {
+              "ja": "スーパー「もどり」",
+              "vi": "siêu thị «Modori»",
+              "accept_vi": [
+                "siêu thị Modori"
+              ]
+            },
+            {
+              "ja": "4階",
+              "vi": "tầng 4",
+              "accept_vi": [
+                "lầu 4"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s5",
+          "ja": "お金：1回500円",
+          "vi": "Tiền: 500 yên mỗi lần.",
+          "chunks": [
+            {
+              "ja": "お金：",
+              "vi": "tiền:",
+              "accept_vi": [
+                "chi phí:",
+                "phí:"
+              ]
+            },
+            {
+              "ja": "1回500円",
+              "vi": "500 yên mỗi lần",
+              "accept_vi": [
+                "500 yên một lần",
+                "500 yên/lần"
+              ],
+              "note_vi": "1回: một lần"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s6",
+          "ja": "テニスをしましょう！",
+          "vi": "Cùng chơi tennis nào!",
+          "chunks": [
+            {
+              "ja": "テニスを",
+              "vi": "tennis",
+              "accept_vi": [
+                "quần vợt"
+              ]
+            },
+            {
+              "ja": "しましょう",
+              "vi": "cùng chơi nào",
+              "accept_vi": [
+                "hãy cùng chơi"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s7",
+          "ja": "18歳以上の人、外国人15人以内、日本人15人以内。",
+          "vi": "Người từ 18 tuổi trở lên; người nước ngoài tối đa 15 người, người Nhật tối đa 15 người.",
+          "chunks": [
+            {
+              "ja": "18歳以上の人、",
+              "vi": "người từ 18 tuổi trở lên",
+              "accept_vi": [
+                "người trên 18 tuổi",
+                "từ 18 tuổi trở lên"
+              ],
+              "note_vi": "以上: trở lên"
+            },
+            {
+              "ja": "外国人15人以内、",
+              "vi": "người nước ngoài tối đa 15 người",
+              "accept_vi": [
+                "người ngoại quốc dưới 15 người",
+                "người nước ngoài trong vòng 15 người"
+              ],
+              "note_vi": "以内: trong vòng"
+            },
+            {
+              "ja": "日本人15人以内。",
+              "vi": "người Nhật tối đa 15 người",
+              "accept_vi": [
+                "người Nhật dưới 15 người"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s8",
+          "ja": "時間：毎週（水）15：00～18：00",
+          "vi": "Thời gian: mỗi tuần vào thứ Tư, 15:00 đến 18:00.",
+          "chunks": [
+            {
+              "ja": "時間：",
+              "vi": "thời gian:",
+              "accept_vi": [
+                "giờ:"
+              ]
+            },
+            {
+              "ja": "毎週（水）",
+              "vi": "mỗi tuần thứ Tư",
+              "accept_vi": [
+                "hàng tuần vào thứ tư"
+              ],
+              "note_vi": "水: thứ Tư"
+            },
+            {
+              "ja": "15：00～18：00",
+              "vi": "15:00 đến 18:00",
+              "accept_vi": [
+                "3 giờ chiều đến 6 giờ chiều"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s9",
+          "ja": "場所：山川運動場",
+          "vi": "Địa điểm: sân vận động Yamakawa.",
+          "chunks": [
+            {
+              "ja": "場所：",
+              "vi": "địa điểm:",
+              "accept_vi": [
+                "nơi:"
+              ]
+            },
+            {
+              "ja": "山川運動場",
+              "vi": "sân vận động Yamakawa",
+              "accept_vi": [
+                "sân thể thao Yamakawa"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s10",
+          "ja": "お金：1か月500円",
+          "vi": "Tiền: 500 yên mỗi tháng.",
+          "chunks": [
+            {
+              "ja": "お金：",
+              "vi": "tiền:",
+              "accept_vi": [
+                "phí:"
+              ]
+            },
+            {
+              "ja": "1か月500円",
+              "vi": "500 yên một tháng",
+              "accept_vi": [
+                "500 yên mỗi tháng",
+                "500 yên/tháng"
+              ],
+              "note_vi": "1か月: một tháng"
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "mỗi lần",
+                "một lần"
+              ],
+              "explanation_vi": "Sai: tennis tính 1か月500円 (mỗi tháng), cơm hộp mới là 1回500円 (mỗi lần)."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s11",
+          "ja": "ジョギングをしましょう！",
+          "vi": "Cùng chạy bộ nào!",
+          "chunks": [
+            {
+              "ja": "ジョギングを",
+              "vi": "chạy bộ",
+              "accept_vi": [
+                "jogging"
+              ]
+            },
+            {
+              "ja": "しましょう",
+              "vi": "cùng làm nào",
+              "accept_vi": [
+                "hãy cùng chạy"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s12",
+          "ja": "15歳以上の外国人と日本人。子供を連れて来てもいいです。",
+          "vi": "Người nước ngoài và người Nhật từ 15 tuổi trở lên. Có thể dẫn theo trẻ em.",
+          "chunks": [
+            {
+              "ja": "15歳以上の",
+              "vi": "từ 15 tuổi trở lên",
+              "accept_vi": [
+                "trên 15 tuổi"
+              ]
+            },
+            {
+              "ja": "外国人と日本人。",
+              "vi": "người nước ngoài và người Nhật",
+              "accept_vi": [
+                "người ngoại quốc và người Nhật"
+              ]
+            },
+            {
+              "ja": "子供を連れて来てもいいです。",
+              "vi": "được dẫn trẻ em theo",
+              "accept_vi": [
+                "có thể dẫn con đến"
+              ],
+              "note_vi": "〜てもいい: được phép"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s13",
+          "ja": "時間：毎週（土）10：30～12：00",
+          "vi": "Thời gian: mỗi tuần vào thứ Bảy, 10:30 đến 12:00.",
+          "chunks": [
+            {
+              "ja": "時間：",
+              "vi": "thời gian:",
+              "accept_vi": [
+                "giờ:"
+              ]
+            },
+            {
+              "ja": "毎週（土）",
+              "vi": "mỗi tuần thứ Bảy",
+              "accept_vi": [
+                "hàng tuần vào thứ bảy"
+              ],
+              "note_vi": "土: thứ Bảy"
+            },
+            {
+              "ja": "10：30～12：00",
+              "vi": "10:30 đến 12:00",
+              "accept_vi": [
+                "10 rưỡi đến 12 giờ"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s14",
+          "ja": "集まる場所：山川公園入口",
+          "vi": "Nơi tập trung: lối vào công viên Yamakawa.",
+          "chunks": [
+            {
+              "ja": "集まる場所：",
+              "vi": "nơi tập trung:",
+              "accept_vi": [
+                "địa điểm tập hợp:"
+              ],
+              "note_vi": "集まる: tụ họp"
+            },
+            {
+              "ja": "山川公園入口",
+              "vi": "cổng vào công viên Yamakawa",
+              "accept_vi": [
+                "lối vào công viên Yamakawa"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s15",
+          "ja": "お金：ただです。",
+          "vi": "Tiền: miễn phí.",
+          "chunks": [
+            {
+              "ja": "お金：",
+              "vi": "tiền:",
+              "accept_vi": [
+                "phí:"
+              ]
+            },
+            {
+              "ja": "ただです",
+              "vi": "miễn phí",
+              "accept_vi": [
+                "không mất tiền",
+                "là miễn phí"
+              ],
+              "note_vi": "ただ: miễn phí"
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s16",
+          "ja": "日本語で話しましょう！",
+          "vi": "Cùng nói chuyện bằng tiếng Nhật nào!",
+          "chunks": [
+            {
+              "ja": "日本語で",
+              "vi": "bằng tiếng Nhật",
+              "accept_vi": [
+                "bằng tiếng nhật"
+              ]
+            },
+            {
+              "ja": "話しましょう",
+              "vi": "cùng nói chuyện nào",
+              "accept_vi": [
+                "hãy cùng nói chuyện"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s17",
+          "ja": "15歳以上の人、外国人30人以内、日本人30人以内。",
+          "vi": "Người từ 15 tuổi trở lên; người nước ngoài tối đa 30 người, người Nhật tối đa 30 người.",
+          "chunks": [
+            {
+              "ja": "15歳以上の人、",
+              "vi": "người từ 15 tuổi trở lên",
+              "accept_vi": [
+                "người trên 15 tuổi"
+              ]
+            },
+            {
+              "ja": "外国人30人以内、",
+              "vi": "người nước ngoài tối đa 30 người",
+              "accept_vi": [
+                "người ngoại quốc trong vòng 30 người"
+              ]
+            },
+            {
+              "ja": "日本人30人以内。",
+              "vi": "người Nhật tối đa 30 người",
+              "accept_vi": [
+                "người Nhật dưới 30 người"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s18",
+          "ja": "時間：毎週（日）14：00～16：00",
+          "vi": "Thời gian: mỗi tuần vào Chủ nhật, 14:00 đến 16:00.",
+          "chunks": [
+            {
+              "ja": "時間：",
+              "vi": "thời gian:",
+              "accept_vi": [
+                "giờ:"
+              ]
+            },
+            {
+              "ja": "毎週（日）",
+              "vi": "mỗi tuần Chủ nhật",
+              "accept_vi": [
+                "hàng tuần vào chủ nhật"
+              ],
+              "note_vi": "日: Chủ nhật"
+            },
+            {
+              "ja": "14：00～16：00",
+              "vi": "14:00 đến 16:00",
+              "accept_vi": [
+                "2 giờ chiều đến 4 giờ chiều"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s19",
+          "ja": "場所：山川市図書館3階",
+          "vi": "Địa điểm: tầng 3 thư viện thành phố Yamakawa.",
+          "chunks": [
+            {
+              "ja": "場所：",
+              "vi": "địa điểm:",
+              "accept_vi": [
+                "nơi:"
+              ]
+            },
+            {
+              "ja": "山川市図書館",
+              "vi": "thư viện thành phố Yamakawa",
+              "accept_vi": [
+                "thư viện thành phố Yamakawa"
+              ]
+            },
+            {
+              "ja": "3階",
+              "vi": "tầng 3",
+              "accept_vi": [
+                "lầu 3"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n4-2021-07-r-p5-s20",
+          "ja": "お金：1回100円",
+          "vi": "Tiền: 100 yên mỗi lần.",
+          "chunks": [
+            {
+              "ja": "お金：",
+              "vi": "tiền:",
+              "accept_vi": [
+                "phí:"
+              ]
+            },
+            {
+              "ja": "1回100円",
+              "vi": "100 yên mỗi lần",
+              "accept_vi": [
+                "100 yên một lần",
+                "100 yên/lần"
+              ],
+              "note_vi": "1回: một lần"
+            }
+          ],
+          "pitfalls": []
+        }
+      ]
+    }
+  ]
+}
