@@ -1,0 +1,2701 @@
+{
+ "id": "jlpt-n1-2024-07",
+ "source": {
+  "type": "jlpt",
+  "level": "N1",
+  "year": 2024,
+  "month": 7
+ },
+ "status": "published",
+ "review_note": "Chưa có script chính thức: lời thoại dựng lại từ audio (ASR + chỉnh tay), đáp án theo bảng 参考答案 trong video 'Choukai JLPT N1 7/2024' (không phải PDF chính thức); phương án in của 問題1, 問題2 và 問題5 câu 2 chép từ ảnh video.",
+ "speakers": {
+  "speaker": {
+   "ja": "話し手",
+   "vi": "Người nói",
+   "en": "Speaker"
+  },
+  "female2": {
+   "ja": "女2",
+   "vi": "Nữ 2",
+   "en": "Woman 2"
+  }
+ },
+ "sections": [
+  {
+   "no": 1,
+   "questions": [
+    {
+     "no": 1,
+     "prompt": {
+      "ja": "アルバイトの男の人はこの後まず何をしなければなりませんか。",
+      "vi": "Sau đó, người đàn ông làm thêm trước tiên phải làm gì?",
+      "en": "What must the man working part-time do first after this?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "スーパーでアルバイトの男の人と店長が話しています。",
+       "Ở siêu thị, một người đàn ông làm thêm và cửa hàng trưởng đang nói chuyện."
+      ],
+      [
+       "narrator",
+       "アルバイトの男の人はこの後まず何をしなければなりませんか。",
+       "Sau đó, người đàn ông làm thêm trước tiên phải làm gì?"
+      ],
+      [
+       "male",
+       "店長、おはようございます。",
+       "Chào cửa hàng trưởng ạ."
+      ],
+      [
+       "female",
+       "リーさん、お疲れ様。",
+       "Anh Lee, vất vả rồi."
+      ],
+      [
+       "female",
+       "今日は加藤さんと一緒に日用品売り場に夏に向けての商品を並べてもらいたいんだ。",
+       "Hôm nay tôi muốn anh cùng chị Kato xếp các mặt hàng chuẩn bị cho mùa hè ở quầy đồ dùng hằng ngày."
+      ],
+      [
+       "female",
+       "日焼け止めクリームとか仕入れて倉庫に積んであるから、それを棚に並べてね。",
+       "Kem chống nắng và các thứ khác đã nhập về, chất sẵn trong kho rồi, anh xếp chúng lên kệ nhé."
+      ],
+      [
+       "male",
+       "わかりました。",
+       "Em hiểu rồi ạ."
+      ],
+      [
+       "female",
+       "えーっと、加藤さんには今パンの消費期限のチェックをして値引きシールを貼る作業をやってもらってて。",
+       "Ừm, chị Kato hiện đang kiểm tra hạn sử dụng của bánh mì rồi dán tem giảm giá."
+      ],
+      [
+       "male",
+       "はい。",
+       "Vâng."
+      ],
+      [
+       "female",
+       "加藤さんの今の作業が終わったら始めてもらいたいから、リーさんは加藤さんを手伝って早く終わらせて。",
+       "Tôi muốn anh bắt đầu khi công việc hiện tại của chị Kato xong, nên anh Lee hãy giúp chị Kato để làm cho xong sớm."
+      ],
+      [
+       "male",
+       "はい。",
+       "Vâng."
+      ],
+      [
+       "female",
+       "日用品売り場の棚に並んでる商品は、新しい商品を並べる時に倉庫に片付けてくださいね。",
+       "Hàng đang xếp trên kệ quầy đồ dùng hằng ngày thì khi xếp hàng mới, anh dọn vào kho nhé."
+      ],
+      [
+       "female",
+       "よろしくお願いします。",
+       "Nhờ anh nhé."
+      ],
+      [
+       "male",
+       "はい、わかりました。",
+       "Vâng, em hiểu rồi ạ."
+      ],
+      [
+       "narrator",
+       "アルバイトの男の人はこの後まず何をしなければなりませんか。",
+       "Sau đó, người đàn ông làm thêm trước tiên phải làm gì?"
+      ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "夏用の商品を棚に並べる",
+       "vi": "Xếp hàng dành cho mùa hè lên kệ",
+       "en": "Display summer products on the shelves"
+      },
+      {
+       "id": "2",
+       "ja": "倉庫に日焼け止めクリームを運ぶ",
+       "vi": "Chuyển kem chống nắng vào kho",
+       "en": "Carry the sunscreen to the warehouse"
+      },
+      {
+       "id": "3",
+       "ja": "パンに値引きシールをはる",
+       "vi": "Dán tem giảm giá lên bánh mì",
+       "en": "Put discount stickers on the bread"
+      },
+      {
+       "id": "4",
+       "ja": "棚の商品を片付ける",
+       "vi": "Dọn hàng trên kệ đi",
+       "en": "Clear away the products on the shelves"
+      }
+     ],
+     "answer": "3",
+     "evidence": [
+      8,
+      10
+     ],
+     "why": {
+      "1": "Sai: việc xếp hàng mùa hè lên kệ chỉ bắt đầu sau khi công việc hiện tại của chị Kato (dán tem giảm giá) xong, nên chưa phải việc đầu tiên.",
+      "2": "Sai: kem chống nắng đã được nhập và chất sẵn trong kho rồi; việc được giao là xếp chúng lên kệ, không ai bảo phải chuyển vào kho.",
+      "3": "Đúng: cửa hàng trưởng bảo anh giúp chị Kato đang kiểm tra hạn sử dụng bánh mì và dán tem giảm giá để làm cho xong sớm, rồi mới bắt đầu xếp hàng mùa hè.",
+      "4": "Sai: việc dọn hàng cũ trên kệ vào kho là làm khi xếp hàng mới lên, tức là sau này chứ không phải đầu tiên."
+     }
+    },
+    {
+     "no": 2,
+     "prompt": {
+      "ja": "女の人は会議の資料をどのように直しますか。",
+      "vi": "Người phụ nữ sẽ sửa tài liệu cuộc họp như thế nào?",
+      "en": "How will the woman revise the meeting materials?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "お菓子の会社で、女の人と課長が話しています。",
+       "Ở một công ty bánh kẹo, một người phụ nữ và trưởng phòng đang nói chuyện."
+      ],
+      [
+       "narrator",
+       "女の人は会議の資料をどのように直しますか。",
+       "Người phụ nữ sẽ sửa tài liệu cuộc họp như thế nào?"
+      ],
+      [
+       "female",
+       "課長、明日の会議の資料、新商品柔らかせんべいのパッケージのデザイン案を表紙に載せました。",
+       "Thưa trưởng phòng, trong tài liệu cuộc họp ngày mai, em đã đưa các phương án thiết kế bao bì của sản phẩm mới bánh senbei mềm lên trang bìa."
+      ],
+      [
+       "female",
+       "こちらは高齢者を主なターゲットにした商品です。",
+       "Đây là sản phẩm lấy người cao tuổi làm đối tượng chính."
+      ],
+      [
+       "male",
+       "ああ、資料の表紙に候補のデザイン案を三つ並べてくれたんだね。",
+       "À, em đã xếp ba phương án thiết kế ứng viên lên trang bìa tài liệu nhỉ."
+      ],
+      [
+       "male",
+       "同じデザインで赤青茶の色違いの三種類。",
+       "Cùng một thiết kế nhưng khác màu: đỏ, xanh, nâu, tổng cộng ba loại."
+      ],
+      [
+       "male",
+       "赤を大きくしているのはどうして？",
+       "Tại sao màu đỏ lại để to hơn?"
+      ],
+      [
+       "female",
+       "はい、先週の会議でご報告した通り、ネットで消費者へアンケートをした結果、総合的に赤を基調にした案が一番好評だったということで。",
+       "Vâng, như em đã báo cáo ở cuộc họp tuần trước, kết quả khảo sát người tiêu dùng trên mạng cho thấy xét tổng thể phương án lấy màu đỏ làm tông chính được ưa chuộng nhất ạ."
+      ],
+      [
+       "male",
+       "そうだったね。",
+       "Đúng rồi nhỉ."
+      ],
+      [
+       "male",
+       "総合的には赤が一番好評だったけど、確か年代によって好みが結構分かれてたよね。",
+       "Xét tổng thể màu đỏ được ưa chuộng nhất, nhưng nếu tôi nhớ không nhầm thì sở thích khá khác nhau tùy theo độ tuổi nhỉ."
+      ],
+      [
+       "male",
+       "今回の会議資料、年代別の回答のデータはどこに載せてある？",
+       "Trong tài liệu họp lần này, dữ liệu câu trả lời theo độ tuổi được đăng ở đâu?"
+      ],
+      [
+       "female",
+       "商品説明の後です。",
+       "Ở sau phần giới thiệu sản phẩm ạ."
+      ],
+      [
+       "male",
+       "ああ、グラフも載せてあるね。",
+       "À, có cả biểu đồ nữa nhỉ."
+      ],
+      [
+       "male",
+       "グラフの色ははっきりしてて見やすいと思うよ。",
+       "Màu của biểu đồ rõ ràng, tôi thấy dễ nhìn."
+      ],
+      [
+       "male",
+       "パッケージはターゲットの高齢者には赤より茶色が人気なんだ。",
+       "Với bao bì thì ở nhóm người cao tuổi là đối tượng mục tiêu, màu nâu được ưa chuộng hơn màu đỏ."
+      ],
+      [
+       "male",
+       "会議でもみんなの意見を聞く必要があるから、そうだな、この最初の3つのデザイン案、大きさに差をつけないでおいてもらえるかな。",
+       "Ở cuộc họp cũng cần nghe ý kiến của mọi người, nên thế này nhé, ba phương án thiết kế đầu tiên này, em để không chênh lệch kích cỡ được không?"
+      ],
+      [
+       "female",
+       "わかりました。",
+       "Em hiểu rồi ạ."
+      ],
+      [
+       "male",
+       "年代別の回答のデータは、資料の順を入れ替えて、商品説明の前で見せても良さそうだけど、とりあえずはこのままで。",
+       "Dữ liệu câu trả lời theo độ tuổi thì có thể đổi thứ tự tài liệu để cho xem trước phần giới thiệu sản phẩm cũng được, nhưng tạm thời cứ để như thế này."
+      ],
+      [
+       "narrator",
+       "女の人は会議の資料をどのように直しますか。",
+       "Người phụ nữ sẽ sửa tài liệu cuộc họp như thế nào?"
+      ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "すべてのデザイン案を削除する",
+       "vi": "Xóa tất cả các phương án thiết kế",
+       "en": "Delete all the design proposals"
+      },
+      {
+       "id": "2",
+       "ja": "すべてのデザイン案のサイズをそろえる",
+       "vi": "Làm cho tất cả các phương án thiết kế có cùng kích cỡ",
+       "en": "Make all the design proposals the same size"
+      },
+      {
+       "id": "3",
+       "ja": "年代別の回答のグラフの色を変える",
+       "vi": "Đổi màu của biểu đồ câu trả lời theo độ tuổi",
+       "en": "Change the colors of the graph of answers by age group"
+      },
+      {
+       "id": "4",
+       "ja": "年代別の回答のデータの位置を変える",
+       "vi": "Đổi vị trí của dữ liệu câu trả lời theo độ tuổi",
+       "en": "Change the position of the data of answers by age group"
+      }
+     ],
+     "answer": "2",
+     "evidence": [
+      14,
+      16,
+      18
+     ],
+     "why": {
+      "1": "Sai: trưởng phòng không hề bảo xóa phương án nào; ông muốn giữ cả ba phương án (đỏ, xanh, nâu) để hỏi ý kiến mọi người ở cuộc họp.",
+      "2": "Đúng: vì cần nghe ý kiến mọi người nên ông nhờ để ba phương án thiết kế ở trang bìa \"không chênh lệch kích cỡ\", tức là hiện đang để màu đỏ to hơn thì phải chỉnh cho bằng nhau.",
+      "3": "Sai: ông nhận xét màu của biểu đồ rõ ràng, dễ nhìn, nên không cần đổi màu.",
+      "4": "Sai: ông chỉ nói đổi thứ tự rồi cho xem trước phần giới thiệu sản phẩm thì cũng được, nhưng \"tạm thời cứ để như thế này\", nên không sửa vị trí dữ liệu."
+     }
+    },
+    {
+     "no": 3,
+     "prompt": {
+      "ja": "女の人はこの後まず何をしますか。",
+      "vi": "Sau đó người phụ nữ trước tiên sẽ làm gì?",
+      "en": "What will the woman do first after this?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "カバンの会社で男の社長と女の人が話しています。",
+       "Ở một công ty túi xách, giám đốc nam và một người phụ nữ đang nói chuyện."
+      ],
+      [
+       "narrator",
+       "女の人はこの後まず何をしますか。",
+       "Sau đó người phụ nữ trước tiên sẽ làm gì?"
+      ],
+      [
+       "male",
+       "村田さん、職人の井上さんから連絡あった？",
+       "Chị Murata, có liên lạc nào từ anh Inoue, thợ thủ công không?"
+      ],
+      [
+       "male",
+       "製作をお願いしている皮バッグの納期が遅れてるよね。",
+       "Hạn giao túi da mà ta nhờ anh ấy làm đang bị trễ nhỉ."
+      ],
+      [
+       "female",
+       "はい、先週お電話ありましたけど、指先をけがしてしまって作業に時間がかかるって。",
+       "Vâng, tuần trước anh ấy có gọi điện, nói là bị thương ở đầu ngón tay nên công việc mất thời gian."
+      ],
+      [
+       "male",
+       "そう、早く良くなるといいね。",
+       "Vậy à, mong anh ấy sớm khỏi nhỉ."
+      ],
+      [
+       "male",
+       "あのデザインのバッグ人気が出て予約がかなり増えてきてて、井上さんだけじゃ追いつかないから他の職人さんにも作業を依頼するって話も出てたけど、どうなってる？",
+       "Mẫu túi đó đang được ưa chuộng, lượng đặt trước tăng khá nhiều, chỉ mình anh Inoue thì không kịp nên có chuyện nhờ cả các thợ khác làm, tình hình thế nào rồi?"
+      ],
+      [
+       "female",
+       "職人さんをリストアップして3人まで絞ったので、サンプルの作成を頼んだところです。",
+       "Em đã lập danh sách thợ và thu hẹp còn 3 người, nên vừa mới nhờ họ làm hàng mẫu ạ."
+      ],
+      [
+       "male",
+       "そう、それは良かった。",
+       "Vậy à, thế thì tốt."
+      ],
+      [
+       "female",
+       "ただ、実際に作ったもの見ないと何とも言えませんし、3人のサンプルが揃ったらお持ちしますね。",
+       "Có điều, nếu không xem hàng thực tế làm ra thì chưa thể nói gì, nên khi mẫu của cả 3 người đã đủ em sẽ mang đến ạ."
+      ],
+      [
+       "female",
+       "早めに確保したいですよね。",
+       "Mình muốn nhanh chóng có được thợ nhỉ."
+      ],
+      [
+       "male",
+       "そうだねー。",
+       "Đúng vậy nhỉ."
+      ],
+      [
+       "male",
+       "この件は村田さんに任せるから、どんどん進めて。",
+       "Việc này tôi giao cho chị Murata, cứ tiến hành nhanh lên."
+      ],
+      [
+       "male",
+       "とはいえ、納期が遅れてる分だけど、どのぐらいでできそうか、まずそこ聞いといて。",
+       "Tuy vậy, về phần hạn giao đang bị trễ, hãy hỏi trước xem khoảng bao lâu thì làm xong."
+      ],
+      [
+       "male",
+       "新しい人にどれくらい頼むかにも関わるし、場合によっては予約受付を止めないといけなくなるから。",
+       "Vì nó liên quan đến việc nhờ người mới bao nhiêu, và tùy trường hợp có thể phải dừng nhận đặt trước."
+      ],
+      [
+       "female",
+       "はい、わかりました。",
+       "Vâng, em hiểu rồi ạ."
+      ],
+      [
+       "narrator",
+       "女の人はこの後まず何をしますか。",
+       "Sau đó người phụ nữ trước tiên sẽ làm gì?"
+      ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "井上さんに納品日をかくにんする",
+       "vi": "Xác nhận ngày giao hàng với anh Inoue",
+       "en": "Check the delivery date with Mr. Inoue"
+      },
+      {
+       "id": "2",
+       "ja": "職人のリストを社長に見せる",
+       "vi": "Cho giám đốc xem danh sách thợ thủ công",
+       "en": "Show the president the list of craftspeople"
+      },
+      {
+       "id": "3",
+       "ja": "職人にサンプルの作成を頼む",
+       "vi": "Nhờ thợ thủ công làm hàng mẫu",
+       "en": "Ask the craftspeople to make samples"
+      },
+      {
+       "id": "4",
+       "ja": "バッグの予約受付を中止する",
+       "vi": "Dừng nhận đặt trước túi",
+       "en": "Stop accepting reservations for the bag"
+      }
+     ],
+     "answer": "1",
+     "evidence": [
+      14,
+      15
+     ],
+     "why": {
+      "1": "Đúng: giám đốc dặn \"trước hết hãy hỏi xem phần hạn giao đang trễ thì khoảng bao lâu làm xong\" - tức là hỏi anh Inoue về ngày giao hàng, vì nó quyết định việc nhờ thợ mới bao nhiêu.",
+      "2": "Sai: cô chỉ nói sẽ mang hàng mẫu đến khi đủ mẫu của 3 người; không có việc cho giám đốc xem danh sách thợ.",
+      "3": "Sai: cô đã nhờ 3 thợ làm hàng mẫu rồi (\"vừa mới nhờ\"), đó là việc đã làm chứ không phải việc sắp làm.",
+      "4": "Sai: giám đốc chỉ nói tùy trường hợp có thể phải dừng nhận đặt trước; hiện chưa quyết định dừng, và việc cần làm trước là hỏi ngày giao."
+     }
+    },
+    {
+     "no": 4,
+     "prompt": {
+      "ja": "サークルの部長は企画書をどのように修正しますか。",
+      "vi": "Trưởng câu lạc bộ sẽ sửa bản kế hoạch như thế nào?",
+      "en": "How will the club president revise the project proposal?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "大学で大学祭の実行委員の女の学生とサークルの部長が話しています。",
+       "Ở trường đại học, một nữ sinh viên thuộc ban tổ chức lễ hội trường và trưởng câu lạc bộ đang nói chuyện."
+      ],
+      [
+       "narrator",
+       "サークルの部長は企画書をどのように修正しますか。",
+       "Trưởng câu lạc bộ sẽ sửa bản kế hoạch như thế nào?"
+      ],
+      [
+       "female",
+       "すみません。",
+       "Xin lỗi ạ."
+      ],
+      [
+       "female",
+       "大学祭実行委員の加藤です。",
+       "Em là Kato, thuộc ban tổ chức lễ hội trường."
+      ],
+      [
+       "female",
+       "このサークルはお祭りにラーメン屋を出しますよね？",
+       "Câu lạc bộ này mở quán ramen ở lễ hội đúng không ạ?"
+      ],
+      [
+       "female",
+       "え～、ご提出いただいた出展の企画書ですが、修正のお願いに来ました。",
+       "Ừm, về bản kế hoạch tham gia mà các anh chị đã nộp, em đến để nhờ chỉnh sửa ạ."
+      ],
+      [
+       "male",
+       "はい、私が部長の吉田です。",
+       "Vâng, tôi là Yoshida, trưởng câu lạc bộ."
+      ],
+      [
+       "female",
+       "吉田さん、企画書、責任者のお名前が抜けてました。",
+       "Anh Yoshida, trong bản kế hoạch bị thiếu tên người phụ trách."
+      ],
+      [
+       "female",
+       "こちらでお名前記入しておきました。",
+       "Bên em đã ghi tên vào sẵn rồi ạ."
+      ],
+      [
+       "male",
+       "すみません。",
+       "Xin lỗi nhé."
+      ],
+      [
+       "female",
+       "それから費用のところを確認してください。",
+       "Tiếp theo, anh hãy xem lại phần chi phí."
+      ],
+      [
+       "male",
+       "あ、はい。",
+       "À, vâng."
+      ],
+      [
+       "female",
+       "材料費の詳細、肉とか野菜とか、もう少し具体的に書いてください。",
+       "Chi tiết tiền nguyên liệu, như thịt hay rau, anh hãy viết cụ thể hơn một chút."
+      ],
+      [
+       "female",
+       "そうしないと大学から補助金が出ませんよ。",
+       "Nếu không thì trường sẽ không cấp tiền hỗ trợ đâu."
+      ],
+      [
+       "female",
+       "調理方法の説明はそのままで結構です。",
+       "Phần giải thích cách chế biến thì cứ để nguyên là được."
+      ],
+      [
+       "female",
+       "あ、それと当日の第1希望の場所は正門の近くになっていますが、希望が多いと抽選になります。",
+       "À, còn nữa, địa điểm nguyện vọng thứ nhất cho ngày hôm đó đang ghi là gần cổng chính, nhưng nếu nhiều người muốn thì sẽ bốc thăm."
+      ],
+      [
+       "female",
+       "場合によっては第2希望に回ってもらいますが、よろしくお願いします。",
+       "Tùy trường hợp có thể phải chuyển sang nguyện vọng thứ hai, mong anh thông cảm."
+      ],
+      [
+       "male",
+       "はい、わかりました。",
+       "Vâng, tôi hiểu rồi."
+      ],
+      [
+       "female",
+       "今週末までに出してください。",
+       "Hãy nộp lại trước cuối tuần này nhé."
+      ],
+      [
+       "male",
+       "はい。",
+       "Vâng."
+      ],
+      [
+       "narrator",
+       "サークルの部長は企画書をどのように修正しますか。",
+       "Trưởng câu lạc bộ sẽ sửa bản kế hoạch như thế nào?"
+      ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "責任者の名前を書く",
+       "vi": "Viết tên người phụ trách",
+       "en": "Write the name of the person in charge"
+      },
+      {
+       "id": "2",
+       "ja": "費用を詳しく書く",
+       "vi": "Viết chi tiết về chi phí",
+       "en": "Write the costs in detail"
+      },
+      {
+       "id": "3",
+       "ja": "調理方法の説明を書く",
+       "vi": "Viết phần giải thích cách chế biến",
+       "en": "Write the explanation of the cooking method"
+      },
+      {
+       "id": "4",
+       "ja": "第二希望の場所を書く",
+       "vi": "Viết địa điểm nguyện vọng thứ hai",
+       "en": "Write the second-choice location"
+      }
+     ],
+     "answer": "2",
+     "evidence": [
+      13,
+      14
+     ],
+     "why": {
+      "1": "Sai: tên người phụ trách bị thiếu nhưng phía ban tổ chức đã ghi vào giúp rồi, anh không phải viết.",
+      "2": "Đúng: ban tổ chức yêu cầu viết chi tiết tiền nguyên liệu (thịt, rau...) cụ thể hơn, nếu không trường sẽ không cấp tiền hỗ trợ.",
+      "3": "Sai: cô nói phần giải thích cách chế biến \"cứ để nguyên là được\", không cần sửa.",
+      "4": "Sai: nguyện vọng thứ hai chỉ được nhắc là có thể bị chuyển sang nếu bốc thăm trượt; không yêu cầu viết thêm địa điểm nguyện vọng thứ hai vào bản kế hoạch."
+     }
+    },
+    {
+     "no": 5,
+     "prompt": {
+      "ja": "参加者はこの後まず何に参加しますか。",
+      "vi": "Sau đó những người tham gia trước tiên sẽ tham gia hoạt động nào?",
+      "en": "What will the participants take part in first after this?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "海の体験学習のイベントで係の人が話しています。",
+       "Tại sự kiện học tập trải nghiệm về biển, một nhân viên phụ trách đang nói."
+      ],
+      [
+       "narrator",
+       "参加者はこの後まず何に参加しますか。",
+       "Sau đó những người tham gia trước tiên sẽ tham gia hoạt động nào?"
+      ],
+      [
+       "speaker",
+       "皆さん、「海を楽しもう体験」にご参加ありがとうございます。",
+       "Xin cảm ơn mọi người đã tham gia \"Trải nghiệm tận hưởng biển\"."
+      ],
+      [
+       "speaker",
+       "各種体験に先立って、屋内で海辺の生き物についてのセミナーを行う予定でしたが、本日は潮の流れを考慮し、屋外での活動を三つ先に行います。",
+       "Trước các hoạt động trải nghiệm, chúng tôi dự định tổ chức hội thảo về sinh vật ven biển trong nhà, nhưng hôm nay do tính đến dòng thủy triều nên sẽ tiến hành trước ba hoạt động ngoài trời."
+      ],
+      [
+       "speaker",
+       "午前中に浜辺から網で魚を捕る漁業体験を行います。",
+       "Buổi sáng sẽ có trải nghiệm đánh cá, dùng lưới bắt cá từ bãi biển."
+      ],
+      [
+       "speaker",
+       "漁業体験の準備が整うまでの間、海辺の生き物の観察会を開催します。",
+       "Trong lúc chờ chuẩn bị xong cho trải nghiệm đánh cá, sẽ tổ chức buổi quan sát các sinh vật ven biển."
+      ],
+      [
+       "speaker",
+       "午後はヨットの操縦体験から始めます。",
+       "Buổi chiều sẽ bắt đầu bằng trải nghiệm lái thuyền buồm."
+      ],
+      [
+       "narrator",
+       "参加者はこの後まず何に参加しますか。",
+       "Sau đó những người tham gia trước tiên sẽ tham gia hoạt động nào?"
+      ]
+     ],
+     "choices": [
+      {
+       "id": "1",
+       "ja": "海辺の生き物についてのセミナー",
+       "vi": "Hội thảo về các sinh vật ven biển",
+       "en": "Seminar about seashore creatures"
+      },
+      {
+       "id": "2",
+       "ja": "漁業体験",
+       "vi": "Trải nghiệm đánh cá",
+       "en": "Fishing experience"
+      },
+      {
+       "id": "3",
+       "ja": "海辺の生き物の観察会",
+       "vi": "Buổi quan sát các sinh vật ven biển",
+       "en": "Seashore creature observation session"
+      },
+      {
+       "id": "4",
+       "ja": "ヨットのそうじゅう体験",
+       "vi": "Trải nghiệm lái thuyền buồm",
+       "en": "Yacht-steering experience"
+      }
+     ],
+     "answer": "3",
+     "evidence": [
+      6,
+      7
+     ],
+     "why": {
+      "1": "Sai: hội thảo về sinh vật ven biển trong nhà vốn dự định làm trước, nhưng hôm nay do dòng thủy triều nên đã chuyển sang làm các hoạt động ngoài trời trước.",
+      "2": "Sai: trải nghiệm đánh cá tuy diễn ra buổi sáng nhưng phải chờ chuẩn bị xong; trong lúc chờ thì tổ chức buổi quan sát sinh vật nên đánh cá không phải việc đầu tiên.",
+      "3": "Đúng: trong thời gian chờ chuẩn bị cho trải nghiệm đánh cá, buổi quan sát các sinh vật ven biển được tổ chức trước, nên đây là hoạt động đầu tiên.",
+      "4": "Sai: trải nghiệm lái thuyền buồm chỉ bắt đầu từ buổi chiều."
+     }
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "questions": [
+    {
+     "no": 1,
+     "prompt": {
+      "ja": "店長はどんな絵本を子供に読んであげるといいと言っていますか。",
+      "vi": "Chủ cửa hàng nói nên đọc cho trẻ loại sách tranh nào?",
+      "en": "What kind of picture book does the store manager say is good to read to children?"
+     },
+     "choices": [
+      {
+       "id": "1",
+       "ja": "子供の年齢や好みに合う絵本",
+       "vi": "Sách tranh phù hợp với độ tuổi và sở thích của trẻ",
+       "en": "A picture book suited to the child's age and tastes"
+      },
+      {
+       "id": "2",
+       "ja": "教育効果が高い絵本",
+       "vi": "Sách tranh có hiệu quả giáo dục cao",
+       "en": "A picture book with high educational value"
+      },
+      {
+       "id": "3",
+       "ja": "長い間読まれている名作の絵本",
+       "vi": "Sách tranh kinh điển được đọc từ lâu",
+       "en": "A classic picture book that has been read for a long time"
+      },
+      {
+       "id": "4",
+       "ja": "自分自身が面白いと感じる絵本",
+       "vi": "Sách tranh mà chính mình thấy thú vị",
+       "en": "A picture book the parent finds interesting"
+      }
+     ],
+     "answer": "4",
+     "evidence": [
+      8,
+      9
+     ],
+     "why": {
+      "1": "Sai: việc cân nhắc độ tuổi và sở thích chỉ là điều nhiều phụ huynh hay băn khoăn, chủ cửa hàng không chọn đây làm ý kiến của mình.",
+      "2": "Sai: sách có hiệu quả giáo dục cao chỉ là lựa chọn của \"nhiều người\" mà chủ cửa hàng nhắc đến để so sánh, bà không nói đây là loại nên đọc.",
+      "3": "Sai: sách kinh điển được đọc từ lâu cũng chỉ là lựa chọn phổ biến của nhiều người, không phải quan điểm của chủ cửa hàng.",
+      "4": "Đúng: chủ cửa hàng nói \"rốt cuộc chỉ cần chính bố mẹ đọc lên thấy thú vị hay không\", vì khi bố mẹ vui thì trẻ cũng hứng thú với sách."
+     },
+     "lines": [
+      [
+       "narrator",
+       "ラジオでアナウンサーの男の人が本屋の店長にインタビューをしています。",
+       "Trên đài phát thanh, phát thanh viên nam đang phỏng vấn chủ một hiệu sách."
+      ],
+      [
+       "narrator",
+       "店長はどんな絵本を子供に読んであげるといいと言っていますか。",
+       "Chủ cửa hàng nói nên đọc cho trẻ loại sách tranh nào?"
+      ],
+      [
+       "male",
+       "絵本専門店のあおい書店の店長、高橋さんにお話を伺います。",
+       "Hôm nay chúng ta sẽ nghe chị Takahashi, chủ hiệu sách tranh chuyên biệt Aoi Shoten, chia sẻ."
+      ],
+      [
+       "male",
+       "絵本といってもいろいろなものがありますが、どんな絵本を子供に読んであげたらいいでしょうか。",
+       "Nói là sách tranh nhưng có rất nhiều loại, vậy nên đọc cho trẻ loại sách tranh nào thì tốt ạ?"
+      ],
+      [
+       "female",
+       "そうですね。",
+       "Vâng, để xem nào."
+      ],
+      [
+       "female",
+       "子供の年齢や好みを考えたり、何がいいか悩みますよね。",
+       "Người ta cân nhắc độ tuổi và sở thích của trẻ, rồi băn khoăn không biết chọn gì nhỉ."
+      ],
+      [
+       "female",
+       "教育効果が高い絵本や、長い間読まれている名作の絵本を読んであげるという方も多いと思います。",
+       "Tôi nghĩ cũng có nhiều người chọn sách tranh có hiệu quả giáo dục cao hoặc những tác phẩm kinh điển được đọc từ lâu để đọc cho con."
+      ],
+      [
+       "female",
+       "私は、親自身が読んで面白いかどうかということに尽きると思います。",
+       "Còn tôi thì nghĩ rốt cuộc chỉ cần chính bố mẹ đọc lên thấy thú vị hay không là đủ."
+      ],
+      [
+       "female",
+       "親が楽しみながら絵本を読んで聞かせることで、子供自身も本に興味関心を持つようになるのではないでしょうか。",
+       "Khi bố mẹ vừa đọc vừa thấy vui, thì chính đứa trẻ cũng sẽ dần quan tâm, hứng thú với sách, phải không ạ?"
+      ],
+      [
+       "male",
+       "そうですね。",
+       "Đúng vậy nhỉ."
+      ],
+      [
+       "narrator",
+       "店長はどんな絵本を子供に読んであげるといいと言っていますか。",
+       "Chủ cửa hàng nói nên đọc cho trẻ loại sách tranh nào?"
+      ]
+     ]
+    },
+    {
+     "no": 2,
+     "prompt": {
+      "ja": "部長は試作品をどのように変えた方がいいと言っていますか。",
+      "vi": "Trưởng phòng nói nên thay đổi sản phẩm làm thử như thế nào?",
+      "en": "How does the department head say the prototype should be changed?"
+     },
+     "choices": [
+      {
+       "id": "1",
+       "ja": "固形タイプの商品にする",
+       "vi": "Làm sản phẩm dạng rắn",
+       "en": "Make it a solid-type product"
+      },
+      {
+       "id": "2",
+       "ja": "容量を少なくする",
+       "vi": "Giảm dung tích",
+       "en": "Reduce the volume"
+      },
+      {
+       "id": "3",
+       "ja": "ふた付きの容器にする",
+       "vi": "Đổi sang bao bì có nắp",
+       "en": "Use a container with a lid"
+      },
+      {
+       "id": "4",
+       "ja": "味をもう少し甘くする",
+       "vi": "Làm vị ngọt hơn một chút",
+       "en": "Make it a little sweeter"
+      }
+     ],
+     "answer": "3",
+     "evidence": [
+      13
+     ],
+     "why": {
+      "1": "Sai: trưởng phòng khen dạng uống vì dạng rắn như bánh quy khó ăn với người cao tuổi, nên không bảo đổi sang dạng rắn.",
+      "2": "Sai: trưởng phòng thấy lượng một lần hơi nhiều, nhưng cô nhân viên giải thích dung tích nhiều để đủ dinh dưỡng một ngày, và ông đề xuất đổi nắp chứ không giảm dung tích.",
+      "3": "Đúng: vì có thể không uống hết một lần, trưởng phòng đề nghị đổi sang bao bì có nắp đóng lại được (キャップで閉められる容器).",
+      "4": "Sai: trưởng phòng nói có người thích ngọt hơn, nhưng cá nhân ông thấy độ ngọt hiện tại dễ uống hơn nên không cần sửa."
+     },
+     "lines": [
+      [
+       "narrator",
+       "会社で女の人と部長が話しています。",
+       "Một nữ nhân viên và trưởng phòng đang nói chuyện ở công ty."
+      ],
+      [
+       "narrator",
+       "部長は試作品をどのように変えた方がいいと言っていますか。",
+       "Trưởng phòng nói nên thay đổi sản phẩm làm thử như thế nào?"
+      ],
+      [
+       "female",
+       "健康ドリンクの試作品、飲んでいただけましたでしょうか。",
+       "Anh đã uống thử sản phẩm làm thử của thức uống tốt cho sức khỏe chưa ạ?"
+      ],
+      [
+       "male",
+       "飲みました。",
+       "Tôi uống rồi."
+      ],
+      [
+       "male",
+       "試作品の説明も読みましたよ。",
+       "Tôi cũng đọc cả phần giải thích về sản phẩm rồi."
+      ],
+      [
+       "male",
+       "今まで若い人をターゲットにしたドリンク商品は多かったけど、高齢者向けに開発したっていう点、斬新で良かったと思うよ。",
+       "Từ trước đến nay có nhiều sản phẩm đồ uống nhắm vào người trẻ, nhưng việc phát triển cho người cao tuổi thì tôi thấy mới mẻ và hay đấy."
+      ],
+      [
+       "female",
+       "ありがとうございます。",
+       "Cảm ơn anh."
+      ],
+      [
+       "female",
+       "高齢者が手軽に栄養を取れるよう、飲むタイプにしました。",
+       "Để người cao tuổi dễ dàng bổ sung dinh dưỡng, tôi đã làm dạng uống."
+      ],
+      [
+       "male",
+       "うん。",
+       "Ừ."
+      ],
+      [
+       "male",
+       "クッキーのような固形タイプは高齢の方だと食べづらかったりするからいいと思うんだけど、一回で飲む量としては少し多い気がしたんだけどどうかな。",
+       "Dạng rắn như bánh quy thì người cao tuổi có thể khó ăn nên làm dạng uống là tốt, nhưng tôi thấy lượng uống một lần hơi nhiều, cô thấy sao?"
+      ],
+      [
+       "female",
+       "そうですね。",
+       "Vâng."
+      ],
+      [
+       "female",
+       "一日で必要な栄養を摂取できるよう、他社の製品と比べると容量が多くなっています。",
+       "Để có thể nạp đủ dinh dưỡng cần thiết trong một ngày, dung tích của sản phẩm nhiều hơn so với sản phẩm của các công ty khác."
+      ],
+      [
+       "male",
+       "一度に飲み切れない場合があるかもしれないから、キャップで閉められる容器に変えたらどうかな。",
+       "Có thể có trường hợp không uống hết một lần, nên đổi sang loại bao bì có nắp đóng lại được thì sao?"
+      ],
+      [
+       "female",
+       "確かにそうですね。",
+       "Đúng là vậy ạ."
+      ],
+      [
+       "male",
+       "もう少し甘い方が好きな人もいるかもしれないけど、個人的にはこれぐらいの甘さの方が飲みやすかったし、いい商品になると思うから、頑張ってね。",
+       "Có thể có người thích ngọt hơn một chút, nhưng cá nhân tôi thấy độ ngọt này dễ uống hơn, và tôi nghĩ sẽ thành sản phẩm tốt, nên cố gắng nhé."
+      ],
+      [
+       "narrator",
+       "部長は試作品をどのように変えた方がいいと言っていますか。",
+       "Trưởng phòng nói nên thay đổi sản phẩm làm thử như thế nào?"
+      ]
+     ]
+    },
+    {
+     "no": 3,
+     "prompt": {
+      "ja": "男の人はどの講座を見学しますか。",
+      "vi": "Người đàn ông sẽ tham quan khóa học nào?",
+      "en": "Which course will the man observe?"
+     },
+     "choices": [
+      {
+       "id": "1",
+       "ja": "パソコンでイラストをえがく講座",
+       "vi": "Khóa học vẽ minh họa bằng máy tính",
+       "en": "The course on drawing illustrations on a computer"
+      },
+      {
+       "id": "2",
+       "ja": "油絵で風景をえがく講座",
+       "vi": "Khóa học vẽ phong cảnh bằng sơn dầu",
+       "en": "The course on painting landscapes in oils"
+      },
+      {
+       "id": "3",
+       "ja": "色えんぴつで動物をえがく講座",
+       "vi": "Khóa học vẽ động vật bằng bút chì màu",
+       "en": "The course on drawing animals with colored pencils"
+      },
+      {
+       "id": "4",
+       "ja": "はがきに季節の花をえがく講座",
+       "vi": "Khóa học vẽ hoa theo mùa lên bưu thiếp",
+       "en": "The course on drawing seasonal flowers on postcards"
+      }
+     ],
+     "answer": "1",
+     "evidence": [
+      11,
+      15
+     ],
+     "why": {
+      "1": "Đúng: người đàn ông là người mới, chưa có dụng cụ; khóa vẽ bằng máy tính có sẵn dụng cụ ở lớp, bắt đầu từ cách dùng phần mềm và có thể học từ buổi sau, nên anh chọn khóa có thể bắt đầu ngay này.",
+      "2": "Sai: khóa sơn dầu cần dụng cụ chuyên dụng và mọi người học rất nghiêm túc, không hợp với người mới chưa có dụng cụ.",
+      "3": "Sai: khóa vẽ động vật bằng bút chì màu tuy nhẹ nhàng nhưng hiện chưa mở vì giáo viên bận.",
+      "4": "Sai: khóa vẽ hoa lên bưu thiếp dễ bắt đầu nhưng chỉ có vào các thứ khác, không phải thứ Tư, nên không thể bắt đầu ngay."
+     },
+     "lines": [
+      [
+       "narrator",
+       "カルチャーセンターで男の人と受付の女の人が話しています。",
+       "Một người đàn ông và nữ nhân viên lễ tân đang nói chuyện ở trung tâm văn hóa."
+      ],
+      [
+       "narrator",
+       "男の人はどの講座を見学しますか。",
+       "Người đàn ông sẽ tham quan khóa học nào?"
+      ],
+      [
+       "male",
+       "すみません。",
+       "Xin lỗi."
+      ],
+      [
+       "male",
+       "絵を習いたいんですが、水曜日の講座は何かやっていますか。",
+       "Tôi muốn học vẽ, vào thứ Tư có khóa học nào không ạ?"
+      ],
+      [
+       "female",
+       "水曜日ですね。",
+       "Thứ Tư phải không ạ."
+      ],
+      [
+       "female",
+       "イラストや油絵の講座などがあります。",
+       "Có các khóa như minh họa và tranh sơn dầu."
+      ],
+      [
+       "female",
+       "油絵の講座は油絵専用の道具を使って風景を描くんですが、皆さんかなり本格的に取り組んでいらっしゃいます。",
+       "Khóa sơn dầu là dùng dụng cụ chuyên dụng để vẽ phong cảnh, mọi người theo học khá nghiêm túc."
+      ],
+      [
+       "male",
+       "初心者ですし道具も持ってないので、気軽にできるものがいいんですが。",
+       "Tôi là người mới bắt đầu và cũng chưa có dụng cụ, nên muốn khóa nào đó học nhẹ nhàng."
+      ],
+      [
+       "female",
+       "そうですね。",
+       "Vâng."
+      ],
+      [
+       "female",
+       "気軽なのは、色鉛筆で犬とか猫とか動物の絵を専門に描く講座があるんですけど、あいにく先生のご都合で今は開講してないんです。",
+       "Khóa nhẹ nhàng thì có khóa chuyên vẽ động vật như chó, mèo bằng bút chì màu, nhưng tiếc là do giáo viên bận nên hiện tại chưa mở."
+      ],
+      [
+       "female",
+       "パソコンでイラストを描く講座はどうですか。",
+       "Còn khóa vẽ minh họa bằng máy tính thì sao ạ?"
+      ],
+      [
+       "female",
+       "人気ありますよ。",
+       "Được yêu thích lắm đấy."
+      ],
+      [
+       "male",
+       "パソコンで絵を描くなんてやったことないんですが、大丈夫でしょうか。",
+       "Tôi chưa từng vẽ bằng máy tính, không biết có ổn không ạ?"
+      ],
+      [
+       "female",
+       "絵を描くソフトウェアの使い方から始めるので、大丈夫だと思います。",
+       "Khóa bắt đầu từ cách dùng phần mềm vẽ nên tôi nghĩ không sao đâu ạ."
+      ],
+      [
+       "female",
+       "パソコンやペンタブレットなどの道具は教室に準備してありますので、次の回から始められますよ。",
+       "Máy tính và bảng vẽ đều được chuẩn bị sẵn ở lớp nên anh có thể bắt đầu từ buổi sau."
+      ],
+      [
+       "female",
+       "ええ、今開講している中で一番気軽に始められるのは、はがきの講座ですけど。",
+       "Vâng, trong các khóa đang mở thì khóa dễ bắt đầu nhất là khóa vẽ trên bưu thiếp, nhưng mà."
+      ],
+      [
+       "female",
+       "はがきに季節の花を描くんですが、他の曜日しかないんです。",
+       "Khóa đó là vẽ hoa theo mùa lên bưu thiếp, nhưng chỉ có vào các thứ khác thôi."
+      ],
+      [
+       "male",
+       "そうですか。",
+       "Vậy ạ."
+      ],
+      [
+       "male",
+       "わかりました。",
+       "Tôi hiểu rồi."
+      ],
+      [
+       "male",
+       "じゃあ、すぐに始められる講座を一度見学させてもらえますか。",
+       "Vậy cho tôi tham quan thử một lần khóa học có thể bắt đầu ngay nhé."
+      ],
+      [
+       "narrator",
+       "男の人はどの講座を見学しますか。",
+       "Người đàn ông sẽ tham quan khóa học nào?"
+      ]
+     ]
+    },
+    {
+     "no": 4,
+     "prompt": {
+      "ja": "男の人は仕事の相手に何を高く評価してもらえたと言っていますか。",
+      "vi": "Người đàn ông nói đối tác công việc đã đánh giá cao điều gì?",
+      "en": "What does the man say his business partner rated highly?"
+     },
+     "choices": [
+      {
+       "id": "1",
+       "ja": "設計変更の依頼に応じたこと",
+       "vi": "Đã đáp ứng yêu cầu thay đổi thiết kế",
+       "en": "Responding to the request for a design change"
+      },
+      {
+       "id": "2",
+       "ja": "試作の部品がよくできたこと",
+       "vi": "Linh kiện làm thử được làm tốt",
+       "en": "The prototype parts turning out well"
+      },
+      {
+       "id": "3",
+       "ja": "予定より早く納品できたこと",
+       "vi": "Giao hàng sớm hơn dự định",
+       "en": "Delivering earlier than planned"
+      },
+      {
+       "id": "4",
+       "ja": "納品したばねが高品質だったこと",
+       "vi": "Lò xo đã giao có chất lượng cao",
+       "en": "The delivered springs being of high quality"
+      }
+     ],
+     "answer": "1",
+     "evidence": [
+      6
+     ],
+     "why": {
+      "1": "Đúng: người đàn ông nói phía Kitayama Kōgyō đánh giá cao việc đáp ứng được yêu cầu đột xuất (thay đổi thiết kế), nhờ vậy còn được nhờ làm thử các linh kiện khác.",
+      "2": "Sai: việc được nhờ làm thử các linh kiện khác là kết quả của việc được đánh giá cao, không phải điều được khen.",
+      "3": "Sai: giao sớm hơn dự định chỉ là điều hai người cùng thấy may mắn với nhau, chứ không phải điều đối tác đánh giá.",
+      "4": "Sai: kết quả kiểm tra chất lượng chưa có, hai người chỉ mong chất lượng cũng được đánh giá cao."
+     },
+     "lines": [
+      [
+       "narrator",
+       "バネの工場で男の人と女の人が話しています。",
+       "Một người đàn ông và một người phụ nữ đang nói chuyện ở nhà máy lò xo."
+      ],
+      [
+       "narrator",
+       "男の人は仕事の相手に何を高く評価してもらえたと言っていますか。",
+       "Người đàn ông nói đối tác công việc đã đánh giá cao điều gì?"
+      ],
+      [
+       "male",
+       "北山工業にソファーのバネ、納品してきました。",
+       "Tôi vừa đi giao lò xo ghế sofa cho Kitayama Kōgyō về."
+      ],
+      [
+       "female",
+       "お疲れ様です。",
+       "Anh vất vả rồi."
+      ],
+      [
+       "female",
+       "反応どうでした。",
+       "Phản ứng của họ thế nào?"
+      ],
+      [
+       "male",
+       "北山工業さんの急な要望に対応できたこと、高く評価してもらいましたよ。",
+       "Họ đánh giá cao việc mình đã đáp ứng được yêu cầu đột xuất của Kitayama Kōgyō."
+      ],
+      [
+       "male",
+       "おかげで、他の部品の試作品も作ってほしいって言ってもらえたんです。",
+       "Nhờ vậy họ còn nhờ mình làm thử cả các linh kiện khác nữa."
+      ],
+      [
+       "female",
+       "それは良かったです。",
+       "Thế thì tốt quá."
+      ],
+      [
+       "female",
+       "加工開始日のギリギリで設計を変更して、苦労しましたよね。",
+       "Thay đổi thiết kế sát ngày bắt đầu gia công, vất vả thật nhỉ."
+      ],
+      [
+       "female",
+       "ただ、うちの工場、デジタル化が進んだから、加工にかかる時間は前よりも短くなりましたね。",
+       "Có điều nhà máy mình đã số hóa nhiều nên thời gian gia công ngắn hơn trước nhỉ."
+      ],
+      [
+       "male",
+       "ええ、本当に。",
+       "Vâng, đúng thật."
+      ],
+      [
+       "male",
+       "予定より早く納品できてよかった。",
+       "Giao hàng sớm hơn dự định được thật tốt."
+      ],
+      [
+       "female",
+       "ですよね。",
+       "Đúng nhỉ."
+      ],
+      [
+       "male",
+       "北山工業での品質検査結果は、あさって出るそうです。",
+       "Nghe nói kết quả kiểm tra chất lượng ở Kitayama Kōgyō sẽ có vào ngày kia."
+      ],
+      [
+       "male",
+       "品質についても評価が高いといいですけど。",
+       "Mong là về chất lượng cũng được đánh giá cao."
+      ],
+      [
+       "female",
+       "そうですね。",
+       "Vâng nhỉ."
+      ],
+      [
+       "narrator",
+       "男の人は仕事の相手に何を高く評価してもらえたと言っていますか。",
+       "Người đàn ông nói đối tác công việc đã đánh giá cao điều gì?"
+      ]
+     ]
+    },
+    {
+     "no": 5,
+     "prompt": {
+      "ja": "部長がこの宣伝動画についての分析で一番重視しているのは何ですか。",
+      "vi": "Điều mà trưởng phòng coi trọng nhất trong phân tích về video quảng cáo này là gì?",
+      "en": "What does the department head consider most important in the analysis of this promotional video?"
+     },
+     "choices": [
+      {
+       "id": "1",
+       "ja": "ターゲットにした人が動画を見たか",
+       "vi": "Người thuộc nhóm mục tiêu có xem video hay không",
+       "en": "Whether the targeted people watched the video"
+      },
+      {
+       "id": "2",
+       "ja": "動画の再生回数",
+       "vi": "Số lượt xem video",
+       "en": "The video's view count"
+      },
+      {
+       "id": "3",
+       "ja": "さまざまな国の人に見られたか",
+       "vi": "Video có được người ở nhiều nước xem hay không",
+       "en": "Whether people in various countries watched it"
+      },
+      {
+       "id": "4",
+       "ja": "動画が最後まで見られたか",
+       "vi": "Video có được xem đến cuối hay không",
+       "en": "Whether the video was watched to the end"
+      }
+     ],
+     "answer": "1",
+     "evidence": [
+      17
+     ],
+     "why": {
+      "1": "Đúng: trưởng phòng nói rõ điều quyết định vận mệnh sản phẩm là đúng những người mình nhắm đến có xem video hay không.",
+      "2": "Sai: trưởng phòng có để ý số lượt xem, nhưng đó chỉ là một trong nhiều hạng mục phân tích, không phải điều ông coi trọng nhất.",
+      "3": "Sai: phân tích lượt xem ở nước ngoài chỉ được nhờ thêm \"để cho chắc\" để tham khảo chiến lược sau này.",
+      "4": "Sai: việc có xem đến cuối hay không là điều ông muốn biết vì sản phẩm xuất hiện ở cuối, nhưng ông nhấn mạnh quan trọng nhất là có đúng đối tượng xem."
+     },
+     "lines": [
+      [
+       "narrator",
+       "会社で男の人と部長がある宣伝動画について話しています。",
+       "Một nhân viên nam và trưởng phòng đang nói chuyện về một video quảng cáo ở công ty."
+      ],
+      [
+       "narrator",
+       "部長がこの宣伝動画についての分析で一番重視しているのは何ですか。",
+       "Điều mà trưởng phòng coi trọng nhất trong phân tích về video quảng cáo này là gì?"
+      ],
+      [
+       "male",
+       "部長、インターネットで流している新しい化粧品の宣伝用の動画なんですが、視聴状況の分析結果、来週には出せると思います。",
+       "Trưởng phòng, về video quảng cáo mỹ phẩm mới đang chiếu trên mạng, em nghĩ tuần sau sẽ có kết quả phân tích tình hình xem."
+      ],
+      [
+       "female",
+       "ああ、あの10代20代の男性をターゲットにした化粧品ね。",
+       "À, loại mỹ phẩm nhắm vào nam giới tuổi 10 và 20 đó nhỉ."
+      ],
+      [
+       "male",
+       "はい。",
+       "Vâng."
+      ],
+      [
+       "female",
+       "この商品、動画の制作に力を入れた分、再生回数はやっぱり気になるね。",
+       "Sản phẩm này đã đầu tư nhiều vào làm video nên tôi vẫn để ý đến số lượt xem."
+      ],
+      [
+       "female",
+       "目標に達しているといいけど。",
+       "Mong là đã đạt mục tiêu."
+      ],
+      [
+       "female",
+       "あ、それから、動画に多言語の字幕もつけてたよね。",
+       "À, với lại video cũng gắn phụ đề nhiều ngôn ngữ nhỉ."
+      ],
+      [
+       "female",
+       "今後の戦略の参考にもなるから、念のため海外での再生についても分析お願いね。",
+       "Vì cũng sẽ là tham khảo cho chiến lược sau này, nên để cho chắc, nhờ cậu phân tích cả lượt xem ở nước ngoài nhé."
+      ],
+      [
+       "male",
+       "はい、視聴者の国別の再生数ですね。",
+       "Vâng, là số lượt xem theo quốc gia của người xem ạ."
+      ],
+      [
+       "male",
+       "あとは年齢や性別も分析します。",
+       "Ngoài ra em cũng sẽ phân tích theo độ tuổi và giới tính."
+      ],
+      [
+       "female",
+       "ええ。",
+       "Ừ."
+      ],
+      [
+       "female",
+       "それから、ちゃんとみんな最後まで見てくれてるのかわかるかな。",
+       "Và nữa, có biết được mọi người có xem đến cuối đàng hoàng không nhỉ."
+      ],
+      [
+       "female",
+       "商品が最後に出てくるから、最後まで見てほしいんだ。",
+       "Vì sản phẩm xuất hiện ở cuối nên tôi muốn mọi người xem đến hết."
+      ],
+      [
+       "male",
+       "それも重要ですよね。",
+       "Điều đó cũng quan trọng nhỉ."
+      ],
+      [
+       "male",
+       "調べます。",
+       "Em sẽ kiểm tra."
+      ],
+      [
+       "female",
+       "いろんな分析項目あるけど、狙い通りの人たちが見てくれたかどうかが、この商品の運命を決めると思ってるんで、よろしくね。",
+       "Có nhiều hạng mục phân tích, nhưng tôi nghĩ việc đúng những người mình nhắm đến có xem hay không sẽ quyết định vận mệnh của sản phẩm này, nên nhờ cậu nhé."
+      ],
+      [
+       "male",
+       "はい。",
+       "Vâng."
+      ],
+      [
+       "narrator",
+       "部長がこの宣伝動画についての分析で一番重視しているのは何ですか。",
+       "Điều mà trưởng phòng coi trọng nhất trong phân tích về video quảng cáo này là gì?"
+      ]
+     ]
+    },
+    {
+     "no": 6,
+     "prompt": {
+      "ja": "漁師は釣っても市場に出ない魚の中で最も多いのはどんな魚だと言っていますか。",
+      "vi": "Ngư dân nói trong số cá câu được mà không ra chợ, loại nhiều nhất là loại cá nào?",
+      "en": "Among the fish that are caught but don't reach the market, what kind does the fisherman say is the most common?"
+     },
+     "choices": [
+      {
+       "id": "1",
+       "ja": "サイズが規格外の魚",
+       "vi": "Cá có kích cỡ ngoài quy cách",
+       "en": "Fish of non-standard size"
+      },
+      {
+       "id": "2",
+       "ja": "売れ残るほど多く捕れてしまった魚",
+       "vi": "Cá đánh bắt được quá nhiều đến mức ế",
+       "en": "Fish caught in such numbers that they go unsold"
+      },
+      {
+       "id": "3",
+       "ja": "一般にあまり知られていない魚",
+       "vi": "Cá nói chung ít người biết đến",
+       "en": "Fish that are not generally well known"
+      },
+      {
+       "id": "4",
+       "ja": "調理するのが面倒な魚",
+       "vi": "Cá chế biến phiền phức",
+       "en": "Fish that are troublesome to prepare"
+      }
+     ],
+     "answer": "3",
+     "evidence": [
+      6
+     ],
+     "why": {
+      "1": "Sai: cá có kích cỡ ngoài quy cách là một ví dụ được nêu đầu tiên, nhưng không phải loại chiếm tỷ lệ lớn nhất.",
+      "2": "Sai: loại bắt được quá nhiều dễ bị ế cũng chỉ là một ví dụ, không phải loại nhiều nhất.",
+      "3": "Đúng: ngư dân nói cá ít được biết đến (知名度が低い魚) chiếm tỷ lệ lớn hơn hết thảy các loại khác.",
+      "4": "Sai: loại có gai, chế biến phiền phức chỉ được nhắc thêm ở cuối là cũng hay bị tránh, không phải loại nhiều nhất."
+     },
+     "lines": [
+      [
+       "narrator",
+       "テレビで漁師が話しています。",
+       "Một ngư dân đang nói trên truyền hình."
+      ],
+      [
+       "narrator",
+       "漁師は釣っても市場に出ない魚の中で最も多いのはどんな魚だと言っていますか。",
+       "Ngư dân nói trong số cá câu được mà không ra chợ, loại nhiều nhất là loại cá nào?"
+      ],
+      [
+       "speaker",
+       "漁師が釣っても市場にあまり流通しない魚があります。",
+       "Có những loại cá mà dù ngư dân câu được cũng ít khi lưu thông ra chợ."
+      ],
+      [
+       "speaker",
+       "例えばサイズが規格外のものは、食べにくいので市場では不人気なんです。",
+       "Chẳng hạn cá có kích cỡ ngoài quy cách thì khó ăn nên không được ưa chuộng ở chợ."
+      ],
+      [
+       "speaker",
+       "それから、漁獲量が十分でないと流通に乗せにくく、反対に多く取れすぎて売れ残る可能性が高いものも敬遠されがちです。",
+       "Rồi nếu sản lượng đánh bắt không đủ thì khó đưa vào lưu thông, ngược lại loại bắt được quá nhiều dễ bị ế cũng thường bị né tránh."
+      ],
+      [
+       "speaker",
+       "あと、知名度が低い魚、占める割合はこれが何より大きいんですね。",
+       "Ngoài ra là cá ít được biết đến, và tỷ lệ mà loại này chiếm là lớn nhất."
+      ],
+      [
+       "speaker",
+       "姿形になじみのあるものの方にお客さんの手は伸びやすいんです。",
+       "Khách hàng dễ với tay lấy những loại có hình dáng quen thuộc hơn."
+      ],
+      [
+       "speaker",
+       "また、トゲがあって調理が面倒なものも避けられることが多いです。",
+       "Ngoài ra loại có gai, chế biến phiền phức cũng thường bị tránh."
+      ],
+      [
+       "narrator",
+       "漁師は釣っても市場に出ない魚の中で最も多いのはどんな魚だと言っていますか。",
+       "Ngư dân nói trong số cá câu được mà không ra chợ, loại nhiều nhất là loại cá nào?"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "questions": [
+    {
+     "no": 1,
+     "prompt": {
+      "ja": "アナウンサーは主に何について話していますか。",
+      "vi": "Phát thanh viên chủ yếu nói về điều gì?",
+      "en": "What is the announcer mainly talking about?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "ラジオでアナウンサーが話しています。",
+       "Phát thanh viên đang nói trên đài."
+      ],
+      [
+       "speaker",
+       "大学生の学生寮に注目が再び集まっています。",
+       "Ký túc xá dành cho sinh viên đại học đang một lần nữa được chú ý."
+      ],
+      [
+       "speaker",
+       "40年前は学生寮に入る人が大半でしたが、だんだんルールが厳しく息苦しいという理由で避けられ、一人暮らしのアパートの人気が高まりました。",
+       "40 năm trước phần lớn sinh viên vào ký túc xá, nhưng dần dần vì lý do quy định ngày càng khắt khe, ngột ngạt nên bị né tránh, và căn hộ ở một mình trở nên được ưa chuộng."
+      ],
+      [
+       "speaker",
+       "しかし最近の寮は、楽器練習用の部屋など共用施設を充実させたりと魅力的になっています。",
+       "Tuy nhiên, ký túc xá gần đây trở nên hấp dẫn, chẳng hạn bổ sung đầy đủ các tiện ích dùng chung như phòng luyện tập nhạc cụ."
+      ],
+      [
+       "speaker",
+       "寮に入りたいという人が定員を超え、抽選までしている寮もあります。",
+       "Có những ký túc xá số người muốn vào vượt quá chỉ tiêu, thậm chí phải bốc thăm."
+      ],
+      [
+       "speaker",
+       "また、食事付きの寮や、職員が常駐の寮もあり、初めて一人暮らしをする学生にとってはいつも頼れる大人がいるという安全面の利点、食事の提供があることも安心感につながっているようです。",
+       "Ngoài ra còn có ký túc xá có kèm bữa ăn hay có nhân viên túc trực thường xuyên; với sinh viên lần đầu sống một mình thì lợi thế về an toàn là luôn có người lớn để nương tựa, và việc được cung cấp bữa ăn cũng có vẻ mang lại cảm giác yên tâm."
+      ],
+      [
+       "narrator",
+       "アナウンサーは主に何について話していますか。",
+       "Phát thanh viên chủ yếu nói về điều gì?"
+      ],
+      [
+       "choice_1",
+       "学生寮のルールの変化",
+       "Sự thay đổi quy định của ký túc xá",
+       "Changes in dormitory rules"
+      ],
+      [
+       "choice_2",
+       "学生寮の人気が復活した理由",
+       "Lý do ký túc xá lại được ưa chuộng",
+       "Why dormitories have become popular again"
+      ],
+      [
+       "choice_3",
+       "一人暮らしの学生が心配していること",
+       "Điều sinh viên sống một mình lo lắng",
+       "What students living alone worry about"
+      ],
+      [
+       "choice_4",
+       "一人暮らしの学生に人気がある食事",
+       "Bữa ăn được sinh viên sống một mình ưa chuộng",
+       "Meals popular with students living alone"
+      ]
+     ],
+     "answer": "2",
+     "evidence": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "why": {
+      "1": "Sai: quy định ký túc xá chỉ được nhắc ở quá khứ (khắt khe nên bị né tránh) như bối cảnh; nội dung chính là vì sao hiện nay ký túc xá lại hút khách, không phải việc quy định thay đổi.",
+      "2": "Đúng: sau khi nói ký túc xá từng bị né tránh, phát thanh viên nêu lý do nay lại được ưa chuộng: có tiện ích dùng chung hấp dẫn như phòng tập nhạc cụ, số người muốn vào vượt chỉ tiêu đến mức phải bốc thăm, có nhân viên túc trực và bữa ăn đem lại sự yên tâm, an toàn.",
+      "3": "Sai: bài nói không nói sinh viên sống một mình lo lắng điều gì; chỉ nói ký túc xá có người lớn túc trực và bữa ăn giúp họ yên tâm.",
+      "4": "Sai: bữa ăn chỉ là một trong các lý do khiến ký túc xá được ưa chuộng, không nói về loại bữa ăn nào được sinh viên thích."
+     }
+    },
+    {
+     "no": 2,
+     "prompt": {
+      "ja": "社長は何について話していますか。",
+      "vi": "Giám đốc đang nói về điều gì?",
+      "en": "What is the company president talking about?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "ビジネスセミナーで社長が話しています。",
+       "Giám đốc đang nói tại một buổi hội thảo kinh doanh."
+      ],
+      [
+       "speaker",
+       "えー、私は種を撒くという言葉が好きです。",
+       "Ừm, tôi thích cụm từ \"gieo hạt\"."
+      ],
+      [
+       "speaker",
+       "大きな花を咲かせたいと思うなら、まず種を撒くことだ。そして、芽が出るまで待つことも楽しめ、と、会社経営をしていた亡き父が教えてくれました。",
+       "\"Nếu muốn nở được bông hoa lớn thì trước hết phải gieo hạt. Và hãy tận hưởng cả việc chờ đến khi hạt nảy mầm\", người cha quá cố từng điều hành công ty đã dạy tôi như vậy."
+      ],
+      [
+       "speaker",
+       "普段は無口でほとんど話さない人だったんですが、私が最初の事業でつまずいた時、そう声をかけてくれました。",
+       "Cha vốn là người ít nói, hầu như không trò chuyện, nhưng khi tôi vấp ngã ở công việc kinh doanh đầu tiên, ông đã nói với tôi như thế."
+      ],
+      [
+       "speaker",
+       "私は学生時代からいくつもの事業を手掛けていますが、リスクもありますし、うまくいかないこともあります。",
+       "Từ thời sinh viên tôi đã làm nhiều dự án kinh doanh, nhưng cũng có rủi ro và có lúc không thuận lợi."
+      ],
+      [
+       "speaker",
+       "そんな時いつも父の言葉に励まされてきました。",
+       "Những lúc như vậy, tôi luôn được lời của cha động viên."
+      ],
+      [
+       "speaker",
+       "これからも新たな土地を耕し、種を蒔き続けていこうと思っています。",
+       "Từ nay tôi cũng định tiếp tục khai khẩn vùng đất mới và gieo hạt."
+      ],
+      [
+       "narrator",
+       "社長は何について話していますか。",
+       "Giám đốc đang nói về điều gì?"
+      ],
+      [
+       "choice_1",
+       "自分にとっての心の支え",
+       "Chỗ dựa tinh thần của bản thân",
+       "What gives him emotional support"
+      ],
+      [
+       "choice_2",
+       "父から引き継いだ事業",
+       "Công việc kinh doanh kế thừa từ cha",
+       "The business inherited from his father"
+      ],
+      [
+       "choice_3",
+       "起業する時のリスク",
+       "Rủi ro khi khởi nghiệp",
+       "The risks of starting a business"
+      ],
+      [
+       "choice_4",
+       "会社を始めたきっかけ",
+       "Lý do bắt đầu công ty",
+       "What led him to start the company"
+      ]
+     ],
+     "answer": "1",
+     "evidence": [
+      3,
+      4,
+      6
+     ],
+     "why": {
+      "1": "Đúng: người nói kể lời dạy \"gieo hạt\" của người cha, được nói ra khi ông vấp ngã lần đầu, và nói rằng mỗi lúc khó khăn ông đều được lời cha động viên, tiếp tục gieo hạt từ nay; tức lời cha là chỗ dựa tinh thần.",
+      "2": "Sai: cha là người điều hành công ty nhưng không hề nói là ông kế thừa công việc của cha; ông tự làm nhiều dự án từ thời sinh viên.",
+      "3": "Sai: rủi ro chỉ được nhắc một câu (cũng có rủi ro, có lúc không suôn sẻ) và không phải nội dung chính.",
+      "4": "Sai: không nói gì về lý do hay hoàn cảnh bắt đầu lập công ty."
+     }
+    },
+    {
+     "no": 3,
+     "prompt": {
+      "ja": "カーテンのメーカーの人は何について話していますか。",
+      "vi": "Người của hãng rèm cửa đang nói về điều gì?",
+      "en": "What is the curtain maker's representative talking about?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "ラジオでカーテンのメーカーの人が話しています。",
+       "Một người của hãng sản xuất rèm cửa đang nói trên đài."
+      ],
+      [
+       "speaker",
+       "日光が部屋に入るのを遮ったり、外から見えないようにするためにカーテンは欠かせませんよね。",
+       "Rèm cửa là thứ không thể thiếu để chắn ánh nắng vào phòng hay để không bị nhìn thấy từ bên ngoài, đúng không ạ."
+      ],
+      [
+       "speaker",
+       "日本では古くから、安く手軽に手に入れられる木や紙で作った簾や生地をカーテンのように用いてきました。",
+       "Ở Nhật từ xưa người ta đã dùng những tấm mành làm từ gỗ hay giấy, vải rẻ và dễ kiếm, như một kiểu rèm cửa."
+      ],
+      [
+       "speaker",
+       "カーテンが日本で広く使われるようになったのは、西洋的なライフスタイルが始まった昭和30年代以降です。",
+       "Rèm cửa được dùng rộng rãi ở Nhật là từ thập niên Showa 30 trở đi, khi lối sống kiểu phương Tây bắt đầu."
+      ],
+      [
+       "speaker",
+       "当時の日本は急激な経済成長に伴って、団地やアパートなどが次々と建てられるようになり、洋風にデザインされた住まいが一気に増えたからです。",
+       "Vì khi đó, cùng với tăng trưởng kinh tế nhanh chóng, các khu chung cư, căn hộ lần lượt được xây dựng và nhà ở thiết kế kiểu phương Tây tăng vọt."
+      ],
+      [
+       "speaker",
+       "それ以降、カーテンは私たちの生活に浸透しました。",
+       "Từ đó trở đi, rèm cửa đã thấm sâu vào cuộc sống của chúng ta."
+      ],
+      [
+       "narrator",
+       "カーテンのメーカーの人は何について話していますか。",
+       "Người của hãng rèm cửa đang nói về điều gì?"
+      ],
+      [
+       "choice_1",
+       "カーテンの素材の発展",
+       "Sự phát triển của chất liệu rèm cửa",
+       "The development of curtain materials"
+      ],
+      [
+       "choice_2",
+       "日本らしいカーテンのデザイン",
+       "Thiết kế rèm cửa mang phong cách Nhật",
+       "Distinctly Japanese curtain designs"
+      ],
+      [
+       "choice_3",
+       "カーテンの値段の変化",
+       "Sự thay đổi giá rèm cửa",
+       "Changes in curtain prices"
+      ],
+      [
+       "choice_4",
+       "日本におけるカーテンの普及",
+       "Sự phổ biến của rèm cửa ở Nhật Bản",
+       "The spread of curtains in Japan"
+      ]
+     ],
+     "answer": "4",
+     "evidence": [
+      4,
+      5,
+      6
+     ],
+     "why": {
+      "1": "Sai: chất liệu chỉ được nhắc khi nói người xưa dùng gỗ, giấy, vải làm thay rèm; không nói chất liệu rèm phát triển thế nào.",
+      "2": "Sai: không nói gì về thiết kế rèm mang phong cách Nhật; chỉ nhắc nhà ở thiết kế kiểu phương Tây tăng lên.",
+      "3": "Sai: không hề đề cập đến giá của rèm cửa; chỉ nói người xưa dùng vật liệu rẻ, dễ kiếm.",
+      "4": "Đúng: rèm cửa được dùng rộng rãi ở Nhật từ thập niên Showa 30 khi lối sống phương Tây bắt đầu và nhà kiểu Tây tăng nhanh, rồi thấm sâu vào đời sống; tức nói về quá trình phổ biến."
+     }
+    },
+    {
+     "no": 4,
+     "prompt": {
+      "ja": "作家は何について話していますか。",
+      "vi": "Nhà văn đang nói về điều gì?",
+      "en": "What is the writer talking about?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "テレビで作家が話しています。",
+       "Một nhà văn đang nói trên truyền hình."
+      ],
+      [
+       "speaker",
+       "私にとって桜町は第二のふるさとです。",
+       "Đối với tôi, thị trấn Sakura là quê hương thứ hai."
+      ],
+      [
+       "speaker",
+       "私の小説の舞台として、この街の商店街やお寺、坂道をしばしば登場させていますが、実は私がここで過ごしたのは、学生時代の4年に過ぎません。",
+       "Tôi thường cho khu phố mua sắm, chùa chiền, con dốc của thị trấn này xuất hiện làm bối cảnh trong tiểu thuyết của mình, nhưng thật ra thời gian tôi sống ở đây chỉ là 4 năm thời sinh viên."
+      ],
+      [
+       "speaker",
+       "親元を離れて暮らした4年間は、実に濃く、青春そのものでした。",
+       "4 năm xa nhà sống tự lập thật sự rất đậm đà, chính là tuổi thanh xuân."
+      ],
+      [
+       "speaker",
+       "思い出深い場所が数えきれないほどあります。",
+       "Có vô số nơi gắn với nhiều kỷ niệm."
+      ],
+      [
+       "speaker",
+       "10代20代を主人公に物語を書くとき、その背景には自然とこの町が存在しているんです。",
+       "Khi viết truyện với nhân vật chính ở độ tuổi 10 đến 20, thị trấn này tự nhiên hiện lên ở phía sau."
+      ],
+      [
+       "narrator",
+       "作家は何について話していますか。",
+       "Nhà văn đang nói về điều gì?"
+      ],
+      [
+       "choice_1",
+       "自分にとって特別な町",
+       "Thị trấn đặc biệt đối với bản thân",
+       "A town that is special to him"
+      ],
+      [
+       "choice_2",
+       "学生時代の経験",
+       "Trải nghiệm thời sinh viên",
+       "His experiences as a student"
+      ],
+      [
+       "choice_3",
+       "自分が生まれた故郷",
+       "Quê hương nơi mình sinh ra",
+       "The hometown where he was born"
+      ],
+      [
+       "choice_4",
+       "桜町の美しさ",
+       "Vẻ đẹp của thị trấn Sakura",
+       "The beauty of Sakura Town"
+      ]
+     ],
+     "answer": "1",
+     "evidence": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "why": {
+      "1": "Đúng: ngay câu đầu ông nói thị trấn Sakura là quê hương thứ hai, rồi kể thị trấn thường là bối cảnh tiểu thuyết, 4 năm sống ở đó là thanh xuân, có vô số nơi đầy kỷ niệm; tức đó là nơi đặc biệt với ông.",
+      "2": "Sai: thời sinh viên chỉ là khoảng thời gian ông sống ở thị trấn, nội dung chính là thị trấn chứ không phải việc kể trải nghiệm của thời đó.",
+      "3": "Sai: ông nói rõ mình chỉ sống ở đây 4 năm thời sinh viên, và gọi đó là quê hương thứ hai, nên không phải nơi ông sinh ra.",
+      "4": "Sai: không hề nhắc đến việc thị trấn đẹp; ông nói về kỷ niệm và tình cảm gắn bó."
+     }
+    },
+    {
+     "no": 5,
+     "prompt": {
+      "ja": "研究者はこの恐竜の何について話していますか。",
+      "vi": "Nhà nghiên cứu nói về điều gì của loài khủng long này?",
+      "en": "What is the researcher talking about regarding this dinosaur?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "科学館で恐竜の研究者が話しています。",
+       "Một nhà nghiên cứu khủng long đang nói tại bảo tàng khoa học."
+      ],
+      [
+       "speaker",
+       "10年前、緑市で恐竜の化石が発見されましたが、この恐竜が何を食べていたのかということは、これまでわかっていませんでした。",
+       "10 năm trước, hóa thạch khủng long được phát hiện ở thành phố Midori, nhưng loài khủng long này ăn gì thì cho đến nay vẫn chưa được biết."
+      ],
+      [
+       "speaker",
+       "仮に植物を食べる植物食だとして、どういう植物を食べていたのか、私たち研究グループは、この恐竜の歯の化石の表面の微かな凹凸を最新の技術で分析しました。",
+       "Giả sử nó là loài ăn thực vật, thì nó đã ăn loại thực vật nào; nhóm nghiên cứu chúng tôi đã dùng công nghệ mới nhất để phân tích những chỗ lồi lõm rất nhỏ trên bề mặt hóa thạch răng của loài khủng long này."
+      ],
+      [
+       "speaker",
+       "そして爬虫類の歯と比べたのです。",
+       "Rồi so sánh với răng của các loài bò sát."
+      ],
+      [
+       "speaker",
+       "例えば爬虫類の動物に虫や植物などを食べさせた時、歯につく細かい傷は食べたものによって異なります。",
+       "Chẳng hạn khi cho động vật thuộc bò sát ăn côn trùng hay thực vật, các vết xước nhỏ để lại trên răng khác nhau tùy theo thứ chúng ăn."
+      ],
+      [
+       "speaker",
+       "その違いを分析し、この恐竜の歯の化石の表面に当てはめて考えることで、恐竜がどういったものを食べていたのかを具体的に推測できるようになったのです。",
+       "Bằng cách phân tích sự khác biệt đó rồi áp vào bề mặt hóa thạch răng của loài khủng long này, giờ đây chúng tôi có thể suy đoán cụ thể loài khủng long đã ăn những thứ gì."
+      ],
+      [
+       "narrator",
+       "研究者はこの恐竜の何について話していますか。",
+       "Nhà nghiên cứu nói về điều gì của loài khủng long này?"
+      ],
+      [
+       "choice_1",
+       "食べ物の食べ方",
+       "Cách ăn thức ăn",
+       "How it ate its food"
+      ],
+      [
+       "choice_2",
+       "食事をしていた場所の特徴",
+       "Đặc điểm của nơi nó từng ăn",
+       "Features of the places where it ate"
+      ],
+      [
+       "choice_3",
+       "生きていた時代の環境",
+       "Môi trường của thời đại nó sống",
+       "The environment of the era it lived in"
+      ],
+      [
+       "choice_4",
+       "食べていたものの調査方法",
+       "Phương pháp điều tra thứ nó đã ăn",
+       "The method for investigating what it ate"
+      ]
+     ],
+     "answer": "4",
+     "evidence": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "why": {
+      "1": "Sai: không nói về cách ăn (nhai, cắn thế nào); chỉ nói về việc xác định loại thức ăn.",
+      "2": "Sai: không có đoạn nào nói về địa điểm ăn của khủng long.",
+      "3": "Sai: hóa thạch được phát hiện 10 năm trước, nhưng không hề nói về môi trường thời đại nó sống.",
+      "4": "Đúng: bài nói giải thích cách làm: phân tích vết lồi lõm li ti trên răng hóa thạch bằng công nghệ mới, so với vết xước trên răng bò sát cho ăn các loại thức ăn khác nhau, từ đó suy đoán cụ thể khủng long ăn gì; tức là phương pháp điều tra."
+     }
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "questions": [
+    {
+     "no": 1,
+     "prompt": {
+      "ja": "今日の授業のレポート、そう簡単には書けそうもないよねー。",
+      "vi": "Báo cáo của buổi học hôm nay chắc không dễ viết đâu nhỉ.",
+      "en": "The report for today's class doesn't look like it'll be easy to write, does it?"
+     },
+     "lines": [
+      [
+       "speaker",
+       "今日の授業のレポート、そう簡単には書けそうもないよねー。",
+       "Báo cáo của buổi học hôm nay chắc không dễ viết đâu nhỉ."
+      ],
+      [
+       "choice_1",
+       "大変だけどやるしかないよ",
+       "Vất vả nhưng đành phải làm thôi.",
+       "It's tough, but we just have to do it."
+      ],
+      [
+       "choice_2",
+       "難しいと思ってないの",
+       "Cậu không nghĩ là khó à?",
+       "You don't think it's difficult?"
+      ],
+      [
+       "choice_3",
+       "本当、簡単で助かるよね",
+       "Đúng là dễ nên đỡ quá nhỉ.",
+       "It's really easy, which is a relief."
+      ]
+     ],
+     "answer": "1",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Đúng: 「そう簡単には書けそうもない」là than rằng không dễ viết; đáp lại bằng sự đồng cảm rằng vất vả nhưng đành phải làm là tự nhiên.",
+      "2": "Sai: người nói đã nói là khó rồi, hỏi \"cậu không nghĩ là khó à?\" là lệch ý.",
+      "3": "Sai: nói là dễ nên đỡ quá thì ngược hẳn với ý \"không dễ viết\"."
+     }
+    },
+    {
+     "no": 2,
+     "prompt": {
+      "ja": "僕、この間から和田さんともめてて。",
+      "vi": "Từ hôm trước tới giờ mình đang xích mích với anh Wada.",
+      "en": "I've been in a dispute with Mr. Wada since the other day."
+     },
+     "lines": [
+      [
+       "speaker",
+       "僕、この間から和田さんともめてて。",
+       "Từ hôm trước tới giờ mình đang xích mích với anh Wada."
+      ],
+      [
+       "choice_1",
+       "2人で楽しそうだねー",
+       "Hai người trông vui vẻ nhỉ.",
+       "You two seem to be having fun."
+      ],
+      [
+       "choice_2",
+       "仲直りしたんだ",
+       "Làm lành rồi à.",
+       "So you made up."
+      ],
+      [
+       "choice_3",
+       "え、何があったの",
+       "Ơ, đã có chuyện gì vậy?",
+       "Huh, what happened?"
+      ]
+     ],
+     "answer": "3",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Sai: 「もめる」là tranh cãi, xích mích; nói hai người vui vẻ là hiểu sai nghĩa.",
+      "2": "Sai: người nói vừa cho biết đang xích mích, chưa hề làm lành.",
+      "3": "Đúng: nghe tin đang xích mích thì hỏi nguyên nhân, có chuyện gì, là phản ứng tự nhiên."
+     }
+    },
+    {
+     "no": 3,
+     "prompt": {
+      "ja": "さっき見た映画の最後のシーン、私、胸を打たれた。",
+      "vi": "Cảnh cuối của bộ phim vừa xem, mình thật xúc động.",
+      "en": "The last scene of the movie we just saw really moved me."
+     },
+     "lines": [
+      [
+       "speaker",
+       "さっき見た映画の最後のシーン、私、胸を打たれた。",
+       "Cảnh cuối của bộ phim vừa xem, mình thật xúc động."
+      ],
+      [
+       "choice_1",
+       "どうしてワクワクしたの",
+       "Sao cậu lại hồi hộp háo hức thế?",
+       "Why were you excited?"
+      ],
+      [
+       "choice_2",
+       "僕もあのシーン、意味不明だったよ",
+       "Mình cũng thấy cảnh đó chẳng hiểu gì cả.",
+       "I found that scene incomprehensible too."
+      ],
+      [
+       "choice_3",
+       "感動的だったよねー",
+       "Cảm động thật nhỉ.",
+       "It was moving, wasn't it."
+      ]
+     ],
+     "answer": "3",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Sai: 「胸を打たれる」là cảm động sâu sắc chứ không phải háo hức, hồi hộp.",
+      "2": "Sai: người nói xúc động, còn câu này nói là không hiểu gì nên không ăn khớp.",
+      "3": "Đúng: 「胸を打たれた」tức là cảm động; câu này đồng tình rằng cảnh đó thật cảm động."
+     }
+    },
+    {
+     "no": 4,
+     "prompt": {
+      "ja": "お昼の定食屋で飲んだサービスのコーヒー、飲めたもんじゃなかったねー。",
+      "vi": "Cà phê tặng thêm uống ở quán cơm trưa nay thật không thể uống nổi nhỉ.",
+      "en": "The complimentary coffee we had at the set-meal restaurant at lunch was undrinkable, wasn't it?"
+     },
+     "lines": [
+      [
+       "speaker",
+       "お昼の定食屋で飲んだサービスのコーヒー、飲めたもんじゃなかったねー。",
+       "Cà phê tặng thêm uống ở quán cơm trưa nay thật không thể uống nổi nhỉ."
+      ],
+      [
+       "choice_1",
+       "もっと飲めばよかったね",
+       "Biết vậy uống nhiều hơn nhỉ.",
+       "We should have drunk more."
+      ],
+      [
+       "choice_2",
+       "確かにあれは美味しかったねー",
+       "Đúng thật, cái đó ngon nhỉ.",
+       "True, that was delicious."
+      ],
+      [
+       "choice_3",
+       "ちょっとひどかったよねー",
+       "Hơi tệ thật nhỉ.",
+       "It was pretty awful, wasn't it."
+      ]
+     ],
+     "answer": "3",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Sai: 「飲めたもんじゃない」là dở đến mức không uống nổi; nói nên uống nhiều hơn là trái ý.",
+      "2": "Sai: dù có từ \"đúng thật\" nhưng lại khen ngon, ngược với ý chê dở.",
+      "3": "Đúng: đồng tình rằng cà phê khá tệ, khớp với ý \"không uống nổi\"."
+     }
+    },
+    {
+     "no": 5,
+     "prompt": {
+      "ja": "森さんのことだから遅刻するはずないのに、来ないねー。",
+      "vi": "Là anh Mori thì lẽ ra không thể đến muộn, vậy mà vẫn chưa thấy đến nhỉ.",
+      "en": "Knowing Mr. Mori, he'd never be late, yet he hasn't shown up."
+     },
+     "lines": [
+      [
+       "speaker",
+       "森さんのことだから遅刻するはずないのに、来ないねー。",
+       "Là anh Mori thì lẽ ra không thể đến muộn, vậy mà vẫn chưa thấy đến nhỉ."
+      ],
+      [
+       "choice_1",
+       "いい加減ちゃんとしてほしいよねー",
+       "Mong anh ấy thôi cẩu thả đi nhỉ.",
+       "I wish he'd finally get his act together."
+      ],
+      [
+       "choice_2",
+       "森さんってよく遅刻するんだ",
+       "Anh Mori hay đến muộn à?",
+       "So Mr. Mori is often late?"
+      ],
+      [
+       "choice_3",
+       "遅れるなんて、どうしたんだろう",
+       "Đến muộn thế này, không biết có chuyện gì nhỉ.",
+       "To be late like this, I wonder what happened."
+      ]
+     ],
+     "answer": "3",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Sai: câu này ngụ ý anh Mori vốn hay cẩu thả, trái với \"không thể đến muộn\".",
+      "2": "Sai: người nói đã nói anh ấy không bao giờ đến muộn nên hỏi \"hay đến muộn à\" là hiểu ngược.",
+      "3": "Đúng: vì anh ấy vốn không đến muộn nên lấy làm lạ và lo, tự hỏi có chuyện gì."
+     }
+    },
+    {
+     "no": 6,
+     "prompt": {
+      "ja": "昨日のサークルの部員同士の言い合い、先輩に報告するまでもないよね。",
+      "vi": "Vụ cãi nhau giữa các thành viên câu lạc bộ hôm qua, chắc không cần báo cáo anh chị khóa trên đâu nhỉ.",
+      "en": "The argument between club members yesterday isn't worth reporting to the senior, is it?"
+     },
+     "lines": [
+      [
+       "speaker",
+       "昨日のサークルの部員同士の言い合い、先輩に報告するまでもないよね。",
+       "Vụ cãi nhau giữa các thành viên câu lạc bộ hôm qua, chắc không cần báo cáo anh chị khóa trên đâu nhỉ."
+      ],
+      [
+       "choice_1",
+       "え、先輩に言うんだね",
+       "Ơ, cậu định nói với đàn anh à.",
+       "What, so you're going to tell the senior."
+      ],
+      [
+       "choice_2",
+       "必要ないよね",
+       "Không cần thiết nhỉ.",
+       "There's no need, right."
+      ],
+      [
+       "choice_3",
+       "報告したほうがいいってことね",
+       "Ý là nên báo cáo đúng không.",
+       "So you mean we should report it."
+      ]
+     ],
+     "answer": "2",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Sai: 「報告するまでもない」là không cần báo cáo, nên hiểu thành định nói với đàn anh là sai.",
+      "2": "Đúng: đồng tình rằng không cần báo cáo, khớp với 「するまでもない」.",
+      "3": "Sai: ngược nghĩa, người nói cho rằng không cần báo cáo chứ không phải nên báo cáo."
+     }
+    },
+    {
+     "no": 7,
+     "prompt": {
+      "ja": "昨日うちの学校の柔道の試合見に行ったんだけど、負けはしないかハラハラしたよ。",
+      "vi": "Hôm qua mình đi xem trận judo của trường mình, hồi hộp lo không biết có thua không.",
+      "en": "I went to see our school's judo match yesterday, and I was on edge worrying we might lose."
+     },
+     "lines": [
+      [
+       "speaker",
+       "昨日うちの学校の柔道の試合見に行ったんだけど、負けはしないかハラハラしたよ。",
+       "Hôm qua mình đi xem trận judo của trường mình, hồi hộp lo không biết có thua không."
+      ],
+      [
+       "choice_1",
+       "なんとか勝てたんだ",
+       "Cuối cùng cũng thắng được nhỉ.",
+       "So you managed to win somehow."
+      ],
+      [
+       "choice_2",
+       "負けちゃって残念だったねー",
+       "Thua mất, tiếc quá nhỉ.",
+       "You lost, what a pity."
+      ],
+      [
+       "choice_3",
+       "余裕で勝ったんだね",
+       "Thắng dễ dàng nhỉ.",
+       "So you won easily."
+      ]
+     ],
+     "answer": "1",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Đúng: 「負けはしないかハラハラした」là lo lắng sợ thua; từ đó đoán là trận đấu sít sao, nên hỏi \"cuối cùng cũng thắng được à\" là hợp lý.",
+      "2": "Sai: người nói chỉ lo sẽ thua chứ không nói là đã thua.",
+      "3": "Sai: nếu thắng dễ dàng thì đã không phải hồi hộp lo lắng."
+     }
+    },
+    {
+     "no": 8,
+     "prompt": {
+      "ja": "課長、桜社への商品説明、私の担当なんですが、ご一緒願えないでしょうか。",
+      "vi": "Trưởng phòng, buổi giới thiệu sản phẩm cho công ty Sakura là phần tôi phụ trách, nhưng anh có thể đi cùng tôi được không ạ?",
+      "en": "Section Chief, the product presentation to Sakura Company is my responsibility, but could I ask you to come along with me?"
+     },
+     "lines": [
+      [
+       "speaker",
+       "課長、桜社への商品説明、私の担当なんですが、ご一緒願えないでしょうか。",
+       "Trưởng phòng, buổi giới thiệu sản phẩm cho công ty Sakura là phần tôi phụ trách, nhưng anh có thể đi cùng tôi được không ạ?"
+      ],
+      [
+       "choice_1",
+       "構いませんよ、行きますよ",
+       "Được thôi, tôi sẽ đi.",
+       "Sure, I'll go."
+      ],
+      [
+       "choice_2",
+       "担当者が行かないのはまずいでしょう",
+       "Người phụ trách mà không đi thì không ổn đâu.",
+       "It would be bad if the person in charge didn't go."
+      ],
+      [
+       "choice_3",
+       "私が代わりに行くんですね",
+       "Vậy là tôi đi thay cho cậu nhỉ.",
+       "So I'm going in your place."
+      ]
+     ],
+     "answer": "1",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Đúng: 「ご一緒願えないでしょうか」là lời nhờ đi cùng; chấp nhận lời nhờ bằng \"được thôi, tôi sẽ đi\" là phù hợp.",
+      "2": "Sai: người phụ trách chính là người nói, anh ấy đã định đi rồi; câu này trả lời lạc hướng.",
+      "3": "Sai: người nói nhờ đi cùng chứ không nhờ đi thay."
+     }
+    },
+    {
+     "no": 9,
+     "prompt": {
+      "ja": "加藤さん、データの分析は木村さんに叶う人はいないよね。",
+      "vi": "Anh Katou, về phân tích dữ liệu thì không ai sánh được với anh Kimura nhỉ.",
+      "en": "Mr. Kato, when it comes to data analysis, nobody can match Mr. Kimura, right?"
+     },
+     "lines": [
+      [
+       "speaker",
+       "加藤さん、データの分析は木村さんに叶う人はいないよね。",
+       "Anh Katou, về phân tích dữ liệu thì không ai sánh được với anh Kimura nhỉ."
+      ],
+      [
+       "choice_1",
+       "え、木村さん、さっぱりわかってないの",
+       "Ơ, anh Kimura hoàn toàn không hiểu gì à?",
+       "What, Mr. Kimura doesn't understand it at all?"
+      ],
+      [
+       "choice_2",
+       "木村さんが一番詳しいと思う",
+       "Mình nghĩ anh Kimura là người rành nhất.",
+       "I think Mr. Kimura knows the most."
+      ],
+      [
+       "choice_3",
+       "木村さん、データの分析は苦手らしい",
+       "Nghe nói anh Kimura kém khoản phân tích dữ liệu.",
+       "Apparently Mr. Kimura is bad at data analysis."
+      ]
+     ],
+     "answer": "2",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Sai: 「叶う人はいない」là không ai bằng, nghĩa là anh Kimura rất giỏi, không phải không hiểu gì.",
+      "2": "Đúng: đồng tình rằng anh Kimura là người am hiểu nhất, khớp với 「叶う人はいない」.",
+      "3": "Sai: nói anh ấy kém phân tích thì ngược với ý câu hỏi."
+     }
+    },
+    {
+     "no": 10,
+     "prompt": {
+      "ja": "課長に急にイベントの手伝い頼まれたけど、断るに断れなかったよ。",
+      "vi": "Trưởng phòng bất ngờ nhờ giúp sự kiện, nhưng mình muốn từ chối cũng không từ chối được.",
+      "en": "The section chief suddenly asked me to help with an event, and I just couldn't turn him down."
+     },
+     "lines": [
+      [
+       "speaker",
+       "課長に急にイベントの手伝い頼まれたけど、断るに断れなかったよ。",
+       "Trưởng phòng bất ngờ nhờ giúp sự kiện, nhưng mình muốn từ chối cũng không từ chối được."
+      ],
+      [
+       "choice_1",
+       "頼まれたら断れないよね",
+       "Được nhờ thì khó mà từ chối nhỉ.",
+       "When someone asks you, it's hard to say no."
+      ],
+      [
+       "choice_2",
+       "頼まれたのに断ったんだ",
+       "Được nhờ mà vẫn từ chối à.",
+       "So you turned it down even though you were asked."
+      ],
+      [
+       "choice_3",
+       "本当は断りたくなかったんだね",
+       "Thật ra cậu không muốn từ chối nhỉ.",
+       "So you actually didn't want to say no."
+      ]
+     ],
+     "answer": "1",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Đúng: 「断るに断れない」là muốn từ chối mà không từ chối được; đồng cảm rằng được nhờ thì khó từ chối là tự nhiên.",
+      "2": "Sai: người nói đã không từ chối được, tức là đã nhận lời.",
+      "3": "Sai: người nói vốn muốn từ chối nhưng không thể, không phải không muốn từ chối."
+     }
+    },
+    {
+     "no": 11,
+     "prompt": {
+      "ja": "新人の渡辺さん、先月の営業成績、ベテランの課長に迫る勢いだったって。",
+      "vi": "Nghe nói thành tích kinh doanh tháng trước của Watanabe, nhân viên mới, có đà đuổi sát trưởng phòng dày dạn kinh nghiệm.",
+      "en": "I heard that new hire Ms. Watanabe's sales results last month were closing in on the veteran section chief's."
+     },
+     "lines": [
+      [
+       "speaker",
+       "新人の渡辺さん、先月の営業成績、ベテランの課長に迫る勢いだったって。",
+       "Nghe nói thành tích kinh doanh tháng trước của Watanabe, nhân viên mới, có đà đuổi sát trưởng phòng dày dạn kinh nghiệm."
+      ],
+      [
+       "choice_1",
+       "課長の成績には全然届かないんだね",
+       "Vậy là còn lâu mới tới thành tích của trưởng phòng nhỉ.",
+       "So she's nowhere near the chief's results."
+      ],
+      [
+       "choice_2",
+       "あと少しで課長を抜くぐらいだった",
+       "Chỉ còn chút nữa là vượt trưởng phòng nhỉ.",
+       "She was almost about to overtake the chief."
+      ],
+      [
+       "choice_3",
+       "課長を超える結果だなんてすごいね",
+       "Kết quả vượt cả trưởng phòng, giỏi thật đấy.",
+       "Surpassing the chief's results, that's amazing."
+      ]
+     ],
+     "answer": "2",
+     "evidence": [
+      1
+     ],
+     "why": {
+      "1": "Sai: 「迫る勢い」là gần đuổi kịp, nên nói là hoàn toàn chưa tới là sai.",
+      "2": "Đúng: 「迫る」là sắp đuổi kịp; \"chỉ còn chút nữa là vượt\" diễn đạt đúng mức độ đó.",
+      "3": "Sai: chỉ là sắp bắt kịp chứ chưa vượt trưởng phòng."
+     }
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "questions": [
+    {
+     "no": 1,
+     "prompt": {
+      "ja": "新聞に載せる野球部の特集は何を書くことにしましたか。",
+      "vi": "Bài đặc biệt về đội bóng chày đăng trên báo sẽ viết về nội dung gì?",
+      "en": "What will the baseball team feature in the newspaper be about?"
+     },
+     "lines": [
+      [
+       "narrator",
+       "大学の新聞部で、部長と部員二人が話しています。",
+       "Trưởng ban và hai thành viên của câu lạc bộ báo chí trường đại học đang nói chuyện."
+      ],
+      [
+       "female",
+       "来月発行する新聞、野球部の地区大会に向けて特集を1ページ組むことになってるけど、そろそろ内容を決めなきゃね。",
+       "Tờ báo phát hành tháng sau, chúng ta định dành một trang đặc biệt cho giải khu vực của đội bóng chày, cũng đến lúc phải chốt nội dung rồi nhỉ."
+      ],
+      [
+       "female",
+       "どうしようか。",
+       "Làm sao đây nhỉ?"
+      ],
+      [
+       "male",
+       "地区大会、2か月後に迫ってますよね。",
+       "Giải khu vực chỉ còn 2 tháng nữa là đến nhỉ."
+      ],
+      [
+       "male",
+       "以前野球部を取り上げた時は、キャプテンの意気込みやチームの仕上がり具合を中心に取材しましたが、去年は準優勝に終わったので、今年こそって学内の期待も高まってますよね。",
+       "Lần trước khi đăng về đội bóng chày, chúng ta tập trung phỏng vấn quyết tâm của đội trưởng và độ hoàn thiện của đội, nhưng năm ngoái chỉ về nhì nên năm nay sự kỳ vọng trong trường cũng tăng cao nhỉ."
+      ],
+      [
+       "female",
+       "そうだねー。",
+       "Ừ nhỉ."
+      ],
+      [
+       "female",
+       "何がいいかなぁ。",
+       "Nên làm gì thì hay nhỉ?"
+      ],
+      [
+       "female",
+       "前やったのと同じようなのはしたくないし。",
+       "Mình không muốn làm giống lần trước."
+      ],
+      [
+       "male",
+       "ライバルチームの練習の様子を取材してはどうですか。",
+       "Hay là phỏng vấn tình hình luyện tập của đội đối thủ thì sao ạ?"
+      ],
+      [
+       "male",
+       "去年の優勝校とは、今年も間違いなく顔を合わせることになると思うんですけど。",
+       "Em nghĩ năm nay chắc chắn cũng sẽ gặp trường vô địch năm ngoái."
+      ],
+      [
+       "female",
+       "うん。",
+       "Ừ."
+      ],
+      [
+       "female",
+       "他にはどうかなぁ。",
+       "Còn gì khác không nhỉ?"
+      ],
+      [
+       "female2",
+       "選手たちの素顔に迫るっていうのはどうでしょう。",
+       "Thế còn đi sâu vào con người thật của các cầu thủ thì sao?"
+      ],
+      [
+       "female2",
+       "主要な選手に、例えば投手やキャプテンに密着して、1日を追うんです。",
+       "Bám sát một vài cầu thủ chủ chốt, ví dụ như người ném bóng hay đội trưởng, và theo dõi một ngày của họ."
+      ],
+      [
+       "female2",
+       "練習以外の時間どんな風に過ごしてるかとか、読んだ人が選手を身近に感じられるような情報がいいと思うんです。",
+       "Em nghĩ thông tin nên là kiểu như ngoài giờ tập họ trải qua thế nào, để người đọc cảm thấy gần gũi với cầu thủ."
+      ],
+      [
+       "female",
+       "そうだねー。",
+       "Ừ nhỉ."
+      ],
+      [
+       "female2",
+       "それか、レギュラー選手を全員紹介するっていうのもいいと思います。",
+       "Hoặc giới thiệu toàn bộ các cầu thủ chính thức cũng hay."
+      ],
+      [
+       "female2",
+       "選手の守備位置だけじゃなく、趣味とか好きな食べ物とか、顔写真と一緒に載せるんです。",
+       "Không chỉ vị trí phòng ngự mà cả sở thích, món ăn yêu thích, đăng kèm ảnh chân dung."
+      ],
+      [
+       "female2",
+       "読者がお気に入りの選手を見つけられるように。",
+       "Để độc giả tìm được cầu thủ mình yêu thích."
+      ],
+      [
+       "male",
+       "僕は対戦相手のことも情報としてあった方がいいと思いますけど。",
+       "Tôi thì nghĩ nên có cả thông tin về đối thủ nữa."
+      ],
+      [
+       "male",
+       "その方が応援に行った時に、試合を見てて面白いと思うんです。",
+       "Như vậy khi đi cổ vũ, xem trận đấu sẽ thú vị hơn."
+      ],
+      [
+       "female",
+       "そうだね。",
+       "Ừ nhỉ."
+      ],
+      [
+       "female",
+       "でも実際どのチームと対戦することになるかはまだわからないから、今他のチームのことを取り上げても、読者にはピンとこないかもしれないね。",
+       "Nhưng thực tế vẫn chưa biết sẽ đấu với đội nào, nên bây giờ có đăng về các đội khác thì độc giả cũng có thể không thấy hứng thú."
+      ],
+      [
+       "female",
+       "試合に出る選手全員っていうと紙面が限られてるし、さっきの密着取材の案、面白いんじゃないかな。",
+       "Nói là toàn bộ cầu thủ ra sân thì trang báo có hạn, nên phương án bám sát phỏng vấn lúc nãy chắc thú vị đấy."
+      ],
+      [
+       "female",
+       "うん、今回は何人かに絞って取材することにしよう。",
+       "Ừ, lần này ta sẽ thu hẹp lại vài người để phỏng vấn."
+      ],
+      [
+       "narrator",
+       "新聞に載せる野球部の特集は何を書くことにしましたか。",
+       "Bài đặc biệt về đội bóng chày đăng trên báo sẽ viết về nội dung gì?"
+      ],
+      [
+       "choice_1",
+       "大会に向けてのキャプテンの意気込み",
+       "Quyết tâm của đội trưởng hướng tới giải đấu",
+       "The captain's determination ahead of the tournament"
+      ],
+      [
+       "choice_2",
+       "ライバルチームの練習の様子",
+       "Tình hình luyện tập của đội đối thủ",
+       "How the rival team practices"
+      ],
+      [
+       "choice_3",
+       "主要な選手の1日の過ごし方",
+       "Cách các cầu thủ chủ chốt trải qua một ngày",
+       "How the key players spend a day"
+      ],
+      [
+       "choice_4",
+       "レギュラー選手全員の紹介",
+       "Giới thiệu toàn bộ cầu thủ chính thức",
+       "Introductions of all the regular players"
+      ]
+     ],
+     "answer": "3",
+     "evidence": [
+      14,
+      24,
+      25
+     ],
+     "why": {
+      "1": "Sai: nội dung quyết tâm của đội trưởng là cách đã làm lần trước; trưởng ban nói không muốn làm giống lần trước.",
+      "2": "Sai: có ý kiến phỏng vấn đội đối thủ, nhưng chưa biết sẽ đấu với đội nào nên đưa vào lúc này độc giả cũng khó hình dung.",
+      "3": "Đúng: trưởng ban cho rằng phương án bám sát vài cầu thủ chủ chốt (đội trưởng, người ném bóng) và theo dõi một ngày của họ là thú vị, và chốt là thu hẹp vài người để phỏng vấn.",
+      "4": "Sai: giới thiệu toàn bộ cầu thủ ra sân bị loại vì trang báo có hạn."
+     }
+    },
+    {
+     "no": 2,
+     "lines": [
+      [
+       "narrator",
+       "ラジオでアナウンサーが、夏の夜空を楽しむ講座について話しています。",
+       "Trên đài phát thanh, một phát thanh viên đang nói về các khóa học thưởng thức bầu trời đêm mùa hè."
+      ],
+      [
+       "speaker",
+       "山川市にある科学館では、来月、夏の夜空を楽しむための4つの講座を開くそうです。",
+       "Nghe nói tại nhà khoa học ở thành phố Yamakawa, tháng sau sẽ mở 4 khóa học để thưởng thức bầu trời đêm mùa hè."
+      ],
+      [
+       "speaker",
+       "講座1番は、オリジナルの星座作り。",
+       "Khóa học số 1 là tự tạo chòm sao riêng."
+      ],
+      [
+       "speaker",
+       "星空の写真を見ながら、自分たちで星を繋ぎ合わせて、自由に形を作り、名前をつけたり、星座の物語を作ったりします。",
+       "Vừa xem ảnh bầu trời sao, tự mình nối các ngôi sao lại, tạo hình tự do, đặt tên, và sáng tác câu chuyện cho chòm sao."
+      ],
+      [
+       "speaker",
+       "講座2番は、星空の撮影。",
+       "Khóa học số 2 là chụp ảnh bầu trời sao."
+      ],
+      [
+       "speaker",
+       "露出時間を長く設定できるカメラと三脚さえあれば、意外と簡単に星空を撮影できるそうですよ。",
+       "Nghe nói chỉ cần có máy ảnh có thể cài thời gian phơi sáng dài và chân máy là có thể chụp bầu trời sao dễ bất ngờ đấy."
+      ],
+      [
+       "speaker",
+       "講座3番は、流れ星の観察です。",
+       "Khóa học số 3 là quan sát sao băng."
+      ],
+      [
+       "speaker",
+       "来月中旬は、深夜の夜空に星が降り注ぐ、数年に一度の貴重な機会です。",
+       "Giữa tháng sau là cơ hội quý hiếm vài năm mới có một lần, khi sao đổ xuống bầu trời đêm khuya."
+      ],
+      [
+       "speaker",
+       "ゆっくり眺めながら、星に願い事をするのも素敵ですね。",
+       "Thong thả ngắm nhìn và ước nguyện với các vì sao cũng thật tuyệt nhỉ."
+      ],
+      [
+       "speaker",
+       "最後、講座4番は、地球を回る国際宇宙ステーションの観察です。",
+       "Cuối cùng, khóa học số 4 là quan sát Trạm Vũ trụ Quốc tế quay quanh Trái Đất."
+      ],
+      [
+       "speaker",
+       "国際宇宙ステーションは、実は日没後のある時間、ある方角に肉眼で見ることができるんだそうですよ。",
+       "Nghe nói thật ra có thể nhìn thấy Trạm Vũ trụ Quốc tế bằng mắt thường vào một thời điểm nhất định sau khi mặt trời lặn, ở một hướng nhất định."
+      ],
+      [
+       "male",
+       "どれか一緒に参加しようよ。",
+       "Cùng tham gia một khóa nào đó đi."
+      ],
+      [
+       "male",
+       "参加したいのあった？",
+       "Cậu có khóa nào muốn tham gia không?"
+      ],
+      [
+       "female",
+       "うーん、星座を作るよりは実際に見る方がいいかな。",
+       "Ừm, so với tạo chòm sao thì mình thích xem thực tế hơn."
+      ],
+      [
+       "female",
+       "あと、星空の写真は自分でも時々撮るから、違うのがいいな。",
+       "Với lại ảnh bầu trời sao thì thỉnh thoảng mình cũng tự chụp, nên muốn cái khác."
+      ],
+      [
+       "male",
+       "すごいね。",
+       "Giỏi nhỉ."
+      ],
+      [
+       "male",
+       "国際宇宙ステーションも撮ったことある？",
+       "Cậu đã từng chụp cả Trạm Vũ trụ Quốc tế chưa?"
+      ],
+      [
+       "female",
+       "うーん、まだ見たこともないの。",
+       "Ừm, mình còn chưa từng nhìn thấy nữa."
+      ],
+      [
+       "female",
+       "うーん、だからこの講座に参加して見てみたいな。",
+       "Ừm, nên mình muốn tham gia khóa này để xem thử."
+      ],
+      [
+       "male",
+       "そっか。",
+       "Vậy à."
+      ],
+      [
+       "male",
+       "うーん、でもそっちより、星をメインで見るやつの方がいいな。",
+       "Ừm, nhưng so với khóa đó mình thích khóa xem chủ yếu là các vì sao hơn."
+      ],
+      [
+       "female",
+       "そうだね、めったにないチャンスだもんね。",
+       "Ừ nhỉ, vì là cơ hội hiếm có mà."
+      ],
+      [
+       "female",
+       "それにしよう。",
+       "Chọn khóa đó đi."
+      ],
+      [
+       "narrator",
+       "質問1。女の人が最初に参加してみたいと思ったのはどの講座ですか。",
+       "Câu hỏi 1. Khóa học nào người phụ nữ muốn tham gia đầu tiên?"
+      ],
+      [
+       "narrator",
+       "質問2。二人はどの講座に参加することにしましたか。",
+       "Câu hỏi 2. Hai người đã quyết định tham gia khóa học nào?"
+      ]
+     ],
+     "sub": [
+      {
+       "prompt": {
+        "ja": "女の人が最初に参加してみたいと思ったのはどの講座ですか。",
+        "vi": "Khóa học nào người phụ nữ muốn tham gia đầu tiên?",
+        "en": "Which course did the woman first want to join?"
+       },
+       "choices": [
+        {
+         "id": "1",
+         "ja": "講座1番",
+         "vi": "Khóa học số 1",
+         "en": "Course No. 1"
+        },
+        {
+         "id": "2",
+         "ja": "講座2番",
+         "vi": "Khóa học số 2",
+         "en": "Course No. 2"
+        },
+        {
+         "id": "3",
+         "ja": "講座3番",
+         "vi": "Khóa học số 3",
+         "en": "Course No. 3"
+        },
+        {
+         "id": "4",
+         "ja": "講座4番",
+         "vi": "Khóa học số 4",
+         "en": "Course No. 4"
+        }
+       ],
+       "answer": "4",
+       "evidence": [
+        14,
+        18,
+        19
+       ],
+       "why": {
+        "1": "Sai: cô nói thà xem thực tế còn hơn tạo chòm sao nên không chọn khóa số 1.",
+        "2": "Sai: cô nói thỉnh thoảng tự chụp ảnh bầu trời sao rồi, muốn cái khác nên loại khóa chụp ảnh số 2.",
+        "3": "Sai: sao băng là khóa mà người đàn ông muốn; cô chỉ đồng ý sau đó.",
+        "4": "Đúng: cô chưa từng nhìn thấy Trạm Vũ trụ Quốc tế nên nói muốn tham gia khóa này (số 4) để xem."
+       }
+      },
+      {
+       "prompt": {
+        "ja": "二人はどの講座に参加することにしましたか。",
+        "vi": "Hai người đã quyết định tham gia khóa học nào?",
+        "en": "Which course did the two decide to join?"
+       },
+       "choices": [
+        {
+         "id": "1",
+         "ja": "講座1番",
+         "vi": "Khóa học số 1",
+         "en": "Course No. 1"
+        },
+        {
+         "id": "2",
+         "ja": "講座2番",
+         "vi": "Khóa học số 2",
+         "en": "Course No. 2"
+        },
+        {
+         "id": "3",
+         "ja": "講座3番",
+         "vi": "Khóa học số 3",
+         "en": "Course No. 3"
+        },
+        {
+         "id": "4",
+         "ja": "講座4番",
+         "vi": "Khóa học số 4",
+         "en": "Course No. 4"
+        }
+       ],
+       "answer": "3",
+       "evidence": [
+        21,
+        23
+       ],
+       "why": {
+        "1": "Sai: cả hai đều không muốn tạo chòm sao.",
+        "2": "Sai: người phụ nữ đã tự chụp ảnh bầu trời sao rồi, hai người không chọn khóa chụp ảnh.",
+        "3": "Đúng: người đàn ông muốn khóa xem chủ yếu là các vì sao (sao băng), người phụ nữ đồng ý vì là cơ hội hiếm có nên hai người chọn khóa số 3.",
+        "4": "Sai: người phụ nữ ban đầu muốn khóa này nhưng sau đó đồng ý đổi sang khóa xem sao của người đàn ông."
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
