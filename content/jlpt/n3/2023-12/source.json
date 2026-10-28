@@ -7,7 +7,7 @@
     "month": 12
   },
   "status": "published",
-  "review_note": "Đáp án 問題1-5 theo bảng đáp án nguồn (chép từ ảnh); riêng 問題1 câu 1 ô đáp án bị che nên lấy theo lời thoại (ア ウ) — khớp với phương án in của đề. Lời thoại chép từ phụ đề tự động của video nghe rồi sửa lỗi nhận dạng; tên riêng (Mina, Lin, Yamashita, Yoshida…) và phân vai nam/nữ trong một số lượt thoại là suy đoán từ ngữ cảnh. Hình minh họa 問題1 câu 1, 4 và 問題4 chưa được tải lên, hiện hiển thị phương án bằng chữ.",
+  "review_note": "Đáp án 問題1-5 theo bảng đáp án nguồn (chép từ ảnh); 問題1 câu 1 (đáp án 3: ア ウ) đã được người dùng xác nhận. Lời thoại chép từ phụ đề tự động của video nghe rồi sửa lỗi nhận dạng; tên riêng (Mina, Lin, Yamashita, Yoshida…) và phân vai nam/nữ trong một số lượt thoại là suy đoán từ ngữ cảnh. Hình 問題1 câu 1, 4 và 問題4 lấy từ hình đề trong video nghe.",
   "speakers": {
     "speaker": {
       "ja": "話し手",
@@ -121,7 +121,15 @@
               "男の留学生はこれから鞄に何を入れますか。",
               "Du học sinh nam sắp tới sẽ cho gì vào cặp?"
             ]
-          ]
+          ],
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242422/jlpt/n3/2023-12/m1-q1-figure.png",
+            "alt": {
+              "ja": "ア:セーター、イ:薬、ウ:切手 の3つの絵",
+              "vi": "Ba tranh: ア áo len, イ thuốc, ウ tem",
+              "en": "Three pictures: A a sweater, I medicine, U a stamp"
+            }
+          }
         },
         {
           "no": 2,
@@ -308,7 +316,7 @@
               "Tớ hiểu rồi. Sẽ xong trước đó."
             ],
             [
-              "male",
+              "female",
               "ありがとう。",
               "Cảm ơn cậu."
             ],
@@ -331,25 +339,37 @@
               "id": "1",
               "ja": "床をモップで拭く",
               "vi": "Lau sàn bằng cây lau nhà",
-              "en": "Mop the floor"
+              "en": "Mop the floor",
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242423/jlpt/n3/2023-12/m1-q4-c1.png"
+              }
             },
             {
               "id": "2",
               "ja": "傘立てを入り口の外に出す",
               "vi": "Đưa giá để ô ra ngoài cửa vào",
-              "en": "Put the umbrella stand outside the entrance"
+              "en": "Put the umbrella stand outside the entrance",
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242424/jlpt/n3/2023-12/m1-q4-c2.png"
+              }
             },
             {
               "id": "3",
               "ja": "店長に予約について聞きに行く",
               "vi": "Đến gặp quản lý để hỏi về đặt chỗ",
-              "en": "Go to the manager to ask about the reservation"
+              "en": "Go to the manager to ask about the reservation",
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242425/jlpt/n3/2023-12/m1-q4-c3.png"
+              }
             },
             {
               "id": "4",
               "ja": "外の席を拭く",
               "vi": "Lau bàn ghế ngoài trời",
-              "en": "Wipe the outdoor seats"
+              "en": "Wipe the outdoor seats",
+              "image": {
+                "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242426/jlpt/n3/2023-12/m1-q4-c4.png"
+              }
             }
           ],
           "answer": "2",
@@ -1522,7 +1542,15 @@
               "初めてお目にかかります。",
               "Rất hân hạnh được gặp lần đầu."
             ]
-          ]
+          ],
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242427/jlpt/n3/2023-12/m4-q1-figure.png",
+            "alt": {
+              "ja": "高校のクラス会の場面。矢印の人が先生に話しかけている。",
+              "vi": "Cảnh họp lớp cấp ba. Người có mũi tên đang bắt chuyện với thầy/cô.",
+              "en": "A high school class reunion. The person with the arrow is speaking to the teacher."
+            }
+          }
         },
         {
           "no": 2,
@@ -1592,7 +1620,15 @@
               "上着、忘れてるよ。",
               "Bạn quên áo khoác kìa."
             ]
-          ]
+          ],
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242428/jlpt/n3/2023-12/m4-q2-figure.png",
+            "alt": {
+              "ja": "教室を出る友達と、椅子に残された上着。矢印の人が友達に声をかける。",
+              "vi": "Người bạn ra khỏi lớp và chiếc áo khoác bỏ lại trên ghế. Người có mũi tên gọi bạn.",
+              "en": "A friend leaving the classroom and a jacket left on a chair. The person with the arrow calls out to the friend."
+            }
+          }
         },
         {
           "no": 3,
@@ -1662,7 +1698,15 @@
               "あの、この靴、いただけますか。",
               "Xin lỗi, cho tôi đôi giày này được không?"
             ]
-          ]
+          ],
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242429/jlpt/n3/2023-12/m4-q3-figure.png",
+            "alt": {
+              "ja": "靴の修理を頼む場面。矢印の女の人が店の人に取れた踵を見せている。",
+              "vi": "Cảnh nhờ sửa giày. Người phụ nữ có mũi tên đưa gót giày bị bong cho nhân viên cửa hàng.",
+              "en": "Asking for a shoe repair. The woman with the arrow shows the shop clerk the heel that came off."
+            }
+          }
         },
         {
           "no": 4,
@@ -1732,7 +1776,15 @@
               "これでいい？",
               "Thế này được chưa?"
             ]
-          ]
+          ],
+          "image": {
+            "url": "https://res.cloudinary.com/dv7w1z8si/image/upload/v1792242430/jlpt/n3/2023-12/m4-q4-figure.png",
+            "alt": {
+              "ja": "折り紙を習う場面。矢印の人が折りかけの折り紙を見せている。",
+              "vi": "Cảnh học gấp giấy. Người có mũi tên đang đưa miếng giấy gấp dở cho bạn xem.",
+              "en": "Learning origami. The person with the arrow shows the half-folded paper."
+            }
+          }
         }
       ]
     },
