@@ -20,6 +20,9 @@ import { createProgressRouter } from "./modules/progress/progressRoutes.js";
 import { createAdminRouter } from "./modules/admin/adminRoutes.js";
 import { createFeedbackRouter } from "./modules/feedback/feedbackRoutes.js";
 import { createLeaderboardRouter } from "./modules/leaderboard/leaderboardRoutes.js";
+import { DictionaryService } from "./modules/dict/DictionaryService.js";
+import { MongoDictionaryRepository } from "./modules/dict/MongoDictionaryRepository.js";
+import { createDictRouter } from "./modules/dict/dictRoutes.js";
 export function createApp(repo?: StaticContentRepository) {
   const contentRepo = repo ?? new StaticContentRepository(config.contentRoot);
   if (!repo) {
@@ -65,6 +68,7 @@ export function createApp(repo?: StaticContentRepository) {
   app.use("/api/progress", createProgressRouter(contentRepo));
   app.use("/api/feedback", createFeedbackRouter());
   app.use("/api/leaderboard", createLeaderboardRouter());
+  app.use("/api/dict", createDictRouter(new DictionaryService(new MongoDictionaryRepository())));
   app.use("/api/admin", createAdminRouter(contentRepo, config));
 
   app.use(
@@ -72,6 +76,7 @@ export function createApp(repo?: StaticContentRepository) {
       const e = err instanceof Error ? err : new Error(String(err));
       const status = err instanceof AppError ? err.status : 500;
       if (status >= 500) console.error(err);
+      res.removeHeader("Cache-Control");
       res
         .status(status)
         .json(errorBody(e, config.nodeEnv !== "production"));
