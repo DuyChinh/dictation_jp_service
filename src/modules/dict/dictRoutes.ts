@@ -20,9 +20,10 @@ const wrap =
 export function createDictRouter(service: DictionaryService): Router {
   const r = Router();
 
-  // The dictionary data changes only when it is re-imported, so browsers and proxies may keep answers.
+  // Answers change when the data or the lookup rules do, so a browser may reuse one only after the server
+  // confirms it is current (ETag), never blindly for an hour.
   r.use((_req, res, next) => {
-    res.set("Cache-Control", "public, max-age=3600");
+    res.set("Cache-Control", "no-cache");
     next();
   });
 

@@ -104,13 +104,23 @@ describe("lookupAt", () => {
     expect(r?.entries[0]?.senses[0]?.examples).toEqual([{ ja: "りんごを食べる。", en: "I eat an apple.", vi: "Tôi ăn táo." }]);
   });
 
-  it("shows a teacher-corrected sentence and leaves out senses that were taken down", async () => {
+  it("shows a teacher-corrected sentence and leaves out a sense that was taken down", async () => {
     VI[0] = { ...VI[0]!, xj: [["りんごを食べます。", ""]] };
     const r = await service.lookupAt("食べる", 0);
     expect(r?.entries[0]?.senses[0]?.examples[0]?.ja).toBe("りんごを食べます。");
+    // a second sense, then take the first down: only the second is left
+    ENTRIES[0]!.s.push({ p: ["v1"], g: ["to live on"] });
     VI[0] = { ...VI[0]!, hs: [0] };
-    expect((await service.lookupAt("食べる", 0))?.entries[0]?.senses).toEqual([]);
+    expect((await service.lookupAt("食べる", 0))?.entries[0]?.senses.map((s) => s.glosses)).toEqual([["to live on"]]);
+    ENTRIES[0]!.s.pop();
     VI[0] = { ...VI[0]!, xj: undefined, hs: undefined };
+  });
+
+  it("leaves out an entry whose every sense was taken down, in lookups and in searches", async () => {
+    VI[0] = { ...VI[0]!, hs: [0] };
+    expect((await service.lookupAt("食べる", 0))).toBeNull();
+    expect((await service.search("taberu")).entries.map((e) => e.id)).not.toContain(1);
+    VI[0] = { ...VI[0]!, hs: undefined };
   });
 
   it("gives nothing for punctuation, out-of-range offsets and unknown text", async () => {
@@ -149,6 +159,13 @@ describe("search", () => {
     expect((await service.search("ăn")).entries[0]?.id).toBe(1);
     // "an" with no marks may mean either; both are offered, 食べる (ăn) first
     expect((await service.search("an", "vi")).entries.map((e) => e.id)).toEqual([1, 11]);
+  });
+
+  it("looks Japanese text up as Japanese whatever language tab is chosen, and reads romaji on the 日本語 tab", async () => {
+    expect((await service.search("食べる", "en")).entries[0]?.id).toBe(1);
+    expect((await service.search("食べる", "vi")).entries[0]?.id).toBe(1);
+    expect((await service.search("食べる", "en")).lang).toBe("ja");
+    expect((await service.search("taberu", "ja")).entries[0]?.id).toBe(1);
   });
 
   it("returns an empty list when nothing matches", async () => {

@@ -99,6 +99,7 @@ export class DictionaryService {
           .slice(0, LOOKUP_ENTRIES);
         const matched = chars.slice(start, start + len).join("");
         const [dtos, kanji] = await Promise.all([this.toDtos(ranked.map((r) => r.entry)), this.kanjiOf(matched)]);
+        if (!dtos.length) continue; // every entry here was taken down; try a shorter word
         return { start, length: len, matched, reasons: ranked[0]!.reasons, entries: dtos, kanji };
       }
     }
@@ -107,11 +108,15 @@ export class DictionaryService {
 
   async search(query: string, lang: SearchLang = "auto", limit = SEARCH_LIMIT): Promise<SearchResult> {
     const q = query.trim().replace(/\s+/g, " ");
-    const resolved = lang === "auto" ? this.detectLang(q) : lang;
+    // Japanese text is always looked up as Japanese: the language tab only decides how Latin text is read.
+    const resolved = hasJapanese(q) ? "ja" : lang === "auto" ? this.detectLang(q) : lang;
     let found: IDictEntry[] = [];
 
-    if (resolved === "ja") found = await this.searchJapanese(q, limit);
-    else if (resolved === "en") found = await this.searchGloss(q, limit, "en");
+    if (resolved === "ja") {
+      // the 日本語 tab also takes romaji ("taberu")
+      const kana = hasJapanese(q) ? q : romajiToHiragana(q);
+      found = kana ? await this.searchJapanese(kana, limit) : [];
+    } else if (resolved === "en") found = await this.searchGloss(q, limit, "en");
     else found = await this.searchGloss(q, limit, "vi");
 
     // Latin text that is plain romaji ("taberu") may be a Japanese reading rather than English.
@@ -218,7 +223,8 @@ export class DictionaryService {
 
   private async toDtos(entries: IDictEntry[]): Promise<EntryDto[]> {
     const vi = await this.repo.getVi(entries.map((e) => e._id));
-    return entries.map((e) => entryToDto(e, vi.get(e._id)));
+    // an entry whose every sense was taken down (not for learners) is left out altogether
+    return entries.map((e) => entryToDto(e, vi.get(e._id))).filter((d) => d.senses.length > 0);
   }
 
   private async kanjiOf(text: string): Promise<KanjiDto[]> {
