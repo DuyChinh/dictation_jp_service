@@ -224,9 +224,13 @@ async function main() {
   await disconnectMongo();
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  });
+const isDirectRun = process.argv[1] && (process.argv[1].endsWith("vi-import.ts") || process.argv[1].endsWith("vi-import.js"));
+
+if (isDirectRun) {
+  main()
+    .then(() => process.exit(0))
+    .catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+}
