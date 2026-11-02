@@ -494,6 +494,34 @@ export function createProgressRouter(repo?: StaticContentRepository): Router {
     }
   });
 
+  // Clear dictation progress of some sentences of a lesson (one 問題), so only that part starts over
+  r.post("/dictation/clear", async (req: Request, res: Response) => {
+    try {
+      const userId = getUserIdFromAuthHeader(req);
+      if (!userId) {
+        return res.status(200).json({ success: true, localOnly: true });
+      }
+      const { lesson_id, segment_ids } = req.body ?? {};
+      if (
+        typeof lesson_id !== "string" ||
+        !Array.isArray(segment_ids) ||
+        segment_ids.length === 0 ||
+        !segment_ids.every((id: unknown) => typeof id === "string")
+      ) {
+        return res.status(400).json({ error: { message: "lesson_id and segment_ids are required" } });
+      }
+      const { deletedCount } = await Progress.deleteMany({
+        userId,
+        lessonId: lesson_id,
+        segmentId: { $in: segment_ids },
+      });
+      return res.json({ success: true, deleted: deletedCount });
+    } catch (err: any) {
+      console.error("Clear dictation segments error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to clear progress" } });
+    }
+  });
+
   // Clear a lesson's dictation progress so the learner can start it over
   r.delete("/lesson/:lessonId", async (req: Request, res: Response) => {
     try {

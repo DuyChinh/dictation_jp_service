@@ -156,6 +156,14 @@ describe("backend content + evaluate API", () => {
     expect(delRes.body.localOnly).toBe(true);
   });
 
+  it("keeps clearing some dictation sentences local without auth", async () => {
+    const res = await request(app)
+      .post("/api/progress/dictation/clear")
+      .send({ lesson_id: "fixture-sample-1", segment_ids: ["s1"] });
+    expect(res.status).toBe(200);
+    expect(res.body.localOnly).toBe(true);
+  });
+
   it("keeps lesson activity local without auth", async () => {
     const postRes = await request(app).post("/api/progress/activity").send({ lesson_id: "fixture-sample-1" });
     expect(postRes.status).toBe(200);
