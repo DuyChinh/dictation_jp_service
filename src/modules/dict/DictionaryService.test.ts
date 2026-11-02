@@ -161,6 +161,12 @@ describe("search", () => {
     expect((await service.search("an", "vi")).entries.map((e) => e.id)).toEqual([1, 11]);
   });
 
+  it("reads Latin text without marks as English, unless Vietnamese meanings are preferred", async () => {
+    const plain = (await service.search("an")).entries.map((e) => e.id);
+    expect(plain[0]).not.toBe(1);
+    expect((await service.search("an", "auto", 30, "vi")).entries.slice(0, 2).map((e) => e.id)).toEqual([1, 11]);
+  });
+
   it("looks Japanese text up as Japanese whatever language tab is chosen, and reads romaji on the 日本語 tab", async () => {
     expect((await service.search("食べる", "en")).entries[0]?.id).toBe(1);
     expect((await service.search("食べる", "vi")).entries[0]?.id).toBe(1);

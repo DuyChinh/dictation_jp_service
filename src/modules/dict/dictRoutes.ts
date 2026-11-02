@@ -39,7 +39,8 @@ export function createDictRouter(service: DictionaryService): Router {
     const q = String(req.query.q ?? "").trim();
     if (!q || q.length > 80) throw new AppError("BAD_REQUEST", "q must be 1-80 characters");
     const lang = LANGS.includes(req.query.lang as SearchLang) ? (req.query.lang as SearchLang) : "auto";
-    res.json(await service.search(q, lang, intParam(req.query.limit, 30, 1, 50)));
+    const prefer = req.query.meaning === "vi" || req.query.meaning === "en" ? req.query.meaning : undefined;
+    res.json(await service.search(q, lang, intParam(req.query.limit, 30, 1, 50), prefer));
   }));
 
   r.get("/entry/:id", wrap(async (req, res) => {

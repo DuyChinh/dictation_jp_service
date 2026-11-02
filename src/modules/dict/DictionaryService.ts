@@ -106,7 +106,11 @@ export class DictionaryService {
     return null;
   }
 
-  async search(query: string, lang: SearchLang = "auto", limit = SEARCH_LIMIT): Promise<SearchResult> {
+  /**
+   * `prefer` is the language the reader picked meanings in: Latin text without Vietnamese marks ("an") is read as
+   * English, but when Vietnamese is preferred its Vietnamese matches come first, so "an" still finds ăn.
+   */
+  async search(query: string, lang: SearchLang = "auto", limit = SEARCH_LIMIT, prefer?: "vi" | "en"): Promise<SearchResult> {
     const q = query.trim().replace(/\s+/g, " ");
     // Japanese text is always looked up as Japanese: the language tab only decides how Latin text is read.
     const resolved = hasJapanese(q) ? "ja" : lang === "auto" ? this.detectLang(q) : lang;
@@ -118,6 +122,12 @@ export class DictionaryService {
       found = kana ? await this.searchJapanese(kana, limit) : [];
     } else if (resolved === "en") found = await this.searchGloss(q, limit, "en");
     else found = await this.searchGloss(q, limit, "vi");
+
+    if (lang === "auto" && prefer === "vi" && resolved === "en") {
+      const vi = await this.searchGloss(q, limit, "vi");
+      const seen = new Set(vi.map((e) => e._id));
+      found = [...vi, ...found.filter((e) => !seen.has(e._id))].slice(0, limit);
+    }
 
     // Latin text that is plain romaji ("taberu") may be a Japanese reading rather than English.
     if (lang === "auto" && resolved !== "ja") {
