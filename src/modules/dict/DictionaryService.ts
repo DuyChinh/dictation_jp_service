@@ -232,9 +232,14 @@ export class DictionaryService {
   }
 
   private async toDtos(entries: IDictEntry[]): Promise<EntryDto[]> {
-    const vi = await this.repo.getVi(entries.map((e) => e._id));
+    const chars = [...new Set(entries.flatMap((e) => e.k.flatMap((k) => [...k.t].filter((c) => isKanji(c) && c !== "々"))))];
+    const [vi, kanjiRows] = await Promise.all([
+      this.repo.getVi(entries.map((e) => e._id)),
+      chars.length ? this.repo.getKanji(chars) : Promise.resolve([]),
+    ]);
+    const hanViet = new Map(kanjiRows.map((k) => [k._id, k.hv]));
     // an entry whose every sense was taken down (not for learners) is left out altogether
-    return entries.map((e) => entryToDto(e, vi.get(e._id))).filter((d) => d.senses.length > 0);
+    return entries.map((e) => entryToDto(e, vi.get(e._id), hanViet)).filter((d) => d.senses.length > 0);
   }
 
   private async kanjiOf(text: string): Promise<KanjiDto[]> {

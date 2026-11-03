@@ -1,4 +1,5 @@
 import type { IDictEntry, IDictKanji, IDictVi, ViSource } from "../../models/Dict.js";
+import { isKanji } from "./kana.js";
 
 export type EntryDto = {
   id: number;
@@ -20,6 +21,8 @@ export type EntryDto = {
     examples: Array<{ ja: string; en: string; vi: string | null }>;
   }>;
   viSource: ViSource | null;
+  /** Sino-Vietnamese reading of each kanji spelling that has one, e.g. { "以前": "DĨ TIỀN" } */
+  hanViet: Record<string, string>;
 };
 
 export type KanjiDto = {
@@ -36,8 +39,31 @@ export type KanjiDto = {
   parts: string[];
 };
 
-export function entryToDto(entry: IDictEntry, vi?: IDictVi | null): EntryDto {
+/**
+ * Sino-Vietnamese reading of a written form: the first reading of each kanji, in capitals ("以前" -> "DĨ TIỀN").
+ * Kana are skipped (食べる -> "THỰC") and 々 repeats the kanji before it. Null when the form has no kanji or one of
+ * them has no reading, since a partial reading would mislead.
+ */
+export function hanVietOfForm(form: string, hanViet: ReadonlyMap<string, string[]>): string | null {
+  const parts: string[] = [];
+  let previous: string | undefined;
+  for (const ch of form) {
+    if (!isKanji(ch)) continue;
+    const reading = ch === "々" ? previous : hanViet.get(ch)?.[0];
+    if (!reading) return null;
+    parts.push(reading.toUpperCase());
+    previous = reading;
+  }
+  return parts.length ? parts.join(" ") : null;
+}
+
+export function entryToDto(entry: IDictEntry, vi?: IDictVi | null, hanViet: ReadonlyMap<string, string[]> = new Map()): EntryDto {
   const translated = vi?.s ?? [];
+  const hanVietByForm: Record<string, string> = {};
+  for (const k of entry.k) {
+    const reading = hanVietOfForm(k.t, hanViet);
+    if (reading) hanVietByForm[k.t] = reading;
+  }
   return {
     id: entry._id,
     common: entry.c === 1,
@@ -64,6 +90,7 @@ export function entryToDto(entry: IDictEntry, vi?: IDictVi | null): EntryDto {
         .map(({ hidden: _hidden, ...x }) => x),
     })),
     viSource: vi ? vi.src : null,
+    hanViet: hanVietByForm,
   };
 }
 

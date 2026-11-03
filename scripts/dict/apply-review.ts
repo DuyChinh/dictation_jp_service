@@ -149,9 +149,10 @@ async function main() {
     const d = await load(dec.id);
     const text = dec.decision.replace(/\*/g, "");
     const key = `${si}:${k}`;
-    const isDrop = text.startsWith("Bỏ") || dec.note.includes("Đề xuất: **Bỏ**") || (text.startsWith("Giữ / Kiểm tra") && dec.n === 13);
+    const isDrop = text.startsWith("Bỏ");
     if (isDrop) {
       d.hx = [...new Set([...(d.hx ?? []), key])];
+      if (d.xj?.[si]?.[k]) d.xj[si]![k] = "";
       counts.drop++;
       continue;
     }

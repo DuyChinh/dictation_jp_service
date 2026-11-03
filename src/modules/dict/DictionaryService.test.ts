@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { IDictEntry, IDictKanji, IDictVi } from "../../models/Dict.js";
 import type { DictionaryRepository } from "./DictionaryRepository.js";
 import { DictionaryService } from "./DictionaryService.js";
+import { hanVietOfForm } from "./dictMappers.js";
 import { foldLatin, glossTokens, katakanaToHiragana, romajiToHiragana } from "./kana.js";
 
 function entry(id: number, kanji: string[], kana: string[], pos: string[], glosses: string[], w = 0): IDictEntry {
@@ -97,6 +98,7 @@ describe("lookupAt", () => {
     expect(r?.entries[0]?.senses[0]?.vi).toEqual(["ăn"]);
     expect(r?.entries[0]?.viSource).toBe("reviewed");
     expect(r?.kanji[0]?.hanViet).toEqual(["Thực"]);
+    expect(r?.entries[0]?.hanViet).toEqual({ "食べる": "THỰC" });
   });
 
   it("attaches Vietnamese to each example and leaves out the ones flagged as unsuitable", async () => {
@@ -193,5 +195,20 @@ describe("kana helpers", () => {
   it("folds Vietnamese and tokenises glosses", () => {
     expect(foldLatin("Đang ĂN cơm")).toBe("dang an com");
     expect(glossTokens("to eat (food)")).toEqual(["to", "eat", "food"]);
+  });
+});
+
+describe("hanVietOfForm", () => {
+  const hv = new Map([["以", ["Dĩ"]], ["前", ["Tiền", "Tiễn"]], ["人", ["Nhân"]]]);
+
+  it("joins the first reading of each kanji in capitals and skips kana", () => {
+    expect(hanVietOfForm("以前", hv)).toBe("DĨ TIỀN");
+    expect(hanVietOfForm("人々", hv)).toBe("NHÂN NHÂN");
+    expect(hanVietOfForm("前に", hv)).toBe("TIỀN");
+  });
+
+  it("gives nothing for kana only or when a kanji has no reading", () => {
+    expect(hanVietOfForm("たべる", hv)).toBeNull();
+    expect(hanVietOfForm("以食", hv)).toBeNull();
   });
 });
