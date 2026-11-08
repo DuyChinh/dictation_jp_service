@@ -38,6 +38,10 @@ describe("sanitizeCard", () => {
     const c = sanitizeCard({ ...card("a", 5), term: "  食べる ", reading: "たべる", entryId: 12 });
     expect(c).toMatchObject({ id: "a", term: "食べる", reading: "たべる", entryId: 12 });
   });
+  it("keeps the Sino-Vietnamese reading and trims it", () => {
+    expect(sanitizeCard({ ...card("a", 5), hanViet: " CẤU NHẬP " })).toMatchObject({ hanViet: "CẤU NHẬP" });
+    expect(sanitizeCard({ ...card("a", 5), hanViet: "  " })).not.toHaveProperty("hanViet");
+  });
   it("drops a card with no text, a bad id, or no deck", () => {
     expect(sanitizeCard({ ...card("a", 5), term: " " })).toBeNull();
     expect(sanitizeCard({ ...card("a", 5), definition: "" })).toBeNull();

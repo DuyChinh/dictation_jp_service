@@ -22,6 +22,8 @@ export type SyncCard = {
   definition: string;
   definitionLang: CardLang;
   reading?: string;
+  /** Sino-Vietnamese reading of the Japanese word, e.g. "CẤU NHẬP". */
+  hanViet?: string;
   entryId?: number;
   /** Leitner box 0-5 and when the card is next due. */
   box: number;
@@ -91,6 +93,8 @@ export function sanitizeCard(raw: unknown): SyncCard | null {
   };
   const reading = text(o.reading, 200);
   if (reading) card.reading = reading;
+  const hanViet = text(o.hanViet, 100);
+  if (hanViet) card.hanViet = hanViet;
   if (typeof o.entryId === "number" && Number.isInteger(o.entryId) && o.entryId > 0) card.entryId = o.entryId;
   if (o.deleted === true) card.deleted = true;
   else if (!card.term || !card.definition) return null;
