@@ -10,6 +10,7 @@ import { createFeedbackAdminRouter } from "./routes/feedbackRoutes.js";
 import { createOverviewAdminRouter } from "./routes/overviewRoutes.js";
 import { createPaymentsAdminRouter } from "./routes/paymentsRoutes.js";
 import { createUsersAdminRouter } from "./routes/usersRoutes.js";
+import { createTrafficAdminRouter } from "../traffic/trafficRoutes.js";
 
 /** Everything under /api/admin. Only /auth/login is reachable without an admin token. */
 export function createAdminRouter(repo: StaticContentRepository, cfg: AppConfig): Router {
@@ -18,6 +19,7 @@ export function createAdminRouter(repo: StaticContentRepository, cfg: AppConfig)
 
   r.use(requireAdmin);
   r.use("/overview", createOverviewAdminRouter(repo, cfg));
+  r.use("/traffic", createTrafficAdminRouter());
   r.use("/users", createUsersAdminRouter(repo));
   r.use("/payments", createPaymentsAdminRouter());
   r.use("/catalog", createCatalogAdminRouter());
