@@ -11,6 +11,10 @@ export type SyncDeck = {
   name: string;
   createdAt: number;
   updatedAt: number;
+  /** Set while the deck is public: the id in its share link. */
+  shareId?: string;
+  /** The deck that used to be called "default", before decks got real ids. */
+  legacyId?: string;
   deleted?: true;
 };
 
@@ -65,6 +69,10 @@ export function sanitizeDeck(raw: unknown): SyncDeck | null {
     createdAt: int(o.createdAt, 0, FAR, updatedAt),
     updatedAt,
   };
+  const shareId = idOf(o.shareId);
+  if (shareId) deck.shareId = shareId;
+  const legacyId = idOf(o.legacyId);
+  if (legacyId) deck.legacyId = legacyId;
   if (o.deleted === true) deck.deleted = true;
   else if (!deck.name) return null;
   return deck;
