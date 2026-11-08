@@ -23,6 +23,7 @@ import { createLeaderboardRouter } from "./modules/leaderboard/leaderboardRoutes
 import { DictionaryService } from "./modules/dict/DictionaryService.js";
 import { MongoDictionaryRepository } from "./modules/dict/MongoDictionaryRepository.js";
 import { createDictRouter } from "./modules/dict/dictRoutes.js";
+import { createFlashcardRouter } from "./modules/flashcards/flashcardRoutes.js";
 export function createApp(repo?: StaticContentRepository) {
   const contentRepo = repo ?? new StaticContentRepository(config.contentRoot);
   if (!repo) {
@@ -69,6 +70,7 @@ export function createApp(repo?: StaticContentRepository) {
   app.use("/api/feedback", createFeedbackRouter());
   app.use("/api/leaderboard", createLeaderboardRouter());
   app.use("/api/dict", createDictRouter(new DictionaryService(new MongoDictionaryRepository())));
+  app.use("/api/flashcards", createFlashcardRouter());
   app.use("/api/admin", createAdminRouter(contentRepo, config));
 
   app.use(
