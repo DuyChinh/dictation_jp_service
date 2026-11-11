@@ -11,6 +11,7 @@ import { ExamHistory } from "../../models/ExamHistory.js";
 import { awardPoints, POINTS } from "../leaderboard/leaderboardService.js";
 import { isLevel, type Level } from "../leaderboard/leaderboardSeed.js";
 import type { StaticContentRepository } from "../content/StaticContentRepository.js";
+import { createPaperProgressRouter } from "./paperProgressRoutes.js";
 
 /** Attempts kept per lesson and returned per request; older ones drop off. */
 const ATTEMPTS_PER_LESSON = 50;
@@ -191,6 +192,7 @@ function getUserIdFromAuthHeader(req: Request): string | null {
 
 export function createProgressRouter(repo?: StaticContentRepository): Router {
   const r = Router();
+  r.use(createPaperProgressRouter(getUserIdFromAuthHeader));
 
   /** The JLPT level of a lesson's content, when it has one. */
   const levelOf = (lessonId: string): Level | null => {
