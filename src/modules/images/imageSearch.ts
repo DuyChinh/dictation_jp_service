@@ -19,6 +19,8 @@ export type ImageSearchOptions = {
   fetchFn?: FetchFn;
   /** How long to wait for each source, in ms. */
   timeoutMs?: number;
+  /** How long the second source is waited for once the first has answered well, in ms. */
+  graceMs?: number;
   now?: () => number;
   /** Openverse API credentials (optional; they raise its rate limits). */
   openverseId?: string;
@@ -31,6 +33,8 @@ const COMMONS = "https://commons.wikimedia.org/w/api.php";
 const FULL_TTL_MS = 7 * 24 * 3600 * 1000;
 /** A half answer is kept briefly: long enough to spare the sources, short enough that the missing one is tried again. */
 const PARTIAL_TTL_MS = 5 * 60 * 1000;
+/** A half answer asked for again after this long makes another try for the missing source, in the background. */
+const RETRY_AFTER_MS = 20_000;
 const MAX_CACHED = 500;
 const OFFENSIVE = /\b(nud|naked|sex|porn|erotic|genital|fetish|bdsm|gore|corpse|topless|lingerie)/i;
 
@@ -56,11 +60,13 @@ export function licenseLabel(license: unknown, version: unknown): string | undef
 
 export function createImageSearch(opts: ImageSearchOptions = {}) {
   const fetchFn: FetchFn = opts.fetchFn ?? ((url, init) => fetch(url, init));
-  const timeoutMs = opts.timeoutMs ?? 8000;
+  const timeoutMs = opts.timeoutMs ?? 14000;
+  const graceMs = opts.graceMs ?? 2500;
   const now = opts.now ?? Date.now;
   const userAgent = opts.userAgent ?? "MottoFlashcards/1.0 (https://motto.io.vn)";
   const cache = new Map<string, { at: number; ttl: number; value: ImageSearchResult }>();
   const inflight = new Map<string, Promise<ImageSearchResult>>();
+  const retrying = new Set<string>();
   let token: { value: string; until: number } | null = null;
 
   async function getJson(url: string, headers: Record<string, string>): Promise<unknown> {
@@ -145,13 +151,15 @@ export function createImageSearch(opts: ImageSearchOptions = {}) {
     return hits;
   }
 
-  async function lookup(query: string, limit: number): Promise<ImageSearchResult & { ok: number }> {
-    const [ov, wm] = await Promise.allSettled([openverse(query, limit), wikimedia(query, limit)]);
-    const ok = (ov.status === "fulfilled" ? 1 : 0) + (wm.status === "fulfilled" ? 1 : 0);
+  type Settled = { ok: true; value: ImageHit[] } | { ok: false };
+  const settle = (p: Promise<ImageHit[]>): Promise<Settled> => p.then((value): Settled => ({ ok: true, value }), (): Settled => ({ ok: false }));
+
+  /** Merges what the two sources gave (undefined: not answered yet), taking turns so neither crowds the other out of a short list. */
+  function combine(query: string, limit: number, ov: Settled | undefined, wm: Settled | undefined): ImageSearchResult & { ok: number } {
+    const ok = (ov?.ok ? 1 : 0) + (wm?.ok ? 1 : 0);
     const seen = new Set<string>();
     const results: ImageHit[] = [];
-    // Openverse first, then Commons, taking turns so neither crowds the other out of a short list
-    const lists = [ov, wm].map((r) => (r.status === "fulfilled" ? r.value : []));
+    const lists = [ov, wm].map((r) => (r?.ok ? r.value : []));
     for (let i = 0; results.length < limit && lists.some((l) => i < l.length); i++) {
       for (const list of lists) {
         const hit = list[i];
@@ -164,25 +172,61 @@ export function createImageSearch(opts: ImageSearchOptions = {}) {
     return { query, results, partial: ok < 2, ok };
   }
 
+  function remember(key: string, value: ImageSearchResult): void {
+    // a half answer that found nothing is not worth remembering
+    if (value.partial && value.results.length === 0) return;
+    if (cache.size >= MAX_CACHED) cache.delete(cache.keys().next().value as string);
+    cache.set(key, { at: now(), ttl: value.partial ? PARTIAL_TTL_MS : FULL_TTL_MS, value });
+  }
+
+  const pause = (ms: number) => new Promise<void>((resolve) => void setTimeout(resolve, ms));
+
+  /**
+   * Asks both sources. Once one has given a good answer the other gets only a short while (`graceMs`) before the
+   * answer is handed over without it: Commons answers in a second or two, Openverse often needs ten. The slow one
+   * keeps going in the background, and when it arrives the remembered answer becomes the full one.
+   */
+  async function lookup(key: string, query: string, limit: number): Promise<ImageSearchResult> {
+    const got: { ov?: Settled; wm?: Settled } = {};
+    const done = [
+      settle(openverse(query, limit)).then((r) => void (got.ov = r)),
+      settle(wikimedia(query, limit)).then((r) => void (got.wm = r)),
+    ];
+    const all = Promise.all(done);
+    await Promise.race(done);
+    if (!got.ov?.ok && !got.wm?.ok) await all; // nothing usable yet: the other one is the only hope
+    else if (!(got.ov && got.wm)) await Promise.race([all, pause(graceMs)]);
+    const value = combine(query, limit, got.ov, got.wm);
+    if (value.ok === 0) throw new Error("no image source answered");
+    remember(key, value);
+    if (!(got.ov && got.wm)) {
+      void all.then(() => {
+        const full = combine(query, limit, got.ov, got.wm);
+        if (full.ok > value.ok) remember(key, full);
+      });
+    }
+    return { query: value.query, results: value.results, partial: value.partial };
+  }
+
   /** Pictures for `q`; rejects when neither source answered. */
   async function search(q: string, limit = 12): Promise<ImageSearchResult> {
     const query = normalizeQuery(q);
     if (!query) return { query, results: [], partial: false };
     const key = `${query}|${limit}`;
     const hit = cache.get(key);
-    if (hit && now() - hit.at < hit.ttl) return hit.value;
+    if (hit && now() - hit.at < hit.ttl) {
+      // asked again for a half answer: show it at once, and have another go at the missing source for the next time
+      if (hit.value.partial && now() - hit.at >= RETRY_AFTER_MS && !retrying.has(key)) {
+        retrying.add(key);
+        void lookup(key, query, limit)
+          .catch(() => undefined)
+          .finally(() => retrying.delete(key));
+      }
+      return hit.value;
+    }
     const pending = inflight.get(key);
     if (pending) return pending;
-    const run = lookup(query, limit)
-      .then(({ ok, ...value }) => {
-        if (ok === 0) throw new Error("no image source answered");
-        // a half answer that found nothing is not worth remembering
-        if (value.partial && value.results.length === 0) return value;
-        if (cache.size >= MAX_CACHED) cache.delete(cache.keys().next().value as string);
-        cache.set(key, { at: now(), ttl: value.partial ? PARTIAL_TTL_MS : FULL_TTL_MS, value });
-        return value;
-      })
-      .finally(() => inflight.delete(key));
+    const run = lookup(key, query, limit).finally(() => inflight.delete(key));
     inflight.set(key, run);
     return run;
   }

@@ -16,7 +16,8 @@ export type ImageRef = {
 };
 
 /** Hosts a thumbnail may come from. */
-export const IMAGE_HOSTS: readonly string[] = ["api.openverse.org", "upload.wikimedia.org"];
+/** Wikimedia serves its resized pictures from `thumb.wikimedia.org`; `upload.wikimedia.org` holds the originals. */
+export const IMAGE_HOSTS: readonly string[] = ["api.openverse.org", "thumb.wikimedia.org", "upload.wikimedia.org"];
 /** Hosts of the credit page. */
 export const PAGE_HOSTS: readonly string[] = ["openverse.org", "commons.wikimedia.org"];
 

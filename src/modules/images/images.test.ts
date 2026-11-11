@@ -24,23 +24,30 @@ const commonsBody = {
       {
         title: "File:Dhole (Asiatic wild dog).jpg",
         index: 2,
-        imageinfo: [{ thumburl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dhole.jpg/400px-Dhole.jpg", descriptionurl: "https://commons.wikimedia.org/wiki/File:Dhole.jpg", extmetadata: { Artist: { value: '<a href="//x">Jane &amp; Co</a>' }, LicenseShortName: { value: "CC BY-SA 4.0" }, Categories: { value: "Dogs|Canidae" } } }],
+        imageinfo: [{ thumburl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Dhole.jpg/400px-Dhole.jpg", descriptionurl: "https://commons.wikimedia.org/wiki/File:Dhole.jpg", extmetadata: { Artist: { value: '<a href="//x">Jane &amp; Co</a>' }, LicenseShortName: { value: "CC BY-SA 4.0" }, Categories: { value: "Dogs|Canidae" } } }],
       },
       {
         title: "File:Nude beach.jpg",
         index: 1,
-        imageinfo: [{ thumburl: "https://upload.wikimedia.org/wikipedia/commons/thumb/x/xy/Nude.jpg/400px-Nude.jpg", descriptionurl: "https://commons.wikimedia.org/wiki/File:Nude.jpg", extmetadata: { Categories: { value: "Beaches" } } }],
+        imageinfo: [{ thumburl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/x/xy/Nude.jpg/400px-Nude.jpg", descriptionurl: "https://commons.wikimedia.org/wiki/File:Nude.jpg", extmetadata: { Categories: { value: "Beaches" } } }],
       },
       {
         title: "File:Statue.jpg",
         index: 3,
-        imageinfo: [{ thumburl: "https://upload.wikimedia.org/wikipedia/commons/thumb/s/st/Statue.jpg/400px-Statue.jpg", descriptionurl: "https://commons.wikimedia.org/wiki/File:Statue.jpg", extmetadata: { Categories: { value: "Erotic art|Statues" } } }],
+        imageinfo: [{ thumburl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/s/st/Statue.jpg/400px-Statue.jpg", descriptionurl: "https://commons.wikimedia.org/wiki/File:Statue.jpg", extmetadata: { Categories: { value: "Erotic art|Statues" } } }],
       },
     ],
   },
 };
 
-type Answer = { status?: number; body?: unknown; hang?: boolean };
+type Answer = { status?: number; body?: unknown; hang?: boolean; /** Answers only when this is called. */ gate?: { release: () => void; promise: Promise<void> } };
+
+/** A way to hold an answer back until the test lets it go. */
+function gate() {
+  let release!: () => void;
+  const promise = new Promise<void>((resolve) => (release = resolve));
+  return { release, promise };
+}
 
 /** A fetch that answers per host, and counts. */
 function fakeFetch(answers: { openverse?: Answer; commons?: Answer; token?: Answer }) {
@@ -49,10 +56,13 @@ function fakeFetch(answers: { openverse?: Answer; commons?: Answer; token?: Answ
     calls.push({ url, headers: init?.headers });
     const a = url.includes("auth_tokens") ? answers.token : url.includes("openverse") ? answers.openverse : answers.commons;
     if (!a || a.hang) throw new Error("timeout");
+    if (a.gate) await a.gate.promise;
     const status = a.status ?? 200;
     return { ok: status < 400, status, json: async () => a.body };
   });
-  return { fn, calls };
+  /** Changes what a source answers from now on. */
+  const setAnswer = (source: "openverse" | "commons" | "token", a: Answer) => void (answers[source] = a);
+  return { fn, calls, setAnswer };
 }
 
 describe("picture references", () => {
@@ -60,9 +70,11 @@ describe("picture references", () => {
     expect(
       sanitizeImage({ url: `https://api.openverse.org/v1/images/${ID1}/thumb/`, page: `https://openverse.org/image/${ID1}`, by: "  Mathias   Appel ", lic: "CC0 1.0", extra: 1 }),
     ).toEqual({ url: `https://api.openverse.org/v1/images/${ID1}/thumb/`, page: `https://openverse.org/image/${ID1}`, by: "Mathias Appel", lic: "CC0 1.0" });
-    expect(sanitizeImage({ url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dhole.jpg/400px-Dhole.jpg" })).toEqual({
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dhole.jpg/400px-Dhole.jpg",
-    });
+    // Commons resizes on thumb.wikimedia.org (what its search answers with); upload.wikimedia.org holds the originals
+    for (const host of ["thumb.wikimedia.org", "upload.wikimedia.org"]) {
+      const url = `https://${host}/wikipedia/commons/thumb/a/ab/Dhole.jpg/400px-Dhole.jpg`;
+      expect(sanitizeImage({ url })).toEqual({ url });
+    }
   });
 
   it("refuses a picture from anywhere else, so a shared deck cannot make viewers load an address of its author's choosing", () => {
@@ -163,6 +175,29 @@ describe("picture search", () => {
     expect(f.calls.filter((c) => c.url.includes("openverse"))).toHaveLength(2); // asked again
   });
 
+  it("tries the missing source again in the background when a half answer is asked for again, and has the full one next time", async () => {
+    let t = 1_000_000;
+    const slow = gate();
+    const f = fakeFetch({ openverse: { hang: true }, commons: { body: commonsBody } });
+    const s = createImageSearch({ fetchFn: f.fn, now: () => t, graceMs: 0 });
+    expect((await s.search("dog")).partial).toBe(true);
+    const asked = () => f.calls.filter((c) => c.url.includes("openverse")).length;
+    expect(asked()).toBe(1);
+    // too soon: the same answer, nobody asked again
+    t += 5_000;
+    await s.search("dog");
+    expect(asked()).toBe(1);
+    // Openverse is back by now: this look-up still answers at once with the half answer, and tries again behind it
+    f.setAnswer("openverse", { body: openverseBody, gate: slow });
+    t += 20_000;
+    expect((await s.search("dog")).partial).toBe(true);
+    expect(asked()).toBe(2);
+    await s.search("dog");
+    expect(asked()).toBe(2); // one retry at a time
+    slow.release();
+    await vi.waitFor(async () => expect((await s.search("dog")).partial).toBe(false));
+  });
+
   it("keeps a full answer for days", async () => {
     let t = 0;
     const f = fakeFetch({ openverse: { body: openverseBody }, commons: { body: commonsBody } });
@@ -174,6 +209,42 @@ describe("picture search", () => {
     t += 2 * 24 * 3600 * 1000;
     await s.search("dog");
     expect(f.calls).toHaveLength(4);
+  });
+
+  it("does not wait for a slow source once the other has answered well, and has the full answer ready when it arrives", async () => {
+    const slow = gate();
+    const f = fakeFetch({ openverse: { body: openverseBody, gate: slow }, commons: { body: commonsBody } });
+    const s = createImageSearch({ fetchFn: f.fn, graceMs: 10 });
+    const first = await s.search("dog");
+    expect(first.partial).toBe(true);
+    expect(first.results.map((h) => h.source)).toEqual(["wikimedia"]);
+    // Openverse comes in later; the next look-up has both, without asking anyone again
+    slow.release();
+    await vi.waitFor(async () => expect((await s.search("dog")).partial).toBe(false));
+    expect(f.calls).toHaveLength(2);
+    expect((await s.search("dog")).results.map((h) => h.source)).toEqual(["openverse", "wikimedia", "openverse"]);
+  });
+
+  it("gives the slow source its moment when it answers within it", async () => {
+    const slow = gate();
+    const f = fakeFetch({ openverse: { body: openverseBody, gate: slow }, commons: { body: commonsBody } });
+    const s = createImageSearch({ fetchFn: f.fn, graceMs: 2000 });
+    const pending = s.search("dog");
+    setTimeout(() => slow.release(), 20);
+    const r = await pending;
+    expect(r.partial).toBe(false);
+    expect(r.results.map((h) => h.source)).toEqual(["openverse", "wikimedia", "openverse"]);
+  });
+
+  it("waits for the other source when the first one to answer had nothing usable", async () => {
+    const slow = gate();
+    const f = fakeFetch({ openverse: { body: openverseBody, gate: slow }, commons: { status: 500 } });
+    const s = createImageSearch({ fetchFn: f.fn, graceMs: 10 });
+    const pending = s.search("dog");
+    setTimeout(() => slow.release(), 50);
+    const r = await pending;
+    expect(r.partial).toBe(true);
+    expect(r.results.map((h) => h.source)).toEqual(["openverse", "openverse"]);
   });
 
   it("fails when neither source answers, and does not remember the failure", async () => {
