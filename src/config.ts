@@ -43,6 +43,9 @@ export const config = {
   mongodbUri: process.env.MONGODB_URI?.trim() || "",
   googleClientId: process.env.GOOGLE_CLIENT_ID || "",
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
+  /** Optional Openverse API credentials: they raise the rate limits of the flashcard picture search. */
+  openverseClientId: process.env.OPENVERSE_CLIENT_ID?.trim() || "",
+  openverseClientSecret: process.env.OPENVERSE_CLIENT_SECRET?.trim() || "",
   googleCallbackUrl:
     process.env.GOOGLE_CALLBACK_URL ||
     "http://localhost:3001/api/auth/google/callback",

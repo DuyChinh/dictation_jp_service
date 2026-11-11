@@ -1,4 +1,5 @@
 import { randomBytes } from "node:crypto";
+import type { ImageRef } from "../images/imageRefs.js";
 import type { CardLang, SyncState } from "./flashcardSync.js";
 
 /** A share id is 12 URL-safe characters, enough that a link cannot be guessed. */
@@ -14,6 +15,7 @@ export type SharedCard = {
   definitionLang: CardLang;
   reading?: string;
   hanViet?: string;
+  image?: ImageRef;
 };
 
 export type SharedDeckView = { name: string; updatedAt: number; cards: SharedCard[] };
@@ -29,6 +31,7 @@ export function sharedView(state: SyncState, deckId: string): SharedDeckView | n
       const out: SharedCard = { id: c.id, term: c.term, termLang: c.termLang, definition: c.definition, definitionLang: c.definitionLang };
       if (c.reading) out.reading = c.reading;
       if (c.hanViet) out.hanViet = c.hanViet;
+      if (c.image) out.image = c.image;
       return out;
     });
   const updatedAt = Math.max(deck.updatedAt, ...cards.length ? state.cards.filter((c) => c.deckId === deckId).map((c) => c.updatedAt) : [0]);

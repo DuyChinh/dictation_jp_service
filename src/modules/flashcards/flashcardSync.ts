@@ -3,6 +3,8 @@
  * leaves a short-lived tombstone (`deleted`). Merging two copies keeps, for every id, the newer one.
  */
 
+import { sanitizeImage, type ImageRef } from "../images/imageRefs.js";
+
 export type CardLang = "ja" | "vi" | "en";
 const LANGS: CardLang[] = ["ja", "vi", "en"];
 
@@ -29,6 +31,8 @@ export type SyncCard = {
   /** Sino-Vietnamese reading of the Japanese word, e.g. "CẤU NHẬP". */
   hanViet?: string;
   entryId?: number;
+  /** A picture for the card: a reference to one hosted by Openverse or Wikimedia Commons. */
+  image?: ImageRef;
   /** Leitner box 0-5 and when the card is next due. */
   box: number;
   due: number;
@@ -104,6 +108,8 @@ export function sanitizeCard(raw: unknown): SyncCard | null {
   const hanViet = text(o.hanViet, 100);
   if (hanViet) card.hanViet = hanViet;
   if (typeof o.entryId === "number" && Number.isInteger(o.entryId) && o.entryId > 0) card.entryId = o.entryId;
+  const image = sanitizeImage(o.image);
+  if (image) card.image = image;
   if (o.deleted === true) card.deleted = true;
   else if (!card.term || !card.definition) return null;
   return card;
