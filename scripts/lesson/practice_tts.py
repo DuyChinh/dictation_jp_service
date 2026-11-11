@@ -127,7 +127,10 @@ class Synth:
             for attempt in range(4):
                 try:
                     tmp = p.with_suffix(".part")
-                    await edge_tts.Communicate(text, v, rate=rate, pitch=pitch).save(str(tmp))
+                    await asyncio.wait_for(
+                        edge_tts.Communicate(text, v, rate=rate, pitch=pitch).save(str(tmp)),
+                        timeout=45,
+                    )
                     tmp.rename(p)
                     return
                 except Exception as e:  # network hiccups: retry
@@ -214,7 +217,8 @@ def plan(src: dict) -> list[dict]:
         ev.append({"voice": voice, "text": tts_text(text, readings), "pause": pause, **kw})
 
     n3 = src.get("source", {}).get("level") == "N3"
-    instructions = N3_INSTRUCTIONS if n3 else INSTRUCTIONS
+    instructions = {**(N3_INSTRUCTIONS if n3 else INSTRUCTIONS),
+                    **{int(k): v for k, v in src.get("section_instructions", {}).items()}}
     answer = N3_ANSWER if n3 else P["answer"]
     for si, sec in enumerate(src["sections"]):
         no = sec["no"]

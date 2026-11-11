@@ -1,0 +1,2347 @@
+{
+  "schema_version": 1,
+  "id": "jlpt-n5-practice-01-paper",
+  "lesson_id": "jlpt-n5-practice-01",
+  "status": "published",
+  "content_version": 1,
+  "source": {
+    "level": "N5",
+    "year": 2026,
+    "month": 12
+  },
+  "items": [
+    {
+      "id": "jlpt-n5-practice-01-v-q1",
+      "no": 1,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "毎朝、水を飲みます。",
+        "vi": "Mỗi sáng tôi uống nước.",
+        "target": "水"
+      },
+      "choices": [
+        {
+          "text": "ひ",
+          "explanation_vi": "ひ là lửa (火), không phải 水.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "き",
+          "explanation_vi": "き là cây (木), không phải 水.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "みず",
+          "explanation_vi": "水 đọc là みず, nghĩa là nước. Trong câu: Mỗi sáng tôi uống nước.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "つち",
+          "explanation_vi": "つち là đất (土), không phải 水.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "水 đọc là みず, nghĩa là nước. Trong câu: Mỗi sáng tôi uống nước.",
+      "point_tags": [
+        "kanji:reading"
+      ],
+      "vocab": [
+        {
+          "word": "水",
+          "reading": "みず",
+          "meaning_vi": "nước",
+          "sino_vi": "THỦY"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q2",
+      "no": 2,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "駅で友だちに会います。",
+        "vi": "Tôi gặp bạn ở ga.",
+        "target": "駅"
+      },
+      "choices": [
+        {
+          "text": "いえ",
+          "explanation_vi": "いえ là nhà (家), không phải 駅.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "えき",
+          "explanation_vi": "駅 đọc là えき, nghĩa là ga. Trong câu: Tôi gặp bạn ở ga.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "みせ",
+          "explanation_vi": "みせ là cửa hàng (店), không phải 駅.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "まち",
+          "explanation_vi": "まち là khu phố (町), không phải 駅.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "駅 đọc là えき, nghĩa là ga. Trong câu: Tôi gặp bạn ở ga.",
+      "point_tags": [
+        "kanji:reading"
+      ],
+      "vocab": [
+        {
+          "word": "駅",
+          "reading": "えき",
+          "meaning_vi": "ga",
+          "sino_vi": "DỊCH"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q3",
+      "no": 3,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "父は会社にいます。",
+        "vi": "Bố tôi đang ở công ty.",
+        "target": "父"
+      },
+      "choices": [
+        {
+          "text": "はは",
+          "explanation_vi": "はは là mẹ của mình (母), không phải 父.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "あに",
+          "explanation_vi": "あに là anh trai của mình (兄), không phải 父.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "ちち",
+          "explanation_vi": "父 đọc là ちち, nghĩa là bố của mình. Trong câu: Bố tôi đang ở công ty.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "あね",
+          "explanation_vi": "あね là chị gái của mình (姉), không phải 父.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "父 đọc là ちち, nghĩa là bố của mình. Trong câu: Bố tôi đang ở công ty.",
+      "point_tags": [
+        "kanji:reading"
+      ],
+      "vocab": [
+        {
+          "word": "父",
+          "reading": "ちち",
+          "meaning_vi": "bố của mình",
+          "sino_vi": "PHỤ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q4",
+      "no": 4,
+      "part": "vocab",
+      "mondai": 1,
+      "type": "mcq",
+      "stem": {
+        "ja": "今日は学校へ行きます。",
+        "vi": "Hôm nay tôi đi học.",
+        "target": "今日"
+      },
+      "choices": [
+        {
+          "text": "きょう",
+          "explanation_vi": "今日 đọc là きょう, nghĩa là hôm nay. Trong câu: Hôm nay tôi đi học.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "きのう",
+          "explanation_vi": "きのう là hôm qua (昨日), không phải 今日.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "あした",
+          "explanation_vi": "あした là ngày mai (明日), không phải 今日.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "まいにち",
+          "explanation_vi": "まいにち là mỗi ngày (毎日), không phải 今日.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "今日 đọc là きょう, nghĩa là hôm nay. Trong câu: Hôm nay tôi đi học.",
+      "point_tags": [
+        "kanji:reading"
+      ],
+      "vocab": [
+        {
+          "word": "今日",
+          "reading": "きょう",
+          "meaning_vi": "hôm nay",
+          "sino_vi": "KIM NHẬT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q5",
+      "no": 5,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "あたらしい本を買いました。",
+        "vi": "Tôi đã mua một cuốn sách mới.",
+        "target": "あたらしい"
+      },
+      "choices": [
+        {
+          "text": "古い",
+          "explanation_vi": "古い đọc là ふるい, nghĩa là cũ, trái với あたらしい.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "高い",
+          "explanation_vi": "高い đọc là たかい, nghĩa là cao hoặc đắt, không phải mới.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "新しい",
+          "explanation_vi": "新しい đọc là あたらしい, nghĩa là mới; đúng từ được hỏi.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "長い",
+          "explanation_vi": "長い đọc là ながい, nghĩa là dài, không phải mới.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "新しい đọc là あたらしい, nghĩa là mới; đúng từ được hỏi.",
+      "point_tags": [
+        "kanji:writing"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q6",
+      "no": 6,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "まいにち日本語を勉強します。",
+        "vi": "Tôi học tiếng Nhật mỗi ngày.",
+        "target": "まいにち"
+      },
+      "choices": [
+        {
+          "text": "毎日",
+          "explanation_vi": "毎日 đọc là まいにち, nghĩa là mỗi ngày.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "毎月",
+          "explanation_vi": "毎月 là まいつき, mỗi tháng, không phải mỗi ngày.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "毎年",
+          "explanation_vi": "毎年 là まいとし, mỗi năm, không phải mỗi ngày.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "毎週",
+          "explanation_vi": "毎週 là まいしゅう, mỗi tuần, không phải mỗi ngày.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "毎日 đọc là まいにち, nghĩa là mỗi ngày.",
+      "point_tags": [
+        "kanji:writing"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q7",
+      "no": 7,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "このやまは高いです。",
+        "vi": "Ngọn núi này cao.",
+        "target": "やま"
+      },
+      "choices": [
+        {
+          "text": "川",
+          "explanation_vi": "川 đọc là かわ, nghĩa là sông, không phải núi.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "田",
+          "explanation_vi": "田 đọc là た, nghĩa là ruộng lúa.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "天",
+          "explanation_vi": "天 đọc là てん, nghĩa là trời, không phải やま.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "山",
+          "explanation_vi": "山 đọc là やま, nghĩa là núi.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "山 đọc là やま, nghĩa là núi.",
+      "point_tags": [
+        "kanji:writing"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q8",
+      "no": 8,
+      "part": "vocab",
+      "mondai": 2,
+      "type": "mcq",
+      "stem": {
+        "ja": "みぎに曲がってください。",
+        "vi": "Hãy rẽ phải.",
+        "target": "みぎ"
+      },
+      "choices": [
+        {
+          "text": "左",
+          "explanation_vi": "左 đọc là ひだり, chỉ bên trái.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "上",
+          "explanation_vi": "上 đọc là うえ, chỉ phía trên.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "下",
+          "explanation_vi": "下 đọc là した, chỉ phía dưới.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "右",
+          "explanation_vi": "右 đọc là みぎ, chỉ bên phải.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "右 đọc là みぎ, chỉ bên phải.",
+      "point_tags": [
+        "kanji:writing"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q9",
+      "no": 9,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "このスープはとても（　）です。水をください。",
+        "vi": "Món súp này rất cay. Cho tôi nước với."
+      },
+      "choices": [
+        {
+          "text": "ねむい",
+          "explanation_vi": "ねむい là buồn ngủ, không dùng để tả món súp.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "からい",
+          "explanation_vi": "からい là cay; người nói xin nước vì súp cay.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "いそがしい",
+          "explanation_vi": "いそがしい là bận, không dùng để tả vị.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "ひろい",
+          "explanation_vi": "ひろい là rộng, không tả vị của súp.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "からい là cay; người nói xin nước vì súp cay.",
+      "point_tags": [
+        "vocab:からい"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q10",
+      "no": 10,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "雨が降っていますから、（　）を持っていきます。",
+        "vi": "Vì trời đang mưa nên tôi mang ô theo."
+      },
+      "choices": [
+        {
+          "text": "はし",
+          "explanation_vi": "はし là đũa trong ngữ cảnh vật dụng; không che mưa được.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "さら",
+          "explanation_vi": "さら là đĩa, không phải vật dùng che mưa.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "かぎ",
+          "explanation_vi": "かぎ là chìa khóa; không gắn với lý do trời mưa.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "かさ",
+          "explanation_vi": "かさ là ô, phù hợp để dùng khi trời mưa.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "かさ là ô, phù hợp để dùng khi trời mưa.",
+      "point_tags": [
+        "vocab:かさ"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q11",
+      "no": 11,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "パンを二つ（　）。いくらですか。",
+        "vi": "Cho tôi hai cái bánh mì. Bao nhiêu tiền vậy?"
+      },
+      "choices": [
+        {
+          "text": "ください",
+          "explanation_vi": "Danh từ をください dùng để yêu cầu lấy món hàng.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "あります",
+          "explanation_vi": "あります là có, không phải lời yêu cầu người bán đưa hàng.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "います",
+          "explanation_vi": "います dùng cho sự tồn tại của người, động vật, không phải bánh mì.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "なります",
+          "explanation_vi": "なります là trở thành, không dùng để đặt mua như câu này.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Danh từ をください dùng để yêu cầu lấy món hàng.",
+      "point_tags": [
+        "vocab:ください"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q12",
+      "no": 12,
+      "part": "vocab",
+      "mondai": 3,
+      "type": "mcq",
+      "stem": {
+        "ja": "夜です。部屋が暗いので、電気を（　）。",
+        "vi": "Buổi tối rồi. Vì phòng tối nên tôi bật đèn."
+      },
+      "choices": [
+        {
+          "text": "けします",
+          "explanation_vi": "電気をけします là tắt đèn, khiến phòng tối hơn.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "つけます",
+          "explanation_vi": "電気をつけます là bật đèn, hợp với lý do phòng tối.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "しめます",
+          "explanation_vi": "しめます là đóng cửa hoặc vật tương tự, không đi với 電気.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "あらいます",
+          "explanation_vi": "あらいます là rửa; không dùng cho việc làm phòng sáng.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "電気をつけます là bật đèn, hợp với lý do phòng tối.",
+      "point_tags": [
+        "vocab:つける"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q13",
+      "no": 13,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "このかばんは安いです。",
+        "vi": "Chiếc cặp này rẻ.",
+        "target": "安い"
+      },
+      "choices": [
+        {
+          "text": "とても大きいです",
+          "explanation_vi": "Rất lớn nói về kích thước, không phải giá rẻ.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "とても重いです",
+          "explanation_vi": "Rất nặng nói về trọng lượng, không phải giá.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "ねだんが高くないです",
+          "explanation_vi": "Giá không cao chính là nghĩa của 安い.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "あまり新しくないです",
+          "explanation_vi": "Không mới lắm nói về tình trạng, không có nghĩa là rẻ.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Giá không cao chính là nghĩa của 安い.",
+      "point_tags": [
+        "vocab:安い"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q14",
+      "no": 14,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "ここで少し待ってください。",
+        "vi": "Hãy đợi ở đây một chút.",
+        "target": "少し"
+      },
+      "choices": [
+        {
+          "text": "ちょっと",
+          "explanation_vi": "ちょっと có nghĩa là một chút, tương đương 少し.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "たくさん",
+          "explanation_vi": "たくさん là nhiều, trái với 少し.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "いつも",
+          "explanation_vi": "いつも là luôn luôn, không chỉ lượng ít.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "ぜんぜん",
+          "explanation_vi": "ぜんぜん thường đi với phủ định, nghĩa là hoàn toàn không.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "ちょっと có nghĩa là một chút, tương đương 少し.",
+      "point_tags": [
+        "vocab:少し"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q15",
+      "no": 15,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "田中さんはとても元気です。",
+        "vi": "Anh Tanaka rất khỏe.",
+        "target": "元気"
+      },
+      "choices": [
+        {
+          "text": "お金がたくさんあります",
+          "explanation_vi": "Có nhiều tiền không phải là nghĩa của 元気.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "からだのちょうしがいいです",
+          "explanation_vi": "Tình trạng sức khỏe tốt là nghĩa của 元気 trong câu.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "じかんがありません",
+          "explanation_vi": "Không có thời gian diễn tả sự bận rộn.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "せが高いです",
+          "explanation_vi": "Cao người nói về chiều cao, không phải sức khỏe.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Tình trạng sức khỏe tốt là nghĩa của 元気 trong câu.",
+      "point_tags": [
+        "vocab:元気"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-v-q16",
+      "no": 16,
+      "part": "vocab",
+      "mondai": 4,
+      "type": "mcq",
+      "stem": {
+        "ja": "この店はいつもにぎやかです。",
+        "vi": "Cửa hàng này lúc nào cũng nhộn nhịp.",
+        "target": "にぎやか"
+      },
+      "choices": [
+        {
+          "text": "人がいなくて、しずかです",
+          "explanation_vi": "Vắng người, yên tĩnh là trái với にぎやか.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "何も売っていません",
+          "explanation_vi": "Không bán gì không phải nghĩa của nhộn nhịp.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "駅から遠いです",
+          "explanation_vi": "Xa ga nói về vị trí, không phải không khí cửa hàng.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "人が多くて、声などがよく聞こえます",
+          "explanation_vi": "Đông người, có nhiều âm thanh là nhộn nhịp.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "Đông người, có nhiều âm thanh là nhộn nhịp.",
+      "point_tags": [
+        "vocab:にぎやか"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q17",
+      "no": 17,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "わたしは毎朝七時（　）起きます。",
+        "vi": "Mỗi sáng tôi dậy lúc bảy giờ."
+      },
+      "choices": [
+        {
+          "text": "に",
+          "explanation_vi": "に đánh dấu thời điểm cụ thể: 七時に起きます.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "で",
+          "explanation_vi": "で thường chỉ nơi hành động hoặc phương tiện, không gắn giờ thức dậy.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "を",
+          "explanation_vi": "を đánh dấu tân ngữ; 七時 không phải vật chịu tác động.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "へ",
+          "explanation_vi": "へ chỉ hướng đến, không dùng sau giờ.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "に đánh dấu thời điểm cụ thể: 七時に起きます.",
+      "point_tags": [
+        "grammar:時刻に"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q18",
+      "no": 18,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "図書館（　）本を読みます。",
+        "vi": "Tôi đọc sách ở thư viện."
+      },
+      "choices": [
+        {
+          "text": "に",
+          "explanation_vi": "に chỉ nơi tồn tại hoặc đích đến; ở đây là hoạt động đọc.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "へ",
+          "explanation_vi": "へ chỉ hướng di chuyển, không phải nơi đọc.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "で",
+          "explanation_vi": "で đánh dấu nơi diễn ra hành động 読みます.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "を",
+          "explanation_vi": "を không dùng để chỉ địa điểm đọc sách.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "で đánh dấu nơi diễn ra hành động 読みます.",
+      "point_tags": [
+        "grammar:場所で"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q19",
+      "no": 19,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "これはわたし（　）かさです。",
+        "vi": "Đây là ô của tôi."
+      },
+      "choices": [
+        {
+          "text": "の",
+          "explanation_vi": "N1のN2 thể hiện sở hữu: ô của tôi.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "と",
+          "explanation_vi": "と là và hoặc cùng với, không diễn tả sở hữu.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "も",
+          "explanation_vi": "も là cũng, không nối chủ sở hữu với vật.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "が",
+          "explanation_vi": "が đánh dấu chủ ngữ, không dùng trước danh từ như ở đây.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "N1のN2 thể hiện sở hữu: ô của tôi.",
+      "point_tags": [
+        "grammar:所有の"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q20",
+      "no": 20,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "昨日、映画を（　）。",
+        "vi": "Hôm qua tôi đã xem phim."
+      },
+      "choices": [
+        {
+          "text": "見ました",
+          "explanation_vi": "昨日 là quá khứ nên dùng 見ました.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "見ます",
+          "explanation_vi": "見ます là hiện tại hoặc tương lai, không phù hợp mốc 昨日.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "見ましょう",
+          "explanation_vi": "見ましょう là lời rủ, không kể việc đã làm hôm qua.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "見てください",
+          "explanation_vi": "見てください là yêu cầu người khác xem, không thuật lại quá khứ.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "昨日 là quá khứ nên dùng 見ました.",
+      "point_tags": [
+        "grammar:動詞過去"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q21",
+      "no": 21,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "この部屋は（　）です。",
+        "vi": "Căn phòng này yên tĩnh."
+      },
+      "choices": [
+        {
+          "text": "しずかな",
+          "explanation_vi": "しずかな phải đi trước danh từ, như しずかな部屋.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "しずかに",
+          "explanation_vi": "しずかに bổ nghĩa động từ, không đứng với です theo cách này.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "しずかく",
+          "explanation_vi": "しずか là tính từ な, không đổi thành しずかく.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "しずか",
+          "explanation_vi": "Tính từ な làm vị ngữ: しずかです, không thêm な.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "Tính từ な làm vị ngữ: しずかです, không thêm な.",
+      "point_tags": [
+        "grammar:な形容詞述語"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q22",
+      "no": 22,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "いっしょに昼ごはんを（　）か。",
+        "vi": "Bạn có muốn cùng ăn trưa không?"
+      },
+      "choices": [
+        {
+          "text": "食べて",
+          "explanation_vi": "食べてか không tạo thành lời mời đúng cấu trúc.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "食べません",
+          "explanation_vi": "〜ませんか là lời mời cùng làm gì.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "食べた",
+          "explanation_vi": "食べたか hỏi việc đã ăn, không phải lời rủ lịch sự.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "食べるな",
+          "explanation_vi": "食べるな là cấm ăn, ngược với lời mời.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "〜ませんか là lời mời cùng làm gì.",
+      "point_tags": [
+        "grammar:ませんか"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q23",
+      "no": 23,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "机の上に本が三冊（　）。",
+        "vi": "Trên bàn có ba cuốn sách."
+      },
+      "choices": [
+        {
+          "text": "います",
+          "explanation_vi": "います dùng cho người, động vật; không dùng cho sách.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "あります",
+          "explanation_vi": "本 là vật vô tri, dùng あります để nói có.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "します",
+          "explanation_vi": "します là làm, không phải động từ chỉ tồn tại.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "いきます",
+          "explanation_vi": "いきます là đi, sách không tự đi và câu nói về tồn tại.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "本 là vật vô tri, dùng あります để nói có.",
+      "point_tags": [
+        "grammar:あります"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q24",
+      "no": 24,
+      "part": "grammar",
+      "mondai": 5,
+      "type": "mcq",
+      "stem": {
+        "ja": "コーヒーは飲みますが、お酒は（　）。",
+        "vi": "Tôi uống cà phê, nhưng không uống rượu."
+      },
+      "choices": [
+        {
+          "text": "飲むません",
+          "explanation_vi": "Không gắn ません sau thể từ điển 飲む; phải dùng thân 飲み.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "飲みません",
+          "explanation_vi": "飲みません là phủ định lịch sự, phù hợp đối lập với uống cà phê.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "飲みましょう",
+          "explanation_vi": "飲みましょう là cùng uống nào, không nói thói quen không uống.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "飲んでください",
+          "explanation_vi": "飲んでください là xin hãy uống, không nói thói quen của tôi.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "飲みません là phủ định lịch sự, phù hợp đối lập với uống cà phê.",
+      "point_tags": [
+        "grammar:動詞否定"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q25",
+      "no": 25,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "sort_star",
+      "stem": {
+        "ja": "この本は＿＿ ＿＿ ★ ＿＿。",
+        "vi": "Cuốn sách này không phải của tôi."
+      },
+      "choices": [
+        {
+          "text": "わたし",
+          "explanation_vi": "Mảnh わたし ở vị trí 1, không phải vị trí ★ (3). Câu đúng: この本はわたしのではありません。",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "の",
+          "explanation_vi": "Mảnh の ở vị trí 2, không phải vị trí ★ (3). Câu đúng: この本はわたしのではありません。",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "では",
+          "explanation_vi": "Thứ tự đúng: この本はわたしのではありません。 ★ ở vị trí 3, nên chọn では.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "ありません",
+          "explanation_vi": "Mảnh ありません ở vị trí 4, không phải vị trí ★ (3). Câu đúng: この本はわたしのではありません。",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: この本はわたしのではありません。 ★ ở vị trí 3, nên chọn では.",
+      "point_tags": [
+        "grammar:sentence_order"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [],
+      "sort": {
+        "slots": [
+          "わたし",
+          "の",
+          "では",
+          "ありません"
+        ],
+        "star_index": 2
+      }
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q26",
+      "no": 26,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "sort_star",
+      "stem": {
+        "ja": "わたしは＿＿ ＿＿ ★ ＿＿休みです。",
+        "vi": "Tôi nghỉ từ hôm qua đến hôm nay."
+      },
+      "choices": [
+        {
+          "text": "昨日",
+          "explanation_vi": "Mảnh 昨日 ở vị trí 1, không phải vị trí ★ (3). Câu đúng: わたしは昨日から今日まで休みです。",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "から",
+          "explanation_vi": "Mảnh から ở vị trí 2, không phải vị trí ★ (3). Câu đúng: わたしは昨日から今日まで休みです。",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "今日",
+          "explanation_vi": "Thứ tự đúng: わたしは昨日から今日まで休みです。 ★ ở vị trí 3, nên chọn 今日.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "まで",
+          "explanation_vi": "Mảnh まで ở vị trí 4, không phải vị trí ★ (3). Câu đúng: わたしは昨日から今日まで休みです。",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: わたしは昨日から今日まで休みです。 ★ ở vị trí 3, nên chọn 今日.",
+      "point_tags": [
+        "grammar:sentence_order"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [],
+      "sort": {
+        "slots": [
+          "昨日",
+          "から",
+          "今日",
+          "まで"
+        ],
+        "star_index": 2
+      }
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q27",
+      "no": 27,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "sort_star",
+      "stem": {
+        "ja": "この＿＿ ＿＿ ★ ＿＿ですか。",
+        "vi": "Chiếc cặp trắng này giá bao nhiêu?"
+      },
+      "choices": [
+        {
+          "text": "白い",
+          "explanation_vi": "Mảnh 白い ở vị trí 1, không phải vị trí ★ (3). Câu đúng: この白いかばんはいくらですか。",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "かばん",
+          "explanation_vi": "Mảnh かばん ở vị trí 2, không phải vị trí ★ (3). Câu đúng: この白いかばんはいくらですか。",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "いくら",
+          "explanation_vi": "Mảnh いくら ở vị trí 4, không phải vị trí ★ (3). Câu đúng: この白いかばんはいくらですか。",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "は",
+          "explanation_vi": "Thứ tự đúng: この白いかばんはいくらですか。 ★ ở vị trí 3, nên chọn は.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: この白いかばんはいくらですか。 ★ ở vị trí 3, nên chọn は.",
+      "point_tags": [
+        "grammar:sentence_order"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [],
+      "sort": {
+        "slots": [
+          "白い",
+          "かばん",
+          "は",
+          "いくら"
+        ],
+        "star_index": 2
+      }
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q28",
+      "no": 28,
+      "part": "grammar",
+      "mondai": 6,
+      "type": "sort_star",
+      "stem": {
+        "ja": "毎朝、＿＿ ＿＿ ★ ＿＿学校へ行きます。",
+        "vi": "Mỗi sáng tôi ăn cơm xong rồi đi học."
+      },
+      "choices": [
+        {
+          "text": "ごはん",
+          "explanation_vi": "Mảnh ごはん ở vị trí 1, không phải vị trí ★ (3). Câu đúng: 毎朝、ごはんを食べてから学校へ行きます。",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "食べて",
+          "explanation_vi": "Thứ tự đúng: 毎朝、ごはんを食べてから学校へ行きます。 ★ ở vị trí 3, nên chọn 食べて.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "を",
+          "explanation_vi": "Mảnh を ở vị trí 2, không phải vị trí ★ (3). Câu đúng: 毎朝、ごはんを食べてから学校へ行きます。",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "から",
+          "explanation_vi": "Mảnh から ở vị trí 4, không phải vị trí ★ (3). Câu đúng: 毎朝、ごはんを食べてから学校へ行きます。",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Thứ tự đúng: 毎朝、ごはんを食べてから学校へ行きます。 ★ ở vị trí 3, nên chọn 食べて.",
+      "point_tags": [
+        "grammar:sentence_order"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [],
+      "sort": {
+        "slots": [
+          "ごはん",
+          "を",
+          "食べて",
+          "から"
+        ],
+        "star_index": 2
+      }
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q29",
+      "no": 29,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "cloze_blank",
+      "stem": {
+        "ja": "朝、公園（29）行きました。",
+        "vi": "Buổi sáng tôi đã đi công viên."
+      },
+      "choices": [
+        {
+          "text": "へ",
+          "explanation_vi": "へ chỉ hướng đi đến công viên.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "で",
+          "explanation_vi": "で chỉ nơi hành động; 行く cần đích đến, không phải nơi diễn ra.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "を",
+          "explanation_vi": "を có thể chỉ tuyến đi qua nhưng không diễn tả đi đến công viên ở đây.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "と",
+          "explanation_vi": "と chỉ đi cùng, không dùng cho nơi chốn.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "へ chỉ hướng đi đến công viên.",
+      "point_tags": [
+        "grammar:方向へ"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-g-p1-s2"
+      ],
+      "passage_id": "jlpt-n5-practice-01-g-p1"
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q30",
+      "no": 30,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "cloze_blank",
+      "stem": {
+        "ja": "公園（30）友だちとテニスをしました。",
+        "vi": "Tôi chơi quần vợt với bạn ở công viên."
+      },
+      "choices": [
+        {
+          "text": "へ",
+          "explanation_vi": "へ chỉ hướng di chuyển; câu này không có động từ di chuyển.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "に",
+          "explanation_vi": "に không đánh dấu nơi diễn ra テニスをする.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "の",
+          "explanation_vi": "の nối danh từ, không chỉ nơi chơi ở cấu trúc này.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "で",
+          "explanation_vi": "で chỉ nơi diễn ra hành động chơi quần vợt.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "で chỉ nơi diễn ra hành động chơi quần vợt.",
+      "point_tags": [
+        "grammar:場所で"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-g-p1-s3"
+      ],
+      "passage_id": "jlpt-n5-practice-01-g-p1"
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q31",
+      "no": 31,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "cloze_blank",
+      "stem": {
+        "ja": "テニスのあとで、パンを（31）。",
+        "vi": "Sau khi chơi quần vợt tôi đã ăn bánh mì."
+      },
+      "choices": [
+        {
+          "text": "食べます",
+          "explanation_vi": "食べます là hiện tại/tương lai, không khớp chuỗi kể quá khứ.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "食べましょう",
+          "explanation_vi": "Đây là lời rủ, không phải lời kể lại hoạt động.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "食べました",
+          "explanation_vi": "Đoạn kể việc đã làm vào thứ Bảy nên dùng quá khứ.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "食べてください",
+          "explanation_vi": "Đây là yêu cầu người khác ăn, không khớp chủ thể tự kể.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Đoạn kể việc đã làm vào thứ Bảy nên dùng quá khứ.",
+      "point_tags": [
+        "grammar:過去"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-g-p1-s2",
+        "jlpt-n5-practice-01-g-p1-s3",
+        "jlpt-n5-practice-01-g-p1-s4"
+      ],
+      "passage_id": "jlpt-n5-practice-01-g-p1"
+    },
+    {
+      "id": "jlpt-n5-practice-01-g-q32",
+      "no": 32,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "cloze_blank",
+      "stem": {
+        "ja": "日曜日（32）公園へ行きたいです。",
+        "vi": "Chủ nhật tôi cũng muốn đi công viên."
+      },
+      "choices": [
+        {
+          "text": "を",
+          "explanation_vi": "を không đi sau ngày làm tân ngữ của 行く.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "で",
+          "explanation_vi": "で không chỉ thêm ngày thực hiện mong muốn trong cấu trúc này.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "へ",
+          "explanation_vi": "へ chỉ hướng đến nơi, không gắn với 日曜日.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "も",
+          "explanation_vi": "も là cũng: đã đi thứ Bảy và muốn đi cả Chủ nhật.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "も là cũng: đã đi thứ Bảy và muốn đi cả Chủ nhật.",
+      "point_tags": [
+        "grammar:追加も"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-g-p1-s2",
+        "jlpt-n5-practice-01-g-p1-s5"
+      ],
+      "passage_id": "jlpt-n5-practice-01-g-p1"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q33",
+      "no": 33,
+      "part": "reading",
+      "mondai": 8,
+      "type": "mcq",
+      "stem": {
+        "ja": "二人はいつ会いますか。",
+        "vi": "Hai người sẽ gặp lúc nào?"
+      },
+      "choices": [
+        {
+          "text": "午前二時",
+          "explanation_vi": "Đoạn ghi 午後二時, không phải hai giờ sáng.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "午後二時",
+          "explanation_vi": "Câu 3 hẹn gặp lúc hai giờ chiều, không phải giờ buổi sáng.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "午前中",
+          "explanation_vi": "Buổi sáng người gửi bận làm thêm, không hẹn gặp.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "午後四時",
+          "explanation_vi": "Bốn giờ chiều không xuất hiện trong lời hẹn.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Câu 3 hẹn gặp lúc hai giờ chiều, không phải giờ buổi sáng.",
+      "point_tags": [
+        "reading:detail"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p1-s3"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p1"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q34",
+      "no": 34,
+      "part": "reading",
+      "mondai": 8,
+      "type": "mcq",
+      "stem": {
+        "ja": "図書館へどうやって行きますか。",
+        "vi": "Họ sẽ đến thư viện bằng cách nào?"
+      },
+      "choices": [
+        {
+          "text": "バスで行きます",
+          "explanation_vi": "Đoạn không nói đi xe buýt mà nói 歩いて.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "歩いて行きます",
+          "explanation_vi": "Câu cuối nói thư viện cạnh ga nên đi bộ được.",
+          "id": "2",
+          "correct": true
+        },
+        {
+          "text": "車で行きます",
+          "explanation_vi": "Không có thông tin đi ô tô; họ đi bộ từ ga.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "電車で行きます",
+          "explanation_vi": "Ga là điểm gặp, không phải phương tiện đi đến thư viện.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Câu cuối nói thư viện cạnh ga nên đi bộ được.",
+      "point_tags": [
+        "reading:detail"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p1-s4"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p1"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q35",
+      "no": 35,
+      "part": "reading",
+      "mondai": 9,
+      "type": "mcq",
+      "stem": {
+        "ja": "朝、犬と公園へ行くのはだれですか。",
+        "vi": "Ai đưa chó đi công viên vào buổi sáng?"
+      },
+      "choices": [
+        {
+          "text": "母",
+          "explanation_vi": "Không có thông tin mẹ đưa chó đi; người được nhắc là bố.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "わたし",
+          "explanation_vi": "Người viết chơi với chó sau khi đi học về, không phải buổi sáng.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "友だち",
+          "explanation_vi": "Đoạn không nhắc bạn bè đưa chó đi.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "父",
+          "explanation_vi": "Câu 3 nói bố đưa chó đi công viên buổi sáng.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "Câu 3 nói bố đưa chó đi công viên buổi sáng.",
+      "point_tags": [
+        "reading:detail"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p2-s3"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p2"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q36",
+      "no": 36,
+      "part": "reading",
+      "mondai": 9,
+      "type": "mcq",
+      "stem": {
+        "ja": "犬は何をするのが好きですか。",
+        "vi": "Con chó thích làm gì?"
+      },
+      "choices": [
+        {
+          "text": "学校へ行くこと",
+          "explanation_vi": "Chó không đi học; người viết mới là người đi học.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "本を読むこと",
+          "explanation_vi": "Đoạn không nói chó thích đọc sách.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "ボールで遊ぶこと",
+          "explanation_vi": "Câu cuối nói rõ chó thích chơi với bóng.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "車に乗ること",
+          "explanation_vi": "Không có thông tin chó thích ngồi ô tô.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Câu cuối nói rõ chó thích chơi với bóng.",
+      "point_tags": [
+        "reading:detail"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p2-s5"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p2"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q37",
+      "no": 37,
+      "part": "reading",
+      "mondai": 9,
+      "type": "mcq",
+      "stem": {
+        "ja": "土曜日、この店は何時に閉まりますか。",
+        "vi": "Thứ Bảy cửa hàng đóng lúc mấy giờ?"
+      },
+      "choices": [
+        {
+          "text": "午後六時",
+          "explanation_vi": "Câu 3 quy định giờ đóng cửa cuối tuần là 18 giờ.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "午後八時",
+          "explanation_vi": "20 giờ là giờ đóng cửa từ thứ Hai đến thứ Sáu.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "午前十時",
+          "explanation_vi": "10 giờ là giờ mở cửa, không phải giờ đóng.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "午前六時",
+          "explanation_vi": "Đoạn ghi sáu giờ chiều, không phải sáu giờ sáng.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Câu 3 quy định giờ đóng cửa cuối tuần là 18 giờ.",
+      "point_tags": [
+        "reading:information"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p3-s3"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p3"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q38",
+      "no": 38,
+      "part": "reading",
+      "mondai": 9,
+      "type": "mcq",
+      "stem": {
+        "ja": "今週の日曜日に、この店で本を買えますか。",
+        "vi": "Chủ nhật tuần này có mua sách ở cửa hàng này được không?"
+      },
+      "choices": [
+        {
+          "text": "はい、二階で買えます",
+          "explanation_vi": "Sách ở tầng hai nhưng ngày đó cửa hàng nghỉ nên không mua được.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "はい、午後六時まで買えます",
+          "explanation_vi": "18 giờ là giờ thường lệ; thông báo nghỉ tuần này được ưu tiên.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "いいえ、店が休みです",
+          "explanation_vi": "Câu cuối nói riêng Chủ nhật tuần này cửa hàng nghỉ.",
+          "id": "3",
+          "correct": true
+        },
+        {
+          "text": "はい、一階で買えます",
+          "explanation_vi": "Tầng một bán tạp chí và ngày đó cửa hàng cũng không mở.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "Câu cuối nói riêng Chủ nhật tuần này cửa hàng nghỉ.",
+      "point_tags": [
+        "reading:information"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p3-s4",
+        "jlpt-n5-practice-01-r-p3-s5"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p3"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q39",
+      "no": 39,
+      "part": "reading",
+      "mondai": 10,
+      "type": "mcq",
+      "stem": {
+        "ja": "夜のクラスは何曜日ですか。",
+        "vi": "Lớp buổi tối học vào thứ mấy?"
+      },
+      "choices": [
+        {
+          "text": "月曜日と水曜日",
+          "explanation_vi": "Đây là lịch lớp sáng, không phải lớp tối.",
+          "id": "1",
+          "correct": false
+        },
+        {
+          "text": "水曜日と金曜日",
+          "explanation_vi": "Không có lớp nào theo lịch thứ Tư và thứ Sáu.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "土曜日と日曜日",
+          "explanation_vi": "Thông báo không có lớp cuối tuần.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "火曜日と木曜日",
+          "explanation_vi": "Câu 2 ghi lớp tối học thứ Ba và thứ Năm.",
+          "id": "4",
+          "correct": true
+        }
+      ],
+      "summary_vi": "Câu 2 ghi lớp tối học thứ Ba và thứ Năm.",
+      "point_tags": [
+        "reading:information"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p4-s2"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p4"
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-q40",
+      "no": 40,
+      "part": "reading",
+      "mondai": 10,
+      "type": "mcq",
+      "stem": {
+        "ja": "朝のクラスは一か月いくらですか。",
+        "vi": "Lớp buổi sáng một tháng bao nhiêu tiền?"
+      },
+      "choices": [
+        {
+          "text": "三千円",
+          "explanation_vi": "どちらのクラスも nghĩa là cả hai lớp đều ba nghìn yên mỗi tháng.",
+          "id": "1",
+          "correct": true
+        },
+        {
+          "text": "千円",
+          "explanation_vi": "Một nghìn yên không phải học phí được thông báo.",
+          "id": "2",
+          "correct": false
+        },
+        {
+          "text": "二千円",
+          "explanation_vi": "Hai nghìn yên không xuất hiện trong mức học phí.",
+          "id": "3",
+          "correct": false
+        },
+        {
+          "text": "六千円",
+          "explanation_vi": "Không cộng tiền hai lớp: câu hỏi chỉ hỏi lớp sáng.",
+          "id": "4",
+          "correct": false
+        }
+      ],
+      "summary_vi": "どちらのクラスも nghĩa là cả hai lớp đều ba nghìn yên mỗi tháng.",
+      "point_tags": [
+        "reading:information"
+      ],
+      "vocab": [],
+      "evidence_sentence_ids": [
+        "jlpt-n5-practice-01-r-p4-s3"
+      ],
+      "passage_id": "jlpt-n5-practice-01-r-p4"
+    }
+  ],
+  "passages": [
+    {
+      "id": "jlpt-n5-practice-01-g-p1",
+      "mondai": 7,
+      "kind": "cloze",
+      "title_ja": "わたしの土曜日",
+      "sentences": [
+        {
+          "ja": "土曜日は学校がありません。",
+          "vi": "Thứ Bảy tôi không có giờ học.",
+          "chunks": [
+            {
+              "ja": "土曜日は",
+              "vi": "Thứ Bảy",
+              "accept_vi": []
+            },
+            {
+              "ja": "学校がありません。",
+              "vi": "tôi không có giờ học.",
+              "accept_vi": [
+                "không có buổi học",
+                "không phải đi học"
+              ]
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "có giờ học",
+                "phải đi học"
+              ],
+              "explanation_vi": "ありません phủ định: hôm đó không có giờ học."
+            }
+          ],
+          "id": "jlpt-n5-practice-01-g-p1-s1"
+        },
+        {
+          "ja": "朝、公園へ行きました。",
+          "vi": "Buổi sáng, tôi đã đi công viên.",
+          "chunks": [
+            {
+              "ja": "朝、",
+              "vi": "Buổi sáng,",
+              "accept_vi": []
+            },
+            {
+              "ja": "公園へ行きました。",
+              "vi": "tôi đã đi công viên.",
+              "accept_vi": [
+                "đã đến công viên",
+                "đã đi ra công viên"
+              ]
+            }
+          ],
+          "pitfalls": [],
+          "ja_blank": "朝、公園（29）行きました。",
+          "id": "jlpt-n5-practice-01-g-p1-s2"
+        },
+        {
+          "ja": "公園で友だちとテニスをしました。",
+          "vi": "Ở công viên tôi chơi quần vợt với bạn.",
+          "chunks": [
+            {
+              "ja": "公園で",
+              "vi": "Ở công viên",
+              "accept_vi": []
+            },
+            {
+              "ja": "友だちとテニスをしました。",
+              "vi": "tôi chơi quần vợt với bạn.",
+              "accept_vi": [
+                "chơi tennis với bạn",
+                "đánh quần vợt cùng bạn"
+              ]
+            }
+          ],
+          "pitfalls": [],
+          "ja_blank": "公園（30）友だちとテニスをしました。",
+          "id": "jlpt-n5-practice-01-g-p1-s3"
+        },
+        {
+          "ja": "テニスのあとで、パンを食べました。",
+          "vi": "Sau khi chơi quần vợt, tôi ăn bánh mì.",
+          "chunks": [
+            {
+              "ja": "テニスのあとで、",
+              "vi": "Sau khi chơi quần vợt,",
+              "accept_vi": []
+            },
+            {
+              "ja": "パンを食べました。",
+              "vi": "tôi ăn bánh mì.",
+              "accept_vi": [
+                "ăn bánh mì",
+                "đã ăn bánh mì"
+              ]
+            }
+          ],
+          "pitfalls": [],
+          "ja_blank": "テニスのあとで、パンを（31）。",
+          "id": "jlpt-n5-practice-01-g-p1-s4"
+        },
+        {
+          "ja": "日曜日も公園へ行きたいです。",
+          "vi": "Chủ nhật tôi cũng muốn đi công viên.",
+          "chunks": [
+            {
+              "ja": "日曜日も",
+              "vi": "Chủ nhật",
+              "accept_vi": []
+            },
+            {
+              "ja": "公園へ行きたいです。",
+              "vi": "tôi cũng muốn đi công viên.",
+              "accept_vi": [
+                "muốn đi công viên",
+                "muốn đến công viên"
+              ]
+            }
+          ],
+          "pitfalls": [],
+          "ja_blank": "日曜日（32）公園へ行きたいです。",
+          "id": "jlpt-n5-practice-01-g-p1-s5"
+        }
+      ],
+      "full_translation_vi": "Thứ Bảy tôi không có giờ học.\nBuổi sáng, tôi đã đi công viên.\nỞ công viên tôi chơi quần vợt với bạn.\nSau khi chơi quần vợt, tôi ăn bánh mì.\nChủ nhật tôi cũng muốn đi công viên."
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-p1",
+      "mondai": 8,
+      "kind": "email",
+      "title_ja": "ミナさんへ",
+      "sentences": [
+        {
+          "ja": "あした、いっしょに図書館へ行きませんか。",
+          "vi": "Ngày mai, chúng mình cùng đi thư viện nhé?",
+          "chunks": [
+            {
+              "ja": "あした、",
+              "vi": "Ngày mai,",
+              "accept_vi": []
+            },
+            {
+              "ja": "いっしょに図書館へ行きませんか。",
+              "vi": "chúng mình cùng đi thư viện nhé?",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p1-s1"
+        },
+        {
+          "ja": "わたしは午前中にアルバイトがあります。",
+          "vi": "Buổi sáng mình có việc làm thêm.",
+          "chunks": [
+            {
+              "ja": "わたしは午前中に",
+              "vi": "Buổi sáng mình",
+              "accept_vi": []
+            },
+            {
+              "ja": "アルバイトがあります。",
+              "vi": "có việc làm thêm.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p1-s2"
+        },
+        {
+          "ja": "午後二時に駅の前で会いましょう。",
+          "vi": "Lúc hai giờ chiều hãy gặp nhau trước ga.",
+          "chunks": [
+            {
+              "ja": "午後二時に",
+              "vi": "Lúc hai giờ chiều",
+              "accept_vi": []
+            },
+            {
+              "ja": "駅の前で会いましょう。",
+              "vi": "hãy gặp nhau trước ga.",
+              "accept_vi": [
+                "gặp nhau ở trước nhà ga",
+                "hẹn gặp trước ga"
+              ]
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p1-s3"
+        },
+        {
+          "ja": "図書館は駅のとなりですから、歩いて行けます。",
+          "vi": "Vì thư viện ở cạnh ga, chúng ta có thể đi bộ đến.",
+          "chunks": [
+            {
+              "ja": "図書館は駅のとなりですから、",
+              "vi": "Vì thư viện ở cạnh ga,",
+              "accept_vi": []
+            },
+            {
+              "ja": "歩いて行けます。",
+              "vi": "chúng ta có thể đi bộ đến.",
+              "accept_vi": [
+                "đi bộ đến được",
+                "có thể đi bộ tới"
+              ]
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p1-s4"
+        }
+      ],
+      "full_translation_vi": "Ngày mai, chúng mình cùng đi thư viện nhé?\nBuổi sáng mình có việc làm thêm.\nLúc hai giờ chiều hãy gặp nhau trước ga.\nVì thư viện ở cạnh ga, chúng ta có thể đi bộ đến."
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-p2",
+      "mondai": 9,
+      "kind": "prose",
+      "title_ja": "わたしの犬",
+      "sentences": [
+        {
+          "ja": "わたしの家には小さい犬がいます。",
+          "vi": "Nhà tôi có một con chó nhỏ.",
+          "chunks": [
+            {
+              "ja": "わたしの家には",
+              "vi": "Nhà tôi",
+              "accept_vi": []
+            },
+            {
+              "ja": "小さい犬がいます。",
+              "vi": "có một con chó nhỏ.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p2-s1"
+        },
+        {
+          "ja": "名前はポチで、二歳です。",
+          "vi": "Nó tên là Pochi, hai tuổi.",
+          "chunks": [
+            {
+              "ja": "名前はポチで、",
+              "vi": "Nó tên là Pochi,",
+              "accept_vi": []
+            },
+            {
+              "ja": "二歳です。",
+              "vi": "hai tuổi.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p2-s2"
+        },
+        {
+          "ja": "朝は父が犬と公園へ行きます。",
+          "vi": "Buổi sáng bố tôi đưa chó đi công viên.",
+          "chunks": [
+            {
+              "ja": "朝は父が",
+              "vi": "Buổi sáng bố tôi",
+              "accept_vi": []
+            },
+            {
+              "ja": "犬と公園へ行きます。",
+              "vi": "đưa chó đi công viên.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p2-s3"
+        },
+        {
+          "ja": "わたしは学校から帰ってから、犬と遊びます。",
+          "vi": "Sau khi đi học về, tôi chơi với chó.",
+          "chunks": [
+            {
+              "ja": "わたしは学校から帰ってから、",
+              "vi": "Sau khi đi học về,",
+              "accept_vi": []
+            },
+            {
+              "ja": "犬と遊びます。",
+              "vi": "tôi chơi với chó.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p2-s4"
+        },
+        {
+          "ja": "犬はボールで遊ぶのが好きです。",
+          "vi": "Con chó thích chơi bóng.",
+          "chunks": [
+            {
+              "ja": "犬はボールで遊ぶのが",
+              "vi": "Con chó",
+              "accept_vi": []
+            },
+            {
+              "ja": "好きです。",
+              "vi": "thích chơi bóng.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p2-s5"
+        }
+      ],
+      "full_translation_vi": "Nhà tôi có một con chó nhỏ.\nNó tên là Pochi, hai tuổi.\nBuổi sáng bố tôi đưa chó đi công viên.\nSau khi đi học về, tôi chơi với chó.\nCon chó thích chơi bóng."
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-p3",
+      "mondai": 9,
+      "kind": "notice",
+      "title_ja": "本屋からのお知らせ",
+      "sentences": [
+        {
+          "ja": "この店は毎日十時に開きます。",
+          "vi": "Cửa hàng này mở cửa lúc mười giờ mỗi ngày.",
+          "chunks": [
+            {
+              "ja": "この店は",
+              "vi": "Cửa hàng này",
+              "accept_vi": []
+            },
+            {
+              "ja": "毎日十時に開きます。",
+              "vi": "mở cửa lúc mười giờ mỗi ngày.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p3-s1"
+        },
+        {
+          "ja": "月曜日から金曜日までは午後八時に閉まります。",
+          "vi": "Từ thứ Hai đến thứ Sáu cửa hàng đóng lúc tám giờ tối.",
+          "chunks": [
+            {
+              "ja": "月曜日から金曜日までは",
+              "vi": "Từ thứ Hai đến thứ Sáu",
+              "accept_vi": []
+            },
+            {
+              "ja": "午後八時に閉まります。",
+              "vi": "cửa hàng đóng lúc tám giờ tối.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p3-s2"
+        },
+        {
+          "ja": "土曜日と日曜日は午後六時に閉まります。",
+          "vi": "Vào thứ Bảy và Chủ nhật cửa hàng đóng lúc sáu giờ chiều.",
+          "chunks": [
+            {
+              "ja": "土曜日と日曜日は",
+              "vi": "Vào thứ Bảy và Chủ nhật",
+              "accept_vi": []
+            },
+            {
+              "ja": "午後六時に閉まります。",
+              "vi": "cửa hàng đóng lúc sáu giờ chiều.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p3-s3"
+        },
+        {
+          "ja": "本は二階で、雑誌は一階で売っています。",
+          "vi": "Sách ở tầng hai, tạp chí được bán ở tầng một.",
+          "chunks": [
+            {
+              "ja": "本は二階で、",
+              "vi": "Sách ở tầng hai,",
+              "accept_vi": []
+            },
+            {
+              "ja": "雑誌は一階で売っています。",
+              "vi": "tạp chí được bán ở tầng một.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p3-s4"
+        },
+        {
+          "ja": "今週の日曜日は休みです。",
+          "vi": "Chủ nhật tuần này cửa hàng nghỉ.",
+          "chunks": [
+            {
+              "ja": "今週の日曜日は",
+              "vi": "Chủ nhật tuần này",
+              "accept_vi": []
+            },
+            {
+              "ja": "休みです。",
+              "vi": "cửa hàng nghỉ.",
+              "accept_vi": [
+                "nghỉ",
+                "đóng cửa"
+              ]
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p3-s5"
+        }
+      ],
+      "full_translation_vi": "Cửa hàng này mở cửa lúc mười giờ mỗi ngày.\nTừ thứ Hai đến thứ Sáu cửa hàng đóng lúc tám giờ tối.\nVào thứ Bảy và Chủ nhật cửa hàng đóng lúc sáu giờ chiều.\nSách ở tầng hai, tạp chí được bán ở tầng một.\nChủ nhật tuần này cửa hàng nghỉ."
+    },
+    {
+      "id": "jlpt-n5-practice-01-r-p4",
+      "mondai": 10,
+      "kind": "info",
+      "title_ja": "日本語クラス",
+      "sentences": [
+        {
+          "ja": "朝のクラスは月曜日と水曜日の九時から十時までです。",
+          "vi": "Lớp buổi sáng học từ chín đến mười giờ thứ Hai và thứ Tư.",
+          "chunks": [
+            {
+              "ja": "朝のクラスは",
+              "vi": "Lớp buổi sáng",
+              "accept_vi": []
+            },
+            {
+              "ja": "月曜日と水曜日の九時から十時までです。",
+              "vi": "học từ chín đến mười giờ thứ Hai và thứ Tư.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p4-s1"
+        },
+        {
+          "ja": "夜のクラスは火曜日と木曜日の七時から八時までです。",
+          "vi": "Lớp buổi tối học từ bảy đến tám giờ thứ Ba và thứ Năm.",
+          "chunks": [
+            {
+              "ja": "夜のクラスは",
+              "vi": "Lớp buổi tối",
+              "accept_vi": []
+            },
+            {
+              "ja": "火曜日と木曜日の七時から八時までです。",
+              "vi": "học từ bảy đến tám giờ thứ Ba và thứ Năm.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p4-s2"
+        },
+        {
+          "ja": "どちらのクラスも一か月三千円です。",
+          "vi": "Cả hai lớp đều có học phí ba nghìn yên một tháng.",
+          "chunks": [
+            {
+              "ja": "どちらのクラスも",
+              "vi": "Cả hai lớp",
+              "accept_vi": []
+            },
+            {
+              "ja": "一か月三千円です。",
+              "vi": "đều có học phí ba nghìn yên một tháng.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p4-s3"
+        },
+        {
+          "ja": "勉強したい人は教室で名前を書いてください。",
+          "vi": "Người muốn học hãy ghi tên ở phòng học.",
+          "chunks": [
+            {
+              "ja": "勉強したい人は",
+              "vi": "Người muốn học",
+              "accept_vi": []
+            },
+            {
+              "ja": "教室で名前を書いてください。",
+              "vi": "hãy ghi tên ở phòng học.",
+              "accept_vi": []
+            }
+          ],
+          "pitfalls": [],
+          "id": "jlpt-n5-practice-01-r-p4-s4"
+        }
+      ],
+      "full_translation_vi": "Lớp buổi sáng học từ chín đến mười giờ thứ Hai và thứ Tư.\nLớp buổi tối học từ bảy đến tám giờ thứ Ba và thứ Năm.\nCả hai lớp đều có học phí ba nghìn yên một tháng.\nNgười muốn học hãy ghi tên ở phòng học."
+    }
+  ]
+}

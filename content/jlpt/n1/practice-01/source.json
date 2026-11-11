@@ -1,0 +1,2110 @@
+{
+  "id": "jlpt-n1-practice-01",
+  "title": {
+    "ja": "JLPT N1 2026年12月 予想聴解 第1回",
+    "vi": "JLPT N1 Đề dự đoán T12/2026 — Đề 1",
+    "en": "JLPT N1 December 2026 Listening Prediction — Test 1"
+  },
+  "source": {
+    "type": "practice",
+    "level": "N1",
+    "set": 1,
+    "label": "Đề dự đoán T12/2026 — Đề 1",
+    "rights_note": "Original practice questions authored for this project; synthetic audio."
+  },
+  "status": "published",
+  "content_version": 1,
+  "review_note": "Đề luyện nghe tự biên soạn cho kỳ T12/2026, không phải đề thi chính thức hay thông tin rò rỉ. Đáp án được xác định từ kịch bản gốc. Audio tổng hợp bằng edge-tts; mốc thời gian lấy từ từng clip. Dạng phát ngôn theo tình huống được mô tả bằng lời thay cho tranh. Đã rà soát đáp án, bản dịch, giải thích và mốc thời gian; đối chiếu ASR theo mẫu. Đây là đề luyện nghe rút gọn, không mô phỏng đủ thời gian thi thật.",
+  "speakers": {
+    "speaker": {
+      "ja": "話し手",
+      "vi": "Người nói",
+      "en": "Speaker",
+      "voice": "female"
+    }
+  },
+  "sections": [
+    {
+      "no": 1,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "男の社員はこのあとまず何をしますか。",
+            "vi": "Nam nhân viên sẽ làm gì trước?",
+            "en": "What will he do first?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Chưa đủ căn cứ để triển khai rộng.",
+            "2": "Sai: Trước đó cần xác định các ngoại lệ.",
+            "3": "Đúng: Đây là yêu cầu ưu tiên để xác định phạm vi khảo sát tiếp.",
+            "4": "Sai: Không yêu cầu tính lại ngay."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "全支店に導入を案内する",
+              "vi": "Thông báo triển khai toàn chi nhánh",
+              "en": "Announce rollout"
+            },
+            {
+              "id": "2",
+              "ja": "繁忙期のデータだけを集める",
+              "vi": "Chỉ thu dữ liệu cao điểm",
+              "en": "Collect peak-season data only"
+            },
+            {
+              "id": "3",
+              "ja": "対象外の処理を一覧にする",
+              "vi": "Liệt kê xử lý ngoài phạm vi thử nghiệm",
+              "en": "List excluded processes"
+            },
+            {
+              "id": "4",
+              "ja": "導入による短縮時間を再計算する",
+              "vi": "Tính lại thời gian rút ngắn",
+              "en": "Recalculate time savings"
+            }
+          ],
+          "evidence": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の社員はこのあとまず何をしますか。",
+              "Nam nhân viên sẽ làm gì trước?"
+            ],
+            [
+              "male",
+              "試験導入の結果、処理時間は三割短縮できました。",
+              "Thử nghiệm giảm ba mươi phần trăm thời gian xử lý."
+            ],
+            [
+              "male",
+              "このまま全支店へ展開してよろしいでしょうか。",
+              "Triển khai toàn chi nhánh được chưa ạ?"
+            ],
+            [
+              "female",
+              "数値だけ見ればそうしたいところだけど、繁忙期でも同じ効果が出るかはまだわからないわね。",
+              "Nhìn số thì muốn vậy, nhưng chưa rõ mùa cao điểm có hiệu quả tương tự không."
+            ],
+            [
+              "male",
+              "では、繁忙期のデータを追加で取りますか。",
+              "Vậy thu thêm dữ liệu mùa cao điểm ạ?"
+            ],
+            [
+              "female",
+              "その前に、今回対象から外した例外処理を洗い出して。",
+              "Trước đó liệt kê các xử lý ngoại lệ đã loại khỏi đợt này."
+            ],
+            [
+              "female",
+              "そこに手間が集中している可能性があるから。",
+              "Có thể công sức tập trung ở đó."
+            ],
+            [
+              "female",
+              "調査の範囲はそれを見て決めましょう。",
+              "Phạm vi khảo sát sẽ quyết sau khi xem chúng."
+            ],
+            [
+              "narrator",
+              "男の社員はこのあとまず何をしますか。",
+              "Nam nhân viên sẽ làm gì trước?"
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "女の人は企画書をどのように直しますか。",
+            "vi": "Cô sẽ sửa bản kế hoạch thế nào?",
+            "en": "How will she revise the proposal?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Cần làm nổi lý do tham gia bằng công nghệ sẵn có.",
+            "2": "Sai: Anh nói vấn đề không phải lượng dữ liệu.",
+            "3": "Sai: Giữ số liệu làm căn cứ phía sau.",
+            "4": "Sai: Ngược yêu cầu nêu đầu."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "自社の強みとの関係を先に示す",
+              "vi": "Nêu liên hệ với thế mạnh công ty trước",
+              "en": "Lead with the company’s relevant strengths"
+            },
+            {
+              "id": "2",
+              "ja": "成長予測のグラフを増やす",
+              "vi": "Thêm biểu đồ tăng trưởng",
+              "en": "Add growth charts"
+            },
+            {
+              "id": "3",
+              "ja": "市場の数字をすべて削除する",
+              "vi": "Xóa hết số liệu thị trường",
+              "en": "Delete all market figures"
+            },
+            {
+              "id": "4",
+              "ja": "技術の説明を最後に移す",
+              "vi": "Chuyển công nghệ xuống cuối",
+              "en": "Move technology details to the end"
+            }
+          ],
+          "evidence": [
+            3,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人は企画書をどのように直しますか。",
+              "Cô sẽ sửa bản kế hoạch thế nào?"
+            ],
+            [
+              "female",
+              "企画書ですが、市場の成長予測を冒頭に持ってきました。",
+              "Tôi đã đưa dự báo tăng trưởng thị trường lên đầu kế hoạch."
+            ],
+            [
+              "male",
+              "データは充実しているけど、うちが参入すべき理由が埋もれているね。",
+              "Dữ liệu đầy đủ nhưng lý do công ty ta nên tham gia bị chìm đi."
+            ],
+            [
+              "female",
+              "予測のグラフを増やしましょうか。",
+              "Tôi thêm biểu đồ dự báo nhé?"
+            ],
+            [
+              "male",
+              "量の問題じゃない。",
+              "Không phải chuyện số lượng."
+            ],
+            [
+              "male",
+              "既存の技術をどう生かせるのかを最初に示して、数字はその裏づけとして後に置こう。",
+              "Trình bày trước cách tận dụng công nghệ hiện có, rồi đặt số liệu phía sau làm bằng chứng."
+            ],
+            [
+              "narrator",
+              "女の人は企画書をどのように直しますか。",
+              "Cô sẽ sửa bản kế hoạch thế nào?"
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "男の人はまず何を確認しますか。",
+            "vi": "Anh kiểm tra gì trước?",
+            "en": "What will he check first?"
+          },
+          "answer": "4",
+          "why": {
+            "1": "Sai: Không phải vấn đề được nêu.",
+            "2": "Sai: Không liên quan điều kiện công bố.",
+            "3": "Sai: Không phải điều kiện cần xác minh.",
+            "4": "Đúng: Ẩn danh chưa đủ, phải xác minh quyền tái sử dụng."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "論文の誤字",
+              "vi": "Lỗi chính tả bài báo",
+              "en": "Typos in the paper"
+            },
+            {
+              "id": "2",
+              "ja": "先方の担当者の名前",
+              "vi": "Tên người phụ trách đối tác",
+              "en": "The partner’s contact name"
+            },
+            {
+              "id": "3",
+              "ja": "データの容量",
+              "vi": "Dung lượng dữ liệu",
+              "en": "Data size"
+            },
+            {
+              "id": "4",
+              "ja": "契約上の二次利用の条件",
+              "vi": "Điều kiện tái sử dụng theo hợp đồng",
+              "en": "Contractual conditions for secondary use"
+            }
+          ],
+          "evidence": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人はまず何を確認しますか。",
+              "Anh kiểm tra gì trước?"
+            ],
+            [
+              "male",
+              "共同研究の資料、先方から公開の依頼が来ています。",
+              "Bên đối tác đề nghị công bố tài liệu nghiên cứu chung."
+            ],
+            [
+              "male",
+              "内容はもう論文になっていますが。",
+              "Nội dung đã thành bài báo rồi."
+            ],
+            [
+              "female",
+              "論文とは別に、提供された元のデータが含まれているでしょう。",
+              "Nhưng có dữ liệu gốc được cung cấp, tách biệt với bài báo nhỉ."
+            ],
+            [
+              "male",
+              "個人名は削除してあります。",
+              "Tôi xóa tên cá nhân rồi."
+            ],
+            [
+              "female",
+              "匿名化すれば自由に使えるというものではないわ。",
+              "Không phải ẩn danh là dùng tự do."
+            ],
+            [
+              "female",
+              "契約で二次利用がどこまで認められているか確認して。",
+              "Anh kiểm tra hợp đồng cho phép tái sử dụng đến mức nào."
+            ],
+            [
+              "female",
+              "それによって公開する範囲を決めましょう。",
+              "Sau đó quyết phạm vi công khai."
+            ],
+            [
+              "narrator",
+              "男の人はまず何を確認しますか。",
+              "Anh kiểm tra gì trước?"
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "女の社員はまず誰に話を聞きますか。",
+            "vi": "Cô sẽ hỏi ai trước?",
+            "en": "Whom will she interview first?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Khảo sát người dùng làm sau khi định rõ vấn đề.",
+            "2": "Đúng: Họ nắm các xử lý thực tế chưa nổi lên trong báo cáo.",
+            "3": "Sai: Không phải người được chỉ định trước.",
+            "4": "Sai: Không được đề cập."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "利用者全員",
+              "vi": "Mọi người dùng",
+              "en": "All users"
+            },
+            {
+              "id": "2",
+              "ja": "窓口の担当者",
+              "vi": "Người trực quầy",
+              "en": "Frontline staff"
+            },
+            {
+              "id": "3",
+              "ja": "経営者",
+              "vi": "Ban điều hành",
+              "en": "Executives"
+            },
+            {
+              "id": "4",
+              "ja": "他社の管理職",
+              "vi": "Quản lý công ty khác",
+              "en": "Other companies’ managers"
+            }
+          ],
+          "evidence": [
+            3,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の社員はまず誰に話を聞きますか。",
+              "Cô sẽ hỏi ai trước?"
+            ],
+            [
+              "female",
+              "問い合わせ対応を改善するため、利用者アンケートを作りました。",
+              "Tôi đã soạn khảo sát người dùng để cải thiện xử lý thắc mắc."
+            ],
+            [
+              "male",
+              "利用者の声は必要だけど、まだ表に出ていない問題もあるはずだね。",
+              "Tiếng nói người dùng cần thiết, nhưng có lẽ còn vấn đề chưa lộ ra."
+            ],
+            [
+              "female",
+              "管理職に聞いてみますか。",
+              "Hỏi cấp quản lý ạ?"
+            ],
+            [
+              "male",
+              "まず窓口で毎日対応している人たちだよ。",
+              "Trước hết hỏi người trực quầy hằng ngày."
+            ],
+            [
+              "male",
+              "どんな問い合わせを自分の判断で処理しているのか、それを聞いたうえでアンケートを絞り込んで。",
+              "Hỏi họ đang tự phán đoán xử lý những câu nào rồi thu hẹp khảo sát."
+            ],
+            [
+              "narrator",
+              "女の社員はまず誰に話を聞きますか。",
+              "Cô sẽ hỏi ai trước?"
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "男の人は次に何をしますか。",
+            "vi": "Anh làm gì tiếp?",
+            "en": "What will he do next?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Cần hỏi bảo quản trước khi chọn cách chiếu.",
+            "2": "Sai: Có thể làm hỏng tư liệu nhạy sáng.",
+            "3": "Sai: Không được đề xuất.",
+            "4": "Sai: Bài đề nghị chiếu riêng bảng, không bỏ bảng."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "資料ごとの照明条件を確認する",
+              "vi": "Xác nhận điều kiện ánh sáng từng tư liệu",
+              "en": "Check each exhibit’s lighting limits"
+            },
+            {
+              "id": "2",
+              "ja": "すべての照明を増やす",
+              "vi": "Tăng tất cả đèn",
+              "en": "Increase all lights"
+            },
+            {
+              "id": "3",
+              "ja": "展示資料を減らす",
+              "vi": "Giảm tư liệu trưng bày",
+              "en": "Reduce exhibits"
+            },
+            {
+              "id": "4",
+              "ja": "説明板を撤去する",
+              "vi": "Bỏ bảng giới thiệu",
+              "en": "Remove explanatory panels"
+            }
+          ],
+          "evidence": [
+            3,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人は次に何をしますか。",
+              "Anh làm gì tiếp?"
+            ],
+            [
+              "male",
+              "展示室の照明、全体を明るくすれば読みやすくなりますね。",
+              "Tăng sáng toàn phòng thì dễ đọc hơn nhỉ."
+            ],
+            [
+              "female",
+              "ただ、資料によっては光で傷みやすい物もあります。",
+              "Nhưng có tư liệu dễ hỏng vì ánh sáng."
+            ],
+            [
+              "male",
+              "では、照明の追加をやめますか。",
+              "Vậy bỏ tăng đèn à?"
+            ],
+            [
+              "female",
+              "一律に決めずに、保存担当に資料ごとの許容範囲を聞いてください。",
+              "Đừng quyết đồng loạt, anh hỏi người bảo quản giới hạn cho phép của từng tư liệu nhé."
+            ],
+            [
+              "female",
+              "そのうえで、説明板だけに光を当てる方法も検討しましょう。",
+              "Sau đó xem cả phương án chỉ chiếu vào bảng giới thiệu."
+            ],
+            [
+              "narrator",
+              "男の人は次に何をしますか。",
+              "Anh làm gì tiếp?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "女の人が評価を保留した理由は何ですか。",
+            "vi": "Vì sao cô chưa đưa ra đánh giá?",
+            "en": "Why did she withhold judgment?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Số hồ sơ tăng.",
+            "2": "Sai: Không nêu ngân sách.",
+            "3": "Đúng: Cần xem cơ cấu, không chỉ tổng lượt.",
+            "4": "Sai: Không khẳng định tất cả không biết."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "申請件数が減ったから",
+              "vi": "Vì số hồ sơ giảm",
+              "en": "Applications fell"
+            },
+            {
+              "id": "2",
+              "ja": "制度の予算が不明だから",
+              "vi": "Vì chưa rõ ngân sách",
+              "en": "The budget is unknown"
+            },
+            {
+              "id": "3",
+              "ja": "狙った対象に届いたか不明だから",
+              "vi": "Vì chưa rõ có tới đúng đối tượng mục tiêu",
+              "en": "Reach to the intended users is unclear"
+            },
+            {
+              "id": "4",
+              "ja": "利用者が制度を知らないから",
+              "vi": "Vì người dùng không biết cơ chế",
+              "en": "Users do not know about it"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人が評価を保留した理由は何ですか。",
+              "Vì sao cô chưa đưa ra đánh giá?"
+            ],
+            [
+              "male",
+              "新制度で申請件数が増えたんだから、成功と言っていいのでは。",
+              "Cơ chế mới tăng số hồ sơ thì có thể nói thành công chứ."
+            ],
+            [
+              "female",
+              "利用が広がったのは確かです。",
+              "Đúng là sử dụng tăng."
+            ],
+            [
+              "female",
+              "ただ、増えたのが手続きに慣れた団体だけなら、本来支援したかった小さな団体に届いたとは言えません。",
+              "Nhưng nếu chỉ tăng ở tổ chức quen thủ tục thì chưa thể nói đã tới được nhóm nhỏ vốn muốn hỗ trợ."
+            ],
+            [
+              "female",
+              "利用者の内訳を見ないうちに結論を出すのは早いと思います。",
+              "Chưa xem cơ cấu người dùng thì kết luận còn sớm."
+            ],
+            [
+              "narrator",
+              "女の人が評価を保留した理由は何ですか。",
+              "Vì sao cô chưa đưa ra đánh giá?"
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "男の人が交渉で重視した点は何ですか。",
+            "vi": "Anh coi trọng điểm gì khi đàm phán?",
+            "en": "What did he prioritize in negotiations?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Chia giao hàng và linh hoạt thông số tạo lợi ích cho cả hai.",
+            "2": "Sai: Anh muốn tránh cách đó.",
+            "3": "Sai: Hai bên đã điều chỉnh và đồng thuận.",
+            "4": "Sai: Anh chia kỳ giao như một phần thỏa thuận."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "価格以外の条件を組み合わせて双方の利点を作ること",
+              "vi": "Kết hợp điều kiện ngoài giá để đôi bên có lợi",
+              "en": "Combine nonprice terms for mutual benefit"
+            },
+            {
+              "id": "2",
+              "ja": "品質を下げて価格を下げること",
+              "vi": "Hạ chất lượng để giảm giá",
+              "en": "Lower quality and price"
+            },
+            {
+              "id": "3",
+              "ja": "相手の希望をすべて断ること",
+              "vi": "Từ chối mọi yêu cầu",
+              "en": "Reject all requests"
+            },
+            {
+              "id": "4",
+              "ja": "納期を一切変えないこと",
+              "vi": "Không đổi hạn giao",
+              "en": "Never change delivery terms"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人が交渉で重視した点は何ですか。",
+              "Anh coi trọng điểm gì khi đàm phán?"
+            ],
+            [
+              "female",
+              "今回、値下げには応じなかったんですね。",
+              "Lần này anh không chấp nhận giảm giá nhỉ."
+            ],
+            [
+              "male",
+              "価格だけを競えば、いずれ品質を維持できなくなる。",
+              "Chỉ cạnh tranh giá thì dần không giữ được chất lượng."
+            ],
+            [
+              "male",
+              "そこで納期を分ける代わりに、仕様の変更に対応できる余地を残したんです。",
+              "Tôi chia kỳ giao và giữ khả năng ứng phó thay đổi thông số."
+            ],
+            [
+              "male",
+              "先方も在庫を抱えずに済む。",
+              "Đối tác cũng không phải giữ nhiều tồn kho."
+            ],
+            [
+              "male",
+              "その組み合わせで合意できました。",
+              "Hai bên đồng ý gói kết hợp đó."
+            ],
+            [
+              "narrator",
+              "男の人が交渉で重視した点は何ですか。",
+              "Anh coi trọng điểm gì khi đàm phán?"
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "女の人は研究結果の何を問題にしていますか。",
+            "vi": "Cô thấy vấn đề gì trong kết quả nghiên cứu?",
+            "en": "What concern does she raise about the findings?"
+          },
+          "answer": "4",
+          "why": {
+            "1": "Sai: Mức hài lòng cao.",
+            "2": "Sai: Không phải vấn đề nêu.",
+            "3": "Sai: Ngược thực tế thiên về người lâu năm.",
+            "4": "Đúng: Mẫu tự nguyện và giàu kinh nghiệm chưa đại diện mọi bộ phận."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "参加者が一人も満足していないこと",
+              "vi": "Không ai hài lòng",
+              "en": "Nobody was satisfied"
+            },
+            {
+              "id": "2",
+              "ja": "研修の実施日が不明なこと",
+              "vi": "Không rõ ngày đào tạo",
+              "en": "The date is unknown"
+            },
+            {
+              "id": "3",
+              "ja": "新人だけが参加したこと",
+              "vi": "Chỉ có nhân viên mới tham gia",
+              "en": "Only newcomers attended"
+            },
+            {
+              "id": "4",
+              "ja": "対象の偏りを無視した一般化",
+              "vi": "Khái quát hóa bỏ qua mẫu lệch",
+              "en": "Generalization despite a biased sample"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人は研究結果の何を問題にしていますか。",
+              "Cô thấy vấn đề gì trong kết quả nghiên cứu?"
+            ],
+            [
+              "male",
+              "参加者の満足度が高かったので、この研修はどの部署にも有効ですね。",
+              "Hài lòng cao nên đào tạo này hữu hiệu với mọi bộ phận nhỉ."
+            ],
+            [
+              "female",
+              "そこまでは言い切れません。",
+              "Không thể khẳng định xa vậy."
+            ],
+            [
+              "female",
+              "今回は自分から参加を希望した人だけですし、業務経験も長い人に偏っています。",
+              "Đợt này chỉ người tự nguyện, lại lệch về người nhiều kinh nghiệm."
+            ],
+            [
+              "female",
+              "同じ方法が新人にも当てはまるかは、別に確かめる必要があります。",
+              "Cần kiểm tra riêng xem phương pháp có phù hợp nhân viên mới."
+            ],
+            [
+              "narrator",
+              "女の人は研究結果の何を問題にしていますか。",
+              "Cô thấy vấn đề gì trong kết quả nghiên cứu?"
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "男の人が地方での活動を続ける理由は何ですか。",
+            "vi": "Vì sao anh tiếp tục hoạt động ở địa phương?",
+            "en": "Why does he continue his local work?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Anh thừa nhận đô thị có nhiều cơ hội hơn.",
+            "2": "Đúng: Phản hồi dài hạn ảnh hưởng tác phẩm tiếp là lý do chính.",
+            "3": "Sai: Không nói tránh phê bình.",
+            "4": "Sai: Không đề cập chi phí."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "発表の回数が大都市より多いから",
+              "vi": "Vì được công bố nhiều hơn đô thị",
+              "en": "More exhibitions than in cities"
+            },
+            {
+              "id": "2",
+              "ja": "継続した交流が制作に生きるから",
+              "vi": "Vì giao lưu liên tục giúp sáng tác",
+              "en": "Continuing interaction informs his work"
+            },
+            {
+              "id": "3",
+              "ja": "批判を受けずに済むから",
+              "vi": "Vì tránh bị phê bình",
+              "en": "He can avoid criticism"
+            },
+            {
+              "id": "4",
+              "ja": "制作費が全くかからないから",
+              "vi": "Vì sáng tác không tốn phí",
+              "en": "There are no production costs"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人が地方での活動を続ける理由は何ですか。",
+              "Vì sao anh tiếp tục hoạt động ở địa phương?"
+            ],
+            [
+              "female",
+              "大都市のほうが発表の機会は多いでしょう。",
+              "Ở đô thị lớn có nhiều dịp công bố hơn chứ."
+            ],
+            [
+              "male",
+              "確かに。",
+              "Đúng."
+            ],
+            [
+              "male",
+              "でもここでは、展示を見た人と翌日も市場で顔を合わせる。",
+              "Nhưng ở đây hôm sau ở chợ tôi lại gặp người đã xem triển lãm."
+            ],
+            [
+              "male",
+              "反応が一度きりで終わらず、次の制作に返ってくるんです。",
+              "Phản hồi không dừng một lần mà quay về ảnh hưởng sáng tác tiếp."
+            ],
+            [
+              "male",
+              "発表の数より、そのやり取りが自分には欠かせないんですよ。",
+              "Hơn số lần công bố, tương tác ấy không thể thiếu với tôi."
+            ],
+            [
+              "narrator",
+              "男の人が地方での活動を続ける理由は何ですか。",
+              "Vì sao anh tiếp tục hoạt động ở địa phương?"
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "女の人は記録のデジタル化に何が必要だと考えていますか。",
+            "vi": "Cô nghĩ số hóa hồ sơ cần gì?",
+            "en": "What does she consider necessary for digitization?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Tên cũ, bối cảnh và từ tìm giúp tiếp cận tư liệu.",
+            "2": "Sai: Ảnh đã lưu hết, vấn đề là tìm kiếm.",
+            "3": "Sai: Tên cũ cần được tìm kiếm, không xóa.",
+            "4": "Sai: Không chủ trương hạn chế người dùng."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "検索する人の視点で情報を付けること",
+              "vi": "Gắn thông tin theo góc nhìn người tìm",
+              "en": "Add information based on searchers’ needs"
+            },
+            {
+              "id": "2",
+              "ja": "画像の数だけを増やすこと",
+              "vi": "Chỉ tăng số ảnh",
+              "en": "Only increase image counts"
+            },
+            {
+              "id": "3",
+              "ja": "古い地名をすべて削除すること",
+              "vi": "Xóa hết địa danh cũ",
+              "en": "Delete old place names"
+            },
+            {
+              "id": "4",
+              "ja": "利用者を専門家に限定すること",
+              "vi": "Chỉ cho chuyên gia dùng",
+              "en": "Restrict use to experts"
+            }
+          ],
+          "evidence": [
+            4,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人は記録のデジタル化に何が必要だと考えていますか。",
+              "Cô nghĩ số hóa hồ sơ cần gì?"
+            ],
+            [
+              "male",
+              "古い資料の画像は全部保存しました。",
+              "Đã lưu ảnh toàn bộ tư liệu cũ."
+            ],
+            [
+              "male",
+              "これで誰でも利用できますね。",
+              "Giờ ai cũng dùng được nhỉ."
+            ],
+            [
+              "female",
+              "画像があるだけでは探し当てられません。",
+              "Chỉ có ảnh thì chưa tìm ra được."
+            ],
+            [
+              "female",
+              "地名の古い呼び方や、資料が作られた経緯も検索できるようにしないと。",
+              "Cần tìm được cả tên địa danh xưa và bối cảnh tạo tài liệu."
+            ],
+            [
+              "female",
+              "読み手がどんな言葉で探すかを考える作業が残っています。",
+              "Còn phải nghĩ người đọc tìm bằng từ nào."
+            ],
+            [
+              "narrator",
+              "女の人は記録のデジタル化に何が必要だと考えていますか。",
+              "Cô nghĩ số hóa hồ sơ cần gì?"
+            ]
+          ]
+        },
+        {
+          "no": 6,
+          "prompt": {
+            "ja": "男の人はなぜ計画の変更を提案しましたか。",
+            "vi": "Vì sao anh đề nghị đổi kế hoạch?",
+            "en": "Why did he propose changing the plan?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Không đề cập nhân lực.",
+            "2": "Sai: Đề nghị chuyển từng chức năng.",
+            "3": "Đúng: Chuyển dần để duy trì sử dụng và sửa theo phản hồi.",
+            "4": "Sai: Anh muốn quan sát phản ứng."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "開発者の人数を減らすため",
+              "vi": "Để giảm người phát triển",
+              "en": "Reduce developer numbers"
+            },
+            {
+              "id": "2",
+              "ja": "すべての機能を削除するため",
+              "vi": "Để xóa mọi chức năng",
+              "en": "Remove every feature"
+            },
+            {
+              "id": "3",
+              "ja": "利用者の学び直しの負担を抑えるため",
+              "vi": "Để giảm gánh học lại của người dùng",
+              "en": "Reduce users’ relearning burden"
+            },
+            {
+              "id": "4",
+              "ja": "利用者の意見を聞かないため",
+              "vi": "Để không nghe ý kiến người dùng",
+              "en": "Avoid user feedback"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人はなぜ計画の変更を提案しましたか。",
+              "Vì sao anh đề nghị đổi kế hoạch?"
+            ],
+            [
+              "female",
+              "開発の効率を考えると、全部一度に切り替えるほうがよいのでは。",
+              "Xét hiệu suất phát triển thì đổi toàn bộ một lần tốt hơn chứ."
+            ],
+            [
+              "male",
+              "開発側だけ見ればそうです。",
+              "Chỉ phía phát triển thì đúng."
+            ],
+            [
+              "male",
+              "ただ、利用者が操作を覚え直す負担は小さくない。",
+              "Nhưng người dùng phải học lại thao tác, gánh nặng không nhỏ."
+            ],
+            [
+              "male",
+              "機能ごとに移せば、反応を見ながら修正もできる。",
+              "Chuyển theo chức năng thì sửa được theo phản ứng."
+            ],
+            [
+              "male",
+              "短期の効率より、使い続けてもらえることを優先したいんです。",
+              "Tôi ưu tiên họ tiếp tục dùng hơn hiệu suất ngắn hạn."
+            ],
+            [
+              "narrator",
+              "男の人はなぜ計画の変更を提案しましたか。",
+              "Vì sao anh đề nghị đổi kế hoạch?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "話し手の考えとして最も適切なものはどれですか。",
+            "vi": "Quan điểm phù hợp nhất với người nói là gì?",
+            "en": "Which best matches the speaker’s view?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Khoảng trống giúp phát hiện vấn đề và thích ứng.",
+            "2": "Sai: Không bác hiệu suất, chỉ hỏi cách dùng phần dư.",
+            "3": "Sai: Bài cảnh báo lấp kín thời gian.",
+            "4": "Sai: Ví dụ phát hiện vấn đề không thành khẳng định tuyệt đối."
+          },
+          "evidence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "speaker",
+              "効率化で生まれた余裕は、すぐに別の業務で埋められがちです。",
+              "Khoảng trống do tăng hiệu suất thường lập tức bị lấp bằng việc khác."
+            ],
+            [
+              "speaker",
+              "しかし、予定のない時間をすべて無駄とみなしてよいのでしょうか。",
+              "Nhưng có nên coi mọi thời gian không có lịch là lãng phí?"
+            ],
+            [
+              "speaker",
+              "偶然の会話から問題に気づいたり、従来のやり方を疑ったりするには、目先の処理に追われない時間が要ります。",
+              "Để nhận ra vấn đề qua chuyện trò ngẫu nhiên hay xét lại cách cũ, cần thời gian không bị cuốn vào xử lý trước mắt."
+            ],
+            [
+              "speaker",
+              "余裕を残すことも、組織が変化に対応するための投資と捉えるべきではないでしょうか。",
+              "Giữ khoảng trống cũng nên xem là đầu tư giúp tổ chức thích ứng thay đổi."
+            ],
+            [
+              "narrator",
+              "話し手の考えとして最も適切なものはどれですか。",
+              "Quan điểm phù hợp nhất với người nói là gì?"
+            ],
+            [
+              "choice_1",
+              "余裕のある時間にも組織的な価値がある",
+              "Thời gian có khoảng trống cũng có giá trị với tổ chức",
+              "Unscheduled time can have organizational value"
+            ],
+            [
+              "choice_2",
+              "効率化はすべて中止すべきだ",
+              "Nên dừng mọi tăng hiệu suất",
+              "All efficiency efforts should stop"
+            ],
+            [
+              "choice_3",
+              "業務の数を増やせば変化に対応できる",
+              "Tăng số việc là thích ứng được",
+              "More tasks guarantee adaptability"
+            ],
+            [
+              "choice_4",
+              "雑談だけで経営上の問題は解決する",
+              "Chỉ chuyện phiếm là giải quyết quản trị",
+              "Casual talk solves all management problems"
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "話し手は伝統をどのように捉えていますか。",
+            "vi": "Người nói nhìn truyền thống thế nào?",
+            "en": "How does the speaker view tradition?"
+          },
+          "answer": "4",
+          "why": {
+            "1": "Sai: Trái lập luận hình thức vốn đã biến đổi.",
+            "2": "Sai: Không xem riêng vật liệu là đủ.",
+            "3": "Sai: Bài bàn cái gì cần truyền từ quá khứ.",
+            "4": "Đúng: Kết luận thừa nhận đổi mới có thể giữ đường truyền lại."
+          },
+          "evidence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "speaker",
+              "伝統を守るというと、過去の形を一切変えないことだと受け取られがちです。",
+              "Giữ truyền thống thường bị hiểu là không đổi chút hình thức xưa."
+            ],
+            [
+              "speaker",
+              "けれども、その形自体、材料や担い手が変わるたびに調整されてきました。",
+              "Nhưng chính hình thức đã điều chỉnh mỗi khi vật liệu, người thực hiện đổi."
+            ],
+            [
+              "speaker",
+              "何を変えるかだけでなく、何を次の世代に渡したいのかが問われているのです。",
+              "Không chỉ đổi gì mà muốn trao gì cho thế hệ sau mới là câu hỏi."
+            ],
+            [
+              "speaker",
+              "変化を排除することが、かえって継承の道を閉ざす場合もあります。",
+              "Loại bỏ thay đổi đôi khi lại đóng đường kế thừa."
+            ],
+            [
+              "narrator",
+              "話し手は伝統をどのように捉えていますか。",
+              "Người nói nhìn truyền thống thế nào?"
+            ],
+            [
+              "choice_1",
+              "形を変えたら伝統ではなくなる",
+              "Đổi hình thức thì không còn truyền thống",
+              "Any change destroys tradition"
+            ],
+            [
+              "choice_2",
+              "材料だけ残せば十分だ",
+              "Chỉ giữ vật liệu là đủ",
+              "Keeping materials alone is enough"
+            ],
+            [
+              "choice_3",
+              "過去のことは継承に関係しない",
+              "Quá khứ không liên quan kế thừa",
+              "The past is irrelevant"
+            ],
+            [
+              "choice_4",
+              "継承のために変化が必要なこともある",
+              "Đôi khi cần thay đổi để kế thừa",
+              "Change can be necessary for continuity"
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "この話の主な論点は何ですか。",
+            "vi": "Luận điểm chính là gì?",
+            "en": "What is the central issue?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Không bàn khả năng tính.",
+            "2": "Đúng: Ví dụ chỉ số tốt lên có thể che nhóm bị thiệt.",
+            "3": "Sai: Không phủ nhận đo lường.",
+            "4": "Sai: Bài chính là nêu chênh lệch."
+          },
+          "evidence": [
+            1,
+            2,
+            3
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "speaker",
+              "平均値は全体を知る手がかりになりますが、それだけで実態が見えたと思うのは危険です。",
+              "Trung bình giúp hiểu tổng thể nhưng chỉ thế mà nghĩ thấy thực trạng là nguy hiểm."
+            ],
+            [
+              "speaker",
+              "待ち時間の平均が短くなっても、ごく一部の人が以前より長く待たされているかもしれません。",
+              "Thời gian đợi trung bình giảm nhưng một số ít có thể đợi lâu hơn trước."
+            ],
+            [
+              "speaker",
+              "改善の恩恵が誰に届き、誰が取り残されたのかを確かめなければ、数値の改善を生活の改善と同一視してしまいます。",
+              "Nếu không xem ai hưởng lợi, ai bị bỏ lại, ta sẽ đồng nhất cải thiện chỉ số với cải thiện đời sống."
+            ],
+            [
+              "narrator",
+              "この話の主な論点は何ですか。",
+              "Luận điểm chính là gì?"
+            ],
+            [
+              "choice_1",
+              "平均値は計算できないこと",
+              "Không tính được trung bình",
+              "Averages cannot be calculated"
+            ],
+            [
+              "choice_2",
+              "平均だけでは分布や格差を捉えきれないこと",
+              "Chỉ trung bình chưa phản ánh phân bố và chênh lệch",
+              "Averages alone miss distribution and disparities"
+            ],
+            [
+              "choice_3",
+              "待ち時間を測る必要がないこと",
+              "Không cần đo thời gian đợi",
+              "Waiting time need not be measured"
+            ],
+            [
+              "choice_4",
+              "全員の待ち時間が必ず同じになること",
+              "Thời gian đợi mọi người luôn bằng nhau",
+              "Everyone always waits equally"
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "話し手は専門家に何を求めていますか。",
+            "vi": "Người nói đòi hỏi gì ở chuyên gia?",
+            "en": "What does the speaker ask of experts?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Bài yêu cầu phân biệt điều chưa chắc.",
+            "2": "Sai: Cảnh báo tác hại của khẳng định vô điều kiện.",
+            "3": "Đúng: Đây là thái độ người nói xem tạo niềm tin.",
+            "4": "Sai: Giải thích minh bạch không có nghĩa đẩy trách nhiệm."
+          },
+          "evidence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "speaker",
+              "専門家には明快な答えが期待されます。",
+              "Chuyên gia được kỳ vọng có câu trả lời rõ ràng."
+            ],
+            [
+              "speaker",
+              "しかし、現時点で何がわかり、何が未確定かを区別することも専門性の一部です。",
+              "Nhưng phân biệt hiện biết gì, chưa chắc gì cũng là chuyên môn."
+            ],
+            [
+              "speaker",
+              "不確実だと伝えるのは責任逃れだと言う人もいますが、条件を省いた断言は判断を誤らせかねません。",
+              "Có người cho nêu bất định là trốn trách nhiệm, nhưng khẳng định bỏ điều kiện có thể gây phán đoán sai."
+            ],
+            [
+              "speaker",
+              "知識の限界を含めて説明する姿勢こそ、信頼を支えるのではないでしょうか。",
+              "Giải thích cả giới hạn tri thức mới là nền cho niềm tin."
+            ],
+            [
+              "narrator",
+              "話し手は専門家に何を求めていますか。",
+              "Người nói đòi hỏi gì ở chuyên gia?"
+            ],
+            [
+              "choice_1",
+              "不確定な点には一切触れないこと",
+              "Không đụng tới điều chưa chắc",
+              "Never mention uncertainty"
+            ],
+            [
+              "choice_2",
+              "どんな質問にも必ず断言すること",
+              "Luôn khẳng định mọi câu hỏi",
+              "Always give categorical answers"
+            ],
+            [
+              "choice_3",
+              "知識の限界も明示すること",
+              "Nêu rõ cả giới hạn tri thức",
+              "Make the limits of knowledge explicit"
+            ],
+            [
+              "choice_4",
+              "判断をすべて相手に押しつけること",
+              "Đẩy hết phán đoán cho đối phương",
+              "Shift all judgment to others"
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "話し手が最も伝えたいことは何ですか。",
+            "vi": "Điều người nói muốn truyền đạt nhất là gì?",
+            "en": "What is the main message?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Kết luận chuyển góc nhìn từ lỗi người sang thiết kế.",
+            "2": "Sai: Là cách dễ bỏ sót vấn đề.",
+            "3": "Sai: Trái yêu cầu quan sát người mới.",
+            "4": "Sai: Người nói muốn sửa cấu trúc bất tiện."
+          },
+          "evidence": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "speaker",
+              "使いやすさを調べる際、慣れた人だけを観察すると問題を見逃します。",
+              "Khảo sát tính dễ dùng mà chỉ quan sát người đã quen sẽ bỏ sót vấn đề."
+            ],
+            [
+              "speaker",
+              "慣れた人は不便な操作を無意識に補ってしまうからです。",
+              "Vì họ vô thức bù đắp cho những thao tác bất tiện."
+            ],
+            [
+              "speaker",
+              "初めての人が立ち止まる場所には、設計側が当然と思い込んだ前提が表れます。",
+              "Nơi người mới dừng lại bộc lộ tiền đề người thiết kế tưởng là hiển nhiên."
+            ],
+            [
+              "speaker",
+              "初心者の戸惑いを能力不足として片づけず、仕組みを見直す手がかりとして受け止めたいものです。",
+              "Nên xem sự lúng túng của người mới là manh mối sửa hệ thống, thay vì quy là thiếu năng lực."
+            ],
+            [
+              "narrator",
+              "話し手が最も伝えたいことは何ですか。",
+              "Điều người nói muốn truyền đạt nhất là gì?"
+            ],
+            [
+              "choice_1",
+              "初心者の戸惑いを改善の手がかりにする",
+              "Dùng sự lúng túng người mới làm manh mối cải tiến",
+              "Use beginners’ confusion to improve design"
+            ],
+            [
+              "choice_2",
+              "慣れた人の意見だけ採用する",
+              "Chỉ nhận ý người quen",
+              "Use only experienced users’ views"
+            ],
+            [
+              "choice_3",
+              "初心者には使わせない",
+              "Không cho người mới dùng",
+              "Exclude beginners"
+            ],
+            [
+              "choice_4",
+              "不便な操作に全員を慣れさせる",
+              "Bắt mọi người quen thao tác bất tiện",
+              "Train everyone around inconvenience"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "条件が変わった以上、計画を白紙に戻さざるを得ません。",
+            "vi": "Điều kiện đã đổi nên buộc phải làm lại kế hoạch từ đầu.",
+            "en": "With conditions changed, we must start the plan over."
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: 白紙に戻す là xem lại từ đầu, đáp phù hợp.",
+            "2": "Sai: Hiểu đen 白紙.",
+            "3": "Sai: Trái quyết định buộc lập lại."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "条件が変わった以上、計画を白紙に戻さざるを得ません。",
+              "Điều kiện đã đổi nên buộc phải làm lại kế hoạch từ đầu."
+            ],
+            [
+              "choice_1",
+              "では、当初の前提から整理し直しましょう。",
+              "Vậy rà lại từ các tiền đề ban đầu.",
+              "Then let’s revisit the original assumptions."
+            ],
+            [
+              "choice_2",
+              "白い紙はもう使えませんね。",
+              "Không dùng được giấy trắng nữa nhỉ.",
+              "White paper is unusable now."
+            ],
+            [
+              "choice_3",
+              "何も変えずに進めましょう。",
+              "Tiến hành không đổi gì.",
+              "Proceed unchanged."
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "あの説明では、疑念を招きかねないんじゃないですか。",
+            "vi": "Giải thích thế có nguy cơ gây nghi ngờ chứ?",
+            "en": "Might that explanation invite suspicion?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Ngược nguy cơ nêu.",
+            "2": "Sai: Không có căn cứ phủ nhận nguy cơ.",
+            "3": "Đúng: Thừa nhận lý do giải thích có thể gây nghi ngờ."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "あの説明では、疑念を招きかねないんじゃないですか。",
+              "Giải thích thế có nguy cơ gây nghi ngờ chứ?"
+            ],
+            [
+              "choice_1",
+              "疑いが全部消えたんですね。",
+              "Mọi nghi ngờ đã hết nhỉ.",
+              "All doubts have disappeared."
+            ],
+            [
+              "choice_2",
+              "疑念は絶対に生じませんでした。",
+              "Đã tuyệt đối không có nghi ngờ.",
+              "No suspicion ever arose."
+            ],
+            [
+              "choice_3",
+              "確かに、経緯を省きすぎましたね。",
+              "Đúng, đã lược quá nhiều diễn biến.",
+              "True, we omitted too much background."
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "彼の提案も、あながち的外れとは言えないね。",
+            "vi": "Đề xuất của anh ấy cũng không thể nói hoàn toàn lạc hướng.",
+            "en": "His proposal is not entirely off the mark."
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: あながち〜ない phủ nhận đánh giá tuyệt đối.",
+            "2": "Đúng: Diễn đạt đúng mức chấp nhận có giới hạn.",
+            "3": "Sai: Đề xuất đã tồn tại."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "彼の提案も、あながち的外れとは言えないね。",
+              "Đề xuất của anh ấy cũng không thể nói hoàn toàn lạc hướng."
+            ],
+            [
+              "choice_1",
+              "全面的に否定するんだね。",
+              "Cậu phủ nhận toàn bộ nhỉ.",
+              "You reject it entirely."
+            ],
+            [
+              "choice_2",
+              "一理あるということだね。",
+              "Tức là cũng có lý nhỉ.",
+              "So there is some merit to it."
+            ],
+            [
+              "choice_3",
+              "何も提案しなかったんだね。",
+              "Anh ấy chẳng đề xuất gì nhỉ.",
+              "He made no proposal."
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "あれだけの準備をしておいて、中止とはね。",
+            "vi": "Chuẩn bị đến thế mà lại hủy nhỉ.",
+            "en": "After all that preparation, it is canceled."
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Chia sẻ sự hụt hẫng sau công chuẩn bị.",
+            "2": "Sai: Đã chuẩn bị rất nhiều.",
+            "3": "Sai: Không phù hợp sự việc đã xảy ra."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "あれだけの準備をしておいて、中止とはね。",
+              "Chuẩn bị đến thế mà lại hủy nhỉ."
+            ],
+            [
+              "choice_1",
+              "本当に、やりきれない気持ちだよ。",
+              "Thật sự khó nguôi được.",
+              "It really is disheartening."
+            ],
+            [
+              "choice_2",
+              "準備しなくて済んでよかったね。",
+              "May không phải chuẩn bị.",
+              "Good thing no preparation was needed."
+            ],
+            [
+              "choice_3",
+              "中止なら準備を始めよう。",
+              "Hủy thì bắt đầu chuẩn bị.",
+              "If canceled, let’s start preparing."
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "口を出すつもりはないけど、その進め方には無理があるよ。",
+            "vi": "Tôi không định xen vào, nhưng cách làm ấy khó khả thi.",
+            "en": "I do not mean to interfere, but that approach is unrealistic."
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Người nói vừa nêu phản biện.",
+            "2": "Sai: Hiểu đen 口を出す.",
+            "3": "Đúng: Đón nhận phản biện và hỏi cụ thể."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "口を出すつもりはないけど、その進め方には無理があるよ。",
+              "Tôi không định xen vào, nhưng cách làm ấy khó khả thi."
+            ],
+            [
+              "choice_1",
+              "何も意見はないんだね。",
+              "Cậu không có ý kiến nhỉ.",
+              "You have no opinion."
+            ],
+            [
+              "choice_2",
+              "口を開けてください。",
+              "Hãy mở miệng.",
+              "Open your mouth."
+            ],
+            [
+              "choice_3",
+              "どの点を見直すべきか、聞かせてくれる？",
+              "Cậu nói giúp cần xem lại điểm nào?",
+              "Could you tell me what needs revising?"
+            ]
+          ]
+        },
+        {
+          "no": 6,
+          "prompt": {
+            "ja": "この点は、説明を尽くしたつもりなんですが。",
+            "vi": "Điểm này tôi nghĩ mình đã giải thích hết sức rồi.",
+            "en": "I thought I had explained this point fully."
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Không xử lý khoảng cách hiểu.",
+            "2": "Đúng: Thừa nhận ý rồi lịch sự yêu cầu điểm còn thiếu.",
+            "3": "Sai: Phủ nhận không phù hợp tiền đề."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "この点は、説明を尽くしたつもりなんですが。",
+              "Điểm này tôi nghĩ mình đã giải thích hết sức rồi."
+            ],
+            [
+              "choice_1",
+              "説明する前からわかっていました。",
+              "Tôi biết từ trước giải thích.",
+              "I knew before the explanation."
+            ],
+            [
+              "choice_2",
+              "意図はわかりましたが、根拠をもう少し伺えますか。",
+              "Tôi hiểu ý, nhưng xin hỏi thêm căn cứ.",
+              "I understand the intention, but could you add evidence?"
+            ],
+            [
+              "choice_3",
+              "説明を一度もしていませんね。",
+              "Anh chưa giải thích lần nào.",
+              "You have never explained it."
+            ]
+          ]
+        },
+        {
+          "no": 7,
+          "prompt": {
+            "ja": "彼女の判断の速さには、舌を巻くばかりです。",
+            "vi": "Tôi chỉ biết thán phục tốc độ phán đoán của cô ấy.",
+            "en": "I am amazed by how quickly she makes decisions."
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Đáp tự nhiên về năng lực đáng khâm phục.",
+            "2": "Sai: Hiểu đen 舌を巻く.",
+            "3": "Sai: Mâu thuẫn khen phán đoán nhanh."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "彼女の判断の速さには、舌を巻くばかりです。",
+              "Tôi chỉ biết thán phục tốc độ phán đoán của cô ấy."
+            ],
+            [
+              "choice_1",
+              "経験に裏打ちされているんでしょうね。",
+              "Chắc được nền kinh nghiệm nâng đỡ.",
+              "It must be backed by experience."
+            ],
+            [
+              "choice_2",
+              "舌の治療が必要ですね。",
+              "Cần chữa lưỡi nhỉ.",
+              "She needs tongue treatment."
+            ],
+            [
+              "choice_3",
+              "判断しない人なんですね。",
+              "Cô ấy không phán đoán nhỉ.",
+              "She never makes decisions."
+            ]
+          ]
+        },
+        {
+          "no": 8,
+          "prompt": {
+            "ja": "今の段階で成果を求めるのは、酷というものですよ。",
+            "vi": "Đòi thành quả ở giai đoạn này thì khắt khe quá.",
+            "en": "Demanding results at this stage is too harsh."
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Trái ý còn quá sớm.",
+            "2": "Sai: Không khẳng định có đủ kết quả.",
+            "3": "Đúng: Đồng tình chưa nên ép kết quả sớm."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "今の段階で成果を求めるのは、酷というものですよ。",
+              "Đòi thành quả ở giai đoạn này thì khắt khe quá."
+            ],
+            [
+              "choice_1",
+              "今すぐ結論を出すべきですね。",
+              "Nên kết luận ngay.",
+              "We should conclude now."
+            ],
+            [
+              "choice_2",
+              "成果はすでに十分なんですね。",
+              "Thành quả đã đủ nhỉ.",
+              "Results are already sufficient."
+            ],
+            [
+              "choice_3",
+              "もう少し時間をかけて見守りましょう。",
+              "Dành thêm thời gian theo dõi nhé.",
+              "Let’s give it more time."
+            ]
+          ]
+        },
+        {
+          "no": 9,
+          "prompt": {
+            "ja": "これまでの経緯に照らせば、慎重にならざるを得ないね。",
+            "vi": "Xét diễn biến đến nay thì buộc phải thận trọng.",
+            "en": "Given the history, we have to be cautious."
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: 経緯に照らせば chính là dựa quá khứ.",
+            "2": "Đúng: Nêu lý do phù hợp sự thận trọng.",
+            "3": "Sai: Trái thái độ thận trọng."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "これまでの経緯に照らせば、慎重にならざるを得ないね。",
+              "Xét diễn biến đến nay thì buộc phải thận trọng."
+            ],
+            [
+              "choice_1",
+              "過去は何も関係ないんだね。",
+              "Quá khứ không liên quan nhỉ.",
+              "The past is irrelevant."
+            ],
+            [
+              "choice_2",
+              "同じ問題を繰り返すわけにはいかないからね。",
+              "Vì không thể lặp lại vấn đề ấy.",
+              "We cannot repeat the same problem."
+            ],
+            [
+              "choice_3",
+              "何も確認せず決めよう。",
+              "Quyết không kiểm gì.",
+              "Let’s decide without checking."
+            ]
+          ]
+        },
+        {
+          "no": 10,
+          "prompt": {
+            "ja": "評価が分かれるのも、無理からぬことですね。",
+            "vi": "Đánh giá khác nhau cũng là điều dễ hiểu.",
+            "en": "It is understandable that opinions differ."
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Giải thích hợp lý sự khác biệt.",
+            "2": "Sai: Không hiểu 無理からぬ là dễ hiểu.",
+            "3": "Sai: Mâu thuẫn 評価が分かれる."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "評価が分かれるのも、無理からぬことですね。",
+              "Đánh giá khác nhau cũng là điều dễ hiểu."
+            ],
+            [
+              "choice_1",
+              "立場によって重視する点が違いますからね。",
+              "Vì mỗi vị trí coi trọng điểm khác.",
+              "Different positions value different things."
+            ],
+            [
+              "choice_2",
+              "分かれてはいけないと決めましたね。",
+              "Đã quyết không được khác nhau.",
+              "We decided disagreement is forbidden."
+            ],
+            [
+              "choice_3",
+              "全員まったく同じ評価ですね。",
+              "Mọi người đánh giá y hệt.",
+              "Everyone agrees completely."
+            ]
+          ]
+        },
+        {
+          "no": 11,
+          "prompt": {
+            "ja": "善意でやったとはいえ、結果には責任を持つべきです。",
+            "vi": "Dù có thiện ý, vẫn phải chịu trách nhiệm kết quả.",
+            "en": "Good intentions do not remove responsibility for outcomes."
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Trái lập luận nhượng bộ.",
+            "2": "Sai: Phủ nhận điều được yêu cầu.",
+            "3": "Đúng: Hiểu đúng thiện ý không miễn trách nhiệm."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "善意でやったとはいえ、結果には責任を持つべきです。",
+              "Dù có thiện ý, vẫn phải chịu trách nhiệm kết quả."
+            ],
+            [
+              "choice_1",
+              "善意なら何をしてもいいですね。",
+              "Thiện ý thì làm gì cũng được.",
+              "Anything is fine with good intentions."
+            ],
+            [
+              "choice_2",
+              "結果を見る必要はないですね。",
+              "Không cần nhìn kết quả.",
+              "No need to consider outcomes."
+            ],
+            [
+              "choice_3",
+              "意図だけでは済まされないということですね。",
+              "Tức là không thể chỉ viện ý định.",
+              "So intention alone is not enough."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "二人は今後の販売方法をどうしますか。",
+            "vi": "Hai người quyết định cách bán tiếp theo thế nào?",
+            "en": "What sales approach do they decide on?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Chưa bảo đảm chất cảm được đánh giá cao.",
+            "2": "Đúng: Phương án chốt giữ vật liệu hiện tại và điều kiện minh bạch.",
+            "3": "Sai: Đã bác dừng toàn bộ.",
+            "4": "Sai: Không đủ nguồn để nhận không giới hạn."
+          },
+          "evidence": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "female",
+              "試作品は評判がいいですが、量産すると素材の調達が追いつきません。",
+              "Mẫu thử được khen nhưng sản xuất đại trà không đủ vật liệu."
+            ],
+            [
+              "male",
+              "代替素材なら数は確保できます。",
+              "Vật liệu thay thế thì có thể bảo đảm đủ lượng."
+            ],
+            [
+              "male",
+              "ただ、手触りは変わりますね。",
+              "Tuy nhiên cảm giác khi sờ sẽ khác."
+            ],
+            [
+              "female",
+              "その手触りを評価してもらっている以上、簡単には替えられません。",
+              "Khách đánh giá cao chính cảm giác đó nên không dễ đổi."
+            ],
+            [
+              "female",
+              "受注を止めますか。",
+              "Dừng nhận đơn à?"
+            ],
+            [
+              "male",
+              "全面的に止めるより、今の素材で作れる数を明示して、納期に同意した方だけ受け付けてはどうでしょう。",
+              "Thay vì dừng hết, nêu rõ số có thể làm bằng vật liệu hiện tại, chỉ nhận người đồng ý kỳ giao thì sao?"
+            ],
+            [
+              "female",
+              "そうしましょう。",
+              "Làm vậy nhé."
+            ],
+            [
+              "female",
+              "代替素材の検証は続けますが、今回の販売とは切り離します。",
+              "Vẫn kiểm vật liệu thay thế nhưng tách khỏi bán đợt này."
+            ],
+            [
+              "narrator",
+              "二人は今後の販売方法をどうしますか。",
+              "Hai người quyết định cách bán tiếp theo thế nào?"
+            ],
+            [
+              "choice_1",
+              "代替素材ですぐ量産する",
+              "Lập tức dùng vật liệu thay để đại trà",
+              "Mass-produce with substitute material"
+            ],
+            [
+              "choice_2",
+              "数量と納期を示して限定受注する",
+              "Nêu lượng và hạn, nhận đơn giới hạn",
+              "Take limited orders with clear quantities and delivery dates"
+            ],
+            [
+              "choice_3",
+              "すべての受注を無期限に止める",
+              "Dừng mọi đơn vô thời hạn",
+              "Stop all orders indefinitely"
+            ],
+            [
+              "choice_4",
+              "今の素材のまま無制限に受注する",
+              "Nhận không giới hạn bằng vật liệu cũ",
+              "Accept unlimited orders with current material"
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "lines": [
+            [
+              "narrator",
+              "二人が研修先を検討しています。",
+              "Hai người đang cân nhắc nơi đào tạo."
+            ],
+            [
+              "female",
+              "Aは現場見学中心で半日、事前知識は不要。",
+              "A nửa ngày chủ yếu tham quan, không cần kiến thức trước."
+            ],
+            [
+              "female",
+              "Bは二日間の実習で、基礎講習の修了が条件ね。",
+              "B thực hành hai ngày, phải xong khóa căn bản."
+            ],
+            [
+              "male",
+              "Cは一日の討論会で、経験者向け。",
+              "C thảo luận một ngày dành người có kinh nghiệm."
+            ],
+            [
+              "male",
+              "Dはオンラインの基礎講習で、録画を二週間見られる。",
+              "D cơ bản online, xem ghi hình trong hai tuần."
+            ],
+            [
+              "female",
+              "私は基礎講習は去年終えたから、実際に操作して弱点を確かめたい。",
+              "Tớ hoàn tất khóa cơ bản năm ngoái, muốn tự thao tác để thấy điểm yếu."
+            ],
+            [
+              "female",
+              "二日なら空けられるわ。",
+              "Có thể dành hai ngày."
+            ],
+            [
+              "male",
+              "僕はこの分野が初めてだし、決まった日に休めない。",
+              "Tớ mới ở lĩnh vực này, không nghỉ được ngày cố định."
+            ],
+            [
+              "male",
+              "まず自分の時間に基礎を押さえたい。",
+              "Trước tiên muốn nắm căn bản vào giờ tự chọn."
+            ],
+            [
+              "female",
+              "それなら、今回は別々に申し込もう。",
+              "Vậy đợt này đăng ký riêng nhé."
+            ],
+            [
+              "narrator",
+              "女の人はどの研修を選びますか。",
+              "Cô chọn đào tạo nào?"
+            ],
+            [
+              "narrator",
+              "男の人はどの研修を選びますか。",
+              "Anh chọn đào tạo nào?"
+            ]
+          ],
+          "sub": [
+            {
+              "prompt": {
+                "ja": "女の人はどの研修を選びますか。",
+                "vi": "Cô chọn đào tạo nào?",
+                "en": "Which course does she choose?"
+              },
+              "choices": [
+                {
+                  "id": "1",
+                  "ja": "A",
+                  "vi": "A",
+                  "en": "A"
+                },
+                {
+                  "id": "2",
+                  "ja": "B",
+                  "vi": "B",
+                  "en": "B"
+                },
+                {
+                  "id": "3",
+                  "ja": "C",
+                  "vi": "C",
+                  "en": "C"
+                },
+                {
+                  "id": "4",
+                  "ja": "D",
+                  "vi": "D",
+                  "en": "D"
+                }
+              ],
+              "answer": "2",
+              "evidence": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "why": {
+                "1": "Sai: Tham quan không đáp nhu cầu tự thao tác.",
+                "2": "Đúng: Đủ điều kiện căn bản, có hai ngày và muốn thực hành.",
+                "3": "Sai: Chỉ thảo luận, không phải thao tác.",
+                "4": "Sai: Cô đã học căn bản."
+              }
+            },
+            {
+              "prompt": {
+                "ja": "男の人はどの研修を選びますか。",
+                "vi": "Anh chọn đào tạo nào?",
+                "en": "Which course does he choose?"
+              },
+              "choices": [
+                {
+                  "id": "1",
+                  "ja": "A",
+                  "vi": "A",
+                  "en": "A"
+                },
+                {
+                  "id": "2",
+                  "ja": "B",
+                  "vi": "B",
+                  "en": "B"
+                },
+                {
+                  "id": "3",
+                  "ja": "C",
+                  "vi": "C",
+                  "en": "C"
+                },
+                {
+                  "id": "4",
+                  "ja": "D",
+                  "vi": "D",
+                  "en": "D"
+                }
+              ],
+              "answer": "4",
+              "evidence": [
+                4,
+                5,
+                8,
+                9
+              ],
+              "why": {
+                "1": "Sai: Cần dành nửa ngày cố định, anh khó nghỉ.",
+                "2": "Sai: Chưa xong căn bản và không có hai ngày cố định.",
+                "3": "Sai: Dành người có kinh nghiệm.",
+                "4": "Đúng: Cơ bản online có bản ghi giúp tự chọn giờ."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tts_readings": {
+    "陶芸": "とうげい",
+    "木工": "もっこう",
+    "後日": "ごじつ",
+    "今日中": "きょうじゅう"
+  }
+}

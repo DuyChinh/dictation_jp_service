@@ -1,0 +1,1867 @@
+{
+  "id": "jlpt-n4-practice-01",
+  "title": {
+    "ja": "JLPT N4 2026年12月 予想聴解 第1回",
+    "vi": "JLPT N4 Đề dự đoán T12/2026 — Đề 1",
+    "en": "JLPT N4 December 2026 Listening Prediction — Test 1"
+  },
+  "source": {
+    "type": "practice",
+    "level": "N4",
+    "set": 1,
+    "label": "Đề dự đoán T12/2026 — Đề 1",
+    "rights_note": "Original practice questions authored for this project; synthetic audio."
+  },
+  "status": "published",
+  "content_version": 1,
+  "review_note": "Đề luyện nghe tự biên soạn cho kỳ T12/2026, không phải đề thi chính thức hay thông tin rò rỉ. Đáp án được xác định từ kịch bản gốc. Audio tổng hợp bằng edge-tts; mốc thời gian lấy từ từng clip. Dạng phát ngôn theo tình huống được mô tả bằng lời thay cho tranh. Đã rà soát đáp án, bản dịch, giải thích và mốc thời gian; đối chiếu ASR theo mẫu. Đây là đề luyện nghe rút gọn, không mô phỏng đủ thời gian thi thật.",
+  "speakers": {
+    "speaker": {
+      "ja": "話し手",
+      "vi": "Người nói",
+      "en": "Speaker",
+      "voice": "female"
+    }
+  },
+  "sections": [
+    {
+      "no": 1,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "男の人はまず何をしますか。",
+            "vi": "Người đàn ông sẽ làm gì trước?",
+            "en": "What will the man do first?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Chưa đến bước lái xe.",
+            "2": "Sai: Đĩa đã đóng thùng, không yêu cầu rửa.",
+            "3": "Đúng: Phải đánh dấu thùng dễ vỡ trước khi chất lên xe.",
+            "4": "Sai: Đây là việc sau khi đánh dấu."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "車を運転する",
+              "vi": "Lái xe",
+              "en": "Drive the car"
+            },
+            {
+              "id": "2",
+              "ja": "お皿を洗う",
+              "vi": "Rửa đĩa",
+              "en": "Wash the dishes"
+            },
+            {
+              "id": "3",
+              "ja": "箱に赤い紙を貼る",
+              "vi": "Dán giấy đỏ lên thùng",
+              "en": "Put red paper on the box"
+            },
+            {
+              "id": "4",
+              "ja": "全部の箱を車に入れる",
+              "vi": "Chất hết thùng lên xe",
+              "en": "Load all the boxes"
+            }
+          ],
+          "evidence": [
+            3
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人はまず何をしますか。",
+              "Người đàn ông sẽ làm gì trước?"
+            ],
+            [
+              "male",
+              "引っ越しの箱、全部車に入れようか。",
+              "Tớ chất hết thùng chuyển nhà lên xe nhé?"
+            ],
+            [
+              "female",
+              "その前に、割れやすいお皿の箱に赤い紙を貼ってくれる？",
+              "Trước đó cậu dán giấy đỏ lên thùng đĩa dễ vỡ được không?"
+            ],
+            [
+              "male",
+              "紙はどこ？",
+              "Giấy ở đâu?"
+            ],
+            [
+              "female",
+              "机の引き出しに入っているよ。",
+              "Trong ngăn kéo bàn đấy."
+            ],
+            [
+              "narrator",
+              "男の人はまず何をしますか。",
+              "Người đàn ông sẽ làm gì trước?"
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "女の人はどの切符を買いますか。",
+            "vi": "Người phụ nữ sẽ mua vé nào?",
+            "en": "Which ticket will the woman buy?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Cô ưu tiên ghế đặt trước và chọn chuyến 11 giờ.",
+            "2": "Sai: Chuyến 10 giờ hết chỗ.",
+            "3": "Sai: Cô muốn đặt chỗ trước.",
+            "4": "Sai: Đúng chuyến nhưng sai loại ghế cô yêu cầu."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "十一時の指定席",
+              "vi": "Ghế đặt trước chuyến 11 giờ",
+              "en": "An eleven o’clock reserved seat"
+            },
+            {
+              "id": "2",
+              "ja": "十時の指定席",
+              "vi": "Ghế đặt trước chuyến 10 giờ",
+              "en": "A ten o’clock reserved seat"
+            },
+            {
+              "id": "3",
+              "ja": "十時半の自由席",
+              "vi": "Ghế tự do chuyến 10 giờ 30",
+              "en": "A ten thirty unreserved seat"
+            },
+            {
+              "id": "4",
+              "ja": "十一時の自由席",
+              "vi": "Ghế tự do chuyến 11 giờ",
+              "en": "An eleven o’clock unreserved seat"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人はどの切符を買いますか。",
+              "Người phụ nữ sẽ mua vé nào?"
+            ],
+            [
+              "female",
+              "大阪まで、今日の一番早い電車をお願いします。",
+              "Cho tôi vé tàu sớm nhất hôm nay đến Osaka."
+            ],
+            [
+              "male",
+              "十時発は満席です。",
+              "Chuyến mười giờ hết chỗ."
+            ],
+            [
+              "male",
+              "十時半は自由席だけ、十一時は指定席もあります。",
+              "Mười rưỡi chỉ có ghế tự do, mười một giờ có cả ghế đặt trước."
+            ],
+            [
+              "female",
+              "座席を予約したいので、十一時にします。",
+              "Tôi muốn đặt chỗ nên chọn chuyến mười một giờ."
+            ],
+            [
+              "narrator",
+              "女の人はどの切符を買いますか。",
+              "Người phụ nữ sẽ mua vé nào?"
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "男の人は何を持って行きますか。",
+            "vi": "Người đàn ông sẽ mang gì?",
+            "en": "What will the man take?"
+          },
+          "answer": "4",
+          "why": {
+            "1": "Sai: Nước do người phụ nữ chuẩn bị.",
+            "2": "Sai: Thiếu mũ, đồng thời nước đã có người mang.",
+            "3": "Sai: Cần mang cả cơm hộp.",
+            "4": "Đúng: Anh xác nhận đúng hai thứ mình phải mang."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "水と帽子",
+              "vi": "Nước và mũ",
+              "en": "Water and a hat"
+            },
+            {
+              "id": "2",
+              "ja": "お弁当と水",
+              "vi": "Cơm hộp và nước",
+              "en": "A lunch and water"
+            },
+            {
+              "id": "3",
+              "ja": "帽子だけ",
+              "vi": "Chỉ mũ",
+              "en": "Only a hat"
+            },
+            {
+              "id": "4",
+              "ja": "お弁当と帽子",
+              "vi": "Cơm hộp và mũ",
+              "en": "A lunch and a hat"
+            }
+          ],
+          "evidence": [
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人は何を持って行きますか。",
+              "Người đàn ông sẽ mang gì?"
+            ],
+            [
+              "female",
+              "明日の山登り、お弁当は忘れないでね。",
+              "Mai leo núi nhớ mang cơm hộp nhé."
+            ],
+            [
+              "male",
+              "飲み物も必要？",
+              "Cần cả đồ uống không?"
+            ],
+            [
+              "female",
+              "水は私がみんなの分を持って行くよ。",
+              "Tớ sẽ mang nước cho mọi người."
+            ],
+            [
+              "female",
+              "帽子は自分で持ってきて。",
+              "Cậu tự mang mũ nhé."
+            ],
+            [
+              "male",
+              "わかった。",
+              "Ừ."
+            ],
+            [
+              "male",
+              "お弁当と帽子だね。",
+              "Cơm hộp và mũ nhỉ."
+            ],
+            [
+              "narrator",
+              "男の人は何を持って行きますか。",
+              "Người đàn ông sẽ mang gì?"
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "女の人はどうやって書類を送りますか。",
+            "vi": "Người phụ nữ sẽ gửi tài liệu bằng cách nào?",
+            "en": "How will the woman send the documents?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Anh yêu cầu chuyển phát nhanh vì gấp.",
+            "2": "Đúng: Phải gửi bản gốc bằng 速達.",
+            "3": "Sai: Email không cung cấp được bản gốc.",
+            "4": "Sai: Cũng không gửi được bản gốc, không được đề nghị."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "普通の郵便",
+              "vi": "Thư thường",
+              "en": "Ordinary mail"
+            },
+            {
+              "id": "2",
+              "ja": "速達の郵便",
+              "vi": "Bưu điện chuyển phát nhanh",
+              "en": "Express mail"
+            },
+            {
+              "id": "3",
+              "ja": "メール",
+              "vi": "Email",
+              "en": "Email"
+            },
+            {
+              "id": "4",
+              "ja": "ファックス",
+              "vi": "Fax",
+              "en": "Fax"
+            }
+          ],
+          "evidence": [
+            3,
+            4
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人はどうやって書類を送りますか。",
+              "Người phụ nữ sẽ gửi tài liệu bằng cách nào?"
+            ],
+            [
+              "female",
+              "書類はメールで送ればいいですか。",
+              "Tôi gửi tài liệu qua email được không?"
+            ],
+            [
+              "male",
+              "原本が必要なので、郵便でお願いします。",
+              "Tôi cần bản gốc nên xin gửi bưu điện."
+            ],
+            [
+              "male",
+              "急ぎですから、速達にしてください。",
+              "Vì gấp nên gửi chuyển phát nhanh nhé."
+            ],
+            [
+              "female",
+              "では、今日郵便局へ行きます。",
+              "Vậy hôm nay tôi sẽ đến bưu điện."
+            ],
+            [
+              "narrator",
+              "女の人はどうやって書類を送りますか。",
+              "Người phụ nữ sẽ gửi tài liệu bằng cách nào?"
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "男の人はどこに自転車を置きますか。",
+            "vi": "Người đàn ông sẽ để xe đạp ở đâu?",
+            "en": "Where will the man park his bicycle?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Cô chỉ chỗ sau tòa nhà có ký hiệu xe đạp.",
+            "2": "Sai: Sẽ cản lối đi nên không được để.",
+            "3": "Sai: Không yêu cầu mang vào trong.",
+            "4": "Sai: Chỗ xe đạp cạnh bãi ô tô, không phải trong bãi."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "建物の裏",
+              "vi": "Sau tòa nhà",
+              "en": "Behind the building"
+            },
+            {
+              "id": "2",
+              "ja": "入口の前",
+              "vi": "Trước lối vào",
+              "en": "In front of the entrance"
+            },
+            {
+              "id": "3",
+              "ja": "建物の中",
+              "vi": "Trong tòa nhà",
+              "en": "Inside the building"
+            },
+            {
+              "id": "4",
+              "ja": "車の駐車場の中",
+              "vi": "Trong bãi ô tô",
+              "en": "Inside the car park"
+            }
+          ],
+          "evidence": [
+            3,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人はどこに自転車を置きますか。",
+              "Người đàn ông sẽ để xe đạp ở đâu?"
+            ],
+            [
+              "male",
+              "入口の前に自転車を置いてもいいですか。",
+              "Tôi để xe đạp trước lối vào được không?"
+            ],
+            [
+              "female",
+              "そこは通れなくなるので、建物の裏にお願いします。",
+              "Để đó sẽ cản đường nên anh để sau tòa nhà nhé."
+            ],
+            [
+              "male",
+              "駐車場の隣ですね。",
+              "Cạnh bãi ô tô nhỉ?"
+            ],
+            [
+              "female",
+              "ええ、自転車のマークがあります。",
+              "Vâng, có biểu tượng xe đạp đấy."
+            ],
+            [
+              "narrator",
+              "男の人はどこに自転車を置きますか。",
+              "Người đàn ông sẽ để xe đạp ở đâu?"
+            ]
+          ]
+        },
+        {
+          "no": 6,
+          "prompt": {
+            "ja": "女の人は何時の予約に変えますか。",
+            "vi": "Người phụ nữ đổi lịch hẹn sang mấy giờ?",
+            "en": "What time will the woman change her appointment to?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Là giờ hẹn cũ cần thay đổi.",
+            "2": "Sai: Giờ mong muốn ban đầu đã kín.",
+            "3": "Đúng: Cô nhận giờ bốn rưỡi còn trống.",
+            "4": "Sai: Không được đề nghị."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "三時",
+              "vi": "Ba giờ",
+              "en": "Three"
+            },
+            {
+              "id": "2",
+              "ja": "四時",
+              "vi": "Bốn giờ",
+              "en": "Four"
+            },
+            {
+              "id": "3",
+              "ja": "四時半",
+              "vi": "Bốn giờ rưỡi",
+              "en": "Four thirty"
+            },
+            {
+              "id": "4",
+              "ja": "五時",
+              "vi": "Năm giờ",
+              "en": "Five"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人は何時の予約に変えますか。",
+              "Người phụ nữ đổi lịch hẹn sang mấy giờ?"
+            ],
+            [
+              "female",
+              "明日三時の予約ですが、仕事があるので四時に変えられますか。",
+              "Tôi có lịch ba giờ mai nhưng bận việc, đổi sang bốn giờ được không?"
+            ],
+            [
+              "male",
+              "四時はいっぱいです。",
+              "Bốn giờ kín rồi."
+            ],
+            [
+              "male",
+              "四時半なら空いています。",
+              "Bốn rưỡi còn trống."
+            ],
+            [
+              "female",
+              "じゃ、四時半でお願いします。",
+              "Vậy cho tôi bốn rưỡi."
+            ],
+            [
+              "narrator",
+              "女の人は何時の予約に変えますか。",
+              "Người phụ nữ đổi lịch hẹn sang mấy giờ?"
+            ]
+          ]
+        },
+        {
+          "no": 7,
+          "prompt": {
+            "ja": "男の人は何を借りますか。",
+            "vi": "Người đàn ông sẽ mượn gì?",
+            "en": "What will the man borrow?"
+          },
+          "answer": "4",
+          "why": {
+            "1": "Sai: Anh không yêu cầu mượn điện thoại.",
+            "2": "Sai: Máy ảnh đang sửa.",
+            "3": "Sai: Không có trong lời đề nghị.",
+            "4": "Đúng: Anh chuyển sang mượn ống kính gắn điện thoại."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "スマートフォン",
+              "vi": "Điện thoại",
+              "en": "A smartphone"
+            },
+            {
+              "id": "2",
+              "ja": "カメラ",
+              "vi": "Máy ảnh",
+              "en": "A camera"
+            },
+            {
+              "id": "3",
+              "ja": "写真の本",
+              "vi": "Sách chụp ảnh",
+              "en": "A photography book"
+            },
+            {
+              "id": "4",
+              "ja": "レンズ",
+              "vi": "Ống kính",
+              "en": "A lens"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人は何を借りますか。",
+              "Người đàn ông sẽ mượn gì?"
+            ],
+            [
+              "male",
+              "旅行で写真を撮りたいんだけど、カメラを貸してくれない？",
+              "Tớ muốn chụp ảnh khi du lịch, cho tớ mượn máy ảnh nhé?"
+            ],
+            [
+              "female",
+              "カメラは修理中なの。",
+              "Máy ảnh đang sửa."
+            ],
+            [
+              "female",
+              "スマートフォンにつける小さいレンズならあるよ。",
+              "Tớ có ống kính nhỏ gắn điện thoại đấy."
+            ],
+            [
+              "male",
+              "じゃ、そのレンズをお願い。",
+              "Vậy cho tớ mượn ống kính đó."
+            ],
+            [
+              "narrator",
+              "男の人は何を借りますか。",
+              "Người đàn ông sẽ mượn gì?"
+            ]
+          ]
+        },
+        {
+          "no": 8,
+          "prompt": {
+            "ja": "女の人は次に何をしますか。",
+            "vi": "Người phụ nữ sẽ làm gì tiếp?",
+            "en": "What will the woman do next?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Không có yêu cầu in.",
+            "2": "Đúng: Cô quên ghi tên và sẽ ghi ngay.",
+            "3": "Sai: Không liên quan yêu cầu của thầy.",
+            "4": "Sai: Cô viết tên, không viết câu hỏi."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "レポートを印刷する",
+              "vi": "In báo cáo",
+              "en": "Print the report"
+            },
+            {
+              "id": "2",
+              "ja": "表紙に名前を書く",
+              "vi": "Viết tên trên bìa",
+              "en": "Write her name on the cover"
+            },
+            {
+              "id": "3",
+              "ja": "図書館に行く",
+              "vi": "Đi thư viện",
+              "en": "Go to the library"
+            },
+            {
+              "id": "4",
+              "ja": "先生に質問を書く",
+              "vi": "Viết câu hỏi cho thầy",
+              "en": "Write a question for the teacher"
+            }
+          ],
+          "evidence": [
+            4,
+            5,
+            6
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人は次に何をしますか。",
+              "Người phụ nữ sẽ làm gì tiếp?"
+            ],
+            [
+              "female",
+              "先生、レポートを書き終わりました。",
+              "Thưa thầy, em viết xong báo cáo rồi."
+            ],
+            [
+              "female",
+              "出してもいいですか。",
+              "Nộp được chưa ạ?"
+            ],
+            [
+              "male",
+              "表紙に名前を書きましたか。",
+              "Em ghi tên ở trang bìa chưa?"
+            ],
+            [
+              "female",
+              "あ、忘れました。",
+              "À, em quên."
+            ],
+            [
+              "female",
+              "今書きます。",
+              "Em viết ngay đây ạ."
+            ],
+            [
+              "narrator",
+              "女の人は次に何をしますか。",
+              "Người phụ nữ sẽ làm gì tiếp?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "女の人はなぜ料理教室に通っていますか。",
+            "vi": "Vì sao cô theo học lớp nấu ăn?",
+            "en": "Why does the woman attend a cooking class?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Anh đoán vậy nhưng cô phủ nhận.",
+            "2": "Sai: Không phải lý do được nói.",
+            "3": "Đúng: Cô muốn tự nấu vì ăn ngoài mỗi ngày tốn tiền.",
+            "4": "Sai: Không nhắc đến làm việc nước ngoài."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "店を開くため",
+              "vi": "Để mở quán",
+              "en": "To open a restaurant"
+            },
+            {
+              "id": "2",
+              "ja": "友達を作るため",
+              "vi": "Để kết bạn",
+              "en": "To make friends"
+            },
+            {
+              "id": "3",
+              "ja": "食費を少なくするため",
+              "vi": "Để giảm tiền ăn",
+              "en": "To reduce food costs"
+            },
+            {
+              "id": "4",
+              "ja": "外国で働くため",
+              "vi": "Để làm việc ở nước ngoài",
+              "en": "To work abroad"
+            }
+          ],
+          "evidence": [
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人はなぜ料理教室に通っていますか。",
+              "Vì sao cô theo học lớp nấu ăn?"
+            ],
+            [
+              "male",
+              "料理教室に行っているんだって？",
+              "Nghe nói cậu học nấu ăn?"
+            ],
+            [
+              "male",
+              "店を開くの？",
+              "Định mở quán à?"
+            ],
+            [
+              "female",
+              "ううん。",
+              "Không."
+            ],
+            [
+              "female",
+              "毎日外で食べるとお金がかかるから、自分で作れるようになりたくて。",
+              "Ngày nào ăn ngoài cũng tốn nên tớ muốn tự nấu được."
+            ],
+            [
+              "narrator",
+              "女の人はなぜ料理教室に通っていますか。",
+              "Vì sao cô theo học lớp nấu ăn?"
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "荷物はいつ届きますか。",
+            "vi": "Hàng sẽ được giao khi nào?",
+            "en": "When will the parcel arrive?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Cô đồng ý khung hai đến bốn giờ chiều mai.",
+            "2": "Sai: Ngày giao là mai.",
+            "3": "Sai: Nhân viên nói buổi sáng không được.",
+            "4": "Sai: Đúng buổi nhưng sai ngày."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "明日の午後",
+              "vi": "Chiều mai",
+              "en": "Tomorrow afternoon"
+            },
+            {
+              "id": "2",
+              "ja": "今日の午前",
+              "vi": "Sáng nay",
+              "en": "This morning"
+            },
+            {
+              "id": "3",
+              "ja": "明日の午前",
+              "vi": "Sáng mai",
+              "en": "Tomorrow morning"
+            },
+            {
+              "id": "4",
+              "ja": "今日の午後",
+              "vi": "Chiều nay",
+              "en": "This afternoon"
+            }
+          ],
+          "evidence": [
+            3,
+            4
+          ],
+          "lines": [
+            [
+              "narrator",
+              "荷物はいつ届きますか。",
+              "Hàng sẽ được giao khi nào?"
+            ],
+            [
+              "female",
+              "荷物は明日の午前中に届きますか。",
+              "Hàng có đến sáng mai không?"
+            ],
+            [
+              "male",
+              "午前は難しいですが、午後二時から四時の間なら届けられます。",
+              "Buổi sáng thì khó nhưng có thể giao từ hai đến bốn giờ chiều."
+            ],
+            [
+              "female",
+              "では、それでお願いします。",
+              "Vậy xin giao trong khung đó."
+            ],
+            [
+              "narrator",
+              "荷物はいつ届きますか。",
+              "Hàng sẽ được giao khi nào?"
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "男の人は何をなくしましたか。",
+            "vi": "Người đàn ông đã mất gì?",
+            "en": "What has the man lost?"
+          },
+          "answer": "4",
+          "why": {
+            "1": "Sai: Điện thoại vẫn trong túi.",
+            "2": "Sai: Chìa khóa vẫn trong túi.",
+            "3": "Sai: Không nói mất vé.",
+            "4": "Đúng: Anh mở đầu nói không thấy ví."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "携帯電話",
+              "vi": "Điện thoại",
+              "en": "His phone"
+            },
+            {
+              "id": "2",
+              "ja": "鍵",
+              "vi": "Chìa khóa",
+              "en": "His key"
+            },
+            {
+              "id": "3",
+              "ja": "切符",
+              "vi": "Vé tàu",
+              "en": "His ticket"
+            },
+            {
+              "id": "4",
+              "ja": "財布",
+              "vi": "Ví",
+              "en": "His wallet"
+            }
+          ],
+          "evidence": [
+            2,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人は何をなくしましたか。",
+              "Người đàn ông đã mất gì?"
+            ],
+            [
+              "male",
+              "財布がなくて、困っているんです。",
+              "Tôi mất ví, đang khổ đây."
+            ],
+            [
+              "female",
+              "電車に忘れたんですか。",
+              "Anh quên trên tàu à?"
+            ],
+            [
+              "male",
+              "たぶん。",
+              "Chắc thế."
+            ],
+            [
+              "male",
+              "携帯電話と鍵はポケットにあるんですが。",
+              "Điện thoại và chìa khóa vẫn ở túi áo."
+            ],
+            [
+              "narrator",
+              "男の人は何をなくしましたか。",
+              "Người đàn ông đã mất gì?"
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "店は今週いつ休みですか。",
+            "vi": "Tuần này cửa hàng nghỉ ngày nào?",
+            "en": "When is the shop closed this week?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Lịch thường là thứ tư nhưng tuần này có thay đổi.",
+            "2": "Đúng: Tuần này nghỉ thứ năm.",
+            "3": "Sai: Từ thứ sáu hoạt động bình thường.",
+            "4": "Sai: Thứ tư tuần này vẫn mở."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "水曜日",
+              "vi": "Thứ tư",
+              "en": "Wednesday"
+            },
+            {
+              "id": "2",
+              "ja": "木曜日",
+              "vi": "Thứ năm",
+              "en": "Thursday"
+            },
+            {
+              "id": "3",
+              "ja": "金曜日",
+              "vi": "Thứ sáu",
+              "en": "Friday"
+            },
+            {
+              "id": "4",
+              "ja": "水曜日と木曜日",
+              "vi": "Thứ tư và thứ năm",
+              "en": "Wednesday and Thursday"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "店は今週いつ休みですか。",
+              "Tuần này cửa hàng nghỉ ngày nào?"
+            ],
+            [
+              "female",
+              "いつも水曜日が休みですよね。",
+              "Cửa hàng thường nghỉ thứ tư nhỉ?"
+            ],
+            [
+              "male",
+              "はい。",
+              "Vâng."
+            ],
+            [
+              "male",
+              "でも今週は水曜日は開けて、木曜日に休みます。",
+              "Nhưng tuần này thứ tư mở, thứ năm nghỉ."
+            ],
+            [
+              "male",
+              "金曜日からは普通どおりです。",
+              "Từ thứ sáu lại như thường."
+            ],
+            [
+              "narrator",
+              "店は今週いつ休みですか。",
+              "Tuần này cửa hàng nghỉ ngày nào?"
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "女の人は新しい家の何が好きですか。",
+            "vi": "Cô thích điều gì ở nhà mới?",
+            "en": "What does the woman like about her new home?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Đi bộ đến ga mất tận hai mươi phút.",
+            "2": "Sai: Cô nói tiền thuê hơi cao.",
+            "3": "Đúng: Cô nêu cửa sổ lớn và phòng sáng là ưu điểm.",
+            "4": "Sai: Không đề cập số phòng."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "駅に近いこと",
+              "vi": "Gần ga",
+              "en": "Being close to the station"
+            },
+            {
+              "id": "2",
+              "ja": "家賃が安いこと",
+              "vi": "Tiền thuê rẻ",
+              "en": "Low rent"
+            },
+            {
+              "id": "3",
+              "ja": "部屋が明るいこと",
+              "vi": "Phòng sáng",
+              "en": "Bright rooms"
+            },
+            {
+              "id": "4",
+              "ja": "部屋が多いこと",
+              "vi": "Nhiều phòng",
+              "en": "Many rooms"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "女の人は新しい家の何が好きですか。",
+              "Cô thích điều gì ở nhà mới?"
+            ],
+            [
+              "male",
+              "新しい家、駅に近いんでしょう？",
+              "Nhà mới gần ga phải không?"
+            ],
+            [
+              "female",
+              "駅までは二十分も歩くの。",
+              "Phải đi bộ tận hai mươi phút đến ga."
+            ],
+            [
+              "female",
+              "でも、窓が大きくて部屋が明るいのがいいね。",
+              "Nhưng cửa sổ to nên phòng sáng, tớ thích điểm đó."
+            ],
+            [
+              "female",
+              "家賃は少し高いけど。",
+              "Tiền thuê hơi cao."
+            ],
+            [
+              "narrator",
+              "女の人は新しい家の何が好きですか。",
+              "Cô thích điều gì ở nhà mới?"
+            ]
+          ]
+        },
+        {
+          "no": 6,
+          "prompt": {
+            "ja": "二人は何を見に行きますか。",
+            "vi": "Hai người sẽ đi xem gì?",
+            "en": "What will they go to see?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Sau khi biết triển lãm tranh kết thúc, anh đồng ý đi xem ảnh.",
+            "2": "Sai: Triển lãm tranh đã kết thúc.",
+            "3": "Sai: Không được đề xuất.",
+            "4": "Sai: Không liên quan bảo tàng mỹ thuật."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "写真",
+              "vi": "Ảnh",
+              "en": "Photographs"
+            },
+            {
+              "id": "2",
+              "ja": "絵",
+              "vi": "Tranh",
+              "en": "Paintings"
+            },
+            {
+              "id": "3",
+              "ja": "映画",
+              "vi": "Phim",
+              "en": "A film"
+            },
+            {
+              "id": "4",
+              "ja": "動物",
+              "vi": "Động vật",
+              "en": "Animals"
+            }
+          ],
+          "evidence": [
+            3,
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "二人は何を見に行きますか。",
+              "Hai người sẽ đi xem gì?"
+            ],
+            [
+              "male",
+              "美術館で絵を見ない？",
+              "Đi xem tranh ở bảo tàng mỹ thuật nhé?"
+            ],
+            [
+              "female",
+              "今日は絵の展示は終わっていて、写真の展示をしているよ。",
+              "Triển lãm tranh đã kết thúc, hôm nay đang triển lãm ảnh."
+            ],
+            [
+              "male",
+              "写真もいいね。",
+              "Ảnh cũng hay."
+            ],
+            [
+              "male",
+              "じゃ、行こう。",
+              "Vậy đi thôi."
+            ],
+            [
+              "narrator",
+              "二人は何を見に行きますか。",
+              "Hai người sẽ đi xem gì?"
+            ]
+          ]
+        },
+        {
+          "no": 7,
+          "prompt": {
+            "ja": "男の人はどうして遅れましたか。",
+            "vi": "Vì sao anh đến muộn?",
+            "en": "Why was the man late?"
+          },
+          "answer": "4",
+          "why": {
+            "1": "Sai: Anh đến ga sớm nên không phải ngủ quên.",
+            "2": "Sai: Anh khẳng định tàu chạy bình thường.",
+            "3": "Sai: Không nêu khoảng cách là nguyên nhân.",
+            "4": "Đúng: 反対の電車に乗ってしまって nêu nguyên nhân trực tiếp."
+          },
+          "choices": [
+            {
+              "id": "1",
+              "ja": "寝坊したから",
+              "vi": "Vì ngủ quên",
+              "en": "He overslept"
+            },
+            {
+              "id": "2",
+              "ja": "電車が止まったから",
+              "vi": "Vì tàu dừng",
+              "en": "The train stopped"
+            },
+            {
+              "id": "3",
+              "ja": "駅が遠かったから",
+              "vi": "Vì ga xa",
+              "en": "The station was far away"
+            },
+            {
+              "id": "4",
+              "ja": "違う方向の電車に乗ったから",
+              "vi": "Vì lên tàu ngược hướng",
+              "en": "He boarded a train going the wrong way"
+            }
+          ],
+          "evidence": [
+            4,
+            5
+          ],
+          "lines": [
+            [
+              "narrator",
+              "男の人はどうして遅れましたか。",
+              "Vì sao anh đến muộn?"
+            ],
+            [
+              "female",
+              "遅かったね。",
+              "Cậu đến muộn nhỉ."
+            ],
+            [
+              "female",
+              "電車が止まったの？",
+              "Tàu dừng à?"
+            ],
+            [
+              "male",
+              "電車は普通に動いていたよ。",
+              "Tàu vẫn chạy bình thường."
+            ],
+            [
+              "male",
+              "駅までは早く着いたんだけど、反対の電車に乗ってしまって。",
+              "Tớ đến ga sớm nhưng lỡ lên tàu ngược hướng."
+            ],
+            [
+              "narrator",
+              "男の人はどうして遅れましたか。",
+              "Vì sao anh đến muộn?"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "友達が重そうな箱を持っています。手伝いたいです。何と言いますか。",
+            "vi": "Bạn thấy bạn mình bê thùng nặng và muốn giúp. Bạn nói gì?",
+            "en": "How do you offer to help carry a heavy box?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: 〜てあげようか đề nghị giúp người khác.",
+            "2": "Sai: Ngược hướng giúp đỡ: nhờ người kia giúp mình.",
+            "3": "Sai: Chưa giúp xong nên chưa phải lúc cảm ơn việc đã mang đến."
+          },
+          "evidence": [
+            4
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "narrator",
+              "友達が重そうな箱を持っています。",
+              "Bạn mình đang bê một thùng trông nặng."
+            ],
+            [
+              "narrator",
+              "手伝いたいです。",
+              "Bạn muốn giúp."
+            ],
+            [
+              "narrator",
+              "何と言いますか。",
+              "Bạn nói gì?"
+            ],
+            [
+              "narrator",
+              "友達は両手で箱を持っています。",
+              "Bạn của bạn đang bê thùng bằng hai tay."
+            ],
+            [
+              "choice_1",
+              "持ってあげようか。",
+              "Tớ bê giúp nhé?",
+              "Shall I carry it for you?"
+            ],
+            [
+              "choice_2",
+              "持ってもらえない？",
+              "Cậu bê giúp tớ được không?",
+              "Could you carry it for me?"
+            ],
+            [
+              "choice_3",
+              "持ってきてくれてありがとう。",
+              "Cảm ơn cậu mang đến.",
+              "Thanks for bringing it."
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "病気で休んだ友達に会いました。何と言いますか。",
+            "vi": "Bạn gặp người bạn vừa nghỉ ốm. Bạn nói gì?",
+            "en": "What do you ask a friend who was off sick?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Không phải đến muộn mà là vừa nghỉ ốm.",
+            "2": "Đúng: Hỏi thăm tình trạng hồi phục đúng ngữ cảnh.",
+            "3": "Sai: Không phải chuyện đỗ đạt hay sự kiện để chúc mừng."
+          },
+          "evidence": [
+            3
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "narrator",
+              "病気で休んだ友達に会いました。",
+              "Bạn gặp người bạn vừa nghỉ ốm."
+            ],
+            [
+              "narrator",
+              "何と言いますか。",
+              "Bạn nói gì?"
+            ],
+            [
+              "narrator",
+              "友達は今日から学校に来ています。",
+              "Hôm nay bạn ấy đi học trở lại."
+            ],
+            [
+              "choice_1",
+              "どうして遅いの？",
+              "Sao cậu chậm thế?",
+              "Why are you late?"
+            ],
+            [
+              "choice_2",
+              "もう元気になった？",
+              "Cậu khỏe lại chưa?",
+              "Are you feeling better now?"
+            ],
+            [
+              "choice_3",
+              "おめでとう。",
+              "Chúc mừng.",
+              "Congratulations."
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "店で買った時計が動きません。店員に何と言いますか。",
+            "vi": "Đồng hồ vừa mua không chạy. Bạn nói gì với nhân viên?",
+            "en": "What do you say about a watch that does not work?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Dùng lúc chọn mua, không nêu vấn đề sản phẩm.",
+            "2": "Sai: Không yêu cầu xử lý việc đồng hồ hỏng.",
+            "3": "Đúng: 〜んですが trình bày vấn đề để nhờ cửa hàng xử lý."
+          },
+          "evidence": [
+            3
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "narrator",
+              "店で買った時計が動きません。",
+              "Đồng hồ vừa mua không chạy."
+            ],
+            [
+              "narrator",
+              "店員に何と言いますか。",
+              "Bạn nói gì với nhân viên?"
+            ],
+            [
+              "narrator",
+              "昨日買った時計を店に持ってきました。",
+              "Bạn mang đồng hồ mua hôm qua đến cửa hàng."
+            ],
+            [
+              "choice_1",
+              "時計を見せてください。",
+              "Cho tôi xem đồng hồ.",
+              "Please show me a watch."
+            ],
+            [
+              "choice_2",
+              "この時計は何時ですか。",
+              "Đồng hồ này mấy giờ?",
+              "What time does this watch show?"
+            ],
+            [
+              "choice_3",
+              "これ、動かないんですが。",
+              "Cái này không chạy ạ.",
+              "This does not work."
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "先生の説明が聞こえませんでした。何と言いますか。",
+            "vi": "Bạn không nghe được lời giải thích của thầy. Bạn nói gì?",
+            "en": "How do you ask your teacher to repeat an explanation?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Yêu cầu lặp lại lịch sự với giáo viên.",
+            "2": "Sai: Đảo hướng: đề nghị mình giải thích cho thầy.",
+            "3": "Sai: Trái với mong muốn nghe lại."
+          },
+          "evidence": [
+            3
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "narrator",
+              "先生の説明が聞こえませんでした。",
+              "Bạn không nghe được lời giải thích của thầy."
+            ],
+            [
+              "narrator",
+              "何と言いますか。",
+              "Bạn nói gì?"
+            ],
+            [
+              "narrator",
+              "もう一度説明してほしいです。",
+              "Bạn muốn thầy giải thích lại."
+            ],
+            [
+              "choice_1",
+              "もう一度説明していただけますか。",
+              "Thầy giải thích lại giúp em được không ạ?",
+              "Could you explain it again?"
+            ],
+            [
+              "choice_2",
+              "説明してあげましょうか。",
+              "Em giải thích cho thầy nhé?",
+              "Shall I explain it to you?"
+            ],
+            [
+              "choice_3",
+              "説明しなくてもいいです。",
+              "Thầy không cần giải thích.",
+              "You do not need to explain."
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "友達との約束に遅れそうです。電話で何と言いますか。",
+            "vi": "Bạn sắp đến muộn cuộc hẹn. Bạn nói gì qua điện thoại?",
+            "en": "How do you tell a friend you will be late?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Nói về việc hôm qua, không báo trễ hẹn.",
+            "2": "Đúng: 〜そう báo khả năng đến muộn sắp xảy ra.",
+            "3": "Sai: Yêu cầu người kia, không thông báo mình muộn."
+          },
+          "evidence": [
+            3
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "narrator",
+              "友達との約束に遅れそうです。",
+              "Bạn sắp đến muộn cuộc hẹn."
+            ],
+            [
+              "narrator",
+              "電話で何と言いますか。",
+              "Bạn nói gì qua điện thoại?"
+            ],
+            [
+              "narrator",
+              "まだ電車の中にいます。",
+              "Bạn vẫn đang ở trên tàu."
+            ],
+            [
+              "choice_1",
+              "昨日は遅くまでありがとう。",
+              "Cảm ơn vì hôm qua đã ở lại muộn.",
+              "Thanks for staying late yesterday."
+            ],
+            [
+              "choice_2",
+              "ごめん、十分ぐらい遅れそう。",
+              "Xin lỗi, chắc tớ muộn khoảng mười phút.",
+              "Sorry, I will probably be ten minutes late."
+            ],
+            [
+              "choice_3",
+              "早く来てください。",
+              "Hãy đến sớm.",
+              "Please come early."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "questions": [
+        {
+          "no": 1,
+          "prompt": {
+            "ja": "週末、買い物に行かない？",
+            "vi": "Cuối tuần đi mua sắm không?",
+            "en": "Shall we go shopping this weekend?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: 行かない？ là lời rủ, đáp 行こう là nhận lời.",
+            "2": "Sai: Không đáp lời rủ.",
+            "3": "Sai: Kinh nghiệm quá khứ không trả lời lời mời cuối tuần."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "female",
+              "週末、買い物に行かない？",
+              "Cuối tuần đi mua sắm không?"
+            ],
+            [
+              "choice_1",
+              "うん、行こう。",
+              "Ừ, đi thôi.",
+              "Yes, let’s go."
+            ],
+            [
+              "choice_2",
+              "うん、買い物じゃない。",
+              "Ừ, không phải mua sắm.",
+              "Yes, it is not shopping."
+            ],
+            [
+              "choice_3",
+              "いいえ、行ったことがある。",
+              "Không, từng đi rồi.",
+              "No, I have been there."
+            ]
+          ]
+        },
+        {
+          "no": 2,
+          "prompt": {
+            "ja": "この漢字、読めますか。",
+            "vi": "Bạn đọc được chữ Hán này không?",
+            "en": "Can you read this kanji?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Hỏi khả năng đọc, không hỏi đã viết chưa.",
+            "2": "Sai: Không tự nhiên trong ngữ cảnh.",
+            "3": "Đúng: Trả lời đúng khả năng đọc chữ."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "この漢字、読めますか。",
+              "Bạn đọc được chữ Hán này không?"
+            ],
+            [
+              "choice_1",
+              "ええ、書きました。",
+              "Vâng, tôi viết rồi.",
+              "Yes, I wrote it."
+            ],
+            [
+              "choice_2",
+              "漢字を買います。",
+              "Tôi mua chữ Hán.",
+              "I will buy kanji."
+            ],
+            [
+              "choice_3",
+              "すみません、読み方がわかりません。",
+              "Xin lỗi, tôi không biết cách đọc.",
+              "Sorry, I do not know how to read it."
+            ]
+          ]
+        },
+        {
+          "no": 3,
+          "prompt": {
+            "ja": "すみません、ここで写真を撮ってもいいですか。",
+            "vi": "Xin lỗi, tôi chụp ảnh ở đây được không?",
+            "en": "Excuse me, may I take pictures here?"
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Không trả lời xin phép.",
+            "2": "Đúng: Cho phép kèm điều kiện phù hợp.",
+            "3": "Sai: Không liên quan quyền chụp ảnh."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "female",
+              "すみません、ここで写真を撮ってもいいですか。",
+              "Xin lỗi, tôi chụp ảnh ở đây được không?"
+            ],
+            [
+              "choice_1",
+              "はい、写真を撮りました。",
+              "Vâng, tôi đã chụp rồi.",
+              "Yes, I took a picture."
+            ],
+            [
+              "choice_2",
+              "フラッシュを使わなければ、大丈夫です。",
+              "Được, miễn là không dùng đèn flash.",
+              "Yes, as long as you do not use flash."
+            ],
+            [
+              "choice_3",
+              "いいえ、写真が上手です。",
+              "Không, chụp ảnh giỏi.",
+              "No, good at photography."
+            ]
+          ]
+        },
+        {
+          "no": 4,
+          "prompt": {
+            "ja": "あ、その席、誰か座っていますか。",
+            "vi": "À, ghế đó có ai ngồi chưa?",
+            "en": "Is someone using that seat?"
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Xác nhận không có ai dùng ghế.",
+            "2": "Sai: Hỏi tình trạng hiện tại, không hỏi kinh nghiệm.",
+            "3": "Sai: Không liên quan ghế có người hay chưa."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "あ、その席、誰か座っていますか。",
+              "À, ghế đó có ai ngồi chưa?"
+            ],
+            [
+              "choice_1",
+              "いいえ、空いていますよ。",
+              "Chưa, ghế trống đấy.",
+              "No, it is free."
+            ],
+            [
+              "choice_2",
+              "はい、座ったことがあります。",
+              "Có, tôi từng ngồi rồi.",
+              "Yes, I have sat there before."
+            ],
+            [
+              "choice_3",
+              "席を作っています。",
+              "Tôi đang làm ghế.",
+              "I am making a seat."
+            ]
+          ]
+        },
+        {
+          "no": 5,
+          "prompt": {
+            "ja": "この資料、明日までにお願いします。",
+            "vi": "Tài liệu này nhờ bạn xong trước ngày mai nhé.",
+            "en": "Please finish these materials by tomorrow."
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Nhầm hạn hoàn thành với ngày bắt đầu nghỉ.",
+            "2": "Sai: Không đáp công việc được giao.",
+            "3": "Đúng: Nhận việc và hứa hoàn thành trước hạn."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "female",
+              "この資料、明日までにお願いします。",
+              "Tài liệu này nhờ bạn xong trước ngày mai nhé."
+            ],
+            [
+              "choice_1",
+              "明日から休みですか。",
+              "Từ mai nghỉ à?",
+              "Are you off from tomorrow?"
+            ],
+            [
+              "choice_2",
+              "資料は好きじゃありません。",
+              "Tôi không thích tài liệu.",
+              "I do not like materials."
+            ],
+            [
+              "choice_3",
+              "はい、今日中に仕上げます。",
+              "Vâng, tôi sẽ hoàn tất trong hôm nay.",
+              "Yes, I will finish them today."
+            ]
+          ]
+        },
+        {
+          "no": 6,
+          "prompt": {
+            "ja": "そのかばん、重そうだね。",
+            "vi": "Cái cặp đó trông nặng nhỉ.",
+            "en": "That bag looks heavy."
+          },
+          "answer": "2",
+          "why": {
+            "1": "Sai: Không phù hợp lời nhận xét quan tâm.",
+            "2": "Đúng: Giải thích lý do cặp nặng.",
+            "3": "Sai: Không tự nhiên và không giải thích hiện trạng."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "そのかばん、重そうだね。",
+              "Cái cặp đó trông nặng nhỉ."
+            ],
+            [
+              "choice_1",
+              "重くしてください。",
+              "Hãy làm nó nặng lên.",
+              "Please make it heavy."
+            ],
+            [
+              "choice_2",
+              "うん、本がたくさん入っているから。",
+              "Ừ, vì có nhiều sách bên trong.",
+              "Yes, it has lots of books in it."
+            ],
+            [
+              "choice_3",
+              "軽くなったことがある。",
+              "Từng nhẹ đi rồi.",
+              "It has become light before."
+            ]
+          ]
+        },
+        {
+          "no": 7,
+          "prompt": {
+            "ja": "お待たせして、すみません。",
+            "vi": "Xin lỗi đã để bạn đợi.",
+            "en": "Sorry to keep you waiting."
+          },
+          "answer": "1",
+          "why": {
+            "1": "Đúng: Đáp lời xin lỗi để người kia yên tâm.",
+            "2": "Sai: Lại yêu cầu người kia đợi, không đáp lời xin lỗi.",
+            "3": "Sai: Không liên quan việc chờ."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "male"
+          },
+          "lines": [
+            [
+              "female",
+              "お待たせして、すみません。",
+              "Xin lỗi đã để bạn đợi."
+            ],
+            [
+              "choice_1",
+              "いえ、今来たところです。",
+              "Không sao, tôi cũng vừa đến.",
+              "No problem, I just got here."
+            ],
+            [
+              "choice_2",
+              "ええ、待ってください。",
+              "Vâng, hãy đợi.",
+              "Yes, please wait."
+            ],
+            [
+              "choice_3",
+              "もう会いませんでした。",
+              "Đã không gặp nữa.",
+              "We did not meet again."
+            ]
+          ]
+        },
+        {
+          "no": 8,
+          "prompt": {
+            "ja": "日本に来て、どのくらいになりますか。",
+            "vi": "Bạn đến Nhật được bao lâu rồi?",
+            "en": "How long have you been in Japan?"
+          },
+          "answer": "3",
+          "why": {
+            "1": "Sai: Câu hỏi giả định đã ở Nhật.",
+            "2": "Sai: Không hỏi phương tiện.",
+            "3": "Đúng: Trả lời thời gian từ khi đến Nhật."
+          },
+          "evidence": [
+            1
+          ],
+          "voices": {
+            "choice": "female"
+          },
+          "lines": [
+            [
+              "male",
+              "日本に来て、どのくらいになりますか。",
+              "Bạn đến Nhật được bao lâu rồi?"
+            ],
+            [
+              "choice_1",
+              "来週行きます。",
+              "Tuần sau tôi sẽ đi.",
+              "I will go next week."
+            ],
+            [
+              "choice_2",
+              "電車で来ました。",
+              "Tôi đến bằng tàu.",
+              "I came by train."
+            ],
+            [
+              "choice_3",
+              "半年になります。",
+              "Được nửa năm rồi.",
+              "It has been six months."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "section_instructions": {
+    "3": "問題3では、場面の説明と質問を聞いてください。その場面で何と言いますか。1から3の中から、最もよいものを一つ選んでください。",
+    "4": "問題4では、まず話を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選んでください。"
+  }
+}

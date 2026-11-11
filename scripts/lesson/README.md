@@ -114,5 +114,9 @@ python3 scripts/lesson/lesson_tool.py verify $T    # ASR re-listen: catches misr
   (`choice` = who reads the options; 問題4 answers are read by the other person).
 - `tts_readings`: `{ "<text>": "<kana>" }` replaces text only in what is sent to TTS — use it
   when `verify` shows a misread word.
+- `section_instructions`: `{ "3": "問題3では…" }` overrides spoken instructions for that
+  section. Use the N4/N5 question types, and describe the situation aloud when an original
+  practice question substitutes a spoken scene for a picture; do not tell learners to look
+  at a picture that is not provided.
 - Clips are cached in `.work/<dir>/tts/`; editing a line re-synthesises only that line.
 - Needs `pip install edge-tts numpy` and network access.

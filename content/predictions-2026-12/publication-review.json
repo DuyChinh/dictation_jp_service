@@ -1,0 +1,136 @@
+{
+  "reviewed_date": "2026-11-11",
+  "requested_action": "Duyệt và đưa 10 đề nghe hiện có lên ứng dụng",
+  "publication": "Workspace content published; remote deployment not performed.",
+  "validation_environment": "Production content status filter; no MongoDB connection.",
+  "total_lessons": 10,
+  "total_questions": 280,
+  "content_review": "Answer/why/evidence consistency, source-to-package Japanese transcript equality, original-script review and existing ASR sample report.",
+  "limitations": [
+    "Shorter than full official exam duration",
+    "Spoken situation descriptions replace pictures",
+    "ASR sample verification, not a complete human audio review"
+  ],
+  "api_checks": [
+    {
+      "id": "jlpt-n1-practice-01",
+      "status": "published",
+      "questions": 30,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n1-practice-02",
+      "status": "published",
+      "questions": 30,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n2-practice-02",
+      "status": "published",
+      "questions": 30,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n2-practice-03",
+      "status": "published",
+      "questions": 30,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n3-practice-02",
+      "status": "published",
+      "questions": 28,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n3-practice-03",
+      "status": "published",
+      "questions": 28,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n4-practice-01",
+      "status": "published",
+      "questions": 28,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n4-practice-02",
+      "status": "published",
+      "questions": 28,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n5-practice-01",
+      "status": "published",
+      "questions": 24,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    },
+    {
+      "id": "jlpt-n5-practice-02",
+      "status": "published",
+      "questions": 24,
+      "catalog": true,
+      "detail": true,
+      "practice_without_answers": true,
+      "audio_range": true,
+      "correct_answer_grading": true,
+      "unanswered_grading": true,
+      "schema_errors": 0
+    }
+  ]
+}
