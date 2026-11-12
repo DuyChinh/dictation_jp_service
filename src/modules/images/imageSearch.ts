@@ -36,6 +36,16 @@ const PARTIAL_TTL_MS = 5 * 60 * 1000;
 /** A half answer asked for again after this long makes another try for the missing source, in the background. */
 const RETRY_AFTER_MS = 20_000;
 const MAX_CACHED = 500;
+/**
+ * Things that are not a picture of what a word means: scanned book pages, diagrams, maps, charts, logos. Commons is
+ * searched with these words ruled out, and a result whose title still has one is left out.
+ */
+const NOISE_TERMS = ["diagram", "diagrams", "map", "chart", "graph", "logo", "scan", "syntax", "screenshot"];
+const NOISE_TITLE = /\b(diagrams?|syntactic|syntax|maps?|charts?|graphs?|logo|screenshot|scans?|book images?|book illustrations?|page \d+|plate \d+)\b/i;
+/** Too small to see, or too long and thin to sit in a card's picture box. */
+const MIN_WIDTH = 240;
+const MIN_HEIGHT = 160;
+const ASPECT = { min: 0.55, max: 2.4 };
 const OFFENSIVE = /\b(nud|naked|sex|porn|erotic|genital|fetish|bdsm|gore|corpse|topless|lingerie)/i;
 
 export const MAX_QUERY = 60;
@@ -95,13 +105,22 @@ export function createImageSearch(opts: ImageSearchOptions = {}) {
 
   async function openverse(q: string, limit: number): Promise<ImageHit[]> {
     // not "non-derivative" and not "non-commercial": a thumbnail is a resized copy, and the site may earn money
-    const url = `${OPENVERSE}/images/?${new URLSearchParams({ q, page_size: String(limit), mature: "false", license_type: "commercial,modification" })}`;
+    // photographs and illustrations, not scans of old artwork; and big enough to be worth looking at
+    const url = `${OPENVERSE}/images/?${new URLSearchParams({
+      q,
+      page_size: String(limit),
+      mature: "false",
+      license_type: "commercial,modification",
+      category: "photograph,illustration",
+      size: "medium,large",
+    })}`;
     const body = (await getJson(url, await openverseAuth())) as { results?: Array<Record<string, unknown>> };
     const hits: ImageHit[] = [];
     for (const r of body.results ?? []) {
       const id = typeof r.id === "string" && /^[0-9a-f-]{36}$/i.test(r.id) ? r.id : "";
       const thumb = typeof r.thumbnail === "string" ? r.thumbnail : "";
       if (!id || !thumb || r.mature === true) continue;
+      if (NOISE_TITLE.test(typeof r.title === "string" ? r.title : "")) continue;
       hits.push({
         url: thumb,
         page: `https://openverse.org/image/${id}`,
@@ -118,9 +137,10 @@ export function createImageSearch(opts: ImageSearchOptions = {}) {
     const url = `${COMMONS}?${new URLSearchParams({
       action: "query",
       generator: "search",
-      gsrsearch: `filetype:bitmap ${q}`,
+      gsrsearch: `filetype:bitmap ${q} -"book images" ${NOISE_TERMS.map((t) => `-${t}`).join(" ")}`,
       gsrnamespace: "6",
-      gsrlimit: String(Math.min(50, limit * 2)),
+      // some of what comes back is dropped below, so more is asked for than is wanted
+      gsrlimit: String(Math.min(50, limit * 3)),
       prop: "imageinfo",
       iiprop: "url|extmetadata|size",
       iiurlwidth: "400",
@@ -136,6 +156,13 @@ export function createImageSearch(opts: ImageSearchOptions = {}) {
       const thumb = typeof info?.thumburl === "string" ? info.thumburl : "";
       const page = typeof info?.descriptionurl === "string" ? info.descriptionurl : "";
       if (!thumb || !page) continue;
+      const width = Number(info?.width);
+      const height = Number(info?.height);
+      if (Number.isFinite(width) && Number.isFinite(height) && width > 0 && height > 0) {
+        const ratio = width / height;
+        if (width < MIN_WIDTH || height < MIN_HEIGHT || ratio < ASPECT.min || ratio > ASPECT.max) continue;
+      }
+      if (NOISE_TITLE.test(String(p.title ?? ""))) continue;
       const categories = String(meta.Categories?.value ?? "");
       if (OFFENSIVE.test(categories) || OFFENSIVE.test(String(p.title ?? ""))) continue;
       hits.push({

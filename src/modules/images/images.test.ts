@@ -279,6 +279,82 @@ describe("picture search", () => {
   });
 });
 
+describe("keeping out what is not a picture of the word", () => {
+  const page = (title: string, index: number, info: Record<string, unknown> = {}) => ({
+    title: `File:${title}`,
+    index,
+    imageinfo: [
+      {
+        thumburl: `https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/${encodeURIComponent(title)}/400px-x.jpg`,
+        descriptionurl: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(title)}`,
+        width: 1200,
+        height: 800,
+        extmetadata: { Categories: { value: "Dogs" } },
+        ...info,
+      },
+    ],
+  });
+
+  it("asks Commons for bitmaps with scans, diagrams, maps and the like ruled out", async () => {
+    const f = fakeFetch({ openverse: { hang: true }, commons: { body: commonsBody } });
+    await createImageSearch({ fetchFn: f.fn }).search("be convinced", 6);
+    const q = new URL(f.calls.find((c) => !c.url.includes("openverse"))!.url).searchParams;
+    const text = q.get("gsrsearch")!;
+    expect(text).toContain("filetype:bitmap");
+    expect(text).toContain("be convinced");
+    for (const term of ['-"book images"', "-diagram", "-map", "-chart", "-logo", "-scan", "-syntax"]) expect(text).toContain(term);
+    // more is asked for than is wanted, since some of it is dropped
+    expect(q.get("gsrlimit")).toBe("18");
+  });
+
+  it("asks Openverse for photographs and illustrations of a decent size", async () => {
+    const f = fakeFetch({ openverse: { body: openverseBody }, commons: { hang: true } });
+    await createImageSearch({ fetchFn: f.fn }).search("dog");
+    const q = new URL(f.calls.find((c) => c.url.includes("openverse"))!.url).searchParams;
+    expect(q.get("category")).toBe("photograph,illustration");
+    expect(q.get("size")).toBe("medium,large");
+  });
+
+  it("drops Commons pictures that are tiny or very long and thin, and keeps those that are fine", async () => {
+    const body = {
+      query: {
+        pages: [
+          page("Good dog.jpg", 1),
+          page("Tiny dog.jpg", 2, { width: 120, height: 90 }),
+          page("Banner of dogs.jpg", 3, { width: 3000, height: 400 }),
+          page("Tall strip of dogs.jpg", 4, { width: 300, height: 1500 }),
+          page("Dog with no size known.jpg", 5, { width: undefined, height: undefined }),
+        ],
+      },
+    };
+    const f = fakeFetch({ openverse: { hang: true }, commons: { body } });
+    const r = await createImageSearch({ fetchFn: f.fn }).search("dog");
+    expect(r.results.map((h) => h.title)).toEqual(["Good dog", "Dog with no size known"]);
+  });
+
+  it("drops results whose title says they are a diagram, a map, a scanned book page or a logo", async () => {
+    const titles = ["Syntactic tree diagram of a sentence.png", "Map of the dog parks.png", "Internet Archive Book Images - Dogs page 12.jpg", "Dog club logo.png", "A dog on a beach.jpg"];
+    const f = fakeFetch({
+      openverse: {
+        body: {
+          results: titles.map((t, i) => ({
+            id: `3fa11800-4907-43d0-9921-52ed5ddb22a${i}`,
+            title: t,
+            license: "by",
+            license_version: "2.0",
+            thumbnail: `https://api.openverse.org/v1/images/3fa11800-4907-43d0-9921-52ed5ddb22a${i}/thumb/`,
+            mature: false,
+          })),
+        },
+      },
+      commons: { body: { query: { pages: titles.map((t, i) => page(t, i + 1)) } } },
+    });
+    const r = await createImageSearch({ fetchFn: f.fn }).search("dog", 24);
+    expect(r.results.map((h) => h.title).sort()).toEqual(["A dog on a beach", "A dog on a beach.jpg"]);
+    expect(r.results.map((h) => h.source).sort()).toEqual(["openverse", "wikimedia"]);
+  });
+});
+
 describe("GET /api/images/search", () => {
   const app = (answers: Parameters<typeof fakeFetch>[0], now?: () => number) => {
     const f = fakeFetch(answers);
