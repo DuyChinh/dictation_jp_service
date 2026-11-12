@@ -46,6 +46,8 @@ export const config = {
   /** Optional Openverse API credentials: they raise the rate limits of the flashcard picture search. */
   openverseClientId: process.env.OPENVERSE_CLIENT_ID?.trim() || "",
   openverseClientSecret: process.env.OPENVERSE_CLIENT_SECRET?.trim() || "",
+  /** Optional Anthropic API key for AI-written visual search phrases in flashcard picture picker. */
+  anthropicApiKey: process.env.ANTHROPIC_API_KEY?.trim() || "",
   googleCallbackUrl:
     process.env.GOOGLE_CALLBACK_URL ||
     "http://localhost:3001/api/auth/google/callback",

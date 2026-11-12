@@ -6,6 +6,7 @@ import { sharedView } from "../flashcards/flashcardShare.js";
 import { sanitizeImage } from "./imageRefs.js";
 import { createImageRouter } from "./imageRoutes.js";
 import { createImageSearch, licenseLabel, normalizeQuery } from "./imageSearch.js";
+import { createQueryWriter } from "./imageQueryWriter.js";
 
 const ID1 = "3fa11800-4907-43d0-9921-52ed5ddb22aa";
 const ID2 = "19e2e417-a819-4761-b838-d648b92d48ce";
@@ -404,5 +405,173 @@ describe("GET /api/images/search", () => {
     expect((await request(a).get("/api/images/search").query({ q: "one-more" })).status).toBe(429);
     t += 61_000;
     expect((await request(a).get("/api/images/search").query({ q: "later" })).status).toBe(200);
+  });
+});
+
+describe("POST /api/images/queries", () => {
+  const toolResponse = (queries: string[], picturable = true) => ({
+    content: [
+      {
+        type: "tool_use",
+        id: "toolu_1",
+        name: "suggest_queries",
+        input: { queries, picturable },
+      },
+    ],
+  });
+
+  const fakeAnthropic = (handler: (params: unknown) => Promise<unknown> | unknown) => {
+    const calls: unknown[] = [];
+    const client = {
+      messages: {
+        create: vi.fn(async (params: unknown) => {
+          calls.push(params);
+          return handler(params);
+        }),
+      },
+    };
+    return { client, calls };
+  };
+
+  const queryApp = (
+    handler?: (params: unknown) => Promise<unknown> | unknown,
+    now?: () => number,
+    opts: { provideWriter?: boolean } = {},
+  ) => {
+    const fake = handler ? fakeAnthropic(handler) : undefined;
+    const writer = opts.provideWriter !== false
+      ? createQueryWriter({ client: fake ? fake.client : undefined })
+      : undefined;
+    const a = express();
+    a.use(express.json());
+    a.use("/api/images", createImageRouter(createImageSearch({ fetchFn: vi.fn() as any }), writer, now));
+    a.use((err: { status?: number; code?: string; message: string }, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+      res.status(err.status ?? 500).json({ error: { code: err.code, message: err.message } });
+    });
+    return { a, fake };
+  };
+
+  it("answers 400 on bad body", async () => {
+    const { a } = queryApp(() => toolResponse(["dog", "puppy"]));
+    // missing word
+    expect((await request(a).post("/api/images/queries").send({ meanings: ["dog"] })).status).toBe(400);
+    // empty word
+    expect((await request(a).post("/api/images/queries").send({ word: "   ", meanings: ["dog"] })).status).toBe(400);
+    // word too long (> 40 chars)
+    expect((await request(a).post("/api/images/queries").send({ word: "x".repeat(41), meanings: ["dog"] })).status).toBe(400);
+    // meanings empty
+    expect((await request(a).post("/api/images/queries").send({ word: "犬", meanings: [] })).status).toBe(400);
+    // meanings > 8 items
+    expect((await request(a).post("/api/images/queries").send({ word: "犬", meanings: Array(9).fill("dog") })).status).toBe(400);
+    // meaning > 80 chars
+    expect((await request(a).post("/api/images/queries").send({ word: "犬", meanings: ["x".repeat(81)] })).status).toBe(400);
+    // unknown property rejected
+    expect((await request(a).post("/api/images/queries").send({ word: "犬", meanings: ["dog"], extra: 1 })).status).toBe(400);
+  });
+
+  it("returns success shape and sanitizes quotes, duplicates, > 60 chars, and digits", async () => {
+    const raw = [
+      '"man nodding"',
+      "man nodding",
+      "a very long visual description that goes on and on and exceeds sixty characters in total length",
+      "person with 2 dogs",
+      "valid scene",
+    ];
+    const { a } = queryApp(() => toolResponse(raw, true));
+    const res = await request(a).post("/api/images/queries").send({
+      word: "思い込む",
+      reading: "おもいこむ",
+      meanings: ["to be convinced", "to assume"],
+    });
+
+    expect(res.status).toBe(200);
+    expect(res.body.picturable).toBe(true);
+    expect(res.body.source).toBe("ai");
+    expect(res.body.queries).toEqual([
+      "man nodding",
+      "a very long visual description that goes on and on and excee",
+      "valid scene",
+    ]);
+  });
+
+  it("does not call the model again on cache hit", async () => {
+    const { a, fake } = queryApp(() => toolResponse(["last cookie on plate", "single apple on table"]));
+    const payload = { word: "残る", meanings: ["to remain"] };
+
+    const first = await request(a).post("/api/images/queries").send(payload);
+    expect(first.status).toBe(200);
+    expect(first.body.source).toBe("ai");
+    expect(fake?.calls.length).toBe(1);
+
+    const second = await request(a).post("/api/images/queries").send(payload);
+    expect(second.status).toBe(200);
+    expect(second.body.source).toBe("cache");
+    expect(second.body.queries).toEqual(first.body.queries);
+    expect(fake?.calls.length).toBe(1);
+  });
+
+  it("calls the model once for concurrent identical requests", async () => {
+    let release!: () => void;
+    const gatePromise = new Promise<void>((r) => (release = r));
+    const { a, fake } = queryApp(async () => {
+      await gatePromise;
+      return toolResponse(["dog", "puppy playing"]);
+    });
+
+    const payload = { word: "犬", meanings: ["dog"] };
+    const p1 = request(a).post("/api/images/queries").send(payload);
+    const p2 = request(a).post("/api/images/queries").send(payload);
+
+    release();
+    const [r1, r2] = await Promise.all([p1, p2]);
+
+    expect(r1.status).toBe(200);
+    expect(r2.status).toBe(200);
+    expect(fake?.calls.length).toBe(1);
+  });
+
+  it("limits one address to 10 requests a minute (429 on 11th)", async () => {
+    let t = 2000;
+    const { a } = queryApp(
+      (params: any) => toolResponse([`phrase a`, `phrase b`]),
+      () => t,
+    );
+
+    const words = ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliet"];
+    for (let i = 0; i < 10; i++) {
+      const res = await request(a).post("/api/images/queries").send({ word: words[i], meanings: ["meaning"] });
+      expect(res.status).toBe(200);
+    }
+
+    const blocked = await request(a).post("/api/images/queries").send({ word: "kilo", meanings: ["meaning"] });
+    expect(blocked.status).toBe(429);
+    expect(blocked.body.error.code).toBe("RATE_LIMITED");
+
+    t += 61_000;
+    const later = await request(a).post("/api/images/queries").send({ word: "lima", meanings: ["meaning"] });
+    expect(later.status).toBe(200);
+  });
+
+  it("answers 501 AI_UNAVAILABLE when no key / writer is configured", async () => {
+    const { a } = queryApp(undefined, undefined, { provideWriter: false });
+    const res = await request(a).post("/api/images/queries").send({ word: "犬", meanings: ["dog"] });
+    expect(res.status).toBe(501);
+    expect(res.body.error.code).toBe("AI_UNAVAILABLE");
+  });
+
+  it("answers 502 AI_FAILED when the model fails or returns too few valid phrases", async () => {
+    // Upstream error
+    const failApp = queryApp(async () => {
+      throw new Error("Anthropic overloaded");
+    });
+    const resFail = await request(failApp.a).post("/api/images/queries").send({ word: "犬", meanings: ["dog"] });
+    expect(resFail.status).toBe(502);
+    expect(resFail.body.error.code).toBe("AI_FAILED");
+
+    // Too few valid phrases (only 1 valid phrase left after dropping digits)
+    const fewApp = queryApp(() => toolResponse(["valid phrase", "phrase with 123", "another 456"]));
+    const resFew = await request(fewApp.a).post("/api/images/queries").send({ word: "犬", meanings: ["dog"] });
+    expect(resFew.status).toBe(502);
+    expect(resFew.body.error.code).toBe("AI_FAILED");
   });
 });

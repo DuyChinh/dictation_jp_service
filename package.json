@@ -14,6 +14,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
     "@jd/content-schema": "file:./packages/content-schema",
     "@jd/evaluation": "file:./packages/evaluation",
     "@types/cors": "^2.8.17",
