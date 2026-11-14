@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { IDictEntry, IDictKanji, IDictVi } from "../../models/Dict.js";
+import type { IDictEntry, IDictKanji, IDictPic, IDictVi } from "../../models/Dict.js";
 import type { DictionaryRepository } from "./DictionaryRepository.js";
 import { DictionaryService } from "./DictionaryService.js";
 import { hanVietOfForm } from "./dictMappers.js";
@@ -51,6 +51,10 @@ const KANJI: IDictKanji[] = [
   { _id: "学", n: 8, on: ["ガク"], kun: ["まな.ぶ"], m: ["study"], hv: ["Học"], parts: [] },
 ];
 
+const PICS: IDictPic[] = [
+  { _id: 1, q: ["person eating a meal", "hands holding chopsticks and rice"], src: "ai" },
+];
+
 const repo: DictionaryRepository = {
   findByKeys: async (keys) => ENTRIES.filter((e) => e.keys.some((k) => keys.includes(k))),
   findByKeyPrefix: async (p, limit) => ENTRIES.filter((e) => e.keys.some((k) => k.startsWith(p))).slice(0, limit),
@@ -61,6 +65,7 @@ const repo: DictionaryRepository = {
   },
   getEntry: async (id) => ENTRIES.find((e) => e._id === id) ?? null,
   getVi: async (ids) => new Map(VI.filter((v) => ids.includes(v._id)).map((v) => [v._id, v])),
+  findPics: async (ids) => PICS.filter((p) => ids.includes(p._id)),
   getKanji: async (chars) => KANJI.filter((k) => chars.includes(k._id)),
 };
 const service = new DictionaryService(repo);
@@ -178,6 +183,17 @@ describe("search", () => {
 
   it("returns an empty list when nothing matches", async () => {
     expect((await service.search("zzzz")).entries).toEqual([]);
+  });
+
+  it("attaches pictureQueries from dict_pic, defaulting to [] when none exist", async () => {
+    const taberu = await service.entry(1);
+    expect(taberu?.pictureQueries).toEqual([
+      "person eating a meal",
+      "hands holding chopsticks and rice",
+    ]);
+
+    const gakkou = await service.entry(2);
+    expect(gakkou?.pictureQueries).toEqual([]);
   });
 });
 

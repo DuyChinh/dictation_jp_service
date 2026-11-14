@@ -105,6 +105,26 @@ const viSchema = new Schema<IDictVi>(
 
 export const DictVi = mongoose.model<IDictVi>("DictVi", viSchema);
 
+export type PicSource = "ai" | "manual";
+
+export interface IDictPic {
+  _id: number;
+  /** Concrete English picture-search phrases (0..3 items; empty = word cannot be pictured) */
+  q: string[];
+  src: PicSource;
+}
+
+const picSchema = new Schema<IDictPic>(
+  {
+    _id: { type: Number },
+    q: [String],
+    src: { type: String, enum: ["ai", "manual"], default: "ai" },
+  },
+  { collection: "dict_pic", versionKey: false, timestamps: true },
+);
+
+export const DictPic = mongoose.model<IDictPic>("DictPic", picSchema);
+
 export interface IDictKanji {
   _id: string;
   /** stroke count */

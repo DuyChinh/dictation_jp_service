@@ -1,4 +1,4 @@
-import type { IDictEntry, IDictKanji, IDictVi } from "../../models/Dict.js";
+import type { IDictEntry, IDictKanji, IDictPic, IDictVi } from "../../models/Dict.js";
 
 /**
  * Everything the dictionary API needs from storage. Today MongoDB implements it; moving to PostgreSQL
@@ -15,5 +15,6 @@ export interface DictionaryRepository {
   findByVietnamese(tokens: string[], limit: number): Promise<IDictEntry[]>;
   getEntry(id: number): Promise<IDictEntry | null>;
   getVi(ids: number[]): Promise<Map<number, IDictVi>>;
+  findPics(ids: number[]): Promise<IDictPic[]>;
   getKanji(chars: string[]): Promise<IDictKanji[]>;
 }

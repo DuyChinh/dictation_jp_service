@@ -1,4 +1,4 @@
-import { DictEntry, DictKanji, DictVi, type IDictEntry, type IDictKanji, type IDictVi } from "../../models/Dict.js";
+import { DictEntry, DictKanji, DictPic, DictVi, type IDictEntry, type IDictKanji, type IDictPic, type IDictVi } from "../../models/Dict.js";
 import type { DictionaryRepository } from "./DictionaryRepository.js";
 
 const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -42,6 +42,11 @@ export class MongoDictionaryRepository implements DictionaryRepository {
     if (!ids.length) return new Map();
     const rows = await DictVi.find({ _id: { $in: ids } }).lean<IDictVi[]>();
     return new Map(rows.map((r) => [r._id, r]));
+  }
+
+  findPics(ids: number[]): Promise<IDictPic[]> {
+    if (!ids.length) return Promise.resolve([]);
+    return DictPic.find({ _id: { $in: ids } }).lean<IDictPic[]>();
   }
 
   getKanji(chars: string[]): Promise<IDictKanji[]> {

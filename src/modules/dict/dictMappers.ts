@@ -23,6 +23,8 @@ export type EntryDto = {
   viSource: ViSource | null;
   /** Sino-Vietnamese reading of each kanji spelling that has one, e.g. { "以前": "DĨ TIỀN" } */
   hanViet: Record<string, string>;
+  /** Concrete English picture-search phrases, empty when none */
+  pictureQueries: string[];
 };
 
 export type KanjiDto = {
@@ -57,7 +59,12 @@ export function hanVietOfForm(form: string, hanViet: ReadonlyMap<string, string[
   return parts.length ? parts.join(" ") : null;
 }
 
-export function entryToDto(entry: IDictEntry, vi?: IDictVi | null, hanViet: ReadonlyMap<string, string[]> = new Map()): EntryDto {
+export function entryToDto(
+  entry: IDictEntry,
+  vi?: IDictVi | null,
+  hanViet: ReadonlyMap<string, string[]> = new Map(),
+  pictureQueries: string[] = [],
+): EntryDto {
   const translated = vi?.s ?? [];
   const hanVietByForm: Record<string, string> = {};
   for (const k of entry.k) {
@@ -91,6 +98,7 @@ export function entryToDto(entry: IDictEntry, vi?: IDictVi | null, hanViet: Read
     })),
     viSource: vi ? vi.src : null,
     hanViet: hanVietByForm,
+    pictureQueries: Array.isArray(pictureQueries) ? pictureQueries : [],
   };
 }
 
