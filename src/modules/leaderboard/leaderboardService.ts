@@ -31,6 +31,16 @@ export const POINTS = {
   dailyCheckin: 20,
 } as const;
 
+/** The prizes of "Who wants to be a millionaire" on the flashcard screen: each million won is worth one point. */
+export const MILLIONAIRE_PRIZES: ReadonlySet<number> = new Set([
+  200_000, 400_000, 600_000, 1_000_000, 2_000_000, 3_000_000, 6_000_000, 10_000_000, 14_000_000, 22_000_000, 30_000_000, 40_000_000, 80_000_000,
+  150_000_000, 250_000_000,
+]);
+export const MILLIONAIRE_POINTS_PER = 1_000_000;
+
+/** Points a game of "Who wants to be a millionaire" is worth: 250,000,000 is +250. Zero for a prize that is not on the ladder. */
+export const millionairePoints = (prize: number): number => (MILLIONAIRE_PRIZES.has(prize) ? Math.floor(prize / MILLIONAIRE_POINTS_PER) : 0);
+
 /** Most points study can earn in one day, so no one can climb by scripting requests. */
 export const DAILY_STUDY_CAP = 1500;
 
@@ -89,9 +99,9 @@ export async function ensureEntry(userId: string): Promise<ILeaderboardEntry | n
   }
 }
 
-/** Adds study points, within the day's cap. Never throws: a failed award must not fail the save that earned it. */
-export async function awardPoints(userId: string, amount: number, level?: Level | null): Promise<void> {
-  if (!(amount > 0) || !mongoose.isValidObjectId(userId)) return;
+/** Adds study points, within the day's cap, and returns what was really added. Never throws: a failed award must not fail the save that earned it. */
+export async function awardPoints(userId: string, amount: number, level?: Level | null): Promise<number> {
+  if (!(amount > 0) || !mongoose.isValidObjectId(userId)) return 0;
   try {
     const today = dayKey(new Date());
     const pipeline = [
@@ -116,12 +126,14 @@ export async function awardPoints(userId: string, amount: number, level?: Level 
     ];
     let entry = await LeaderboardEntry.findOneAndUpdate({ userId }, pipeline, { new: true });
     if (!entry) {
-      if (!(await ensureEntry(userId))) return;
+      if (!(await ensureEntry(userId))) return 0;
       entry = await LeaderboardEntry.findOneAndUpdate({ userId }, pipeline, { new: true });
     }
     if (entry?.lastGain) await recordDaily(entry._id, today, entry.lastGain, level ?? "");
+    return entry?.lastGain ?? 0;
   } catch (err) {
     console.error("[leaderboard] award failed:", err);
+    return 0;
   }
 }
 

@@ -6,9 +6,11 @@ import { LeaderboardEntry } from "../../models/LeaderboardEntry.js";
 import { requireAuth } from "../../shared/middleware/auth.js";
 import {
   aheadOf,
+  awardPoints,
   boardFilter,
   claimDailyCheckin,
   ensureEntry,
+  millionairePoints,
   periodRanking,
   periodStanding,
   rankOf,
@@ -126,6 +128,21 @@ export function createLeaderboardRouter(): Router {
     } catch (err: any) {
       console.error("Get my score error:", err);
       return res.status(500).json({ error: { message: err.message || "Failed to load score" } });
+    }
+  });
+
+  // Points for a finished game of "Who wants to be a millionaire": each million of the prize is a point.
+  r.post("/game", requireAuth, async (req: Request, res: Response) => {
+    try {
+      const { game, prize } = (req.body ?? {}) as { game?: unknown; prize?: unknown };
+      const worth = game === "millionaire" && typeof prize === "number" ? millionairePoints(prize) : 0;
+      if (worth <= 0) return res.json({ gained: 0 });
+      const userId = String(req.user!._id);
+      const gained = await awardPoints(userId, worth);
+      return res.json({ gained, worth });
+    } catch (err: any) {
+      console.error("Game points error:", err);
+      return res.status(500).json({ error: { message: err.message || "Failed to add points" } });
     }
   });
 
