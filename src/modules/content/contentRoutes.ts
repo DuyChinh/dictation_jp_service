@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { Router, type Request } from "express";
 import fs from "node:fs";
 import type { StaticContentRepository } from "./StaticContentRepository.js";
 import {
@@ -13,8 +13,12 @@ import {
   toLessonSummary,
 } from "./contentMappers.js";
 import { AppError } from "../../shared/errors.js";
+import { createRateLimiter } from "../../shared/middleware/rateLimit.js";
 import type { AppConfig } from "../../config.js";
 import type { ContentStatus } from "@jd/content-schema";
+
+const AUDIO_MAX_PER_MINUTE = 120;
+const AUDIO_MAX_AGE_MS = 24 * 60 * 60 * 1000;
 
 export function createContentRouter(
   repo: StaticContentRepository,
@@ -123,41 +127,38 @@ export function createContentRouter(
 export function createAudioRouter(repo: StaticContentRepository): Router {
   const r = Router();
 
-  r.get("/:lessonId", (req, res) => {
+  // A play issues several range requests (initial buffering, every seek), so the cap is generous.
+  const audioLimiter = createRateLimiter({
+    max: AUDIO_MAX_PER_MINUTE,
+    message: "Too many audio requests, try again in a minute",
+  });
+
+  r.get("/:lessonId", audioLimiter, (req: Request<{ lessonId: string }>, res, next) => {
     const meta = repo.get(req.params.lessonId);
     if (!meta || !fs.existsSync(meta.audioPath)) {
       throw new AppError("CONTENT_NOT_FOUND", "Audio not found", 404);
     }
 
-    const stat = fs.statSync(meta.audioPath);
-    const fileSize = stat.size;
-    const range = req.headers.range;
-
-    res.setHeader("Content-Type", "audio/mpeg");
-    res.setHeader("Accept-Ranges", "bytes");
-
-    if (range) {
-      const m = /^bytes=(\d*)-(\d*)$/.exec(range);
-      if (!m) {
-        res.status(416).end();
-        return;
-      }
-      const start = m[1] ? parseInt(m[1], 10) : 0;
-      const end = m[2] ? parseInt(m[2], 10) : fileSize - 1;
-      if (start >= fileSize || end >= fileSize || start > end) {
-        res.status(416).setHeader("Content-Range", `bytes */${fileSize}`).end();
-        return;
-      }
-      const chunkSize = end - start + 1;
-      res.status(206);
-      res.setHeader("Content-Range", `bytes ${start}-${end}/${fileSize}`);
-      res.setHeader("Content-Length", String(chunkSize));
-      fs.createReadStream(meta.audioPath, { start, end }).pipe(res);
-      return;
-    }
-
-    res.setHeader("Content-Length", String(fileSize));
-    fs.createReadStream(meta.audioPath).pipe(res);
+    // sendFile handles Range (206/416), ETag + Last-Modified (304) and Cache-Control. A day of browser
+    // caching keeps a replay or a returning learner from downloading the whole file again; after that
+    // the browser revalidates, so a corrected recording still reaches everyone.
+    res.sendFile(
+      meta.audioPath,
+      {
+        acceptRanges: true,
+        maxAge: AUDIO_MAX_AGE_MS,
+        headers: { "Content-Type": "audio/mpeg" },
+      },
+      (err?: Error & { status?: number; headers?: Record<string, string> }) => {
+        if (!err || res.headersSent) return;
+        // An unsatisfiable Range is the client's mistake: answer 416 with its Content-Range, not a 500.
+        if (typeof err.status === "number" && err.status < 500) {
+          res.status(err.status).set(err.headers ?? {}).end();
+          return;
+        }
+        next(err);
+      },
+    );
   });
 
   return r;

@@ -1,7 +1,9 @@
 import { Router, type NextFunction, type Request, type RequestHandler, type Response } from "express";
 import { AppError } from "../../shared/errors.js";
+import { createRateLimiter } from "../../shared/middleware/rateLimit.js";
 import type { DictionaryService, SearchLang } from "./DictionaryService.js";
 
+const DICT_MAX_PER_MINUTE = 180;
 const MAX_TEXT = 120;
 const LANGS: SearchLang[] = ["auto", "ja", "en", "vi"];
 
@@ -19,6 +21,9 @@ const wrap =
 
 export function createDictRouter(service: DictionaryService): Router {
   const r = Router();
+
+  // Every click on a word is a lookup (a Mongo query plus de-inflection on a small CPU), so cap each address.
+  r.use(createRateLimiter({ max: DICT_MAX_PER_MINUTE, message: "Too many dictionary requests, try again in a minute" }));
 
   // Answers change when the data or the lookup rules do, so a browser may reuse one only after the server
   // confirms it is current (ETag), never blindly for an hour.

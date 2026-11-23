@@ -1,10 +1,10 @@
 import { Router, type NextFunction, type Request, type RequestHandler, type Response } from "express";
 import { z } from "zod";
 import { AppError } from "../../shared/errors.js";
+import { createRateLimiter } from "../../shared/middleware/rateLimit.js";
 import type { QueryWriter } from "./imageQueryWriter.js";
 import { MAX_QUERY, normalizeQuery, type ImageSearch } from "./imageSearch.js";
 
-const WINDOW_MS = 60_000;
 const SEARCH_MAX_PER_WINDOW = 40;
 const QUERIES_MAX_PER_WINDOW = 10;
 
@@ -14,32 +14,7 @@ const wrap =
     fn(req, res).catch(next);
   };
 
-/** A per-address limiter to protect upstream APIs from being hammered through this server. */
-export function createRateLimiter(opts: {
-  max: number;
-  windowMs?: number;
-  code?: string;
-  message?: string;
-  now?: () => number;
-}): RequestHandler {
-  const windowMs = opts.windowMs ?? WINDOW_MS;
-  const max = opts.max;
-  const code = opts.code ?? "RATE_LIMITED";
-  const message = opts.message ?? "Too many requests, try again in a minute";
-  const now = opts.now ?? Date.now;
-  const hits = new Map<string, number[]>();
-
-  return (req, _res, next) => {
-    const t = now();
-    const key = req.ip ?? "unknown";
-    const recent = (hits.get(key) ?? []).filter((at) => t - at < windowMs);
-    if (recent.length >= max) return next(new AppError(code, message, 429));
-    recent.push(t);
-    hits.set(key, recent);
-    if (hits.size > 5000) for (const [k, v] of hits) if (v.every((at) => t - at >= windowMs)) hits.delete(k);
-    next();
-  };
-}
+export { createRateLimiter };
 
 const queryBodySchema = z
   .object({

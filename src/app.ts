@@ -1,3 +1,4 @@
+import compression from "compression";
 import cors from "cors";
 import express, {
   type NextFunction,
@@ -42,6 +43,10 @@ export function createApp(repo?: StaticContentRepository) {
   }
 
   const app = express();
+  // Behind Render's proxy every request arrives from the proxy's address; without this, req.ip (the rate
+  // limiters' key) would be one shared address and a few busy learners would lock everyone out.
+  app.set("trust proxy", config.trustProxy);
+  app.use(compression());
   app.use(
     cors({
       origin: config.corsOrigins,

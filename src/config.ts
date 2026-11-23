@@ -39,6 +39,8 @@ const nodeEnv = process.env.NODE_ENV ?? "development";
 export const config = {
   port: Number(process.env.PORT ?? 3001),
   nodeEnv,
+  /** Proxy hops to trust for req.ip. Render puts one proxy in front; set TRUST_PROXY=0 to disable, or a larger number for more hops. */
+  trustProxy: Number.parseInt(process.env.TRUST_PROXY ?? "", 10) >= 0 ? Number.parseInt(process.env.TRUST_PROXY ?? "", 10) : nodeEnv === "production" ? 1 : 0,
   contentRoot: resolveContentRoot(),
   mongodbUri: process.env.MONGODB_URI?.trim() || "",
   googleClientId: process.env.GOOGLE_CLIENT_ID || "",
