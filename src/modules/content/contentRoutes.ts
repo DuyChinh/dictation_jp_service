@@ -14,12 +14,13 @@ import {
 } from "./contentMappers.js";
 import { AppError } from "../../shared/errors.js";
 import { createRateLimiter } from "../../shared/middleware/rateLimit.js";
-import type { AppConfig } from "../../config.js";
+import { config, type AppConfig } from "../../config.js";
 import type { ContentStatus } from "@jd/content-schema";
 
 const CONTENT_MAX_AGE_S = 60;
 const AUDIO_MAX_PER_MINUTE = 120;
 const AUDIO_MAX_AGE_MS = 24 * 60 * 60 * 1000;
+const AUDIO_REDIRECT_MAX_AGE_S = 3600;
 
 export function createContentRouter(
   repo: StaticContentRepository,
@@ -133,7 +134,10 @@ export function createContentRouter(
   return r;
 }
 
-export function createAudioRouter(repo: StaticContentRepository): Router {
+export function createAudioRouter(
+  repo: StaticContentRepository,
+  cfg: Pick<AppConfig, "audioBaseUrl"> = config,
+): Router {
   const r = Router();
 
   // A play issues several range requests (initial buffering, every seek), so the cap is generous.
@@ -144,6 +148,15 @@ export function createAudioRouter(repo: StaticContentRepository): Router {
 
   r.get("/:lessonId", audioLimiter, (req: Request<{ lessonId: string }>, res, next) => {
     const meta = repo.get(req.params.lessonId);
+
+    // With a CDN / object store configured the file is served from there: this server only answers a
+    // redirect, so the audio's bandwidth and CPU are no longer spent here. The player follows it as is.
+    if (cfg.audioBaseUrl && meta?.audioPath) {
+      res.set("Cache-Control", `public, max-age=${AUDIO_REDIRECT_MAX_AGE_S}`);
+      res.redirect(302, `${cfg.audioBaseUrl}/${encodeURIComponent(meta.package.id)}.mp3`);
+      return;
+    }
+
     if (!meta || !fs.existsSync(meta.audioPath)) {
       throw new AppError("CONTENT_NOT_FOUND", "Audio not found", 404);
     }

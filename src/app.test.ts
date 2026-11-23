@@ -133,6 +133,22 @@ describe("backend content + evaluate API", () => {
     expect(bad.status).toBe(416);
   });
 
+  it("redirects audio to the CDN when AUDIO_BASE_URL is set, and still 404s an unknown lesson", async () => {
+    const repo = new StaticContentRepository(root);
+    repo.load();
+    const cdnApp = createApp(repo).app;
+    const prev = config.audioBaseUrl;
+    (config as { audioBaseUrl: string }).audioBaseUrl = "https://audio.example.com";
+    try {
+      const res = await request(cdnApp).get("/api/audio/fixture-sample-1").redirects(0);
+      expect(res.status).toBe(302);
+      expect(res.headers["location"]).toBe("https://audio.example.com/fixture-sample-1.mp3");
+      expect((await request(cdnApp).get("/api/audio/nope").redirects(0)).status).toBe(404);
+    } finally {
+      (config as { audioBaseUrl: string }).audioBaseUrl = prev;
+    }
+  });
+
   it("content lists are cacheable briefly but errors are not", async () => {
     const ok = await request(app).get("/api/content/lessons");
     expect(ok.status).toBe(200);

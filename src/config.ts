@@ -39,6 +39,12 @@ const nodeEnv = process.env.NODE_ENV ?? "development";
 export const config = {
   port: Number(process.env.PORT ?? 3001),
   nodeEnv,
+  /**
+   * Where the lesson mp3 files are served from when they are not served by this server, e.g.
+   * "https://audio.example.com" (a public Cloudflare R2 bucket or any CDN). The file for a lesson is
+   * expected at <base>/<lessonId>.mp3 and /api/audio/:lessonId then redirects there. Empty = serve from disk.
+   */
+  audioBaseUrl: (process.env.AUDIO_BASE_URL ?? "").trim().replace(/\/+$/, ""),
   /** How long a signed-in user's row is reused before MongoDB is asked again; 0 disables the cache. */
   authCacheTtlMs: (() => {
     const n = Number.parseInt(process.env.AUTH_CACHE_TTL_MS ?? "", 10);
