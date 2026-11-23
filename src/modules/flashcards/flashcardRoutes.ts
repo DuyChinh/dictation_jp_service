@@ -5,6 +5,7 @@ import { FlashcardSet } from "../../models/FlashcardSet.js";
 import { FlashcardShare } from "../../models/FlashcardShare.js";
 import { User } from "../../models/User.js";
 import { mergeState, sanitizeState, type SyncState } from "./flashcardSync.js";
+import { mergeProgress, sanitizeProgress } from "./flashcardProgress.js";
 import { MAX_SHARES_PER_USER, SHARE_ID, newShareId, sharedView } from "./flashcardShare.js";
 
 /** Express 4 does not catch rejected promises; hand them to the error middleware. */
@@ -56,6 +57,24 @@ export function createFlashcardRouter(): Router {
       { upsert: true, setDefaultsOnInsert: true },
     );
     res.json(merged);
+  }));
+
+  // Games and study rounds left half way. Keys are "g:<deckId>:<game>" and "l:<deckId>"; the newer copy of each wins.
+  // Sending nothing is a plain download; the merged set comes back either way.
+  r.get("/progress", wrap(async (req, res) => {
+    const doc = await FlashcardSet.findOne({ userId: req.user!._id }).lean();
+    res.json({ progress: sanitizeProgress(doc?.progress ?? {}) });
+  }));
+
+  r.put("/progress", wrap(async (req, res) => {
+    const doc = await FlashcardSet.findOne({ userId: req.user!._id }).lean();
+    const merged = mergeProgress(sanitizeProgress(doc?.progress ?? {}), sanitizeProgress(req.body));
+    await FlashcardSet.findOneAndUpdate(
+      { userId: req.user!._id },
+      { $set: { progress: merged } },
+      { upsert: true, setDefaultsOnInsert: true },
+    );
+    res.json({ progress: merged });
   }));
 
   // Make a deck public: returns its share id (the same one if it already is). The deck must already be synced.

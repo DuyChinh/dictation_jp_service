@@ -5,6 +5,8 @@ export interface IFlashcardSet extends Document {
   userId: mongoose.Types.ObjectId;
   decks: unknown[];
   cards: unknown[];
+  /** Games and study rounds left half way, by key; see flashcardProgress.ts. */
+  progress?: Record<string, unknown>;
   updatedAt: Date;
 }
 
@@ -13,6 +15,7 @@ const flashcardSetSchema = new Schema<IFlashcardSet>(
     userId: { type: Schema.Types.ObjectId, ref: "User", required: true, unique: true },
     decks: { type: [Schema.Types.Mixed], default: [] },
     cards: { type: [Schema.Types.Mixed], default: [] },
+    progress: { type: Schema.Types.Mixed, default: {} },
   },
   { timestamps: true, minimize: false },
 );
