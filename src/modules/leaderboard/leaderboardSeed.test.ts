@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { BASE_POINTS, LEVELS, isLevel, seedTargets, SEED_MIN_PER_LEVEL, addDays, dayProgress, gainSoFar, plannedGain, vietnamHour, buildSeedLearners, dailyGain, dayKey, daysBetween, mulberry32, periodStart } from "./leaderboardSeed.js";
+import { BASE_POINTS, LEVELS, isLevel, seedTargets, SEED_MIN_PER_LEVEL, addDays, dayProgress, gainSoFar, plannedGain, vietnamHour, buildSeedLearners, dailyGain, dayKey, daysBetween, mulberry32, periodStart, SEED_HEAD_START_MAX, SEED_HISTORY_START, seedHistoryStart, headStart } from "./leaderboardSeed.js";
 
 describe("demo learners", () => {
   const learners = buildSeedLearners();
@@ -34,7 +34,8 @@ describe("demo learners", () => {
     expect(Math.min(...learners.map((l) => l.points))).toBeGreaterThanOrEqual(BASE_POINTS);
     const newcomers = learners.filter((l) => l.points < BASE_POINTS + 500).length;
     expect(newcomers).toBeGreaterThan(20);
-    expect(Math.max(...learners.map((l) => l.points))).toBeGreaterThan(5000);
+    expect(Math.max(...learners.map((l) => l.points))).toBeGreaterThan(BASE_POINTS + 1000);
+    expect(Math.max(...learners.map((l) => l.points))).toBeLessThanOrEqual(BASE_POINTS + SEED_HEAD_START_MAX);
   });
 });
 
@@ -126,5 +127,22 @@ describe("levels", () => {
     expect(isLevel("N2")).toBe(true);
     expect(isLevel("n2")).toBe(false);
     expect(isLevel("ALL")).toBe(false);
+  });
+});
+
+describe("demo history window", () => {
+  it("never reaches back before the site's own history", () => {
+    expect(seedHistoryStart(new Date("2026-11-23T05:00:00Z"))).toBe(SEED_HISTORY_START);
+    // a new year starts its own window, which is later than the site's start
+    expect(seedHistoryStart(new Date("2027-03-02T05:00:00Z"))).toBe("2027-01-01");
+  });
+
+  it("gives each demo learner a small, fixed head start", () => {
+    for (const id of ["a", "b", "c", "507f1f77bcf86cd799439011"]) {
+      const h = headStart(id);
+      expect(h).toBeGreaterThanOrEqual(0);
+      expect(h).toBeLessThan(SEED_HEAD_START_MAX);
+      expect(headStart(id)).toBe(h);
+    }
   });
 });

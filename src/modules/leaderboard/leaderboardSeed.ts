@@ -1,6 +1,10 @@
 /** Pure helpers for the demo learners: who they are, how many points they start with, what they earn per day. */
 
 export const BASE_POINTS = 1000;
+/** The most a demo learner can start above the base score, so a new learner's few thousand points are not dwarfed. */
+export const SEED_HEAD_START_MAX = 2000;
+/** Demo learners only have history from this day on: the site is young, so no one has a year of study behind them. */
+export const SEED_HISTORY_START = "2026-09-23";
 /** Every level gets a random crowd of this many demo learners or more (up to MIN + SPREAD), so no board looks thin. */
 export const SEED_MIN_PER_LEVEL = 300;
 const SEED_SPREAD_PER_LEVEL = 100;
@@ -20,6 +24,12 @@ export function mulberry32(seed: number): Rand {
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
+}
+
+/** The first day demo learners have study logged for: this year's start, but never before the site's own history. */
+export function seedHistoryStart(now: Date): string {
+  const yearStart = `${dayKey(now).slice(0, 4)}-01-01`;
+  return yearStart > SEED_HISTORY_START ? yearStart : SEED_HISTORY_START;
 }
 
 export function dayKey(now: Date): string {
@@ -119,7 +129,7 @@ export function buildSeedLearners(
       out.push({
         name,
         level,
-        points: BASE_POINTS + Math.floor(Math.pow(rand(), 2.2) * 9000),
+        points: BASE_POINTS + Math.floor(Math.pow(rand(), 2.2) * SEED_HEAD_START_MAX),
         activity: 0.25 + 0.7 * rand(),
         intensity: 0.3 + 1.2 * Math.pow(rand(), 1.5),
       });
@@ -148,6 +158,11 @@ export function periodStart(period: "week" | "month" | "year", now: Date): strin
   if (period === "month") return `${today.slice(0, 7)}-01`;
   const weekday = new Date(`${today}T00:00:00Z`).getUTCDay();
   return addDays(today, -((weekday + 6) % 7));
+}
+
+/** What a demo learner started with above the base score, fixed by their id so it is the same every time. */
+export function headStart(id: string): number {
+  return Math.floor(Math.pow(mulberry32(hashString(`${id}|head`))(), 2.2) * SEED_HEAD_START_MAX);
 }
 
 export function hashString(text: string): number {

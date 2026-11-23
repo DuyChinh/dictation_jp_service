@@ -17,6 +17,7 @@ import {
   levelForName,
   periodStart,
   plannedGain,
+  seedHistoryStart,
   vietnamHour,
   type Level,
 } from "./leaderboardSeed.js";
@@ -277,11 +278,13 @@ async function backfillSeedHistory(now = new Date()): Promise<void> {
 
   const today = dayKey(now);
   const hour = vietnamHour(now);
+  const first = seedHistoryStart(now);
   const docs: Array<{ entryId: unknown; day: string; level: string; points: number }> = [];
   for (const s of seeds) {
     const learner = { points: s.points, activity: s.activity ?? 0.6, intensity: s.intensity ?? 1 };
     for (let back = SEED_HISTORY_DAYS - 1; back >= 0; back--) {
       const day = addDays(today, -back);
+      if (day < first) continue;
       const points = gainSoFar(plannedGain(learner, String(s._id), day), String(s._id), day, back === 0 ? hour : 24);
       if (points > 0) docs.push({ entryId: s._id, day, level: s.level ?? "", points });
     }
@@ -311,7 +314,7 @@ async function extendSeedHistory(now = new Date()): Promise<void> {
     { $match: { entryId: { $in: seeds.map((s) => s._id) } } },
     { $group: { _id: null, day: { $min: "$day" } } },
   ]);
-  const yearStart = periodStart("year", now);
+  const yearStart = seedHistoryStart(now);
   if (!earliest || earliest.day <= yearStart) return;
 
   const last = addDays(earliest.day, -1);
@@ -333,7 +336,7 @@ async function writeSeedHistory(
 ): Promise<void> {
   const today = dayKey(now);
   const hour = vietnamHour(now);
-  const first = periodStart("year", now);
+  const first = seedHistoryStart(now);
   let docs: Array<{ entryId: unknown; day: string; level: string; points: number }> = [];
   for (const s of seeds) {
     const learner = { points: s.points, activity: s.activity ?? 0.6, intensity: s.intensity ?? 1 };
