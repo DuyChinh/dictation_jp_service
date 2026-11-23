@@ -17,6 +17,7 @@ import { createRateLimiter } from "../../shared/middleware/rateLimit.js";
 import type { AppConfig } from "../../config.js";
 import type { ContentStatus } from "@jd/content-schema";
 
+const CONTENT_MAX_AGE_S = 60;
 const AUDIO_MAX_PER_MINUTE = 120;
 const AUDIO_MAX_AGE_MS = 24 * 60 * 60 * 1000;
 
@@ -25,6 +26,14 @@ export function createContentRouter(
   cfg: AppConfig,
 ): Router {
   const r = Router();
+
+  // The same answer for every learner (the content is loaded once at startup), so browsers may reuse it
+  // briefly. Errors drop this header in the app's error handler. A lesson hidden or edited by an admin
+  // can take up to this long to change on a learner's screen.
+  r.use((req, res, next) => {
+    if (req.method === "GET") res.set("Cache-Control", `public, max-age=${CONTENT_MAX_AGE_S}`);
+    next();
+  });
 
   r.get("/lessons", (req, res) => {
     const level = req.query.level as string | undefined;

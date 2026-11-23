@@ -4,6 +4,7 @@ import { connectMongo } from "./database/mongo.js";
 import { seedAdmin } from "./modules/admin/adminAuth.js";
 import { loadHiddenLessons } from "./modules/admin/routes/contentRoutes.js";
 import { startLeaderboardJobs } from "./modules/leaderboard/leaderboardService.js";
+import { flushTraffic } from "./modules/traffic/trafficRoutes.js";
 
 assertConfig();
 
@@ -20,9 +21,25 @@ async function main() {
     if (config.nodeEnv === "production") process.exit(1);
   }
 
-  app.listen(config.port, () => {
+  const server = app.listen(config.port, () => {
     console.log(`[backend] http://localhost:${config.port}`);
   });
+
+  // Render stops a service with SIGTERM on every deploy: save the buffered page-view counts first.
+  let stopping = false;
+  const shutdown = (signal: string) => {
+    if (stopping) return;
+    stopping = true;
+    console.log(`[backend] ${signal} received, shutting down`);
+    const force = setTimeout(() => process.exit(0), 8000);
+    force.unref();
+    server.close();
+    flushTraffic()
+      .catch((e) => console.error("[traffic] final flush failed:", e))
+      .finally(() => process.exit(0));
+  };
+  process.on("SIGTERM", () => shutdown("SIGTERM"));
+  process.on("SIGINT", () => shutdown("SIGINT"));
 }
 
 main().catch((e) => {

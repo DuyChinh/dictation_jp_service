@@ -7,6 +7,7 @@ import * as mongo from "../../database/mongo.js";
 import { Admin } from "../../models/Admin.js";
 import { TrafficHour } from "../../models/TrafficHour.js";
 import { StaticContentRepository } from "../content/StaticContentRepository.js";
+import { flushTraffic } from "./trafficRoutes.js";
 
 const ADMIN_ID = "64b000000000000000000001";
 const token = jwt.sign({ typ: "admin", adminId: ADMIN_ID, tv: 0 }, config.adminJwtSecret);
@@ -24,7 +25,30 @@ describe("traffic recording", () => {
     const write = vi.spyOn(TrafficHour, "updateOne").mockResolvedValue({} as never);
     const res = await request(app).post("/api/traffic/view").send({ date: "2000-01-01", path: "/private?token=secret", views: 100 });
     expect(res.status).toBe(204);
+    expect(write).not.toHaveBeenCalled(); // buffered, not written per view
+    await flushTraffic();
     expect(write).toHaveBeenCalledExactlyOnceWith(
+      { _id: new Date("2026-11-10T17:00:00Z") }, { $inc: { views: 1 } }, { upsert: true },
+    );
+  });
+
+  it("adds several views into one write per hour", async () => {
+    const write = vi.spyOn(TrafficHour, "updateOne").mockResolvedValue({} as never);
+    for (let i = 0; i < 3; i++) expect((await request(app).post("/api/traffic/view")).status).toBe(204);
+    await flushTraffic();
+    expect(write).toHaveBeenCalledExactlyOnceWith(
+      { _id: new Date("2026-11-10T17:00:00Z") }, { $inc: { views: 3 } }, { upsert: true },
+    );
+  });
+
+  it("keeps the counts for the next flush when a write fails", async () => {
+    vi.spyOn(console, "error").mockImplementation(() => undefined);
+    expect((await request(app).post("/api/traffic/view")).status).toBe(204);
+    const write = vi.spyOn(TrafficHour, "updateOne").mockRejectedValueOnce(new Error("down")).mockResolvedValue({} as never);
+    await flushTraffic();
+    await flushTraffic();
+    expect(write).toHaveBeenCalledTimes(2);
+    expect(write).toHaveBeenLastCalledWith(
       { _id: new Date("2026-11-10T17:00:00Z") }, { $inc: { views: 1 } }, { upsert: true },
     );
   });
@@ -33,6 +57,7 @@ describe("traffic recording", () => {
     const write = vi.spyOn(TrafficHour, "updateOne")
       .mockRejectedValueOnce({ code: 11000 }).mockResolvedValueOnce({} as never);
     expect((await request(app).post("/api/traffic/view")).status).toBe(204);
+    await flushTraffic();
     expect(write).toHaveBeenLastCalledWith({ _id: new Date("2026-11-10T17:00:00Z") }, { $inc: { views: 1 } });
   });
 

@@ -12,7 +12,7 @@ import { LeaderboardDaily, LeaderboardEntry } from "./models/LeaderboardEntry.js
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
-  "../../content",
+  "../content/fixtures",
 );
 
 describe("backend content + evaluate API", () => {
@@ -120,6 +120,26 @@ describe("backend content + evaluate API", () => {
     expect(res.status).toBe(206);
     expect(res.headers["content-range"]).toMatch(/bytes 0-99\//);
     expect(res.headers["content-type"]).toMatch(/audio/);
+  });
+
+  it("audio is cacheable, revalidates with 304 and answers 416 for an impossible range", async () => {
+    const full = await request(app).get("/api/audio/fixture-sample-1");
+    expect(full.status).toBe(200);
+    expect(full.headers["cache-control"]).toMatch(/max-age=\d+/);
+    expect(full.headers["etag"]).toBeTruthy();
+    const again = await request(app).get("/api/audio/fixture-sample-1").set("If-None-Match", full.headers["etag"]);
+    expect(again.status).toBe(304);
+    const bad = await request(app).get("/api/audio/fixture-sample-1").set("Range", "bytes=999999999-");
+    expect(bad.status).toBe(416);
+  });
+
+  it("content lists are cacheable briefly but errors are not", async () => {
+    const ok = await request(app).get("/api/content/lessons");
+    expect(ok.status).toBe(200);
+    expect(ok.headers["cache-control"]).toBe("public, max-age=60");
+    const missing = await request(app).get("/api/content/lessons/does-not-exist");
+    expect(missing.status).toBe(404);
+    expect(missing.headers["cache-control"] ?? "").not.toMatch(/max-age/);
   });
 
   it("handles progress requests gracefully without auth", async () => {

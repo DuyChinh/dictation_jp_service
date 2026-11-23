@@ -13,7 +13,7 @@ import {
   googleCallback,
 } from "./authController.js";
 import { config } from "../../config.js";
-import { requireAuth } from "../../shared/middleware/auth.js";
+import { requireAuthFresh } from "../../shared/middleware/auth.js";
 
 export function createAuthRouter(): Router {
   const router = Router();
@@ -47,11 +47,11 @@ export function createAuthRouter(): Router {
   });
 
   // Get current user info
-  router.get("/me", requireAuth, getCurrentUser);
-  router.patch("/me", requireAuth, updateCurrentUser);
-  router.post("/change-password", requireAuth, changePassword);
-  router.post("/avatar", requireAuth, updateAvatar);
-  router.delete("/avatar", requireAuth, removeAvatar);
+  router.get("/me", requireAuthFresh, getCurrentUser);
+  router.patch("/me", requireAuthFresh, updateCurrentUser);
+  router.post("/change-password", requireAuthFresh, changePassword);
+  router.post("/avatar", requireAuthFresh, updateAvatar);
+  router.delete("/avatar", requireAuthFresh, removeAvatar);
 
   return router;
 }

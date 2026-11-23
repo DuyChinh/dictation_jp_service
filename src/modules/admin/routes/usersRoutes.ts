@@ -10,6 +10,7 @@ import { User, type IUser } from "../../../models/User.js";
 import { AppError } from "../../../shared/errors.js";
 import type { StaticContentRepository } from "../../content/StaticContentRepository.js";
 import { computeCounts } from "../../content/contentMappers.js";
+import { invalidateAuthUser } from "../../../shared/middleware/auth.js";
 import { requirePerm } from "../adminAuth.js";
 import {
   ah,
@@ -60,6 +61,7 @@ async function activityFor(ids: Types.ObjectId[]): Promise<Map<string, Activity>
 /** Deletes the accounts and everything they practised. Payments stay for the books. */
 async function deleteUsers(ids: string[]): Promise<number> {
   const { deletedCount } = await User.deleteMany({ _id: { $in: ids } });
+  ids.forEach((id) => invalidateAuthUser(id));
   const byUser = { userId: { $in: ids } };
   await Promise.all([
     Progress.deleteMany(byUser),
@@ -199,6 +201,8 @@ export function createUsersAdminRouter(repo: StaticContentRepository): Router {
         rethrowDuplicate(err, "Another account already uses this email");
       }
       if (!user) throw new AppError("NOT_FOUND", "User not found", 404);
+      // A lock or plan change must take effect now, not when the cached copy expires.
+      invalidateAuthUser(id);
       await audit(req, currentAdmin(res), "user_update", user.email, Object.keys(body).join(", "));
       const act = await activityFor([user._id]);
       res.json({ user: toUserRow(user, act.get(String(user._id))) });

@@ -39,6 +39,11 @@ const nodeEnv = process.env.NODE_ENV ?? "development";
 export const config = {
   port: Number(process.env.PORT ?? 3001),
   nodeEnv,
+  /** How long a signed-in user's row is reused before MongoDB is asked again; 0 disables the cache. */
+  authCacheTtlMs: (() => {
+    const n = Number.parseInt(process.env.AUTH_CACHE_TTL_MS ?? "", 10);
+    return Number.isFinite(n) && n >= 0 ? n : 30_000;
+  })(),
   /** Proxy hops to trust for req.ip. Render puts one proxy in front; set TRUST_PROXY=0 to disable, or a larger number for more hops. */
   trustProxy: Number.parseInt(process.env.TRUST_PROXY ?? "", 10) >= 0 ? Number.parseInt(process.env.TRUST_PROXY ?? "", 10) : nodeEnv === "production" ? 1 : 0,
   contentRoot: resolveContentRoot(),

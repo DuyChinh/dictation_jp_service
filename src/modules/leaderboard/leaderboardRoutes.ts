@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import { config } from "../../config.js";
 import { LeaderboardEntry } from "../../models/LeaderboardEntry.js";
 import { requireAuth } from "../../shared/middleware/auth.js";
+import { createTtlCache } from "../../shared/ttlCache.js";
 import {
   aheadOf,
   awardPoints,
@@ -37,8 +38,15 @@ function intParam(v: unknown, fallback: number, min: number, max: number): numbe
   return Number.isFinite(n) ? Math.min(max, Math.max(min, n)) : fallback;
 }
 
+type Row = { _id: unknown; name: string; avatar?: string | null; points: number; totalPoints?: number; level?: string | null };
+type Board = { rows: Row[]; total: number; participants: number };
+
+/** How long a ranking listing is reused; new points show up on the board within this many seconds. */
+const BOARD_TTL_MS = 20_000;
+
 export function createLeaderboardRouter(): Router {
   const r = Router();
+  const boardCache = createTtlCache<Board>({ ttlMs: BOARD_TTL_MS, maxEntries: 200 });
 
   // The ranking, highest first: this week, month, year or all time, for one JLPT level or all of them.
   // A signed-in caller also gets their own standing.
@@ -55,15 +63,28 @@ export function createLeaderboardRouter(): Router {
 
       const mine = userId ? await LeaderboardEntry.findOne({ userId }).lean() : null;
 
-      type Row = { _id: unknown; name: string; avatar?: string | null; points: number; totalPoints?: number; level?: string | null };
-      let rows: Row[];
-      let total: number;
-      let participants: number;
+      // The listing is the same for everyone, so it is shared for a few seconds (and a burst of identical
+      // requests runs one aggregation). "me" below stays live.
+      const { rows, total, participants: boardParticipants } = await boardCache.load(
+        `${period}|${level}|${limit}|${offset}`,
+        async (): Promise<Board> => {
+          if (period === "all" && level === "ALL") {
+            const all = await LeaderboardEntry.find(filter).sort({ points: -1, _id: 1 }).skip(offset).limit(limit).lean();
+            const n = await LeaderboardEntry.countDocuments(filter);
+            return { rows: all, total: n, participants: n };
+          }
+          const ranked = await periodRanking(period, level, limit, offset);
+          return {
+            rows: ranked.rows,
+            total: ranked.total,
+            participants: level === "ALL" ? await LeaderboardEntry.countDocuments(filter) : ranked.total,
+          };
+        },
+      );
+      let participants = boardParticipants;
       let me: Record<string, unknown> | null = null;
 
       if (period === "all" && level === "ALL") {
-        rows = await LeaderboardEntry.find(filter).sort({ points: -1, _id: 1 }).skip(offset).limit(limit).lean();
-        total = participants = await LeaderboardEntry.countDocuments(filter);
         if (mine) {
           const ahead = await aheadOf(mine);
           me = {
@@ -77,10 +98,6 @@ export function createLeaderboardRouter(): Router {
           };
         }
       } else {
-        const ranked = await periodRanking(period, level, limit, offset);
-        rows = ranked.rows;
-        total = ranked.total;
-        participants = level === "ALL" ? await LeaderboardEntry.countDocuments(filter) : ranked.total;
         if (mine) {
           const standing = await periodStanding(period, level, mine._id);
           // A level board only lists learners who earned points there; someone with none is ranked last,
