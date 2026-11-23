@@ -28,6 +28,7 @@ import { createImageRouter } from "./modules/images/imageRoutes.js";
 import { createImageSearch } from "./modules/images/imageSearch.js";
 import { createQueryWriter } from "./modules/images/imageQueryWriter.js";
 import { createTrafficRouter } from "./modules/traffic/trafficRoutes.js";
+import { createVoucherRouter } from "./modules/vouchers/voucherRoutes.js";
 export function createApp(repo?: StaticContentRepository) {
   const contentRepo = repo ?? new StaticContentRepository(config.contentRoot);
   if (!repo) {
@@ -78,6 +79,7 @@ export function createApp(repo?: StaticContentRepository) {
   const queryWriter = config.anthropicApiKey ? createQueryWriter({ apiKey: config.anthropicApiKey }) : undefined;
   app.use("/api/images", createImageRouter(createImageSearch({ openverseId: config.openverseClientId, openverseSecret: config.openverseClientSecret }), queryWriter));
   app.use("/api/traffic", createTrafficRouter());
+  app.use("/api/vouchers", createVoucherRouter());
   app.use("/api/admin", createAdminRouter(contentRepo, config));
 
   app.use(
