@@ -12,22 +12,22 @@ const ME = "64b000000000000000000001";
 const token = jwt.sign({ userId: ME }, config.jwtSecret);
 const lean = <T,>(v: T) => ({ lean: async () => v, sort() { return this; } }) as never;
 const row = (extra: Record<string, unknown> = {}) => ({
-  userId: ME, source: "support_video", code: "MOTTO10-ABCDEF", discountType: "percent", discountValue: 10,
+  userId: ME, source: "support_video", code: "KAITIQ10-ABCDEF", discountType: "percent", discountValue: 10,
   expiresAt: null, usedAt: null, createdAt: new Date("2026-11-23T00:00:00Z"), ...extra,
 });
 
 describe("voucher helpers", () => {
   it("makes readable, distinct codes with the source's prefix", () => {
-    const codes = new Set(Array.from({ length: 300 }, () => newVoucherCode("MOTTO10")));
+    const codes = new Set(Array.from({ length: 300 }, () => newVoucherCode("KAITIQ10")));
     expect(codes.size).toBe(300);
-    for (const c of codes) expect(c).toMatch(/^MOTTO10-[A-HJ-NP-Z2-9]{6}$/);
+    for (const c of codes) expect(c).toMatch(/^KAITIQ10-[A-HJ-NP-Z2-9]{6}$/);
   });
   it("gives 10% off for supporting the video", () => {
     expect(VOUCHER_SOURCES.support_video).toMatchObject({ discountType: "percent", discountValue: 10 });
   });
   it("shows a voucher without internals, and flags a spent one", () => {
     expect(voucherView(row() as never)).toEqual({
-      source: "support_video", code: "MOTTO10-ABCDEF", discountType: "percent", discountValue: 10,
+      source: "support_video", code: "KAITIQ10-ABCDEF", discountType: "percent", discountValue: 10,
       expiresAt: null, used: false, createdAt: "2026-11-23T00:00:00.000Z",
     });
     expect(voucherView(row({ usedAt: new Date() }) as never).used).toBe(true);
@@ -57,7 +57,7 @@ describe("voucher API", () => {
     const res = await request(app).get("/api/vouchers/me").set(auth);
     expect(res.status).toBe(200);
     expect(res.body.vouchers).toHaveLength(1);
-    expect(res.body.vouchers[0]).toMatchObject({ code: "MOTTO10-ABCDEF", discountValue: 10, used: false });
+    expect(res.body.vouchers[0]).toMatchObject({ code: "KAITIQ10-ABCDEF", discountValue: 10, used: false });
     expect(res.headers["cache-control"]).toBe("no-store");
   });
 
@@ -69,7 +69,7 @@ describe("voucher API", () => {
     expect(res.status).toBe(201);
     expect(res.body.created).toBe(true);
     expect(create).toHaveBeenCalledWith(expect.objectContaining({ source: "support_video", discountType: "percent", discountValue: 10 }));
-    expect(res.body.voucher.code).toMatch(/^MOTTO10-/);
+    expect(res.body.voucher.code).toMatch(/^KAITIQ10-/);
   });
 
   it("returns the voucher already held instead of making a second one", async () => {
@@ -78,7 +78,7 @@ describe("voucher API", () => {
     const create = vi.spyOn(UserVoucher, "create");
     const res = await request(app).post("/api/vouchers/claim").set(auth).send({ source: "support_video" });
     expect(res.status).toBe(200);
-    expect(res.body).toMatchObject({ created: false, voucher: { code: "MOTTO10-ABCDEF" } });
+    expect(res.body).toMatchObject({ created: false, voucher: { code: "KAITIQ10-ABCDEF" } });
     expect(create).not.toHaveBeenCalled();
   });
 

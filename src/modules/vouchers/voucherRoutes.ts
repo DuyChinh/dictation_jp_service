@@ -6,7 +6,7 @@ import { UserVoucher, type IUserVoucher, type VoucherSource } from "../../models
 
 /** What each source gives. */
 export const VOUCHER_SOURCES: Record<VoucherSource, { discountType: "percent" | "fixed"; discountValue: number; prefix: string }> = {
-  support_video: { discountType: "percent", discountValue: 10, prefix: "MOTTO10" },
+  support_video: { discountType: "percent", discountValue: 10, prefix: "KAITIQ10" },
 };
 
 const CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // no 0/O/1/I, so a code is easy to read out and type
