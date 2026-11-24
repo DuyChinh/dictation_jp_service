@@ -115,6 +115,25 @@ export async function updateCurrentUser(req: Request, res: Response) {
   }
 }
 
+const LEVELS = ["ALL", "N1", "N2", "N3", "N4", "N5"] as const;
+
+/** Keeps the level the learner picked on the account, so a new device starts from it instead of "all levels". */
+export async function updateLevel(req: Request, res: Response) {
+  try {
+    const level = req.body?.level;
+    if (typeof level !== "string" || !(LEVELS as readonly string[]).includes(level)) {
+      return res.status(400).json({ error: { message: "Level must be ALL or N1 to N5" } });
+    }
+    const user = req.user!;
+    user.jlptLevel = level as (typeof LEVELS)[number];
+    await user.save();
+    res.json({ user: currentUserResponse(user) });
+  } catch (error: any) {
+    console.error("Update level error:", error);
+    res.status(400).json({ error: { message: error.message || "Update level failed" } });
+  }
+}
+
 export async function changePassword(req: Request, res: Response) {
   try {
     const { currentPassword, newPassword } = req.body;

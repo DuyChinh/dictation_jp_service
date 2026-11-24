@@ -16,6 +16,8 @@ export interface IUser extends Document {
   premiumUntil?: Date | null;
   /** When the learner wants the daily "cards to review" reminder (their local time); one choice for the account, on every device. */
   reminderTime?: { hour?: number; minute?: number };
+  /** The JLPT level the learner picked ("ALL" for no filter), kept on the account so every device starts from it. */
+  jlptLevel?: "ALL" | "N1" | "N2" | "N3" | "N4" | "N5";
   createdAt: Date;
   updatedAt: Date;
 }
@@ -66,6 +68,10 @@ const userSchema = new Schema<IUser>(
     premiumUntil: {
       type: Date,
       default: null,
+    },
+    jlptLevel: {
+      type: String,
+      enum: ["ALL", "N1", "N2", "N3", "N4", "N5"],
     },
     reminderTime: {
       hour: { type: Number, min: 0, max: 23 },

@@ -7,6 +7,7 @@ import {
   resetPassword,
   getCurrentUser,
   updateCurrentUser,
+  updateLevel,
   changePassword,
   updateAvatar,
   removeAvatar,
@@ -49,6 +50,7 @@ export function createAuthRouter(): Router {
   // Get current user info
   router.get("/me", requireAuthFresh, getCurrentUser);
   router.patch("/me", requireAuthFresh, updateCurrentUser);
+  router.put("/level", requireAuthFresh, updateLevel);
   router.post("/change-password", requireAuthFresh, changePassword);
   router.post("/avatar", requireAuthFresh, updateAvatar);
   router.delete("/avatar", requireAuthFresh, removeAvatar);
