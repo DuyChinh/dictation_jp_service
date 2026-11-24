@@ -173,6 +173,54 @@ describe("written part (paper.json) API", () => {
     expect(vocab.body.result).toMatchObject({ total: 1, answered: 1, correct: 1 });
   });
 
+  it("scores a sitting the JLPT way: scaled per section, and no total for a part-sitting", async () => {
+    const answers = [
+      { item_id: `${LESSON}-v-q1`, choice_id: "3" },
+      { item_id: `${LESSON}-g-q2`, choice_id: "1" },
+      { item_id: `${LESSON}-r-q3`, choice_id: "2" },
+    ];
+    const all = await request(app).post("/api/evaluate/paper-exam").send({ lesson_id: LESSON, scope: "all", answers });
+    const { score } = all.body.result;
+    expect(score).toMatchObject({ level: "N2", method: "irt-3pl-eap", total: null, passed: null });
+    expect(score.scales.map((s: { id: string; score: number }) => [s.id, s.score])).toEqual([
+      ["language", 60],
+      ["reading", 60],
+    ]);
+    // Scoring inputs are not leaked into the items.
+    expect(Object.keys(all.body.result.items[0]).some((k) => k.startsWith("_"))).toBe(false);
+
+    const vocab = await request(app).post("/api/evaluate/paper-exam").send({ lesson_id: LESSON, scope: "vocab", answers });
+    expect(vocab.body.result.score.scales).toHaveLength(1);
+    expect(vocab.body.result.score.scales[0]).toMatchObject({ id: "language", partial: true });
+  });
+
+  it("grades a full sitting (written + listening) with section scores, a total and pass/fail", async () => {
+    const right = [
+      { item_id: `${LESSON}-v-q1`, choice_id: "3" },
+      { item_id: `${LESSON}-g-q2`, choice_id: "1" },
+      { item_id: `${LESSON}-r-q3`, choice_id: "2" },
+      { item_id: "fixture-sample-1-m1-q1", choice_id: "1" },
+    ];
+    const ok = await request(app).post("/api/evaluate/full-exam").send({ lesson_id: LESSON, answers: right });
+    expect(ok.status).toBe(200);
+    expect(ok.body.result).toMatchObject({ scope: "full", total: 4, answered: 4, correct: 4 });
+    expect(ok.body.result.items.map((i: { part: string }) => i.part)).toEqual(["vocab", "grammar", "reading", "listening"]);
+    expect(ok.body.result.score).toMatchObject({ total: 180, total_max: 180, pass_total: 90, passed: true });
+    expect(ok.body.result.score.scales.map((s: { id: string }) => s.id)).toEqual(["language", "reading", "listening"]);
+
+    const blank = await request(app).post("/api/evaluate/full-exam").send({ lesson_id: LESSON, answers: [] });
+    expect(blank.body.result).toMatchObject({ total: 4, answered: 0, correct: 0 });
+    expect(blank.body.result.score).toMatchObject({ total: 0, passed: false });
+  });
+
+  it("rejects a full sitting with unknown questions, bad payloads or a draft paper", async () => {
+    const full = (body: unknown, target = app) => request(target).post("/api/evaluate/full-exam").send(body as object);
+    expect((await full({ lesson_id: LESSON, answers: [{ item_id: "nope", choice_id: "1" }] })).status).toBe(404);
+    expect((await full({ lesson_id: LESSON })).status).toBe(400);
+    expect((await full({ lesson_id: "nope", answers: [] })).status).toBe(404);
+    expect((await full({ lesson_id: LESSON, answers: [] }, draftApp)).status).toBe(404);
+  });
+
   it("rejects an exam with unknown questions, bad choices or a draft paper", async () => {
     const bad = (answers: unknown) => request(app).post("/api/evaluate/paper-exam").send({ lesson_id: LESSON, scope: "all", answers });
     expect((await bad([{ item_id: "nope", choice_id: "1" }])).status).toBe(404);

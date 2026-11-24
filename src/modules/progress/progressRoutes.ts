@@ -66,6 +66,7 @@ type ExamHistoryView = {
   total: number;
   answered: number;
   correct: number;
+  score?: Record<string, unknown>;
   result?: Record<string, unknown>;
 };
 
@@ -78,6 +79,7 @@ function toExamHistoryView(row: {
   total: number;
   answered: number;
   correct: number;
+  score?: unknown;
   result?: unknown;
 }): ExamHistoryView {
   return {
@@ -89,6 +91,7 @@ function toExamHistoryView(row: {
     total: row.total,
     answered: row.answered,
     correct: row.correct,
+    ...(row.score && typeof row.score === "object" ? { score: row.score as Record<string, unknown> } : {}),
     ...(row.result && typeof row.result === "object" ? { result: row.result as Record<string, unknown> } : {}),
   };
 }
@@ -683,6 +686,7 @@ export function createProgressRouter(repo?: StaticContentRepository): Router {
       const answered = num(b.answered);
       const correct = num(b.correct);
       const result = b.result && typeof b.result === "object" ? b.result : undefined;
+      const score = b.score && typeof b.score === "object" ? b.score : undefined;
 
       const isNewSitting = !(await ExamHistory.exists({ userId, lessonId, startedAt }));
 
@@ -696,6 +700,7 @@ export function createProgressRouter(repo?: StaticContentRepository): Router {
             total,
             answered,
             correct,
+            ...(score ? { score } : {}),
             ...(result ? { result } : {}),
           },
         },
@@ -920,6 +925,7 @@ export function createProgressRouter(repo?: StaticContentRepository): Router {
                 total: num(e.total),
                 answered: num(e.answered),
                 correct: num(e.correct),
+                ...(e.score && typeof e.score === "object" ? { score: e.score } : {}),
                 ...(e.result && typeof e.result === "object" ? { result: e.result } : {}),
               },
             },

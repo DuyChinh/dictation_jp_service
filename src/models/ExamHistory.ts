@@ -10,6 +10,8 @@ export interface IExamHistory extends Document {
   total: number;
   answered: number;
   correct: number;
+  /** JLPT-style scaled score of the sitting (per-section scores, total, pass/fail). */
+  score?: Record<string, unknown>;
   result?: Record<string, unknown>;
   createdAt: Date;
   updatedAt: Date;
@@ -26,6 +28,7 @@ const examHistorySchema = new Schema<IExamHistory>(
     total: { type: Number, required: true, default: 0 },
     answered: { type: Number, required: true, default: 0 },
     correct: { type: Number, required: true, default: 0 },
+    score: { type: Schema.Types.Mixed },
     result: { type: Schema.Types.Mixed },
   },
   { timestamps: true, minimize: false }

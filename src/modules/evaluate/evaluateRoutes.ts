@@ -11,6 +11,101 @@ import { z } from "zod";
 import type { StaticContentRepository } from "../content/StaticContentRepository.js";
 import { AppError } from "../../shared/errors.js";
 import { findSentence, toItemResult } from "../content/paperMappers.js";
+import type { LessonMeta } from "../content/StaticContentRepository.js";
+import { parseLevel, scoreSitting, type JlptLevel, type JlptScore, type ScoreItem } from "./jlptScore.js";
+
+type PaperPackage = NonNullable<LessonMeta["paper"]>;
+type Part = ScoreItem["part"];
+
+const listeningQuestions = (meta: LessonMeta) =>
+  meta.package.sections.flatMap((section) =>
+    section.questions
+      .filter((q) => q.type === "listening_multiple_choice" && q.choices?.length)
+      .map((q) => ({ q, section })),
+  );
+type ListeningEntry = ReturnType<typeof listeningQuestions>[number];
+
+const levelOfMeta = (meta: LessonMeta): JlptLevel | null =>
+  parseLevel((meta.package.source as { level?: unknown } | undefined)?.level ?? meta.paper?.source.level);
+
+/** A graded question; `_type` and `_choices` feed the scoring and are not sent to the client. */
+type Graded = {
+  item_id: string;
+  no: number;
+  part: Part;
+  mondai: number;
+  section_id?: string;
+  selected: string | null;
+  correct_choice_id: string | null;
+  correct: boolean;
+  _type: string;
+  _choices: number;
+};
+
+function gradeWritten(paper: PaperPackage, scope: string, picked: Map<string, string>): Graded[] {
+  return paper.items
+    .filter((i) => scope === "all" || i.part === scope)
+    .sort((a, b) => a.no - b.no)
+    .map((i) => {
+      const selected = picked.get(i.id) ?? null;
+      const correctChoice = i.choices.find((c) => c.correct)?.id ?? null;
+      return {
+        item_id: i.id,
+        no: i.no,
+        part: i.part,
+        mondai: i.mondai,
+        selected,
+        correct_choice_id: correctChoice,
+        correct: selected !== null && selected === correctChoice,
+        _type: i.type,
+        _choices: i.choices.length,
+      };
+    });
+}
+
+function gradeListening(questions: ListeningEntry[], picked: Map<string, string>): Graded[] {
+  return questions.map(({ q, section }, i) => {
+    const selected = picked.get(q.id) ?? null;
+    const correctChoice = q.choices?.find((c) => c.correct)?.id ?? null;
+    return {
+      item_id: q.id,
+      no: i + 1,
+      part: "listening",
+      mondai: section.order,
+      section_id: section.id,
+      selected,
+      correct_choice_id: correctChoice,
+      correct: selected !== null && selected === correctChoice,
+      _type: "listening_multiple_choice",
+      _choices: q.choices?.length ?? 4,
+    };
+  });
+}
+
+const publicItem = ({ _type: _t, _choices: _c, ...item }: Graded) => item;
+
+const tally = (items: Graded[]) => ({
+  total: items.length,
+  answered: items.filter((i) => i.selected !== null).length,
+  correct: items.filter((i) => i.correct).length,
+});
+
+/** The JLPT scaled score of a sitting; left out when the lesson is not of a JLPT level. */
+function scoreOf(
+  level: JlptLevel | null,
+  items: Graded[],
+  sat: { vocab: boolean; grammar: boolean; reading: boolean; listening: boolean },
+): { score?: JlptScore } {
+  if (!level || items.length === 0) return {};
+  const scored: ScoreItem[] = items.map((i) => ({
+    part: i.part,
+    no: i.no,
+    type: i._type,
+    choices: i._choices,
+    correct: i.correct,
+  }));
+  return { score: scoreSitting(level, scored, sat) };
+}
 
 const DictationBody = z.object({
   lesson_id: z.string(),
@@ -71,6 +166,11 @@ const ListeningExamBody = z.object({
     .max(300),
 });
 
+const FullExamBody = z.object({
+  lesson_id: z.string(),
+  answers: z.array(z.object({ item_id: z.string(), choice_id: z.string().min(1).max(20) })).max(400),
+});
+
 const TranslationBody = z.object({
   lesson_id: z.string(),
   sentence_id: z.string(),
@@ -101,6 +201,7 @@ export function createEvaluateRouter(
   /**
    * Grade a timed sitting in one go: the learner answered without seeing any result, so the
    * correct choices are revealed only here. Explanations stay behind /paper-item (review).
+   * The result also carries the JLPT scaled score (see jlptScore.ts).
    */
   r.post("/paper-exam", (req, res) => {
     const body = PaperExamBody.safeParse(req.body);
@@ -112,34 +213,23 @@ export function createEvaluateRouter(
     if (!paper) {
       throw new AppError("CONTENT_NOT_FOUND", "Paper not found", 404);
     }
-    const picked = new Map(answers.map((a) => [a.item_id, a.choice_id]));
+    const picked = new Map(answers.map((a) => [a.item_id, a.choice_id as string]));
     const known = new Set(paper.items.map((i) => i.id));
     if (answers.some((a) => !known.has(a.item_id))) {
       throw new AppError("QUESTION_NOT_FOUND", "Unknown question in answers", 404);
     }
-    const inScope = paper.items
-      .filter((i) => scope === "all" || i.part === scope)
-      .sort((a, b) => a.no - b.no);
-    const items = inScope.map((i) => {
-      const selected = picked.get(i.id) ?? null;
-      const correctChoice = i.choices.find((c) => c.correct)?.id ?? null;
-      return {
-        item_id: i.id,
-        no: i.no,
-        part: i.part,
-        mondai: i.mondai,
-        selected,
-        correct_choice_id: correctChoice,
-        correct: selected !== null && selected === correctChoice,
-      };
-    });
+    const graded = gradeWritten(paper, scope, picked);
     res.json({
       result: {
         scope,
-        total: items.length,
-        answered: items.filter((i) => i.selected !== null).length,
-        correct: items.filter((i) => i.correct).length,
-        items,
+        ...tally(graded),
+        items: graded.map(publicItem),
+        ...scoreOf(parseLevel(paper.source.level), graded, {
+          vocab: scope === "all" || scope === "vocab",
+          grammar: scope === "all" || scope === "grammar",
+          reading: scope === "all" || scope === "reading",
+          listening: false,
+        }),
       },
     });
   });
@@ -159,37 +249,61 @@ export function createEvaluateRouter(
     if (!meta) {
       throw new AppError("CONTENT_NOT_FOUND", "Lesson not found", 404);
     }
-    const questions = meta.package.sections.flatMap((section) =>
-      section.questions
-        .filter((q) => q.type === "listening_multiple_choice" && q.choices?.length)
-        .map((q) => ({ q, section })),
-    );
+    const questions = listeningQuestions(meta);
     const known = new Set(questions.map(({ q }) => q.id));
     if (answers.some((a) => !known.has(a.question_id))) {
       throw new AppError("QUESTION_NOT_FOUND", "Unknown question in answers", 404);
     }
-    const picked = new Map(answers.map((a) => [a.question_id, a.choice_id]));
-    const items = questions.map(({ q, section }, i) => {
-      const selected = picked.get(q.id) ?? null;
-      const correctChoice = q.choices?.find((c) => c.correct)?.id ?? null;
-      return {
-        item_id: q.id,
-        no: i + 1,
-        part: "listening" as const,
-        mondai: section.order,
-        section_id: section.id,
-        selected,
-        correct_choice_id: correctChoice,
-        correct: selected !== null && selected === correctChoice,
-      };
-    });
+    const graded = gradeListening(questions, new Map(answers.map((a) => [a.question_id, a.choice_id])));
     res.json({
       result: {
         scope: "listening" as const,
-        total: items.length,
-        answered: items.filter((i) => i.selected !== null).length,
-        correct: items.filter((i) => i.correct).length,
-        items,
+        ...tally(graded),
+        items: graded.map(publicItem),
+        ...scoreOf(levelOfMeta(meta), graded, { vocab: false, grammar: false, reading: false, listening: true }),
+      },
+    });
+  });
+
+  /**
+   * Grade a full sitting (the written part and the listening part of one exam) in one go. The
+   * answers of both parts come in one list; each id is a written item or a listening question.
+   * The result is the whole exam: every question, the scaled score per section, the total out of
+   * 180 and pass/fail.
+   */
+  r.post("/full-exam", (req, res) => {
+    const body = FullExamBody.safeParse(req.body);
+    if (!body.success) {
+      throw new AppError("VALIDATION_ERROR", "Invalid request", 400, body.error.issues);
+    }
+    const { lesson_id, answers } = body.data;
+    const meta = repo.get(lesson_id);
+    const paper = repo.getPaper(lesson_id, allowStatuses);
+    if (!meta || !paper) {
+      throw new AppError("CONTENT_NOT_FOUND", "Exam not found", 404);
+    }
+    const questions = listeningQuestions(meta);
+    if (questions.length === 0) {
+      throw new AppError("CONTENT_NOT_FOUND", "Exam has no listening part", 404);
+    }
+    const writtenIds = new Set(paper.items.map((i) => i.id));
+    const listeningIds = new Set(questions.map(({ q }) => q.id));
+    if (answers.some((a) => !writtenIds.has(a.item_id) && !listeningIds.has(a.item_id))) {
+      throw new AppError("QUESTION_NOT_FOUND", "Unknown question in answers", 404);
+    }
+    const picked = new Map(answers.map((a) => [a.item_id, a.choice_id]));
+    const graded = [...gradeWritten(paper, "all", picked), ...gradeListening(questions, picked)];
+    res.json({
+      result: {
+        scope: "full" as const,
+        ...tally(graded),
+        items: graded.map(publicItem),
+        ...scoreOf(levelOfMeta(meta) ?? parseLevel(paper.source.level), graded, {
+          vocab: true,
+          grammar: true,
+          reading: true,
+          listening: true,
+        }),
       },
     });
   });
