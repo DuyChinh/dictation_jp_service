@@ -5,6 +5,7 @@ import { AppError } from "../../shared/errors.js";
 import { requireAuth } from "../../shared/middleware/auth.js";
 import { createRateLimiter } from "../../shared/middleware/rateLimit.js";
 import { PushSubscription } from "../../models/PushSubscription.js";
+import { User } from "../../models/User.js";
 import { pushEnabled, sendTestPush } from "./pushService.js";
 import { REMINDER_LANGS, isPushEndpoint } from "./reminder.js";
 
@@ -27,6 +28,8 @@ const subscribeBody = z.object({
   /** Minutes east of UTC (Vietnam is 420). */
   utcOffsetMin: z.number().int().min(-14 * 60).max(14 * 60).default(0),
 });
+
+const timeBody = z.object({ hour: z.number().int().min(0).max(23), minute: z.number().int().min(0).max(59) });
 
 export function createPushRouter(): Router {
   const r = Router();
@@ -63,6 +66,33 @@ export function createPushRouter(): Router {
       { $set: { userId, keys: subscription.keys, lang, hour, minute, utcOffsetMin }, $setOnInsert: { lastSentDay: "" } },
       { upsert: true, setDefaultsOnInsert: true },
     );
+    // the time is the account's: the next device the learner signs in on shows the same one
+    await User.updateOne({ _id: userId }, { $set: { reminderTime: { hour, minute } } });
+    res.json({ ok: true });
+  }));
+
+  // The time the learner chose for their reminder. It belongs to the account, so a new device starts from it.
+  // Accounts that set a time before it was kept on the account fall back to their latest browser's time.
+  r.get("/preference", wrap(async (req, res) => {
+    const userId = req.user!._id;
+    const user = await User.findById(userId).select("reminderTime").lean();
+    const t = user?.reminderTime;
+    if (typeof t?.hour === "number" && typeof t.minute === "number") {
+      res.json({ time: { hour: t.hour, minute: t.minute } });
+      return;
+    }
+    const latest = await PushSubscription.findOne({ userId }).sort({ updatedAt: -1 }).select("hour minute").lean();
+    res.json({ time: latest ? { hour: latest.hour, minute: latest.minute ?? 0 } : null });
+  }));
+
+  // Saves the time on the account and moves every browser of the account to it.
+  r.put("/preference", wrap(async (req, res) => {
+    const parsed = timeBody.safeParse(req.body);
+    if (!parsed.success) throw new AppError("BAD_REQUEST", "invalid time");
+    const { hour, minute } = parsed.data;
+    const userId = req.user!._id;
+    await User.updateOne({ _id: userId }, { $set: { reminderTime: { hour, minute } } });
+    await PushSubscription.updateMany({ userId }, { $set: { hour, minute } });
     res.json({ ok: true });
   }));
 

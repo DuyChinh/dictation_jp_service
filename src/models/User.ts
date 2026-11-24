@@ -14,6 +14,8 @@ export interface IUser extends Document {
   /** Plan code ("free" or a Plan's code); set from the admin area. */
   plan: string;
   premiumUntil?: Date | null;
+  /** When the learner wants the daily "cards to review" reminder (their local time); one choice for the account, on every device. */
+  reminderTime?: { hour?: number; minute?: number };
   createdAt: Date;
   updatedAt: Date;
 }
@@ -64,6 +66,10 @@ const userSchema = new Schema<IUser>(
     premiumUntil: {
       type: Date,
       default: null,
+    },
+    reminderTime: {
+      hour: { type: Number, min: 0, max: 23 },
+      minute: { type: Number, min: 0, max: 59 },
     },
   },
   {
