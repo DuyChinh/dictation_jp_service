@@ -61,6 +61,13 @@ export const config = {
   openverseClientSecret: process.env.OPENVERSE_CLIENT_SECRET?.trim() || "",
   /** Optional Anthropic API key for AI-written visual search phrases in flashcard picture picker. */
   anthropicApiKey: process.env.ANTHROPIC_API_KEY?.trim() || "",
+  /** Web Push keys for "cards to review" reminders (`npx web-push generate-vapid-keys`). Reminders are off while unset. */
+  vapid: {
+    publicKey: process.env.VAPID_PUBLIC_KEY?.trim() || "",
+    privateKey: process.env.VAPID_PRIVATE_KEY?.trim() || "",
+    /** A mailto: or https: contact for the push services. */
+    subject: process.env.VAPID_SUBJECT?.trim() || process.env.CLIENT_URL || "https://localhost",
+  },
   googleCallbackUrl:
     process.env.GOOGLE_CALLBACK_URL ||
     "http://localhost:3001/api/auth/google/callback",

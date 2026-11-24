@@ -25,6 +25,7 @@ import { DictionaryService } from "./modules/dict/DictionaryService.js";
 import { MongoDictionaryRepository } from "./modules/dict/MongoDictionaryRepository.js";
 import { createDictRouter } from "./modules/dict/dictRoutes.js";
 import { createFlashcardRouter } from "./modules/flashcards/flashcardRoutes.js";
+import { createPushRouter } from "./modules/push/pushRoutes.js";
 import { createImageRouter } from "./modules/images/imageRoutes.js";
 import { createImageSearch } from "./modules/images/imageSearch.js";
 import { createQueryWriter } from "./modules/images/imageQueryWriter.js";
@@ -81,7 +82,8 @@ export function createApp(repo?: StaticContentRepository) {
   app.use("/api/leaderboard", createLeaderboardRouter());
   app.use("/api/dict", createDictRouter(new DictionaryService(new MongoDictionaryRepository())));
   app.use("/api/flashcards", createFlashcardRouter());
-  const queryWriter = config.anthropicApiKey ? createQueryWriter({ apiKey: config.anthropicApiKey }) : undefined;
+  app.use("/api/push", createPushRouter());
+  const queryWriter =config.anthropicApiKey ? createQueryWriter({ apiKey: config.anthropicApiKey }) : undefined;
   app.use("/api/images", createImageRouter(createImageSearch({ openverseId: config.openverseClientId, openverseSecret: config.openverseClientSecret }), queryWriter));
   app.use("/api/traffic", createTrafficRouter());
   app.use("/api/vouchers", createVoucherRouter());
