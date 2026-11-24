@@ -1,4 +1,4 @@
-import webpush from "web-push";
+import { sendNotification, setVapidDetails } from "web-push";
 import { config } from "../../config.js";
 import { FlashcardSet } from "../../models/FlashcardSet.js";
 import { PushSubscription } from "../../models/PushSubscription.js";
@@ -11,14 +11,14 @@ let configured = false;
 function setup(): boolean {
   if (!pushEnabled()) return false;
   if (!configured) {
-    webpush.setVapidDetails(config.vapid.subject, config.vapid.publicKey, config.vapid.privateKey);
+    setVapidDetails(config.vapid.subject, config.vapid.publicKey, config.vapid.privateKey);
     configured = true;
   }
   return true;
 }
 
 type Sender = (sub: { endpoint: string; keys: { p256dh: string; auth: string } }, payload: string) => Promise<unknown>;
-const defaultSender: Sender = (sub, payload) => webpush.sendNotification(sub, payload, { TTL: 6 * 3600, urgency: "normal" });
+const defaultSender: Sender = (sub, payload) => sendNotification(sub, payload, { TTL: 6 * 3600, urgency: "normal" });
 
 /**
  * Sends today's reminder to every subscription whose window is open. A learner with no cards to review gets nothing
