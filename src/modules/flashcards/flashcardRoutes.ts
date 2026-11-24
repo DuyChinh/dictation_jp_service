@@ -53,7 +53,7 @@ export function createFlashcardRouter(): Router {
     const merged = mergeState(await load(req.user!._id), sanitizeState(req.body));
     await FlashcardSet.findOneAndUpdate(
       { userId: req.user!._id },
-      { $set: { decks: merged.decks, cards: merged.cards } },
+      { $set: { decks: merged.decks, cards: merged.cards, folders: merged.folders ?? [] } },
       { upsert: true, setDefaultsOnInsert: true },
     );
     res.json(merged);

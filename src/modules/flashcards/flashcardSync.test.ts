@@ -1,13 +1,16 @@
 import { describe, expect, it } from "vitest";
 import {
   MAX_LIVE_CARDS,
+  MAX_LIVE_FOLDERS,
   TOMBSTONE_MS,
   mergeById,
   mergeState,
   sanitizeCard,
+  sanitizeDeck,
   sanitizeState,
   type SyncCard,
   type SyncDeck,
+  type SyncFolder,
 } from "./flashcardSync.js";
 
 const deck = (id: string, updatedAt: number, extra: Partial<SyncDeck> = {}): SyncDeck => ({
@@ -101,7 +104,40 @@ describe("mergeState", () => {
 
 describe("sanitizeState", () => {
   it("survives garbage", () => {
-    expect(sanitizeState(null)).toEqual({ decks: [], cards: [] });
+    expect(sanitizeState(null)).toEqual({ decks: [], cards: [], folders: [] });
     expect(sanitizeState({ decks: "x", cards: [1, null, card("a", 1)] }).cards).toHaveLength(1);
+  });
+});
+
+describe("folders", () => {
+  const folder = (id: string, updatedAt: number, extra: Partial<SyncFolder> = {}): SyncFolder => ({ id, name: `folder ${id}`, createdAt: 1, updatedAt, ...extra });
+
+  it("keeps a deck's folder and drops broken folders", () => {
+    expect(sanitizeDeck({ ...deck("d", 5), folderId: "f1" })?.folderId).toBe("f1");
+    expect(sanitizeDeck({ ...deck("d", 5), folderId: "not an id!" })?.folderId).toBeUndefined();
+    const s = sanitizeState({ folders: [folder("f1", 1), { id: "f2", name: "  " }, 7, folder("f3", 2, { deleted: true, name: "" })] });
+    expect(s.folders?.map((f) => f.id)).toEqual(["f1", "f3"]);
+  });
+
+  it("merges by id like decks: the newer copy wins and a delete survives a stale copy", () => {
+    const merged = mergeState(
+      { decks: [], cards: [], folders: [folder("a", 5, { name: "new" }), folder("b", 5, { deleted: true })] },
+      { decks: [], cards: [], folders: [folder("a", 3, { name: "old" }), folder("b", 4)] },
+      10,
+    );
+    expect(merged.folders?.find((f) => f.id === "a")?.name).toBe("new");
+    expect(merged.folders?.find((f) => f.id === "b")?.deleted).toBe(true);
+  });
+
+  it("a client that knows nothing about folders does not erase them", () => {
+    const merged = mergeState({ decks: [], cards: [], folders: [folder("a", 5)] }, { decks: [], cards: [] });
+    expect(merged.folders).toHaveLength(1);
+  });
+
+  it("keeps the newest folders when there are too many", () => {
+    const many = Array.from({ length: MAX_LIVE_FOLDERS + 5 }, (_, i) => folder(`f${i}`, 1, { createdAt: i }));
+    const merged = mergeState({ decks: [], cards: [], folders: many }, { decks: [], cards: [] });
+    expect(merged.folders).toHaveLength(MAX_LIVE_FOLDERS);
+    expect(merged.folders?.some((f) => f.id === "f0")).toBe(false);
   });
 });

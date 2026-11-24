@@ -8,11 +8,22 @@ import { sanitizeImage, type ImageRef } from "../images/imageRefs.js";
 export type CardLang = "ja" | "vi" | "en";
 const LANGS: CardLang[] = ["ja", "vi", "en"];
 
+/** A folder that groups decks (one level; a deck is in at most one). */
+export type SyncFolder = {
+  id: string;
+  name: string;
+  createdAt: number;
+  updatedAt: number;
+  deleted?: true;
+};
+
 export type SyncDeck = {
   id: string;
   name: string;
   createdAt: number;
   updatedAt: number;
+  /** The folder the deck is in; an unknown or deleted folder means none. */
+  folderId?: string;
   /** Set while the deck is public: the id in its share link. */
   shareId?: string;
   /** The deck that used to be called "default", before decks got real ids. */
@@ -43,10 +54,11 @@ export type SyncCard = {
   deleted?: true;
 };
 
-export type SyncState = { decks: SyncDeck[]; cards: SyncCard[] };
+export type SyncState = { decks: SyncDeck[]; cards: SyncCard[]; folders?: SyncFolder[] };
 
 export const MAX_LIVE_CARDS = 2000;
 export const MAX_LIVE_DECKS = 100;
+export const MAX_LIVE_FOLDERS = 100;
 /** A deleted deck or card is remembered this long so a device that was offline does not bring it back. */
 export const TOMBSTONE_MS = 60 * 24 * 3600 * 1000;
 
@@ -73,6 +85,8 @@ export function sanitizeDeck(raw: unknown): SyncDeck | null {
     createdAt: int(o.createdAt, 0, FAR, updatedAt),
     updatedAt,
   };
+  const folderId = idOf(o.folderId);
+  if (folderId) deck.folderId = folderId;
   const shareId = idOf(o.shareId);
   if (shareId) deck.shareId = shareId;
   const legacyId = idOf(o.legacyId);
@@ -80,6 +94,18 @@ export function sanitizeDeck(raw: unknown): SyncDeck | null {
   if (o.deleted === true) deck.deleted = true;
   else if (!deck.name) return null;
   return deck;
+}
+
+export function sanitizeFolder(raw: unknown): SyncFolder | null {
+  const o = obj(raw);
+  if (!o) return null;
+  const id = idOf(o.id);
+  if (!id) return null;
+  const updatedAt = int(o.updatedAt, 0, FAR, 0);
+  const folder: SyncFolder = { id, name: text(o.name, 80), createdAt: int(o.createdAt, 0, FAR, updatedAt), updatedAt };
+  if (o.deleted === true) folder.deleted = true;
+  else if (!folder.name) return null;
+  return folder;
 }
 
 export function sanitizeCard(raw: unknown): SyncCard | null {
@@ -143,11 +169,13 @@ export function sanitizeState(raw: unknown): SyncState {
   const o = obj(raw) ?? {};
   const decks = (Array.isArray(o.decks) ? o.decks : []).slice(0, 2000).map(sanitizeDeck).filter((d): d is SyncDeck => !!d);
   const cards = (Array.isArray(o.cards) ? o.cards : []).slice(0, 20000).map(sanitizeCard).filter((c): c is SyncCard => !!c);
-  return { decks, cards };
+  const folders = (Array.isArray(o.folders) ? o.folders : []).slice(0, 500).map(sanitizeFolder).filter((f): f is SyncFolder => !!f);
+  return { decks, cards, folders };
 }
 
 export function mergeState(stored: SyncState, incoming: SyncState, now = Date.now()): SyncState {
   const decks = limitLive(prune(mergeById(stored.decks, incoming.decks), now), MAX_LIVE_DECKS);
   const cards = limitLive(prune(mergeById(stored.cards, incoming.cards), now), MAX_LIVE_CARDS);
-  return { decks, cards };
+  const folders = limitLive(prune(mergeById(stored.folders ?? [], incoming.folders ?? []), now), MAX_LIVE_FOLDERS);
+  return { decks, cards, folders };
 }
