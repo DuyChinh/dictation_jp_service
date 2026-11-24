@@ -35,10 +35,10 @@ export function localTime(now: number, utcOffsetMin: number): { day: string; min
 }
 
 /** True when this subscription should be reminded now: inside its window and not reminded yet today. */
-export function isReminderDue(sub: { hour: number; utcOffsetMin: number; lastSentDay: string }, now: number): boolean {
+export function isReminderDue(sub: { hour: number; minute?: number; utcOffsetMin: number; lastSentDay: string }, now: number): boolean {
   const { day, minutes } = localTime(now, sub.utcOffsetMin);
   if (sub.lastSentDay === day) return false;
-  const start = sub.hour * 60;
+  const start = sub.hour * 60 + (sub.minute ?? 0);
   return minutes >= start && minutes < start + WINDOW_HOURS * 60;
 }
 
@@ -46,6 +46,18 @@ const TEXT: Record<ReminderLang, { title: (n: number) => string; body: string }>
   vi: { title: (n) => `Hôm nay có ${n} thẻ cần ôn lại`, body: "Ôn ngay vài phút để nhớ lâu hơn." },
   en: { title: (n) => `${n} ${n === 1 ? "card is" : "cards are"} waiting for a review`, body: "A few minutes now helps you remember for longer." },
   ja: { title: (n) => `今日は${n}枚のカードを復習する時期です`, body: "数分の復習で、記憶が長く続きます。" },
+};
+
+/** The message of the "send a test" button: same look as a real reminder, so the learner sees what to expect. */
+export function testPayload(lang: ReminderLang): ReminderPayload {
+  const t = TEST_TEXT[lang] ?? TEST_TEXT.vi;
+  return { title: t.title, body: t.body, url: "/flashcards", tag: "review-test" };
+}
+
+const TEST_TEXT: Record<ReminderLang, { title: string; body: string }> = {
+  vi: { title: "Thông báo thử từ Kaitiq", body: "Nếu bạn thấy tin này, nhắc ôn thẻ đã hoạt động." },
+  en: { title: "Test notification from Kaitiq", body: "If you can read this, review reminders are working." },
+  ja: { title: "Kaitiqのテスト通知", body: "このメッセージが見えれば、復習リマインダーは動いています。" },
 };
 
 export type ReminderPayload = { title: string; body: string; url: string; tag: string };

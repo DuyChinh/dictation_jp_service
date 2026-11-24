@@ -5,7 +5,7 @@ import { AppError } from "../../shared/errors.js";
 import { requireAuth } from "../../shared/middleware/auth.js";
 import { createRateLimiter } from "../../shared/middleware/rateLimit.js";
 import { PushSubscription } from "../../models/PushSubscription.js";
-import { pushEnabled } from "./pushService.js";
+import { pushEnabled, sendTestPush } from "./pushService.js";
 import { REMINDER_LANGS, isPushEndpoint } from "./reminder.js";
 
 const MAX_PER_USER = 10;
@@ -23,6 +23,7 @@ const subscribeBody = z.object({
   }),
   lang: z.enum(REMINDER_LANGS as ["vi", "en", "ja"]).default("vi"),
   hour: z.number().int().min(0).max(23).default(19),
+  minute: z.number().int().min(0).max(59).default(0),
   /** Minutes east of UTC (Vietnam is 420). */
   utcOffsetMin: z.number().int().min(-14 * 60).max(14 * 60).default(0),
 });
@@ -47,7 +48,7 @@ export function createPushRouter(): Router {
     if (!pushEnabled()) throw new AppError("PUSH_DISABLED", "Reminders are not available right now", 503);
     const parsed = subscribeBody.safeParse(req.body);
     if (!parsed.success) throw new AppError("BAD_REQUEST", "invalid subscription");
-    const { subscription, lang, hour, utcOffsetMin } = parsed.data;
+    const { subscription, lang, hour, minute, utcOffsetMin } = parsed.data;
     const userId = req.user!._id;
 
     const existing = await PushSubscription.findOne({ endpoint: subscription.endpoint }).select("userId").lean();
@@ -59,9 +60,28 @@ export function createPushRouter(): Router {
     }
     await PushSubscription.findOneAndUpdate(
       { endpoint: subscription.endpoint },
-      { $set: { userId, keys: subscription.keys, lang, hour, utcOffsetMin }, $setOnInsert: { lastSentDay: "" } },
+      { $set: { userId, keys: subscription.keys, lang, hour, minute, utcOffsetMin }, $setOnInsert: { lastSentDay: "" } },
       { upsert: true, setDefaultsOnInsert: true },
     );
+    res.json({ ok: true });
+  }));
+
+  // Sends one test notification to this browser, so the learner can tell whether Chrome and the server are both working.
+  r.post("/test", wrap(async (req, res) => {
+    if (!pushEnabled()) throw new AppError("PUSH_DISABLED", "Reminders are not available right now", 503);
+    const endpoint = typeof req.body?.endpoint === "string" ? req.body.endpoint : "";
+    const lang = REMINDER_LANGS.includes(req.body?.lang) ? req.body.lang : "vi";
+    const sub = endpoint ? await PushSubscription.findOne({ userId: req.user!._id, endpoint }).lean() : null;
+    if (!sub) throw new AppError("NOT_FOUND", "this browser has no reminder yet", 404);
+    try {
+      await sendTestPush({ endpoint: sub.endpoint, keys: sub.keys }, lang);
+    } catch (err) {
+      const status = (err as { statusCode?: number }).statusCode;
+      // the browser dropped it for good: forget it so the learner can turn the reminder on again
+      if (status === 404 || status === 410) await PushSubscription.deleteOne({ _id: sub._id });
+      console.error("[push] test failed:", status ?? err);
+      throw new AppError("PUSH_FAILED", "the push service did not accept the message", 502);
+    }
     res.json({ ok: true });
   }));
 

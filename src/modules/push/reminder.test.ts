@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { SyncState } from "../flashcards/flashcardSync.js";
-import { dueSummary, isPushEndpoint, isReminderDue, localTime, reminderPayload } from "./reminder.js";
+import { dueSummary, isPushEndpoint, isReminderDue, localTime, reminderPayload, testPayload } from "./reminder.js";
 
 const deck = (id: string, extra = {}) => ({ id, name: id, createdAt: 1, updatedAt: 1, ...extra });
 const card = (id: string, deckId: string, extra = {}) => ({
@@ -49,6 +49,25 @@ describe("reminder window", () => {
     expect(isReminderDue(sub, at("2026-05-01T15:00:00Z"))).toBe(false); // 22:00
     expect(isReminderDue({ ...sub, lastSentDay: "2026-05-01" }, at("2026-05-01T12:10:00Z"))).toBe(false);
     expect(isReminderDue({ ...sub, lastSentDay: "2026-04-30" }, at("2026-05-01T12:10:00Z"))).toBe(true);
+  });
+});
+
+describe("reminder time with minutes", () => {
+  const at = (iso: string) => Date.parse(iso);
+  it("opens at the chosen minute, and a missing minute means on the hour", () => {
+    const sub = { hour: 19, minute: 30, utcOffsetMin: 420, lastSentDay: "" };
+    expect(isReminderDue(sub, at("2026-05-01T12:29:00Z"))).toBe(false); // 19:29 local
+    expect(isReminderDue(sub, at("2026-05-01T12:30:00Z"))).toBe(true); // 19:30
+    expect(isReminderDue(sub, at("2026-05-01T15:29:00Z"))).toBe(true); // 22:29
+    expect(isReminderDue(sub, at("2026-05-01T15:30:00Z"))).toBe(false); // 22:30
+    expect(isReminderDue({ hour: 19, utcOffsetMin: 420, lastSentDay: "" }, at("2026-05-01T12:00:00Z"))).toBe(true);
+  });
+});
+
+describe("testPayload", () => {
+  it("is written in the learner's language and opens the flashcards", () => {
+    expect(testPayload("en")).toMatchObject({ url: "/flashcards", tag: "review-test" });
+    expect(testPayload("vi").title).toContain("Kaitiq");
   });
 });
 

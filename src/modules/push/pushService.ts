@@ -3,7 +3,7 @@ import { config } from "../../config.js";
 import { FlashcardSet } from "../../models/FlashcardSet.js";
 import { PushSubscription } from "../../models/PushSubscription.js";
 import { sanitizeState, type SyncState } from "../flashcards/flashcardSync.js";
-import { dueSummary, isReminderDue, localTime, reminderPayload } from "./reminder.js";
+import { dueSummary, isReminderDue, localTime, reminderPayload, testPayload, type ReminderLang } from "./reminder.js";
 
 export const pushEnabled = (): boolean => Boolean(config.vapid.publicKey && config.vapid.privateKey);
 
@@ -19,6 +19,16 @@ function setup(): boolean {
 
 type Sender = (sub: { endpoint: string; keys: { p256dh: string; auth: string } }, payload: string) => Promise<unknown>;
 const defaultSender: Sender = (sub, payload) => sendNotification(sub, payload, { TTL: 6 * 3600, urgency: "normal" });
+
+/** Sends a test notification to one subscription; throws what the push service answers when it fails. */
+export async function sendTestPush(
+  sub: { endpoint: string; keys: { p256dh: string; auth: string } },
+  lang: ReminderLang,
+  send: Sender = defaultSender,
+): Promise<void> {
+  if (send === defaultSender && !setup()) throw new Error("push is not configured");
+  await send(sub, JSON.stringify(testPayload(lang)));
+}
 
 /**
  * Sends today's reminder to every subscription whose window is open. A learner with no cards to review gets nothing
