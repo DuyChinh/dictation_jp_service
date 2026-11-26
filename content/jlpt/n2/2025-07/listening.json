@@ -3291,8 +3291,8 @@
               },
               "correct": false,
               "explanation": {
-                "vi": "Sai: phương án này không phải câu trả lời được hội thoại xác định; đây là thông tin khác, bị phủ định, hoặc không phải điều được hỏi.",
-                "en": "Incorrect: this is not the answer established by the dialogue; it is different information, contradicted, or not what the question asks."
+                "vi": "Sai: «元気に飛び回って、自分をアピールしていた» là các chú mèo KHÁC. Chú mèo này thì ずっと寝ているか、あくびをしているか (ngủ hoặc ngáp suốt).",
+                "en": "Incorrect: the energetic, attention-seeking cats were the OTHER cats. This one was sleeping or yawning the whole time."
               }
             },
             {
@@ -3304,8 +3304,8 @@
               },
               "correct": false,
               "explanation": {
-                "vi": "Sai: phương án này không phải câu trả lời được hội thoại xác định; đây là thông tin khác, bị phủ định, hoặc không phải điều được hỏi.",
-                "en": "Incorrect: this is not the answer established by the dialogue; it is different information, contradicted, or not what the question asks."
+                "vi": "Sai: người phụ nữ chỉ nhận xét chú mèo ngủ suốt là マイペースな猫 (mèo sống theo nhịp riêng), không nói dáng ngủ dễ thương là lý do chọn.",
+                "en": "Incorrect: she only remarks that a cat that sleeps all the time is マイペース (does things at its own pace); she never gives its sleeping look as the reason."
               }
             },
             {
@@ -3315,11 +3315,15 @@
                 "vi": "Vì thích hình dạng đuôi của nó",
                 "en": "Because she liked the shape of its tail"
               },
-              "correct": false,
+              "correct": true,
               "explanation": {
-                "vi": "Sai: phương án này không phải câu trả lời được hội thoại xác định; đây là thông tin khác, bị phủ định, hoặc không phải điều được hỏi.",
-                "en": "Incorrect: this is not the answer established by the dialogue; it is different information, contradicted, or not what the question asks."
-              }
+                "vi": "Đúng: 「しっぽの形が先が曲がっていて、はてなマークみたいだったことですっかり心を奪われました」→ 名前もハテナと決め、すぐに飼おうと決めた. Đuôi cong như dấu chấm hỏi chính là lý do lớn nhất.",
+                "en": "Correct: \"The tip of its tail was curved like a question mark and I was completely captivated\" - she named it Hatena and decided to adopt it right away. The tail is the main reason."
+              },
+              "evidence_segment_ids": [
+                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s4",
+                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s5"
+              ]
             },
             {
               "id": "4",
@@ -3328,19 +3332,11 @@
                 "vi": "Vì màu lông trên mặt độc đáo",
                 "en": "Because the color of the fur on its face was unique"
               },
-              "correct": true,
+              "correct": false,
               "explanation": {
-                "vi": "Đúng: đây là phương án phù hợp trực tiếp với thông tin/ý định được nêu trong hội thoại.",
-                "en": "Correct: this option directly matches the information or intention stated in the dialogue."
-              },
-              "evidence_segment_ids": [
-                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s1",
-                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s2",
-                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s3",
-                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s4",
-                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s5",
-                "jlpt-n2-2025-07-m2-q6__jlpt-n2-2025-07-m2-q6-t2-s6"
-              ]
+                "vi": "Sai: màu lông quanh mũi chỉ được nhắc thêm ở cuối: 「…ユニークで可愛かったです」 với も (\"cũng\") nên chỉ là điểm phụ, không phải 1番の理由.",
+                "en": "Incorrect: the fur around the nose is only mentioned at the end with も (\"also\"), so it is a secondary point, not the main reason."
+              }
             }
           ],
           "choice_display_mode": "text",
