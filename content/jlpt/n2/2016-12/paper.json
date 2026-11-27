@@ -2463,13 +2463,13 @@
           "id": "1",
           "text": "だけでは",
           "correct": false,
-          "explanation_vi": "Sai: だけでは thường đi với phủ định/không đủ (語るだけではだめだ). Vế sau là できる (khẳng định)."
+          "explanation_vi": "Sai: だけでは = «chỉ ~ thôi thì (chưa đủ)», vế sau gần như luôn là phủ định hoặc đánh giá chưa đạt (できない, 足りない, だめだ). Vế sau ở đây là 誰でもできる (khẳng định) nên sai logic."
         },
         {
           "id": "2",
           "text": "だけなら",
           "correct": true,
-          "explanation_vi": "Đúng: だけなら = «nếu chỉ ~ thì (cũng được)». 夢を語るだけなら誰でもできる = nếu chỉ nói về ước mơ thì ai cũng làm được. Cả câu: «Chỉ nói về ước mơ thì ai cũng làm được, nhưng biến nó thành hiện thực thì không dễ.»"
+          "explanation_vi": "Đúng: だけなら = «nếu chỉ dừng ở ~ thì (dễ, ai cũng làm được)», đặt giới hạn giả định để làm nền cho vế sau lật ý bằng が (…が、実現させるのは簡単ではない). 夢を語るだけなら誰でもできる = nếu chỉ nói về ước mơ thì ai cũng làm được. Cả câu: «Chỉ nói về ước mơ thì ai cũng làm được, nhưng biến nó thành hiện thực thì không dễ.»"
         },
         {
           "id": "3",
@@ -2484,7 +2484,7 @@
           "explanation_vi": "Sai: ためには = «để ~ thì» (mục đích). Không hợp với 誰でもできる."
         }
       ],
-      "summary_vi": "V＋だけなら = nếu chỉ ~ thì (cũng làm được). だけでは thường đi với ý «không đủ».",
+      "summary_vi": "Mẹo nhớ: ～だけなら → khẳng định/dễ, rồi lật ý bằng が («nếu chỉ ~ thì dễ, nhưng…»). ～だけでは → phủ định/chưa đủ («chỉ ~ thôi thì chưa đủ»).",
       "point_tags": [
         "grammar:〜だけなら"
       ],
@@ -7436,7 +7436,7 @@
           "ja": "でも、そこがきちんとできていないと、誤解が生じて取り返しのつかない（注4）結果になることもありえます。",
           "vi": "Nhưng nếu không làm tốt chỗ đó thì có thể phát sinh hiểu lầm và dẫn đến hậu quả không thể cứu vãn.",
           "notes": "（注4）取り返しのつかない：もとに戻せば大変な",
-          "notes_vi": "Chú thích in trên đề đúng nguyên văn như vậy (có vẻ lệch chữ); nghĩa của 取り返しのつかない là «không thể làm lại, không thể cứu vãn».",
+          "notes_vi": "Chú thích in trên đề bị sai chữ: bản gốc phải mang nghĩa phủ định, như 「もとに戻せず大変な」 hay 「もとに戻せない、大変な」 (không thể khôi phục lại, nghiêm trọng). Nếu đọc nguyên văn 「戻せば」 thì thành «nếu khôi phục thì gay go», ngược nghĩa. 取り返しのつかない = không thể cứu vãn, không thể quay lại như cũ.",
           "chunks": [
             {
               "ja": "でも、",
@@ -9799,7 +9799,7 @@
           "id": "jlpt-n2-2016-12-r-p11-s9",
           "ja": "レストラン「ベルン」では、海が渡せる窓際の特別席をご用意しております。",
           "vi": "Tại nhà hàng «Bern», chúng tôi có chuẩn bị chỗ ngồi đặc biệt bên cửa sổ nhìn ra biển.",
-          "notes_vi": "Bản in ghi 「海が渡せる」; từ đúng nên là 「海が見渡せる」 (nhìn bao quát ra biển). Nội dung vẫn hiểu là «chỗ ngồi nhìn ra biển».",
+          "notes_vi": "Bản in ghi 「海が渡せる」 là lỗi in; từ đúng là 「海が見渡せる」 (nhìn bao quát ra biển). 渡せる là thể khả năng của 渡す (trao, bắc qua) nên không đi với 海が theo nghĩa ngắm cảnh. Nội dung hiểu là «chỗ ngồi nhìn ra biển».",
           "chunks": [
             {
               "ja": "レストラン「ベルン」では、",
@@ -9817,7 +9817,7 @@
                 "chỗ ngồi đặc biệt cạnh cửa sổ",
                 "bàn đặc biệt bên cửa sổ"
               ],
-              "note_vi": "Bản in ghi 「海が渡せる」 (có lẽ là lỗi in của 「海が見渡せる」 = nhìn bao quát ra biển)."
+              "note_vi": "Bản in ghi 「海が渡せる」; đây là lỗi in của 「海が見渡せる」 (nhìn bao quát ra biển)."
             },
             {
               "ja": "ご用意しております",
