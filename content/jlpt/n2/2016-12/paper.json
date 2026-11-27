@@ -2038,7 +2038,2006 @@
         }
       ],
       "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q33",
+      "no": 33,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "卒業論文がなかなか書けなくて、一時は（　　）かけたが、何とか今日無事に提出することができた。",
+        "vi": "Mãi không viết được luận văn tốt nghiệp nên có lúc tôi đã suýt bỏ cuộc, nhưng cuối cùng hôm nay tôi cũng nộp được suôn sẻ."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "あきらめ",
+          "correct": true,
+          "explanation_vi": "Đúng: ます形 (bỏ ます) + かける = «đang/sắp làm dở rồi dừng, suýt làm». あきらめかける = suýt bỏ cuộc. Cả câu: «Mãi không viết được luận văn tốt nghiệp nên có lúc tôi đã suýt bỏ cuộc, nhưng cuối cùng hôm nay tôi cũng nộp được suôn sẻ.»"
+        },
+        {
+          "id": "2",
+          "text": "あきらめて",
+          "correct": false,
+          "explanation_vi": "Sai: dạng て không nối với かける. かける cần gắn vào ます形 của động từ."
+        },
+        {
+          "id": "3",
+          "text": "あきらめる",
+          "correct": false,
+          "explanation_vi": "Sai: dạng từ điển không nối với かける; phải bỏ る và dùng ます形 (あきらめ)."
+        },
+        {
+          "id": "4",
+          "text": "あきらめた",
+          "correct": false,
+          "explanation_vi": "Sai: dạng quá khứ た không nối với かける. Mẫu đúng là V(ます形)＋かける."
+        }
+      ],
+      "summary_vi": "V(ます形)＋かける = suýt/đang định làm gì (あきらめかける, 言いかける).",
+      "point_tags": [
+        "grammar:〜かける"
+      ],
+      "vocab": [
+        {
+          "word": "卒業論文",
+          "reading": "そつぎょうろんぶん",
+          "meaning_vi": "luận văn tốt nghiệp",
+          "sino_vi": "TỐT NGHIỆP LUẬN VĂN"
+        },
+        {
+          "word": "一時",
+          "reading": "いちじ",
+          "meaning_vi": "có lúc, một thời gian",
+          "sino_vi": "NHẤT THỜI"
+        },
+        {
+          "word": "無事に",
+          "reading": "ぶじに",
+          "meaning_vi": "suôn sẻ, bình an",
+          "sino_vi": "VÔ SỰ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q34",
+      "no": 34,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "子どものころ、母（　　）作ったハンバーグが大好きで、よく作ってもらった。",
+        "vi": "Hồi nhỏ tôi rất thích món hamburger steak do mẹ làm nên hay nhờ mẹ làm cho."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "の",
+          "correct": true,
+          "explanation_vi": "Đúng: trong mệnh đề bổ nghĩa cho danh từ (作ったハンバーグ), chủ ngữ có thể dùng の thay cho が: 母の作ったハンバーグ = hamburger steak mẹ làm. Cả câu: «Hồi nhỏ tôi rất thích món hamburger steak do mẹ làm nên hay nhờ mẹ làm cho.»"
+        },
+        {
+          "id": "2",
+          "text": "との",
+          "correct": false,
+          "explanation_vi": "Sai: との = «với (cùng ai)» + の. 母との作った không có nghĩa «do mẹ làm»."
+        },
+        {
+          "id": "3",
+          "text": "によって",
+          "correct": false,
+          "explanation_vi": "Sai: によって chỉ tác giả/tác nhân thường đi với bị động (母によって作られた). Với 作った (chủ động) thì không dùng."
+        },
+        {
+          "id": "4",
+          "text": "にとって",
+          "correct": false,
+          "explanation_vi": "Sai: にとって = «đối với ~» (quan điểm của ai), không biểu thị người thực hiện hành động."
+        }
+      ],
+      "summary_vi": "Trong mệnh đề định ngữ, chủ ngữ có thể dùng の thay が: 母の作った料理.",
+      "point_tags": [
+        "grammar:Nの+V(定語)"
+      ],
+      "vocab": [
+        {
+          "word": "ハンバーグ",
+          "reading": "ハンバーグ",
+          "meaning_vi": "món hamburger steak"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q35",
+      "no": 35,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "多様な情報があふれる現代社会（　　）、大切なのは、膨大な情報の中から、自分に必要な情報を選ぶ力である。",
+        "vi": "Trong xã hội hiện đại tràn ngập thông tin đa dạng, điều quan trọng là năng lực chọn ra thông tin cần thiết cho mình từ khối thông tin khổng lồ."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "に加えて",
+          "correct": false,
+          "explanation_vi": "Sai: に加えて = «thêm vào ~, cộng thêm». Câu không liệt kê thêm điều gì vào xã hội hiện đại."
+        },
+        {
+          "id": "2",
+          "text": "において",
+          "correct": true,
+          "explanation_vi": "Đúng: N において = «tại, trong (bối cảnh, phạm vi) ~», dùng văn viết. 現代社会において = trong xã hội hiện đại. Cả câu: «Trong xã hội hiện đại tràn ngập thông tin đa dạng, điều quan trọng là năng lực chọn ra thông tin cần thiết cho mình từ khối thông tin khổng lồ.»"
+        },
+        {
+          "id": "3",
+          "text": "を基にして",
+          "correct": false,
+          "explanation_vi": "Sai: を基にして = «dựa trên ~» (làm cơ sở). 現代社会を基にして không hợp với ý «bối cảnh»."
+        },
+        {
+          "id": "4",
+          "text": "を込めて",
+          "correct": false,
+          "explanation_vi": "Sai: を込めて = «dồn, gửi gắm ~» (心を込めて = bằng cả tấm lòng). Không đi với 現代社会."
+        }
+      ],
+      "summary_vi": "N において = tại/trong (bối cảnh) N. Phân biệt: に加えて (thêm vào), を基にして (dựa trên), を込めて (gửi gắm).",
+      "point_tags": [
+        "grammar:〜において"
+      ],
+      "vocab": [
+        {
+          "word": "多様",
+          "reading": "たよう",
+          "meaning_vi": "đa dạng",
+          "sino_vi": "ĐA DẠNG"
+        },
+        {
+          "word": "膨大",
+          "reading": "ぼうだい",
+          "meaning_vi": "khổng lồ",
+          "sino_vi": "BÀNH ĐẠI"
+        },
+        {
+          "word": "あふれる",
+          "reading": "あふれる",
+          "meaning_vi": "tràn ngập"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q36",
+      "no": 36,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "作文が得意な友達に「どうやったらうまくなれるの?」と聞いたら、「たくさん書けば（　　）うまくなるよ。」と言われた。",
+        "vi": "Khi tôi hỏi người bạn giỏi viết văn «Làm sao để giỏi lên?», bạn ấy bảo «Cứ viết nhiều thì sớm muộn gì cũng giỏi thôi»."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "必ずしも",
+          "correct": false,
+          "explanation_vi": "Sai: 必ずしも〜ない = «không nhất thiết ~», đi với phủ định. Ở đây vế sau là うまくなるよ (khẳng định)."
+        },
+        {
+          "id": "2",
+          "text": "たとえ",
+          "correct": false,
+          "explanation_vi": "Sai: たとえ〜ても = «dù cho ~». Vế trước là ～ば nên không đi cùng たとえ."
+        },
+        {
+          "id": "3",
+          "text": "そのうち",
+          "correct": true,
+          "explanation_vi": "Đúng: そのうち = «một ngày gần đây, sớm muộn gì», hợp với «viết nhiều thì rồi sẽ giỏi». Cả câu: «Khi tôi hỏi người bạn giỏi viết văn «Làm sao để giỏi lên?», bạn ấy bảo «Cứ viết nhiều thì sớm muộn gì cũng giỏi thôi».»"
+        },
+        {
+          "id": "4",
+          "text": "さっき",
+          "correct": false,
+          "explanation_vi": "Sai: さっき = «lúc nãy» (quá khứ gần), không dùng với vế tương lai うまくなるよ."
+        }
+      ],
+      "summary_vi": "そのうち = sớm muộn gì, một lúc nào đó (tương lai). 必ずしも〜ない / たとえ〜ても là mẫu khác.",
+      "point_tags": [
+        "vocab:そのうち"
+      ],
+      "vocab": [
+        {
+          "word": "作文",
+          "reading": "さくぶん",
+          "meaning_vi": "bài văn",
+          "sino_vi": "TÁC VĂN"
+        },
+        {
+          "word": "得意",
+          "reading": "とくい",
+          "meaning_vi": "giỏi, sở trường",
+          "sino_vi": "ĐẮC Ý"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q37",
+      "no": 37,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "看護師の仕事は夜勤もあって大変だが、自分でこの仕事を選んだ（　　）、がんばって続けたいと思う。",
+        "vi": "Công việc y tá vất vả vì còn có trực đêm, nhưng vì chính mình đã chọn nghề này nên tôi muốn cố gắng theo đuổi."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "以上",
+          "correct": true,
+          "explanation_vi": "Đúng: V普通形＋以上(は) = «một khi đã ~ thì (đương nhiên phải ~)». 選んだ以上、がんばって続けたい = đã chọn thì muốn cố gắng. Cả câu: «Công việc y tá vất vả vì còn có trực đêm, nhưng vì chính mình đã chọn nghề này nên tôi muốn cố gắng theo đuổi.»"
+        },
+        {
+          "id": "2",
+          "text": "とたん",
+          "correct": false,
+          "explanation_vi": "Sai: Vたとたん(に) = «vừa ~ thì ngay lập tức (xảy ra điều bất ngờ)». Không đi với ý chí «muốn cố gắng»."
+        },
+        {
+          "id": "3",
+          "text": "あげくに",
+          "correct": false,
+          "explanation_vi": "Sai: Vたあげく(に) = «rốt cuộc sau khi ~ (thường kết quả xấu)». Không hợp với ý chí tích cực."
+        },
+        {
+          "id": "4",
+          "text": "かのように",
+          "correct": false,
+          "explanation_vi": "Sai: かのように = «như thể ~». Không dùng để nêu lý do mang tính ràng buộc."
+        }
+      ],
+      "summary_vi": "V普通形＋以上 = một khi đã ~ thì (phải/nên ~). Khác とたん, あげく.",
+      "point_tags": [
+        "grammar:〜以上"
+      ],
+      "vocab": [
+        {
+          "word": "看護師",
+          "reading": "かんごし",
+          "meaning_vi": "y tá",
+          "sino_vi": "KHÁN HỘ SƯ"
+        },
+        {
+          "word": "夜勤",
+          "reading": "やきん",
+          "meaning_vi": "trực đêm",
+          "sino_vi": "DẠ CẦN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q38",
+      "no": 38,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "（内線電話で）山田「はい、山田です。」木村「受付の木村ですが、X社の中川様が（　　）。」山田「わかりました。すぐ行きます。」",
+        "vi": "(Qua điện thoại nội bộ) Yamada: «Vâng, Yamada đây.» Kimura: «Tôi là Kimura ở quầy lễ tân, ngài Nakagawa của công ty X đã đến.» Yamada: «Tôi hiểu rồi, tôi sẽ đến ngay.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "伺いました",
+          "correct": false,
+          "explanation_vi": "Sai: 伺う là khiêm nhường ngữ (đi/đến thăm, hỏi) dùng cho hành động của mình, không dùng để nâng cao khách."
+        },
+        {
+          "id": "2",
+          "text": "お目にかかりました",
+          "correct": false,
+          "explanation_vi": "Sai: お目にかかる = «được gặp» (khiêm nhường ngữ của 会う), nói về hành động của mình."
+        },
+        {
+          "id": "3",
+          "text": "ございました",
+          "correct": false,
+          "explanation_vi": "Sai: ございます là lịch sự ngữ của あります/です, không phải kính ngữ của 来る."
+        },
+        {
+          "id": "4",
+          "text": "お越しになりました",
+          "correct": true,
+          "explanation_vi": "Đúng: お越しになる là tôn kính ngữ của 来る, dùng để nâng cao khách (中川様). «Ngài Nakagawa đã đến». Cả câu: «(Qua điện thoại nội bộ) Yamada: «Vâng, Yamada đây.» Kimura: «Tôi là Kimura ở quầy lễ tân, ngài Nakagawa của công ty X đã đến.» Yamada: «Tôi hiểu rồi, tôi sẽ đến ngay.»»"
+        }
+      ],
+      "summary_vi": "Hành động của khách: 来る → お越しになる/いらっしゃる (tôn kính). 伺う/参る là khiêm nhường, chỉ dùng cho mình.",
+      "point_tags": [
+        "grammar:敬語",
+        "grammar:お越しになる"
+      ],
+      "vocab": [
+        {
+          "word": "内線",
+          "reading": "ないせん",
+          "meaning_vi": "máy nội bộ",
+          "sino_vi": "NỘI TUYẾN"
+        },
+        {
+          "word": "受付",
+          "reading": "うけつけ",
+          "meaning_vi": "lễ tân",
+          "sino_vi": "THỤ PHÓ"
+        },
+        {
+          "word": "お越しになる",
+          "reading": "おこしになる",
+          "meaning_vi": "đến (tôn kính)",
+          "sino_vi": "VIỆT"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q39",
+      "no": 39,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "人は一生のうちどのくらい寝ているのでしょうか。仮に一日8時間寝て、80歳まで生きる（　　）。すると、睡眠時間は約233,600時間で、約27年寝ている計算になります。",
+        "vi": "Một đời người ngủ khoảng bao lâu nhỉ? Giả sử mỗi ngày ngủ 8 tiếng và sống đến 80 tuổi. Khi đó thời gian ngủ khoảng 233.600 giờ, tức là tính ra ngủ khoảng 27 năm."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "となりました",
+          "correct": false,
+          "explanation_vi": "Sai: となる = «trở thành» (kết quả). Không đi với 仮に (giả sử)."
+        },
+        {
+          "id": "2",
+          "text": "とします",
+          "correct": true,
+          "explanation_vi": "Đúng: 仮に〜とします = «giả sử là ~». Câu sau すると… nối tiếp phần tính toán theo giả định này. Cả câu: «Một đời người ngủ khoảng bao lâu nhỉ? Giả sử mỗi ngày ngủ 8 tiếng và sống đến 80 tuổi. Khi đó thời gian ngủ khoảng 233.600 giờ, tức là tính ra ngủ khoảng 27 năm.»"
+        },
+        {
+          "id": "3",
+          "text": "とされていました",
+          "correct": false,
+          "explanation_vi": "Sai: とされる = «được cho là ~» (quan điểm chung), quá khứ. Không hợp với 仮に."
+        },
+        {
+          "id": "4",
+          "text": "と見られます",
+          "correct": false,
+          "explanation_vi": "Sai: と見られる = «được cho rằng ~» (đánh giá). Không phải đặt giả định."
+        }
+      ],
+      "summary_vi": "仮に〜とする = giả sử là ~ (đặt giả định để tính toán/lập luận).",
+      "point_tags": [
+        "grammar:仮に〜とする"
+      ],
+      "vocab": [
+        {
+          "word": "一生",
+          "reading": "いっしょう",
+          "meaning_vi": "cả đời",
+          "sino_vi": "NHẤT SINH"
+        },
+        {
+          "word": "睡眠",
+          "reading": "すいみん",
+          "meaning_vi": "giấc ngủ",
+          "sino_vi": "THÙY MIÊN"
+        },
+        {
+          "word": "計算",
+          "reading": "けいさん",
+          "meaning_vi": "tính toán",
+          "sino_vi": "KẾ TOÁN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q40",
+      "no": 40,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "夢を語る（　　）誰でもできるが、実現させるのは簡単なことではない。",
+        "vi": "Chỉ nói về ước mơ thì ai cũng làm được, nhưng biến nó thành hiện thực thì không dễ."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "だけでは",
+          "correct": false,
+          "explanation_vi": "Sai: だけでは thường đi với phủ định/không đủ (語るだけではだめだ). Vế sau là できる (khẳng định)."
+        },
+        {
+          "id": "2",
+          "text": "だけなら",
+          "correct": true,
+          "explanation_vi": "Đúng: だけなら = «nếu chỉ ~ thì (cũng được)». 夢を語るだけなら誰でもできる = nếu chỉ nói về ước mơ thì ai cũng làm được. Cả câu: «Chỉ nói về ước mơ thì ai cũng làm được, nhưng biến nó thành hiện thực thì không dễ.»"
+        },
+        {
+          "id": "3",
+          "text": "ためしか",
+          "correct": false,
+          "explanation_vi": "Sai: ためしか không phải mẫu ngữ pháp; しか cần đi với phủ định."
+        },
+        {
+          "id": "4",
+          "text": "ためには",
+          "correct": false,
+          "explanation_vi": "Sai: ためには = «để ~ thì» (mục đích). Không hợp với 誰でもできる."
+        }
+      ],
+      "summary_vi": "V＋だけなら = nếu chỉ ~ thì (cũng làm được). だけでは thường đi với ý «không đủ».",
+      "point_tags": [
+        "grammar:〜だけなら"
+      ],
+      "vocab": [
+        {
+          "word": "語る",
+          "reading": "かたる",
+          "meaning_vi": "kể, nói về",
+          "sino_vi": "NGỮ"
+        },
+        {
+          "word": "実現",
+          "reading": "じつげん",
+          "meaning_vi": "hiện thực hóa",
+          "sino_vi": "THỰC HIỆN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q41",
+      "no": 41,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "(説明書で) エアコンを掃除するときは、安全上、必ずコンセントを（　　）してください。",
+        "vi": "(Trong sách hướng dẫn) Khi vệ sinh máy điều hòa, vì an toàn, nhất định hãy rút phích điện ra rồi mới làm."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "抜いたことを",
+          "correct": false,
+          "explanation_vi": "Sai: Vたことを + してください không thành câu: «hãy làm việc đã rút»."
+        },
+        {
+          "id": "2",
+          "text": "抜いたことが",
+          "correct": false,
+          "explanation_vi": "Sai: Vたことが + してください không thành câu (ことがある là mẫu khác)."
+        },
+        {
+          "id": "3",
+          "text": "抜いてからに",
+          "correct": true,
+          "explanation_vi": "Đúng: Vてからにする = «hãy làm sau khi V». 抜いてからにしてください = hãy rút phích rồi mới làm (dọn vệ sinh). Cả câu: «(Trong sách hướng dẫn) Khi vệ sinh máy điều hòa, vì an toàn, nhất định hãy rút phích điện ra rồi mới làm.»"
+        },
+        {
+          "id": "4",
+          "text": "抜いてからは",
+          "correct": false,
+          "explanation_vi": "Sai: Vてからは = «kể từ sau khi V» (về sau), không đi với してください."
+        }
+      ],
+      "summary_vi": "Vてからにする(してください) = hãy làm sau khi V xong.",
+      "point_tags": [
+        "grammar:〜てからにする"
+      ],
+      "vocab": [
+        {
+          "word": "説明書",
+          "reading": "せつめいしょ",
+          "meaning_vi": "sách hướng dẫn",
+          "sino_vi": "THUYẾT MINH THƯ"
+        },
+        {
+          "word": "コンセント",
+          "reading": "コンセント",
+          "meaning_vi": "ổ cắm điện"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q42",
+      "no": 42,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "私はスピーチが苦手なのに、今度友達の結婚パーティーでスピーチを（　　）、困っている。",
+        "vi": "Tôi vốn kém khoản phát biểu, vậy mà lần này lại phải phát biểu trong tiệc cưới của bạn nên đang rất khổ sở."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "しにくくて",
+          "correct": false,
+          "explanation_vi": "Sai: しにくい = «khó làm». Câu muốn nói «bị giao phải phát biểu», không phải tính khó của hành động."
+        },
+        {
+          "id": "2",
+          "text": "してほしくて",
+          "correct": false,
+          "explanation_vi": "Sai: してほしい = «muốn người khác làm». Chủ thể phát biểu là tôi, nên không hợp."
+        },
+        {
+          "id": "3",
+          "text": "させてみたくて",
+          "correct": false,
+          "explanation_vi": "Sai: させてみたい = «muốn thử cho (ai) làm». Trái với ý 苦手 và 困っている."
+        },
+        {
+          "id": "4",
+          "text": "することになってしまって",
+          "correct": true,
+          "explanation_vi": "Đúng: することになる = «(được quyết định) phải làm»; ～てしまう thêm sắc thái «lỡ/không mong muốn». Hợp với «vốn dở mà vẫn phải phát biểu nên khổ sở». Cả câu: «Tôi vốn kém khoản phát biểu, vậy mà lần này lại phải phát biểu trong tiệc cưới của bạn nên đang rất khổ sở.»"
+        }
+      ],
+      "summary_vi": "することになってしまう = rốt cuộc lại phải làm (điều không mong muốn).",
+      "point_tags": [
+        "grammar:〜ことになる"
+      ],
+      "vocab": [
+        {
+          "word": "苦手",
+          "reading": "にがて",
+          "meaning_vi": "kém, không giỏi",
+          "sino_vi": "KHỔ THỦ"
+        },
+        {
+          "word": "スピーチ",
+          "reading": "スピーチ",
+          "meaning_vi": "bài phát biểu"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q43",
+      "no": 43,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "せっかく、夕日がきれいなことで有名なA海岸に来たのに、急に雨が降り出した。どうも夕日は（　　）。",
+        "vi": "Khó khăn lắm mới đến được bờ biển A nổi tiếng vì hoàng hôn đẹp, vậy mà trời bỗng đổ mưa. Có vẻ không thể ngắm được hoàng hôn rồi."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "見えてもしかたない",
+          "correct": false,
+          "explanation_vi": "Sai: «dù nhìn thấy cũng đành chịu» không ăn khớp với việc trời mưa nên không nhìn được."
+        },
+        {
+          "id": "2",
+          "text": "見られないことだった",
+          "correct": false,
+          "explanation_vi": "Sai: ことだった (quá khứ) không phải cách nói dự đoán. Ngoài ra どうも ở đây đi với suy đoán."
+        },
+        {
+          "id": "3",
+          "text": "見られそうにない",
+          "correct": true,
+          "explanation_vi": "Đúng: Vそうにない = «có vẻ không thể ~». どうも〜そうにない = «xem chừng chẳng thể ngắm hoàng hôn». Cả câu: «Khó khăn lắm mới đến được bờ biển A nổi tiếng vì hoàng hôn đẹp, vậy mà trời bỗng đổ mưa. Có vẻ không thể ngắm được hoàng hôn rồi.»"
+        },
+        {
+          "id": "4",
+          "text": "見えないことがあった",
+          "correct": false,
+          "explanation_vi": "Sai: ことがある/あった = «có lúc ~», nói về kinh nghiệm/thói quen, không dự đoán tình huống hiện tại."
+        }
+      ],
+      "summary_vi": "V(ます形)＋そうにない = có vẻ sẽ không ~. どうも〜そうにない: xem chừng không ~.",
+      "point_tags": [
+        "grammar:〜そうにない"
+      ],
+      "vocab": [
+        {
+          "word": "せっかく",
+          "reading": "せっかく",
+          "meaning_vi": "khó khăn lắm mới, công sức"
+        },
+        {
+          "word": "夕日",
+          "reading": "ゆうひ",
+          "meaning_vi": "hoàng hôn",
+          "sino_vi": "TỊCH NHẬT"
+        },
+        {
+          "word": "海岸",
+          "reading": "かいがん",
+          "meaning_vi": "bờ biển",
+          "sino_vi": "HẢI NGẠN"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q44",
+      "no": 44,
+      "part": "grammar",
+      "mondai": 7,
+      "type": "mcq",
+      "stem": {
+        "ja": "山川「中村くん、毎日ジョギング（　　）?」中村「うん、そうなんだよ。」山川「実は、ぼくもなんだよ。走るっていいよね。」",
+        "vi": "Yamakawa: «Nakamura này, nghe nói cậu chạy bộ mỗi ngày à?» Nakamura: «Ừ, đúng vậy.» Yamakawa: «Thật ra mình cũng thế. Chạy bộ thích thật nhỉ.»"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "しない",
+          "correct": false,
+          "explanation_vi": "Sai: «Cậu không chạy bộ mỗi ngày à?» thì không khớp với câu trả lời そうなんだよ (đúng vậy, mình chạy)."
+        },
+        {
+          "id": "2",
+          "text": "しててもいい",
+          "correct": false,
+          "explanation_vi": "Sai: «chạy cũng được» không phải câu hỏi xác nhận, không khớp với hội thoại."
+        },
+        {
+          "id": "3",
+          "text": "しちゃえば",
+          "correct": false,
+          "explanation_vi": "Sai: しちゃえば = «cứ chạy đi (thì...)» (khuyên), không khớp với 中村 xác nhận thói quen."
+        },
+        {
+          "id": "4",
+          "text": "してるんだって",
+          "correct": true,
+          "explanation_vi": "Đúng: してる(んだ)って + ? = hỏi lại thông tin đã nghe: «nghe nói cậu chạy bộ mỗi ngày à?». 中村 đáp そうなんだよ = đúng vậy."
+        }
+      ],
+      "summary_vi": "〜んだって？ = (nghe nói) ~ à? — xác nhận lại thông tin truyền đạt.",
+      "point_tags": [
+        "grammar:〜んだって"
+      ],
+      "vocab": [
+        {
+          "word": "ジョギング",
+          "reading": "ジョギング",
+          "meaning_vi": "chạy bộ"
+        }
+      ],
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q45",
+      "no": 45,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "sort_star",
+      "stem": {
+        "ja": "結婚生活を送る＿　＿　★　＿、相手への思いやりの気持ちを持つことだと思う。",
+        "vi": "Tôi nghĩ rằng khi sống đời sống hôn nhân, nếu hỏi điều gì là quan trọng thì đó là có tấm lòng quan tâm đến đối phương."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "うえで",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 1. V(辞書形)/Nの＋うえで = «khi, trong việc ~»: 送るうえで = trong việc sống (đời sống hôn nhân)."
+        },
+        {
+          "id": "2",
+          "text": "といえば",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 4. Đặt sau 大切か: 何が大切かといえば = «nếu hỏi cái gì quan trọng thì (đó là...)», dẫn đến vế trả lời phía sau."
+        },
+        {
+          "id": "3",
+          "text": "大切か",
+          "correct": true,
+          "explanation_vi": "Đứng ở vị trí 3 (chính là ★). Nối 何が với 大切か: 何が大切か = «cái gì là quan trọng»."
+        },
+        {
+          "id": "4",
+          "text": "何が",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 2. Nối sau うえで và đứng trước 大切か: 何が大切か."
+        }
+      ],
+      "summary_vi": "Trật tự: 送る→うえで→何が→大切か→といえば. ★ = 大切か.",
+      "point_tags": [
+        "grammar:〜うえで",
+        "grammar:〜といえば"
+      ],
+      "vocab": [
+        {
+          "word": "思いやり",
+          "reading": "おもいやり",
+          "meaning_vi": "sự quan tâm, thấu cảm",
+          "sino_vi": "TƯ"
+        },
+        {
+          "word": "結婚生活",
+          "reading": "けっこんせいかつ",
+          "meaning_vi": "đời sống hôn nhân",
+          "sino_vi": "KẾT HÔN SINH HOẠT"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "うえで",
+          "何が",
+          "大切か",
+          "といえば"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q46",
+      "no": 46,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "sort_star",
+      "stem": {
+        "ja": "就職したときに＿　＿　★　＿とうとう壊れたので、買い換えることにした。",
+        "vi": "Chiếc cặp tôi đã dùng suốt từ khi mua lúc đi làm, cuối cùng cũng hỏng nên tôi quyết định mua cái mới."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "ずっと",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 2. Đứng sau 買って以来: 買って以来ずっと = «từ khi mua đến giờ vẫn luôn»."
+        },
+        {
+          "id": "2",
+          "text": "買って以来",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 1. V て＋以来 = «kể từ khi ~»: 就職したときに買って以来."
+        },
+        {
+          "id": "3",
+          "text": "かばんが",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 4. Đứng cuối làm chủ ngữ của 壊れた: 使っていたかばんが."
+        },
+        {
+          "id": "4",
+          "text": "使っていた",
+          "correct": true,
+          "explanation_vi": "Đứng ở vị trí 3 (chính là ★). Đứng trước かばんが để bổ nghĩa: 使っていた(かばん) = chiếc cặp đã dùng."
+        }
+      ],
+      "summary_vi": "Trật tự: 買って以来→ずっと→使っていた→かばんが. ★ = 使っていた.",
+      "point_tags": [
+        "grammar:〜て以来"
+      ],
+      "vocab": [
+        {
+          "word": "就職",
+          "reading": "しゅうしょく",
+          "meaning_vi": "đi làm, tìm được việc",
+          "sino_vi": "TỰU CHỨC"
+        },
+        {
+          "word": "買い換える",
+          "reading": "かいかえる",
+          "meaning_vi": "mua cái mới thay thế",
+          "sino_vi": "MÃI HOÁN"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "買って以来",
+          "ずっと",
+          "使っていた",
+          "かばんが"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q47",
+      "no": 47,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "sort_star",
+      "stem": {
+        "ja": "登山には不思議な魅力がある。登っているときはこんなに＿　＿　★　＿なぜかまた登りたくなる。",
+        "vi": "Leo núi có sức hấp dẫn kỳ lạ. Lúc đang leo thì nghĩ «chuyện khổ thế này không bao giờ làm lần nữa», vậy mà xuống núi vài ngày là chẳng hiểu sao lại muốn leo tiếp."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "思うのに",
+          "correct": true,
+          "explanation_vi": "Đứng ở vị trí 3 (chính là ★). Đứng sau 二度としたくないと: ～と思うのに = «dù nghĩ rằng ~ vậy mà». Vế sau nêu điều trái ngược."
+        },
+        {
+          "id": "2",
+          "text": "二度としたくないと",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 2. Đứng sau 苦しいことは và trước 思うのに: 二度としたくない(と思う) = «không muốn làm lần nữa»."
+        },
+        {
+          "id": "3",
+          "text": "苦しいことは",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 1. Đứng ngay sau こんなに: こんなに苦しいことは = «chuyện khổ thế này»."
+        },
+        {
+          "id": "4",
+          "text": "山を下りて何日かすると",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 4. Đứng cuối, trước なぜかまた登りたくなる: 山を下りて何日かすると = «xuống núi vài ngày sau»."
+        }
+      ],
+      "summary_vi": "Trật tự: 苦しいことは→二度としたくないと→思うのに→山を下りて何日かすると. ★ = 思うのに.",
+      "point_tags": [
+        "grammar:〜のに",
+        "grammar:〜と思う"
+      ],
+      "vocab": [
+        {
+          "word": "登山",
+          "reading": "とざん",
+          "meaning_vi": "leo núi",
+          "sino_vi": "ĐĂNG SƠN"
+        },
+        {
+          "word": "魅力",
+          "reading": "みりょく",
+          "meaning_vi": "sức hấp dẫn",
+          "sino_vi": "MỊ LỰC"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "苦しいことは",
+          "二度としたくないと",
+          "思うのに",
+          "山を下りて何日かすると"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q48",
+      "no": 48,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "sort_star",
+      "stem": {
+        "ja": "彫刻家川村たけるが作る動物の彫刻作品は、形はシンプル＿　＿　★　＿生命力にあふれている。",
+        "vi": "Các tác phẩm điêu khắc động vật do nhà điêu khắc Kawamura Takeru tạo ra có hình dáng đơn giản nhưng tràn đầy sức sống như sắp chuyển động đến nơi."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "動き出し",
+          "correct": true,
+          "explanation_vi": "Đứng ở vị trí 3 (chính là ★). Đứng sau 今にも: 動き出しそうな = «có vẻ sắp chuyển động» (ます形＋そうだ → そうな bổ nghĩa danh từ 生命力)."
+        },
+        {
+          "id": "2",
+          "text": "そうな",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 4. Đứng cuối, bổ nghĩa cho 生命力: 動き出しそうな生命力."
+        },
+        {
+          "id": "3",
+          "text": "ながら",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 1. Đứng ngay sau シンプル: Nながら = «tuy ~ nhưng» (シンプルながら)."
+        },
+        {
+          "id": "4",
+          "text": "今にも",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 2. Đứng sau ながら, là phó từ «sắp sửa»: 今にも動き出しそうな."
+        }
+      ],
+      "summary_vi": "Trật tự: ながら→今にも→動き出し→そうな. ★ = 動き出し.",
+      "point_tags": [
+        "grammar:〜ながら",
+        "grammar:〜そうだ(様態)"
+      ],
+      "vocab": [
+        {
+          "word": "彫刻",
+          "reading": "ちょうこく",
+          "meaning_vi": "điêu khắc",
+          "sino_vi": "ĐIÊU KHẮC"
+        },
+        {
+          "word": "生命力",
+          "reading": "せいめいりょく",
+          "meaning_vi": "sức sống",
+          "sino_vi": "SINH MỆNH LỰC"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "ながら",
+          "今にも",
+          "動き出し",
+          "そうな"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q49",
+      "no": 49,
+      "part": "grammar",
+      "mondai": 8,
+      "type": "sort_star",
+      "stem": {
+        "ja": "ビジネスで成功できる人とできない人の違いは、どんなに大変な状況でもあきらめずに＿　＿　★　＿と思う。",
+        "vi": "Tôi nghĩ sự khác biệt giữa người thành công và người không thành công trong kinh doanh nằm ở chỗ có thể nỗ lực đến cùng mà không bỏ cuộc dù hoàn cảnh khó khăn đến đâu."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "かどうか",
+          "correct": true,
+          "explanation_vi": "Đứng ở vị trí 3 (chính là ★). Đứng sau 取り組める: ～かどうか = «có ~ hay không», rồi nối với にある."
+        },
+        {
+          "id": "2",
+          "text": "取り組める",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 2. Đứng sau 最後まで: 最後まで取り組める = «có thể nỗ lực đến cùng»."
+        },
+        {
+          "id": "3",
+          "text": "にある",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 4. Đứng cuối, trước と思う: 違いは〜にある = «sự khác biệt nằm ở ~»."
+        },
+        {
+          "id": "4",
+          "text": "最後まで",
+          "correct": false,
+          "explanation_vi": "Đứng ở vị trí 1. Đứng đầu, ngay sau あきらめずに: 最後まで取り組める."
+        }
+      ],
+      "summary_vi": "Trật tự: 最後まで→取り組める→かどうか→にある. ★ = かどうか.",
+      "point_tags": [
+        "grammar:〜かどうか",
+        "grammar:〜にある"
+      ],
+      "vocab": [
+        {
+          "word": "状況",
+          "reading": "じょうきょう",
+          "meaning_vi": "tình hình",
+          "sino_vi": "TRẠNG HUỐNG"
+        },
+        {
+          "word": "取り組む",
+          "reading": "とりくむ",
+          "meaning_vi": "nỗ lực giải quyết",
+          "sino_vi": "THỦ TỔ"
+        }
+      ],
+      "sort": {
+        "slots": [
+          "最後まで",
+          "取り組める",
+          "かどうか",
+          "にある"
+        ],
+        "star_index": 2
+      },
+      "evidence_sentence_ids": []
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q50",
+      "no": 50,
+      "part": "grammar",
+      "mondai": 9,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n2-2016-12-g-p1",
+      "stem": {
+        "ja": "世界のあちこちで使われているこのトイレマークが実は日本で生まれたものだということを（　50　）。",
+        "vi": "Bạn có biết rằng biểu tượng nhà vệ sinh được dùng khắp nơi trên thế giới này thực ra ra đời ở Nhật Bản không?"
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "ご存じなわけだ",
+          "correct": false,
+          "explanation_vi": "Sai: 〜わけだ = «hóa ra là ~, thảo nào». Người viết đang hỏi người đọc có biết hay không, không khẳng định người đọc biết."
+        },
+        {
+          "id": "2",
+          "text": "ご存じだろうか",
+          "correct": true,
+          "explanation_vi": "Đúng: 〜だろうか là câu hỏi tu từ mở đầu bài viết, hỏi người đọc «có biết rằng ~ không?». ご存じ là kính ngữ của 知っている. Cả câu: «Bạn có biết rằng biểu tượng nhà vệ sinh được dùng khắp nơi trên thế giới này thực ra ra đời ở Nhật Bản không?»"
+        },
+        {
+          "id": "3",
+          "text": "ご存じのようだ",
+          "correct": false,
+          "explanation_vi": "Sai: 〜ようだ = «có vẻ ~», suy đoán về người khác. Không phù hợp để dẫn dắt người đọc vào chủ đề."
+        },
+        {
+          "id": "4",
+          "text": "ご存じだからだろう",
+          "correct": false,
+          "explanation_vi": "Sai: 〜からだろう = «có lẽ vì ~», nêu lý do. Câu không nói về lý do nào."
+        }
+      ],
+      "summary_vi": "Mở bài hỏi người đọc: 〜ことをご存じだろうか = bạn có biết rằng ~ không?",
+      "point_tags": [
+        "grammar:〜だろうか",
+        "grammar:ご存じ"
+      ],
+      "vocab": [
+        {
+          "word": "公衆",
+          "reading": "こうしゅう",
+          "meaning_vi": "công cộng",
+          "sino_vi": "CÔNG CHÚNG"
+        },
+        {
+          "word": "ご存じ",
+          "reading": "ごぞんじ",
+          "meaning_vi": "biết (kính ngữ)",
+          "sino_vi": "TỒN"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n2-2016-12-g-p1-s3",
+        "jlpt-n2-2016-12-g-p1-s2"
+      ]
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q51",
+      "no": 51,
+      "part": "grammar",
+      "mondai": 9,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n2-2016-12-g-p1",
+      "stem": {
+        "ja": "（　51　）、それでは世界90数か国から来日する選手たちに理解してもらえない。",
+        "vi": "Tuy nhiên, như vậy thì các vận động viên từ hơn 90 quốc gia đến Nhật sẽ không hiểu được."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "それに",
+          "correct": false,
+          "explanation_vi": "Sai: それに = «hơn nữa, thêm vào đó» (bổ sung). Câu sau nêu điều trái với bảng chỉ dẫn tiếng Nhật, không phải bổ sung."
+        },
+        {
+          "id": "2",
+          "text": "しかし",
+          "correct": true,
+          "explanation_vi": "Đúng: しかし = «tuy nhiên». Câu trước nói biển chỉ dẫn đa số bằng tiếng Nhật, câu sau nêu điểm bất cập (người nước ngoài không hiểu): đối lập. Cả câu: «Tuy nhiên, như vậy thì các vận động viên từ hơn 90 quốc gia đến Nhật sẽ không hiểu được.»"
+        },
+        {
+          "id": "3",
+          "text": "または",
+          "correct": false,
+          "explanation_vi": "Sai: または = «hoặc». Không phải quan hệ lựa chọn giữa hai vế."
+        },
+        {
+          "id": "4",
+          "text": "それどころか",
+          "correct": false,
+          "explanation_vi": "Sai: それどころか = «không những thế, trái lại là...». Câu trước không nói điều tích cực để câu sau «còn hơn thế»."
+        }
+      ],
+      "summary_vi": "Nối câu đối lập (bình thường vậy, nhưng có vấn đề) → しかし.",
+      "point_tags": [
+        "grammar:接続詞:しかし"
+      ],
+      "vocab": [
+        {
+          "word": "案内板",
+          "reading": "あんないばん",
+          "meaning_vi": "biển chỉ dẫn",
+          "sino_vi": "ÁN NỘI BẢN"
+        },
+        {
+          "word": "選手",
+          "reading": "せんしゅ",
+          "meaning_vi": "vận động viên",
+          "sino_vi": "TUYỂN THỦ"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n2-2016-12-g-p1-s7",
+        "jlpt-n2-2016-12-g-p1-s6"
+      ]
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q52",
+      "no": 52,
+      "part": "grammar",
+      "mondai": 9,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n2-2016-12-g-p1",
+      "stem": {
+        "ja": "（　52　）、トイレマークなのだ。",
+        "vi": "Biểu tượng nhà vệ sinh chính là thứ ra đời như vậy."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "作成者が理解したのは",
+          "correct": false,
+          "explanation_vi": "Sai: «điều mà người làm biển hiểu ra là, biểu tượng nhà vệ sinh» không ăn khớp. Câu trước nói họ nghĩ ra cách vẽ tranh, câu này phải nêu kết quả ra đời."
+        },
+        {
+          "id": "2",
+          "text": "日本で考えられたのが",
+          "correct": false,
+          "explanation_vi": "Sai: «điều được nghĩ ra ở Nhật là biểu tượng» — thiếu từ nối chỉ kết quả (こうして), và câu trước không nhấn mạnh «ở Nhật»."
+        },
+        {
+          "id": "3",
+          "text": "ここに生み出したのは",
+          "correct": false,
+          "explanation_vi": "Sai: ここに không đi tự nhiên với 生み出した ở đây. Ngoài ra câu không nối được với phần trước."
+        },
+        {
+          "id": "4",
+          "text": "こうして生まれたのが",
+          "correct": true,
+          "explanation_vi": "Đúng: こうして = «như vậy, theo cách đó», nối với câu trước (nghĩ ra cách vẽ tranh). 生まれたのが、トイレマークなのだ = thứ ra đời chính là biểu tượng nhà vệ sinh. Cả câu: «Biểu tượng nhà vệ sinh chính là thứ ra đời như vậy.»"
+        }
+      ],
+      "summary_vi": "こうして生まれたのが〜なのだ = cái ra đời như vậy chính là ~ (kết luận sau quá trình).",
+      "point_tags": [
+        "grammar:こうして",
+        "grammar:〜のが〜なのだ"
+      ],
+      "vocab": [
+        {
+          "word": "生まれる",
+          "reading": "うまれる",
+          "meaning_vi": "ra đời",
+          "sino_vi": "SINH"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n2-2016-12-g-p1-s10",
+        "jlpt-n2-2016-12-g-p1-s9"
+      ]
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q53",
+      "no": 53,
+      "part": "grammar",
+      "mondai": 9,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n2-2016-12-g-p1",
+      "stem": {
+        "ja": "そして、その後のオリンピックでもデザインを変えながら毎回（　53　）。",
+        "vi": "Và ở các kỳ Thế vận hội sau đó, chúng cũng được sử dụng mỗi lần, dù thay đổi thiết kế."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "使用されている",
+          "correct": true,
+          "explanation_vi": "Đúng: 使用されている = «đang được sử dụng» (bị động, trạng thái liên tục), hợp với 毎回 (mỗi kỳ) và chủ ngữ là マーク. Cả câu: «Và ở các kỳ Thế vận hội sau đó, chúng cũng được sử dụng mỗi lần, dù thay đổi thiết kế.»"
+        },
+        {
+          "id": "2",
+          "text": "使用した点だ",
+          "correct": false,
+          "explanation_vi": "Sai: 〜点だ = «điểm là ~». Chủ ngữ マーク là vật, không thể tự sử dụng; và không có nghĩa «điểm»."
+        },
+        {
+          "id": "3",
+          "text": "使用していける",
+          "correct": false,
+          "explanation_vi": "Sai: 〜していける = «có thể tiếp tục ~», chủ thể là người; chủ ngữ ở đây là マーク và 毎回 đi cùng hành động đã xảy ra mỗi lần."
+        },
+        {
+          "id": "4",
+          "text": "使用したいものだ",
+          "correct": false,
+          "explanation_vi": "Sai: 〜たいものだ = «mong muốn ~», là cảm xúc của người viết; câu đang kể sự thật."
+        }
+      ],
+      "summary_vi": "Chủ ngữ là vật (マーク) → dùng bị động: 使用されている.",
+      "point_tags": [
+        "grammar:受身"
+      ],
+      "vocab": [
+        {
+          "word": "使用",
+          "reading": "しよう",
+          "meaning_vi": "sử dụng",
+          "sino_vi": "SỬ DỤNG"
+        },
+        {
+          "word": "毎回",
+          "reading": "まいかい",
+          "meaning_vi": "mỗi lần",
+          "sino_vi": "MỖI HỒI"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n2-2016-12-g-p1-s13",
+        "jlpt-n2-2016-12-g-p1-s12"
+      ]
+    },
+    {
+      "id": "jlpt-n2-2016-12-g-q54",
+      "no": 54,
+      "part": "grammar",
+      "mondai": 9,
+      "type": "cloze_blank",
+      "passage_id": "jlpt-n2-2016-12-g-p1",
+      "stem": {
+        "ja": "それは、あらゆる人にわかりやすくという思いが世界に届いた（　54　）。",
+        "vi": "Đó hẳn là kết quả của việc mong muốn làm cho ai cũng dễ hiểu đã chạm đến thế giới."
+      },
+      "choices": [
+        {
+          "id": "1",
+          "text": "結果として表れるかもしれない",
+          "correct": false,
+          "explanation_vi": "Sai: かもしれない = «có thể», quá yếu. Cả đoạn kết luận chắc chắn rằng ý tưởng đã lan ra thế giới."
+        },
+        {
+          "id": "2",
+          "text": "結果のはずだった",
+          "correct": false,
+          "explanation_vi": "Sai: はずだった = «lẽ ra phải là ~ (nhưng thực tế không)». Ngụ ý kết quả đã sai khác, trái với ý bài."
+        },
+        {
+          "id": "3",
+          "text": "結果に違いない",
+          "correct": true,
+          "explanation_vi": "Đúng: 〜に違いない = «chắc chắn là ~», người viết khẳng định đó là kết quả của tâm ý muốn mọi người đều hiểu. Cả câu: «Đó hẳn là kết quả của việc mong muốn làm cho ai cũng dễ hiểu đã chạm đến thế giới.»"
+        },
+        {
+          "id": "4",
+          "text": "結果でなければならなかった",
+          "correct": false,
+          "explanation_vi": "Sai: 〜なければならなかった = «đã phải là ~», nghĩa bắt buộc ở quá khứ; không phải suy đoán chắc chắn."
+        }
+      ],
+      "summary_vi": "〜に違いない = chắc chắn là ~ (suy đoán mạnh). かもしれない = có thể (yếu).",
+      "point_tags": [
+        "grammar:〜に違いない"
+      ],
+      "vocab": [
+        {
+          "word": "届く",
+          "reading": "とどく",
+          "meaning_vi": "đến được, chạm tới",
+          "sino_vi": "GIỚI"
+        },
+        {
+          "word": "結果",
+          "reading": "けっか",
+          "meaning_vi": "kết quả",
+          "sino_vi": "KẾT QUẢ"
+        }
+      ],
+      "evidence_sentence_ids": [
+        "jlpt-n2-2016-12-g-p1-s15",
+        "jlpt-n2-2016-12-g-p1-s14"
+      ]
     }
   ],
-  "passages": []
+  "passages": [
+    {
+      "id": "jlpt-n2-2016-12-g-p1",
+      "mondai": 9,
+      "kind": "cloze",
+      "title_ja": "日本発のトイレマーク",
+      "sentences": [
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s1",
+          "ja": "公衆トイレの入り口に描かれている男女の絵のマーク。",
+          "vi": "Biểu tượng hình vẽ nam và nữ được vẽ ở lối vào nhà vệ sinh công cộng.",
+          "chunks": [
+            {
+              "ja": "公衆トイレの入り口に",
+              "vi": "ở lối vào nhà vệ sinh công cộng",
+              "accept_vi": [
+                "lối vào nhà vệ sinh công cộng",
+                "cửa vào nhà vệ sinh công cộng",
+                "lối vào toilet công cộng"
+              ]
+            },
+            {
+              "ja": "描かれている",
+              "vi": "được vẽ",
+              "accept_vi": [
+                "được vẽ ở",
+                "vẽ trên"
+              ]
+            },
+            {
+              "ja": "男女の絵のマーク",
+              "vi": "biểu tượng hình vẽ nam nữ",
+              "accept_vi": [
+                "ký hiệu hình nam và nữ",
+                "hình vẽ nam nữ",
+                "biểu tượng nam nữ",
+                "ký hiệu nam nữ"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s2",
+          "ja": "そのマークがあれば、文字で「トイレ」と書かれていなくても、そこがトイレであることがわかる。",
+          "vi": "Nếu có biểu tượng đó thì dù không được viết bằng chữ «トイレ», ta vẫn biết đó là nhà vệ sinh.",
+          "chunks": [
+            {
+              "ja": "そのマークがあれば、",
+              "vi": "nếu có biểu tượng đó",
+              "accept_vi": [
+                "có ký hiệu đó",
+                "nếu có dấu hiệu đó",
+                "có biểu tượng đó",
+                "nếu có ký hiệu đó"
+              ]
+            },
+            {
+              "ja": "文字で「トイレ」と書かれていなくても、",
+              "vi": "dù không được viết bằng chữ «トイレ»",
+              "accept_vi": [
+                "không viết bằng chữ",
+                "dù không có chữ",
+                "dù không ghi chữ",
+                "không được viết chữ"
+              ],
+              "note_vi": "〜なくても = dù không ~."
+            },
+            {
+              "ja": "そこがトイレであることがわかる",
+              "vi": "biết đó là nhà vệ sinh",
+              "accept_vi": [
+                "nhận ra đó là nhà vệ sinh",
+                "hiểu đó là nhà vệ sinh",
+                "biết được đó là toilet",
+                "biết đó là toilet"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s3",
+          "ja": "世界のあちこちで使われているこのトイレマークが実は日本で生まれたものだということをご存じだろうか。",
+          "ja_blank": "世界のあちこちで使われているこのトイレマークが実は日本で生まれたものだということを（50）。",
+          "vi": "Bạn có biết rằng biểu tượng nhà vệ sinh được dùng khắp nơi trên thế giới này thực ra ra đời ở Nhật Bản không?",
+          "chunks": [
+            {
+              "ja": "世界のあちこちで使われている",
+              "vi": "được dùng khắp nơi trên thế giới",
+              "accept_vi": [
+                "dùng ở khắp nơi",
+                "khắp thế giới",
+                "được sử dụng khắp nơi"
+              ]
+            },
+            {
+              "ja": "このトイレマークが",
+              "vi": "biểu tượng nhà vệ sinh này",
+              "accept_vi": [
+                "ký hiệu toilet này",
+                "biểu tượng toilet này",
+                "ký hiệu nhà vệ sinh này"
+              ]
+            },
+            {
+              "ja": "実は日本で生まれたものだ",
+              "vi": "thực ra ra đời ở Nhật Bản",
+              "accept_vi": [
+                "thật ra ra đời ở nhật",
+                "thực ra được tạo ra ở nhật bản",
+                "có nguồn gốc từ nhật",
+                "thực ra sinh ra ở nhật",
+                "thật ra được sinh ra ở nhật"
+              ]
+            },
+            {
+              "ja": "ということをご存じだろうか",
+              "vi": "bạn có biết rằng... không",
+              "accept_vi": [
+                "có biết rằng",
+                "bạn có biết chưa",
+                "bạn có biết không",
+                "có biết không"
+              ],
+              "note_vi": "ご存じ = kính ngữ của 知っている; 〜だろうか: câu hỏi hướng đến người đọc."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s4",
+          "ja": "トイレマークが生まれたのは、1964年の東京オリンピックがきっかけだ。",
+          "vi": "Biểu tượng nhà vệ sinh ra đời là nhờ cơ hội từ Thế vận hội Tokyo năm 1964.",
+          "chunks": [
+            {
+              "ja": "トイレマークが生まれたのは、",
+              "vi": "việc biểu tượng nhà vệ sinh ra đời",
+              "accept_vi": [
+                "biểu tượng nhà vệ sinh ra đời",
+                "ký hiệu toilet ra đời",
+                "biểu tượng toilet ra đời"
+              ]
+            },
+            {
+              "ja": "1964年の東京オリンピックが",
+              "vi": "Thế vận hội Tokyo năm 1964",
+              "accept_vi": [
+                "olympic tokyo 1964",
+                "olympic tokyo năm 1964",
+                "thế vận hội tokyo 1964"
+              ]
+            },
+            {
+              "ja": "きっかけだ",
+              "vi": "là cơ duyên",
+              "accept_vi": [
+                "là nhờ",
+                "là cơ hội",
+                "khởi nguồn",
+                "bắt đầu từ",
+                "là khởi đầu",
+                "bắt nguồn từ"
+              ],
+              "note_vi": "〜がきっかけだ = bắt nguồn từ, nhân dịp ~."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s5",
+          "ja": "この東京オリンピックは、アルファベットを使わない国での初めての開催であったため、特に問題になったのが、言葉の壁だった。",
+          "vi": "Vì Thế vận hội Tokyo này là lần đầu tiên được tổ chức ở một quốc gia không dùng bảng chữ cái alphabet, nên vấn đề đặc biệt nổi lên là rào cản ngôn ngữ.",
+          "chunks": [
+            {
+              "ja": "この東京オリンピックは、",
+              "vi": "Thế vận hội Tokyo lần này",
+              "accept_vi": [
+                "olympic tokyo này",
+                "kỳ olympic tokyo này",
+                "thế vận hội tokyo này"
+              ]
+            },
+            {
+              "ja": "アルファベットを使わない国での初めての開催であったため、",
+              "vi": "vì là lần đầu tổ chức ở nước không dùng alphabet",
+              "accept_vi": [
+                "không dùng bảng chữ cái alphabet",
+                "nước không dùng alphabet"
+              ]
+            },
+            {
+              "ja": "特に問題になったのが、",
+              "vi": "điều đặc biệt trở thành vấn đề",
+              "accept_vi": [
+                "vấn đề đặc biệt",
+                "vấn đề lớn nhất",
+                "vấn đề nổi lên",
+                "trở thành vấn đề"
+              ]
+            },
+            {
+              "ja": "言葉の壁だった",
+              "vi": "là rào cản ngôn ngữ",
+              "accept_vi": [
+                "rào cản ngôn ngữ",
+                "bức tường ngôn ngữ",
+                "trở ngại ngôn ngữ",
+                "rào cản về ngôn ngữ"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s6",
+          "ja": "当時、日本国内の案内板は「お手洗い」などと日本語で書かれているものがほとんどだった。",
+          "vi": "Thời đó, hầu hết các biển chỉ dẫn trong nước Nhật đều được viết bằng tiếng Nhật như «お手洗い».",
+          "chunks": [
+            {
+              "ja": "当時、",
+              "vi": "thời đó",
+              "accept_vi": [
+                "lúc đó",
+                "khi ấy",
+                "vào thời điểm đó",
+                "hồi đó"
+              ]
+            },
+            {
+              "ja": "日本国内の案内板は",
+              "vi": "biển chỉ dẫn trong nước Nhật",
+              "accept_vi": [
+                "biển chỉ dẫn ở nhật",
+                "bảng chỉ dẫn trong nước",
+                "biển hướng dẫn",
+                "bảng hướng dẫn"
+              ]
+            },
+            {
+              "ja": "「お手洗い」などと日本語で書かれている",
+              "vi": "được viết bằng tiếng Nhật như «お手洗い»",
+              "accept_vi": [
+                "viết bằng tiếng nhật",
+                "ghi bằng tiếng nhật",
+                "được ghi bằng tiếng nhật"
+              ]
+            },
+            {
+              "ja": "ものがほとんどだった",
+              "vi": "phần lớn là như vậy",
+              "accept_vi": [
+                "hầu hết",
+                "đa số",
+                "hầu như đều",
+                "phần lớn"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s7",
+          "ja": "しかし、それでは世界90数か国から来日する選手たちに理解してもらえない。",
+          "ja_blank": "（51）、それでは世界90数か国から来日する選手たちに理解してもらえない。",
+          "vi": "Tuy nhiên, như vậy thì các vận động viên từ hơn 90 quốc gia trên thế giới đến Nhật sẽ không hiểu được.",
+          "chunks": [
+            {
+              "ja": "しかし、",
+              "vi": "tuy nhiên",
+              "accept_vi": [
+                "nhưng",
+                "song"
+              ]
+            },
+            {
+              "ja": "それでは",
+              "vi": "như vậy thì",
+              "accept_vi": [
+                "với cách đó",
+                "làm như vậy thì",
+                "thế thì"
+              ]
+            },
+            {
+              "ja": "世界90数か国から来日する選手たちに",
+              "vi": "các vận động viên đến Nhật từ hơn 90 quốc gia",
+              "accept_vi": [
+                "vận động viên từ hơn 90 nước",
+                "vận động viên đến từ hơn 90 quốc gia",
+                "hơn 90 nước",
+                "hơn 90 quốc gia"
+              ]
+            },
+            {
+              "ja": "理解してもらえない",
+              "vi": "không thể khiến họ hiểu",
+              "accept_vi": [
+                "không hiểu được",
+                "họ không hiểu",
+                "không thể hiểu",
+                "không được hiểu"
+              ],
+              "note_vi": "〜てもらえない = không thể nhờ/mong ai làm cho (ở đây: không để họ hiểu được)."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s8",
+          "ja": "かといって、参加国すべての国の言葉で書くわけにもいかない。",
+          "vi": "Tuy vậy, cũng không thể viết bằng ngôn ngữ của tất cả các nước tham dự.",
+          "chunks": [
+            {
+              "ja": "かといって、",
+              "vi": "tuy vậy",
+              "accept_vi": [
+                "dù vậy",
+                "nhưng nói thế thì",
+                "nhưng mà",
+                "tuy nói vậy"
+              ]
+            },
+            {
+              "ja": "参加国すべての国の言葉で",
+              "vi": "bằng ngôn ngữ của tất cả các nước tham dự",
+              "accept_vi": [
+                "bằng tiếng của mọi nước tham dự",
+                "ngôn ngữ của tất cả các nước",
+                "tất cả các nước tham gia",
+                "ngôn ngữ của mọi nước"
+              ]
+            },
+            {
+              "ja": "書くわけにもいかない",
+              "vi": "cũng không thể viết",
+              "accept_vi": [
+                "không thể nào viết",
+                "không thể ghi",
+                "cũng chẳng thể viết"
+              ],
+              "note_vi": "〜わけにはいかない = không thể (vì lý do hoàn cảnh)."
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "không cần viết",
+                "không nhất thiết phải viết"
+              ],
+              "explanation_vi": "Sai: 〜わけにはいかない = «không thể ~ (dù muốn)», không phải «không cần»."
+            }
+          ]
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s9",
+          "ja": "そこで、案内板作成者たちは、あらゆる国の選手が理解できるよう、絵で表すことを考えた。",
+          "vi": "Vì vậy, những người làm biển chỉ dẫn đã nghĩ ra cách thể hiện bằng hình vẽ để vận động viên của mọi quốc gia đều hiểu được.",
+          "chunks": [
+            {
+              "ja": "そこで、",
+              "vi": "vì vậy",
+              "accept_vi": [
+                "do đó",
+                "thế là",
+                "bởi vậy",
+                "cho nên"
+              ]
+            },
+            {
+              "ja": "案内板作成者たちは、",
+              "vi": "những người làm biển chỉ dẫn",
+              "accept_vi": [
+                "người thiết kế biển chỉ dẫn",
+                "người làm bảng hướng dẫn",
+                "những người tạo biển chỉ dẫn",
+                "người làm biển hướng dẫn"
+              ]
+            },
+            {
+              "ja": "あらゆる国の選手が理解できるよう、",
+              "vi": "để vận động viên của mọi nước hiểu được",
+              "accept_vi": [
+                "để vận động viên mọi quốc gia hiểu",
+                "để vận động viên các nước đều hiểu"
+              ],
+              "note_vi": "〜ように = để, nhằm ~."
+            },
+            {
+              "ja": "絵で表すことを考えた",
+              "vi": "nghĩ ra việc thể hiện bằng hình vẽ",
+              "accept_vi": [
+                "nghĩ đến việc dùng hình vẽ",
+                "nghĩ ra cách diễn đạt bằng tranh",
+                "nghĩ đến thể hiện bằng hình vẽ",
+                "nghĩ ra việc dùng tranh"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s10",
+          "ja": "こうして生まれたのが、トイレマークなのだ。",
+          "ja_blank": "（52）、トイレマークなのだ。",
+          "vi": "Biểu tượng nhà vệ sinh chính là thứ ra đời như vậy.",
+          "chunks": [
+            {
+              "ja": "こうして",
+              "vi": "như vậy",
+              "accept_vi": [
+                "bằng cách này",
+                "nhờ vậy",
+                "thế là"
+              ]
+            },
+            {
+              "ja": "生まれたのが、",
+              "vi": "thứ ra đời",
+              "accept_vi": [
+                "thứ được sinh ra",
+                "cái ra đời",
+                "điều ra đời",
+                "cái được sinh ra"
+              ]
+            },
+            {
+              "ja": "トイレマークなのだ",
+              "vi": "là biểu tượng nhà vệ sinh",
+              "accept_vi": [
+                "chính là biểu tượng nhà vệ sinh",
+                "là ký hiệu toilet",
+                "chính là ký hiệu nhà vệ sinh"
+              ],
+              "note_vi": "〜のだ = nhấn mạnh, giải thích."
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s11",
+          "ja": "そのほかにも、食堂、シャワー、公衆電話等の施設や設備を表すマークや、水泳、バレーボール等の競技を表すマークも作られた。",
+          "vi": "Ngoài ra, còn có các biểu tượng chỉ cơ sở và thiết bị như nhà ăn, vòi sen, điện thoại công cộng, và các biểu tượng chỉ môn thi đấu như bơi lội, bóng chuyền cũng được tạo ra.",
+          "chunks": [
+            {
+              "ja": "そのほかにも、",
+              "vi": "ngoài ra",
+              "accept_vi": [
+                "ngoài ra còn",
+                "bên cạnh đó",
+                "ngoài những cái đó"
+              ]
+            },
+            {
+              "ja": "食堂、シャワー、公衆電話等の施設や設備を表すマークや、",
+              "vi": "biểu tượng chỉ cơ sở, thiết bị như nhà ăn, vòi sen, điện thoại công cộng",
+              "accept_vi": [
+                "ký hiệu thể hiện cơ sở và thiết bị"
+              ]
+            },
+            {
+              "ja": "水泳、バレーボール等の競技を表すマークも",
+              "vi": "biểu tượng chỉ môn thi đấu như bơi, bóng chuyền",
+              "accept_vi": [
+                "ký hiệu các môn thi đấu",
+                "biểu tượng các môn thể thao",
+                "ký hiệu môn thi",
+                "biểu tượng các môn thi đấu"
+              ]
+            },
+            {
+              "ja": "作られた",
+              "vi": "được tạo ra",
+              "accept_vi": [
+                "được làm ra",
+                "được thiết kế",
+                "được tạo"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s12",
+          "ja": "競技を表すマークは、この東京オリンピックで初めて全面的に導入され、高い評価を受けた。",
+          "vi": "Các biểu tượng chỉ môn thi đấu lần đầu tiên được đưa vào áp dụng toàn diện tại Thế vận hội Tokyo này và nhận được đánh giá cao.",
+          "chunks": [
+            {
+              "ja": "競技を表すマークは、",
+              "vi": "các biểu tượng chỉ môn thi đấu",
+              "accept_vi": [
+                "ký hiệu các môn thi đấu",
+                "biểu tượng các môn thể thao",
+                "ký hiệu môn thi đấu"
+              ]
+            },
+            {
+              "ja": "この東京オリンピックで初めて",
+              "vi": "lần đầu tại Thế vận hội Tokyo này",
+              "accept_vi": [
+                "lần đầu tiên ở olympic tokyo này",
+                "lần đầu tại olympic tokyo",
+                "lần đầu tiên tại thế vận hội tokyo"
+              ]
+            },
+            {
+              "ja": "全面的に導入され、",
+              "vi": "được áp dụng toàn diện",
+              "accept_vi": [
+                "được đưa vào toàn diện",
+                "được sử dụng toàn diện",
+                "được đưa vào một cách toàn diện",
+                "được đưa vào áp dụng toàn diện"
+              ]
+            },
+            {
+              "ja": "高い評価を受けた",
+              "vi": "nhận được đánh giá cao",
+              "accept_vi": [
+                "được đánh giá cao",
+                "được đánh giá rất tốt",
+                "nhận đánh giá cao"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s13",
+          "ja": "そして、その後のオリンピックでもデザインを変えながら毎回使用されている。",
+          "ja_blank": "そして、その後のオリンピックでもデザインを変えながら毎回（53）。",
+          "vi": "Và ở các kỳ Thế vận hội sau đó, chúng cũng được sử dụng mỗi lần, dù thay đổi thiết kế.",
+          "chunks": [
+            {
+              "ja": "そして、",
+              "vi": "và",
+              "accept_vi": [
+                "sau đó",
+                "rồi"
+              ]
+            },
+            {
+              "ja": "その後のオリンピックでも",
+              "vi": "ở các kỳ Olympic sau đó cũng",
+              "accept_vi": [
+                "các kỳ thế vận hội sau đó cũng",
+                "olympic về sau cũng",
+                "các kỳ olympic tiếp theo",
+                "các kỳ olympic sau đó"
+              ]
+            },
+            {
+              "ja": "デザインを変えながら",
+              "vi": "vừa thay đổi thiết kế",
+              "accept_vi": [
+                "trong khi thay đổi thiết kế",
+                "thay đổi thiết kế",
+                "đổi thiết kế",
+                "dù thay đổi thiết kế"
+              ],
+              "note_vi": "Vながら = vừa V vừa; ở đây diễn tả hai việc diễn ra song song."
+            },
+            {
+              "ja": "毎回使用されている",
+              "vi": "được sử dụng mỗi lần",
+              "accept_vi": [
+                "được dùng mỗi lần",
+                "được sử dụng mọi lần",
+                "được dùng mỗi kỳ",
+                "được sử dụng mỗi kỳ"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s14",
+          "ja": "トイレマークに代表されるように、東京オリンピックをきっかけに日本で生まれたマークが、言葉の壁を越え、今や新たなコミュニケーション手段として、世界に広がっている。",
+          "vi": "Như biểu tượng nhà vệ sinh là đại diện tiêu biểu, những biểu tượng ra đời ở Nhật nhân dịp Thế vận hội Tokyo đã vượt qua rào cản ngôn ngữ và nay đang lan rộng ra thế giới như một phương tiện giao tiếp mới.",
+          "chunks": [
+            {
+              "ja": "トイレマークに代表されるように、",
+              "vi": "như được đại diện bởi biểu tượng nhà vệ sinh",
+              "accept_vi": [
+                "tiêu biểu là biểu tượng nhà vệ sinh",
+                "như biểu tượng nhà vệ sinh",
+                "điển hình là biểu tượng nhà vệ sinh",
+                "mà tiêu biểu là biểu tượng toilet"
+              ],
+              "note_vi": "N に代表される = được đại diện/tiêu biểu bởi N."
+            },
+            {
+              "ja": "東京オリンピックをきっかけに日本で生まれたマークが、",
+              "vi": "những biểu tượng sinh ra ở Nhật nhờ Olympic Tokyo",
+              "accept_vi": [
+                "ký hiệu ra đời ở nhật",
+                "biểu tượng ra đời ở nhật",
+                "ký hiệu ra đời ở nhật"
+              ]
+            },
+            {
+              "ja": "言葉の壁を越え、",
+              "vi": "vượt qua rào cản ngôn ngữ",
+              "accept_vi": [
+                "vượt rào cản ngôn ngữ",
+                "vượt qua bức tường ngôn ngữ",
+                "vượt qua trở ngại ngôn ngữ"
+              ]
+            },
+            {
+              "ja": "今や新たなコミュニケーション手段として、",
+              "vi": "nay như phương tiện giao tiếp mới",
+              "accept_vi": [
+                "như một phương tiện giao tiếp mới",
+                "phương tiện giao tiếp mới"
+              ]
+            },
+            {
+              "ja": "世界に広がっている",
+              "vi": "đang lan rộng ra thế giới",
+              "accept_vi": [
+                "lan ra khắp thế giới",
+                "đang lan rộng khắp thế giới",
+                "lan rộng trên thế giới",
+                "đang phổ biến trên thế giới"
+              ]
+            }
+          ],
+          "pitfalls": []
+        },
+        {
+          "id": "jlpt-n2-2016-12-g-p1-s15",
+          "ja": "それは、あらゆる人にわかりやすくという思いが世界に届いた結果に違いない。",
+          "ja_blank": "それは、あらゆる人にわかりやすくという思いが世界に届いた（54）。",
+          "vi": "Đó hẳn là kết quả của việc mong muốn làm cho ai cũng dễ hiểu đã chạm đến thế giới.",
+          "chunks": [
+            {
+              "ja": "それは、",
+              "vi": "điều đó",
+              "accept_vi": [
+                "đó là",
+                "việc đó"
+              ]
+            },
+            {
+              "ja": "あらゆる人にわかりやすくという思いが",
+              "vi": "mong muốn làm cho tất cả mọi người dễ hiểu",
+              "accept_vi": [
+                "ý muốn làm cho ai cũng dễ hiểu",
+                "tâm niệm dễ hiểu với mọi người",
+                "mong muốn dễ hiểu với mọi người",
+                "suy nghĩ làm cho mọi người dễ hiểu",
+                "mong muốn ai cũng dễ hiểu"
+              ]
+            },
+            {
+              "ja": "世界に届いた",
+              "vi": "đã đến được với thế giới",
+              "accept_vi": [
+                "đến được thế giới",
+                "truyền đến thế giới",
+                "chạm tới thế giới",
+                "đã lan tới thế giới"
+              ]
+            },
+            {
+              "ja": "結果に違いない",
+              "vi": "chắc chắn là kết quả",
+              "accept_vi": [
+                "hẳn là kết quả",
+                "nhất định là kết quả",
+                "chắc chắn là kết quả của",
+                "chắc hẳn là kết quả"
+              ],
+              "note_vi": "〜に違いない = chắc chắn là ~ (suy đoán chắc)."
+            }
+          ],
+          "pitfalls": [
+            {
+              "wrong_vi": [
+                "có thể là kết quả",
+                "có lẽ là kết quả"
+              ],
+              "explanation_vi": "Sai mức độ: に違いない = «chắc chắn là», mạnh hơn かもしれない (có thể)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
